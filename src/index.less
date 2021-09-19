@@ -1,0 +1,136 @@
+@import './fonts/fonts.css';
+
+@color-primary: #521d3a;
+@color-primary-light: #632949;
+
+:root {
+  --color-primary: @color-primary;
+}
+
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: @color-primary-light !important;
+  color: white;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.bg-primary {
+  background-color: @color-primary !important;
+}
+
+.bg-secondary {
+  background-color: @color-primary-light !important;
+}
+
+a {
+  color: @color-primary;
+  opacity: 1;
+}
+a:focus,
+a:hover,
+a:active,
+a.active {
+  opacity: 0.5;
+}
+
+p {
+  margin-top: 0;
+}
+
+p,
+ul,
+li,
+a,
+span,
+div {
+  line-height: 1.27;
+  font-size: 15px;
+}
+@media (min-width: 660px) {
+  p,
+  ul,
+  li,
+  a,
+  span,
+  div,
+  h2 .btn {
+    font-size: 16.25px;
+  }
+}
+@media (min-width: 860px) {
+  p,
+  ul,
+  li,
+  a,
+  span,
+  div,
+  h2 .btn {
+    font-size: 17.5px;
+  }
+}
+@media (min-width: 1100px) {
+  p,
+  ul,
+  li,
+  a,
+  span,
+  div,
+  h2 .btn {
+    font-size: 18.75px;
+  }
+}
+@media (min-width: 1300px) {
+  p,
+  ul,
+  li,
+  a,
+  span,
+  div,
+  h2 .btn {
+    font-size: 20px;
+  }
+}
+
+li {
+  margin-top: 8px;
+}
+
+.back {
+  margin: 0 10px;
+    svg {
+    color: white;
+  }
+}
+
+.App {
+  display: flex;
+}
+
+table {
+  td {
+    border-top: 1px solid white;
+    padding: 5px;
+    margin: 0;
+  }
+}
+
+button {
+  font-size: 1em;
+  padding: .3em;
+  text-align: center;
+  min-width: 5em;
+  background-color: #DDD;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 0.25em;
+}

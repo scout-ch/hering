@@ -1,0 +1,38 @@
+[  
+  {
+    "title": {
+      "de": "Lagerbewilligung",
+      "fr": "gaaaa"
+    },
+    "days": -42,
+    "responsible": [
+      "c",
+      "al"
+    ],
+    "targets": [
+      "ll",
+      "al"
+    ],
+    "links": [
+      "rahmenbedingungen",
+      "welchelager",
+      "voila"
+    ]
+  },
+  {
+    "title": {
+      "de": "J+S-Angebot",
+      "fr": "gaaaa"
+    },
+    "days": -30,
+    "responsible": [
+      "c"
+    ],
+    "targets": [
+      "sportdb"
+    ],
+    "links": [
+      "eroeffnen"
+    ]
+  }
+]

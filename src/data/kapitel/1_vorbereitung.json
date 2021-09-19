@@ -1,0 +1,61 @@
+{
+    "title": {
+      "de": "Vorbereitung Lagersaison",
+      "fr": "FR Vorbereitung Lagersaison"
+    },
+    "icon": "scroll",
+    "intro": {
+      "de": "blaaa",
+      "fr": ""
+    },
+    "targets": [
+      "ll",
+      "al",
+      "c"
+    ],
+    "chapters": [
+      {
+        "title": {
+          "de": "Rahmenbedingungen fur lager",
+          "fr": "FR blaaa"
+        },
+        "intro": {
+          "de": "<a href=\"\">baa</a> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "fr": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        },
+        "targets": [
+          "ll",
+          "al",
+          "c"
+        ]
+      },
+      {
+        "title": {
+          "de": "Lagerdaten",
+          "fr": "FR blaaa"
+        },
+        "intro": {
+          "de": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "fr": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        },
+        "targets": [
+          "ll",
+          "al",
+          "c"
+        ]
+      },
+      {
+        "title": {
+          "de": "Lagesdfsdfr eroffnen",
+          "fr": "FR blaaa"
+        },
+        "intro": {
+          "de": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "fr": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        },
+        "targets": [
+          "al"
+        ]
+      }
+    ]
+  }
