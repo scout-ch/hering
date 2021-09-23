@@ -6,17 +6,16 @@ class Todo extends React.Component {
     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
     const todo = this.props.task
+    const deadline = this.props.deadline.toLocaleDateString('de-DE', options)
     const targets = todo.targets.map((target) => target.toUpperCase()).join(', ')
     const responsible = todo.responsible.map((responsible) => responsible.toUpperCase()).join(', ')
-    return <tbody>
-      <tr>
+    return <tr>
         <td>[ ]</td>
-        <td>{this.props.deadline.toLocaleDateString('de-DE', options)}</td>
+        <td>{deadline}</td>
         <td>{todo.title.de}</td>
         <td>{responsible}</td>
         <td>{targets}</td>
       </tr>
-    </tbody>
 
   }
 }

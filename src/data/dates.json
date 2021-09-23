@@ -34,5 +34,34 @@
     "links": [
       "eroeffnen"
     ]
+  },
+  {
+    "title": {
+      "de": "Grobprogramm",
+      "fr": "gaaaa"
+    },
+    "days": -49,
+    "responsible": [
+      "ll"
+    ],
+    "targets": [
+      "al",
+      "c"
+    ],
+    "links": []
+  },
+  {
+    "title": {
+      "de": "Bestellung J+S Leihmaterial",
+      "fr": "gaaaa"
+    },
+    "days": -42,
+    "responsible": [
+      "ll"
+    ],
+    "targets": [
+      "c"
+    ],
+    "links": []
   }
 ]

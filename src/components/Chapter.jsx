@@ -1,14 +1,20 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 class Chapter extends React.Component {
+    constructor() {
+        super();
+        this.state = { markdown: '' };
+    }
+
+    componentWillMount() {
+        fetch(this.props.markdown).then(res => res.text()).then(text => this.setState({ markdown: text }));
+    }
 
     render() {
-        const chapter = this.props.chapter
-        const targets = chapter.targets.map((target) => target.toUpperCase()).join(', ')
         return <div>
-            <h2>{chapter.title.de}</h2>
-            <div className="targets">{targets}</div>
-            <p>{chapter.intro.de}</p>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{this.state.markdown}</ReactMarkdown>
         </div>
 
     }
