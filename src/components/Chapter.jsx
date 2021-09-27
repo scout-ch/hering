@@ -3,20 +3,17 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
 class Chapter extends React.Component {
-    constructor() {
-        super();
-        this.state = { markdown: '' };
-    }
-
-    componentWillMount() {
-        fetch(this.props.markdown).then(res => res.text()).then(text => this.setState({ markdown: text }));
-    }
-
     render() {
-        return <div>
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{this.state.markdown}</ReactMarkdown>
-        </div>
+        const data = this.props.data
+        if (!data) {
+            return null
+        }
+        const targets = data['responsible'].map((target) => target['label'].toUpperCase()).join(', ')
 
+        return <div>
+            <div className="targets">{targets}</div>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{data.content}</ReactMarkdown>
+        </div>
     }
 }
 

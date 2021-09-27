@@ -2,23 +2,28 @@
 import React from 'react'
 import { MainContainer } from '../App'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Header } from '../App'
+import { Back } from '../App'
 import { withRouter } from 'react-router';
-import jsonData from "../data/kapitel/1_vorbereitung.json"
 import Chapter from '../components/Chapter'
-import PreparationText from '../data/kapitel/1_vorbereitung.md';
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 
-function PreparationPage() {
-  const targets = jsonData.targets.map((target) => target.toUpperCase()).join(', ')
+function PreparationPage(props: any) {
 
-  return <div>
-    <MainContainer>
-      <Header></Header>
-      <div className="targets">{targets}</div>
-      <h1><FontAwesomeIcon icon="scroll" /> {jsonData.title.de}</h1>
-      <Chapter markdown={PreparationText}></Chapter>
-    </MainContainer>
-  </div>
+  const section = props.section
+  console.log(section['content'])
+  if (!section) return null
+  const chapters = section['chapters'].map(function (chapter: any) {
+    return <Chapter key={chapter['title']} data={chapter}></Chapter>
+  })
+
+  return <MainContainer>
+    <Back />
+    <h1><FontAwesomeIcon icon="scroll" /> {section['title']}</h1>
+    
+    <ReactMarkdown remarkPlugins={[remarkGfm]}>{section.content}</ReactMarkdown>
+    {chapters}
+  </MainContainer>
 }
 export default withRouter(PreparationPage)

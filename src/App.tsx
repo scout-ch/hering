@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PreparationPage from './pages/PreparationPage';
 import HomePage from './pages/HomePage ';
 import CalculationPage from './pages/CalculationPage';
+import client from "./client";
 
 
 const Nav = styled.nav`
@@ -48,7 +49,7 @@ export const MainContainer = styled.main`
   flex-grow: 1;
 `
 
-export const Header = () => {
+export const Back = () => {
   return <div>
     <pre className="back"><Link to="/" ><FontAwesomeIcon icon="arrow-left" /></Link></pre>
   </div>
@@ -58,17 +59,27 @@ export const Navigation = () => {
   return <Nav role="nav">
     <ul>
       <li><Link to="/">HERING</Link></li>
-      <li><Link to="/vorbereitung"><FontAwesomeIcon icon="scroll" /> Vorbereitung</Link></li>
-      <li><Link to="/lageranmeldung"><FontAwesomeIcon icon="lock" />  Lageranmeldung</Link></li>
-      <li><Link to="/dienstleistungen"><FontAwesomeIcon icon="tools" /> Dienstleistungen</Link></li>
-      <li><Link to="/lagerdossier"><FontAwesomeIcon icon="users" /> Lagerdossier</Link></li>
-      <li><Link to="/calculation"><FontAwesomeIcon icon="calendar" /> Datumsliste</Link></li>
+      <li><Link to="vorbereitung"><FontAwesomeIcon icon="scroll" /> Vorbereitung</Link></li>
+      <li><Link to="lageranmeldung"><FontAwesomeIcon icon="lock" />  Lageranmeldung</Link></li>
+      <li><Link to="dienstleistungen"><FontAwesomeIcon icon="tools" /> Dienstleistungen</Link></li>
+      <li><Link to="lagerdossier"><FontAwesomeIcon icon="users" /> Lagerdossier</Link></li>
+      <li><Link to="calculation"><FontAwesomeIcon icon="calendar" /> Datumsliste</Link></li>
     </ul>
   </Nav>
 }
 
 function App() {
+  const [sections, setSections] = React.useState(null);
+
+  React.useEffect(() => {
+    client.get('/sections').then((response: { data: any; }) => {
+      setSections(response.data)
+    })
+  }, [])
+
   library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faArrowLeft, faCalendar)
+
+  if (!sections) return null
 
   return <Router>
     <div className="App">
@@ -77,7 +88,7 @@ function App() {
 
       <Switch>
         <Route path="/vorbereitung">
-          <PreparationPage />
+          <PreparationPage section={sections[0]} />
         </Route>
         <Route path="/calculation">
           <CalculationPage />
@@ -86,8 +97,8 @@ function App() {
           <HomePage></HomePage>
         </Route>
       </Switch>
-      <Footer></Footer>
     </div>
+    <Footer></Footer>
 
   </Router>
 }

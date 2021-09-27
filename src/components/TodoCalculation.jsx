@@ -1,6 +1,7 @@
 import React from 'react'
 import heringDates from "../data/dates.json";
 import Todo from './Todo';
+import IcsDownload from './IcsDownload';
 
 
 class TodoCalculation extends React.Component {
@@ -78,6 +79,7 @@ class TodoCalculation extends React.Component {
             {this.state.todos}
           </tbody>
         </table>
+        <IcsDownload todos={this.state.todos}></IcsDownload>
       </div>
     );
   }
