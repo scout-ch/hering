@@ -1,13 +1,15 @@
 import React from 'react'
-import heringDates from "../data/dates.json";
 import Todo from './Todo';
 import IcsDownload from './IcsDownload';
+import i18n from '../i18n';
+import client from "../client";
 
 
 class TodoCalculation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      heringDates: [],
       startDate: '',
       responsible: 'all',
       todos: []
@@ -31,9 +33,13 @@ class TodoCalculation extends React.Component {
     event.preventDefault();
     const startDate = new Date(this.state.startDate)
     const responsible = this.state.responsible
+    
+    client.get('/tasks?_locale=' + i18n.language).then((response) => {
+      this.setState({ heringDates: response.data })
+    })
 
     if (!isNaN(startDate)) {
-      const filteredDates = heringDates.filter(function(todo) {
+      const filteredDates = this.state.heringDates.filter(function(todo) {
         return responsible === 'all' ? true : todo.responsible.includes(responsible)
       });
 

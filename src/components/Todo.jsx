@@ -7,12 +7,12 @@ class Todo extends React.Component {
 
     const todo = this.props.task
     const deadline = this.props.deadline.toLocaleDateString('de-DE', options)
-    const targets = todo.targets.map((target) => target.toUpperCase()).join(', ')
-    const responsible = todo.responsible.map((responsible) => responsible.toUpperCase()).join(', ')
+    const targets = todo.targets.map((target) => target['label'].toUpperCase()).join(', ')
+    const responsible = todo.Verantwortlich.map((responsible) => responsible['label'].toUpperCase()).join(', ')
     return <tr>
         <td>[ ]</td>
         <td>{deadline}</td>
-        <td>{todo.title.de}</td>
+        <td>{todo.title}</td>
         <td>{responsible}</td>
         <td>{targets}</td>
       </tr>
