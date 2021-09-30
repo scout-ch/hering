@@ -14,6 +14,9 @@ import PreparationPage from './pages/PreparationPage';
 import HomePage from './pages/HomePage ';
 import CalculationPage from './pages/CalculationPage';
 import client from "./client";
+import i18n from './i18n';
+import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 
 const Nav = styled.nav`
@@ -37,6 +40,16 @@ const Nav = styled.nav`
     min-width: 180px;
   }
 `
+const Button = styled.button`
+  border: none;
+  background: none;
+  color: white;
+
+  &:hover {
+    color: white;
+    opacity: 0.5;
+  }
+`
 
 const Footer = styled.footer`
   background-image: url(${FooterImage});
@@ -56,26 +69,38 @@ export const Back = () => {
 }
 
 export const Navigation = () => {
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  }
+  const { t } = useTranslation()
+  const lang = i18n.language
+
   return <Nav role="nav">
     <ul>
-      <li><Link to="/">HERING</Link></li>
-      <li><Link to="vorbereitung"><FontAwesomeIcon icon="scroll" /> Vorbereitung</Link></li>
-      <li><Link to="lageranmeldung"><FontAwesomeIcon icon="lock" />  Lageranmeldung</Link></li>
-      <li><Link to="dienstleistungen"><FontAwesomeIcon icon="tools" /> Dienstleistungen</Link></li>
-      <li><Link to="lagerdossier"><FontAwesomeIcon icon="users" /> Lagerdossier</Link></li>
-      <li><Link to="calculation"><FontAwesomeIcon icon="calendar" /> Datumsliste</Link></li>
+      <li><Link to="/hering">HERING</Link></li>
+      <li><Link to="/hering/vorbereitung"><FontAwesomeIcon icon="scroll" /> {t('preparation_page.title')}</Link></li>
+      <li><Link to="/hering/lageranmeldung"><FontAwesomeIcon icon="lock" />  Lageranmeldung</Link></li>
+      <li><Link to="/hering/dienstleistungen"><FontAwesomeIcon icon="tools" /> Dienstleistungen</Link></li>
+      <li><Link to="/hering/lagerdossier"><FontAwesomeIcon icon="users" /> Lagerdossier</Link></li>
+      <li><Link to="/hering/calculation"><FontAwesomeIcon icon="calendar" /> Datumsliste</Link></li>
+
+      <li>
+        <Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>DE</Button>
+        <Button className={lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr')}>FR</Button>
+      </li>
     </ul>
   </Nav>
 }
 
 function App() {
   const [sections, setSections] = React.useState(null);
+  const lang = i18n.language
 
   React.useEffect(() => {
-    client.get('/sections').then((response: { data: any; }) => {
+    client.get('/sections?_locale=' + lang).then((response: { data: any; }) => {
       setSections(response.data)
     })
-  }, [])
+  }, [lang])
 
   library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faArrowLeft, faCalendar)
 
@@ -87,13 +112,13 @@ function App() {
       <Navigation></Navigation>
 
       <Switch>
-        <Route path="/vorbereitung">
+        <Route path="/hering/vorbereitung">
           <PreparationPage section={sections[0]} />
         </Route>
-        <Route path="/calculation">
+        <Route path="/hering/calculation">
           <CalculationPage />
         </Route>
-        <Route exact path="/">
+        <Route exact path="/hering/">
           <HomePage></HomePage>
         </Route>
       </Switch>
@@ -103,4 +128,4 @@ function App() {
   </Router>
 }
 
-export default App;
+export default withTranslation()(App);

@@ -12,7 +12,6 @@ import remarkGfm from 'remark-gfm'
 function PreparationPage(props: any) {
 
   const section = props.section
-  console.log(section['content'])
   if (!section) return null
   const chapters = section['chapters'].map(function (chapter: any) {
     return <Chapter key={chapter['title']} data={chapter}></Chapter>
