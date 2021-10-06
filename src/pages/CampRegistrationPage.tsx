@@ -10,7 +10,7 @@ import remarkGfm from 'remark-gfm'
 import { LinkComponent} from '../markdown/MarkdownComponents';
 
 
-function PreparationPage(props: any) {
+function CampRegistrationPage(props: any) {
 
   const section = props.section
   if (!section) return null
@@ -20,11 +20,12 @@ function PreparationPage(props: any) {
 
   return <MainContainer>
     <Back />
-    <h1><FontAwesomeIcon icon="scroll" /> {section['title']}</h1>
-    
-    <ReactMarkdown remarkPlugins={[remarkGfm]}
-      components={LinkComponent}>{section.content}</ReactMarkdown>
+    <h1><FontAwesomeIcon icon="lock" /> {section['title']}</h1>
+    <ReactMarkdown 
+      plugins={[remarkGfm]}
+      components={LinkComponent}
+    >{section.content}</ReactMarkdown>
     {chapters}
   </MainContainer>
 }
-export default withRouter(PreparationPage)
+export default withRouter(CampRegistrationPage)

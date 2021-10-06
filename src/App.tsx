@@ -11,6 +11,7 @@ import { faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faA
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PreparationPage from './pages/PreparationPage';
+import CampRegistrationPage from './pages/CampRegistrationPage';
 import HomePage from './pages/HomePage ';
 import CalculationPage from './pages/CalculationPage';
 import client from "./client";
@@ -105,6 +106,11 @@ function App() {
   library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faArrowLeft, faCalendar)
 
   if (!sections) return null
+  //@ts-ignore
+  const sectionsByKey = sections.reduce(function (map, section) {
+    map[section.key] = section
+    return map
+  }, {})
 
   return <Router>
     <div className="App">
@@ -113,7 +119,10 @@ function App() {
 
       <Switch>
         <Route path="/hering/vorbereitung">
-          <PreparationPage section={sections[0]} />
+          <PreparationPage section={sectionsByKey.vorbereitung} />
+        </Route>
+        <Route path="/hering/lageranmeldung">
+          <CampRegistrationPage section={sectionsByKey.lageranmeldung} />
         </Route>
         <Route path="/hering/calculation">
           <CalculationPage />
