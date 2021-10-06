@@ -1,7 +1,31 @@
 {
   "translation": {
-    "preparation_page": {
+    "homePage": {
+      "title": "Hallo Hering"
+    },
+    "preparationPage": {
       "title": "Vorbereitung"
+    },
+    "campRegistrationPage": {
+      "title": "Lageranmeldung"
+    },
+    "calendarPage": {
+      "title": "Kalender",
+      "startDate": "Startdatum",
+      "responsible": "Verantwortlich",
+      "responsibleOptions": {
+        "all": "Alle",
+        "ll": "Lagerleitung",
+        "al": "Abteilungsleitung",
+        "c": "Coach"
+      },
+      "generate": "Generieren",
+      "table": {
+        "what": "Was",
+        "who": "Wer",
+        "when": "Wann",
+        "target": "An wen"
+      }
     }
   }
 }

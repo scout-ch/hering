@@ -5,19 +5,21 @@ import { MainContainer } from '../App'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Back } from '../App'
 import { withRouter } from 'react-router';
-import TodoCalculation from '../components/TodoCalculation';
+import CalendarForm from '../components/CalendarForm';
+import { useTranslation } from 'react-i18next'
 
-function CalculationPage() {
+function CalendarPage() {
+  const { t } = useTranslation()
 
   return <MainContainer>
     <Helmet>
-      <title>Datumsliste</title>
+      <title>{t('calendarPage.title')}</title>
     </Helmet>
     <Back />
-    <h1><FontAwesomeIcon icon="hands-helping" /> Datumsliste</h1>
+    <h1><FontAwesomeIcon icon="calendar" /> {t('calendarPage.title')}</h1>
 
-    <TodoCalculation />
+    <CalendarForm />
 
   </MainContainer>
 }
-export default withRouter(CalculationPage)
+export default withRouter(CalendarPage)

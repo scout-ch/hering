@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PreparationPage from './pages/PreparationPage';
 import CampRegistrationPage from './pages/CampRegistrationPage';
 import HomePage from './pages/HomePage ';
-import CalculationPage from './pages/CalculationPage';
+import CalendarPage from './pages/CalendarPage';
 import client from "./client";
 import i18n from './i18n';
 import { withTranslation } from 'react-i18next';
@@ -79,11 +79,11 @@ export const Navigation = () => {
   return <Nav role="nav">
     <ul>
       <li><Link to="/hering">HERING</Link></li>
-      <li><Link to="/hering/vorbereitung"><FontAwesomeIcon icon="scroll" /> {t('preparation_page.title')}</Link></li>
-      <li><Link to="/hering/lageranmeldung"><FontAwesomeIcon icon="lock" />  Lageranmeldung</Link></li>
+      <li><Link to="/hering/vorbereitung"><FontAwesomeIcon icon="scroll" /> {t('preparationPage.title')}</Link></li>
+      <li><Link to="/hering/lageranmeldung"><FontAwesomeIcon icon="lock" />  {t('campRegistrationPage.title')}</Link></li>
       <li><Link to="/hering/dienstleistungen"><FontAwesomeIcon icon="tools" /> Dienstleistungen</Link></li>
       <li><Link to="/hering/lagerdossier"><FontAwesomeIcon icon="users" /> Lagerdossier</Link></li>
-      <li><Link to="/hering/calculation"><FontAwesomeIcon icon="calendar" /> Datumsliste</Link></li>
+      <li><Link to="/hering/calendar"><FontAwesomeIcon icon="calendar" /> {t('calendarPage.title')}</Link></li>
 
       <li>
         <Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>DE</Button>
@@ -124,8 +124,8 @@ function App() {
         <Route path="/hering/lageranmeldung">
           <CampRegistrationPage section={sectionsByKey.lageranmeldung} />
         </Route>
-        <Route path="/hering/calculation">
-          <CalculationPage />
+        <Route path="/hering/calendar">
+          <CalendarPage />
         </Route>
         <Route exact path="/hering/">
           <HomePage></HomePage>
