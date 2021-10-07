@@ -7,8 +7,9 @@ export type Role = {
     rolle: string
 }
 
-type ChapterT = {
+export type ChapterT = {
     key: string
+    sorting: number
     title: string
     content: string
     responsible: Array<Role>

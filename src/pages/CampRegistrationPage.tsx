@@ -1,20 +1,24 @@
 // import styled from '@emotion/styled'
 import React from 'react'
-import { MainContainer } from '../App'
+import { MainContainer, Section } from '../App'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Back } from '../App'
-import { withRouter } from 'react-router';
-import Chapter from '../components/Chapter'
+import Chapter, { ChapterT } from '../components/Chapter'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent} from '../markdown/MarkdownComponents';
 
+type Props = {
+  section: Section
+}
 
-function CampRegistrationPage(props: any) {
+function CampRegistrationPage(props: Props) {
 
   const section = props.section
   if (!section) return null
-  const chapters = section['chapters'].map(function (chapter: any) {
+  const chapters = section['chapters'].sort(function (a: ChapterT, b: ChapterT) {
+    return a.sorting - b.sorting;
+  }).map(function (chapter: any) {
     return <Chapter key={chapter['title']} data={chapter}></Chapter>
   })
 
@@ -28,4 +32,4 @@ function CampRegistrationPage(props: any) {
     {chapters}
   </MainContainer>
 }
-export default withRouter(CampRegistrationPage)
+export default CampRegistrationPage

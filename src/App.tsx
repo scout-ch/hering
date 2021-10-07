@@ -18,6 +18,7 @@ import client from "./client";
 import i18n from './i18n';
 import { withTranslation } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
+import { ChapterT } from './components/Chapter';
 
 
 const Nav = styled.nav`
@@ -91,6 +92,12 @@ export const Navigation = () => {
       </li>
     </ul>
   </Nav>
+}
+export type Section = {
+  chapters: Array<ChapterT>
+  sorting: number
+  title: string
+  content: string
 }
 
 function App() {
