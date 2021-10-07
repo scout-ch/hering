@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import FooterImage from './images/footer.svg'
+import { ReactComponent as ReactLogo } from './images/footer.svg'
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,27 +21,6 @@ import { useTranslation } from 'react-i18next';
 import { ChapterT } from './components/Chapter';
 
 
-const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--color-primary);
-
-  &>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  a, button {
-    color: white;
-    opacity: 1;
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    min-width: 180px;
-  }
-`
 const Button = styled.button`
   border: none;
   background: none;
@@ -54,9 +33,26 @@ const Button = styled.button`
 `
 
 const Footer = styled.footer`
-  background-image: url(${FooterImage});
-  background-repeat: repeat-x;
-  height: 236px;
+  padding-top: 100px;
+
+  svg {
+    width: 100%;
+    height: auto;
+    fill: var(--color-primary);
+  }
+  nav {
+    display: flex;
+    padding-bottom: 20px;
+
+    button {
+      padding: 0.9em 0.8em;
+    }
+
+    button.active {
+      background: white;
+      color: var(--color-primary-ligt);
+    }
+  }
 `
 
 export const MainContainer = styled.main`
@@ -71,13 +67,9 @@ export const Back = () => {
 }
 
 export const Navigation = () => {
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-  }
   const { t } = useTranslation()
-  const lang = i18n.language
 
-  return <Nav role="nav">
+  return <nav>
     <ul>
       <li><Link to="/hering">HERING</Link></li>
       <li><Link to="/hering/vorbereitung"><FontAwesomeIcon icon="scroll" /> {t('preparationPage.title')}</Link></li>
@@ -85,13 +77,8 @@ export const Navigation = () => {
       <li><Link to="/hering/dienstleistungen"><FontAwesomeIcon icon="tools" /> Dienstleistungen</Link></li>
       <li><Link to="/hering/lagerdossier"><FontAwesomeIcon icon="users" /> Lagerdossier</Link></li>
       <li><Link to="/hering/calendar"><FontAwesomeIcon icon="calendar" /> {t('calendarPage.title')}</Link></li>
-
-      <li>
-        <Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>DE</Button>
-        <Button className={lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr')}>FR</Button>
-      </li>
     </ul>
-  </Nav>
+  </nav>
 }
 export type Section = {
   chapters: Array<ChapterT>
@@ -101,6 +88,9 @@ export type Section = {
 }
 
 function App() {
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  }
   const [sections, setSections] = React.useState(null);
   const lang = i18n.language
 
@@ -139,7 +129,17 @@ function App() {
         </Route>
       </Switch>
     </div>
-    <Footer></Footer>
+    <Footer>
+      <ReactLogo></ReactLogo>
+      <nav>
+        <ul>
+          <li>
+            <Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>Deutsch</Button>
+            <Button className={lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr')}>Français</Button>
+          </li>
+        </ul>
+      </nav>
+    </Footer>
 
   </Router>
 }

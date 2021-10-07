@@ -1,7 +1,7 @@
 @import './fonts/fonts.css';
 
 @color-primary: #521d3a;
-@color-primary-light: #632949;
+@color-primary-light: #8c3c4f;
 
 :root {
   --color-primary: @color-primary;
@@ -9,12 +9,30 @@
 
 html,
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: @color-primary-light !important;
-  color: white;
+  font-family: "Source Sans Pro", sans-serif;
   padding: 0;
   margin: 0;
   height: 100%;
+}
+
+.App {
+  display: flex;
+}
+
+h1, h2, h3 {
+  color: @color-primary-light
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 70px;
+  padding-bottom: 0.1em;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 300;
+  padding-bottom: 0.4em;
 }
 
 #root {
@@ -32,20 +50,22 @@ body {
 }
 
 a {
-  color: white;
-  text-decoration: underline;
-  font-weight: 700;
+  font-weight: 400;
+  color: @color-primary-light;
+  text-decoration: none;
   opacity: 1;
 }
 a:focus,
 a:hover,
 a:active,
 a.active {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 p {
-  margin-top: 0;
+  font-weight: 300;
+  padding-bottom: 1em;
+  font-size: 18px;
 }
 
 p,
@@ -56,6 +76,19 @@ span,
 div {
   line-height: 1.27;
   font-size: 15px;
+}
+@media (max-width: 659px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .App, #root {
+    display: block;
+  }
 }
 @media (min-width: 660px) {
   p,
@@ -113,10 +146,6 @@ li {
   }
 }
 
-.App {
-  display: flex;
-}
-
 table {
   td {
     border-top: 1px solid white;
@@ -138,8 +167,30 @@ button {
 }
 
 .targets {
-  border: 1px solid white;
+  border: 2px solid @color-primary;
   float: right;
   margin: 15px;
   padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+
+  &>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: white;
+    opacity: 1;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    min-width: 180px;
+  }
 }
