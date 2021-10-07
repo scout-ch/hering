@@ -9,7 +9,7 @@ type Props = {
   t: any
 }
 type Roles = {
-  label: string
+  rolle: string
 }
 
 type ApiDates = {
@@ -20,13 +20,13 @@ type ApiDates = {
   targets: Array<Roles>
 }
 
-type State = {
+type MyState = {
   startDate: string
   responsible: string
   dateList: Array<ApiDates>,
   todos: Array<TodoT>
 }
-class CalendarForm extends React.Component<Props, State> {
+class CalendarForm extends React.Component<Props, MyState> {
   constructor(props: Props) {
     super(props);
     this.state = {
@@ -57,7 +57,7 @@ class CalendarForm extends React.Component<Props, State> {
     })
 
     const filteredDates = this.state.dateList.filter(function (todo) {
-      return responsible === 'all' ? true : todo.responsible.map((resp) => resp.label).includes(responsible)
+      return responsible === 'all' ? true : todo.responsible.map((resp) => resp.rolle).includes(responsible)
     });
 
     const todos = filteredDates.map(function (todo) {

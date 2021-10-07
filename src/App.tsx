@@ -98,7 +98,7 @@ function App() {
   const lang = i18n.language
 
   React.useEffect(() => {
-    client.get('/sections?_locale=' + lang).then((response: { data: any; }) => {
+    client.get('/sections?_sort=sorting:ASC&_locale=' + lang).then((response: { data: any; }) => {
       setSections(response.data)
     })
   }, [lang])

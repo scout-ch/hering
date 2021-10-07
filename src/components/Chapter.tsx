@@ -3,15 +3,15 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent } from '../markdown/MarkdownComponents'
 
-export type Responsible = {
-    label: string
+export type Role = {
+    rolle: string
 }
 
 type ChapterT = {
     key: string
     title: string
     content: string
-    responsible: Array<Responsible>
+    responsible: Array<Role>
 }
 
 type ChapterProps = {
@@ -23,7 +23,7 @@ function Chapter(props: ChapterProps) {
     if (!data) {
         return null
     }
-    const targets = data.responsible.map((target) => target['label'].toUpperCase()).join(', ')
+    const targets = data.responsible.map((target) => target['rolle'].toUpperCase()).join(', ')
 
     return <div id={data.key}>
         <h2>{data.title}</h2>

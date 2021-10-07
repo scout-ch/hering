@@ -1,11 +1,11 @@
 import React from 'react'
-import { Responsible } from './Chapter';
+import { Role } from './Chapter';
 
 export type TodoT = {
   deadline: Date
   title: string
-  targets: Array<Responsible>
-  responsible: Array<Responsible>
+  targets: Array<Role>
+  responsible: Array<Role>
 }
 
 function Todo(props: TodoT) {
@@ -14,8 +14,8 @@ function Todo(props: TodoT) {
 
   // @ts-ignore
   const deadline = props.deadline.toLocaleDateString('de-DE', options)
-  const targets = props.targets.map((target) => target['label'].toUpperCase()).join(', ')
-  const responsible = props.responsible.map((responsible) => responsible['label'].toUpperCase()).join(', ')
+  const targets = props.targets.map((target) => target['rolle'].toUpperCase()).join(', ')
+  const responsible = props.responsible.map((responsible) => responsible['rolle'].toUpperCase()).join(', ')
   return <tr>
     <td>[ ]</td>
     <td>{deadline}</td>
