@@ -7,7 +7,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import { faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faArrowLeft, faCalendar } from '@fortawesome/free-solid-svg-icons'
+import { faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faArrowLeft, faCalendar, faCheck, faBook, faBookReader } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PreparationPage from './pages/PreparationPage';
@@ -18,7 +18,11 @@ import client from "./client";
 import i18n from './i18n';
 import { withTranslation } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
-import { ChapterT } from './components/Chapter';
+import ServicePage from './pages/ServicePage';
+import CampDossierPage from './pages/CampDossierPage';
+import CampClosingPage from './pages/CampClosingPage';
+import CampApprovalPage from './pages/CampApprovalPage';
+import OfferClosingPage from './pages/OfferClosingPage';
 
 
 const Button = styled.button`
@@ -74,17 +78,14 @@ export const Navigation = () => {
       <li><Link to="/hering">HERING</Link></li>
       <li><Link to="/hering/vorbereitung"><FontAwesomeIcon icon="scroll" /> {t('preparationPage.title')}</Link></li>
       <li><Link to="/hering/lageranmeldung"><FontAwesomeIcon icon="lock" />  {t('campRegistrationPage.title')}</Link></li>
-      <li><Link to="/hering/dienstleistungen"><FontAwesomeIcon icon="tools" /> Dienstleistungen</Link></li>
-      <li><Link to="/hering/lagerdossier"><FontAwesomeIcon icon="users" /> Lagerdossier</Link></li>
+      <li><Link to="/hering/dienstleistungen"><FontAwesomeIcon icon="tools" /> {t('servicePage.title')}</Link></li>
+      <li><Link to="/hering/lagerdossier"><FontAwesomeIcon icon="users" />  {t('campDossierPage.title')}</Link></li>
+      <li><Link to="/hering/lagerbewilligung"><FontAwesomeIcon icon="check" />  {t('campApprovalPage.title')}</Link></li>
+      <li><Link to="/hering/lagerabschluss"><FontAwesomeIcon icon="book" />  {t('campClosingPage.title')}</Link></li>
+      <li><Link to="/hering/abschluss"><FontAwesomeIcon icon="book-reader" />  {t('offerClosingPage.title')}</Link></li>
       <li><Link to="/hering/calendar"><FontAwesomeIcon icon="calendar" /> {t('calendarPage.title')}</Link></li>
     </ul>
   </nav>
-}
-export type Section = {
-  chapters: Array<ChapterT>
-  sorting: number
-  title: string
-  content: string
 }
 
 function App() {
@@ -100,7 +101,7 @@ function App() {
     })
   }, [lang])
 
-  library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faArrowLeft, faCalendar)
+  library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faArrowLeft, faCalendar, faCheck, faBook, faBookReader)
 
   if (!sections) return null
   //@ts-ignore
@@ -120,6 +121,21 @@ function App() {
         </Route>
         <Route path="/hering/lageranmeldung">
           <CampRegistrationPage section={sectionsByKey.lageranmeldung} />
+        </Route>
+        <Route path="/hering/dienstleistungen">
+          <ServicePage section={sectionsByKey.dienstleistungen} />
+        </Route>
+        <Route path="/hering/lagerdossier">
+          <CampDossierPage section={sectionsByKey.lagerdossier} />
+        </Route>
+        <Route path="/hering/lagerbewilligung">
+          <CampApprovalPage section={sectionsByKey.lagerbewilligung} />
+        </Route>
+        <Route path="/hering/lagerabschluss">
+          <CampClosingPage section={sectionsByKey.lagerabschluss} />
+        </Route>
+        <Route path="/hering/abschluss">
+          <OfferClosingPage section={sectionsByKey.abschluss} />
         </Route>
         <Route path="/hering/calendar">
           <CalendarPage />

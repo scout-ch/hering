@@ -9,6 +9,21 @@
     "campRegistrationPage": {
       "title": "Lageranmeldung"
     },
+    "servicePage": {
+      "title": "Dienstleistungen"
+    },
+    "campDossierPage": {
+      "title": "Lagerdossier"
+    },
+    "campApprovalPage": {
+      "title": "Lagerbewilligung"
+    },
+    "campClosingPage": {
+      "title": "Lagerabschluss"
+    },
+    "offerClosingPage": {
+      "title": "Abschluss J+S"
+    },
     "calendarPage": {
       "title": "Kalender",
       "startDate": "Startdatum",

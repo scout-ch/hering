@@ -7,10 +7,10 @@ type Props = {
   section: SectionT
 }
 
-function PreparationPage(props: Props) {
+function CampDossierPage(props: Props) {
   const section = props.section
   if (!section) return null
 
-  return <Section section={section} icon={<FontAwesomeIcon icon="scroll"/>} />
+  return <Section section={section} icon={<FontAwesomeIcon icon="users"/>} />
 }
-export default PreparationPage
+export default CampDossierPage
