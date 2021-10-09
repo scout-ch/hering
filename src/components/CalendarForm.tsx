@@ -26,6 +26,7 @@ type MyState = {
   dateList: Array<ApiDates>,
   todos: Array<TodoT>
 }
+
 class CalendarForm extends React.Component<Props, MyState> {
   constructor(props: Props) {
     super(props);
@@ -37,6 +38,12 @@ class CalendarForm extends React.Component<Props, MyState> {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentDidMount() {
+    client.get('/tasks?_locale=' + i18n.language).then((response) => {
+      this.setState({ dateList: response.data })
+    })
   }
 
   onChangeStartDate = (e: React.FormEvent<HTMLInputElement>): void => {
@@ -51,10 +58,6 @@ class CalendarForm extends React.Component<Props, MyState> {
     event.preventDefault();
     const startDate = new Date(this.state.startDate)
     const responsible = this.state.responsible
-
-    client.get('/tasks?_locale=' + i18n.language).then((response) => {
-      this.setState({ dateList: response.data })
-    })
 
     const filteredDates = this.state.dateList.filter(function (todo) {
       return responsible === 'all' ? true : todo.responsible.map((resp) => resp.rolle).includes(responsible)

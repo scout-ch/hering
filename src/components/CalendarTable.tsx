@@ -10,7 +10,7 @@ type Props = {
 
 function CalendarTable(props: Props) {
     const { t, todos } = props;
-    const bla = todos.map(function (todo) {
+    const todoList = todos.map(function (todo) {
       return <Todo deadline={todo.deadline} key={todo.title} title={todo.title} targets={todo.targets} responsible={todo.responsible}></Todo>
     })
     return (
@@ -26,7 +26,7 @@ function CalendarTable(props: Props) {
             </tr>
           </thead>
           <tbody>
-            {bla}
+            {todoList}
           </tbody>
         </table>
         <IcsDownload todos={todos}></IcsDownload>

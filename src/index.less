@@ -5,6 +5,7 @@
 
 :root {
   --color-primary: @color-primary;
+  --color-primary-light: @color-primary-light;
 }
 
 html,
@@ -156,14 +157,15 @@ table {
 
 button {
   font-size: 1em;
-  padding: .3em;
+  padding: .5em;
   text-align: center;
   min-width: 5em;
-  background-color: #DDD;
+  background-color: @color-primary-light;
+  color: white;
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  margin: 0.25em;
+  margin: 0.5em 0;
 }
 
 .targets {
@@ -177,6 +179,8 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: var(--color-primary);
+  margin-top: -5px;
+  padding: 0.5em;
 
   &>ul {
     list-style-type: none;

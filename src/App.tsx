@@ -54,7 +54,7 @@ const Footer = styled.footer`
 
     button.active {
       background: white;
-      color: var(--color-primary-ligt);
+      color: var(--color-primary-light);
     }
   }
 `

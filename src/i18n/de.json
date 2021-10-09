@@ -35,6 +35,7 @@
         "c": "Coach"
       },
       "generate": "Generieren",
+      "download": "Download als .ics",
       "table": {
         "what": "Was",
         "who": "Wer",
