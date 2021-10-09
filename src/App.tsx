@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { ReactComponent as ReactLogo } from './images/footer.svg'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link,
@@ -75,15 +75,15 @@ export const Navigation = () => {
 
   return <nav>
     <ul>
-      <li><Link to="/hering">HERING</Link></li>
-      <li><Link to="/hering/vorbereitung"><FontAwesomeIcon icon="scroll" /> {t('preparationPage.title')}</Link></li>
-      <li><Link to="/hering/lageranmeldung"><FontAwesomeIcon icon="lock" />  {t('campRegistrationPage.title')}</Link></li>
-      <li><Link to="/hering/dienstleistungen"><FontAwesomeIcon icon="tools" /> {t('servicePage.title')}</Link></li>
-      <li><Link to="/hering/lagerdossier"><FontAwesomeIcon icon="users" />  {t('campDossierPage.title')}</Link></li>
-      <li><Link to="/hering/lagerbewilligung"><FontAwesomeIcon icon="check" />  {t('campApprovalPage.title')}</Link></li>
-      <li><Link to="/hering/lagerabschluss"><FontAwesomeIcon icon="book" />  {t('campClosingPage.title')}</Link></li>
-      <li><Link to="/hering/abschluss"><FontAwesomeIcon icon="book-reader" />  {t('offerClosingPage.title')}</Link></li>
-      <li><Link to="/hering/calendar"><FontAwesomeIcon icon="calendar" /> {t('calendarPage.title')}</Link></li>
+      <li><Link to="/">HERING</Link></li>
+      <li><Link to="/vorbereitung"><FontAwesomeIcon icon="scroll" /> {t('preparationPage.title')}</Link></li>
+      <li><Link to="/lageranmeldung"><FontAwesomeIcon icon="lock" />  {t('campRegistrationPage.title')}</Link></li>
+      <li><Link to="/dienstleistungen"><FontAwesomeIcon icon="tools" /> {t('servicePage.title')}</Link></li>
+      <li><Link to="/lagerdossier"><FontAwesomeIcon icon="users" />  {t('campDossierPage.title')}</Link></li>
+      <li><Link to="/lagerbewilligung"><FontAwesomeIcon icon="check" />  {t('campApprovalPage.title')}</Link></li>
+      <li><Link to="/lagerabschluss"><FontAwesomeIcon icon="book" />  {t('campClosingPage.title')}</Link></li>
+      <li><Link to="/abschluss"><FontAwesomeIcon icon="book-reader" />  {t('offerClosingPage.title')}</Link></li>
+      <li><Link to="/calendar"><FontAwesomeIcon icon="calendar" /> {t('calendarPage.title')}</Link></li>
     </ul>
   </nav>
 }
@@ -110,37 +110,37 @@ function App() {
     return map
   }, {})
 
-  return <Router>
+  return <Router basename="/">
     <div className="App">
 
       <Navigation></Navigation>
 
       <Switch>
-        <Route path="/hering/vorbereitung">
+        <Route path="/vorbereitung">
           <PreparationPage section={sectionsByKey.vorbereitung} />
         </Route>
-        <Route path="/hering/lageranmeldung">
+        <Route path="/lageranmeldung">
           <CampRegistrationPage section={sectionsByKey.lageranmeldung} />
         </Route>
-        <Route path="/hering/dienstleistungen">
+        <Route path="/dienstleistungen">
           <ServicePage section={sectionsByKey.dienstleistungen} />
         </Route>
-        <Route path="/hering/lagerdossier">
+        <Route path="/lagerdossier">
           <CampDossierPage section={sectionsByKey.lagerdossier} />
         </Route>
-        <Route path="/hering/lagerbewilligung">
+        <Route path="/lagerbewilligung">
           <CampApprovalPage section={sectionsByKey.lagerbewilligung} />
         </Route>
-        <Route path="/hering/lagerabschluss">
+        <Route path="/lagerabschluss">
           <CampClosingPage section={sectionsByKey.lagerabschluss} />
         </Route>
-        <Route path="/hering/abschluss">
+        <Route path="/abschluss">
           <OfferClosingPage section={sectionsByKey.abschluss} />
         </Route>
-        <Route path="/hering/calendar">
+        <Route path="/calendar">
           <CalendarPage />
         </Route>
-        <Route exact path="/hering/">
+        <Route exact path="/">
           <HomePage></HomePage>
         </Route>
       </Switch>
