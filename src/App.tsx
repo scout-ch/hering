@@ -40,6 +40,7 @@ const Footer = styled.footer`
   padding-top: 100px;
 
   svg {
+    display: block;
     width: 100%;
     height: auto;
     fill: var(--color-primary);
