@@ -1,17 +1,19 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { LinkComponent } from '../markdown/MarkdownComponents'
+import { LinkComponent } from '../helper/MarkdownComponents'
+import { SectionT } from './Section'
 
 export type Role = {
     rolle: string
 }
 
 export type ChapterT = {
-    key: string
     sorting: number
     title: string
     content: string
+    slug: string
+    section: SectionT
     responsible: Array<Role>
 }
 
@@ -25,8 +27,7 @@ function Chapter(props: ChapterProps) {
         return null
     }
     const targets = data.responsible.map((target) => target['rolle'].toUpperCase()).join(', ')
-
-    return <div id={data.key}>
+    return <div id={data.slug}>
         <h2>{data.title}</h2>
         <div className="targets">{targets}</div>
         <ReactMarkdown remarkPlugins={[remarkGfm]}

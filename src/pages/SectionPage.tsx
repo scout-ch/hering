@@ -2,15 +2,25 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Section, { SectionT } from '../components/Section'
+import { useParams } from 'react-router'
 
-type Props = {
-  section: SectionT
+type Params = {
+  slug: string
 }
 
-function PreparationPage(props: Props) {
-  const section = props.section
+type SectionsByKey = {
+  [key: string]: SectionT
+}
+
+type Props = {
+  sections: SectionsByKey
+}
+
+function SectionPage(props: Props) {
+  const { slug } = useParams<Params>()
+  const section = props.sections[slug]
   if (!section) return null
 
   return <Section section={section} icon={<FontAwesomeIcon icon="scroll"/>} />
 }
-export default PreparationPage
+export default SectionPage

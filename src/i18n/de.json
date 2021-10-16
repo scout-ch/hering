@@ -3,27 +3,6 @@
     "homePage": {
       "title": "Hallo Hering"
     },
-    "preparationPage": {
-      "title": "Vorbereitung"
-    },
-    "campRegistrationPage": {
-      "title": "Lageranmeldung"
-    },
-    "servicePage": {
-      "title": "Dienstleistungen"
-    },
-    "campDossierPage": {
-      "title": "Lagerdossier"
-    },
-    "campApprovalPage": {
-      "title": "Lagerbewilligung"
-    },
-    "campClosingPage": {
-      "title": "Lagerabschluss"
-    },
-    "offerClosingPage": {
-      "title": "Abschluss J+S"
-    },
     "calendarPage": {
       "title": "Kalender",
       "startDate": "Startdatum",
@@ -40,7 +19,8 @@
         "what": "Was",
         "who": "Wer",
         "when": "Wann",
-        "target": "An wen"
+        "target": "An wen",
+        "chapters": "Links"
       }
     }
   }

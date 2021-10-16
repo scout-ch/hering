@@ -25,6 +25,10 @@ type Props = {
   todos: Array<TodoT>
 }
 
+function buildDescription(todo: TodoT): string {
+  return todo.title + ' ' + todo.targets
+}
+
 function generateIcs(todos: Array<TodoT>) {
   const ics = require('ics')
 
@@ -34,6 +38,8 @@ function generateIcs(todos: Array<TodoT>) {
       start: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
       end: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
       title: todo.title,
+      describtion: buildDescription(todo),
+      url: '',
       status: 'CONFIRMED',
       busyStatus: 'FREE'
     }

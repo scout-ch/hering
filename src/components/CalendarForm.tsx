@@ -3,6 +3,7 @@ import { withTranslation } from 'react-i18next';
 import client from '../client'
 import i18n from '../i18n';
 import CalendarTable from './CalendarTable';
+import { ChapterT } from './Chapter';
 import { TodoT } from './Todo';
 
 type Props = {
@@ -18,6 +19,7 @@ type ApiDates = {
   days: number
   responsible: Array<Roles>
   targets: Array<Roles>
+  chapters: Array<ChapterT>
 }
 
 type MyState = {
@@ -58,14 +60,15 @@ class CalendarForm extends React.Component<Props, MyState> {
     event.preventDefault();
     const startDate = new Date(this.state.startDate)
     const responsible = this.state.responsible
-
+    
     const filteredDates = this.state.dateList.filter(function (todo) {
-      return responsible === 'all' ? true : todo.responsible.map((resp) => resp.rolle).includes(responsible)
+      const rollen = todo.responsible.map((resp) => resp.rolle)
+      return responsible === 'all' ? true : rollen.includes(responsible)
     });
 
     const todos = filteredDates.map(function (todo) {
       let deadline = new Date(startDate.setTime(startDate.getTime() + todo.days * 86400000))
-      return {'deadline': deadline, 'key': todo.title, title: todo.title, 'targets': todo.targets, 'responsible': todo.responsible}
+      return {'deadline': deadline, 'key': todo.title, title: todo.title, 'targets': todo.targets, 'responsible': todo.responsible, chapters: todo.chapters}
       // return <Todo deadline={deadline} key={todo.title} title={todo.title} targets={todo.targets} responsible={todo.responsible}></Todo>
     })
     this.setState({ todos: todos })
@@ -85,9 +88,9 @@ class CalendarForm extends React.Component<Props, MyState> {
             {t('calendarPage.responsible')}
             <select name="responsible" value={this.state.responsible} onChange={this.onChangeResponsible}>
               <option value="all">{t('calendarPage.responsibleOptions.all')}</option>
-              <option value="ll">{t('calendarPage.responsibleOptions.ll')}</option>
-              <option value="c">{t('calendarPage.responsibleOptions.al')}</option>
-              <option value="al">{t('calendarPage.responsibleOptions.c')}</option>
+              <option value="LL">{t('calendarPage.responsibleOptions.ll')}</option>
+              <option value="AL">{t('calendarPage.responsibleOptions.al')}</option>
+              <option value="C">{t('calendarPage.responsibleOptions.c')}</option>
             </select>
           </label>
           <br />

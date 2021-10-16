@@ -6,7 +6,7 @@ import fr from './fr.json'
 const resources = {
   de: de,
   fr: fr
-};
+} as const;
 
 i18n
   .use(initReactI18next)

@@ -2,7 +2,7 @@ import React from 'react'
 import { MainContainer } from '../App'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { LinkComponent } from '../markdown/MarkdownComponents'
+import { LinkComponent } from '../helper/MarkdownComponents'
 import Chapter, { ChapterT } from './Chapter'
 
 export type SectionT = {
@@ -10,6 +10,8 @@ export type SectionT = {
     sorting: number
     title: string
     content: string
+    slug: string
+    menu_name: string
   }
 
 type Props = {
