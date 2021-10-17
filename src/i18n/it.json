@@ -1,0 +1,27 @@
+{
+  "translation": {
+    "homePage": {
+      "title": "Ciao Hering"
+    },
+    "calendarPage": {
+      "title": "Calendario",
+      "startDate": "L'inizio",
+      "responsible": "Responsabile",
+      "responsibleOptions": {
+        "all": "Tutti",
+        "ll": "Capo campo",
+        "al": "Capo Sezione",
+        "c": "Coach"
+      },
+      "generate": "Generieren",
+      "download": "Download als .ics",
+      "table": {
+        "what": "Was",
+        "who": "Wer",
+        "when": "Wann",
+        "target": "An wen",
+        "chapters": "Links"
+      }
+    }
+  }
+}

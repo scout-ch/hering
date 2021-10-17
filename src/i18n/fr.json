@@ -1,25 +1,26 @@
 {
   "translation": {
     "homePage": {
-      "title": "Hallo Hering"
+      "title": "Salut Hering"
     },
     "calendarPage": {
-      "title": "Kalender",
-      "startDate": "Startdatum",
-      "responsible": "Verantwortlich",
+      "title": "Calendrier",
+      "startDate": "Premier jour du camp",
+      "responsible": "Responsable",
       "responsibleOptions": {
-        "all": "Alle",
-        "ll": "Lagerleitung",
-        "al": "Abteilungsleitung",
+        "all": "Tous",
+        "ll": "Responsable de camp",
+        "al": "Responsable de groupe",
         "c": "Coach"
       },
-      "generate": "Generieren",
+      "generate": "Générer",
+      "download": "Télécharger .ics",
       "table": {
-        "what": "Was",
-        "who": "Wer",
-        "when": "Wann",
-        "target": "An wen",
-        "chapters": "Links"
+        "what": "Quoi",
+        "who": "Qui",
+        "when": "Quand",
+        "target": "À qui",
+        "chapters": "Voir"
       }
     }
   }
