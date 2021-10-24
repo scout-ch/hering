@@ -1,25 +1,44 @@
-// import styled from '@emotion/styled'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../App'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Back } from '../App'
-import { withRouter } from 'react-router';
+import client from "./../client";
+import i18n from './../i18n';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { LinkComponent } from '../helper/MarkdownComponents';
 import CalendarForm from '../components/CalendarForm';
-import { useTranslation } from 'react-i18next'
+import { withTranslation } from 'react-i18next'
 
-function CalendarPage() {
-  const { t } = useTranslation()
+type CalendarPageT = {
+  title: string
+  content: string
+}
+
+function CalendarPage() { 
+   const lang = i18n.language
+  const [calendarPage, setCalendarPage] = React.useState<CalendarPageT>({title: '', content: ''});
+
+  React.useEffect(() => {
+    client.get('/calendar-page?_locale=' + lang).then((response: { data: any }) => {
+      setCalendarPage(response.data)
+    })
+  }, [lang])
+
+  if (!calendarPage) return null
 
   return <MainContainer>
     <Helmet>
-      <title>{t('calendarPage.title')}</title>
+      <title>{calendarPage.title}</title>
     </Helmet>
-    <Back />
-    <h1><FontAwesomeIcon icon="calendar" /> {t('calendarPage.title')}</h1>
+    <h1><FontAwesomeIcon icon="calendar" /> {calendarPage.title}</h1>
+    <ReactMarkdown
+            plugins={[remarkGfm]}
+            components={LinkComponent}
+        >{calendarPage.content}</ReactMarkdown>
 
     <CalendarForm />
 
   </MainContainer>
 }
-export default withRouter(CalendarPage)
+export default withTranslation()(CalendarPage)

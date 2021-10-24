@@ -98,7 +98,7 @@ function App() {
           <CalendarPage />
         </Route>
         <Route path="/:slug" children={<SectionPage sections={sectionsByKey} />} />
-        <Route exact path="/">
+        <Route exact path="/hering">
           <HomePage></HomePage>
         </Route>
       </Switch>
