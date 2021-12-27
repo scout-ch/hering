@@ -10,7 +10,10 @@ type Props = {
 function Navigation(props: Props) {
     const sections = props.sections
     const sectionList =  sections.map(function(section: SectionT){
-        return <li key={section.slug}><Link to={section.slug}>{section.menu_name}</Link></li>
+        return <li className="with-icon" key={section.slug}>
+            <img src={section.icon ? section.icon.url : ''} width="25" />
+            <Link to={section.slug}>{section.menu_name}</Link>
+            </li>
     })
     return <nav>
         <ul>

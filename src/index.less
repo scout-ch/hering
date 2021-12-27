@@ -1,4 +1,6 @@
 @import './fonts/fonts.css';
+@import './styles/section.less';
+@import './styles/chapter.less';
 
 @color-primary: #521d3a;
 @color-primary-light: #8c3c4f;
@@ -195,5 +197,13 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
     min-width: 180px;
+  }
+
+  .with-icon {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 25px;
+    }
   }
 }

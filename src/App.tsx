@@ -7,7 +7,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import { faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faArrowLeft, faCalendar, faCheck, faBook, faBookReader, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import HomePage from './pages/HomePage ';
@@ -70,18 +70,22 @@ function App() {
     i18n.changeLanguage(lng);
   }
   const [sections, setSections] = React.useState(null);
+  const [links, setLinks] = React.useState(null);
   const lang = i18n.language
 
   React.useEffect(() => {
-    client.get('/sections?_sort=sorting:ASC&_locale=' + lang).then((response: { data: any; }) => {
-      setSections(response.data)
+    const sectionsPromise = client.get('/sections?_sort=sorting:ASC&_locale=' + lang)
+    const linksPromise = client.get('/links?_locale=' + lang)
+
+    Promise.all([sectionsPromise, linksPromise]).then((values) => {
+      setSections(values[0].data)
+      setLinks(values[1].data)
     })
   }, [lang])
 
-  library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping,
-    faArrowLeft, faCalendar, faCheck, faBook, faBookReader, faExclamationTriangle)
+  library.add(faCalendar, faExclamationTriangle)
 
-  if (!sections) return null
+  if (!sections || !links) return null
   //@ts-ignore
   const sectionsByKey = sections.reduce(function (map, section: SectionT) {
     map[section.slug] = section
@@ -97,8 +101,11 @@ function App() {
         <Route path="/calendar" >
           <CalendarPage />
         </Route>
-        <Route path="/:slug" children={<SectionPage sections={sectionsByKey} />} />
-        <Route exact path="/hering">
+        <Route path="/:slug" children={<SectionPage sections={sectionsByKey} links={links} />} />
+        <Route exact path="/">
+          <HomePage></HomePage>
+        </Route>
+        <Route exact path="/hering/">
           <HomePage></HomePage>
         </Route>
       </Switch>

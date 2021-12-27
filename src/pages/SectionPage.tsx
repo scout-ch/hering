@@ -3,9 +3,17 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Section, { SectionT } from '../components/Section'
 import { useParams } from 'react-router'
+import { ChapterT } from '../components/Chapter'
 
 type Params = {
   slug: string
+}
+
+export type LinkT = {
+  title: string
+  Link: string | null
+  key: string
+  chapter: ChapterT | null
 }
 
 type SectionsByKey = {
@@ -14,6 +22,7 @@ type SectionsByKey = {
 
 type Props = {
   sections: SectionsByKey
+  links: LinkT[]
 }
 
 function SectionPage(props: Props) {
@@ -21,6 +30,6 @@ function SectionPage(props: Props) {
   const section = props.sections[slug]
   if (!section) return null
 
-  return <Section section={section} icon={<FontAwesomeIcon icon="scroll"/>} />
+  return <Section section={section} links={props.links} />
 }
 export default SectionPage

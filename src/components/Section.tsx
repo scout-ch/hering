@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent } from '../helper/MarkdownComponents'
 import Chapter, { ChapterT } from './Chapter'
+import { LinkT } from '../pages/SectionPage'
 
 export type SectionT = {
     chapters: Array<ChapterT>
@@ -11,12 +12,18 @@ export type SectionT = {
     title: string
     content: string
     slug: string
+    icon: IconT
     menu_name: string
   }
 
+export type IconT = {
+    url: string
+    mime: string
+}
+
 type Props = {
     section: SectionT
-    icon: JSX.Element
+    links: LinkT[]
 }
 
 function Section(props: Props) {
@@ -27,7 +34,10 @@ function Section(props: Props) {
     })
 
     return <MainContainer>
-        <h1>{props.icon} {props.section['title']}</h1>
+        <div className="section--title">
+            <h1>{props.section['title']}</h1>
+            <img src={props.section.icon ? props.section.icon.url : ''} />
+        </div>
         <ReactMarkdown
             plugins={[remarkGfm]}
             components={LinkComponent}
