@@ -11,7 +11,7 @@ function Navigation(props: Props) {
     const sections = props.sections
     const sectionList =  sections.map(function(section: SectionT){
         return <li className="with-icon" key={section.slug}>
-            <img src={section.icon ? section.icon.url : ''} width="25" />
+            <img src={section.icon ? section.icon.url : ''} width="25"  alt="icon" />
             <Link to={section.slug}>{section.menu_name}</Link>
             </li>
     })

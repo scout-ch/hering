@@ -36,7 +36,7 @@ function Section(props: Props) {
     return <MainContainer>
         <div className="section--title">
             <h1>{props.section['title']}</h1>
-            <img src={props.section.icon ? props.section.icon.url : ''} />
+            <img src={props.section.icon ? props.section.icon.url : ''} alt="icon" />
         </div>
         <ReactMarkdown
             plugins={[remarkGfm]}

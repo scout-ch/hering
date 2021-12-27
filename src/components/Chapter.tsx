@@ -33,7 +33,7 @@ function Chapter(props: ChapterProps) {
 
         <div className="chapter--title">
             <h2>{data.title}</h2>
-            <img src={data.icon ? data.icon.url : ''} />
+            <img src={data.icon ? data.icon.url : ''} alt="icon"/>
         </div>
         <div className="targets">{targets}</div>
         <ReactMarkdown remarkPlugins={[remarkGfm]}

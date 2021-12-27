@@ -1,6 +1,5 @@
 // import styled from '@emotion/styled'
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Section, { SectionT } from '../components/Section'
 import { useParams } from 'react-router'
 import { ChapterT } from '../components/Chapter'
