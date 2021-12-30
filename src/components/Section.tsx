@@ -4,7 +4,6 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent } from '../helper/MarkdownComponents'
 import Chapter, { ChapterT } from './Chapter'
-import { LinkT } from '../pages/SectionPage'
 
 export type SectionT = {
     chapters: Array<ChapterT>
@@ -23,7 +22,6 @@ export type IconT = {
 
 type Props = {
     section: SectionT
-    links: LinkT[]
 }
 
 function Section(props: Props) {

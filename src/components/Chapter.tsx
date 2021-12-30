@@ -32,7 +32,7 @@ function Chapter(props: ChapterProps) {
     return <div id={data.slug}>
 
         <div className="chapter--title">
-            <h2>{data.title}</h2>
+            <h2 id={data.slug}>{data.title}</h2>
             <img src={data.icon ? data.icon.url : ''} alt="icon"/>
         </div>
         <div className="targets">{targets}</div>

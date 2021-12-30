@@ -18,6 +18,12 @@ import { withTranslation } from 'react-i18next';
 import Navigation from './components/Navigation';
 import SectionPage from './pages/SectionPage';
 
+export type LinkT = {
+  title: string
+  link: string | undefined
+  key: string
+  slug: string | null
+}
 
 const Button = styled.button`
   border: none;
@@ -64,6 +70,7 @@ export const Back = () => {
     <pre className="back"><Link to="/" ><FontAwesomeIcon icon="arrow-left" /></Link></pre>
   </div>
 }
+export const LinksContext = React.createContext<LinkT[]>([])
 
 function App() {
   const changeLanguage = (lng: string) => {
@@ -93,34 +100,36 @@ function App() {
   }, {})
 
   return <Router basename="/">
-    <div className="App">
+    <LinksContext.Provider value={links}>
+      <div className="App">
 
-      <Navigation sections={sections}></Navigation>
+        <Navigation sections={sections}></Navigation>
 
-      <Switch>
-        <Route path="/calendar" >
-          <CalendarPage />
-        </Route>
-        <Route path="/:slug" children={<SectionPage sections={sectionsByKey} links={links} />} />
-        <Route exact path="/">
-          <HomePage></HomePage>
-        </Route>
-        <Route exact path="/hering/">
-          <HomePage></HomePage>
-        </Route>
-      </Switch>
-    </div>
-    <Footer>
-      <ReactLogo></ReactLogo>
-      <nav>
-        <ul>
-          <li>
-            <Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>Deutsch</Button>
-            <Button className={lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr')}>Français</Button>
-          </li>
-        </ul>
-      </nav>
-    </Footer>
+        <Switch>
+          <Route path="/calendar" >
+            <CalendarPage />
+          </Route>
+          <Route path="/:slug" children={<SectionPage sections={sectionsByKey} />} />
+          <Route exact path="/">
+            <HomePage></HomePage>
+          </Route>
+          <Route exact path="/hering/">
+            <HomePage></HomePage>
+          </Route>
+        </Switch>
+      </div>
+      <Footer>
+        <ReactLogo></ReactLogo>
+        <nav>
+          <ul>
+            <li>
+              <Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>Deutsch</Button>
+              <Button className={lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr')}>Français</Button>
+            </li>
+          </ul>
+        </nav>
+      </Footer>
+    </LinksContext.Provider>
   </Router>
 }
 

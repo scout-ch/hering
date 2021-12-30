@@ -1,4 +1,7 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { LinksContext } from '../App';
 // import { HashLink } from 'react-router-hash-link';
 import Warning from '../components/Warning';
 
@@ -15,17 +18,28 @@ export const LinkComponent = {
     },
     // @ts-ignore
     a({node, children, ...props}) {
+        /* eslint-disable */
+        const links = useContext(LinksContext)
         const link = props.href
         var found = link.match('\\$(.*)\\$');
         if (found) {
             //@ts-ignore
-            // console.log('ggg', links[found[1]])
-            //@ts-ignore
-            // return <a href={links[found[1]]} target="_blank">{children}</a>
-            return <a href={found[1]} target="_blank" rel="noreferrer">{children}</a>
+            const foundLink = links.find((l) => {return l['key'] == found[1]})
+            if (foundLink) {
+                if (foundLink['link']) {
+                    return <a href={foundLink['link']} target="_blank" rel="noreferrer">{children}</a>
+                } else if(foundLink['slug']) {
+                    return <HashLink to={foundLink['slug']}>{children}</HashLink>
+                } else {
+                    return <Link to={props.href || ''}>{children}</Link>
+                }
+            } else {
+               return <Link to={props.href || ''}>{children}</Link>
+            }
         } else {
             return <Link to={props.href || ''}>{children}</Link>
         }
+        /* eslint-enable */
     },
     // @ts-ignore
     img({node, children, ...props}) {
