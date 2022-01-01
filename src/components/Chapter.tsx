@@ -13,6 +13,7 @@ export type ChapterT = {
     title: string
     content: string
     slug: string
+    slug_with_section: string
     icon: IconT
     section: SectionT
     responsible: Array<Role>

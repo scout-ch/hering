@@ -1,6 +1,7 @@
 @import './fonts/fonts.css';
 @import './styles/section.less';
 @import './styles/chapter.less';
+@import './styles/nav.less';
 
 @color-primary: #521d3a;
 @color-primary-light: #8c3c4f;
@@ -175,35 +176,4 @@ button {
   float: right;
   margin: 15px;
   padding: 10px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--color-primary);
-  padding: 0.5em;
-
-  &>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  a {
-    color: white;
-    opacity: 1;
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    min-width: 180px;
-  }
-
-  .with-icon {
-    display: flex;
-    justify-content: space-between;
-    img {
-      width: 25px;
-    }
-  }
 }
