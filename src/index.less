@@ -23,6 +23,10 @@ body {
   display: flex;
 }
 
+img {
+  max-width:100%;
+}
+
 h1, h2, h3 {
   color: @color-primary-light
 }
@@ -81,6 +85,7 @@ div {
   line-height: 1.27;
   font-size: 15px;
 }
+
 @media (max-width: 659px) {
   h1 {
     font-size: 30px;
@@ -93,6 +98,26 @@ div {
   .App, #root {
     display: block;
   }
+
+  .showMenu {
+    display: block;
+  }
+
+  .menuItems {
+    position: fixed;
+    top: 32px;
+    left: 0;
+    width: 70%;
+    max-width: 400px;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+  }
+
+  .menuItems.showMenu {
+    transform: translateX(0);
+    background-color: @color-primary;
+  }
 }
 @media (min-width: 660px) {
   p,
@@ -103,6 +128,10 @@ div {
   div,
   h2 .btn {
     font-size: 16.25px;
+  }
+
+  .toggle-btn {
+    display: none;
   }
 }
 @media (min-width: 860px) {

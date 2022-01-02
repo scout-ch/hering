@@ -11,6 +11,7 @@ export type Role = {
 export type ChapterT = {
     sorting: number
     title: string
+    menu_name: string
     content: string
     slug: string
     slug_with_section: string

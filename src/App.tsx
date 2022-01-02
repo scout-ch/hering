@@ -7,7 +7,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import { faCalendar, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faExclamationTriangle, faBars } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import HomePage from './pages/HomePage ';
@@ -90,7 +90,7 @@ function App() {
     })
   }, [lang])
 
-  library.add(faCalendar, faExclamationTriangle)
+  library.add(faCalendar, faExclamationTriangle, faBars)
 
   if (!sections || !links) return null
   //@ts-ignore
