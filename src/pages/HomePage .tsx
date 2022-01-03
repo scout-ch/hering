@@ -3,29 +3,24 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../App'
 
-import client from "./../client";
-import i18n from './../i18n';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../helper/MarkdownComponents';
 import { withTranslation } from 'react-i18next';
+import { IconT } from '../components/Section';
 
-type StartPage = {
+export type StartPage = {
   title: string
+  menu_name: string
+  icon: IconT
   content: string
 }
+type Props = {
+  page: StartPage
+}
 
-function HomePage() {
-  const lang = i18n.language
-  const [startPage, setStartPage] = React.useState<StartPage>({title: '', content: ''});
-
-  React.useEffect(() => {
-    client.get('/start-page?_locale=' + lang).then((response: { data: any }) => {
-      setStartPage(response.data)
-    })
-  }, [lang])
-
-  if (!startPage) return null
+function HomePage(props: Props) {
+  const startPage = props.page
 
   return <MainContainer>
     <Helmet>

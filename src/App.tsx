@@ -95,21 +95,27 @@ function App() {
   }
   const [sections, setSections] = React.useState(null);
   const [links, setLinks] = React.useState(null);
+  const [startPage, setStartPage] = React.useState(null);
+  const [calendarPage, setCalendarPage] = React.useState(null);
   const lang = i18n.language
 
   React.useEffect(() => {
     const sectionsPromise = client.get('/sections?_sort=sorting:ASC&_locale=' + lang)
     const linksPromise = client.get('/links?_locale=' + lang)
+    const startPagePromise = client.get('/start-page?_locale=' + lang)
+    const calendarPromise = client.get('/calendar-page?_locale=' + lang)
 
-    Promise.all([sectionsPromise, linksPromise]).then((values) => {
+    Promise.all([sectionsPromise, linksPromise, startPagePromise, calendarPromise]).then((values) => {
       setSections(values[0].data)
       setLinks(values[1].data)
+      setStartPage(values[2].data)
+      setCalendarPage(values[3].data)
     })
   }, [lang])
 
   library.add(faCalendar, faExclamationTriangle, faBars)
 
-  if (!sections || !links) return null
+  if (!sections || !links || !startPage || !calendarPage) return null
   //@ts-ignore
   const sectionsByKey = sections.reduce(function (map, section: SectionT) {
     map[section.slug] = section
@@ -120,18 +126,18 @@ function App() {
     <LinksContext.Provider value={links}>
       <div className="App">
 
-        <Navigation sections={sections}></Navigation>
+        <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}></Navigation>
 
         <Switch>
           <Route path="/calendar" >
-            <CalendarPage />
+            <CalendarPage page={calendarPage}/>
           </Route>
           <Route path="/:slug" children={<SectionPage sections={sectionsByKey} />} />
           <Route exact path="/">
-            <HomePage></HomePage>
+            <HomePage page={startPage}></HomePage>
           </Route>
           <Route exact path="/hering/">
-            <HomePage></HomePage>
+            <HomePage page={startPage}></HomePage>
           </Route>
         </Switch>
       </div>

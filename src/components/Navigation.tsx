@@ -5,9 +5,13 @@ import { ChapterT } from './Chapter'
 import { HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { StartPage } from '../pages/HomePage '
+import { CalendarPageT } from '../pages/CalendarPage'
 
 type Props = {
     sections: Array<SectionT>
+    startPage: StartPage
+    calendarPage: CalendarPageT
 }
 
 function Navigation(props: Props) {
@@ -61,15 +65,20 @@ function Navigation(props: Props) {
             </li>
         </>
     })
+    const startPage = props.startPage
+    const calendarPage = props.calendarPage
     return <nav className="header-nav">
         <div className="toggle-btn">
             <i onClick={handleToggle}><FontAwesomeIcon icon="bars"/></i>
         </div>
         <ul className={`menuItems ${navbarOpen ? " showMenu" : ""}`}>
-            <li key="home"><Link to="/">HERING</Link></li>
+            <li key="home">
+                {/* <img src={startPage.icon ? startPage.icon.url : ''} width="25" alt="icon" />  */}
+                <Link to="/">{startPage.menu_name}</Link>
+            </li>
             {sectionList}
             <li key="calendar">
-                <Link to="/calendar">KALENDER</Link>
+                <Link to="/calendar">{calendarPage.menu_name}</Link>
             </li>
         </ul>
     </nav>

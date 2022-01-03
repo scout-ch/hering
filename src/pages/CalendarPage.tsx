@@ -9,23 +9,21 @@ import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../helper/MarkdownComponents';
 import CalendarForm from '../components/CalendarForm';
 import { withTranslation } from 'react-i18next'
+import { IconT } from '../components/Section';
 
-type CalendarPageT = {
+export type CalendarPageT = {
   title: string
+  menu_name: string
+  icon: IconT
   content: string
 }
 
-function CalendarPage() { 
-   const lang = i18n.language
-  const [calendarPage, setCalendarPage] = React.useState<CalendarPageT>({title: '', content: ''});
+type Props = {
+  page: CalendarPageT
+}
 
-  React.useEffect(() => {
-    client.get('/calendar-page?_locale=' + lang).then((response: { data: any }) => {
-      setCalendarPage(response.data)
-    })
-  }, [lang])
-
-  if (!calendarPage) return null
+function CalendarPage(props: Props) { 
+  const calendarPage = props.page
 
   return <MainContainer>
     <Helmet>
