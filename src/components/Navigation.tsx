@@ -21,7 +21,7 @@ function Navigation(props: Props) {
 
     const handleOnChange = (sectionNav: any) => {
         const updatedCheckedState = checkedState.map((item, index) =>
-            index === sectionNav ? true : false
+            index === sectionNav ? !item : false
         );
         setCheckedState(updatedCheckedState);
     }
@@ -61,7 +61,7 @@ function Navigation(props: Props) {
             </li>
         </>
     })
-    return <nav>
+    return <nav className="header-nav">
         <div className="toggle-btn">
             <i onClick={handleToggle}><FontAwesomeIcon icon="bars"/></i>
         </div>

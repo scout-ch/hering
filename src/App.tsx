@@ -45,9 +45,21 @@ const Footer = styled.footer`
     height: auto;
     fill: var(--color-primary);
   }
-  nav {
+
+  @media (max-width: 659px) {
+    padding-left: 0;
+
+  }
+  
+  @media (min-width: 660px) {
+    padding-left: 270px;
+  }
+  
+  .footer-nav {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    background-color: var(--color-primary);
 
     button {
       padding: 0.9em 0.8em;
@@ -57,11 +69,16 @@ const Footer = styled.footer`
       background: white;
       color: var(--color-primary-light);
     }
+
+    &>ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
   }
 `
 
 export const MainContainer = styled.main`
-  padding: 1rem;
   flex-grow: 1;
 `
 
@@ -120,7 +137,7 @@ function App() {
       </div>
       <Footer>
         <ReactLogo></ReactLogo>
-        <nav>
+        <nav className="footer-nav">
           <ul>
             <li>
               <Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>Deutsch</Button>

@@ -1,5 +1,9 @@
 
-nav {
+nav.header-nav {
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+
   display: flex;
   justify-content: space-between;
   background-color: var(--color-primary);
@@ -49,10 +53,11 @@ nav {
     color: white;
     list-style-type: disclosure-closed;
   }
-  
+
   .toggle-btn {
     i {
       color: white;
+      font-size: 20px;
     }
   }
 }
