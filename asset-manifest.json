@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/hering/static/css/main.a0786f86.chunk.css",
-    "main.js": "/hering/static/js/main.2e907cbf.chunk.js",
-    "main.js.map": "/hering/static/js/main.2e907cbf.chunk.js.map",
+    "main.css": "/hering/static/css/main.edf21a82.chunk.css",
+    "main.js": "/hering/static/js/main.2867a318.chunk.js",
+    "main.js.map": "/hering/static/js/main.2867a318.chunk.js.map",
     "runtime-main.js": "/hering/static/js/runtime-main.4f21cf73.js",
     "runtime-main.js.map": "/hering/static/js/runtime-main.4f21cf73.js.map",
-    "static/js/2.ccc1221b.chunk.js": "/hering/static/js/2.ccc1221b.chunk.js",
-    "static/js/2.ccc1221b.chunk.js.map": "/hering/static/js/2.ccc1221b.chunk.js.map",
+    "static/js/2.0d3b9f28.chunk.js": "/hering/static/js/2.0d3b9f28.chunk.js",
+    "static/js/2.0d3b9f28.chunk.js.map": "/hering/static/js/2.0d3b9f28.chunk.js.map",
     "static/js/3.c6915a29.chunk.js": "/hering/static/js/3.c6915a29.chunk.js",
     "static/js/3.c6915a29.chunk.js.map": "/hering/static/js/3.c6915a29.chunk.js.map",
     "index.html": "/hering/index.html",
-    "static/css/main.a0786f86.chunk.css.map": "/hering/static/css/main.a0786f86.chunk.css.map",
-    "static/js/2.ccc1221b.chunk.js.LICENSE.txt": "/hering/static/js/2.ccc1221b.chunk.js.LICENSE.txt",
+    "static/css/main.edf21a82.chunk.css.map": "/hering/static/css/main.edf21a82.chunk.css.map",
+    "static/js/2.0d3b9f28.chunk.js.LICENSE.txt": "/hering/static/js/2.0d3b9f28.chunk.js.LICENSE.txt",
     "static/media/index.less": "/hering/static/media/SourceSansPro-SemiBoldItalic.f035d6a1.woff2",
     "static/media/footer.744eec6b.svg": "/hering/static/media/footer.744eec6b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4f21cf73.js",
-    "static/js/2.ccc1221b.chunk.js",
-    "static/css/main.a0786f86.chunk.css",
-    "static/js/main.2e907cbf.chunk.js"
+    "static/js/2.0d3b9f28.chunk.js",
+    "static/css/main.edf21a82.chunk.css",
+    "static/js/main.2867a318.chunk.js"
   ]
 }
