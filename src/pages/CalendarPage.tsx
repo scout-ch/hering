@@ -1,9 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { MainContainer } from '../App'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import client from "./../client";
-import i18n from './../i18n';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../helper/MarkdownComponents';
@@ -25,7 +22,7 @@ type Props = {
 function CalendarPage(props: Props) { 
   const calendarPage = props.page
 
-  return <MainContainer>
+  return <div className='content-main'>
     <Helmet>
       <title>{calendarPage.title}</title>
     </Helmet>
@@ -37,6 +34,6 @@ function CalendarPage(props: Props) {
 
     <CalendarForm />
 
-  </MainContainer>
+  </div>
 }
 export default withTranslation()(CalendarPage)

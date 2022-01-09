@@ -22,7 +22,7 @@ export type ChapterT = {
 
 type ChapterProps = {
     data: ChapterT;
-  };
+};
 
 function Chapter(props: ChapterProps) {
     const data = props.data
@@ -31,15 +31,19 @@ function Chapter(props: ChapterProps) {
     }
 
     const targets = data.responsible.map((target) => target['rolle'].toUpperCase()).join(', ')
-    return <div id={data.slug}>
+    return <div className='chapter'>
+        <div id={data.slug}>
 
-        <div className="chapter--title">
-            <h2 id={data.slug}>{data.title}</h2>
-            <img src={data.icon ? data.icon.url : ''} alt="icon"/>
+            <div className="chapter-title">
+                {data.icon && (<img src={data.icon.url} alt="icon" />)}
+                <h2 id={data.slug}>{data.title}</h2>
+            </div>
+            <div className='content-main'>
+                <div className="targets">{targets}</div>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}
+                    components={LinkComponent}>{data.content}</ReactMarkdown>
+            </div>
         </div>
-        <div className="targets">{targets}</div>
-        <ReactMarkdown remarkPlugins={[remarkGfm]}
-            components={LinkComponent}>{data.content}</ReactMarkdown>
     </div>
 }
 

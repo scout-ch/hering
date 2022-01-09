@@ -1,7 +1,6 @@
 // import styled from '@emotion/styled'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { MainContainer } from '../App'
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -22,20 +21,18 @@ type Props = {
 function HomePage(props: Props) {
   const startPage = props.page
 
-  return <MainContainer>
+  return <div className='content-main'>
     <Helmet>
       <title>{startPage.title}</title>
     </Helmet>
     
-    <header className="App-header">
-      <h1>{startPage.title}</h1>
-    </header>
+    <h1>{startPage.title}</h1>
 
     <ReactMarkdown
             plugins={[remarkGfm]}
             components={LinkComponent}
         >{startPage.content}</ReactMarkdown>
 
-  </MainContainer>
+  </div>
 }
 export default withTranslation()(HomePage)

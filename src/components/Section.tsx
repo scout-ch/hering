@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainContainer } from '../App'
+import { Helmet } from 'react-helmet'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent } from '../helper/MarkdownComponents'
@@ -13,7 +13,7 @@ export type SectionT = {
     slug: string
     icon: IconT
     menu_name: string
-  }
+}
 
 export type IconT = {
     url: string
@@ -31,17 +31,21 @@ function Section(props: Props) {
         return <Chapter key={chapter['title']} data={chapter}></Chapter>
     })
 
-    return <MainContainer>
-        <div className="section--title">
-            <h1>{props.section['title']}</h1>
+    return <div className='content'>
+        <Helmet><title>{props.section['title']}</title></Helmet>
+
+        <div className="section-title">
             <img src={props.section.icon ? props.section.icon.url : ''} alt="icon" />
+            <h1>{props.section['title']}</h1>
         </div>
-        <ReactMarkdown
-            plugins={[remarkGfm]}
-            components={LinkComponent}
-        >{props.section.content}</ReactMarkdown>
-        {chapters}
-    </MainContainer>
+        <div className='content-main'>
+            <ReactMarkdown
+                plugins={[remarkGfm]}
+                components={LinkComponent}
+            >{props.section.content}</ReactMarkdown>
+            {chapters}
+        </div>
+    </div>
 }
 
 export default Section

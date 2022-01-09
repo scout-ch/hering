@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 100px;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    fill: var(--color-primary);
+  }
+
+  @media (max-width: 659px) {
+    padding-left: 0;
+
+  }
+  
+  @media (min-width: 660px) {
+    padding-left: 270px;
+  }
+  
+  .footer-nav {
+    display: flex;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    background-color: var(--color-primary);
+
+    button {
+      padding: 0.9em 0.8em;
+    }
+
+    button.active {
+      background: white;
+      color: var(--color-primary-light);
+    }
+
+    &>ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

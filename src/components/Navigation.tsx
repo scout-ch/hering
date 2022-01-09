@@ -58,7 +58,7 @@ function Navigation(props: Props) {
                     onChange={() => handleOnChange(index)}
                 />
                 <label htmlFor={section.slug} className="accordion_label">
-                    <img src={section.icon ? section.icon.url : ''} width="25" alt="icon" />
+                    {section.icon && (<img src={section.icon.url} width="25" alt="icon" />)}
                     {section.menu_name}
                 </label>
                 {chapterList(section)}
@@ -69,18 +69,20 @@ function Navigation(props: Props) {
     const calendarPage = props.calendarPage
     return <nav className="header-nav">
         <div className="toggle-btn">
-            <i onClick={handleToggle}><FontAwesomeIcon icon="bars"/></i>
+            <i onClick={handleToggle}><FontAwesomeIcon icon="bars" /></i>
         </div>
-        <ul className={`menuItems ${navbarOpen ? " showMenu" : ""}`}>
-            <li key="home">
-                {/* <img src={startPage.icon ? startPage.icon.url : ''} width="25" alt="icon" />  */}
-                <Link to="/">{startPage.menu_name}</Link>
-            </li>
-            {sectionList}
-            <li key="calendar">
-                <Link to="/calendar">{calendarPage.menu_name}</Link>
-            </li>
-        </ul>
+        <div className='header-nav-content'>
+            <ul className={`menuItems ${navbarOpen ? " showMenu" : ""}`}>
+                <li key="home">
+                    {/* <img src={startPage.icon ? startPage.icon.url : ''} width="25" alt="icon" />  */}
+                    <Link to="/">{startPage.menu_name}</Link>
+                </li>
+                {sectionList}
+                <li key="calendar">
+                    <Link to="/calendar">{calendarPage.menu_name}</Link>
+                </li>
+            </ul>
+        </div>
     </nav>
 }
 
