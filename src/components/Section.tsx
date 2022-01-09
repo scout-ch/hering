@@ -13,6 +13,7 @@ export type SectionT = {
     slug: string
     icon: IconT
     menu_name: string
+    localizations: any
 }
 
 export type IconT = {

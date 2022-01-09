@@ -78,7 +78,7 @@ function App() {
         </main>
 
         <div className='footer'>
-          <Footer lang={lang} />
+          <Footer lang={lang} sections={sections} />
         </div>
       </LinksContext.Provider>
     </Router>
