@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hering/static/css/main.edf21a82.chunk.css",
-    "main.js": "/hering/static/js/main.2867a318.chunk.js",
-    "main.js.map": "/hering/static/js/main.2867a318.chunk.js.map",
+    "main.js": "/hering/static/js/main.b653a391.chunk.js",
+    "main.js.map": "/hering/static/js/main.b653a391.chunk.js.map",
     "runtime-main.js": "/hering/static/js/runtime-main.4f21cf73.js",
     "runtime-main.js.map": "/hering/static/js/runtime-main.4f21cf73.js.map",
     "static/js/2.0d3b9f28.chunk.js": "/hering/static/js/2.0d3b9f28.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.4f21cf73.js",
     "static/js/2.0d3b9f28.chunk.js",
     "static/css/main.edf21a82.chunk.css",
-    "static/js/main.2867a318.chunk.js"
+    "static/js/main.b653a391.chunk.js"
   ]
 }
