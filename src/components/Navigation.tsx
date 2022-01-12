@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionT } from './Section'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { ChapterT } from './Chapter'
 import { HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
@@ -17,6 +17,7 @@ type Props = {
 function Navigation(props: Props) {
 
     const [navbarOpen, setNavbarOpen] = useState(false)
+    const location = useLocation();
 
     const sections = props.sections
     const [checkedState, setCheckedState] = useState(
@@ -37,8 +38,10 @@ function Navigation(props: Props) {
     function chapterList(section: SectionT) {
         const chapters = section.chapters
         const chapterItems = chapters.map(function (chapter: ChapterT) {
+            var isActive = location.hash.replace('#', '') === chapter.slug
+            var className = isActive ? 'active' : ''
             return <li className="subMenu" key={chapter.slug} onClick={handleToggle}>
-                <HashLink to={chapter.slug_with_section}>{chapter.menu_name}</HashLink>
+                <HashLink to={chapter.slug_with_section} className={className}>{chapter.menu_name}</HashLink>
             </li>
         })
         return <ul className="accordion_sub-menu">
@@ -47,17 +50,19 @@ function Navigation(props: Props) {
     }
 
     const sectionList = sections.map(function (section: SectionT, index: number) {
+        var isActive = location.pathname.replace('/', '') === section.slug
+        var className = isActive ? 'active' : ''
         return <>
             <li key={section.slug}>
                 <input
                     type="checkbox"
                     name="tabs"
                     id={section.slug}
-                    className="accordion_input"
+                    className={`accordion_input ${className}`}
                     checked={checkedState[index]}
                     onChange={() => handleOnChange(index)}
                 />
-                <label htmlFor={section.slug} className="accordion_label">
+                <label htmlFor={section.slug} className={`accordion_label ${className}`}>
                     {section.icon && (<img src={section.icon.url} width="25" alt="icon" />)}
                     {section.menu_name}
                 </label>
