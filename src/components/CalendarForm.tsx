@@ -67,7 +67,7 @@ class CalendarForm extends React.Component<Props, MyState> {
     });
 
     const todos = filteredDates.map(function (todo) {
-      let deadline = new Date(startDate.setTime(startDate.getTime() + todo.days * 86400000))
+      let deadline = new Date(startDate.getTime() + todo.days * 86400000)
       return {'deadline': deadline, 'key': todo.title, title: todo.title, 'targets': todo.targets, 'responsible': todo.responsible, chapters: todo.chapters}
       // return <Todo deadline={deadline} key={todo.title} title={todo.title} targets={todo.targets} responsible={todo.responsible}></Todo>
     })

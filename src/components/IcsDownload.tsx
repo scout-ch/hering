@@ -65,7 +65,7 @@ function IcsDownload(props: Props) {
     const link = window.URL.createObjectURL(data);
     return (
       <Container>
-        <A className="ics_download" id="link" href={link}>{t('calendarPage.download')}</A>
+        <A className="ics_download" id="link" download={t('calendarPage.filename')} href={link}>{t('calendarPage.download')}</A>
       </Container>
     );
   }

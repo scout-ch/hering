@@ -15,6 +15,7 @@
       },
       "generate": "Generieren",
       "download": "Download als .ics",
+      "filename": "Dati.ics",
       "table": {
         "what": "Was",
         "who": "Wer",
