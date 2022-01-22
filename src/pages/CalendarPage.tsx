@@ -19,21 +19,22 @@ type Props = {
   page: CalendarPageT
 }
 
-function CalendarPage(props: Props) { 
+function CalendarPage(props: Props) {
   const calendarPage = props.page
 
   return <div className='content-main'>
     <Helmet>
       <title>{calendarPage.title}</title>
     </Helmet>
-    <h1><FontAwesomeIcon icon="calendar" /> {calendarPage.title}</h1>
-    <ReactMarkdown
-            plugins={[remarkGfm]}
-            components={LinkComponent}
-        >{calendarPage.content}</ReactMarkdown>
+    <div className='calendar'>
+      <h1><FontAwesomeIcon icon="calendar" /> {calendarPage.title}</h1>
+      <ReactMarkdown
+        plugins={[remarkGfm]}
+        components={LinkComponent}
+      >{calendarPage.content}</ReactMarkdown>
 
-    <CalendarForm />
-
+      <CalendarForm />
+    </div>
   </div>
 }
 export default withTranslation()(CalendarPage)

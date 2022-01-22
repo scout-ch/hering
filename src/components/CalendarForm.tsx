@@ -56,11 +56,24 @@ class CalendarForm extends React.Component<Props, MyState> {
     this.setState({ responsible: e.currentTarget.value });
   };
 
+  todoSort = (a: TodoT, b: TodoT) => {
+    let aDate = a.deadline
+    let bDate = b.deadline
+    if (aDate < bDate) {
+      return -1
+    }
+    if (aDate > bDate) {
+      return 1
+    }
+
+    return 0
+  }
+
   handleSubmit(event: any) {
     event.preventDefault();
     const startDate = new Date(this.state.startDate)
     const responsible = this.state.responsible
-    
+
     const filteredDates = this.state.dateList.filter(function (todo) {
       const rollen = todo.responsible.map((resp) => resp.rolle)
       return responsible === 'all' ? true : rollen.includes(responsible)
@@ -68,7 +81,7 @@ class CalendarForm extends React.Component<Props, MyState> {
 
     const todos = filteredDates.map(function (todo) {
       let deadline = new Date(startDate.getTime() + todo.days * 86400000)
-      return {'deadline': deadline, 'key': todo.title, title: todo.title, 'targets': todo.targets, 'responsible': todo.responsible, chapters: todo.chapters}
+      return { 'deadline': deadline, 'key': todo.title, title: todo.title, 'targets': todo.targets, 'responsible': todo.responsible, chapters: todo.chapters }
       // return <Todo deadline={deadline} key={todo.title} title={todo.title} targets={todo.targets} responsible={todo.responsible}></Todo>
     })
     this.setState({ todos: todos })
@@ -79,24 +92,33 @@ class CalendarForm extends React.Component<Props, MyState> {
 
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            {t('calendarPage.startDate')}
-            <input type="date" name="startDate" value={this.state.startDate} onChange={this.onChangeStartDate} />
-          </label><br />
-          <label>
-            {t('calendarPage.responsible')}
-            <select name="responsible" value={this.state.responsible} onChange={this.onChangeResponsible}>
-              <option value="all">{t('calendarPage.responsibleOptions.all')}</option>
-              <option value="LL">{t('calendarPage.responsibleOptions.ll')}</option>
-              <option value="AL">{t('calendarPage.responsibleOptions.al')}</option>
-              <option value="C">{t('calendarPage.responsibleOptions.c')}</option>
-            </select>
-          </label>
-          <br />
-          <button type="submit"> {t('calendarPage.generate')}</button>
-        </form>
-        <CalendarTable todos={this.state.todos} />
+        <div className='calendar-form-container'>
+          <form onSubmit={this.handleSubmit}>
+            <ul className='calendar-form'>
+              <li>
+                <label>
+                  {t('calendarPage.startDate')}
+                </label>
+                <input type="date" name="startDate" value={this.state.startDate} onChange={this.onChangeStartDate} />
+              </li>
+              <li>
+                <label>
+                  {t('calendarPage.responsible')}
+                </label>
+                <select name="responsible" value={this.state.responsible} onChange={this.onChangeResponsible}>
+                  <option value="all">{t('calendarPage.responsibleOptions.all')}</option>
+                  <option value="LL">{t('calendarPage.responsibleOptions.ll')}</option>
+                  <option value="AL">{t('calendarPage.responsibleOptions.al')}</option>
+                  <option value="C">{t('calendarPage.responsibleOptions.c')}</option>
+                </select>
+              </li>
+              <li>
+                <button type="submit"> {t('calendarPage.generate')}</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <CalendarTable todos={this.state.todos.sort(this.todoSort)} />
       </div>
     );
   }
