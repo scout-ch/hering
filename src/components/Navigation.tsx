@@ -76,15 +76,15 @@ function Navigation(props: Props) {
         <div className="toggle-btn">
             <i onClick={handleToggle}><FontAwesomeIcon icon="bars" /></i>
         </div>
-        <div className='header-nav-content'>
-            <ul className={`menuItems ${navbarOpen ? " showMenu" : ""}`}>
+        <div className={`header-nav-content ${navbarOpen ? "showMenu" : ""}`}>
+            <ul className={`menuItems ${navbarOpen ? "showMenu" : ""}`}>
                 <li key="home">
                     {/* <img src={startPage.icon ? startPage.icon.url : ''} width="25" alt="icon" />  */}
-                    <Link to="/">{startPage.menu_name}</Link>
+                    <Link to="/" onClick={() => setNavbarOpen(!navbarOpen)}>{startPage.menu_name}</Link>
                 </li>
                 {sectionList}
                 <li key="calendar">
-                    <Link to="/calendar">{calendarPage.menu_name}</Link>
+                    <Link to="/calendar" onClick={() => setNavbarOpen(!navbarOpen)}>{calendarPage.menu_name}</Link>
                 </li>
             </ul>
         </div>
