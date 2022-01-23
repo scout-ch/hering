@@ -47,7 +47,7 @@ Im Texteditor wird der Text nicht genau so, wie man ihn anschliessend sieht eing
 - **fetter Text** wird mit `**zwei Sternen darum**` gekennzeichent
 
 ### einzelne Zeichen
-- Um den\*die Genderstern zu schreiben, wird den zwei Sternen ein Backslash vorangestellt: `Leiter\*in`
+- Um den\*die Genderstern zu schreiben, wird dem Stern ein Backslash vorangestellt: `Leiter\*in`
 - Ein Rechtspfeil (&rarr;) wird mit `&rarr;` erstellt
 
 ### Achtung-Kasten im Markdown
