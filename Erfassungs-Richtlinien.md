@@ -3,13 +3,13 @@ Für alle, die den Inhalt anpassen möchten – und sollen
 
 Wir haben mit [Strapi](https://hering-api.herokuapp.com/admin/) \[:schtrapi:\]? den Inhalt in den digitaleren Hering abgefüllt. Dafür wird ein Login verwendet, das unter *Settings* &rarr; *Users* vergeben werden kann.
 
-# Gesamt-Aufbau
+## Gesamt-Aufbau
 Grundsätzlich ist der Aufbau weitgehend selbsterklärend, wenn man sich mal durch alle Menü-Punkte durchklickt – möglichst ohne bereits gross etwas zu verändern. Dafür ist wichtig zu wissen, dass es die übergeordneten *Sections* mit den *Chapters* darunter gibt. Weitere relevante Details werden untenstehend beschrieben. Man beachte, dass man sich die einzelnen Listen-Darstellungen mit «Configure the view» über das Einstellungs-Symbol selbst zusammenstellen kann. Einzelne Einträge können jeweils unter *Internalization* einer Sprache (*Locales*) zugeswiesen werden.
 
-## StartPage
+### StartPage
 Dabei handelt es sich um die Einstiegsseite. *Content* wird jeweils in MarkDown ([Anleitung unten](#Markdown-Tipps)) editiert.
 
-## Sections
+### Sections
 Die *Sections* sind die übergeordnete Einheiten, in die der Hering gegliedert ist. Sie bestehen aus einem *Title* (steht oben am Text in der Seite) und einem *Menu_name* (wo könnte dieser bloss stehen...?), sowie faktultativem Content, der vor dem ersten Chapter eingefügt werden kann. Der *Slug* kann – einmal generiert – nicht mehr angepasst werden und kommt in der URL zu liegen. Einer *Section* können mehrere Chapters zugeteilt werden.
 
 ## Chapters
