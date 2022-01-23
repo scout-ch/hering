@@ -1,7 +1,7 @@
 # Erfassungs-Richtlinien web-Hering
 Für alle, die den Inhalt anpassen möchten – und sollen
 
-Wir haben mit [Strapi](https://hering-api.herokuapp.com/admin/) \[:schtrapi:\]? den Inhalt in den digitaleren Hering abgefüllt. Dafür wird ein Login verwendet, das unter *Settings* &rarr; *Users* auch neuen Personen vergeben werden kann.
+Wir haben mit [Strapi](https://hering-api.herokuapp.com/admin/) \[:schtrapi:\]? den Inhalt in den digitaleren Hering abgefüllt. Dafür wird ein Login verwendet, das unter *Settings* &rarr; *Users* auch neuen Personen vergeben werden kann. Wenn es gerade nicht verwendet wird, geht Strapi in den wohlverdienten Schlaf und braucht dann etwas Geduld, bis es aufgeweckt und bereit ist – dies betrifft vor allem die Testumgebung.
 
 ## Gesamt-Aufbau
 Grundsätzlich ist der Aufbau weitgehend selbsterklärend, wenn man sich mal durch alle Menü-Punkte durchklickt – möglichst ohne bereits gross etwas zu verändern. Dafür ist wichtig zu wissen, dass es die übergeordneten *Sections* mit den *Chapters* darunter gibt. Weitere relevante Details werden untenstehend beschrieben. Man beachte, dass man sich die jeweiligen Listen-Darstellungen mit *Configure the view* über das Einstellungs-Symbol selbst zusammenstellen kann. Einzelne Einträge können jeweils unter *Internalization* einer Sprache (*Locales*) zugeswiesen werden.
@@ -69,6 +69,9 @@ Die bereits vorhandenen Titel sind auf Niveau *Heading1* (*Section*) und *Headin
 Um den «Text» auf den Key «Schluessel» zu verlinken, wird folgende Syntax verwendet:
 `[Text]($Schluessel$)`  
 S. auch oben unter [Links](#Links)
+
+### Tabellen
+Wenn du dir das wirklich antun willst, dann hilft dir beispielsweise der https://www.tablesgenerator.com/markdown_tables![image](https://user-images.githubusercontent.com/55490822/150698455-39ceee9b-3eaa-4b5b-a55f-a954777da8b6.png)
 
 ### Bilder
 Um ein Bild einzufügen, muss es zuerst in der Media-Library abgelegt werden. Dann kann man es über das entsprechende Symbol oder mit folgender Syntax einbinden:
