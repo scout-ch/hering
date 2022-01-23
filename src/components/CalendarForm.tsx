@@ -4,7 +4,7 @@ import client from '../client'
 import i18n from '../i18n';
 import CalendarTable from './CalendarTable';
 import { ChapterT } from './Chapter';
-import { TodoT } from './Todo';
+import { TaskT } from './Task';
 
 type Props = {
   t: any
@@ -13,7 +13,7 @@ type Roles = {
   rolle: string
 }
 
-type ApiDates = {
+type ApiTask = {
   id: number
   title: string
   days: number
@@ -25,8 +25,8 @@ type ApiDates = {
 type MyState = {
   startDate: string
   responsible: string
-  dateList: Array<ApiDates>,
-  todos: Array<TodoT>
+  taskList: Array<ApiTask>,
+  tasks: Array<TaskT>
 }
 
 class CalendarForm extends React.Component<Props, MyState> {
@@ -35,8 +35,8 @@ class CalendarForm extends React.Component<Props, MyState> {
     this.state = {
       startDate: new Date().toISOString().slice(0, 10),
       responsible: 'all',
-      dateList: [],
-      todos: []
+      taskList: [],
+      tasks: []
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -44,7 +44,7 @@ class CalendarForm extends React.Component<Props, MyState> {
 
   componentDidMount() {
     client.get('/tasks?_locale=' + i18n.language).then((response) => {
-      this.setState({ dateList: response.data })
+      this.setState({ taskList: response.data })
     })
   }
 
@@ -56,7 +56,7 @@ class CalendarForm extends React.Component<Props, MyState> {
     this.setState({ responsible: e.currentTarget.value });
   };
 
-  todoSort = (a: TodoT, b: TodoT) => {
+  taskSort = (a: TaskT, b: TaskT) => {
     let aDate = a.deadline
     let bDate = b.deadline
     if (aDate < bDate) {
@@ -74,17 +74,21 @@ class CalendarForm extends React.Component<Props, MyState> {
     const startDate = new Date(this.state.startDate)
     const responsible = this.state.responsible
 
-    const filteredDates = this.state.dateList.filter(function (todo) {
-      const rollen = todo.responsible.map((resp) => resp.rolle)
+    const filteredDates = this.state.taskList.filter(function (task) {
+      const rollen = task.responsible.map((resp) => resp.rolle)
       return responsible === 'all' ? true : rollen.includes(responsible)
     });
 
-    const todos = filteredDates.map(function (todo) {
-      let deadline = new Date(startDate.getTime() + todo.days * 86400000)
-      return { 'deadline': deadline, 'key': todo.title, title: todo.title, 'targets': todo.targets, 'responsible': todo.responsible, chapters: todo.chapters }
-      // return <Todo deadline={deadline} key={todo.title} title={todo.title} targets={todo.targets} responsible={todo.responsible}></Todo>
+    const tasks = filteredDates.map(function (task) {
+      let deadline = new Date(startDate.getTime() + task.days * 86400000)
+      if (task.days === -1000) {
+        deadline = startDate
+        deadline.setMonth(0)
+        deadline.setDate(1)
+      }
+      return { 'deadline': deadline, 'key': task.title, title: task.title, 'targets': task.targets, 'responsible': task.responsible, chapters: task.chapters }
     })
-    this.setState({ todos: todos })
+    this.setState({ tasks: tasks })
   }
 
   render() {
@@ -118,7 +122,7 @@ class CalendarForm extends React.Component<Props, MyState> {
             </ul>
           </form>
         </div>
-        <CalendarTable todos={this.state.todos.sort(this.todoSort)} />
+        <CalendarTable tasks={this.state.tasks.sort(this.taskSort)} />
       </div>
     );
   }

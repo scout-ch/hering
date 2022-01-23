@@ -1,18 +1,18 @@
 import React from 'react'
 import { withTranslation } from 'react-i18next';
 import IcsDownload from './IcsDownload';
-import Todo, { TodoT } from './Todo';
+import Task, { TaskT } from './Task';
 
 type Props = {
   t: any
-  todos: Array<TodoT>
+  tasks: Array<TaskT>
 }
 
 function CalendarTable(props: Props) {
-  const { t, todos } = props;
-  const todoList = todos.map(function (todo) {
-    return <Todo deadline={todo.deadline} key={todo.title} title={todo.title}
-      targets={todo.targets} responsible={todo.responsible} chapters={todo.chapters}></Todo>
+  const { t, tasks } = props;
+  const taskList = tasks.map(function (task) {
+    return <Task deadline={task.deadline} key={task.title} title={task.title}
+      targets={task.targets} responsible={task.responsible} chapters={task.chapters}></Task>
   })
   return (
     <div>
@@ -27,10 +27,10 @@ function CalendarTable(props: Props) {
           </tr>
         </thead>
         <tbody>
-          {todoList}
+          {taskList}
         </tbody>
       </table>
-      <IcsDownload todos={todos}></IcsDownload>
+      <IcsDownload tasks={tasks}></IcsDownload>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled';
 import { withTranslation } from 'react-i18next'
-import { TodoT } from './Todo'
+import { TaskT } from './Task'
 
 const A = styled.a`
   border: none;
@@ -16,29 +16,25 @@ const A = styled.a`
   }
 `
 
-const Container = styled.div`
-  margin: 1em 0;
-`
-
 type Props = {
   t: any
-  todos: Array<TodoT>
+  tasks: Array<TaskT>
 }
 
-function buildDescription(todo: TodoT): string {
-  return todo.title + ' ' + todo.targets
+function buildDescription(task: TaskT): string {
+  return task.title + ' ' + task.targets
 }
 
-function generateIcs(todos: Array<TodoT>) {
+function generateIcs(tasks: Array<TaskT>) {
   const ics = require('ics')
 
-  const events = todos.map(function (todo) {
-    const deadline = todo.deadline
+  const events = tasks.map(function (task) {
+    const deadline = task.deadline
     return {
       start: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
       end: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
-      title: todo.title,
-      describtion: buildDescription(todo),
+      title: task.title,
+      describtion: buildDescription(task),
       url: '',
       status: 'CONFIRMED',
       busyStatus: 'FREE'
@@ -54,19 +50,18 @@ function generateIcs(todos: Array<TodoT>) {
   })
 }
 
-
 function IcsDownload(props: Props) {
   const { t } = props;
 
-  if (props.todos[0]) {
-    const value = generateIcs(props.todos)
+  if (props.tasks[0]) {
+    const value = generateIcs(props.tasks)
     console.log(value)
     const data = new Blob([value], { type: 'text/calendar' });
     const link = window.URL.createObjectURL(data);
     return (
-      <Container>
+      <div className='calendar-ics'>
         <A className="ics_download" id="link" download={t('calendarPage.filename')} href={link}>{t('calendarPage.download')}</A>
-      </Container>
+      </div>
     );
   }
   return <div></div>

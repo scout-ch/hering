@@ -24,10 +24,10 @@
       "download": "Download als .ics",
       "filename": "Dati.ics",
       "table": {
-        "what": "Was",
-        "who": "Wer",
-        "when": "Wann",
-        "target": "An wen",
+        "what": "Cosa",
+        "who": "Chi",
+        "when": "Quando",
+        "target": "a chi",
         "chapters": "Links"
       }
     }

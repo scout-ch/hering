@@ -2,7 +2,7 @@ import React from 'react'
 import { HashLink } from 'react-router-hash-link';
 import { ChapterT, Role } from './Chapter';
 
-export type TodoT = {
+export type TaskT = {
   deadline: Date
   title: string
   targets: Array<Role>
@@ -10,7 +10,7 @@ export type TodoT = {
   chapters: Array<ChapterT>
 }
 
-function Todo(props: TodoT) {
+function Task(props: TaskT) {
 
   var options = { year: 'numeric', month: 'numeric', day: 'numeric' }
 
@@ -30,4 +30,4 @@ function Todo(props: TodoT) {
   </tr>
 }
 
-export default Todo
+export default Task
