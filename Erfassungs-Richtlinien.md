@@ -4,7 +4,7 @@ Für alle, die den Inhalt anpassen möchten – und sollen
 Wir haben mit [Strapi](https://hering-api.herokuapp.com/admin/) \[:schtrapi:\]? den Inhalt in den digitaleren Hering abgefüllt. Dafür wird ein Login verwendet, das unter *Settings* &rarr; *Users* auch neuen Personen vergeben werden kann.
 
 ## Gesamt-Aufbau
-Grundsätzlich ist der Aufbau weitgehend selbsterklärend, wenn man sich mal durch alle Menü-Punkte durchklickt – möglichst ohne bereits gross etwas zu verändern. Dafür ist wichtig zu wissen, dass es die übergeordneten *Sections* mit den *Chapters* darunter gibt. Weitere relevante Details werden untenstehend beschrieben. Man beachte, dass man sich die einzelnen Listen-Darstellungen mit «Configure the view» über das Einstellungs-Symbol selbst zusammenstellen kann. Einzelne Einträge können jeweils unter *Internalization* einer Sprache (*Locales*) zugeswiesen werden.
+Grundsätzlich ist der Aufbau weitgehend selbsterklärend, wenn man sich mal durch alle Menü-Punkte durchklickt – möglichst ohne bereits gross etwas zu verändern. Dafür ist wichtig zu wissen, dass es die übergeordneten *Sections* mit den *Chapters* darunter gibt. Weitere relevante Details werden untenstehend beschrieben. Man beachte, dass man sich die jeweiligen Listen-Darstellungen mit *Configure the view* über das Einstellungs-Symbol selbst zusammenstellen kann. Einzelne Einträge können jeweils unter *Internalization* einer Sprache (*Locales*) zugeswiesen werden.
 
 ### StartPage
 Dabei handelt es sich um die Einstiegsseite. *Content* wird jeweils in MarkDown ([Anleitung unten](#Markdown-Tipps)) editiert.
