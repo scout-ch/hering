@@ -14,6 +14,7 @@ import { withTranslation } from 'react-i18next';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import SectionPage from './pages/SectionPage';
+import ImpressumPage from './pages/ImpressumPage';
 
 export type LinkT = {
   title: string
@@ -66,6 +67,9 @@ function App() {
           <Switch>
             <Route path="/calendar" >
               <CalendarPage page={calendarPage} />
+            </Route>
+            <Route path="/impressum" >
+              <ImpressumPage />
             </Route>
             <Route path="/:slug" children={<SectionPage sections={sectionsByKey} />} />
             <Route exact path="/">

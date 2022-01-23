@@ -4,7 +4,7 @@ import { ReactComponent as PBSLogo } from './../images/pbs_logo.svg'
 import styled from '@emotion/styled';
 import i18n from './../i18n';
 import client from "./../client";
-import { useHistory, useLocation } from 'react-router-dom'
+import { Link, useHistory, useLocation } from 'react-router-dom'
 import { SectionT } from './Section';
 
 
@@ -54,16 +54,26 @@ function Footer(props: Props) {
   const history = useHistory();
   return <>
     <div className='footer-image'><FooterLogo></FooterLogo></div>
-    <nav className="footer-nav">
-     <div className='footer-logo'><PBSLogo></PBSLogo></div>
-      <ul>
-        <li>
-          <Button className={props.lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de', history, location, props.sections)}>Deutsch</Button>
-          <Button className={props.lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr', history, location, props.sections)}>Français</Button>
-          <Button className={props.lang === 'it' ? 'active' : ''} onClick={() => changeLanguage('it', history, location, props.sections)}>Italiano</Button>
-        </li>
-      </ul>
-    </nav>
+    <div className="footer-content">
+      <nav className="footer-nav">
+        <div className='footer-logo'><PBSLogo></PBSLogo></div>
+        <ul>
+          <li>
+            <Button className={props.lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de', history, location, props.sections)}>Deutsch</Button>
+            <Button className={props.lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr', history, location, props.sections)}>Français</Button>
+            <Button className={props.lang === 'it' ? 'active' : ''} onClick={() => changeLanguage('it', history, location, props.sections)}>Italiano</Button>
+          </li>
+        </ul>
+      </nav>
+      <div className='footer-bottom'>
+        <p className="footer-copyright">© 2022 Pfadibewegung Schweiz</p>
+        <ul className='footer-bottom-nav'>
+          <li className="child">
+            <Link to="/impressum">Impressum</Link>
+          </li>
+        </ul>
+      </div>
+    </div>
   </>
 
 }
