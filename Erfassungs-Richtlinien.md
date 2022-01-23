@@ -26,18 +26,18 @@ Ein Link hat einen *Title*, der nur unserer Übersicht dient und einen *Key*, de
 Hier können *Assets* (also Bilder) hochgeladen und sortiert/gefiltert werden.
 
 ### Tasks
-*Tasks* sind Aufgaben, die im Kalender mit der entsprechenden Frist eingetragen werden. `-50` heisst beispielsweise, dass die Frist 50 Tage vor dem Lager ist. Dazu wird jeweils eine oder mehrere verantwortliche Rollen (*Responsible*) und ein Kapitel, auf das zur Erklärung verlinkt wird erfasst.
+*Tasks* sind Aufgaben, die im Kalender mit der entsprechenden Frist eingetragen werden. `-50` heisst beispielsweise, dass die Frist 50 Tage vor dem Lager ist. Dazu wird jeweils eine oder mehrere verantwortliche Rollen (*Responsible*) und ein Kapitel, auf das zur Erklärung verlinkt wird, erfasst.
 Da sich die Daten nicht genau definieren lassen und wir diese Kapitel eher als Tipps und Tricks statt als ToDos ansehen, haben wir nicht zu allen *Chapters* einen *Task* erfasst (insbesondere Voilà, eCamp, Faires Lager) Längerfristig besteht die Möglichkeit, «nice to have»-*Tasks* einzubauen, damit man für den Export wählen kann, ob man sie auch einschliessen möchte.
 
 ### Users
-Dieser Menüpunkt kam automatisch mit, stört nicht, bringt aber auch nichts.
+Dieser Menüpunkt kam automatisch mit, stört nicht, bringt aber auch nichts. Er ist nicht mit *Settings* &rarr; *Users* zu verwechseln, dort kann man die Rollen der Beitragenden managen.
 
 ### CalendarPage
 Hier kann der Text vor dem Zusammenstellen der Aufgabenliste (=Kalender) bearbeitet werden.
 
 ### Content-Types Builder
 Hier empfehlen wir (Tschagon und Appendix), nicht herumzuspielen, ausser du sprichst dich mit Folletta ab und machst es bewusst – oder folgst einer allfälligen Anleitung, die sie hier noch ergänzen könnte ;)
-Irgendwo hier werden auch die Bezeichnungen LL (Lagerleiter\*in) / AL (Abteilungsleiter\*in) / C (Coach) vergeben.
+Irgendwo in diesem Bereich werden auch die Bezeichnungen LL (Lagerleiter\*in) / AL (Abteilungsleiter\*in) / C (Coach) vergeben.
 
 ## Markdown-Tipps
 Im Texteditor wird der Text nicht genau so, wie man ihn anschliessend sieht eingefüllt. Deshalb ist es wichtig, dass man nach Anpassungen schaut, ob sie auch chic aussehen. Einiges kann auch niederschwellig über den Texteditor eingefügt werden. Unter anderem folgende Zeichenfolgen werden verändert.
