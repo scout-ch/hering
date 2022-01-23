@@ -73,7 +73,7 @@ Um den «Text» auf den [Key](#Links) «Schluessel» zu verlinken, wird folgende
 Um ein Bild einzufügen, muss es zuerst in der Media-Library abgelegt werden. Dann kann man es über das entsprechende Symbol oder mit folgender Syntax einbinden:
 - Bild gemäss Bildbreite, aber maximal in der Fensterbreite (standardmässig)  
 `![B2b Vorgaben JS.svg](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642946526/hering/B2b_Vorgaben_JS_cc87a23350.svg)`
-- Bild mit fixer Breite (50px) verhältnismässig angepasster Höhe  
+- Bild mit fixer Breite (hier 50px) und verhältnismässig angepasster Höhe  
 `![alt: de-Lagerdaten\_Coach\_MiDataA.png, width: 50]
 (https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten\_Coach\_Mi\_Data\_A\_b3b32a88d3.png)`
 - Bild mit definierter Breite und Höhe (evtl. verzogen)  
