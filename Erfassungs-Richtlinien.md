@@ -21,6 +21,7 @@ Das hilft uns – sofern sauber gehalten – nachhaltig beim Überblick.
 
 ### Links
 Ein Link hat einen *Title*, der nur unserer Übersicht dient und einen *Key*, der in den verschiedenen Sprachen derselbe und unverändert bleibt. Damit kann man auf einen *Link* **oder** ein internes *Chapter* verweisen. Alle diese Angaben müssen eindeutig sein und dürfen nicht in verschiedenen Links verwendet werden.
+Das mag etwas kompliziert klingen, macht aber durchaus Sinn, wenn sich ein Link ändert, da dieser dann mit Sicherheit nur an einem Ort angepasst werden muss.
 
 ### Media-Library
 Hier können *Assets* (also Bilder) hochgeladen und sortiert/gefiltert werden.
@@ -68,10 +69,10 @@ Die bereits vorhandenen Titel sind auf Niveau *Heading1* (*Section*) und *Headin
 ### Markdown-Links
 Um den «Text» auf den Key «Schluessel» zu verlinken, wird folgende Syntax verwendet:
 `[Text]($Schluessel$)`  
-S. auch oben unter [Links](#Links)
+Der Schlüssel innerhalb der Dollar-Zeichen ist der, den wir oben unter [Links](#Links) zugeordnet haben.
 
 ### Tabellen
-Wenn du dir das wirklich antun willst, dann hilft dir beispielsweise der https://www.tablesgenerator.com/markdown_tables![image](https://user-images.githubusercontent.com/55490822/150698455-39ceee9b-3eaa-4b5b-a55f-a954777da8b6.png)
+Wenn du dir das wirklich antun willst, dann hilft dir beispielsweise der https://www.tablesgenerator.com/markdown_tables
 
 ### Bilder
 Um ein Bild einzufügen, muss es zuerst in der Media-Library abgelegt werden. Dann kann man es über das entsprechende Symbol oder mit folgender Syntax einbinden:
