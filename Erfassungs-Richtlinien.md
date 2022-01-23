@@ -1,6 +1,6 @@
-### Erfassungs-Richtlinien web-Hering
+Erfassungs-Richtlinien web-Hering
 ===
-Oder en weniger schwülstige Titel
+Für alle, die den Inhalt anpassen möchten – und sollen
 
 # Gesamt-Aufbau
 
@@ -44,7 +44,7 @@ LL (Lagerleiter\*in) /AL (Abteilungsleiter\*in) /C (Coach)
 
 Im Texteditor wird der Text nicht genau so, wie man ihn anschliessend sieht eingefüllt. Deshalb ist es wichtig, dass man nach Anpassungen schaut, ob sie auch chic aussehen. Folgende Zeichenfolgen werden beispielsweise verändert.
 
-## \*\*fett\*\*
+## `**fett**`
 
 ## \*kursiv\*
 
