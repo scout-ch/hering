@@ -65,9 +65,10 @@ Die bereits vorhandenen Titel sind auf Niveau *Heading1* (*Section*) und *Headin
 1. oder mit `1. Aufzählung`
 2. mit Zahlen
 
-### Links
-Um den «Text» auf den [Key](#Links) «Schluessel» zu verlinken, wird folgende Syntax verwendet:
+### Markdown-Links
+Um den «Text» auf den Key «Schluessel» zu verlinken, wird folgende Syntax verwendet:
 `[Text]($Schluessel$)`
+S. auch oben unter [Links](#Links)
 
 ### Bilder
 Um ein Bild einzufügen, muss es zuerst in der Media-Library abgelegt werden. Dann kann man es über das entsprechende Symbol oder mit folgender Syntax einbinden:
