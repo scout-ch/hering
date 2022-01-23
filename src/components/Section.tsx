@@ -11,7 +11,6 @@ export type SectionT = {
     title: string
     content: string
     slug: string
-    icon: IconT
     menu_name: string
     localizations: any
 }
@@ -36,7 +35,6 @@ function Section(props: Props) {
         <Helmet><title>{props.section['title']}</title></Helmet>
 
         <div className="section-title">
-            <img src={props.section.icon ? props.section.icon.url : ''} alt="icon" />
             <h1>{props.section['title']}</h1>
         </div>
         <div className='content-main'>

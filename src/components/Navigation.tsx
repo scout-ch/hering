@@ -63,7 +63,6 @@ function Navigation(props: Props) {
                     onChange={() => handleOnChange(index)}
                 />
                 <label htmlFor={section.slug} className={`accordion_label ${className}`}>
-                    {section.icon && (<img src={section.icon.url} width="25" alt="icon" />)}
                     {section.menu_name}
                 </label>
                 {chapterList(section)}
@@ -72,6 +71,10 @@ function Navigation(props: Props) {
     })
     const startPage = props.startPage
     const calendarPage = props.calendarPage
+    const isCalendar = location.pathname === '/calendar'
+    var calendarActive = isCalendar ? 'active' : ''
+    const isHome = location.pathname === '/'
+    var homeActive = isHome ? 'active' : ''
     return <nav className="header-nav">
         <div className="toggle-btn">
             <i onClick={handleToggle}><FontAwesomeIcon icon="bars" /></i>
@@ -80,11 +83,11 @@ function Navigation(props: Props) {
             <ul className={`menuItems ${navbarOpen ? "showMenu" : ""}`}>
                 <li key="home">
                     {/* <img src={startPage.icon ? startPage.icon.url : ''} width="25" alt="icon" />  */}
-                    <Link to="/" onClick={() => setNavbarOpen(!navbarOpen)}>{startPage.menu_name}</Link>
+                    <Link to="/" className={homeActive} onClick={() => setNavbarOpen(!navbarOpen)}>{startPage.menu_name}</Link>
                 </li>
                 {sectionList}
                 <li key="calendar">
-                    <Link to="/calendar" onClick={() => setNavbarOpen(!navbarOpen)}>{calendarPage.menu_name}</Link>
+                    <Link to="/calendar" className={calendarActive} onClick={() => setNavbarOpen(!navbarOpen)}>{calendarPage.menu_name}</Link>
                 </li>
             </ul>
         </div>
