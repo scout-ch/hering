@@ -40,7 +40,7 @@ Hier empfehlen wir (Tschagon und Appendix), nicht herumzuspielen, ausser du spri
 Irgendwo in diesem Bereich werden auch die Bezeichnungen LL (Lagerleiter\*in) / AL (Abteilungsleiter\*in) / C (Coach) vergeben.
 
 ## Markdown-Tipps
-Im Texteditor wird der Text nicht genau so, wie man ihn anschliessend sieht eingefüllt. Deshalb ist es wichtig, dass man nach Anpassungen schaut, ob sie auch chic aussehen. Einiges kann auch niederschwellig über den Texteditor eingefügt werden. Unter anderem folgende Zeichenfolgen werden verändert.
+Im Texteditor wird der Text nicht genau so, wie man ihn anschliessend sieht eingefüllt. Deshalb ist es wichtig, dass man nach Anpassungen schaut, ob sie auch chic aussehen. Einiges kann auch niederschwellig über die Buttons oben im Texteditor eingefügt werden. Schau dir am besten die anderen Seiten etwas an und trau dich auch zu googeln (2022 war das ein Synonym für im Internet suchen), wenn du nicht auf Anhieb weiter weisst. Sollte es dann immer noch nicht klappen, musst du wohl deine Ansprüche ans Layout runterfahren, denn Markdown ist nicht besonders kompliziert – aber dennoch genau richtig für unsere Anwendung.
 
 ### Schriftart
 - *kursiver Text* wird mit `*einem Stern darum*` gekennzeichent
@@ -67,7 +67,7 @@ Die bereits vorhandenen Titel sind auf Niveau *Heading1* (*Section*) und *Headin
 
 ### Markdown-Links
 Um den «Text» auf den Key «Schluessel» zu verlinken, wird folgende Syntax verwendet:
-`[Text]($Schluessel$)`
+`[Text]($Schluessel$)`  
 S. auch oben unter [Links](#Links)
 
 ### Bilder
