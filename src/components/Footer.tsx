@@ -58,6 +58,7 @@ function Footer(props: Props) {
         <li>
           <Button className={props.lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de', history, location, props.sections)}>Deutsch</Button>
           <Button className={props.lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr', history, location, props.sections)}>Français</Button>
+          <Button className={props.lang === 'it' ? 'active' : ''} onClick={() => changeLanguage('it', history, location, props.sections)}>Italiano</Button>
         </li>
       </ul>
     </nav>
