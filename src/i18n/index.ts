@@ -2,11 +2,13 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import de from './de.json'
 import fr from './fr.json'
+import it from './it.json'
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 const resources = {
   de: de,
-  fr: fr
+  fr: fr,
+  it: it
 } as const;
 
 i18n
@@ -14,7 +16,7 @@ i18n
   .use(LanguageDetector)
   .init({
     resources,
-    supportedLngs: ['de', 'fr'],
+    supportedLngs: ['de', 'fr', 'it'],
     fallbackLng: 'de',
     interpolation: {
       escapeValue: false
