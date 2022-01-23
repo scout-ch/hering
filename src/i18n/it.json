@@ -1,5 +1,12 @@
 {
   "translation": {
+    "target": {
+      "role": {
+        "LL": "Capo campo",
+        "C": "Coach",
+        "AL": "Capo sezione"
+      }
+    },
     "homePage": {
       "title": "Ciao Hering"
     },

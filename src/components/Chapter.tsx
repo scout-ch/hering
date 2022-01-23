@@ -1,8 +1,10 @@
 import React from 'react'
+import { withTranslation } from 'react-i18next'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent } from '../helper/MarkdownComponents'
 import { IconT, SectionT } from './Section'
+import Target from './Target'
 
 export type Role = {
     rolle: string
@@ -21,6 +23,7 @@ export type ChapterT = {
 }
 
 type ChapterProps = {
+    t: any
     data: ChapterT;
 };
 
@@ -30,7 +33,6 @@ function Chapter(props: ChapterProps) {
         return null
     }
 
-    const targets = data.responsible.map((target) => target['rolle'].toUpperCase()).join(', ')
     return <div className='chapter'>
         <div id={data.slug}>
 
@@ -39,7 +41,7 @@ function Chapter(props: ChapterProps) {
                 <h2 id={data.slug}>{data.title}</h2>
             </div>
             <div className='content-main'>
-                <div className="targets">{targets}</div>
+                <Target targets={data.responsible} />
                 <ReactMarkdown remarkPlugins={[remarkGfm]}
                     components={LinkComponent}>{data.content}</ReactMarkdown>
             </div>
@@ -47,4 +49,4 @@ function Chapter(props: ChapterProps) {
     </div>
 }
 
-export default Chapter
+export default withTranslation()(Chapter)

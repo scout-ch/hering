@@ -1,5 +1,12 @@
 {
   "translation": {
+    "target": {
+      "role": {
+        "LL": "Responsable de camp",
+        "C": "Coach",
+        "AL": "Responsable de groupe"
+      }
+    },
     "homePage": {
       "title": "Salut Hering"
     },

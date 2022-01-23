@@ -1,5 +1,12 @@
 {
   "translation": {
+    "target": {
+      "role": {
+        "LL": "Lagerleiter*in",
+        "C": "Coach",
+        "AL": "Abteilungsleiter*in"
+      }
+    },
     "homePage": {
       "title": "Hallo Hering"
     },

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { withTranslation } from 'react-i18next'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent } from '../helper/MarkdownComponents'
@@ -47,4 +48,4 @@ function Section(props: Props) {
     </div>
 }
 
-export default Section
+export default withTranslation()(Section)
