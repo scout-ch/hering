@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/hering/static/css/main.7e53d5ae.chunk.css",
-    "main.js": "/hering/static/js/main.f46fa4b8.chunk.js",
-    "main.js.map": "/hering/static/js/main.f46fa4b8.chunk.js.map",
-    "runtime-main.js": "/hering/static/js/runtime-main.4f21cf73.js",
-    "runtime-main.js.map": "/hering/static/js/runtime-main.4f21cf73.js.map",
-    "static/js/2.2f0189a3.chunk.js": "/hering/static/js/2.2f0189a3.chunk.js",
-    "static/js/2.2f0189a3.chunk.js.map": "/hering/static/js/2.2f0189a3.chunk.js.map",
-    "static/js/3.c6915a29.chunk.js": "/hering/static/js/3.c6915a29.chunk.js",
-    "static/js/3.c6915a29.chunk.js.map": "/hering/static/js/3.c6915a29.chunk.js.map",
+    "main.css": "/hering/static/css/main.31f6fb46.chunk.css",
+    "main.js": "/hering/static/js/main.f85237cd.chunk.js",
+    "main.js.map": "/hering/static/js/main.f85237cd.chunk.js.map",
+    "runtime-main.js": "/hering/static/js/runtime-main.7951830c.js",
+    "runtime-main.js.map": "/hering/static/js/runtime-main.7951830c.js.map",
+    "static/js/2.f46ff80a.chunk.js": "/hering/static/js/2.f46ff80a.chunk.js",
+    "static/js/2.f46ff80a.chunk.js.map": "/hering/static/js/2.f46ff80a.chunk.js.map",
+    "static/js/3.d1a8cc98.chunk.js": "/hering/static/js/3.d1a8cc98.chunk.js",
+    "static/js/3.d1a8cc98.chunk.js.map": "/hering/static/js/3.d1a8cc98.chunk.js.map",
     "index.html": "/hering/index.html",
-    "static/css/main.7e53d5ae.chunk.css.map": "/hering/static/css/main.7e53d5ae.chunk.css.map",
-    "static/js/2.2f0189a3.chunk.js.LICENSE.txt": "/hering/static/js/2.2f0189a3.chunk.js.LICENSE.txt",
+    "static/css/main.31f6fb46.chunk.css.map": "/hering/static/css/main.31f6fb46.chunk.css.map",
+    "static/js/2.f46ff80a.chunk.js.LICENSE.txt": "/hering/static/js/2.f46ff80a.chunk.js.LICENSE.txt",
     "static/media/index.less": "/hering/static/media/SourceSansPro-SemiBoldItalic.f035d6a1.woff2",
-    "static/media/footer.744eec6b.svg": "/hering/static/media/footer.744eec6b.svg"
+    "static/media/footer.744eec6b.svg": "/hering/static/media/footer.744eec6b.svg",
+    "static/media/pbs_logo.33551793.svg": "/hering/static/media/pbs_logo.33551793.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4f21cf73.js",
-    "static/js/2.2f0189a3.chunk.js",
-    "static/css/main.7e53d5ae.chunk.css",
-    "static/js/main.f46fa4b8.chunk.js"
+    "static/js/runtime-main.7951830c.js",
+    "static/js/2.f46ff80a.chunk.js",
+    "static/css/main.31f6fb46.chunk.css",
+    "static/js/main.f85237cd.chunk.js"
   ]
 }
