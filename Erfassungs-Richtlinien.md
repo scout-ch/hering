@@ -10,10 +10,10 @@ Grundsätzlich ist der Aufbau weitgehend selbsterklärend, wenn man sich mal dur
 Dabei handelt es sich um die Einstiegsseite. *Content* wird jeweils in MarkDown ([Anleitung unten](#Markdown-Tipps)) editiert.
 
 ### Sections
-Die *Sections* sind die übergeordnete Einheiten, in die der Hering gegliedert ist. Sie bestehen aus einem *Title* (steht oben am Text in der Seite) und einem *Menu_name* (wo könnte dieser bloss stehen...?), sowie faktultativem Content, der vor dem ersten Chapter eingefügt werden kann. Der *Slug* kann – einmal generiert – nicht mehr angepasst werden und kommt in der URL zu liegen. Einer *Section* können mehrere Chapters zugeteilt werden.
+Die *Sections* sind die übergeordneten Einheiten, in die der Hering gegliedert ist. Sie bestehen aus einem *Title* (steht oben am Text in der Seite) und einem *Menu_name* (wo könnte dieser bloss stehen...?), sowie faktultativem Content, der vor dem ersten Chapter eingefügt werden kann. Der *Slug* kann – einmal generiert – nicht mehr angepasst werden und kommt in der URL zu liegen. Einer *Section* können mehrere Chapters zugeteilt werden.
 
 ### Chapters
-Analog zur *Section* hat ein Chapter einen *Title*, *Menu_name* und *Content*. Der *Slug* wird direkt zusammengefügt, damit eine sprechende URL erzeugt werden kann. Unter *Responsible* wird angegeben, welche Rolle(n) das Chapter betrifft. Zu einem Chapter kann eine *Section* und mehrere *Tasks* zugeordnet werden.
+Analog zur *Section* hat ein Chapter einen *Title*, *Menu_name* und *Content*. Der *Slug* wird direkt mit demjenigen der *Section* zusammengefügt, damit eine sprechende URL erzeugt werden kann. Unter *Responsible* wird angegeben, welche Rolle(n) das Chapter betrifft. Zu einem Chapter können eine *Section* und mehrere *Tasks* zugeordnet werden.
 Die Sorting-Werte wurden folgendermassen aufgesetzt:
 - A. à 101, 102…
 - B. à 201, 202…  
@@ -23,7 +23,7 @@ Das hilft uns – sofern sauber gehalten – nachhaltig beim Überblick.
 Ein Link hat einen *Title*, der nur unserer Übersicht dient und einen *Key*, der in den verschiedenen Sprachen derselbe und unverändert bleibt. Damit kann man auf einen *Link* **oder** ein internes *Chapter* verweisen. Alle diese Angaben müssen eindeutig sein und dürfen nicht in verschiedenen Links verwendet werden.
 
 ### Media-Library
-Hier können *Assets* hochgeladen und sortiert/gefiltert werden.
+Hier können *Assets* (also Bilder) hochgeladen und sortiert/gefiltert werden.
 
 ### Tasks
 *Tasks* sind Aufgaben, die im Kalender mit der entsprechenden Frist eingetragen werden. `-50` heisst beispielsweise, dass die Frist 50 Tage vor dem Lager ist. Dazu wird jeweils eine oder mehrere verantwortliche Rollen (*Responsible*) und ein Kapitel, auf das zur Erklärung verlinkt wird erfasst.
