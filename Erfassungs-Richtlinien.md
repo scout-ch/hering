@@ -44,8 +44,8 @@ LL (Lagerleiter\*in) /AL (Abteilungsleiter\*in) /C (Coach)
 Im Texteditor wird der Text nicht genau so, wie man ihn anschliessend sieht eingefüllt. Deshalb ist es wichtig, dass man nach Anpassungen schaut, ob sie auch chic aussehen. Einiges kann auch niederschwellig über den Texteditor eingefügt werden. Unter anderem folgende Zeichenfolgen werden verändert.
 
 ## Schriftart
-- kursiver Text wird mit `**einem Stern darum**` gekennzeichent
-- fetter Text wird mit `**zwei Sternen darum**` gekennzeichent
+- *kursiver Text* wird mit `**einem Stern darum**` gekennzeichent
+- **fetter Text** wird mit `**zwei Sternen darum**` gekennzeichent
 
 ## einzelne Zeichen
 - Um den Genderstern zu schreiben, wird den zwei Sternen ein Backslash vorangestellt: `Leiter\*in`
