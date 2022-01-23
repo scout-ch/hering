@@ -50,6 +50,7 @@ Im Texteditor wird der Text nicht genau so, wie man ihn anschliessend sieht eing
 ### einzelne Zeichen
 - Um den\*die Genderstern zu schreiben, wird dem Stern ein Backslash vorangestellt: `Leiter\*in`
 - Ein Rechtspfeil (&rarr;) wird mit `&rarr;` erstellt
+- Ein geschütztes Leerzeichen wird mit `&nbsp;`erstellt. Dieses kann beispielsweise in der französischen Version zwischen die Anführungszeichen und den Text gestellt werden, damit dort nicht umgebrochen wird. z. B. `«&nbsp;je vais couper la sardine en petit morceaux&nbsp;»`
 
 ### Achtung-Kasten im Markdown
 Um einen Textblock hervorzuheben, wird ein \> vorangestellt.  
