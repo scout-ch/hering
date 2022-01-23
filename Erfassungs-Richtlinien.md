@@ -36,6 +36,9 @@ Dieser Menüpunkt kam automatisch mit, stört nicht, bringt aber auch nichts. Er
 ### CalendarPage
 Hier kann der Text vor dem Zusammenstellen der Aufgabenliste (=Kalender) bearbeitet werden.
 
+### ImpressumPage
+Die ist offensichtlich zur Bearbeitung des Impressums.
+
 ### Content-Types Builder
 Hier empfehlen wir (Tschagon und Appendix), nicht herumzuspielen, ausser du sprichst dich mit Folletta ab und machst es bewusst – oder folgst einer allfälligen Anleitung, die sie hier noch ergänzen könnte ;)
 Irgendwo in diesem Bereich werden auch die Bezeichnungen LL (Lagerleiter\*in) / AL (Abteilungsleiter\*in) / C (Coach) vergeben.
