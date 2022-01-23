@@ -41,27 +41,31 @@ Voilà, eCamp, Faires Lager...? Evtl. Nice to have Tasks einbauen, damit man fü
 LL (Lagerleiter\*in) /AL (Abteilungsleiter\*in) /C (Coach)
 
 # Markdown-Tipps
+Im Texteditor wird der Text nicht genau so, wie man ihn anschliessend sieht eingefüllt. Deshalb ist es wichtig, dass man nach Anpassungen schaut, ob sie auch chic aussehen. Einiges kann auch niederschwellig über den Texteditor eingefügt werden. Unter anderem folgende Zeichenfolgen werden verändert.
 
-Im Texteditor wird der Text nicht genau so, wie man ihn anschliessend sieht eingefüllt. Deshalb ist es wichtig, dass man nach Anpassungen schaut, ob sie auch chic aussehen. Folgende Zeichenfolgen werden beispielsweise verändert.
+## Schriftart
+- kursiver Text wird mit `**einem Stern darum**` gekennzeichent
+- fetter Text wird mit `**zwei Sternen darum**` gekennzeichent
 
-## `**fett**`
-
-## \*kursiv\*
-
-## Genderstern
-
-Damit der Genderstern nicht als kursiv-Befehl verstanden wird, muss man einen Backslash vorneanstellen: Leiter\*innen.
-
-## Rechtspfeil
-
-&amp;#8594;
+## einzelne Zeichen
+- Um den Genderstern zu schreiben, wird den zwei Sternen ein Backslash vorangestellt: `Leiter\*in`
+- Ein Rechtspfei (&amp;#8594;) wird mit `&amp;#8594;` erstellt
 
 ## Achtung-Kasten im Markdown
+Um einen Textblock hervorzuheben, wird ein \> vorangestellt.
+`>so einfach ist ein Abschnitt wichtiger als andere!`
+Um innerhalb eines Blocks einen Zeilenumbruch einzufügen, beendet man die vorangehende Zeile mit zwei Leerzeichen.
 
-\&gt;so einfach ist ein Abschnitt wichtiger als andere!
+## Untertitel
+Die bereits vorhandenen Titel sind auf Niveau Heading1 (Section) und Heading2 (Chapter). Um innerhalb eines Chapters Untertitel einzufügen, werden diesem drei Rautezeichen (Heading3) und ein Leerschlag vorangestellt:
+`### Heading3`
 
-Übrigens… wänn wetsch innerhalb vom Chaste en Ziileumbruch mache, chasch eifach am Ändi vo de obere Ziile zwei Läärzeiche iifüege… krass.
-
+## Aufzählungen
+`- können so
+- geschrieben
+- werden`
+`1. oder alternativ
+1. mit Zahlen`
 Beispiele für Veränderung der Bildergrösse
 
 ![alt: de-Lagerdaten\_Coach\_MiDataA.png, width: 50](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten\_Coach\_Mi\_Data\_A\_b3b32a88d3.png)
