@@ -1,5 +1,5 @@
-# Erfassungs-Richtlinien web-Hering
----
+Erfassungs-Richtlinien web-Hering
+===
 Oder en weniger schwülstige Titel
 
 # Gesamt-Aufbau
