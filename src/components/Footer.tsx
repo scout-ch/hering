@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactComponent as FooterLogo } from './../images/footer.svg'
+import { ReactComponent as PBSLogo } from './../images/pbs_logo.svg'
 import styled from '@emotion/styled';
 import i18n from './../i18n';
 import client from "./../client";
@@ -52,8 +53,9 @@ function Footer(props: Props) {
   const location = useLocation();
   const history = useHistory();
   return <>
-    <FooterLogo></FooterLogo>
+    <div className='footer-image'><FooterLogo></FooterLogo></div>
     <nav className="footer-nav">
+     <div className='footer-logo'><PBSLogo></PBSLogo></div>
       <ul>
         <li>
           <Button className={props.lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de', history, location, props.sections)}>Deutsch</Button>

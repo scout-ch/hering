@@ -1,6 +1,5 @@
 
 nav.header-nav {
-  overflow: scroll;
   position: fixed;
   top: 0;
 
@@ -8,6 +7,10 @@ nav.header-nav {
   justify-content: space-between;
   background-color: var(--color-primary);
   padding: 0.5em;
+
+  li {
+    font-weight: 400;
+  }
 
   a {
     color: white;
@@ -40,6 +43,9 @@ nav.header-nav {
   }
 
   .header-nav-content {
+    overflow: scroll;
+    height: calc(~"100vh - 15px");
+
     &>ul {
       list-style-type: disclosure-closed;
       margin: 0;
