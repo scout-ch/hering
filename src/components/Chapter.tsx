@@ -37,7 +37,7 @@ function Chapter(props: ChapterProps) {
         <div id={data.slug}>
 
             <div className="chapter-title">
-                {data.icon && (<img src={data.icon.url} alt="icon" />)}
+                {data.icon && (<img className='chapter-icon' src={data.icon.url} alt="icon" />)}
                 <h2 id={data.slug}>{data.title}</h2>
             </div>
             <div className='content-main'>
