@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionT } from './Section'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useHistory, useLocation } from 'react-router-dom'
 import { ChapterT } from './Chapter'
 import { HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
@@ -17,18 +17,20 @@ type Props = {
 function Navigation(props: Props) {
 
     const [navbarOpen, setNavbarOpen] = useState(false)
-    const location = useLocation();
+    const location = useLocation()
+    const history = useHistory()
 
     const sections = props.sections
     const [checkedState, setCheckedState] = useState(
         new Array(sections.length).fill(false)
     );
 
-    const handleOnChange = (sectionNav: any) => {
+    const handleOnChange = (sectionNav: any, section: SectionT) => {
         const updatedCheckedState = checkedState.map((item, index) =>
             index === sectionNav ? !item : false
         );
-        setCheckedState(updatedCheckedState);
+        setCheckedState(updatedCheckedState)
+        history.push('/' + section.slug)
     }
 
     const handleToggle = () => {
@@ -53,14 +55,14 @@ function Navigation(props: Props) {
         var isActive = location.pathname.replace('/', '') === section.slug
         var className = isActive ? 'active' : ''
         return <>
-            <li key={section.slug}>
+            <li key={section.slug} className={className}>
                 <input
                     type="checkbox"
                     name="tabs"
                     id={section.slug}
                     className={`accordion_input ${className}`}
                     checked={checkedState[index]}
-                    onChange={() => handleOnChange(index)}
+                    onChange={() => handleOnChange(index, section)}
                 />
                 <label htmlFor={section.slug} className={`accordion_label ${className}`}>
                     {section.menu_name}
@@ -82,7 +84,6 @@ function Navigation(props: Props) {
         <div className={`header-nav-content ${navbarOpen ? "showMenu" : ""}`}>
             <ul className={`menuItems ${navbarOpen ? "showMenu" : ""}`}>
                 <li key="home">
-                    {/* <img src={startPage.icon ? startPage.icon.url : ''} width="25" alt="icon" />  */}
                     <Link to="/" className={homeActive} onClick={() => setNavbarOpen(!navbarOpen)}>{startPage.menu_name}</Link>
                 </li>
                 {sectionList}

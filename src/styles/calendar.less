@@ -1,4 +1,27 @@
 .calendar {
+  table {
+    width: 100%;
+    thead tr td {
+      font-weight: bold;
+    }
+
+    #who, #when {
+      width: 10%;
+    }
+
+    #what {
+      max-width: 40%;
+    }
+
+    #target {
+      width: 20%;
+    }
+
+    #chapters {
+      width: 30%;
+    }
+
+  }
   .calendar-form-container {
     .calendar-form {
       list-style-type: none;
@@ -10,6 +33,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        margin-top: 8px;
 
         input, select {
           border: 1px solid black;

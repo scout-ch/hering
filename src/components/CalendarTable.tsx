@@ -19,11 +19,11 @@ function CalendarTable(props: Props) {
       <table>
         <thead>
           <tr>
-            <td>{t('calendarPage.table.when')}</td>
-            <td>{t('calendarPage.table.what')}</td>
-            <td>{t('calendarPage.table.who')}</td>
-            <td>{t('calendarPage.table.target')}</td>
-            <td>{t('calendarPage.table.chapters')}</td>
+            <td id="when">{t('calendarPage.table.when')}</td>
+            <td id="what">{t('calendarPage.table.what')}</td>
+            <td id="who">{t('calendarPage.table.who')}</td>
+            <td id="target">{t('calendarPage.table.target')}</td>
+            <td id="chapters">{t('calendarPage.table.chapters')}</td>
           </tr>
         </thead>
         <tbody>
