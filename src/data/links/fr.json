@@ -1,0 +1,457 @@
+[
+  {
+    "id": 45,
+    "key": "sportdb-schritt-fuer-schritt",
+    "title": "SPORTdb – Guide pas-à-pas pour les coachs J+S",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/711/sportdb-guide-pas-a-pas-pour-les-coachs-js/",
+    "slug": ""
+  },
+  {
+    "id": 12,
+    "key": "voila",
+    "title": "Voila",
+    "link": "http://www.voila.ch/fr/",
+    "slug": ""
+  },
+  {
+    "id": 46,
+    "key": "sportdb",
+    "title": "SPORTdb",
+    "link": "https://www.sportdb.ch/",
+    "slug": ""
+  },
+  {
+    "id": 56,
+    "key": "sicherheitsbereich",
+    "title": "Activités des domaines de sécurité",
+    "link": null,
+    "slug": "Programme-detaille#Activites-des-domaines-de-securite"
+  },
+  {
+    "id": 51,
+    "key": "lagerbudget",
+    "title": "Formulaire « Budget de camp »",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/19/formulaire-budget-de-camp/",
+    "slug": ""
+  },
+  {
+    "id": 54,
+    "key": "lagerbewilligung-download",
+    "title": "Autorisation de camp",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/9/autorisation-de-camp-msds/",
+    "slug": ""
+  },
+  {
+    "id": 58,
+    "key": "js-angebotsleitfaden",
+    "title": "Guide pour la réalisation d’offres J+S SC/T",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/42/guide-pour-la-realisation-doffres-js-sct/",
+    "slug": ""
+  },
+  {
+    "id": 60,
+    "key": "lagerreglement",
+    "title": "Règlement de camp MSdS",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/7/reglement-de-camp-msds/",
+    "slug": ""
+  },
+  {
+    "id": 64,
+    "key": "midata",
+    "title": "MiData",
+    "link": "https://db.scout.ch",
+    "slug": ""
+  },
+  {
+    "id": 86,
+    "key": "StGallenWald",
+    "title": "Activités scoutes dans la forêt St-Galloise",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/28/activites-scoutes-dans-la-foret-st-galloise/",
+    "slug": ""
+  },
+  {
+    "id": 73,
+    "key": "muster-gp-lager-lst-kinder-und-jugendsport",
+    "title": "Muster Grobprogramm J+S Lager Kinder- und Jugendsport",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/32/modele-du-programme-general-sdct-sport-des-enfants-et-des-jeunes/",
+    "slug": ""
+  },
+  {
+    "id": 74,
+    "key": "vorlage-gp-pbs",
+    "title": "Vorlage Grobprogramm PBS",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/33/modele-vide-du-programme-general/",
+    "slug": ""
+  },
+  {
+    "id": 78,
+    "key": "lst-grundlagen",
+    "title": "Broschüre Lagersport/Trekking - Grundlagen",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/39/brochure-js-sct-bases/",
+    "slug": ""
+  },
+  {
+    "id": 83,
+    "key": "LuzernerWald",
+    "title": "Activités scouts dans le canton du lucerne",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/626/camps-dans-la-foret-du-canton-de-lucerne/",
+    "slug": ""
+  },
+  {
+    "id": 89,
+    "key": "LagerThurgau",
+    "title": "Lager im Thurgau",
+    "link": "https://forstamt.tg.ch/public/upload/assets/78914/Organisation_von_Jugendlagern.pdf",
+    "slug": ""
+  },
+  {
+    "id": 92,
+    "key": "ForstamtTG",
+    "title": "Forstamt Thurgau",
+    "link": "https://forstamt.tg.ch/",
+    "slug": ""
+  },
+  {
+    "id": 95,
+    "key": "LagerVD",
+    "title": "Demande d'autorisation Vaud",
+    "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/23/bewilligung-lager-im-kanton-waadt/",
+    "slug": ""
+  },
+  {
+    "id": 98,
+    "key": "RichtlinienVD",
+    "title": "Directives pour les camp dans le canton du Vaud",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/25/directives-pour-les-camps-et-colonies-de-vacances-au-canton-de-vaud/",
+    "slug": ""
+  },
+  {
+    "id": 104,
+    "key": "auslandlager",
+    "title": "Broschüre Auslandlager",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/8/camps-a-letranger/",
+    "slug": ""
+  },
+  {
+    "id": 108,
+    "key": "reisebewilligung-kind",
+    "title": "Bewilligung für ein ohne Eltern reisendes Kind",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/123/autorisation-pour-enfant-non-accompagne-de-ses-parents/",
+    "slug": ""
+  },
+  {
+    "id": 101,
+    "key": "international",
+    "title": "Internationales PBS",
+    "link": "https://pfadi.swiss/fr/activites-scoutes/aventure-scoute-internationale/",
+    "slug": ""
+  },
+  {
+    "id": 111,
+    "key": "formular-js-leihmaterial",
+    "title": "Formular J+S Leihmaterialbestellung",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/38/commande-de-materiel-de-pret-js/",
+    "slug": ""
+  },
+  {
+    "id": 114,
+    "key": "leitfaden-js-leihmaterial",
+    "title": "Leitfaden J+S Leihmaterial",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/35/guide-concernant-le-materiel-de-pret-js/",
+    "slug": ""
+  },
+  {
+    "id": 117,
+    "key": "sportamt-kantone",
+    "title": "Kantonale Sportämter",
+    "link": "https://www.jugendundsport.ch/fr/kontakt/j-s-aemter-der-kantone.html",
+    "slug": ""
+  },
+  {
+    "id": 120,
+    "key": "formular-landeskartenbestellung",
+    "title": "Formular Landeskartenbestellung",
+    "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/37/landeskartenbestellung-js/",
+    "slug": ""
+  },
+  {
+    "id": 123,
+    "key": "leitfaden-js-spezielle-leistungen",
+    "title": "Leitfaden für spezielle Leistungen für die J+S Angebote",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/36/guide-concernant-les-prestations-speciales-pour-les-offres-de-sport-js-et-la-formation-des-cadres-js/",
+    "slug": ""
+  },
+  {
+    "id": 128,
+    "key": "lst-kueche",
+    "title": "Faire la cuisine dans le camp",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/14/aide-memoire-js-faire-la-cuisine/",
+    "slug": ""
+  },
+  {
+    "id": 130,
+    "key": "lst-berg-cudesch",
+    "title": "SC/T – montagne",
+    "link": "https://pfadi.swiss/fr/formation-encadrement/cudesch/#trekking-kapitel",
+    "slug": ""
+  },
+  {
+    "id": 131,
+    "key": "lst-lager-cudesch",
+    "title": "SC/T camp",
+    "link": "https://pfadi.swiss/fr/formation-encadrement/cudesch/#lager-kapitel",
+    "slug": ""
+  },
+  {
+    "id": 135,
+    "key": "blockvorlagen",
+    "title": "Modèles de bloc",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/?search=bloc&c=3&c=24",
+    "slug": ""
+  },
+  {
+    "id": 138,
+    "key": "cudesch-sicherheit",
+    "title": "cudesch – sécurité",
+    "link": "https://pfadi.swiss/fr/formation-encadrement/cudesch/#sicherheit-kapitel",
+    "slug": ""
+  },
+  {
+    "id": 141,
+    "key": "notfallinfos",
+    "title": "Feuille d'informations en cas d'urgence pour les participants",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/17/feuille-dinformations-en-cas-durgence-pour-les-participants/",
+    "slug": ""
+  },
+  {
+    "id": 144,
+    "key": "sbb-gruppenreiserechner",
+    "title": "SBB Gruppenreiserechner",
+    "link": "https://www.sbb.ch/fr/acheter/pages/grouptravel/group.xhtml",
+    "slug": ""
+  },
+  {
+    "id": 147,
+    "key": "sbb-gruppenreisen-info",
+    "title": "Informationen SBB Gruppenreisen",
+    "link": "https://www.sbb.ch/fr/abonnements-et-billets/billets-suisse/billets-de-groupe.html",
+    "slug": ""
+  },
+  {
+    "id": 154,
+    "key": "mb-sicherheitsbereiche",
+    "title": "Directives de sécurité dans les domaines Montagne, Hiver, Eau",
+    "link": "https://www.jugendundsport.ch/content/jus-internet/fr/sportarten/lagersport-trekking-uebersicht/sicherheit-/_jcr_content/contentPar/downloadlist/downloadItems/1219_1460465008581.download/mb_f_LST_Berg_Winter_Wasser.pdf",
+    "slug": ""
+  },
+  {
+    "id": 150,
+    "key": "sbb-gepaeck-info",
+    "title": "Informationen SBB Gepäck",
+    "link": "https://www.sbb.ch/fr/gare-services/avant-le-voyage/bagages/bagages-de-groupes.html",
+    "slug": ""
+  },
+  {
+    "id": 169,
+    "key": "lagerbewilligung-kapitel",
+    "title": "Autorisation de camp",
+    "link": null,
+    "slug": "Autorisation-de-camp#Autorisation-de-camp"
+  },
+  {
+    "id": 160,
+    "key": "rega-rahmenbedingungen",
+    "title": "Conditions générales Rega",
+    "link": "https://www.jugendundsport.ch/content/jus-internet/fr/ueber-j-s/rechtliche-grundlagen/_jcr_content/contentPar/downloadlist/downloadItems/185_1455696848167.download/das_engagement_der_rega_f.pdf",
+    "slug": ""
+  },
+  {
+    "id": 163,
+    "key": "landeskartenretour",
+    "title": "cartes nationales",
+    "link": null,
+    "slug": "Cloture-du-camp#Renvoi-les-cartes-nationales"
+  },
+  {
+    "id": 167,
+    "key": "lageranmeldung",
+    "title": "Annonce de camp au MSdS",
+    "link": null,
+    "slug": "Annonce-de-camp#Annonce-de-camp-au-MSdS"
+  },
+  {
+    "id": 171,
+    "key": "js-coachleitfaden",
+    "title": "Guide pour le coach J+S",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/41/brochure-js-guide-pour-le-coach-js/",
+    "slug": ""
+  },
+  {
+    "id": 173,
+    "key": "rega",
+    "title": "Assurance Rega",
+    "link": null,
+    "slug": "Commande-de-services#Assurance-Rega"
+  },
+  {
+    "id": 175,
+    "key": "js-leihmaterial",
+    "title": "Le matériel de prêt J+S",
+    "link": null,
+    "slug": "Commande-de-services#Commande-de-materiel-de-pret-J+S"
+  },
+  {
+    "id": 157,
+    "key": "tn-administration-midata",
+    "title": "Administration der TN in der MiData",
+    "link": null,
+    "slug": "Administration-des-participantes#Ajouter-et-effacer-des-participants-dans-la-liste-des-participants-dans-la-MiData"
+  },
+  {
+    "id": 165,
+    "key": "lagerabschluss-sportdb",
+    "title": "Clôture de l'offre J+S dans la SPORTdb",
+    "link": null,
+    "slug": "Cloture-de-l'offre-J+S#Cloture-de-l'offre-J+S-dans-la-SPORTdb"
+  },
+  {
+    "id": 177,
+    "key": "lagerdaten-formular",
+    "title": "Données nécessaires pour la SPORTdb",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/252/donnees-necessaires-pour-la-sportdb/",
+    "slug": ""
+  },
+  {
+    "id": 180,
+    "key": "faireslager",
+    "title": "Camp équitable",
+    "link": "https://www.faires-lager.ch/fr/",
+    "slug": ""
+  },
+  {
+    "id": 184,
+    "key": "pfadiprofil",
+    "title": "Profil du scoutisme",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/98/profil-du-scoutisme/",
+    "slug": ""
+  },
+  {
+    "id": 216,
+    "key": "ecamp",
+    "title": "eCamp",
+    "link": "https://ecamp.pfadiluzern.ch/login.php",
+    "slug": ""
+  },
+  {
+    "id": 198,
+    "key": "jugendurlaub",
+    "title": "Congé jeunesse",
+    "link": "http://www.conge-jeunesse.ch/",
+    "slug": ""
+  },
+  {
+    "id": 190,
+    "key": "sportdb-technisch",
+    "title": "SPORTdb – Exigences techniques pour l'importation",
+    "link": "https://test.ch",
+    "slug": ""
+  },
+  {
+    "id": 188,
+    "key": "tn-anmeldung-kapitel",
+    "title": "Inscription des participants aux camps via la MiData",
+    "link": null,
+    "slug": "Administration-des-participantes#Inscription-des-participants-aux-camps-via-la-MiData"
+  },
+  {
+    "id": 192,
+    "key": "team-erfassen-midata-kapitel",
+    "title": "Ajouter la maitrise dans MiData",
+    "link": null,
+    "slug": "Preparation#Enregistrement-de-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData"
+  },
+  {
+    "id": 194,
+    "key": "jugendurlaub-formular",
+    "title": "Attestation relative au congé jeunesse (CSAJ)",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/24/formulaire-conge-jeunesse/",
+    "slug": ""
+  },
+  {
+    "id": 196,
+    "key": "jugendurlaub-merkblatt",
+    "title": "Aide-mémoire Congé jeunesse",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/26/aide-memoire-conge-jeunesse/",
+    "slug": ""
+  },
+  {
+    "id": 201,
+    "key": "download-lageradmin",
+    "title": "Espace de téléchargement – Administration de camp",
+    "link": "https://pfadi.swiss/fr/publikationen-downloads/downloads/?search=&c=3&c=27",
+    "slug": ""
+  },
+  {
+    "id": 204,
+    "key": "cudesch",
+    "title": "cudesch",
+    "link": "https://cudesch.msds.ch",
+    "slug": ""
+  },
+  {
+    "id": 207,
+    "key": "terminliste-lager",
+    "title": "Liste des délais",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/6/liste-des-delais-annonce-de-camp-interactif/",
+    "slug": ""
+  },
+  {
+    "id": 210,
+    "key": "cudesch-programm",
+    "title": "cudesch - programme",
+    "link": "https://pfadi.swiss/fr/formation-encadrement/cudesch/#programm-kapitel",
+    "slug": ""
+  },
+  {
+    "id": 213,
+    "key": "cudesch-stufen",
+    "title": "cudesch – branches",
+    "link": "https://pfadi.swiss/fr/formation-encadrement/cudesch/#stufenarbeit-kapitel",
+    "slug": ""
+  },
+  {
+    "id": 186,
+    "key": "midata-lager-eroeffnen",
+    "title": "Ouvrir un camp",
+    "link": null,
+    "slug": "Preparation#Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-a-la-responsable-de-camp-et-au-coach"
+  },
+  {
+    "id": 215,
+    "key": "ecamp",
+    "title": "eCamp",
+    "link": "https://ecamp.pfadiluzern.ch/login.php",
+    "slug": ""
+  },
+  {
+    "id": 217,
+    "key": "ecamp",
+    "title": "eCamp",
+    "link": "https://ecamp.pfadiluzern.ch/login.php",
+    "slug": ""
+  },
+  {
+    "id": 219,
+    "key": "landeskarten",
+    "title": "Commande de cartes nationales Swisstopo",
+    "link": null,
+    "slug": "Commande-de-services#Commande-de-cartes-nationales-Swisstopo"
+  },
+  {
+    "id": 221,
+    "key": "forstamt-tg",
+    "title": "Forstamt Thurgau",
+    "link": "https://forstamt.tg.ch/",
+    "slug": ""
+  }
+]

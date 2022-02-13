@@ -1,0 +1,1934 @@
+[
+  {
+    "id": 3,
+    "title": "A. Préparation de la saison des camps",
+    "content": "",
+    "locale": "fr",
+    "published_at": "2021-10-14T18:07:46.751Z",
+    "created_at": "2021-10-06T16:01:50.136Z",
+    "updated_at": "2022-01-22T09:42:15.236Z",
+    "key": "vorbereitung",
+    "Sorting": 1,
+    "sorting": 1,
+    "slug": "Preparation",
+    "menu_name": "Préparation",
+    "identifier": "bla",
+    "chapters": [
+      {
+        "id": 4,
+        "title": "Conditions cadres pour camps (avec ou sans J+S)",
+        "content": "Les camps scouts peuvent avoir lieu avec ou sans inscription à J+S. Tous les camps scouts de plus de 3 jours avec ou sans J+S doivent être annoncés par [MiData]($midata$) à l’association cantonale (AC) et au Mouvement Scout de Suisse (MSdS) (cf. [Annonce de camp au MSdS]($lageranmeldung$)). Pour l’autorisation de camp on utilise [l’autorisation de camp du MSdS]($lagerbewilligung-kapitel$). Elle consiste en deux parties : L’autorisation (p. 1) et un aide-mémoire (p. 2) qui sert de base à l’encadrement pour donner son accord au programme du camp. Les consignes de base valables pour tous les camps scouts sont consignées dans le [Règlement concernant la préparation de camps du MSdS]($lagerreglement$). Pour les camps inscrits chez J+S, il faut suivre des dispositions supplémentaires. Si le camp remplit ces conditions, le groupe sera dédommagé d’un montant forfaitaire. Les montants applicables actuellement sont notés dans le [Guide pour le coach J+S]($js-coachleitfaden$). Chaque personne de l’âge J+S couverte par un·e responsable J+S a droit à un dédommagement. Toutes les dispositions concernant les camps J+S se trouvent dans le [Guide pour la réalisation des camps J+S Sport de camp/Trekking]($js-angebotsleitfaden$). Le programme général de chaque camp J+S doit être téléchargé par le·la coach dans la [Clôture du camp dans la SPORTdb]($lagerabschluss-sportdb$). L’office cantonal du sport peut faire des vérifications sporadiques et analyser les programmes. Il peut aussi demander à voir le programme détaillé pour le contrôler. Le coach inscrit et décompte tous les camps qui sont réalisés au cours d’une année par un groupe en tant qu’offre J+S dans la [SPORTdb]($sportdb$). Ces camps peuvent aussi profiter de conditions particulièrement bon marché pour :\n- [Le matériel de prêt J+S]($js-leihmaterial$)\n- [Les cartes nationales]($landeskarten$)\n- [Les assurances REGA]($rega$)",
+        "section": 3,
+        "locale": "fr",
+        "published_at": "2021-10-17T10:48:00.949Z",
+        "created_at": "2021-10-07T09:00:28.464Z",
+        "updated_at": "2022-01-23T20:25:27.321Z",
+        "key": "rahmenbedingungen",
+        "Sorting": 1,
+        "sorting": 101,
+        "slug": "Conditions-cadres-pour-camps-(avec-ou-sans-J+S)",
+        "link": null,
+        "slug_with_section": "Preparation#Conditions-cadres-pour-camps-(avec-ou-sans-J+S)",
+        "menu_name": "Conditions cadres pour camps (avec ou sans J+S)",
+        "responsible": [
+          {
+            "id": 1379,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1380,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 1381,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 44,
+          "name": "A1 Rahmenbedingungen.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A1_Rahmenbedingungen_08dc36cb08",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 17.6,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A1_Rahmenbedingungen_08dc36cb08.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A1_Rahmenbedingungen_08dc36cb08",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.887Z",
+          "updated_at": "2022-01-23T01:28:25.897Z"
+        }
+      },
+      {
+        "id": 111,
+        "title": "Données relatives aux camps",
+        "content": "Au début de l’année, responsable de camp et RG décident ensemble les camps qu’elles veulent organiser et les dates. Elles établissent une liste avec toutes les données nécessaires concernant le groupe et les camps. responsable de camp et RG décident également quels camps seront annoncés à J+S. Pour rassembler ces données, on peut consulter le mémento [Données nécessaires pour la SPORTdb]($lagerdaten-formular$), afin de s’assurer que les données sont complètes. En début d’année, responsable de camp et RG remettent au·à la coach la liste des données relatives aux camps. \nVoici quelques explications relatives au formulaire : \n1. « Compte de paiement du forfait J+S » : on donne le numéro de compte du groupe. Les paiements par J+S se font uniquement sur le compte bancaire ou postal suisse d’une association. L’indication d’un code IBAN valable est impératif. Après le décompte de l’offre J+S à la fin de l’année, la subvention est versée sur ce compte.\n2. « Type de camp J +S » : Kids correspond à la branche louveteaux et on la choisit pour les camps s’adressant principalement à des enfants de 7 à 10 ans. Teens correspond aux branches éclairs ou picos avec des participant(e)s majoritairement âgés de 10 à 20 ans. Un camp mixte permet de compter comme participants des personnes de 5 à 20 ans. Selon le règlement des camps du MSdS, il n’est pas permis d’organiser des camps avec la branche Castors (5-6 ans).\n3. « Nombre de participants prévu » : celui-ci n’est probablement pas connu à l’avance, c’est pourquoi on met un chiffre approximatif qui pourra être corrigé ultérieurement.\n4. « Nombre d’accompagnants prévus » : On entend par là des personnes qui seront présentes au camp en plus de responsables formés. \n5. « Activité de sécurité prévue » : données provisoires qui pourront être modifiées plus tard. Néanmoins, s’il est clair qu’une [activité dans ce domaine de sécurité]($sicherheitsbereich$) aura lieu, le coach peut déjà chercher un encadreur pour celle-ci.\n6. « NPA/Localité » et « Date de naissance » : Seulement pour les responsables qui s’engagent pour la première fois dans le groupe en tant que moniteur·trice J+S. C’est important d’inscrire la date de naissance précise et pas seulement l’année. Le totem ne sert qu’au·à la coach et n’est pas nécessaire à la [SPORTdb]($sportdb$).\n\n![Screenshot-Lagerdaten-fr.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643651409/hering/Screenshot_Lagerdaten_it_9b101acb5e.png)",
+        "section": 3,
+        "locale": "fr",
+        "published_at": "2022-01-23T21:08:20.990Z",
+        "created_at": "2022-01-23T21:08:18.497Z",
+        "updated_at": "2022-01-31T17:51:41.948Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 102,
+        "slug": "Donnees-relatives-aux-camps",
+        "link": null,
+        "slug_with_section": "Preparation#Donnees-relatives-aux-camps",
+        "menu_name": "Données relatives aux camps",
+        "responsible": [
+          {
+            "id": 1361,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1362,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 1363,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 40,
+          "name": "A2 Lageradaten.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A2_Lageradaten_c103ad8bf1",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 15.45,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A2_Lageradaten_c103ad8bf1.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A2_Lageradaten_c103ad8bf1",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.573Z",
+          "updated_at": "2022-01-23T01:28:25.588Z"
+        }
+      },
+      {
+        "id": 113,
+        "title": "Voilà – programme pour la promotion de la santé et la prévention des dépendances",
+        "content": "Les responsable de camp et les RG décident également au début de l’année si ils·elles veulent inscrire les camps dans le programme Voilà. Voilà est le programme pour la promotion de la santé et la\nprévention des dépendances dans les associations de jeunesse. Il est proposé dans 17 cantons sous différents noms. Pour pouvoir profiter de ce programme c’est-à-dire pouvoir y inscrire son camp, il faut qu’au moins un membre de la maîtrise suive une formation. Cette formation permet aux responsables de demander des subventions pour un camp. Il faut décider avec le·la coach, s’il·elle peut ou doit vérifier les conditions ou si d’autres personnes de l’encadrement sont nécessaires. Des informations plus précises sur les dates des cours ainsi que sur les exigences cantonales spécifiques pour les subventions peuvent être obtenues en s’adressant auprès des personnes de contact des programmes Voilà cantonaux :  \n[Voilà]($voila$) &rarr; Programmes cantonaux &rarr; Adresses\n\n![alt: me*in- text, width: 80](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1640626943/hering/Screenshot_2021_12_27_at_18_41_44_54f3a6fbe5.png)\n\n\n",
+        "section": 3,
+        "locale": "fr",
+        "published_at": "2022-01-23T21:16:55.231Z",
+        "created_at": "2022-01-23T21:16:53.296Z",
+        "updated_at": "2022-01-23T21:17:23.341Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 103,
+        "slug": "Voila---programme-pour-la-promotion-de-la-sante-et-la-prevention-des-dependances",
+        "link": null,
+        "slug_with_section": "Preparation#Voila---programme-pour-la-promotion-de-la-sante-et-la-prevention-des-dependances",
+        "menu_name": "Voilà",
+        "responsible": [
+          {
+            "id": 1073,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 42,
+          "name": "A3 Voila.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A3_Voila_8662cabdd8",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 11.2,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A3_Voila_8662cabdd8.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A3_Voila_8662cabdd8",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.708Z",
+          "updated_at": "2022-01-23T01:28:25.716Z"
+        }
+      },
+      {
+        "id": 115,
+        "title": "Camp équitable – projet pour le développement durable dans les camps",
+        "content": "Le projet «&nbsp;Camp équitable&nbsp;» propose chaque été un concours concernant un aspect du développement durable dans les camps d’été. On peut gagner de superbes prix. Sinon, on trouve aussi une boîte à outils en ligne pour rendre un camp ou sa cuisine plus respectueuse de l’environnement et du développement durable :\n[camp équitable]($faireslager$)\n    &rarr; Concours\n    &rarr; Boîte à outils",
+        "section": 3,
+        "locale": "fr",
+        "published_at": "2022-01-23T21:25:35.576Z",
+        "created_at": "2022-01-23T21:25:33.265Z",
+        "updated_at": "2022-01-23T21:28:12.366Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 104,
+        "slug": "Camp-equitable---projet-pour-le-developpement-durable-dans-les-camps",
+        "link": null,
+        "slug_with_section": "Preparation#Camp-equitable---projet-pour-le-developpement-durable-dans-les-camps",
+        "menu_name": "Camp équitable",
+        "responsible": [
+          {
+            "id": 1084,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 43,
+          "name": "A4 Faires Lager.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A4_Faires_Lager_342f65192f",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 18.74,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A4_Faires_Lager_342f65192f.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A4_Faires_Lager_342f65192f",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.790Z",
+          "updated_at": "2022-01-23T01:28:25.800Z"
+        }
+      },
+      {
+        "id": 118,
+        "title": "Ouvrir un camp dans la MiData et l’attribuer à la responsable de camp et au coach",
+        "content": "Le·la RG ouvre le camp dans la [MiData]($midata$). Pour cela, il·elle se connecte et, dans son groupe, va sur «&nbsp;Camp&nbsp;» et clique «&nbsp;+Établir un camp&nbsp;» et remplit le formulaire «&nbsp;Créer un camp&nbsp;». Un·e coach est attribué au groupe. Le·la coach reçoit un e-mail automatique de notification, qu’il·elle a été affecté·e au camp.\n\n> Des camps peuvent être créés à plusieurs niveaux. Un camp peut aussi bien être ouvert au niveau des groupes que par un groupe (par exemple : Eclais, Routiers, etc.) L’inscription au camp n’est possible que pour les membres du groupe correspondant.\n\n![A6-fr-lagererstellen.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642974389/hering/A6_fr_lagererstellen_fad591f5a7.png)\n\n![fr-lager-eroeffnen2.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643652772/hering/fr_lager_eroeffnen2_e922f94d44.png)\n\nChamps | Saisie / Remarque | Qui remplit\n-------- | -------- | --------\nRèglement du camp / Profil du scoutisme | Le [Règlement concernant la préparation de camps du MSdS]($lagerreglement$) («&nbsp;règlement de camp&nbsp;») ainsi que le [profil du scoutisme]($pfadiprofil$) sont pris en compte et respectés. | Responsable de camp\nConsignes/ Recommandations AC   | Les directives et recommandations disponibles de l'association cantonale sont prise en compte au mieux lors de la préparation du camp. | Responsable de camp\nConsignes J+S SC/T | Pour les camps J+S: je connais les [recommandations actuelles du dossier Sport de camp/Trekking]($js-angebotsleitfaden$) et j'en tiens compte. | Responsable de camp\nCoach confirmé | Le·la coach confirme-t-il·elle les données du camp ? | Coach\n\n\n\n",
+        "section": 3,
+        "locale": "fr",
+        "published_at": "2022-01-23T21:55:43.393Z",
+        "created_at": "2022-01-23T21:55:33.284Z",
+        "updated_at": "2022-01-31T18:15:38.121Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 106,
+        "slug": "Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-a-la-responsable-de-camp-et-au-coach",
+        "link": 186,
+        "slug_with_section": "Preparation#Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-a-la-responsable-de-camp-et-au-coach",
+        "menu_name": "Ouvrir un camp",
+        "responsible": [
+          {
+            "id": 1371,
+            "label": null,
+            "rolle": "AL"
+          }
+        ],
+        "icon": {
+          "id": 41,
+          "name": "A6 Lager in der MiData eröffnen.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A6_Lager_in_der_Mi_Data_eroeffnen_23e6ec5e48",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 12.78,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A6_Lager_in_der_Mi_Data_eroeffnen_23e6ec5e48.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A6_Lager_in_der_Mi_Data_eroeffnen_23e6ec5e48",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.576Z",
+          "updated_at": "2022-01-23T01:28:25.590Z"
+        }
+      },
+      {
+        "id": 120,
+        "title": "Administrer un camp à plusieurs unités sur MiData",
+        "content": "Dans le cas ou plusieurs unités font un camp ensemble, il peut être sensé de saisir le camp de manière hiérarchique. Ainsi, autant de camps que l’on souhaite peuvent être mis par-dessus ou sous un camp. L’administration de camp avant tout peut ainsi être massivement facilitée et le·la RC du camp supérieur peut voir tou·te·s les participant·e·s. Vu que les informations du camp principal sont copiées de manière unique dans le sous-camp, il est central de bien suivre les étapes décrites.\n\n### Créer le camp supérieur\nTout d’abord, le camp principal est créé de manière analogue au processus indiqué dans le chapitre [Ouvrir un camp dans la MiData et l’attribuer à la responsable de camp et au coach]($midata-lager-eroeffnen$). Le statut reste sous «&nbsp;créé&nbsp;», car ce n’est qu’ainsi que d’autres camps peuvent être mis dessous. Il faut faire attention que de nombreuses informations données ici seront reprises dans les sous-camps. Ainsi, cela vaut la peine de créer correctement le camp principal dès le début. Dans le cas où l’information pour l’un des champs n’est pas encore connue, celle-ci devrait être remplie par une «&nbsp;réservation&nbsp;» (par exemple : «&nbsp;inofrmations suivent&nbsp;». Les champs suivants en particulier devraient être choisis en connaissance de cause avant que des sous-camps soient autorisés :  \n•\tNom  \n•\tDate  \n•\tLieu, adresse  \n•\tCoûts  \n•\tCadre J+S  \n•\tDomaines de la sécurité  \n\n> Si l’on attend des données d’inscription ou de contact particulières des participant·e·s au camp (voir chapitre [Inscription des participants aux camps via la MiData]($tn-anmeldung-kapitel$)), elles doivent également être créées maintenant. Si une information est oubliée ici, elle devra ensuite être créée manuellement après coup dans chaque sous camp.\n\n### Autoriser les sous-camps\nDès que les points saillants importants ont été définis et sauvegardés, la case de contrôle «&nbsp;autoriser les sous-camps&nbsp;» est activée et le camp est sauvegardé. Dès lors, le camp est montré dans la liste des camps supérieurs possibles.\n\n### Créer et joindre les sous-camps :\nPour chaque sous-camp le processus suivant est répété :\n- Créer le camp au niveau des participant·e·s adéquat·e·s\n- Remplir quelques petits champs (ceux-ci sont écrasés lors du rattachement)\n- Choisir « rattacher au camp supérieur » dans la hiérarchie de camp\n- Trouver et choisir le camp supérieur souhaité dans la liste ou par recherche textuelle\n- Confirmer\n- Sauvegarder\n- Fermer le traitement\n\nLa plupart des informations du camp principal devraient maintenant également être disponibles dans le sous-camp. Sont exclu·e·s «&nbsp;statut du camp&nbsp;», «&nbsp;description&nbsp;», «&nbsp;nombre maximal de participant·e·s&nbsp;» et «&nbsp;nombre attendu de participant·e·s&nbsp;». Le lieu et la date doivent brièvement être contrôlés afin de s’assurer que le bon camp a été choisi. Lorsqu’il y a trop de points de cours avec des descriptions, des lieux et des dates, il faut effacer les mauvais.\n\n\n### Terminer la phase d’inscription\nDès que le sous-camp a été joint, le statut du camp principal peut passer de «&nbsp;crée&nbsp;» à «&nbsp;confirmé&nbsp;». Dorénavant, aucun nouveau camp ne peut se mettre dessous et les sous-camps existants ne peuvent plus être modifiés lors de leurs inscription auprès du camp principal. La structure est là et les participant·e·s peuvent s’inscrire au sous-camp.",
+        "section": 3,
+        "locale": "fr",
+        "published_at": "2022-01-23T22:22:32.721Z",
+        "created_at": "2022-01-23T22:17:34.827Z",
+        "updated_at": "2022-01-23T22:22:32.751Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 107,
+        "slug": "Administrer-un-camp-a-plusieurs-unites-sur-MiData",
+        "link": null,
+        "slug_with_section": "Preparation#Administrer-un-camp-a-plusieurs-unites-sur-MiData",
+        "menu_name": "Administrer un camp à plusieurs unités sur MiData",
+        "responsible": [
+          {
+            "id": 1305,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 1306,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 51,
+          "name": "A7 Einheitsübergreifende Lager.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A7_Einheitsuebergreifende_Lager_f3256e4e92",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 19.22,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/A7_Einheitsuebergreifende_Lager_f3256e4e92.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A7_Einheitsuebergreifende_Lager_f3256e4e92",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.651Z",
+          "updated_at": "2022-01-23T01:28:28.661Z"
+        }
+      },
+      {
+        "id": 122,
+        "title": "Enregistrement de responsable de camp et de l'équipe cuisine dans MiData",
+        "content": "Le·la RG enregistre dans la MiData au moins le·la responsable de camp. Les autres personnes responsables peuvent être ajoutées aussi bien par le·la RG que par le·la responsable de camp enregistré. L’équipe cuisine doit également être ajoutée, afin que le·la coach puisse facilement compléter la SPORTdb pour l’[assurance de la REGA]($rega$).\n1. Sélectionner domaine camp\n2. Choisir le camp souhaité déjà enregistré\n3. Cliquer sur participants\n4. Cliquer sur maîtrise\n5. Ajouter une personne et choisir la forme souhaitée.\n6. Sous „Chercher une personne“, saisir un nom, choisir la personne souhaitée. Sous désignation, indiquer la désignation concrète (par exemple co-responsable) et «&nbsp;Enregistrer&nbsp;».",
+        "section": 3,
+        "locale": "fr",
+        "published_at": "2022-01-23T22:36:01.552Z",
+        "created_at": "2022-01-23T22:35:58.255Z",
+        "updated_at": "2022-01-23T22:41:54.424Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 108,
+        "slug": "Enregistrement-de-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData",
+        "link": 192,
+        "slug_with_section": "Preparation#Enregistrement-de-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData",
+        "menu_name": "Enregistrement de responsable de camp dans MiData",
+        "responsible": [
+          {
+            "id": 1227,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1229,
+            "label": null,
+            "rolle": "AL"
+          }
+        ],
+        "icon": {
+          "id": 46,
+          "name": "A8 Leitungspersonen erfassen.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A8_Leitungspersonen_erfassen_2cb76d602c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 20.13,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/A8_Leitungspersonen_erfassen_2cb76d602c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A8_Leitungspersonen_erfassen_2cb76d602c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.103Z",
+          "updated_at": "2022-01-23T01:28:28.113Z"
+        }
+      },
+      {
+        "id": 125,
+        "title": "Enregistrement de l’offre J+S via la SPORTdb",
+        "content": "Le·la coach enregistre tous les camps du groupe en une fois auprès de J+S. Il·elle le fait en ligne par la [SPORTdb]($sportdb$). Il*elle reçoit l'accès à la SPORTdb de l'AC.\n\n### Ouverture de l’offre J+S dans la SPORTdb\nAu début de l’année, une nouvelle offre pour l’année à venir est ouverte sous «&nbsp;Gestion de l’offre&nbsp;» → «&nbsp;Nouvelle offre&nbsp;». Une seule offre est ouverte par groupe. Avec cette offre, tous les camps du groupe seront inscrits à J+S. Après l’ouverture, l’offre peut être consultée n’importe quand sous «&nbsp;Gestion de l’offre&nbsp;» → «&nbsp;Vue d’ensemble de l’offre&nbsp;». A chaque modification pendant l’année, le «&nbsp;statut&nbsp;» change également. La «&nbsp;check-list&nbsp;» de l’offre donne une vue d’ensemble sur les étapes de modification nécessaires à chaque statut. Pour modifier l’offre, on suit les cartes du registre de la gauche vers la droite. La nouvelle offre ouverte s’affiche dans la vue d’ensemble de l’offre en tant qu’ «&nbsp;offre pas encore enregistrée&nbsp;». A partir de là, il s’agit d’enregistrer l’offre.\n\n### Statut de l’offre «&nbsp;Procédure d’autorisation&nbsp;»\nLe statut «&nbsp;Procédure d’autorisation&nbsp;» indique que l’office cantonal des sports traite l’offre. La demande d’autorisation du·de la coach est confirmée par message électronique (Objet&nbsp;: Confirma-tion de réception de votre offre J+S n° XXXXX). L’autorisation finale par l’OCS est également confirmée par message électronique (Objet&nbsp;: Autorisation de votre offre J+S n°XXXXX). Dès lors, l’offre entre dans le statut «&nbsp;Exécution&nbsp;».\n\n### Travailler dans la SPORTdb\nLes processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$). Le document [Saisie des données et protection des données dans la SPORTdb]($js-datenschutz$) répond aux questions liées à la protection des données dans la SPORTdb.",
+        "section": 3,
+        "locale": "fr",
+        "published_at": "2022-01-23T23:00:24.017Z",
+        "created_at": "2022-01-23T22:54:00.092Z",
+        "updated_at": "2022-01-23T23:00:24.048Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 109,
+        "slug": "Enregistrement-de-l'offre-J+S-via-la-SPORTdb",
+        "link": null,
+        "slug_with_section": "Preparation#Enregistrement-de-l'offre-J+S-via-la-SPORTdb",
+        "menu_name": "Enregistrement de l’offre J+S via la SPORTdb",
+        "responsible": [
+          {
+            "id": 1258,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 47,
+          "name": "A9 Anmeldung der Lager in der SPORTdb.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A9_Anmeldung_der_Lager_in_der_SPOR_Tdb_81def8cc71",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 44.45,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/A9_Anmeldung_der_Lager_in_der_SPOR_Tdb_81def8cc71.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A9_Anmeldung_der_Lager_in_der_SPOR_Tdb_81def8cc71",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.123Z",
+          "updated_at": "2022-01-23T01:28:28.133Z"
+        }
+      },
+      {
+        "id": 127,
+        "title": "Congé jeunesse",
+        "content": "Les responsables exerçant une activité professionnelle peuvent obtenir un congé jeunesse. En effet, par la loi, les apprentis et les personnes de moins de 30 ans exerçant une activité professionnelle ont droit à une semaine supplémentaire de congé non payé pour des activités d’encadrement des jeunes (camp, cours de formation, événements). Le·la responsable remplit seul·e ou avec le·la RG la partie supérieure du formulaire [Attestation relative au congé jeunesse (CSAJ)]($jugendurlaub-formular$). La RG complète la partie inférieure et confirme ainsi que le camp aura bien lieu. Ce formulaire permet au·à la responsable de demander un congé jeunesse à son maître d’apprentissage ou à son patron au plus tard deux mois avant le camp. D’autres renseignements se trouvent dans l’ [Aide-mémoire Congé jeunesse (CSAJ/OFAS)]($jugendurlaub-merkblatt$) ou sur le site internet [www.conge-jeunesse.ch]($jugendurlaub$).",
+        "section": 3,
+        "locale": "fr",
+        "published_at": "2022-01-23T23:17:15.306Z",
+        "created_at": "2022-01-23T23:17:13.463Z",
+        "updated_at": "2022-01-23T23:17:15.343Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 110,
+        "slug": "Conge-jeunesse",
+        "link": null,
+        "slug_with_section": "Preparation#Conge-jeunesse",
+        "menu_name": "Congé jeunesse",
+        "responsible": [
+          {
+            "id": 1300,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1302,
+            "label": null,
+            "rolle": "AL"
+          }
+        ],
+        "icon": {
+          "id": 48,
+          "name": "A10 Jugendurlaub.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A10_Jugendurlaub_3ac3d9998a",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 20.03,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/A10_Jugendurlaub_3ac3d9998a.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A10_Jugendurlaub_3ac3d9998a",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.266Z",
+          "updated_at": "2022-01-23T01:28:28.274Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 1,
+        "locale": "de",
+        "published_at": "2021-09-28T14:38:23.745Z"
+      },
+      {
+        "id": 25,
+        "locale": "it",
+        "published_at": "2022-01-22T09:41:58.895Z"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "B. Annonce de camp et programme général",
+    "content": "",
+    "locale": "fr",
+    "published_at": "2021-10-07T08:57:16.439Z",
+    "created_at": "2021-10-07T08:57:11.498Z",
+    "updated_at": "2022-01-22T17:19:58.864Z",
+    "key": "lageranmeldung",
+    "Sorting": 2,
+    "sorting": 2,
+    "slug": "Annonce-de-camp",
+    "menu_name": "Annonce de camp",
+    "identifier": "a",
+    "chapters": [
+      {
+        "id": 36,
+        "title": "Programme général",
+        "content": "Le programme général sert à l’équipe de responables comme vue d’ensemble des activités pour la préparation du camp et pendant le camp. Il \nest conseillé de commencer tôt à planifier le programme général. 7 semaines avant le camp, le·la responsable de camp rend le programme avec \nl’annonce du camp au·à la RG et au·à la coach. Le·la coach donne un feedback au·à la responsable de camp sur le programme général. Le \ncudesch contient de précieuses indications sur la planification du programme général dans la brochure J+S SC/T Camp.\n\nLes points suivants doivent y figurer :\n- Thème du camp\n- 3 priorités du camp (voir brochure J+S SC/T Camp, P. 14)\n- Nom du·de la responsable de camp\n- Organisateut·trice (unité, groupe)\n- Nom du·de la coach\n- Lieu de camp et nom du gîte / de l’emplacement du camp sous tentes\n- Dates du camp\n- Genre de camp (gîte/tentes, camp d’été/d’automne)\n- Jour, date et responsable de la journée\n- Nom de chaque activité et de la personne responsable\n- Heures d’arrivée et de départ\n- Pour les camps J+S : les blocs de sport de camp et d’activités de camp doivent figurer dans le programme général avec un numéro et de façon visible (par exemple en utilisant des couleurs différentes). Voir [J+S brochure SC/T Bases]($lst-grundlagen$).\n\nUn modèle du [programme général de J+S]($muster-gp-lager-lst-kinder-und-jugendsport$) ou un [modèle vide du MSdS]($vorlage-gp-pbs$) peuvent servir de soutien.\n\n### Instructions sur le programme du MSdS :\nLe MSdS laisse beaucoup de liberté aux responsables pour la composition du programme. Celui-ci doit être équilibré et varié et les fondements scouts pris en compte. Le [Règlement concernant la préparation de camps]($lagerreglement$) doit être respecté.",
+        "section": 4,
+        "locale": "fr",
+        "published_at": "2022-01-17T21:36:48.335Z",
+        "created_at": "2022-01-17T21:36:46.012Z",
+        "updated_at": "2022-01-23T14:06:29.195Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 202,
+        "slug": "Programme-general",
+        "link": null,
+        "slug_with_section": "Annonce-de-camp#Programme-general",
+        "menu_name": "Programme général",
+        "responsible": [
+          {
+            "id": 691,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 50,
+          "name": "B2 Grobprogramm.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B2_Grobprogramm_8c5bae2213",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 48.64,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/B2_Grobprogramm_8c5bae2213.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B2_Grobprogramm_8c5bae2213",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.622Z",
+          "updated_at": "2022-01-23T01:28:28.632Z"
+        }
+      },
+      {
+        "id": 70,
+        "title": "Informer la commune dans laquelle se trouve le lieu de camp",
+        "content": "Environ un mois avant le camp, la commune dans laquelle se déroule le camp devrait être informée de la présence du camp. La prise de contact avec la commune est utile pour plusieurs raisons. D’une part, la commune peut vous informer sur les réglementations cantonales ou communales. D’autre part, il est important que les autorités soient informées de votre présence en cas de catastrophe (évacuation). Parfois la commune peut d’ailleurs également vous aider dans la recherche d’un abri de secours (par ex. abri PC communal). Les informations suivantes devraient être envoyées à la commune : \n- Durée et type de camp\n- Nom du groupe \n- Nom et coordonnées du·de la responsable de camp principal\n- Nom du propriétaire du terrain \n- Coordonnées du lieu de camp \n- Demande d’informations concernant des règlements cantonaux ou communaux spéciaux (interdiction de feu, protection des nappes phréatiques, zones de protection de la nature, périodes de protection du gibier, …)\n",
+        "section": 4,
+        "locale": "fr",
+        "published_at": "2022-01-22T16:40:43.841Z",
+        "created_at": "2022-01-22T16:33:11.567Z",
+        "updated_at": "2022-01-23T14:03:21.281Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 204,
+        "slug": "Informer-la-commune-dans-laquelle-se-trouve-le-lieu-de-camp",
+        "link": null,
+        "slug_with_section": "Annonce-de-camp#Informer-la-commune-dans-laquelle-se-trouve-le-lieu-de-camp",
+        "menu_name": "Informer la commune",
+        "responsible": [
+          {
+            "id": 679,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 55,
+          "name": "B3 Einwohnergemeinde informieren.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B3_Einwohnergemeinde_informieren_16fdad7126",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 55.26,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901308/hering/B3_Einwohnergemeinde_informieren_16fdad7126.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B3_Einwohnergemeinde_informieren_16fdad7126",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:31.023Z",
+          "updated_at": "2022-01-23T01:28:31.031Z"
+        }
+      },
+      {
+        "id": 72,
+        "title": "Annonce de camp au MSdS",
+        "content": "### Données du·de la responsable de camp\nAvec l’annonce de camp MSdS dans la [MiData]($midata$), chaque camp est inscrit à l’avance à l’AC et au MSdS. Le·la responsable de camp remplit toutes les informations sur le camp au plus tard 7 semaines avant le camp dans la MiData et envoie en même temps le programme général au·à la RG et au·à la coach.\n\n### Données du·de la coach\nLe·la coach peut alors se connecter à la [MiData]($midata$), remplir sa partie de l’annonce de camp et la transmettre. L’annonce de camp est ensuite transmise automatiquement du MSdS et à l’AC. Le MSdS utilise ces informations afin de pouvoir réagir en cas de crise, ainsi que pour des informations statistiques vis-à-vis de la confédération. A cet effet, le·la coach se connecte avec son login à la MiData et va à son groupe. S’il·elle n’a pas de login, il·elle s’adresse à son groupe, pour que celui-ci lui envoie un accès. Ensuite, il·elle procède de la façon suivante :\n1. Cliquer sur « Camp ». \n2. Choisir le camp correspondant\n3. Cliquer sur « modifier».\n4. Vérifier toutes les données\n5. Choisir le registre encadrement. Cliquer sur « Coach confirmé » et remplir les informations sur visite du coach et les activités dans les [domaines de sécurité]($sicherheitsbereich$).\n6. Cliquer sur « Enregistrer »\n7. Une fois que toutes les informations sont complètes : envoyer l’annonce de camp au MSdS en cliquant sur le bouton « Transmettre ».\n\n![fr-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_A_b4b4211669.png)\n\n![fr-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_B_8df45c3608.png)\n\n![fr-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/fr_Lagerdaten_Coach_Mi_Data_C_754fd2168a.png)\n",
+        "section": 4,
+        "locale": "fr",
+        "published_at": "2022-01-22T17:08:29.428Z",
+        "created_at": "2022-01-22T17:00:32.381Z",
+        "updated_at": "2022-01-23T20:20:01.690Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 201,
+        "slug": "Annonce-de-camp-au-MSdS",
+        "link": 167,
+        "slug_with_section": "Annonce-de-camp#Annonce-de-camp-au-MSdS",
+        "menu_name": "Annonce de camp au MSdS",
+        "responsible": [
+          {
+            "id": 669,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 670,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 49,
+          "name": "B1 Lageranmeldung PBS.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B1_Lageranmeldung_PBS_6807658e89",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 18.5,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/B1_Lageranmeldung_PBS_6807658e89.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B1_Lageranmeldung_PBS_6807658e89",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.317Z",
+          "updated_at": "2022-01-23T01:28:28.341Z"
+        }
+      },
+      {
+        "id": 89,
+        "title": "Dispositions de J+S",
+        "content": "Dans le cadre de camps J+S, il faut en outre respecter les dispositions supplémentaires suivantes par rapport au programme:\n\nSelon le [Guide pour la réalisation d'offres J+S Sport de camp/Trekking]($js-angebotsleitfaden$)\n- Il faut au moins 4 heures d’activités J+S par jour, dont au maximum 2 heures d’activités de camp.\n- Dans un camp de plus de 4 jours, un jour de camp peut avoir lieu sans activités J+S (mais aucun subside J+S ne sera accordé pour ce jour). \n- La journée de camp est partagée en trois parties par les repas de midi et du soir. Dans 2 de ces parties, 1h d'activité de camp J+S doit être organisée au minimum.\n- Les jours d’arrivée et de départ comptent ensemble pour une journée de camp si au moins quatre heures d’activités J+S sont réalisées sur l’ensemble des deux jours.\n- La durée minimale d’un bloc de programme est de 30 minutes.",
+        "section": 4,
+        "locale": "fr",
+        "published_at": "2022-01-23T14:34:07.205Z",
+        "created_at": "2022-01-23T14:28:51.362Z",
+        "updated_at": "2022-01-23T14:34:07.241Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 203,
+        "slug": "Dispositions-de-J+S",
+        "link": null,
+        "slug_with_section": "Annonce-de-camp#Dispositions-de-J+S",
+        "menu_name": "Dispositions de J+S",
+        "responsible": [
+          {
+            "id": 705,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 78,
+          "name": "B2b Vorgaben JS.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B2b_Vorgaben_JS_cc87a23350",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 6.82,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642946526/hering/B2b_Vorgaben_JS_cc87a23350.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B2b_Vorgaben_JS_cc87a23350",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T14:02:08.032Z",
+          "updated_at": "2022-01-23T14:02:08.055Z"
+        }
+      },
+      {
+        "id": 91,
+        "title": "Cas particuliers d’annonce de camp",
+        "content": "### Camps dans le canton du Tessin\nD’après le droit cantonal, il est nécessaire d’obtenir une autorisation de la commune dans laquelle aura lieu le camp afin de pour pouvoir organiser un camp sous la tente. Pour l’obtenir, il faut en faire la demande auprès de la commune. Il n’existe pas de formulaire officiel. La meilleure solution est de prendre d’abord contact avec la commune où le camp devrait avoir lieu et de clarifier le processus avec elle. Puis il faut écrire une courte lettre avec comme objet : « Richiesta di autorizzazione per campeggio occasionale ».\n\n### Camps dans les cantons de Lucerne, Saint-Gall et de Thurgovie\nLes cantons de Lucerne, Saint-Gall et de Thurgovie appliquent des dispositions particulières quant à l’utilisation de la forêt. Dans ces cantons, les camps qui se tiennent près ou dans la forêt ou les activités réalisées en forêt doivent, le cas échéant, être signalées. Les informations à ce sujet sont disponibles auprès de l’Office des forêts des cantons.\n- [Activités scoutes dans le canton de Lucerne]($luzern-wald$)\n- [Activités scoutes dans la forêt St-Galloise]($stgallen-wald$)\n- [www.forstamt.tg.ch]($forstamt-tg$) → Publikationen → Merkblätter → [Organisation von Jugendlagern]($lager-tg$) (allemand, pas traduit)\n\n### Camps dans le canton de Vaud\nLes camps en gîte et sous tente d’une durée de plus de 7 jours doivent être également annon\u0002cés au canton de Vaud. La législation cantonale sur la protection de la jeunesse prévoit que les camps soient annoncés au Service de la Protection de la Jeunesse (SPJ). Pour ce faire, une[ demande d’autorisation]($lager-vd$) doit être remplie et envoyée au secrétariat pour la protection de la jeunesse en y joignant les statuts du groupe, l’annonce de camp MSdS et le programme dé\u0002taillé, et ce, trois semaines avant le camp. Les [Directives pour les camps et colonies de vacances au canton de vaud]($richtlinien-vd$) résument la marche à suivre. Il y a même des consignes concernant le ratio d’encadrement dans les camps (nombre de responsables par participants, différent selon le groupe d’âge)",
+        "section": 4,
+        "locale": "fr",
+        "published_at": "2022-01-23T14:53:21.982Z",
+        "created_at": "2022-01-23T14:52:41.346Z",
+        "updated_at": "2022-01-23T15:15:56.731Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 205,
+        "slug": "Cas-particuliers-d'annonce-de-camp",
+        "link": null,
+        "slug_with_section": "Annonce-de-camp#Cas-particuliers-d'annonce-de-camp",
+        "menu_name": "Cas particuliers d’annonce de camp",
+        "responsible": [
+          {
+            "id": 725,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 74,
+          "name": "B4 Sonderfaelle der Lagermeldung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B4_Sonderfaelle_der_Lagermeldung_3c34592e67",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 16.57,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642902106/hering/B4_Sonderfaelle_der_Lagermeldung_3c34592e67.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B4_Sonderfaelle_der_Lagermeldung_3c34592e67",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:41:47.763Z",
+          "updated_at": "2022-01-23T01:41:47.772Z"
+        }
+      },
+      {
+        "id": 93,
+        "title": "Camps à l’étranger",
+        "content": "Il existe plusieurs possibilités pour faire un camp à l’étranger ( [www.international.msds.ch]($international$)). Toutes les informations bonnes à savoir pour organiser soi-même un camp à l’étranger se trouvent dans la brochure du [MSdS Camps à l'étranger]($auslandlager$). Pour déposer l’annonce de camp d’un camp à l’étranger, il faut suivre les mêmes démarches que pour un camp en Suisse, sauf dans le champ « Canton/pays » du formulaire MiData où il faut choisir « à l’étranger ». En déposant l’annonce de camp dans la [MiData]($midata$), une demande de lettre de référence internationale est automatiquement déclenchée. La lettre sera envoyée au·à la responsable de camp, et lui sert à prouver l’identité de son groupe ainsi que son appartenance au mouvement scout, ce qui peut s’avérer très utile. Des camps ayant lieu à l’étranger peuvent aussi être déclarés chez J+S, il faut pour cela respecter les mêmes conditions que pour un camp en Suisse. Il en va de même pour le matériel de prêt de J+S, par contre celui-ci n’est livrable qu’en Suisse et doit ensuite être transporté à l’étranger.\n\n>**Consignes spéciales pour les camps à l’étranger**  \nBeaucoup de pays, en particulier dans l’Union Européenne, ont des consignes particulières à suivre pour les camps de jeunes. Elles peuvent p.ex. concerner la protection par assurances des participants, la formation des responsables ou l’aménagement de la place de camp. Dans certains cas il faut aussi inscrire le camp auprès de l’autorité locale de protection de la jeunesse (p.ex. en France). Il peut aussi y avoir des conditions articulières pour l’entrée et la sortie du pays (voir [Autorisation pour enfant non accompagné de ses parents]($reisebewilligung-kind$)). Il est donc important de s’informer à l’avance sur les règles et consignes judiciaires propre au lieu de destination. international@msds.ch peut aider à faire des contacts avec des autres associations nationales.",
+        "section": 4,
+        "locale": "fr",
+        "published_at": "2022-01-23T16:10:22.648Z",
+        "created_at": "2022-01-23T16:10:21.023Z",
+        "updated_at": "2022-01-23T16:11:33.148Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 206,
+        "slug": "Camps-a-l'etranger",
+        "link": null,
+        "slug_with_section": "Annonce-de-camp#Camps-a-l'etranger",
+        "menu_name": "Camps à l’étranger",
+        "responsible": [
+          {
+            "id": 736,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 52,
+          "name": "B5 Auslandlager.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B5_Auslandlager_4e16c729c4",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 13.59,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901308/hering/B5_Auslandlager_4e16c729c4.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B5_Auslandlager_4e16c729c4",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:30.329Z",
+          "updated_at": "2022-01-23T01:28:30.338Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 5,
+        "locale": "de",
+        "published_at": "2021-10-07T08:57:38.191Z"
+      },
+      {
+        "id": 24,
+        "locale": "it",
+        "published_at": "2022-01-22T09:40:19.212Z"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "C. Commande de services",
+    "content": "",
+    "locale": "fr",
+    "published_at": "2021-10-08T08:34:43.952Z",
+    "created_at": "2021-10-08T08:34:42.527Z",
+    "updated_at": "2022-01-22T09:38:17.917Z",
+    "key": "dienstleistungen",
+    "Sorting": null,
+    "sorting": 3,
+    "slug": "Commande-de-services",
+    "menu_name": "Commande de services",
+    "identifier": "Dienstleistungen",
+    "chapters": [
+      {
+        "id": 95,
+        "title": "Commande de matériel de prêt J+S",
+        "content": "Pour les camps qui sont annoncés à J+S, il est possible d’y commander du matériel. Pour ce faire, le formulaire [Commande de matériel de prêt pour camps J+S]($formular-js-leihmaterial$) est utilisé. Les frais de prêt se montent à CHF -.60 par kilo de matériel, y compris la palette. Les frais sont automatiquement déduits de la subvention J+S versée à la fin de l'année. Le matériel manquant ou endommagé est facturé après le camp. Le·la responsable de camp est personnellement responsable du matériel. Le·la responsable (appelé « direction du cours / camp » dans le formulaire) envoie le formulaire rempli au·à la coach. Celui-ci·celle-ci le complète et le transmet à l'[office cantonal des sports]($sportamt-kantone$). L'office cantonal des sports fait ensuite parvenir une confirmation au coach. Le formulaire n’a pas besoin d’être signé et peut être envoyé par e-mail. Pour des informations plus détaillées concernant la livraison, la réception et le renvoi du matériel, voir le [Guide concernant le matériel de prêt J+S pour les offres de sport et la formation des cadres]($leitfaden-js-leihmaterial$). \nVoici quelques explications relatives au formulaire :\n\n1. **« N° pers. » + « Offre no »** : Le numéro personnel J+S du·de la responsable de camp se trouve sur la carte personnelle J+S (ou sur SPORTdb). Le numéro de l’offre est le numéro de l’offre dans laquelle tous les camps de l’année sont réunis. Le·la coach peut trouver le numéro dans la base de données SPORTdb (demander au coach ou laisser le coach compléter)\n2. **« Camp »** ou **« Formation des cadres »** : pour un camp, il faut cocher « Camp ». La « Formation des cadres » est destinée aux cours de formation pour les responsables\n3. **« Date de livraison/date de reddition »** : La date (jours ouvrables uniquement) pour le transport est déterminée ici. Si aucune confirmation écrite n’a été reçue une semaine avant la date déterminée, il est nécessaire de prendre contact avec J+S. Le matériel peut être emprunté pour un maximum de 7 mois. Le rendu du matériel doit être effectué au plus tard trois jours après la fin du (dernier) camp. Le matériel doit être rendu propre. Le jour de reddition le matériel doit être prêt à être rendu à 8 heures. \n4. **« Adresse de livraison du matériel »** : Indiquer une adresse précise. Le matériel est livré un jour ouvrable entre 8 et 18 heures et doit être réceptionné par une personne. Si le lieu de livraison est, par exemple, une ferme près de la place de camp ou du gîte, se mettre d'accord avec l'agriculteur et l'en informer. Le lieu de livraison doit être atteignable par camion et le matériel doit pouvoir être déchargé avec un chariot de manutention, cela signifie qu’il ne peut pas être livré dans la forêt. Le jour de reddition il est nécessaire d’être atteignable par téléphone par le transporteur (contact en cas de problèmes). \n5. **« Franco-domicile »** : La livraison du matériel s'effectue en principe franco-domicile, ce qui signifie que le matériel est livré par camion. Une autre possibilité consiste à aller chercher\n\n![C1-fr-leihmaterialbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642957260/hering/C1_fr_leihmaterialbestellung_d9780509fb.png)\n\nEn cas des problèmes avec le matériel de prêt :  \n(Numéro « LM » doit impérativement figurer sur chaque correspondance)  \n- Centre de logistique de l’armée à Thoune: material-js.lba@vtg.admin.ch | 033 / 228 26 83\n- Service de transport DDPS: 058 / 464 25 27\n",
+        "section": 7,
+        "locale": "fr",
+        "published_at": "2022-01-23T17:10:57.854Z",
+        "created_at": "2022-01-23T17:10:55.527Z",
+        "updated_at": "2022-01-31T16:54:09.392Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 301,
+        "slug": "Commande-de-materiel-de-pret-J+S",
+        "link": 175,
+        "slug_with_section": "Commande-de-services#Commande-de-materiel-de-pret-J+S",
+        "menu_name": "Commande de matériel de prêt J+S",
+        "responsible": [
+          {
+            "id": 1346,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1348,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 54,
+          "name": "C1 Leihmaterialbestellung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "C1_Leihmaterialbestellung_57a72b9e19",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 25.88,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901308/hering/C1_Leihmaterialbestellung_57a72b9e19.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/C1_Leihmaterialbestellung_57a72b9e19",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:30.911Z",
+          "updated_at": "2022-01-23T01:28:30.920Z"
+        }
+      },
+      {
+        "id": 98,
+        "title": "Commande de cartes nationales Swisstopo",
+        "content": "Pour les camps J+S, on peut commander des cartes nationales auprès de Swisstopo. A cet effet, il faut utiliser le [formulaire Commande de cartes nationales]($formular-landeskartenbestellung$). Le prêt est gratuit mais les frais de port pour les renvoyer sont à la charge du groupe. Les cartes perdues ou renvoyées en retard sont facturées. On peut commander un exemplaire de chaque carte pour trois participant·e·s en âge J+S. Le·la responsable de camp envoie le formulaire rempli au·à la coach qui le transmet directement à Swisstopo ( mapsales@swisstopo.ch), par poste ou scannée par e-mail. Les signatures peuvent être apposées électroniquement, une copie ou un scan n’est pas nécessaire. Les cartes sont livrées par la poste au domicile du·de la responsable de camp.\nVoici quelques explications relatives au formulaire :\n\n1. **« Disponible »** : Le·la responsable de camp décide de la date à laquelle il·elle aura besoin des cartes. Si la commande est réceptionnée 3 semaines avant par Swisstopo, les cartes seront envoyées à cette date à l'adresse indiquée. Il est recommandé de passer commande assez tôt afin de pouvoir utiliser les cartes nationales lors de la reconnaissance des lieux.\n2. **« Reddition »** : Le·la responsable de camp doit renvoyer à temps les cartes par la poste, c’est-à-dire au plus tard 3 jours après la fin du camp (cf. l’ [Guide concernant les prestations spéciales pour les offres de sport J+S et la formation des cadres J+S]($leitfaden-js-spezielle-leistungen$))\n3. **« Organisation »** : Le·la responsable de camp note ici le nom du groupe.\n4. **« Droit au matériel »** : On peut emprunter des cartes nationales à l'échelle 1:25'000 et 1:50'000 ainsi que des assemblages. Le·la responsable de camp a le droit de commander un exemplaire pour 3 participants de l’âge J+S. Sont pris en considération tou·te·s les participant·e·s âgé·e·s de 5 à 20 ans.\n5. **« N° de l'offre »** : Le·la coach note ici le numéro de l'offre J+S selon l'inscription dans la [SPORTdb]($sportdb$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
+        "section": 7,
+        "locale": "fr",
+        "published_at": "2022-01-23T17:46:28.436Z",
+        "created_at": "2022-01-23T17:46:25.731Z",
+        "updated_at": "2022-02-06T16:40:42.333Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 302,
+        "slug": "Commande-de-cartes-nationales-Swisstopo",
+        "link": 219,
+        "slug_with_section": "Commande-de-services#Commande-de-cartes-nationales-Swisstopo",
+        "menu_name": "Commande de cartes nationales Swisstopo",
+        "responsible": [
+          {
+            "id": 843,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 844,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 56,
+          "name": "C2 Kartenbestellung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "C2_Kartenbestellung_383a01d88c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 27.29,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901309/hering/C2_Kartenbestellung_383a01d88c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/C2_Kartenbestellung_383a01d88c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:31.086Z",
+          "updated_at": "2022-01-23T01:28:31.103Z"
+        }
+      },
+      {
+        "id": 104,
+        "title": "Billet de groupe CFF",
+        "content": "Si le voyage s’effectue en train, il est possible de commander un billet de groupe aux CFF à partir de dix personnes. Ce faisant, tout le monde voyage avec un rabais supplémentaire de 30%. La commande peut se faire en ligne via l’[outil pour calculer les voyages en groupe]($sbb-gruppenreiserechner$), au guichet à billet ou par téléphone ( 0848 44 66 88, CHF 0.08/Min). Au moins l’annonce du voyage en groupe est obligatoire. Des réservation seront faites selon les possibilités. Elles sont inclues au billet de groupe.\n\nInformations détaillées sur les [billets de groupe CFF]($sbb-gruppenreisen-info$).\n\nPour les groupes annoncés, il existe par ailleurs la possibilité de faire transporter les bagages et les vélos par les CFF.\n\nInformations détraillées sur les [bagages de groupe CFF]($sbb-gepaeck-info$).",
+        "section": 7,
+        "locale": "fr",
+        "published_at": "2022-01-23T18:57:38.653Z",
+        "created_at": "2022-01-23T18:56:59.468Z",
+        "updated_at": "2022-01-23T19:16:27.202Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 303,
+        "slug": "Billet-de-groupe-CFF",
+        "link": null,
+        "slug_with_section": "Commande-de-services#Billet-de-groupe-CFF",
+        "menu_name": "Billet de groupe CFF",
+        "responsible": [
+          {
+            "id": 881,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 57,
+          "name": "C3 SBB-Gruppenbillette.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "C3_SBB_Gruppenbillette_f49eaf547b",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 36.66,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901309/hering/C3_SBB_Gruppenbillette_f49eaf547b.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/C3_SBB_Gruppenbillette_f49eaf547b",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:31.179Z",
+          "updated_at": "2022-01-23T01:28:31.187Z"
+        }
+      },
+      {
+        "id": 108,
+        "title": "Assurance Rega",
+        "content": "Tou·te·s les participants et les membres de la maitrise de camp ainsi que les personnes accompagnatrices peuvent être assurés auprès de la Rega pendant la durée du camp. (voir [Guide concernant les prestations spéciales pour les offres de sport J+S et la formation des cadres J+S]($leitfaden-js-spezielle-leistungen$)). La couverture ne s’étend qu’en Suisse et dans la principauté du Lichtenstein. A cet effet, le·la responsable de camp enregistre les participant·e·s dans la MiData et la partage avec le·la coach (cf. [Administration des participants dans la MiData]($tn-administration-midata$)). Ce dernier·cette dernière inscrit les participant·e·s dans la SPORTdb à la REGA. Les tâches exactes y compris les indications pas à pas se trouvent dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$) qui comprend également des images. En contrepartie, la Rega obtient le droit de proposer aux participants annoncés ayant atteint la majorité une demande de donateur. Les parents des participants doivent donc être informés de la transmission des données (à mentionner lors de l’inscription aux camps). \n\nDans le cas où il faut faire appel aux services de la REGA, c’est en premier lieu la caisse d’assurance maladie qui paye. Si elle refuse, c’est la REGA qui reprendrait en charge les coûts des personnes assurées comme décrit ci-dessus.\n\n***Plus d’information :***  \n[La Rega au service de J+S – Conditions générales]($rega-rahmenbedingungen$)",
+        "section": 7,
+        "locale": "fr",
+        "published_at": "2022-01-23T19:43:09.627Z",
+        "created_at": "2022-01-23T19:43:04.318Z",
+        "updated_at": "2022-01-23T20:26:32.789Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 304,
+        "slug": "Assurance-Rega",
+        "link": 173,
+        "slug_with_section": "Commande-de-services#Assurance-Rega",
+        "menu_name": "Assurance Rega",
+        "responsible": [
+          {
+            "id": 928,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 929,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 58,
+          "name": "C4 Rega-Versicherung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "C4_Rega_Versicherung_74f7ec4807",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 16.35,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901310/hering/C4_Rega_Versicherung_74f7ec4807.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/C4_Rega_Versicherung_74f7ec4807",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:32.585Z",
+          "updated_at": "2022-01-23T01:28:32.593Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 6,
+        "locale": "de",
+        "published_at": "2021-10-08T08:34:27.517Z"
+      },
+      {
+        "id": 23,
+        "locale": "it",
+        "published_at": "2022-01-22T09:39:25.644Z"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "D. Transmettre le programme détaillé",
+    "content": "",
+    "locale": "fr",
+    "published_at": "2021-10-08T08:35:32.178Z",
+    "created_at": "2021-10-08T08:35:30.339Z",
+    "updated_at": "2022-01-22T09:45:10.891Z",
+    "key": "lagerdossier",
+    "Sorting": null,
+    "sorting": 4,
+    "slug": "Programme-detaille",
+    "menu_name": "Programme détaillé",
+    "identifier": "Lagerdossier",
+    "chapters": [
+      {
+        "id": 65,
+        "title": "Activités des domaines de sécurité",
+        "content": "Une activité ayant lieu dans un domaine de sécurité (Montagne/Hiver/Eau) est une activité qui est soumise à des dispositions de sécurité particulières. Les différences sont expliquées dans l’aide-mémoire [SC/T – Directives de sécurité dans les domaines Montagne, Hiver, Eau]($mb-sicherheitsbereiche$). Ces activités doivent être dirigées par des responsables ayant acquis la reconnaissance complémentaire nécessaire en suivant le module de sécurité concerné.\nLes activités du domaine de Sécurité doivent être lues et approuvées par un·e expert·e J+S SC/T possédant l’extension chef·fe de cours et ayant réussi le module de perfectionnement pour expert·e du domaine de sécurité correspondant. S’il·elle ne connait pas directement une personne assez formée, le·la coach se tournera vers l’association cantonale.\nLe·la coach étant la personne qui connait le mieux le groupe, ses responsables et le programme, il est important qu’il·elle analyse lui·elle aussi le dossier avant de l’envoyer à l’expert·e. L’expert·e ne peut pas en porter la responsabilitéseul·e.",
+        "section": 9,
+        "locale": "fr",
+        "published_at": "2022-01-22T12:30:43.497Z",
+        "created_at": "2022-01-22T12:30:41.554Z",
+        "updated_at": "2022-01-23T21:06:47.234Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 404,
+        "slug": "Activites-des-domaines-de-securite",
+        "link": 56,
+        "slug_with_section": "Programme-detaille#Activites-des-domaines-de-securite",
+        "menu_name": "Activités des domaines de sécurité",
+        "responsible": [
+          {
+            "id": 879,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 62,
+          "name": "D4 Sicherheitsbereiche.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "D4_Sicherheitsbereiche_b88f92d79e",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 9.29,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901311/hering/D4_Sicherheitsbereiche_b88f92d79e.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/D4_Sicherheitsbereiche_b88f92d79e",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:33.247Z",
+          "updated_at": "2022-01-23T01:28:33.256Z"
+        }
+      },
+      {
+        "id": 99,
+        "title": "Éléments du dossier de camp",
+        "content": "Un dossier de camp est constitué à partir de tous les documents de planification. Celui-ci est remis au·à la RG et au·à la coach trois semaines avant le début du camp. On trouve également des informations sur le dossier de camp dans la brochure J+S [SC/T Camp]($lst-lager-cudesch$) dans le cudesch. Le plus important est résumé ci-dessous. La conception des activités du camp n’est pas développée ici. \nLe programme détaillé est une aide pour tou·te·s les responsables de camp. Il sert également de base pour l’évaluation du programme de camp par le·la RG et le·la coach. Il contient les documents suivants :\n- Programme général\n- 3 priorités du camp (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 14)\n- Devise et fil conducteur\n- Description des blocs de programme (voir plus bas)\n- Pour les randonnées à pied et à vélo : calcul du temps de marche et copies de carte topographique en couleur (voir la brochure Montagne), concept de sécurité de la randonnée / du vélo (cf. brochure J+S [SC/T Montagne]($lst-berg-cudesch$))\n- Concept de sécurité d’un camp (voir la brochure La sécurité – assumer des responsabilités, p. 39)\n- Les règles du camp (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$))\n- Les arrangements au sein de l’équipe, par exemple concernant la distribution des tâches, les responsables du jour, le positionnement par rapport aux substances addictives, etc. (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 5-9)\n- Liste des participant(e)s\n\nSelon les demandes du·de la responsable de groupe/coach/caissier/ière :\n- Informations sur les participants (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 27sq.)\n- Menu (cf. aide-mémoire J+S [Faire la cuisine]($lst-kueche$) et brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 34)\n- Budget du camp (cf. [Budget de camp]($lagerbudget$) et brochure J+S [SC/T Camp]($lst-lager-cudesch$))\n- Programme de la soirée d’information aux parents (brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 29)",
+        "section": 9,
+        "locale": "fr",
+        "published_at": "2022-01-23T18:05:15.368Z",
+        "created_at": "2022-01-23T18:05:13.516Z",
+        "updated_at": "2022-01-23T22:49:33.297Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 401,
+        "slug": "Elements-du-dossier-de-camp",
+        "link": null,
+        "slug_with_section": "Programme-detaille#Elements-du-dossier-de-camp",
+        "menu_name": "Éléments du dossier de camp",
+        "responsible": [
+          {
+            "id": 1247,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 76,
+          "name": "D1 Lagerdossier.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "D1_Lagerdossier_06ab9efb8e",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 30.39,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642902106/hering/D1_Lagerdossier_06ab9efb8e.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/D1_Lagerdossier_06ab9efb8e",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:41:48.125Z",
+          "updated_at": "2022-01-23T01:41:48.134Z"
+        }
+      },
+      {
+        "id": 101,
+        "title": "Description des blocs de programme",
+        "content": "Le déroulement de tous les blocs de programme est fixé par écrit. Sont à inclure aussi bien les jeux et le sport que les activités qui se déroulent dans le cadre de la mise en scène thématique.\nCe programme détaillé par écrit contient pour chaque bloc les renseignements suivants :\n- Nom du bloc\n- Jour, date et heure\n- Lieu\n- Mise en scène thématique\n- Responsables\n- Contenu et déroulement du bloc avec indication des temps prévus\n- Liste du matériel\n- Variante du programme en cas d'intempéries\n- Concept de sécurité pour une activité si nécessaire camp (voir ci-dessous)\n- Pour les randonnées et le vélo : détail de carte topographique en couleurs comportant l’itinéraire et le calcul du temps de marche, concept de sécurité de la randonnée / du vélo\nLes consignes de J+S concernant le contenu des blocs se trouvent dans la brochure J+S [SC/T Bases]($lst-grundlagen$).\nLes modèles pour les descriptions de blocs  SC et  AC se trouvent sur le [site du MSdS]($blockvorlagen$).",
+        "section": 9,
+        "locale": "fr",
+        "published_at": "2022-01-23T18:44:18.987Z",
+        "created_at": "2022-01-23T18:44:16.825Z",
+        "updated_at": "2022-01-23T18:47:54.316Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 402,
+        "slug": "Description-des-blocs-de-programme",
+        "link": null,
+        "slug_with_section": "Programme-detaille#Description-des-blocs-de-programme",
+        "menu_name": "Description des blocs de programme",
+        "responsible": [
+          {
+            "id": 834,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 60,
+          "name": "D2 Programmbloecke.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "D2_Programmbloecke_69dbc2bf58",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 11.63,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901311/hering/D2_Programmbloecke_69dbc2bf58.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/D2_Programmbloecke_69dbc2bf58",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:32.999Z",
+          "updated_at": "2022-01-23T01:28:33.008Z"
+        }
+      },
+      {
+        "id": 106,
+        "title": "Concept de sécurité",
+        "content": "L’élaboration d’un concept de sécurité pour l’ensemble du camp, ainsi que pour les différentes activités à caractère dangereux, fait également partie de la préparation d’un camp. Ceci est également exigé par J+S. D’une part le concept de sécurité définit quelles mesures vous appliquer face à des dangers potentiels afin d’éviter des accidents. D’autre part, il définit comment vous réagissez en cas d’accident et quelles sont les prédispositions qui doivent être prises par rapport à cela.\nLa brochure [La sécurité]($cudesch-sicherheit$) – assumer des responsabilités du cudesch permet de déterminer si une activité nécessite un concept de sécurité et comment le rédiger le cas échéant. La [Feuille d'informations]($notfallinfos$) en cas d'urgence pour les participants se trouve dans le même chapitre du cudesch. De plus amples informations spécifiques se trouvent dans les brochures J+S [SC/T Montagne, SC/T Hiver, SC/T Eau]($lst-berg-cudesch$), [SC/T Camp]($lst-lager-cudesch$) et [SC/T Bases]($lst-grundlagen$).",
+        "section": 9,
+        "locale": "fr",
+        "published_at": "2022-01-23T19:04:36.943Z",
+        "created_at": "2022-01-23T19:04:22.929Z",
+        "updated_at": "2022-01-23T19:20:53.773Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 403,
+        "slug": "Concept-de-securite",
+        "link": null,
+        "slug_with_section": "Programme-detaille#Concept-de-securite",
+        "menu_name": "Concept de sécurité",
+        "responsible": [
+          {
+            "id": 895,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 61,
+          "name": "D3 Sicherheitskonzepte.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "D3_Sicherheitskonzepte_75993ee872",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 17.19,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901311/hering/D3_Sicherheitskonzepte_75993ee872.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/D3_Sicherheitskonzepte_75993ee872",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:33.130Z",
+          "updated_at": "2022-01-23T01:28:33.138Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 8,
+        "locale": "de",
+        "published_at": "2021-10-08T08:35:15.317Z"
+      },
+      {
+        "id": 22,
+        "locale": "it",
+        "published_at": "2022-01-22T09:36:01.799Z"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "E. Administration des participant·e·s",
+    "content": null,
+    "locale": "fr",
+    "published_at": "2022-01-22T09:47:53.382Z",
+    "created_at": "2021-11-20T17:41:51.090Z",
+    "updated_at": "2022-01-22T09:47:53.402Z",
+    "key": null,
+    "Sorting": null,
+    "sorting": 5,
+    "slug": "Administration-des-participantes",
+    "menu_name": "Administration des participant·e·s",
+    "identifier": null,
+    "chapters": [
+      {
+        "id": 79,
+        "title": "Inscription des participants aux camps via la MiData",
+        "content": "Si, lors de la création du camp, l’option «&nbsp;Inscription possible&nbsp;» a été choisie, les participants peuvent s’inscrire au camp directement dans la [MiData]($midata$) avec leur login. Les participants ne peuvent voir que les camps créés dans un groupe auquel ils appartiennent (par exemple niveau correspondant). L’inscription se fait de la façon suivante :\n1. Les participants se connectent à la MiData et cliquent sur «&nbsp;Activités&nbsp;». L’aperçu des «&nbsp;Evènements prévus prochainement&nbsp;» apparaît.\n2. Les participants peuvent s’inscrire au camp directement avec le bouton «&nbsp;S’inscrire&nbsp;».\n3. En cliquant sur le nom du camp, les participants peuvent voir plus d’informations sur le camp.\n4. Les participants remplissent l’inscription (lors de la création du camp, des champs supplémentaires peuvent être enregistrés) et cliquent sur «&nbsp;Inscription&nbsp;». Il est utile de laisser les participants remplir les données obligatoires nécessaires au·à la coach pour la SPORTdb. Le document [Exigences techniques pour l'importation]($sportdb-technisch$) contient une liste des données requises.",
+        "section": 17,
+        "locale": "fr",
+        "published_at": "2022-01-23T07:56:18.489Z",
+        "created_at": "2022-01-23T07:44:32.260Z",
+        "updated_at": "2022-01-23T22:40:34.986Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 501,
+        "slug": "Inscription-des-participants-aux-camps-via-la-MiData",
+        "link": 188,
+        "slug_with_section": "Administration-des-participantes#Inscription-des-participants-aux-camps-via-la-MiData",
+        "menu_name": "Inscription des participants via la MiData",
+        "responsible": [
+          {
+            "id": 584,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 63,
+          "name": "E1 Selbstaendige Anmeldung der TNs.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "E1_Selbstaendige_Anmeldung_der_T_Ns_c286db09f5",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 17.54,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901311/hering/E1_Selbstaendige_Anmeldung_der_T_Ns_c286db09f5.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/E1_Selbstaendige_Anmeldung_der_T_Ns_c286db09f5",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:33.410Z",
+          "updated_at": "2022-01-23T01:28:33.419Z"
+        }
+      },
+      {
+        "id": 81,
+        "title": "Ajouter et effacer des participants dans la liste des participants dans la MiData",
+        "content": "Le·la responsable de camp, le·la RG et le·la coach ont accès à la liste des participant·e·s dans la  [MiData]($midata$). Ils peuvent y ajouter ou effacer des participants directement. Cela se fait de la même façon que d’[ajouter des membres de la maîtrise]($team-erfassen-midata-kapitel$). Si les participant·e·s ne s’inscrivent pas au camp directement dans la MiData, le·la responsable de camp peut alors enregistrer la liste des participant·e·s. Les données des participant·e·s requises pour l’inscription à la REGA et pour le·la coach sont à compléter par le·la responsable de camp. Le document [Exigences techniques pour l'importation]($sportdb-technisch$) contient une liste des données requises.",
+        "section": 17,
+        "locale": "fr",
+        "published_at": "2022-01-23T08:07:09.389Z",
+        "created_at": "2022-01-23T08:05:22.379Z",
+        "updated_at": "2022-01-23T22:39:08.688Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 502,
+        "slug": "Ajouter-et-effacer-des-participants-dans-la-liste-des-participants-dans-la-MiData",
+        "link": 157,
+        "slug_with_section": "Administration-des-participantes#Ajouter-et-effacer-des-participants-dans-la-liste-des-participants-dans-la-MiData",
+        "menu_name": "Ajouter et effacer des participants",
+        "responsible": [
+          {
+            "id": 612,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 613,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 614,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 64,
+          "name": "E2 TNs hinzufuegen und loeschen.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "E2_T_Ns_hinzufuegen_und_loeschen_f1383d900c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 12.78,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/E2_T_Ns_hinzufuegen_und_loeschen_f1383d900c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/E2_T_Ns_hinzufuegen_und_loeschen_f1383d900c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:34.885Z",
+          "updated_at": "2022-01-23T01:28:34.893Z"
+        }
+      },
+      {
+        "id": 83,
+        "title": "Exporter la liste des participants à partir de la MiData",
+        "content": "Si les participants sont enregistrés dans la [MiData]($midata$), la liste des participants peut être exportée sous forme de fichier csv pour la [SPORTdb]($sportdb$) à partir de la MiData. A cet effet, le·la coach procède de la façon suivante : \n1. Chercher le camp\n2. Cliquer sur «&nbsp;Participants&nbsp;»\n3. Cliquer sur «&nbsp;Exporter&nbsp;»\n4. Choisir «&nbsp;CSV&nbsp;», «&nbsp;SPORTdb&nbsp;». Exporter un fichier csv, qui peut être utilisé pour le téléchargement dans la SPORTdb.\n\n**Attention avec l’encoding**  \nC’est important pour l’affichage correct des caractères spéciaux\nPar défaut, la MiData exporte les fichiers csv avec l’encodage UTF-8 (un système de codage de caractères en informatique). Lors de l’import du fichier csv dans la SPORTdb, on peut choisir ce format pour garantir l’affichage correct des caractères spéciaux.\nSi une liste doit être retravaillée dans excel avant d’être importée dans la SPORTdb, on peut l’exporter sous «&nbsp;Exports&nbsp;» &#8594; «&nbsp;Excel&nbsp;» &#8594; «&nbsp;pour SPORTdb&nbsp;». Après l’avoir retravaillé, le fichier est exporté comme fichier csv et importé dans la SPORTdb avec l’encodage UTF-8 ou x-MacRoman.\n\n**Attention aux deuxièmes prénoms**  \nLa SPORTdb n’arrive pas à reconnaître et à importer sans erreur les personnes avec deux prénoms. Il vaut donc mieux effacer tous les deuxièmes prénoms avant de charger le fichier.\n\n**Instructions concernant les champs obligatoires**  \nCertains champs doivent être remplis afin de pouvoir charger le fichier. Le document [Exigences techniques pour l'importation]($sportdb-technisch$) contient une vue d’ensemble. Si des données manquent, il faut demander à la CC de les compléter. Idéalement, les données obligatoires auront déjà été collectées lors de [l’inscription]($tn-anmeldung-kapitel$).\n",
+        "section": 17,
+        "locale": "fr",
+        "published_at": "2022-01-23T08:46:57.144Z",
+        "created_at": "2022-01-23T08:28:39.586Z",
+        "updated_at": "2022-01-23T22:43:09.543Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 503,
+        "slug": "Exporter-la-liste-des-participants-a-partir-de-la-MiData",
+        "link": null,
+        "slug_with_section": "Administration-des-participantes#Exporter-la-liste-des-participants-a-partir-de-la-MiData",
+        "menu_name": "Exporter la liste des participants",
+        "responsible": [
+          {
+            "id": 652,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 66,
+          "name": "E3 TN-Liste aus der MiData exportieren.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "E3_TN_Liste_aus_der_Mi_Data_exportieren_264bda6ca9",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 22.26,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/E3_TN_Liste_aus_der_Mi_Data_exportieren_264bda6ca9.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/E3_TN_Liste_aus_der_Mi_Data_exportieren_264bda6ca9",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:35.079Z",
+          "updated_at": "2022-01-23T01:28:35.087Z"
+        }
+      },
+      {
+        "id": 85,
+        "title": "Upload de la liste des participants dans SPORTdb",
+        "content": "Le fichier csv est importé dans [SPORTdb]($sportdb$) par le·la Coach. Ceci peut être fait sous l’onglet «&nbsp;Participant·e·s&nbsp;». Les processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$).\n\n>**Recensement du numéro de sécurité sociale (numéro AVS)**  \nDepuis l’été 2019, le numéro de sécurité sociale est recensé dans la SPORTdb. Il s’agit d’éviter les doublons et d’améliorer la qualité des données. **Les nouvelles** personnes ne peuvent plus être inscrites qu’avec ce numéro. Le plus simple est de récolter ces données lors de l’inscription des participants au camp afin que le·la coach les ait lorsqu’il·elle doit remplir la SPORTdb. Les enfants reçoivent leur numéro de sécurité sociale personnel lors de leur inscription à une caisse maladie, le numéro est donc inscrit sur la carte de l’assurance maladie.",
+        "section": 17,
+        "locale": "fr",
+        "published_at": "2022-01-23T08:42:39.825Z",
+        "created_at": "2022-01-23T08:42:31.294Z",
+        "updated_at": "2022-01-23T22:44:26.012Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 504,
+        "slug": "Upload-de-la-liste-des-participants-dans-SPORTdb",
+        "link": null,
+        "slug_with_section": "Administration-des-participantes#Upload-de-la-liste-des-participants-dans-SPORTdb",
+        "menu_name": "Upload de la liste des participants",
+        "responsible": [
+          {
+            "id": 636,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 65,
+          "name": "E4 TN-Liste in die SPORTdb laden.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "E4_TN_Liste_in_die_SPOR_Tdb_laden_07b3bf4009",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 20.75,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/E4_TN_Liste_in_die_SPOR_Tdb_laden_07b3bf4009.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/E4_TN_Liste_in_die_SPOR_Tdb_laden_07b3bf4009",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:34.980Z",
+          "updated_at": "2022-01-23T01:28:34.989Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 16,
+        "locale": "de",
+        "published_at": "2021-11-20T13:37:08.961Z"
+      },
+      {
+        "id": 21,
+        "locale": "it",
+        "published_at": "2022-01-22T09:45:42.800Z"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "F. Autorisation de camp",
+    "content": "",
+    "locale": "fr",
+    "published_at": "2021-10-08T08:39:22.000Z",
+    "created_at": "2021-10-08T08:39:20.175Z",
+    "updated_at": "2022-01-22T09:30:54.391Z",
+    "key": "lagerbewilligung",
+    "Sorting": null,
+    "sorting": 6,
+    "slug": "Autorisation-de-camp",
+    "menu_name": "Autorisation de camp",
+    "identifier": "Lagerbewilligung",
+    "chapters": [
+      {
+        "id": 63,
+        "title": "Évaluation du programme détaillé à l'aide de la liste de contrôle",
+        "content": "Le·la RG et le·la coach évaluent le programme du camp à l'aide de la liste de contrôle (deuxième page de  l’[autorisation de camp du MSdS]($lagerbewilligung-download$), non reproduite ici). L'idéal serait que le programme soit discuté entre le·la coach, le·la responsable de camp et éventuellement le·la RG. La liste de contrôle peut alors être utilisée comme base de réflexion. Pendant la discussion, le·la coach et le·la RG signalent au·à la responsable de camp les points qui doivent être améliorés.",
+        "section": 11,
+        "locale": "fr",
+        "published_at": "2022-01-22T12:21:49.313Z",
+        "created_at": "2022-01-22T12:21:47.578Z",
+        "updated_at": "2022-01-22T12:21:49.350Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 601,
+        "slug": "Evaluation-du-programme-detaille-a-l'aide-de-la-liste-de-controle",
+        "link": null,
+        "slug_with_section": "Autorisation-de-camp#Evaluation-du-programme-detaille-a-l'aide-de-la-liste-de-controle",
+        "menu_name": "Évaluation du programme détaillé",
+        "responsible": [
+          {
+            "id": 529,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 531,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 67,
+          "name": "F1 Lagerdossier beurteilen.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "F1_Lagerdossier_beurteilen_e20f7bc1ac",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 21.25,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/F1_Lagerdossier_beurteilen_e20f7bc1ac.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/F1_Lagerdossier_beurteilen_e20f7bc1ac",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:35.320Z",
+          "updated_at": "2022-01-23T01:28:35.328Z"
+        }
+      },
+      {
+        "id": 67,
+        "title": "Autorisation de camp",
+        "content": "Avec leur signature, le·la RG et le·la coach délivrent l’autorisation de camp. Pour des activités dans le domaine de sécurité, il faut une signature supplémentaire de l’expert·e en charge (cf. [Activités des domaines de sécurité]($sicherheitsbereich$)).\nLe·la RG et le·la coach informent le·la responsable de camp sur l’autorisation de camp idéalement lors d'un entretien. Le·la coach envoie une copie de l'autorisation de camp signée par tou·te·s au·à la responsable de camp et au·à la RG. En cas de refus d’autorisation, il·elle envoie une copie supplémentaire à l'association cantonale (AC) et au [Secrétariat général du MSdS](mailto:info@msds.ch).\n\n### Explication du formulaire\n1. «&nbsp;Autorisation&nbsp;» : Si le programme est «&nbsp;autorisé&nbsp;», cela signifie qu'il peut être exécuté comme prévu ; s'il est «&nbsp;autorisé avec compléments&nbsp;», il faut que les points contestés du programme soient adaptés par le·la responsable de camp ; «&nbsp;non-autorisé&nbsp;» signifie que le camp ne peut pas avoir lieu sous cette forme. \n1. «&nbsp;Autorisation activités de sécurité&nbsp;» : Le·la coach confirme par sa signature l'autorisation ou le refus des activités de sécurité. Si il·elle a délégué l'encadrement des activités de sécurité à une tierce personne, il·elle consultera d’abord celle-ci, mais signera lui·elle-même. \n1. «&nbsp;Confirmation du·de la responsable de camp&nbsp;» : En cas d'autorisation avec compléments ou de refus d’autorisation de camper, le·la responsable de camp confirme en avoir pris connaissance par sa signature.\n1. «&nbsp;Activités d'encadrement du·de la coach&nbsp;» : Dans ce paragraphe, le·la coach consigne la date de chaque étape de la préparation du camp. Cette partie peut être remplie à la place du journal du·de la coach et peut être consultée par l'office cantonal des sports.\n\n### Plus d’informations\n- [Le règlement du MSdS pour la préparation et la réalisation de camps]($lagerreglement$)\n- [Guide J+S pour la réalisation des camps J+S Sport de camp/Trekking]($js-angebotsleitfaden$)\n\n![fr-lagerreglement.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642855438/hering/fr_lagerreglement_469838f44d.png)\n",
+        "section": 11,
+        "locale": "fr",
+        "published_at": "2022-01-22T12:48:16.641Z",
+        "created_at": "2022-01-22T12:48:05.811Z",
+        "updated_at": "2022-01-23T23:38:31.880Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 602,
+        "slug": "Autorisation-de-camp",
+        "link": 169,
+        "slug_with_section": "Autorisation-de-camp#Autorisation-de-camp",
+        "menu_name": "Autorisation de camp",
+        "responsible": [
+          {
+            "id": 1322,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1323,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 1324,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 68,
+          "name": "F2 Lagerbewilligung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "F2_Lagerbewilligung_fd04f91a20",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 24.78,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/F2_Lagerbewilligung_fd04f91a20.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/F2_Lagerbewilligung_fd04f91a20",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:35.414Z",
+          "updated_at": "2022-01-23T01:28:35.423Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 10,
+        "locale": "de",
+        "published_at": "2021-10-08T08:38:59.875Z"
+      },
+      {
+        "id": 20,
+        "locale": "it",
+        "published_at": "2022-01-22T09:31:59.185Z"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "G. Clôture du camp",
+    "content": "",
+    "locale": "fr",
+    "published_at": "2021-10-08T08:40:41.651Z",
+    "created_at": "2021-10-08T08:40:40.286Z",
+    "updated_at": "2022-01-23T20:33:44.365Z",
+    "key": "lagerabschluss",
+    "Sorting": null,
+    "sorting": 7,
+    "slug": "Cloture-du-camp",
+    "menu_name": "Clôture du camp",
+    "identifier": "Lagerabschluss",
+    "chapters": [
+      {
+        "id": 47,
+        "title": "Renvoi les cartes nationales",
+        "content": "La·la responsable de camp doit renvoyer les cartes nationales à swisstopo par la poste (éventuellement en recommandé). Il·elle doit le faire au plus tard 3 jours après la fin du camp. S’il manque des cartes, elles sont facturées par swisstopo au·à la responsable de camp.\n\n**swisstopo**  \nProduits d’édition  \nSeftigenstr. 264  \nCase postale  \n3084 Wabern\n\n",
+        "section": 13,
+        "locale": "fr",
+        "published_at": "2022-01-22T11:04:59.059Z",
+        "created_at": "2022-01-22T10:59:40.741Z",
+        "updated_at": "2022-02-06T16:34:45.651Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 701,
+        "slug": "Renvoi-les-cartes-nationales",
+        "link": 163,
+        "slug_with_section": "Cloture-du-camp#Renvoi-les-cartes-nationales",
+        "menu_name": "Cartes nationales",
+        "responsible": [
+          {
+            "id": 1391,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 69,
+          "name": "G1 Landeskarten retournieren.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "G1_Landeskarten_retournieren_72dd42fb19",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 14.43,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/G1_Landeskarten_retournieren_72dd42fb19.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/G1_Landeskarten_retournieren_72dd42fb19",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:35.516Z",
+          "updated_at": "2022-01-23T01:28:35.525Z"
+        }
+      },
+      {
+        "id": 50,
+        "title": "Liste des participant·e·s et clôture du camp dans MiData",
+        "content": "Le·la responsable de camp ajuste dans [MiData]($midata$) les participant·e·s et responsables enregistré·e·s avant le camp et en informe le·la coach au plus tard 10 jours après le camp.\nEnsuite ce dernier reporte la liste actualisée des participant· e·s dans la [SPORTdb]($sportdb$).\nLes processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$). \nEnsuite le·la responsable de camp clôt le camp dans la MiData en plaçant le statut sur « clôturé ».",
+        "section": 13,
+        "locale": "fr",
+        "published_at": "2022-01-22T11:14:49.556Z",
+        "created_at": "2022-01-22T11:14:46.752Z",
+        "updated_at": "2022-01-23T22:09:18.933Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 702,
+        "slug": "Liste-des-participantes-et-cloture-du-camp-dans-MiData",
+        "link": null,
+        "slug_with_section": "Cloture-du-camp#Liste-des-participantes-et-cloture-du-camp-dans-MiData",
+        "menu_name": "Liste des participant·e·s",
+        "responsible": [
+          {
+            "id": 1117,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1119,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 70,
+          "name": "G2 Lagerabschluss MiData.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "G2_Lagerabschluss_Mi_Data_ea48b46e4c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 8.64,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901315/hering/G2_Lagerabschluss_Mi_Data_ea48b46e4c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/G2_Lagerabschluss_Mi_Data_ea48b46e4c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:36.964Z",
+          "updated_at": "2022-01-23T01:28:36.971Z"
+        }
+      },
+      {
+        "id": 54,
+        "title": "Clôture du camp dans la SPORTdb",
+        "content": "Après chaque camp, le·la coach gère le contrôle des présences (CdP), c’est-à-dire qu'il·elle adapte la liste des participant· e·s dans la  SPORTdb d'après la liste fournie par le·la responsable de camp, après le camp. Les processus sont détaillés pas à pas (photos incluses) dans le document  [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$).\n\n> **Le programme général pour les camps J+S**  \nLe programme général doit être chargé dans la SPORTdb avant ou après le camp. Les instances de contrôle font des analyses sporadiques des programmes. Il n’est pas possible de clôturer le contrôle des présences sans le programme détaillé (fichier excel, word ou pdf).",
+        "section": 13,
+        "locale": "fr",
+        "published_at": "2022-01-22T11:39:11.023Z",
+        "created_at": "2022-01-22T11:34:11.419Z",
+        "updated_at": "2022-01-23T22:10:01.952Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 703,
+        "slug": "Cloture-du-camp-dans-la-SPORTdb",
+        "link": null,
+        "slug_with_section": "Cloture-du-camp#Cloture-du-camp-dans-la-SPORTdb",
+        "menu_name": "Clôture du camp dans la SPORTdb",
+        "responsible": [
+          {
+            "id": 1131,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 71,
+          "name": "G3 Lagerabschluss SPORTdb.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": {},
+          "hash": "G3_Lagerabschluss_SPOR_Tdb_4b0106a5a1",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 28.33,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642903593/hering/G3_Lagerabschluss_SPOR_Tdb_4b0106a5a1.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/G3_Lagerabschluss_SPOR_Tdb_4b0106a5a1",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:37.122Z",
+          "updated_at": "2022-01-23T02:06:35.121Z"
+        }
+      },
+      {
+        "id": 60,
+        "title": "Faire les comptes",
+        "content": "Après le camp, il faut faire les comptes du camp et rembourser toutes les notes de frais. Si vous utilisez le [modèle à remplir du MSdS]($lagerbudget$), vous pouvez inscrire vos chiffres dans le même fichier que votre budget. Afin de respecter la marche à suivre exacte de votre groupe, discutez-en avec votre RG ou le· caissier·ière.",
+        "section": 13,
+        "locale": "fr",
+        "published_at": "2022-01-22T12:09:08.249Z",
+        "created_at": "2022-01-22T12:08:52.463Z",
+        "updated_at": "2022-01-23T20:33:44.363Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 704,
+        "slug": "Faire-les-comptes",
+        "link": null,
+        "slug_with_section": "Cloture-du-camp#Faire-les-comptes",
+        "menu_name": "Faire les comptes",
+        "responsible": [
+          {
+            "id": 546,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 75,
+          "name": "G4 Lagerabrechnung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "G4_Lagerabrechnung_5953da7a1c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 42.61,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642902106/hering/G4_Lagerabrechnung_5953da7a1c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/G4_Lagerabrechnung_5953da7a1c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:41:47.898Z",
+          "updated_at": "2022-01-23T01:41:47.908Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 12,
+        "locale": "de",
+        "published_at": "2021-10-08T08:40:28.681Z"
+      },
+      {
+        "id": 19,
+        "locale": "it",
+        "published_at": "2022-01-22T09:30:39.764Z"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "H. Clôture de l'offre J+S",
+    "content": "A la fin de l'année - mais au plus tard 30 jours après le dernier camp - le·la coach clôture toute l'offre de J+S dans la [SPORTdb]($sportdb$). Il est important que la clôture soit exécutée avec soin, car lors de décomptes tardifs, J+S Macolin peut refuser de verser les subventions. Il est également recommandé d'enregistrer l'offre définitive en format PDF. L'office cantonal des sports verse au groupe la subvention J+S et celle du coach environ 2 mois après le dernier camp. La confirmation du virement de la subvention J+S est envoyée au·à la coach par la poste. Ce·tte dernier·ière en informe le·la RG (copie par poste ou e-mail).",
+    "locale": "fr",
+    "published_at": "2021-10-08T08:42:25.619Z",
+    "created_at": "2021-10-08T08:42:24.155Z",
+    "updated_at": "2022-01-22T10:46:55.981Z",
+    "key": "abschluss",
+    "Sorting": null,
+    "sorting": 8,
+    "slug": "Cloture-de-l'offre-J+S",
+    "menu_name": "Clôture de l'offre J+S",
+    "identifier": "s J+S-Angebot",
+    "chapters": [
+      {
+        "id": 41,
+        "title": "Clôture de l'offre J+S dans la SPORTdb",
+        "content": "Après le dernier camp, le·la coach reçoit un e-mail automatique de rappel (objet : Rappel fin de l'offre dans 30 jours). Il·elle doit clôturer l'offre dans les 30 jours suivant le dernier camp. Important : avant que l'offre elle-même puisse être clôturée, il faut que les données effectives et la mise à jour de la liste des présences de chaque camp soient définitivement enregistrées (c’est-à-dire que le statut de tous les camps doit être « clôturé »). Voici quelques explications sur la liste de contrôle de la SPORTdb :\n\n- *Statut de l’offre «&nbsp;Processus de clôture&nbsp;»* : Dans le statut «&nbsp;processus de clôture&nbsp;», l'offre est traitée par l'office cantonal des sports. La demande de décompte du·de la coach à l'office cantonal des sports est confirmée par e-mail. Si l’offre est en règle, le virement de la subvention J+S sera effectué par J+S Macolin. Ce dernier sera à nouveau confirmé par e-mail (Objet : offre N° XXXXXX transmise pour paiement).\n- *Statut de l’offre «&nbsp;clôture&nbsp;»* : Après le procédé de clôture par l'office cantonal du sport, l'offre passe dans le statut «&nbsp;clôturé&nbsp;».\n\nLes processus sont détaillés pas à pas (photos incluses) dans le document  [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$).",
+        "section": 15,
+        "locale": "fr",
+        "published_at": "2022-01-22T10:28:55.836Z",
+        "created_at": "2022-01-22T10:20:30.514Z",
+        "updated_at": "2022-01-23T21:58:14.404Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 801,
+        "slug": "Cloture-de-l'offre-J+S-dans-la-SPORTdb",
+        "link": 165,
+        "slug_with_section": "Cloture-de-l'offre-J+S#Cloture-de-l'offre-J+S-dans-la-SPORTdb",
+        "menu_name": "Clôture dans la SPORTdb",
+        "responsible": [
+          {
+            "id": 553,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 77,
+          "name": "H2 Abschluss JS-Angbebot.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "H2_Abschluss_JS_Angbebot_6ba9578df8",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 30.74,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642903609/hering/H2_Abschluss_JS_Angbebot_6ba9578df8.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/H2_Abschluss_JS_Angbebot_6ba9578df8",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T02:06:51.074Z",
+          "updated_at": "2022-01-23T02:06:51.082Z"
+        }
+      },
+      {
+        "id": 44,
+        "title": "Obligation de conservation",
+        "content": "Le·la responsable de camp et le·la coach sont tenu·e·s selon la loi de conserver tous les documents du camp pendant 5 ans. Ainsi, si d’éventuelles questions ou désaccords devaient survenir ultérieurement, on pourrait les clarifier.",
+        "section": 15,
+        "locale": "fr",
+        "published_at": "2022-01-22T10:54:27.143Z",
+        "created_at": "2022-01-22T10:54:24.046Z",
+        "updated_at": "2022-01-22T10:54:27.178Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 802,
+        "slug": "Obligation-de-conservation",
+        "link": null,
+        "slug_with_section": "Cloture-de-l'offre-J+S#Obligation-de-conservation",
+        "menu_name": "Obligation de conservation",
+        "responsible": [
+          {
+            "id": 550,
+            "label": null,
+            "rolle": "C"
+          },
+          {
+            "id": 551,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 73,
+          "name": "H3 Aufbewahrungspflicht.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "H3_Aufbewahrungspflicht_096913aa0c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 13.58,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901315/hering/H3_Aufbewahrungspflicht_096913aa0c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/H3_Aufbewahrungspflicht_096913aa0c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:37.604Z",
+          "updated_at": "2022-01-23T01:28:37.613Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 14,
+        "locale": "de",
+        "published_at": "2021-10-08T08:42:09.672Z"
+      },
+      {
+        "id": 18,
+        "locale": "it",
+        "published_at": "2022-01-22T09:25:55.015Z"
+      }
+    ]
+  }
+]

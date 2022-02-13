@@ -8,13 +8,14 @@ import { faCalendar, faExclamationTriangle, faBars } from '@fortawesome/free-sol
 import { library } from '@fortawesome/fontawesome-svg-core'
 import HomePage from './pages/HomePage ';
 import CalendarPage from './pages/CalendarPage';
-import client from "./client";
+// import client from "./client";
 import i18n from './i18n';
 import { withTranslation } from 'react-i18next';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import SectionPage from './pages/SectionPage';
 import ImpressumPage from './pages/ImpressumPage';
+import { setLocalData } from './helper/LocalDataHelper';
 
 export type LinkT = {
   title: string
@@ -34,17 +35,18 @@ function App() {
   const lang = i18n.language
 
   React.useEffect(() => {
-    const sectionsPromise = client.get('/sections?_sort=sorting:ASC&_locale=' + lang)
-    const linksPromise = client.get('/links?_locale=' + lang)
-    const startPagePromise = client.get('/start-page?_locale=' + lang)
-    const calendarPromise = client.get('/calendar-page?_locale=' + lang)
+    // const sectionsPromise = client.get('/sections?_sort=sorting:ASC&_locale=' + lang)
+    // const linksPromise = client.get('/links?_locale=' + lang)
+    // const startPagePromise = client.get('/start-page?_locale=' + lang)
+    // const calendarPromise = client.get('/calendar-page?_locale=' + lang)
 
-    Promise.all([sectionsPromise, linksPromise, startPagePromise, calendarPromise]).then((values) => {
-      setSections(values[0].data)
-      setLinks(values[1].data)
-      setStartPage(values[2].data)
-      setCalendarPage(values[3].data)
-    })
+    setLocalData(lang, setSections, setLinks, setStartPage, setCalendarPage);
+    // Promise.all([sectionsPromise, linksPromise, startPagePromise, calendarPromise]).then((values) => {
+    //   setSections(values[0].data)
+    //   setLinks(values[1].data)
+    //   setStartPage(values[2].data)
+    //   setCalendarPage(values[3].data)
+    // })
   }, [lang])
 
   library.add(faCalendar, faExclamationTriangle, faBars)

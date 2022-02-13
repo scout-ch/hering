@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "title": "Kalender",
+  "content": "halloo",
+  "locale": "de",
+  "published_at": "2021-11-22T20:15:16.245Z",
+  "created_at": "2021-11-22T20:15:12.780Z",
+  "updated_at": "2022-01-03T15:29:45.102Z",
+  "menu_name": "Kalender",
+  "localizations": [
+    {
+      "id": 2,
+      "locale": "fr",
+      "published_at": "2022-01-09T15:37:43.965Z"
+    },
+    {
+      "id": 3,
+      "locale": "it",
+      "published_at": "2022-01-23T12:55:17.992Z"
+    }
+  ]
+}

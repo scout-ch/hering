@@ -1,0 +1,1349 @@
+[
+  {
+    "id": 24,
+    "title": "Clôture du camp dans la SPORTdb",
+    "days": 15,
+    "locale": "fr",
+    "published_at": "2022-01-22T11:43:50.009Z",
+    "created_at": "2022-01-22T11:43:48.280Z",
+    "updated_at": "2022-01-22T11:43:56.014Z",
+    "Slug": "Cloture-du-camp-dans-la-SPORTdb",
+    "responsible": [
+      {
+        "id": 971,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 23,
+        "rolle": "SPORTdb"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 54,
+        "title": "Clôture du camp dans la SPORTdb",
+        "content": "Après chaque camp, le·la coach gère le contrôle des présences (CdP), c’est-à-dire qu'il·elle adapte la liste des participant· e·s dans la  SPORTdb d'après la liste fournie par le·la responsable de camp, après le camp. Les processus sont détaillés pas à pas (photos incluses) dans le document  [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$).\n\n> **Le programme général pour les camps J+S**  \nLe programme général doit être chargé dans la SPORTdb avant ou après le camp. Les instances de contrôle font des analyses sporadiques des programmes. Il n’est pas possible de clôturer le contrôle des présences sans le programme détaillé (fichier excel, word ou pdf).",
+        "section": {
+          "id": 13,
+          "title": "G. Clôture du camp",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:40:41.651Z",
+          "created_at": "2021-10-08T08:40:40.286Z",
+          "updated_at": "2022-01-23T20:33:44.365Z",
+          "key": "lagerabschluss",
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Cloture-du-camp",
+          "menu_name": "Clôture du camp",
+          "identifier": "Lagerabschluss"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T11:39:11.023Z",
+        "created_at": "2022-01-22T11:34:11.419Z",
+        "updated_at": "2022-01-23T22:10:01.952Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 703,
+        "slug": "Cloture-du-camp-dans-la-SPORTdb",
+        "link": null,
+        "slug_with_section": "Cloture-du-camp#Cloture-du-camp-dans-la-SPORTdb",
+        "menu_name": "Clôture du camp dans la SPORTdb"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Commande de cartes nationales",
+    "days": -21,
+    "locale": "fr",
+    "published_at": "2022-01-23T17:39:09.627Z",
+    "created_at": "2022-01-23T17:39:07.758Z",
+    "updated_at": "2022-01-23T17:39:09.666Z",
+    "Slug": "Commande-de-cartes-nationales",
+    "responsible": [
+      {
+        "id": 1001,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 50,
+        "rolle": "Swisstopo"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 98,
+        "title": "Commande de cartes nationales Swisstopo",
+        "content": "Pour les camps J+S, on peut commander des cartes nationales auprès de Swisstopo. A cet effet, il faut utiliser le [formulaire Commande de cartes nationales]($formular-landeskartenbestellung$). Le prêt est gratuit mais les frais de port pour les renvoyer sont à la charge du groupe. Les cartes perdues ou renvoyées en retard sont facturées. On peut commander un exemplaire de chaque carte pour trois participant·e·s en âge J+S. Le·la responsable de camp envoie le formulaire rempli au·à la coach qui le transmet directement à Swisstopo ( mapsales@swisstopo.ch), par poste ou scannée par e-mail. Les signatures peuvent être apposées électroniquement, une copie ou un scan n’est pas nécessaire. Les cartes sont livrées par la poste au domicile du·de la responsable de camp.\nVoici quelques explications relatives au formulaire :\n\n1. **« Disponible »** : Le·la responsable de camp décide de la date à laquelle il·elle aura besoin des cartes. Si la commande est réceptionnée 3 semaines avant par Swisstopo, les cartes seront envoyées à cette date à l'adresse indiquée. Il est recommandé de passer commande assez tôt afin de pouvoir utiliser les cartes nationales lors de la reconnaissance des lieux.\n2. **« Reddition »** : Le·la responsable de camp doit renvoyer à temps les cartes par la poste, c’est-à-dire au plus tard 3 jours après la fin du camp (cf. l’ [Guide concernant les prestations spéciales pour les offres de sport J+S et la formation des cadres J+S]($leitfaden-js-spezielle-leistungen$))\n3. **« Organisation »** : Le·la responsable de camp note ici le nom du groupe.\n4. **« Droit au matériel »** : On peut emprunter des cartes nationales à l'échelle 1:25'000 et 1:50'000 ainsi que des assemblages. Le·la responsable de camp a le droit de commander un exemplaire pour 3 participants de l’âge J+S. Sont pris en considération tou·te·s les participant·e·s âgé·e·s de 5 à 20 ans.\n5. **« N° de l'offre »** : Le·la coach note ici le numéro de l'offre J+S selon l'inscription dans la [SPORTdb]($sportdb$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
+        "section": {
+          "id": 7,
+          "title": "C. Commande de services",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:34:43.952Z",
+          "created_at": "2021-10-08T08:34:42.527Z",
+          "updated_at": "2022-01-22T09:38:17.917Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Commande-de-services",
+          "menu_name": "Commande de services",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T17:46:28.436Z",
+        "created_at": "2022-01-23T17:46:25.731Z",
+        "updated_at": "2022-02-06T16:40:42.333Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 302,
+        "slug": "Commande-de-cartes-nationales-Swisstopo",
+        "link": 219,
+        "slug_with_section": "Commande-de-services#Commande-de-cartes-nationales-Swisstopo",
+        "menu_name": "Commande de cartes nationales Swisstopo"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "title": "Billet collectif CFF",
+    "days": -4,
+    "locale": "fr",
+    "published_at": "2022-01-23T18:56:17.962Z",
+    "created_at": "2022-01-23T18:56:16.613Z",
+    "updated_at": "2022-01-23T18:56:17.990Z",
+    "Slug": "Billet-collectif-CFF",
+    "responsible": [
+      {
+        "id": 1003,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 59,
+        "rolle": "CFF"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 104,
+        "title": "Billet de groupe CFF",
+        "content": "Si le voyage s’effectue en train, il est possible de commander un billet de groupe aux CFF à partir de dix personnes. Ce faisant, tout le monde voyage avec un rabais supplémentaire de 30%. La commande peut se faire en ligne via l’[outil pour calculer les voyages en groupe]($sbb-gruppenreiserechner$), au guichet à billet ou par téléphone ( 0848 44 66 88, CHF 0.08/Min). Au moins l’annonce du voyage en groupe est obligatoire. Des réservation seront faites selon les possibilités. Elles sont inclues au billet de groupe.\n\nInformations détaillées sur les [billets de groupe CFF]($sbb-gruppenreisen-info$).\n\nPour les groupes annoncés, il existe par ailleurs la possibilité de faire transporter les bagages et les vélos par les CFF.\n\nInformations détraillées sur les [bagages de groupe CFF]($sbb-gepaeck-info$).",
+        "section": {
+          "id": 7,
+          "title": "C. Commande de services",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:34:43.952Z",
+          "created_at": "2021-10-08T08:34:42.527Z",
+          "updated_at": "2022-01-22T09:38:17.917Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Commande-de-services",
+          "menu_name": "Commande de services",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T18:57:38.653Z",
+        "created_at": "2022-01-23T18:56:59.468Z",
+        "updated_at": "2022-01-23T19:16:27.202Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 303,
+        "slug": "Billet-de-groupe-CFF",
+        "link": null,
+        "slug_with_section": "Commande-de-services#Billet-de-groupe-CFF",
+        "menu_name": "Billet de groupe CFF"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "title": "Données relatives aux  camps au·à la coach",
+    "days": -150,
+    "locale": "fr",
+    "published_at": "2022-01-23T20:58:37.461Z",
+    "created_at": "2022-01-23T20:58:35.588Z",
+    "updated_at": "2022-01-23T20:58:37.507Z",
+    "Slug": "Donnees-relatives-aux-camps-aua-la-coach",
+    "responsible": [
+      {
+        "id": 1023,
+        "label": null,
+        "rolle": "LL"
+      },
+      {
+        "id": 1024,
+        "label": null,
+        "rolle": "AL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 67,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 111,
+        "title": "Données relatives aux camps",
+        "content": "Au début de l’année, responsable de camp et RG décident ensemble les camps qu’elles veulent organiser et les dates. Elles établissent une liste avec toutes les données nécessaires concernant le groupe et les camps. responsable de camp et RG décident également quels camps seront annoncés à J+S. Pour rassembler ces données, on peut consulter le mémento [Données nécessaires pour la SPORTdb]($lagerdaten-formular$), afin de s’assurer que les données sont complètes. En début d’année, responsable de camp et RG remettent au·à la coach la liste des données relatives aux camps. \nVoici quelques explications relatives au formulaire : \n1. « Compte de paiement du forfait J+S » : on donne le numéro de compte du groupe. Les paiements par J+S se font uniquement sur le compte bancaire ou postal suisse d’une association. L’indication d’un code IBAN valable est impératif. Après le décompte de l’offre J+S à la fin de l’année, la subvention est versée sur ce compte.\n2. « Type de camp J +S » : Kids correspond à la branche louveteaux et on la choisit pour les camps s’adressant principalement à des enfants de 7 à 10 ans. Teens correspond aux branches éclairs ou picos avec des participant(e)s majoritairement âgés de 10 à 20 ans. Un camp mixte permet de compter comme participants des personnes de 5 à 20 ans. Selon le règlement des camps du MSdS, il n’est pas permis d’organiser des camps avec la branche Castors (5-6 ans).\n3. « Nombre de participants prévu » : celui-ci n’est probablement pas connu à l’avance, c’est pourquoi on met un chiffre approximatif qui pourra être corrigé ultérieurement.\n4. « Nombre d’accompagnants prévus » : On entend par là des personnes qui seront présentes au camp en plus de responsables formés. \n5. « Activité de sécurité prévue » : données provisoires qui pourront être modifiées plus tard. Néanmoins, s’il est clair qu’une [activité dans ce domaine de sécurité]($sicherheitsbereich$) aura lieu, le coach peut déjà chercher un encadreur pour celle-ci.\n6. « NPA/Localité » et « Date de naissance » : Seulement pour les responsables qui s’engagent pour la première fois dans le groupe en tant que moniteur·trice J+S. C’est important d’inscrire la date de naissance précise et pas seulement l’année. Le totem ne sert qu’au·à la coach et n’est pas nécessaire à la [SPORTdb]($sportdb$).\n\n![Screenshot-Lagerdaten-fr.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643651409/hering/Screenshot_Lagerdaten_it_9b101acb5e.png)",
+        "section": {
+          "id": 3,
+          "title": "A. Préparation de la saison des camps",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-14T18:07:46.751Z",
+          "created_at": "2021-10-06T16:01:50.136Z",
+          "updated_at": "2022-01-22T09:42:15.236Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Preparation",
+          "menu_name": "Préparation",
+          "identifier": "bla"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T21:08:20.990Z",
+        "created_at": "2022-01-23T21:08:18.497Z",
+        "updated_at": "2022-01-31T17:51:41.948Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 102,
+        "slug": "Donnees-relatives-aux-camps",
+        "link": null,
+        "slug_with_section": "Preparation#Donnees-relatives-aux-camps",
+        "menu_name": "Données relatives aux camps"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Liste des participants pour l’assurance REGA dans MiData",
+    "days": -14,
+    "locale": "fr",
+    "published_at": "2022-01-23T19:26:59.544Z",
+    "created_at": "2022-01-23T19:26:53.646Z",
+    "updated_at": "2022-01-23T19:26:59.578Z",
+    "Slug": "Liste-des-participants-pour-l'assurance-REGA-dans-MiData",
+    "responsible": [
+      {
+        "id": 1005,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 62,
+        "rolle": "MiData"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 108,
+        "title": "Assurance Rega",
+        "content": "Tou·te·s les participants et les membres de la maitrise de camp ainsi que les personnes accompagnatrices peuvent être assurés auprès de la Rega pendant la durée du camp. (voir [Guide concernant les prestations spéciales pour les offres de sport J+S et la formation des cadres J+S]($leitfaden-js-spezielle-leistungen$)). La couverture ne s’étend qu’en Suisse et dans la principauté du Lichtenstein. A cet effet, le·la responsable de camp enregistre les participant·e·s dans la MiData et la partage avec le·la coach (cf. [Administration des participants dans la MiData]($tn-administration-midata$)). Ce dernier·cette dernière inscrit les participant·e·s dans la SPORTdb à la REGA. Les tâches exactes y compris les indications pas à pas se trouvent dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$) qui comprend également des images. En contrepartie, la Rega obtient le droit de proposer aux participants annoncés ayant atteint la majorité une demande de donateur. Les parents des participants doivent donc être informés de la transmission des données (à mentionner lors de l’inscription aux camps). \n\nDans le cas où il faut faire appel aux services de la REGA, c’est en premier lieu la caisse d’assurance maladie qui paye. Si elle refuse, c’est la REGA qui reprendrait en charge les coûts des personnes assurées comme décrit ci-dessus.\n\n***Plus d’information :***  \n[La Rega au service de J+S – Conditions générales]($rega-rahmenbedingungen$)",
+        "section": {
+          "id": 7,
+          "title": "C. Commande de services",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:34:43.952Z",
+          "created_at": "2021-10-08T08:34:42.527Z",
+          "updated_at": "2022-01-22T09:38:17.917Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Commande-de-services",
+          "menu_name": "Commande de services",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T19:43:09.627Z",
+        "created_at": "2022-01-23T19:43:04.318Z",
+        "updated_at": "2022-01-23T20:26:32.789Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 304,
+        "slug": "Assurance-Rega",
+        "link": 173,
+        "slug_with_section": "Commande-de-services#Assurance-Rega",
+        "menu_name": "Assurance Rega"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Transmettre le camp dans la MiData",
+    "days": -42,
+    "locale": "fr",
+    "published_at": "2022-01-22T17:23:00.961Z",
+    "created_at": "2022-01-22T17:21:47.281Z",
+    "updated_at": "2022-01-22T17:23:00.984Z",
+    "Slug": "Transmettre-le-camp-dans-la-MiData",
+    "responsible": [
+      {
+        "id": 974,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 36,
+        "rolle": "MSdS (via MiData)"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 72,
+        "title": "Annonce de camp au MSdS",
+        "content": "### Données du·de la responsable de camp\nAvec l’annonce de camp MSdS dans la [MiData]($midata$), chaque camp est inscrit à l’avance à l’AC et au MSdS. Le·la responsable de camp remplit toutes les informations sur le camp au plus tard 7 semaines avant le camp dans la MiData et envoie en même temps le programme général au·à la RG et au·à la coach.\n\n### Données du·de la coach\nLe·la coach peut alors se connecter à la [MiData]($midata$), remplir sa partie de l’annonce de camp et la transmettre. L’annonce de camp est ensuite transmise automatiquement du MSdS et à l’AC. Le MSdS utilise ces informations afin de pouvoir réagir en cas de crise, ainsi que pour des informations statistiques vis-à-vis de la confédération. A cet effet, le·la coach se connecte avec son login à la MiData et va à son groupe. S’il·elle n’a pas de login, il·elle s’adresse à son groupe, pour que celui-ci lui envoie un accès. Ensuite, il·elle procède de la façon suivante :\n1. Cliquer sur « Camp ». \n2. Choisir le camp correspondant\n3. Cliquer sur « modifier».\n4. Vérifier toutes les données\n5. Choisir le registre encadrement. Cliquer sur « Coach confirmé » et remplir les informations sur visite du coach et les activités dans les [domaines de sécurité]($sicherheitsbereich$).\n6. Cliquer sur « Enregistrer »\n7. Une fois que toutes les informations sont complètes : envoyer l’annonce de camp au MSdS en cliquant sur le bouton « Transmettre ».\n\n![fr-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_A_b4b4211669.png)\n\n![fr-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_B_8df45c3608.png)\n\n![fr-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/fr_Lagerdaten_Coach_Mi_Data_C_754fd2168a.png)\n",
+        "section": {
+          "id": 4,
+          "title": "B. Annonce de camp et programme général",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-07T08:57:16.439Z",
+          "created_at": "2021-10-07T08:57:11.498Z",
+          "updated_at": "2022-01-22T17:19:58.864Z",
+          "key": "lageranmeldung",
+          "Sorting": 2,
+          "sorting": 2,
+          "slug": "Annonce-de-camp",
+          "menu_name": "Annonce de camp",
+          "identifier": "a"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T17:08:29.428Z",
+        "created_at": "2022-01-22T17:00:32.381Z",
+        "updated_at": "2022-01-23T20:20:01.690Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 201,
+        "slug": "Annonce-de-camp-au-MSdS",
+        "link": 167,
+        "slug_with_section": "Annonce-de-camp#Annonce-de-camp-au-MSdS",
+        "menu_name": "Annonce de camp au MSdS"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Faire les comptes",
+    "days": 30,
+    "locale": "fr",
+    "published_at": "2022-01-22T12:11:48.308Z",
+    "created_at": "2022-01-22T12:11:46.146Z",
+    "updated_at": "2022-01-22T12:11:48.339Z",
+    "Slug": "Faire-les-comptes",
+    "responsible": [
+      {
+        "id": 978,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 26,
+        "rolle": "Cassier·ère"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 60,
+        "title": "Faire les comptes",
+        "content": "Après le camp, il faut faire les comptes du camp et rembourser toutes les notes de frais. Si vous utilisez le [modèle à remplir du MSdS]($lagerbudget$), vous pouvez inscrire vos chiffres dans le même fichier que votre budget. Afin de respecter la marche à suivre exacte de votre groupe, discutez-en avec votre RG ou le· caissier·ière.",
+        "section": {
+          "id": 13,
+          "title": "G. Clôture du camp",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:40:41.651Z",
+          "created_at": "2021-10-08T08:40:40.286Z",
+          "updated_at": "2022-01-23T20:33:44.365Z",
+          "key": "lagerabschluss",
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Cloture-du-camp",
+          "menu_name": "Clôture du camp",
+          "identifier": "Lagerabschluss"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T12:09:08.249Z",
+        "created_at": "2022-01-22T12:08:52.463Z",
+        "updated_at": "2022-01-23T20:33:44.363Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 704,
+        "slug": "Faire-les-comptes",
+        "link": null,
+        "slug_with_section": "Cloture-du-camp#Faire-les-comptes",
+        "menu_name": "Faire les comptes"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Renvoi des cartes nationales",
+    "days": 3,
+    "locale": "fr",
+    "published_at": "2022-01-22T11:05:52.993Z",
+    "created_at": "2022-01-22T11:05:22.352Z",
+    "updated_at": "2022-01-22T11:05:53.024Z",
+    "Slug": "Renvoi-des-cartes-nationales",
+    "responsible": [
+      {
+        "id": 980,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 18,
+        "rolle": "swisstopo"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 47,
+        "title": "Renvoi les cartes nationales",
+        "content": "La·la responsable de camp doit renvoyer les cartes nationales à swisstopo par la poste (éventuellement en recommandé). Il·elle doit le faire au plus tard 3 jours après la fin du camp. S’il manque des cartes, elles sont facturées par swisstopo au·à la responsable de camp.\n\n**swisstopo**  \nProduits d’édition  \nSeftigenstr. 264  \nCase postale  \n3084 Wabern\n\n",
+        "section": {
+          "id": 13,
+          "title": "G. Clôture du camp",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:40:41.651Z",
+          "created_at": "2021-10-08T08:40:40.286Z",
+          "updated_at": "2022-01-23T20:33:44.365Z",
+          "key": "lagerabschluss",
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Cloture-du-camp",
+          "menu_name": "Clôture du camp",
+          "identifier": "Lagerabschluss"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T11:04:59.059Z",
+        "created_at": "2022-01-22T10:59:40.741Z",
+        "updated_at": "2022-02-06T16:34:45.651Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 701,
+        "slug": "Renvoi-les-cartes-nationales",
+        "link": 163,
+        "slug_with_section": "Cloture-du-camp#Renvoi-les-cartes-nationales",
+        "menu_name": "Cartes nationales"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Programme général au·à la RG et au·à la coach",
+    "days": -49,
+    "locale": "fr",
+    "published_at": "2022-01-17T21:35:32.422Z",
+    "created_at": "2022-01-17T21:33:53.283Z",
+    "updated_at": "2022-01-17T21:35:32.455Z",
+    "Slug": "Programme-general-aua-la-RG-et-aua-la-coach",
+    "responsible": [
+      {
+        "id": 982,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 10,
+        "rolle": "Coach"
+      },
+      {
+        "id": 11,
+        "rolle": "RG"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 36,
+        "title": "Programme général",
+        "content": "Le programme général sert à l’équipe de responables comme vue d’ensemble des activités pour la préparation du camp et pendant le camp. Il \nest conseillé de commencer tôt à planifier le programme général. 7 semaines avant le camp, le·la responsable de camp rend le programme avec \nl’annonce du camp au·à la RG et au·à la coach. Le·la coach donne un feedback au·à la responsable de camp sur le programme général. Le \ncudesch contient de précieuses indications sur la planification du programme général dans la brochure J+S SC/T Camp.\n\nLes points suivants doivent y figurer :\n- Thème du camp\n- 3 priorités du camp (voir brochure J+S SC/T Camp, P. 14)\n- Nom du·de la responsable de camp\n- Organisateut·trice (unité, groupe)\n- Nom du·de la coach\n- Lieu de camp et nom du gîte / de l’emplacement du camp sous tentes\n- Dates du camp\n- Genre de camp (gîte/tentes, camp d’été/d’automne)\n- Jour, date et responsable de la journée\n- Nom de chaque activité et de la personne responsable\n- Heures d’arrivée et de départ\n- Pour les camps J+S : les blocs de sport de camp et d’activités de camp doivent figurer dans le programme général avec un numéro et de façon visible (par exemple en utilisant des couleurs différentes). Voir [J+S brochure SC/T Bases]($lst-grundlagen$).\n\nUn modèle du [programme général de J+S]($muster-gp-lager-lst-kinder-und-jugendsport$) ou un [modèle vide du MSdS]($vorlage-gp-pbs$) peuvent servir de soutien.\n\n### Instructions sur le programme du MSdS :\nLe MSdS laisse beaucoup de liberté aux responsables pour la composition du programme. Celui-ci doit être équilibré et varié et les fondements scouts pris en compte. Le [Règlement concernant la préparation de camps]($lagerreglement$) doit être respecté.",
+        "section": {
+          "id": 4,
+          "title": "B. Annonce de camp et programme général",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-07T08:57:16.439Z",
+          "created_at": "2021-10-07T08:57:11.498Z",
+          "updated_at": "2022-01-22T17:19:58.864Z",
+          "key": "lageranmeldung",
+          "Sorting": 2,
+          "sorting": 2,
+          "slug": "Annonce-de-camp",
+          "menu_name": "Annonce de camp",
+          "identifier": "a"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-17T21:36:48.335Z",
+        "created_at": "2022-01-17T21:36:46.012Z",
+        "updated_at": "2022-01-23T14:06:29.195Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 202,
+        "slug": "Programme-general",
+        "link": null,
+        "slug_with_section": "Annonce-de-camp#Programme-general",
+        "menu_name": "Programme général"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Informer la commune dans laquelle se trouve le lieu de camp",
+    "days": -30,
+    "locale": "fr",
+    "published_at": "2022-01-22T16:39:07.350Z",
+    "created_at": "2022-01-22T16:30:57.913Z",
+    "updated_at": "2022-01-22T16:39:07.408Z",
+    "Slug": "Informer-la-commune-dans-laquelle-se-trouve-le-lieu-de-camp",
+    "responsible": [
+      {
+        "id": 984,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 32,
+        "rolle": "la commune dans laquelle se trouve le lieu de camp"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 70,
+        "title": "Informer la commune dans laquelle se trouve le lieu de camp",
+        "content": "Environ un mois avant le camp, la commune dans laquelle se déroule le camp devrait être informée de la présence du camp. La prise de contact avec la commune est utile pour plusieurs raisons. D’une part, la commune peut vous informer sur les réglementations cantonales ou communales. D’autre part, il est important que les autorités soient informées de votre présence en cas de catastrophe (évacuation). Parfois la commune peut d’ailleurs également vous aider dans la recherche d’un abri de secours (par ex. abri PC communal). Les informations suivantes devraient être envoyées à la commune : \n- Durée et type de camp\n- Nom du groupe \n- Nom et coordonnées du·de la responsable de camp principal\n- Nom du propriétaire du terrain \n- Coordonnées du lieu de camp \n- Demande d’informations concernant des règlements cantonaux ou communaux spéciaux (interdiction de feu, protection des nappes phréatiques, zones de protection de la nature, périodes de protection du gibier, …)\n",
+        "section": {
+          "id": 4,
+          "title": "B. Annonce de camp et programme général",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-07T08:57:16.439Z",
+          "created_at": "2021-10-07T08:57:11.498Z",
+          "updated_at": "2022-01-22T17:19:58.864Z",
+          "key": "lageranmeldung",
+          "Sorting": 2,
+          "sorting": 2,
+          "slug": "Annonce-de-camp",
+          "menu_name": "Annonce de camp",
+          "identifier": "a"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T16:40:43.841Z",
+        "created_at": "2022-01-22T16:33:11.567Z",
+        "updated_at": "2022-01-23T14:03:21.281Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 204,
+        "slug": "Informer-la-commune-dans-laquelle-se-trouve-le-lieu-de-camp",
+        "link": null,
+        "slug_with_section": "Annonce-de-camp#Informer-la-commune-dans-laquelle-se-trouve-le-lieu-de-camp",
+        "menu_name": "Informer la commune"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Autorisation de camp",
+    "days": -7,
+    "locale": "fr",
+    "published_at": "2022-01-22T12:54:19.294Z",
+    "created_at": "2022-01-22T12:54:16.395Z",
+    "updated_at": "2022-01-22T12:54:19.325Z",
+    "Slug": "Autorisation-de-camp",
+    "responsible": [
+      {
+        "id": 985,
+        "label": null,
+        "rolle": "AL"
+      },
+      {
+        "id": 986,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 29,
+        "rolle": "Responsable de camp"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 67,
+        "title": "Autorisation de camp",
+        "content": "Avec leur signature, le·la RG et le·la coach délivrent l’autorisation de camp. Pour des activités dans le domaine de sécurité, il faut une signature supplémentaire de l’expert·e en charge (cf. [Activités des domaines de sécurité]($sicherheitsbereich$)).\nLe·la RG et le·la coach informent le·la responsable de camp sur l’autorisation de camp idéalement lors d'un entretien. Le·la coach envoie une copie de l'autorisation de camp signée par tou·te·s au·à la responsable de camp et au·à la RG. En cas de refus d’autorisation, il·elle envoie une copie supplémentaire à l'association cantonale (AC) et au [Secrétariat général du MSdS](mailto:info@msds.ch).\n\n### Explication du formulaire\n1. «&nbsp;Autorisation&nbsp;» : Si le programme est «&nbsp;autorisé&nbsp;», cela signifie qu'il peut être exécuté comme prévu ; s'il est «&nbsp;autorisé avec compléments&nbsp;», il faut que les points contestés du programme soient adaptés par le·la responsable de camp ; «&nbsp;non-autorisé&nbsp;» signifie que le camp ne peut pas avoir lieu sous cette forme. \n1. «&nbsp;Autorisation activités de sécurité&nbsp;» : Le·la coach confirme par sa signature l'autorisation ou le refus des activités de sécurité. Si il·elle a délégué l'encadrement des activités de sécurité à une tierce personne, il·elle consultera d’abord celle-ci, mais signera lui·elle-même. \n1. «&nbsp;Confirmation du·de la responsable de camp&nbsp;» : En cas d'autorisation avec compléments ou de refus d’autorisation de camper, le·la responsable de camp confirme en avoir pris connaissance par sa signature.\n1. «&nbsp;Activités d'encadrement du·de la coach&nbsp;» : Dans ce paragraphe, le·la coach consigne la date de chaque étape de la préparation du camp. Cette partie peut être remplie à la place du journal du·de la coach et peut être consultée par l'office cantonal des sports.\n\n### Plus d’informations\n- [Le règlement du MSdS pour la préparation et la réalisation de camps]($lagerreglement$)\n- [Guide J+S pour la réalisation des camps J+S Sport de camp/Trekking]($js-angebotsleitfaden$)\n\n![fr-lagerreglement.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642855438/hering/fr_lagerreglement_469838f44d.png)\n",
+        "section": {
+          "id": 11,
+          "title": "F. Autorisation de camp",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:39:22.000Z",
+          "created_at": "2021-10-08T08:39:20.175Z",
+          "updated_at": "2022-01-22T09:30:54.391Z",
+          "key": "lagerbewilligung",
+          "Sorting": null,
+          "sorting": 6,
+          "slug": "Autorisation-de-camp",
+          "menu_name": "Autorisation de camp",
+          "identifier": "Lagerbewilligung"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T12:48:16.641Z",
+        "created_at": "2022-01-22T12:48:05.811Z",
+        "updated_at": "2022-01-23T23:38:31.880Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 602,
+        "slug": "Autorisation-de-camp",
+        "link": 169,
+        "slug_with_section": "Autorisation-de-camp#Autorisation-de-camp",
+        "menu_name": "Autorisation de camp"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Ajuster la liste des participant·e·s",
+    "days": 10,
+    "locale": "fr",
+    "published_at": "2022-01-22T11:20:37.173Z",
+    "created_at": "2022-01-22T11:20:33.433Z",
+    "updated_at": "2022-01-22T11:20:37.208Z",
+    "Slug": "Ajuster-la-liste-des-participantes",
+    "responsible": [
+      {
+        "id": 990,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 20,
+        "rolle": "MiData"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 50,
+        "title": "Liste des participant·e·s et clôture du camp dans MiData",
+        "content": "Le·la responsable de camp ajuste dans [MiData]($midata$) les participant·e·s et responsables enregistré·e·s avant le camp et en informe le·la coach au plus tard 10 jours après le camp.\nEnsuite ce dernier reporte la liste actualisée des participant· e·s dans la [SPORTdb]($sportdb$).\nLes processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$). \nEnsuite le·la responsable de camp clôt le camp dans la MiData en plaçant le statut sur « clôturé ».",
+        "section": {
+          "id": 13,
+          "title": "G. Clôture du camp",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:40:41.651Z",
+          "created_at": "2021-10-08T08:40:40.286Z",
+          "updated_at": "2022-01-23T20:33:44.365Z",
+          "key": "lagerabschluss",
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Cloture-du-camp",
+          "menu_name": "Clôture du camp",
+          "identifier": "Lagerabschluss"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T11:14:49.556Z",
+        "created_at": "2022-01-22T11:14:46.752Z",
+        "updated_at": "2022-01-23T22:09:18.933Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 702,
+        "slug": "Liste-des-participantes-et-cloture-du-camp-dans-MiData",
+        "link": null,
+        "slug_with_section": "Cloture-du-camp#Liste-des-participantes-et-cloture-du-camp-dans-MiData",
+        "menu_name": "Liste des participant·e·s"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Commande de matériel de prêt J+S",
+    "days": -40,
+    "locale": "fr",
+    "published_at": "2022-01-23T16:51:25.626Z",
+    "created_at": "2022-01-23T16:51:24.066Z",
+    "updated_at": "2022-01-23T17:35:39.599Z",
+    "Slug": "Commande-de-materiel-de-pret-J+S",
+    "responsible": [
+      {
+        "id": 991,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 43,
+        "rolle": "Office cantonal des sports"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 95,
+        "title": "Commande de matériel de prêt J+S",
+        "content": "Pour les camps qui sont annoncés à J+S, il est possible d’y commander du matériel. Pour ce faire, le formulaire [Commande de matériel de prêt pour camps J+S]($formular-js-leihmaterial$) est utilisé. Les frais de prêt se montent à CHF -.60 par kilo de matériel, y compris la palette. Les frais sont automatiquement déduits de la subvention J+S versée à la fin de l'année. Le matériel manquant ou endommagé est facturé après le camp. Le·la responsable de camp est personnellement responsable du matériel. Le·la responsable (appelé « direction du cours / camp » dans le formulaire) envoie le formulaire rempli au·à la coach. Celui-ci·celle-ci le complète et le transmet à l'[office cantonal des sports]($sportamt-kantone$). L'office cantonal des sports fait ensuite parvenir une confirmation au coach. Le formulaire n’a pas besoin d’être signé et peut être envoyé par e-mail. Pour des informations plus détaillées concernant la livraison, la réception et le renvoi du matériel, voir le [Guide concernant le matériel de prêt J+S pour les offres de sport et la formation des cadres]($leitfaden-js-leihmaterial$). \nVoici quelques explications relatives au formulaire :\n\n1. **« N° pers. » + « Offre no »** : Le numéro personnel J+S du·de la responsable de camp se trouve sur la carte personnelle J+S (ou sur SPORTdb). Le numéro de l’offre est le numéro de l’offre dans laquelle tous les camps de l’année sont réunis. Le·la coach peut trouver le numéro dans la base de données SPORTdb (demander au coach ou laisser le coach compléter)\n2. **« Camp »** ou **« Formation des cadres »** : pour un camp, il faut cocher « Camp ». La « Formation des cadres » est destinée aux cours de formation pour les responsables\n3. **« Date de livraison/date de reddition »** : La date (jours ouvrables uniquement) pour le transport est déterminée ici. Si aucune confirmation écrite n’a été reçue une semaine avant la date déterminée, il est nécessaire de prendre contact avec J+S. Le matériel peut être emprunté pour un maximum de 7 mois. Le rendu du matériel doit être effectué au plus tard trois jours après la fin du (dernier) camp. Le matériel doit être rendu propre. Le jour de reddition le matériel doit être prêt à être rendu à 8 heures. \n4. **« Adresse de livraison du matériel »** : Indiquer une adresse précise. Le matériel est livré un jour ouvrable entre 8 et 18 heures et doit être réceptionné par une personne. Si le lieu de livraison est, par exemple, une ferme près de la place de camp ou du gîte, se mettre d'accord avec l'agriculteur et l'en informer. Le lieu de livraison doit être atteignable par camion et le matériel doit pouvoir être déchargé avec un chariot de manutention, cela signifie qu’il ne peut pas être livré dans la forêt. Le jour de reddition il est nécessaire d’être atteignable par téléphone par le transporteur (contact en cas de problèmes). \n5. **« Franco-domicile »** : La livraison du matériel s'effectue en principe franco-domicile, ce qui signifie que le matériel est livré par camion. Une autre possibilité consiste à aller chercher\n\n![C1-fr-leihmaterialbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642957260/hering/C1_fr_leihmaterialbestellung_d9780509fb.png)\n\nEn cas des problèmes avec le matériel de prêt :  \n(Numéro « LM » doit impérativement figurer sur chaque correspondance)  \n- Centre de logistique de l’armée à Thoune: material-js.lba@vtg.admin.ch | 033 / 228 26 83\n- Service de transport DDPS: 058 / 464 25 27\n",
+        "section": {
+          "id": 7,
+          "title": "C. Commande de services",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:34:43.952Z",
+          "created_at": "2021-10-08T08:34:42.527Z",
+          "updated_at": "2022-01-22T09:38:17.917Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Commande-de-services",
+          "menu_name": "Commande de services",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T17:10:57.854Z",
+        "created_at": "2022-01-23T17:10:55.527Z",
+        "updated_at": "2022-01-31T16:54:09.392Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 301,
+        "slug": "Commande-de-materiel-de-pret-J+S",
+        "link": 175,
+        "slug_with_section": "Commande-de-services#Commande-de-materiel-de-pret-J+S",
+        "menu_name": "Commande de matériel de prêt J+S"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Commande de matériel de prêt J+S au·à la coach",
+    "days": -42,
+    "locale": "fr",
+    "published_at": "2022-01-23T16:46:25.486Z",
+    "created_at": "2022-01-23T16:46:22.954Z",
+    "updated_at": "2022-01-23T16:46:25.517Z",
+    "Slug": "Commande-de-materiel-de-pret-J+S-aua-la-coach",
+    "responsible": [
+      {
+        "id": 994,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 41,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 95,
+        "title": "Commande de matériel de prêt J+S",
+        "content": "Pour les camps qui sont annoncés à J+S, il est possible d’y commander du matériel. Pour ce faire, le formulaire [Commande de matériel de prêt pour camps J+S]($formular-js-leihmaterial$) est utilisé. Les frais de prêt se montent à CHF -.60 par kilo de matériel, y compris la palette. Les frais sont automatiquement déduits de la subvention J+S versée à la fin de l'année. Le matériel manquant ou endommagé est facturé après le camp. Le·la responsable de camp est personnellement responsable du matériel. Le·la responsable (appelé « direction du cours / camp » dans le formulaire) envoie le formulaire rempli au·à la coach. Celui-ci·celle-ci le complète et le transmet à l'[office cantonal des sports]($sportamt-kantone$). L'office cantonal des sports fait ensuite parvenir une confirmation au coach. Le formulaire n’a pas besoin d’être signé et peut être envoyé par e-mail. Pour des informations plus détaillées concernant la livraison, la réception et le renvoi du matériel, voir le [Guide concernant le matériel de prêt J+S pour les offres de sport et la formation des cadres]($leitfaden-js-leihmaterial$). \nVoici quelques explications relatives au formulaire :\n\n1. **« N° pers. » + « Offre no »** : Le numéro personnel J+S du·de la responsable de camp se trouve sur la carte personnelle J+S (ou sur SPORTdb). Le numéro de l’offre est le numéro de l’offre dans laquelle tous les camps de l’année sont réunis. Le·la coach peut trouver le numéro dans la base de données SPORTdb (demander au coach ou laisser le coach compléter)\n2. **« Camp »** ou **« Formation des cadres »** : pour un camp, il faut cocher « Camp ». La « Formation des cadres » est destinée aux cours de formation pour les responsables\n3. **« Date de livraison/date de reddition »** : La date (jours ouvrables uniquement) pour le transport est déterminée ici. Si aucune confirmation écrite n’a été reçue une semaine avant la date déterminée, il est nécessaire de prendre contact avec J+S. Le matériel peut être emprunté pour un maximum de 7 mois. Le rendu du matériel doit être effectué au plus tard trois jours après la fin du (dernier) camp. Le matériel doit être rendu propre. Le jour de reddition le matériel doit être prêt à être rendu à 8 heures. \n4. **« Adresse de livraison du matériel »** : Indiquer une adresse précise. Le matériel est livré un jour ouvrable entre 8 et 18 heures et doit être réceptionné par une personne. Si le lieu de livraison est, par exemple, une ferme près de la place de camp ou du gîte, se mettre d'accord avec l'agriculteur et l'en informer. Le lieu de livraison doit être atteignable par camion et le matériel doit pouvoir être déchargé avec un chariot de manutention, cela signifie qu’il ne peut pas être livré dans la forêt. Le jour de reddition il est nécessaire d’être atteignable par téléphone par le transporteur (contact en cas de problèmes). \n5. **« Franco-domicile »** : La livraison du matériel s'effectue en principe franco-domicile, ce qui signifie que le matériel est livré par camion. Une autre possibilité consiste à aller chercher\n\n![C1-fr-leihmaterialbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642957260/hering/C1_fr_leihmaterialbestellung_d9780509fb.png)\n\nEn cas des problèmes avec le matériel de prêt :  \n(Numéro « LM » doit impérativement figurer sur chaque correspondance)  \n- Centre de logistique de l’armée à Thoune: material-js.lba@vtg.admin.ch | 033 / 228 26 83\n- Service de transport DDPS: 058 / 464 25 27\n",
+        "section": {
+          "id": 7,
+          "title": "C. Commande de services",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:34:43.952Z",
+          "created_at": "2021-10-08T08:34:42.527Z",
+          "updated_at": "2022-01-22T09:38:17.917Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Commande-de-services",
+          "menu_name": "Commande de services",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T17:10:57.854Z",
+        "created_at": "2022-01-23T17:10:55.527Z",
+        "updated_at": "2022-01-31T16:54:09.392Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 301,
+        "slug": "Commande-de-materiel-de-pret-J+S",
+        "link": 175,
+        "slug_with_section": "Commande-de-services#Commande-de-materiel-de-pret-J+S",
+        "menu_name": "Commande de matériel de prêt J+S"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Initier l'inscription du camp au MSdS",
+    "days": -49,
+    "locale": "fr",
+    "published_at": "2022-01-22T17:08:44.777Z",
+    "created_at": "2022-01-22T16:50:44.069Z",
+    "updated_at": "2022-01-22T17:08:44.814Z",
+    "Slug": "Initier-l'inscription-du-camp-au-MSdS",
+    "responsible": [
+      {
+        "id": 995,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 34,
+        "rolle": "C"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 72,
+        "title": "Annonce de camp au MSdS",
+        "content": "### Données du·de la responsable de camp\nAvec l’annonce de camp MSdS dans la [MiData]($midata$), chaque camp est inscrit à l’avance à l’AC et au MSdS. Le·la responsable de camp remplit toutes les informations sur le camp au plus tard 7 semaines avant le camp dans la MiData et envoie en même temps le programme général au·à la RG et au·à la coach.\n\n### Données du·de la coach\nLe·la coach peut alors se connecter à la [MiData]($midata$), remplir sa partie de l’annonce de camp et la transmettre. L’annonce de camp est ensuite transmise automatiquement du MSdS et à l’AC. Le MSdS utilise ces informations afin de pouvoir réagir en cas de crise, ainsi que pour des informations statistiques vis-à-vis de la confédération. A cet effet, le·la coach se connecte avec son login à la MiData et va à son groupe. S’il·elle n’a pas de login, il·elle s’adresse à son groupe, pour que celui-ci lui envoie un accès. Ensuite, il·elle procède de la façon suivante :\n1. Cliquer sur « Camp ». \n2. Choisir le camp correspondant\n3. Cliquer sur « modifier».\n4. Vérifier toutes les données\n5. Choisir le registre encadrement. Cliquer sur « Coach confirmé » et remplir les informations sur visite du coach et les activités dans les [domaines de sécurité]($sicherheitsbereich$).\n6. Cliquer sur « Enregistrer »\n7. Une fois que toutes les informations sont complètes : envoyer l’annonce de camp au MSdS en cliquant sur le bouton « Transmettre ».\n\n![fr-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_A_b4b4211669.png)\n\n![fr-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_B_8df45c3608.png)\n\n![fr-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/fr_Lagerdaten_Coach_Mi_Data_C_754fd2168a.png)\n",
+        "section": {
+          "id": 4,
+          "title": "B. Annonce de camp et programme général",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-07T08:57:16.439Z",
+          "created_at": "2021-10-07T08:57:11.498Z",
+          "updated_at": "2022-01-22T17:19:58.864Z",
+          "key": "lageranmeldung",
+          "Sorting": 2,
+          "sorting": 2,
+          "slug": "Annonce-de-camp",
+          "menu_name": "Annonce de camp",
+          "identifier": "a"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T17:08:29.428Z",
+        "created_at": "2022-01-22T17:00:32.381Z",
+        "updated_at": "2022-01-23T20:20:01.690Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 201,
+        "slug": "Annonce-de-camp-au-MSdS",
+        "link": 167,
+        "slug_with_section": "Annonce-de-camp#Annonce-de-camp-au-MSdS",
+        "menu_name": "Annonce de camp au MSdS"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Commande de cartes nationales au·à la coach",
+    "days": -28,
+    "locale": "fr",
+    "published_at": "2022-01-23T17:36:50.424Z",
+    "created_at": "2022-01-23T17:36:49.103Z",
+    "updated_at": "2022-01-23T17:37:55.622Z",
+    "Slug": "Commande-de-cartes-nationales-aua-la-coach",
+    "responsible": [
+      {
+        "id": 998,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 47,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 98,
+        "title": "Commande de cartes nationales Swisstopo",
+        "content": "Pour les camps J+S, on peut commander des cartes nationales auprès de Swisstopo. A cet effet, il faut utiliser le [formulaire Commande de cartes nationales]($formular-landeskartenbestellung$). Le prêt est gratuit mais les frais de port pour les renvoyer sont à la charge du groupe. Les cartes perdues ou renvoyées en retard sont facturées. On peut commander un exemplaire de chaque carte pour trois participant·e·s en âge J+S. Le·la responsable de camp envoie le formulaire rempli au·à la coach qui le transmet directement à Swisstopo ( mapsales@swisstopo.ch), par poste ou scannée par e-mail. Les signatures peuvent être apposées électroniquement, une copie ou un scan n’est pas nécessaire. Les cartes sont livrées par la poste au domicile du·de la responsable de camp.\nVoici quelques explications relatives au formulaire :\n\n1. **« Disponible »** : Le·la responsable de camp décide de la date à laquelle il·elle aura besoin des cartes. Si la commande est réceptionnée 3 semaines avant par Swisstopo, les cartes seront envoyées à cette date à l'adresse indiquée. Il est recommandé de passer commande assez tôt afin de pouvoir utiliser les cartes nationales lors de la reconnaissance des lieux.\n2. **« Reddition »** : Le·la responsable de camp doit renvoyer à temps les cartes par la poste, c’est-à-dire au plus tard 3 jours après la fin du camp (cf. l’ [Guide concernant les prestations spéciales pour les offres de sport J+S et la formation des cadres J+S]($leitfaden-js-spezielle-leistungen$))\n3. **« Organisation »** : Le·la responsable de camp note ici le nom du groupe.\n4. **« Droit au matériel »** : On peut emprunter des cartes nationales à l'échelle 1:25'000 et 1:50'000 ainsi que des assemblages. Le·la responsable de camp a le droit de commander un exemplaire pour 3 participants de l’âge J+S. Sont pris en considération tou·te·s les participant·e·s âgé·e·s de 5 à 20 ans.\n5. **« N° de l'offre »** : Le·la coach note ici le numéro de l'offre J+S selon l'inscription dans la [SPORTdb]($sportdb$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
+        "section": {
+          "id": 7,
+          "title": "C. Commande de services",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:34:43.952Z",
+          "created_at": "2021-10-08T08:34:42.527Z",
+          "updated_at": "2022-01-22T09:38:17.917Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Commande-de-services",
+          "menu_name": "Commande de services",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T17:46:28.436Z",
+        "created_at": "2022-01-23T17:46:25.731Z",
+        "updated_at": "2022-02-06T16:40:42.333Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 302,
+        "slug": "Commande-de-cartes-nationales-Swisstopo",
+        "link": 219,
+        "slug_with_section": "Commande-de-services#Commande-de-cartes-nationales-Swisstopo",
+        "menu_name": "Commande de cartes nationales Swisstopo"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Liste des participants pour l’assurance REGA dans la SPORTdb",
+    "days": -7,
+    "locale": "fr",
+    "published_at": "2022-01-23T19:28:25.707Z",
+    "created_at": "2022-01-23T19:28:24.377Z",
+    "updated_at": "2022-01-23T19:28:25.745Z",
+    "Slug": "Liste-des-participants-pour-l'assurance-REGA-dans-la-SPORTdb",
+    "responsible": [
+      {
+        "id": 1008,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 65,
+        "rolle": "SPORTdb"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 108,
+        "title": "Assurance Rega",
+        "content": "Tou·te·s les participants et les membres de la maitrise de camp ainsi que les personnes accompagnatrices peuvent être assurés auprès de la Rega pendant la durée du camp. (voir [Guide concernant les prestations spéciales pour les offres de sport J+S et la formation des cadres J+S]($leitfaden-js-spezielle-leistungen$)). La couverture ne s’étend qu’en Suisse et dans la principauté du Lichtenstein. A cet effet, le·la responsable de camp enregistre les participant·e·s dans la MiData et la partage avec le·la coach (cf. [Administration des participants dans la MiData]($tn-administration-midata$)). Ce dernier·cette dernière inscrit les participant·e·s dans la SPORTdb à la REGA. Les tâches exactes y compris les indications pas à pas se trouvent dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$) qui comprend également des images. En contrepartie, la Rega obtient le droit de proposer aux participants annoncés ayant atteint la majorité une demande de donateur. Les parents des participants doivent donc être informés de la transmission des données (à mentionner lors de l’inscription aux camps). \n\nDans le cas où il faut faire appel aux services de la REGA, c’est en premier lieu la caisse d’assurance maladie qui paye. Si elle refuse, c’est la REGA qui reprendrait en charge les coûts des personnes assurées comme décrit ci-dessus.\n\n***Plus d’information :***  \n[La Rega au service de J+S – Conditions générales]($rega-rahmenbedingungen$)",
+        "section": {
+          "id": 7,
+          "title": "C. Commande de services",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:34:43.952Z",
+          "created_at": "2021-10-08T08:34:42.527Z",
+          "updated_at": "2022-01-22T09:38:17.917Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Commande-de-services",
+          "menu_name": "Commande de services",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T19:43:09.627Z",
+        "created_at": "2022-01-23T19:43:04.318Z",
+        "updated_at": "2022-01-23T20:26:32.789Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 304,
+        "slug": "Assurance-Rega",
+        "link": 173,
+        "slug_with_section": "Commande-de-services#Assurance-Rega",
+        "menu_name": "Assurance Rega"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Ouvrir un camp dans la MiData et l’attribuer à la responsable de camp et au coach",
+    "days": -1000,
+    "locale": "fr",
+    "published_at": "2022-01-23T21:47:34.271Z",
+    "created_at": "2022-01-23T21:47:31.710Z",
+    "updated_at": "2022-01-23T21:47:34.311Z",
+    "Slug": "Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-a-la-responsable-de-camp-et-au-coach",
+    "responsible": [
+      {
+        "id": 1095,
+        "label": null,
+        "rolle": "AL"
+      }
+    ],
+    "targets": [],
+    "chapters": [
+      {
+        "id": 118,
+        "title": "Ouvrir un camp dans la MiData et l’attribuer à la responsable de camp et au coach",
+        "content": "Le·la RG ouvre le camp dans la [MiData]($midata$). Pour cela, il·elle se connecte et, dans son groupe, va sur «&nbsp;Camp&nbsp;» et clique «&nbsp;+Établir un camp&nbsp;» et remplit le formulaire «&nbsp;Créer un camp&nbsp;». Un·e coach est attribué au groupe. Le·la coach reçoit un e-mail automatique de notification, qu’il·elle a été affecté·e au camp.\n\n> Des camps peuvent être créés à plusieurs niveaux. Un camp peut aussi bien être ouvert au niveau des groupes que par un groupe (par exemple : Eclais, Routiers, etc.) L’inscription au camp n’est possible que pour les membres du groupe correspondant.\n\n![A6-fr-lagererstellen.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642974389/hering/A6_fr_lagererstellen_fad591f5a7.png)\n\n![fr-lager-eroeffnen2.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643652772/hering/fr_lager_eroeffnen2_e922f94d44.png)\n\nChamps | Saisie / Remarque | Qui remplit\n-------- | -------- | --------\nRèglement du camp / Profil du scoutisme | Le [Règlement concernant la préparation de camps du MSdS]($lagerreglement$) («&nbsp;règlement de camp&nbsp;») ainsi que le [profil du scoutisme]($pfadiprofil$) sont pris en compte et respectés. | Responsable de camp\nConsignes/ Recommandations AC   | Les directives et recommandations disponibles de l'association cantonale sont prise en compte au mieux lors de la préparation du camp. | Responsable de camp\nConsignes J+S SC/T | Pour les camps J+S: je connais les [recommandations actuelles du dossier Sport de camp/Trekking]($js-angebotsleitfaden$) et j'en tiens compte. | Responsable de camp\nCoach confirmé | Le·la coach confirme-t-il·elle les données du camp ? | Coach\n\n\n\n",
+        "section": {
+          "id": 3,
+          "title": "A. Préparation de la saison des camps",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-14T18:07:46.751Z",
+          "created_at": "2021-10-06T16:01:50.136Z",
+          "updated_at": "2022-01-22T09:42:15.236Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Preparation",
+          "menu_name": "Préparation",
+          "identifier": "bla"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T21:55:43.393Z",
+        "created_at": "2022-01-23T21:55:33.284Z",
+        "updated_at": "2022-01-31T18:15:38.121Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 106,
+        "slug": "Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-a-la-responsable-de-camp-et-au-coach",
+        "link": 186,
+        "slug_with_section": "Preparation#Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-a-la-responsable-de-camp-et-au-coach",
+        "menu_name": "Ouvrir un camp"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Remettre le dossier de camp",
+    "days": -21,
+    "locale": "fr",
+    "published_at": "2022-01-23T18:11:37.307Z",
+    "created_at": "2022-01-23T18:11:35.681Z",
+    "updated_at": "2022-01-23T22:12:10.426Z",
+    "Slug": "Remettre-le-dossier-de-camp",
+    "responsible": [
+      {
+        "id": 1133,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 54,
+        "rolle": "Responsable de camp"
+      },
+      {
+        "id": 55,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 99,
+        "title": "Éléments du dossier de camp",
+        "content": "Un dossier de camp est constitué à partir de tous les documents de planification. Celui-ci est remis au·à la RG et au·à la coach trois semaines avant le début du camp. On trouve également des informations sur le dossier de camp dans la brochure J+S [SC/T Camp]($lst-lager-cudesch$) dans le cudesch. Le plus important est résumé ci-dessous. La conception des activités du camp n’est pas développée ici. \nLe programme détaillé est une aide pour tou·te·s les responsables de camp. Il sert également de base pour l’évaluation du programme de camp par le·la RG et le·la coach. Il contient les documents suivants :\n- Programme général\n- 3 priorités du camp (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 14)\n- Devise et fil conducteur\n- Description des blocs de programme (voir plus bas)\n- Pour les randonnées à pied et à vélo : calcul du temps de marche et copies de carte topographique en couleur (voir la brochure Montagne), concept de sécurité de la randonnée / du vélo (cf. brochure J+S [SC/T Montagne]($lst-berg-cudesch$))\n- Concept de sécurité d’un camp (voir la brochure La sécurité – assumer des responsabilités, p. 39)\n- Les règles du camp (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$))\n- Les arrangements au sein de l’équipe, par exemple concernant la distribution des tâches, les responsables du jour, le positionnement par rapport aux substances addictives, etc. (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 5-9)\n- Liste des participant(e)s\n\nSelon les demandes du·de la responsable de groupe/coach/caissier/ière :\n- Informations sur les participants (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 27sq.)\n- Menu (cf. aide-mémoire J+S [Faire la cuisine]($lst-kueche$) et brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 34)\n- Budget du camp (cf. [Budget de camp]($lagerbudget$) et brochure J+S [SC/T Camp]($lst-lager-cudesch$))\n- Programme de la soirée d’information aux parents (brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 29)",
+        "section": {
+          "id": 9,
+          "title": "D. Transmettre le programme détaillé",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:35:32.178Z",
+          "created_at": "2021-10-08T08:35:30.339Z",
+          "updated_at": "2022-01-22T09:45:10.891Z",
+          "key": "lagerdossier",
+          "Sorting": null,
+          "sorting": 4,
+          "slug": "Programme-detaille",
+          "menu_name": "Programme détaillé",
+          "identifier": "Lagerdossier"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T18:05:15.368Z",
+        "created_at": "2022-01-23T18:05:13.516Z",
+        "updated_at": "2022-01-23T22:49:33.297Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 401,
+        "slug": "Elements-du-dossier-de-camp",
+        "link": null,
+        "slug_with_section": "Programme-detaille#Elements-du-dossier-de-camp",
+        "menu_name": "Éléments du dossier de camp"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Clôturer l'offre J+S",
+    "days": 30,
+    "locale": "fr",
+    "published_at": "2022-01-22T09:53:39.818Z",
+    "created_at": "2022-01-22T09:53:37.671Z",
+    "updated_at": "2022-01-23T23:15:07.307Z",
+    "Slug": "Cloturer-l'offre-J+S",
+    "responsible": [
+      {
+        "id": 1285,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 14,
+        "rolle": "SPORTdb"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 41,
+        "title": "Clôture de l'offre J+S dans la SPORTdb",
+        "content": "Après le dernier camp, le·la coach reçoit un e-mail automatique de rappel (objet : Rappel fin de l'offre dans 30 jours). Il·elle doit clôturer l'offre dans les 30 jours suivant le dernier camp. Important : avant que l'offre elle-même puisse être clôturée, il faut que les données effectives et la mise à jour de la liste des présences de chaque camp soient définitivement enregistrées (c’est-à-dire que le statut de tous les camps doit être « clôturé »). Voici quelques explications sur la liste de contrôle de la SPORTdb :\n\n- *Statut de l’offre «&nbsp;Processus de clôture&nbsp;»* : Dans le statut «&nbsp;processus de clôture&nbsp;», l'offre est traitée par l'office cantonal des sports. La demande de décompte du·de la coach à l'office cantonal des sports est confirmée par e-mail. Si l’offre est en règle, le virement de la subvention J+S sera effectué par J+S Macolin. Ce dernier sera à nouveau confirmé par e-mail (Objet : offre N° XXXXXX transmise pour paiement).\n- *Statut de l’offre «&nbsp;clôture&nbsp;»* : Après le procédé de clôture par l'office cantonal du sport, l'offre passe dans le statut «&nbsp;clôturé&nbsp;».\n\nLes processus sont détaillés pas à pas (photos incluses) dans le document  [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$).",
+        "section": {
+          "id": 15,
+          "title": "H. Clôture de l'offre J+S",
+          "content": "A la fin de l'année - mais au plus tard 30 jours après le dernier camp - le·la coach clôture toute l'offre de J+S dans la [SPORTdb]($sportdb$). Il est important que la clôture soit exécutée avec soin, car lors de décomptes tardifs, J+S Macolin peut refuser de verser les subventions. Il est également recommandé d'enregistrer l'offre définitive en format PDF. L'office cantonal des sports verse au groupe la subvention J+S et celle du coach environ 2 mois après le dernier camp. La confirmation du virement de la subvention J+S est envoyée au·à la coach par la poste. Ce·tte dernier·ière en informe le·la RG (copie par poste ou e-mail).",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:42:25.619Z",
+          "created_at": "2021-10-08T08:42:24.155Z",
+          "updated_at": "2022-01-22T10:46:55.981Z",
+          "key": "abschluss",
+          "Sorting": null,
+          "sorting": 8,
+          "slug": "Cloture-de-l'offre-J+S",
+          "menu_name": "Clôture de l'offre J+S",
+          "identifier": "s J+S-Angebot"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T10:28:55.836Z",
+        "created_at": "2022-01-22T10:20:30.514Z",
+        "updated_at": "2022-01-23T21:58:14.404Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 801,
+        "slug": "Cloture-de-l'offre-J+S-dans-la-SPORTdb",
+        "link": 165,
+        "slug_with_section": "Cloture-de-l'offre-J+S#Cloture-de-l'offre-J+S-dans-la-SPORTdb",
+        "menu_name": "Clôture dans la SPORTdb"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "title": "Enregistrement de responsable de camp et l'équipe cuisine dans MiData",
+    "days": -30,
+    "locale": "fr",
+    "published_at": "2022-01-23T22:35:27.261Z",
+    "created_at": "2022-01-23T22:35:23.730Z",
+    "updated_at": "2022-01-23T22:36:28.559Z",
+    "Slug": "Enregistrement-de-responsable-de-camp-et-l'equipe-cuisine-dans-MiData",
+    "responsible": [
+      {
+        "id": 1187,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [],
+    "chapters": [
+      {
+        "id": 122,
+        "title": "Enregistrement de responsable de camp et de l'équipe cuisine dans MiData",
+        "content": "Le·la RG enregistre dans la MiData au moins le·la responsable de camp. Les autres personnes responsables peuvent être ajoutées aussi bien par le·la RG que par le·la responsable de camp enregistré. L’équipe cuisine doit également être ajoutée, afin que le·la coach puisse facilement compléter la SPORTdb pour l’[assurance de la REGA]($rega$).\n1. Sélectionner domaine camp\n2. Choisir le camp souhaité déjà enregistré\n3. Cliquer sur participants\n4. Cliquer sur maîtrise\n5. Ajouter une personne et choisir la forme souhaitée.\n6. Sous „Chercher une personne“, saisir un nom, choisir la personne souhaitée. Sous désignation, indiquer la désignation concrète (par exemple co-responsable) et «&nbsp;Enregistrer&nbsp;».",
+        "section": {
+          "id": 3,
+          "title": "A. Préparation de la saison des camps",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-14T18:07:46.751Z",
+          "created_at": "2021-10-06T16:01:50.136Z",
+          "updated_at": "2022-01-22T09:42:15.236Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Preparation",
+          "menu_name": "Préparation",
+          "identifier": "bla"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T22:36:01.552Z",
+        "created_at": "2022-01-23T22:35:58.255Z",
+        "updated_at": "2022-01-23T22:41:54.424Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 108,
+        "slug": "Enregistrement-de-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData",
+        "link": 192,
+        "slug_with_section": "Preparation#Enregistrement-de-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData",
+        "menu_name": "Enregistrement de responsable de camp dans MiData"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "title": "Initier le congé jeunesse",
+    "days": -77,
+    "locale": "fr",
+    "published_at": "2022-01-23T23:13:11.553Z",
+    "created_at": "2022-01-23T23:11:42.108Z",
+    "updated_at": "2022-01-23T23:13:11.576Z",
+    "Slug": "Initier-le-conge-jeunesse",
+    "responsible": [
+      {
+        "id": 1270,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 69,
+        "rolle": "AL"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 127,
+        "title": "Congé jeunesse",
+        "content": "Les responsables exerçant une activité professionnelle peuvent obtenir un congé jeunesse. En effet, par la loi, les apprentis et les personnes de moins de 30 ans exerçant une activité professionnelle ont droit à une semaine supplémentaire de congé non payé pour des activités d’encadrement des jeunes (camp, cours de formation, événements). Le·la responsable remplit seul·e ou avec le·la RG la partie supérieure du formulaire [Attestation relative au congé jeunesse (CSAJ)]($jugendurlaub-formular$). La RG complète la partie inférieure et confirme ainsi que le camp aura bien lieu. Ce formulaire permet au·à la responsable de demander un congé jeunesse à son maître d’apprentissage ou à son patron au plus tard deux mois avant le camp. D’autres renseignements se trouvent dans l’ [Aide-mémoire Congé jeunesse (CSAJ/OFAS)]($jugendurlaub-merkblatt$) ou sur le site internet [www.conge-jeunesse.ch]($jugendurlaub$).",
+        "section": {
+          "id": 3,
+          "title": "A. Préparation de la saison des camps",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-14T18:07:46.751Z",
+          "created_at": "2021-10-06T16:01:50.136Z",
+          "updated_at": "2022-01-22T09:42:15.236Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Preparation",
+          "menu_name": "Préparation",
+          "identifier": "bla"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T23:17:15.306Z",
+        "created_at": "2022-01-23T23:17:13.463Z",
+        "updated_at": "2022-01-23T23:17:15.343Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 110,
+        "slug": "Conge-jeunesse",
+        "link": null,
+        "slug_with_section": "Preparation#Conge-jeunesse",
+        "menu_name": "Congé jeunesse"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "title": "Enregistrement de l’offre J+S via la SPORTdb",
+    "days": -30,
+    "locale": "fr",
+    "published_at": "2022-01-23T22:48:26.185Z",
+    "created_at": "2022-01-23T22:48:22.891Z",
+    "updated_at": "2022-01-23T22:48:26.216Z",
+    "Slug": "Enregistrement-de-l'offre-J+S-via-la-SPORTdb",
+    "responsible": [
+      {
+        "id": 1241,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [],
+    "chapters": [
+      {
+        "id": 125,
+        "title": "Enregistrement de l’offre J+S via la SPORTdb",
+        "content": "Le·la coach enregistre tous les camps du groupe en une fois auprès de J+S. Il·elle le fait en ligne par la [SPORTdb]($sportdb$). Il*elle reçoit l'accès à la SPORTdb de l'AC.\n\n### Ouverture de l’offre J+S dans la SPORTdb\nAu début de l’année, une nouvelle offre pour l’année à venir est ouverte sous «&nbsp;Gestion de l’offre&nbsp;» → «&nbsp;Nouvelle offre&nbsp;». Une seule offre est ouverte par groupe. Avec cette offre, tous les camps du groupe seront inscrits à J+S. Après l’ouverture, l’offre peut être consultée n’importe quand sous «&nbsp;Gestion de l’offre&nbsp;» → «&nbsp;Vue d’ensemble de l’offre&nbsp;». A chaque modification pendant l’année, le «&nbsp;statut&nbsp;» change également. La «&nbsp;check-list&nbsp;» de l’offre donne une vue d’ensemble sur les étapes de modification nécessaires à chaque statut. Pour modifier l’offre, on suit les cartes du registre de la gauche vers la droite. La nouvelle offre ouverte s’affiche dans la vue d’ensemble de l’offre en tant qu’ «&nbsp;offre pas encore enregistrée&nbsp;». A partir de là, il s’agit d’enregistrer l’offre.\n\n### Statut de l’offre «&nbsp;Procédure d’autorisation&nbsp;»\nLe statut «&nbsp;Procédure d’autorisation&nbsp;» indique que l’office cantonal des sports traite l’offre. La demande d’autorisation du·de la coach est confirmée par message électronique (Objet&nbsp;: Confirma-tion de réception de votre offre J+S n° XXXXX). L’autorisation finale par l’OCS est également confirmée par message électronique (Objet&nbsp;: Autorisation de votre offre J+S n°XXXXX). Dès lors, l’offre entre dans le statut «&nbsp;Exécution&nbsp;».\n\n### Travailler dans la SPORTdb\nLes processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$). Le document [Saisie des données et protection des données dans la SPORTdb]($js-datenschutz$) répond aux questions liées à la protection des données dans la SPORTdb.",
+        "section": {
+          "id": 3,
+          "title": "A. Préparation de la saison des camps",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-14T18:07:46.751Z",
+          "created_at": "2021-10-06T16:01:50.136Z",
+          "updated_at": "2022-01-22T09:42:15.236Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Preparation",
+          "menu_name": "Préparation",
+          "identifier": "bla"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T23:00:24.017Z",
+        "created_at": "2022-01-23T22:54:00.092Z",
+        "updated_at": "2022-01-23T23:00:24.048Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 109,
+        "slug": "Enregistrement-de-l'offre-J+S-via-la-SPORTdb",
+        "link": null,
+        "slug_with_section": "Preparation#Enregistrement-de-l'offre-J+S-via-la-SPORTdb",
+        "menu_name": "Enregistrement de l’offre J+S via la SPORTdb"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "title": "Confirmer le congé jeunesse",
+    "days": -62,
+    "locale": "fr",
+    "published_at": "2022-01-23T23:14:54.895Z",
+    "created_at": "2022-01-23T23:14:53.545Z",
+    "updated_at": "2022-01-23T23:14:54.917Z",
+    "Slug": "Confirmer-le-conge-jeunesse",
+    "responsible": [
+      {
+        "id": 1276,
+        "label": null,
+        "rolle": "AL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 73,
+        "rolle": "Employeur"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 127,
+        "title": "Congé jeunesse",
+        "content": "Les responsables exerçant une activité professionnelle peuvent obtenir un congé jeunesse. En effet, par la loi, les apprentis et les personnes de moins de 30 ans exerçant une activité professionnelle ont droit à une semaine supplémentaire de congé non payé pour des activités d’encadrement des jeunes (camp, cours de formation, événements). Le·la responsable remplit seul·e ou avec le·la RG la partie supérieure du formulaire [Attestation relative au congé jeunesse (CSAJ)]($jugendurlaub-formular$). La RG complète la partie inférieure et confirme ainsi que le camp aura bien lieu. Ce formulaire permet au·à la responsable de demander un congé jeunesse à son maître d’apprentissage ou à son patron au plus tard deux mois avant le camp. D’autres renseignements se trouvent dans l’ [Aide-mémoire Congé jeunesse (CSAJ/OFAS)]($jugendurlaub-merkblatt$) ou sur le site internet [www.conge-jeunesse.ch]($jugendurlaub$).",
+        "section": {
+          "id": 3,
+          "title": "A. Préparation de la saison des camps",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-14T18:07:46.751Z",
+          "created_at": "2021-10-06T16:01:50.136Z",
+          "updated_at": "2022-01-22T09:42:15.236Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Preparation",
+          "menu_name": "Préparation",
+          "identifier": "bla"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T23:17:15.306Z",
+        "created_at": "2022-01-23T23:17:13.463Z",
+        "updated_at": "2022-01-23T23:17:15.343Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 110,
+        "slug": "Conge-jeunesse",
+        "link": null,
+        "slug_with_section": "Preparation#Conge-jeunesse",
+        "menu_name": "Congé jeunesse"
+      }
+    ]
+  }
+]

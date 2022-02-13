@@ -1,0 +1,1980 @@
+[
+  {
+    "id": 25,
+    "title": "A. Preparazione dei campi",
+    "content": null,
+    "locale": "it",
+    "published_at": "2022-01-22T09:41:58.895Z",
+    "created_at": "2022-01-22T09:41:56.335Z",
+    "updated_at": "2022-01-22T09:42:07.778Z",
+    "key": null,
+    "Sorting": null,
+    "sorting": 1,
+    "slug": "Preparazione",
+    "menu_name": "Preparazione",
+    "identifier": null,
+    "chapters": [
+      {
+        "id": 110,
+        "title": "Condizioni quadro per campi (con o senza G+S)",
+        "content": "I campi scout possono svolgersi con o senza annuncio G+S. Tutti i campi scout, con o senza G+S, della durata di 3 o più giorni vengono annunciati all’Associazione Cantonale e al MSS via [MiData]($midata$) (vedere [Annuncio di campo MSS]($lageranmeldung$)). Per l’autorizzazione del campo si utilizza [Autorizzazione del campo MSS]($lagerbewilligung-kapitel$). Questa è formata dall’autorizzazione del campo (PAG. 1) e dalla lista di controllo (PAG.2), che serve a chi aiuta come base per l’autorizzazione del programma del campo. Le disposizioni fondamentali per tutti i campi scout si trovano nel [Regolamento sulla preparazione e lo svolgimento dei campi MSS]($lagerreglement$). \nPer i campi annunciati a G+S ci sono disposizioni supplementari. Se un campo adempie queste richieste la sezione viene ripagata con una somma forfettaria. I contributi attualmente in vigore si trovano nel documento [Guida per il coach G+S]($js-coachleitfaden$). Hanno diritto ad un’indennità le persone in età G+S che sono coperte da un/una animatore/trice G+S. Tutte le norme per lo svolgimento di campi G+S si trovano in [Linee guida per lo svolgimento delle offerte G+S Sport di campo /Trekking]($js-angebotsleitfaden$). Il programma di massima di ogni campo G+S deve venir caricato dal/dalla coach prima della [chiusura del campo in SPORTdb]($lagerabschluss-sportdb$). L’ufficio cantonale dello sport può eseguire dei controlli a campione in cui viene controllato il programma. Può anche richiedere il programma dettagliato del campo per un controllo. \nTutti i campi di una sezione che vengono svolti durante un anno vengono inseriti dal coach nella [SPORTdb]($sportdb$) quale offerta di G+S. Per questi campi ci sono condizioni particolarmente favorevoli per:\n- [il materiale in prestito di G+S]($js-leihmaterial$)\n- [le cartine nazionali]($landeskarten$)\n- [le assicurazioni Rega]($rega$)\n",
+        "section": 25,
+        "locale": "it",
+        "published_at": "2022-01-23T20:11:43.393Z",
+        "created_at": "2022-01-23T20:11:40.682Z",
+        "updated_at": "2022-01-23T20:11:43.430Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 101,
+        "slug": "Condizioni-quadro-per-campi-(con-o-senza-G+S)",
+        "link": null,
+        "slug_with_section": "Preparazione#Condizioni-quadro-per-campi-(con-o-senza-G+S)",
+        "menu_name": "Condizioni quadro per campi",
+        "responsible": [
+          {
+            "id": 1382,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1383,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 1384,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 44,
+          "name": "A1 Rahmenbedingungen.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A1_Rahmenbedingungen_08dc36cb08",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 17.6,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A1_Rahmenbedingungen_08dc36cb08.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A1_Rahmenbedingungen_08dc36cb08",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.887Z",
+          "updated_at": "2022-01-23T01:28:25.897Z"
+        }
+      },
+      {
+        "id": 112,
+        "title": "Dati del campo",
+        "content": "All’inizio dell’anno CC e CSZ decidono assieme quale campi vogliono organizzare durante l’anno. Redigono una lista con tutte le informazioni necessarie alla sezione ed ai campi. CC e CSZ decidono pure quale campo annunciare sotto G+S. Per avere tutti i dati in un solo posto si può utilizzare il formulario [Dati necessari per la SPORTdb]($lagerdaten-formular$). Così ci si assicura che i dati siano completi. CC e CSZ danno al coach ad inizio anno la lista con le indicazioni sui campi pianificati. \nDi seguito alcune spiegazioni sul formulario:\n1. «Conto per il pagamento del forfait G+S»: qui si indica il conto della sezione. I contributi G+S vengono versati unicamente su un conto bancale o postale svizzero di un’associazione. È pertanto assolutamente necessaria l’indicazione di un IBAN valevole. Dopo il calcolo dell’offerta G+S alla fine dell’anno i contributi G+S saranno versati su questo conto.\n2. «Tipo di sport G+S»: «Sport per bambini» corrisponde alla branca lupetti e si sceglie per campi con partecipanti tra i 6 ed i 10 anni. «Sport per giovani» corrisponde alle branche esploratori o pionieri con partecipanti tra i 10 ed i 20 anni. In un campo misto possono venir accettati partecipanti tra i 6 ed i 20 anni. Nelle branche lupetti si può verificare l’opzione di un campo misto se si hanno le qualifiche, in modo che anche i partecipanti di 11 anni ricevano i contributi. Secondo il regolamento del MSS non si possono organizzare campi per i castori.\n3. «Numero di partecipanti pianificato»: questo numero probabilmente non si conosce ancora. Perciò qui si dà solo un’indicazione di massima. Il numero può venir corretto più tardi.\n4. «Numero di accompagnatori pianificati»: con accompagnatori si intendono persone che saranno presenti al campo oltre ai monitori G+S qualificati.\n5. «Attività soggette a sicurezza pianificate»: indicazioni provvisorie che possono essere corrette più tardi. Se però si sa già che si prevede un’[attività soggetta a sicurezza]($sicherheitsbereich$) il coach può già cercare un accompagnatore per questa attività.\n6. «NAP/Luogo» e «data di nascita»: necessaria solo per animatori/trici che in sezione sono per la prima volta monitrici/tori G+S, in modo che il/la coach li/le possa registrare. È importante che venga indicata la data di nascita completa e non solo l’anno di nascita. Il totem è pensato unicamente come aiuto per il/la coach e non è necessario per la [SPORTdb]($sportdb$).\n\n![Screenshot-Lagerdaten-it.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643651408/hering/Screenshot_Lagerdaten_fr_32301ee856.png)",
+        "section": 25,
+        "locale": "it",
+        "published_at": "2022-01-23T21:12:45.391Z",
+        "created_at": "2022-01-23T21:12:43.501Z",
+        "updated_at": "2022-01-31T17:52:07.795Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 102,
+        "slug": "Dati-del-campo",
+        "link": null,
+        "slug_with_section": "Preparazione#Dati-del-campo",
+        "menu_name": "Dati del campo",
+        "responsible": [
+          {
+            "id": 1355,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1356,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 1357,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 40,
+          "name": "A2 Lageradaten.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A2_Lageradaten_c103ad8bf1",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 15.45,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A2_Lageradaten_c103ad8bf1.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A2_Lageradaten_c103ad8bf1",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.573Z",
+          "updated_at": "2022-01-23T01:28:25.588Z"
+        }
+      },
+      {
+        "id": 114,
+        "title": "Voilà – Programma di promozione della salute e prevenzione delle dipendenze",
+        "content": "All’inizio dell’anno CC e CSZ decidono se annunciare il campo al programma Voilà. Voilà consiste in un programma di promozione della salute e di prevenzione delle dipendenze in seno alle associazioni giovanili e viene proposto in 17 cantoni con diversi nomi. Per parteciparvi, cioè per annunciare il proprio campo al programma Voilà, almeno un animatore presente al campo deve seguire la relativa formazione. Questa formazione permette al/alla capo campo di ricevere dei sussidi per il campo. Bisogna discutere con il/la coach se lui/lei può verificare le relative richieste o se\nsono necessarie altre persone che aiutino. Ulteriori informazioni sulle date della formazione e sulle condizioni cantonali per le sovvenzioni si possono richiedere presso l’Ufficio cantonale responsabile del programma Voilà.  \n[Voilà]($voila$)\n\n> Al momento in Ticino non è possibile beneficiare di questa opportunità, offerta invece nel Cantone dei Grigioni.\n\n![alt: me*in- text, width: 80](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1640626943/hering/Screenshot_2021_12_27_at_18_41_44_54f3a6fbe5.png)\n\n\n",
+        "section": 25,
+        "locale": "it",
+        "published_at": "2022-01-23T21:19:27.642Z",
+        "created_at": "2022-01-23T21:19:25.845Z",
+        "updated_at": "2022-01-23T21:19:43.826Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 103,
+        "slug": "Voila---Programma-di-promozione-della-salute-e-prevenzione-delle-dipendenze",
+        "link": null,
+        "slug_with_section": "Preparazione#Voila---Programma-di-promozione-della-salute-e-prevenzione-delle-dipendenze",
+        "menu_name": "Voilà",
+        "responsible": [
+          {
+            "id": 1072,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 42,
+          "name": "A3 Voila.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A3_Voila_8662cabdd8",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 11.2,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A3_Voila_8662cabdd8.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A3_Voila_8662cabdd8",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.708Z",
+          "updated_at": "2022-01-23T01:28:25.716Z"
+        }
+      },
+      {
+        "id": 116,
+        "title": "Campo fair – Progetto per la sostenibilità al campo",
+        "content": "Il progetto campo fair organizza ogni estate un concorso su un aspetto della sostenibilità al campo estivo dove si possono vincere dei bei premi. Inoltre online vengono presentate diverse possibilità di rendere un campo sostenibile.\n[Campo fair]($faireslager$)\n    &rarr; Wettbewerb (tedesco) / Concours (francese)\n\n> Il sito web è disponibile solo in tedesco. Alcuni documenti sono tradotti in [francese]($documenti-campo-fair$).",
+        "section": 25,
+        "locale": "it",
+        "published_at": "2022-01-23T21:32:40.201Z",
+        "created_at": "2022-01-23T21:32:37.958Z",
+        "updated_at": "2022-01-23T21:32:40.231Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 104,
+        "slug": "Campo-fair---Progetto-per-la-sostenibilita-al-campo",
+        "link": null,
+        "slug_with_section": "Preparazione#Campo-fair---Progetto-per-la-sostenibilita-al-campo",
+        "menu_name": "Campo fair",
+        "responsible": [
+          {
+            "id": 1080,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 43,
+          "name": "A4 Faires Lager.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A4_Faires_Lager_342f65192f",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 18.74,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A4_Faires_Lager_342f65192f.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A4_Faires_Lager_342f65192f",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.790Z",
+          "updated_at": "2022-01-23T01:28:25.800Z"
+        }
+      },
+      {
+        "id": 117,
+        "title": "eCamp – Applicazione web per semplificare la pianificazione del  campo",
+        "content": "Per garantire a tutte le persone coinvolte accesso ai documenti pianificatori si può scegliere di utilizzare una soluzione cloud. Spesso viene utilizzata l’applicazione web [eCamp]($ecamp$). Si tratta di una piattaforma sviluppata dall’associzione cantonale del Canton Lucerna specificamente per la pianificazione di campi e corsi scout. Responsabilità, materiale e sopratutto pianificazione del programma possono venir coordinati in modo semplice e facilmente comprensibile.\n\n> eCamp è disponibile solo in tedesco.",
+        "section": 25,
+        "locale": "it",
+        "published_at": "2022-01-23T21:38:55.676Z",
+        "created_at": "2022-01-23T21:35:59.715Z",
+        "updated_at": "2022-01-23T21:38:55.707Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 105,
+        "slug": "eCamp---Applicazione-web-per-semplificare-la-pianificazione-del-campo",
+        "link": null,
+        "slug_with_section": "Preparazione#eCamp---Applicazione-web-per-semplificare-la-pianificazione-del-campo",
+        "menu_name": "eCamp",
+        "responsible": [
+          {
+            "id": 1087,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 45,
+          "name": "A5 eCamp.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A5_e_Camp_2cb0226513",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 13.59,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A5_e_Camp_2cb0226513.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A5_e_Camp_2cb0226513",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.926Z",
+          "updated_at": "2022-01-23T01:28:25.935Z"
+        }
+      },
+      {
+        "id": 119,
+        "title": "Aprire un campo nella MiData e assegnare il CC e Coach",
+        "content": "Il/la CSZ apre il campo nella [MiData]($midata$). Effettua il login e nella rubrica della sua sezione clicca sulla voce \"Campo\" e \"+ creare il campo\" e compila poi il modulo \"Allestire campo\". Egli/Elle assegna al campo una direzione del campo, una direzione della sezione e un coach. Il/la Coach riceve via e-mail una comunicazione automatica della sua assegnazione al campo.\n\n> Attenzione: i campi possono essere allestiti a diversi livelli. Un campo può essere aperto sia a livello di sezione, sia a livello di singole unità (ad es: esploratori, rover, ecc.). Solo i membri del rispettivo gruppo possono iscriversi al campo.\n\n![A6-it-lagererstellen.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642975062/hering/A6_it_lagererstellen_39b6493ede.png)\n\n![it-lager-eroeffnen2.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643652772/hering/it_lager_eroeffnen2_1c11f1c97e.png)\n\nCampo | Immissione/osservazione | Compila il campo?\n-------- | -------- | --------\nRegolamento dei campi / Profilo dello scoutismo | Il [Regolamentoi campi]($lagerreglement$) così come il [Profilo scout]($pfadiprofil$) vengono considerati e rispettati. | Capo campo\nRegolamenti / raccomandazioni AC | Durante la preparazione del campo vengono considerate le prescrizioni o le raccomandazioni esistenti dell'associazione cantonale. | Capo campo\nDisposizioni G+S SC/Tg | Per i campi G+S: le [prescrizioni in vigore della disciplina sportiva Sport di campo / Trekking]($js-angebotsleitfaden$) sono conosciute e rispettate. | Capo campo\nCoach confermato | Il/la coach ha confermato le indicazioni del campo? | Coach",
+        "section": 25,
+        "locale": "it",
+        "published_at": "2022-01-23T22:03:39.727Z",
+        "created_at": "2022-01-23T22:03:37.578Z",
+        "updated_at": "2022-01-31T18:16:04.124Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 106,
+        "slug": "Aprire-un-campo-nella-MiData-e-assegnare-il-CC-e-Coach",
+        "link": 187,
+        "slug_with_section": "Preparazione#Aprire-un-campo-nella-MiData-e-assegnare-il-CC-e-Coach",
+        "menu_name": "Aprire un campo",
+        "responsible": [
+          {
+            "id": 1370,
+            "label": null,
+            "rolle": "AL"
+          }
+        ],
+        "icon": {
+          "id": 41,
+          "name": "A6 Lager in der MiData eröffnen.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A6_Lager_in_der_Mi_Data_eroeffnen_23e6ec5e48",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 12.78,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901303/hering/A6_Lager_in_der_Mi_Data_eroeffnen_23e6ec5e48.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A6_Lager_in_der_Mi_Data_eroeffnen_23e6ec5e48",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:25.576Z",
+          "updated_at": "2022-01-23T01:28:25.590Z"
+        }
+      },
+      {
+        "id": 121,
+        "title": "Amministrare con MiData i campi che coinvolgono più di un’unità",
+        "content": "Se diverse unità effettuano assieme un campo può fare senso rilevare il campo in maniera gerarchica. In questo modo un numero a piacere di campi possono venir subordinati ad un campo superiore. Soprattutto l’amministrazione dei partecipanti può in questo modo venir semplificata massicciamente ed il/la CC del campo superiore può vedere tutti i partecipanti. Dal momento che le informazioni del campo principale possono venir copiate nel relativo sottocampo unicamente una volta è centrale la sequenza dei passi descritta.\n\n### Creare il campo principale\nCome prima cosa viene rilevato il campo principale analogamente al processo nel capitolo [Aprire un campo nella MiData e assegnare il CC e Coach]($midata-lager-eroeffnen$). Lo stato rimane ancora „creato“ in quanto solo così possono venir subordinati altri campi a questo. \nÈ da notare che molte delle informazioni inserite qui vengono passate ai sottocampi. Perciò vale la pena inserire il campo in modo corretto sin dall’inizio. Se l’informazione per uno dei campi non è ancora conosciuta il campo dovrebbe venir riempito con un segnaposto (p.es.: “L’informazione seguirà”). In particolare i seguenti campi devono venir scelti consapevolmente prima che i campi associati vengano permessi:\n- Nome  \n- Data  \n- Luogo, indirizzo  \n- Costi  \n- Quadro G+S  \n- Settori di sicurezza  \n\n> Se dai partecipanti al campo ci si apetta dei dati di iscrizione o di contatto particolari (vedi capitolo [I partecipanti si iscrivono autonomamente al campo]($tn-anmeldung-kapitel$)), anche questi devono già venir rilevati. Se qui ci si dovesse dimenticare qualcosa l’informazione dovrà poi venir inserita manualmente da tutti i sottocampi.\n\n### Permettere dei campi subordinati\nAppena i punti i punti più importanti sono definiti e salvati viene attivato il checkbox “permettere campi subordinati” ed il campo viene salvato. A partire da questo momento il campo viene mostrato nella lista dei possibili campi subordinati.\n\n### Creare e connettere un campo subordinato\nPer ogni campo subordinato viene ripetuto il seguente processo:\n- Creare il campo aul livello dei relativi partecipanti\n- Non riempire ancora nessun campo (questi vengono sovrascritti al momento in cui vengono connessi)\n- Nella gerarchia dei campi scegliere “Connettere al campo superiore”\n- Trovare e scegliere il campo superiore desiderato nella lista oppure tramite la ricerca di testo\n- Confermare\n- Salvare (solo in questo modo il campo viene subordinato).\n- Chiudere l‘elaborazione\n\nLa maggior parte delle informazioni del campo principale dovrebbero essere presenti ora anche nel campo subordinato. Sono esclusi “Stato del campo”, “Descrizione”, “Numero massimo di partecipanti” e “Numero di partecipanti previsto”. Data e luogo dovrebbero venir controllati brevemente per essere sicuri di aver scelto il campo giusto. Se nel campo “Date” ci sono troppi blocchi con denominazione, luogo e data bisogna cancellare quelli sbagliati.\n\n### Concludere al fase di iscrizione\nAppena tutti i sottocampi vengono collegati lo stato del campo principale può venir cambiato da “Ccreato” a “Confermato”. Ora non può più venir subordinato nessun campo ed i sottocampi esistenti non possono più cambiare nessuno dei dati necessari all’iscrizione al campo principale.\nLa struttura è fissa ed i partecipanti possono iscriversi ai sottocampi.\n",
+        "section": 25,
+        "locale": "it",
+        "published_at": "2022-01-23T22:31:56.557Z",
+        "created_at": "2022-01-23T22:31:52.135Z",
+        "updated_at": "2022-01-23T23:32:44.389Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 107,
+        "slug": "Amministrare-con-MiData-i-campi-che-coinvolgono-piu-di-un'unita",
+        "link": null,
+        "slug_with_section": "Preparazione#Amministrare-con-MiData-i-campi-che-coinvolgono-piu-di-un'unita",
+        "menu_name": "Amministrare con MiData i campi che coinvolgono più di un’unità",
+        "responsible": [
+          {
+            "id": 1171,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 1172,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 51,
+          "name": "A7 Einheitsübergreifende Lager.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A7_Einheitsuebergreifende_Lager_f3256e4e92",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 19.22,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/A7_Einheitsuebergreifende_Lager_f3256e4e92.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A7_Einheitsuebergreifende_Lager_f3256e4e92",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.651Z",
+          "updated_at": "2022-01-23T01:28:28.661Z"
+        }
+      },
+      {
+        "id": 123,
+        "title": "Registrare gli animatori ed i cuochi in MiData ",
+        "content": "Gli altri animatori possono essere aggiunti sia dal/dalla CSZ, sia dal/dalla Capo Campo registrato/a. Il team cucina deve anche essere registrato affinché il/la coach lo possa registrare semplicemente nella SPORTdb per l’[assicurazione Rega]($rega$).\n1. Selezionare l'ambito “campi”\n2. Selezionare il campo desiderato già registrato\n3. Cliccare sui partecipanti\n4. Cliccare sugli animatori del campo\n5. Aggiungere una persona e selezionare il tipo desiderato\n6. Nel campo \"Cercare persona\" immettere il nome e selezionare la persona desiderata. Nel campo \"Designazione\" immettere la designazione concreta (ad es. monitori) e cliccare su \"Salva\".",
+        "section": 25,
+        "locale": "it",
+        "published_at": "2022-01-23T22:36:20.710Z",
+        "created_at": "2022-01-23T22:36:19.078Z",
+        "updated_at": "2022-01-23T22:43:10.288Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 108,
+        "slug": "Registrare-gli-animatori-ed-i-cuochi-in-MiData",
+        "link": 193,
+        "slug_with_section": "Preparazione#Registrare-gli-animatori-ed-i-cuochi-in-MiData",
+        "menu_name": "Registrare gli animatori ed i cuochi in MiData ",
+        "responsible": [
+          {
+            "id": 1225,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1226,
+            "label": null,
+            "rolle": "AL"
+          }
+        ],
+        "icon": {
+          "id": 46,
+          "name": "A8 Leitungspersonen erfassen.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A8_Leitungspersonen_erfassen_2cb76d602c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 20.13,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/A8_Leitungspersonen_erfassen_2cb76d602c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A8_Leitungspersonen_erfassen_2cb76d602c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.103Z",
+          "updated_at": "2022-01-23T01:28:28.113Z"
+        }
+      },
+      {
+        "id": 126,
+        "title": "Annuncio del campo a G+S tramite SPORTdb",
+        "content": "Il/la coach annuncia a G+S tutti i campi della sezione assieme quale offerta. Questo annuncio viene fatto online nella banca dati [SPORTdb]($sportdb$). Il/la Coach riceve l’accesso a SPORTdb dall’ AC.\n\n### Apertura dell’offerta G+S\nAll’inizio dell’anno è necessario aprire una nuova offerta in SPORTdb (Amministrazione dell’offerta → *Creare una nuova offerta*), in cui vengono registrati tutti i campi G+S. Per ogni sezione viene aperta solo un’offerta.\nDopo l’apertura è possibile accedere all’offerta sotto *Amministrazione dell’offertai* → *Quadro d’insieme dell’offerta*. Man mano che si elabora l’offerta durante l’anno lo stato dell’offerta è aggiornato. La *Lista di controllo per le offerte* ricorda quali sono i passi sono da intraprendere per ogni stato. I pannelli visualizzati mostrano i passi da seguire durante l’amministrazione dell’offerta e sono disposte in ordine di elaborazione, da sinistra a destra (v. immagine). Nel quadro d’insieme lo stato di un’offerta aperta di recente è registrata come *Offerta non ancora annunciata*.\n\n### Procedimento per l’autorizzazione\nNello stato *Procedimento per l’autorizzazione* l’offerta viene verificata dall’ufficio cantonale dello sport. La ricezione della richiesta di autorizzazione da parte dell’ufficio cantonale viene confermata al/alla Coach per e-mail (Oggetto: Conferma di ricezione della sua offerta G+S n° XXXXXX). Anche la conferma dell’autorizzazione viene inviata al Coach per e-mail (Oggetto: Autorizzazione della sua offerta G+S n° XXXXXX). In questo modo lo stato dell’offerta cambia in *Svolgimento*.\n\n### Lavorare in SPORTdb\nIl processo preciso incluse le istruzioni passo passo con le immagini sono descrtitti in modo esaustivo nel documento [SPORTdb – Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$). Le risposte alle domande a proposito della protezione dei dati si trovano invece nel documento [Raccolta e protezione dei dati nella SPORTdb]($js-datenschutz$).",
+        "section": 25,
+        "locale": "it",
+        "published_at": "2022-01-23T23:04:23.036Z",
+        "created_at": "2022-01-23T23:04:20.919Z",
+        "updated_at": "2022-01-23T23:04:23.074Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 109,
+        "slug": "Annuncio-del-campo-a-G+S-tramite-SPORTdb",
+        "link": null,
+        "slug_with_section": "Preparazione#Annuncio-del-campo-a-G+S-tramite-SPORTdb",
+        "menu_name": "Annuncio del campo a G+S tramite SPORTdb",
+        "responsible": [
+          {
+            "id": 1255,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 47,
+          "name": "A9 Anmeldung der Lager in der SPORTdb.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A9_Anmeldung_der_Lager_in_der_SPOR_Tdb_81def8cc71",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 44.45,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/A9_Anmeldung_der_Lager_in_der_SPOR_Tdb_81def8cc71.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A9_Anmeldung_der_Lager_in_der_SPOR_Tdb_81def8cc71",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.123Z",
+          "updated_at": "2022-01-23T01:28:28.133Z"
+        }
+      },
+      {
+        "id": 128,
+        "title": "Congedo giovanile",
+        "content": "Gli animatori attivi professionalmente possono richiedere un congedo giovanile per partecipare ad un campo. Fino al trentesimo anno d’età gli animatori professionalmente attivi (apprendisti o\nimpiegati) hanno per legge diritto a una settimana di vacanza supplementare non pagata per il lavoro giovanile extrascolastico (campo, corso di formazione, eventi). L’animatore compila, da solo o con l’aiuto del/della CSZ, la prima parte del formulario per la richiesta del congedo [Formulario per la richiesta di un congedo giovanile]($jugendurlaub-formular$). La seconda parte viene compilata dal/dalla CSZ, il quale conferma lo svolgimento del campo. Questo formulario va consegnato al datore di lavoro almeno 2 mesi prima dell’inizio del congedo. Ulteriori informazioni si possono trovare nell’ [Opuscolo concernente il congedo giovanile]($jugendurlaub-merkblatt$) oppure alla pagina web [www.congedogiovanile.ch]($jugendurlaub$).",
+        "section": 25,
+        "locale": "it",
+        "published_at": "2022-01-23T23:19:25.938Z",
+        "created_at": "2022-01-23T23:19:23.440Z",
+        "updated_at": "2022-01-23T23:19:25.976Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 110,
+        "slug": "Congedo-giovanile",
+        "link": null,
+        "slug_with_section": "Preparazione#Congedo-giovanile",
+        "menu_name": "Congedo giovanile",
+        "responsible": [
+          {
+            "id": 1293,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1294,
+            "label": null,
+            "rolle": "AL"
+          }
+        ],
+        "icon": {
+          "id": 48,
+          "name": "A10 Jugendurlaub.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "A10_Jugendurlaub_3ac3d9998a",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 20.03,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/A10_Jugendurlaub_3ac3d9998a.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/A10_Jugendurlaub_3ac3d9998a",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.266Z",
+          "updated_at": "2022-01-23T01:28:28.274Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 1,
+        "locale": "de",
+        "published_at": "2021-09-28T14:38:23.745Z"
+      },
+      {
+        "id": 3,
+        "locale": "fr",
+        "published_at": "2021-10-14T18:07:46.751Z"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "B. Annuncio di campo e programma di massima",
+    "content": null,
+    "locale": "it",
+    "published_at": "2022-01-22T09:40:19.212Z",
+    "created_at": "2022-01-22T09:40:15.072Z",
+    "updated_at": "2022-01-22T09:42:43.443Z",
+    "key": null,
+    "Sorting": null,
+    "sorting": 2,
+    "slug": "Annuncio-di-campo",
+    "menu_name": "Annuncio di campo",
+    "identifier": null,
+    "chapters": [
+      {
+        "id": 71,
+        "title": "Informare il comune del luogo del campo",
+        "content": "All’incirca 1 mese prima del campo è opportuno informare il comune del luogo del campo sul vostro arrivo. Per numerosi motivi è consigliato prendere contatto con il municipio. Da un lato il municipio può informarvi su eventuali direttive comunali o cantonali, dall’altro è importante \nche le autorità siano informate della vostra presenza in caso di catastrofe (evacuazione). Inoltre, il municipio può rivelarsi utile anche in caso di ricerca di un alloggio d’emergenza (p.es. protezione civile).\nAl municipio va indicato:\n- Durata del campo e tipo di campo\n- Nome della sezione / unità\n- Nome e contatto del/della capo campo\n- Nome del proprietario del terreno\n- Coordinate del terreno del campo\n- Richiesta in merito a direttive comunali o cantonali (divieto di accendere fuochi, protezione delle acque, zone protette, …)",
+        "section": 24,
+        "locale": "it",
+        "published_at": "2022-01-22T16:40:50.061Z",
+        "created_at": "2022-01-22T16:37:35.753Z",
+        "updated_at": "2022-01-23T14:03:21.279Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 204,
+        "slug": "Informare-il-comune-del-luogo-del-campo",
+        "link": null,
+        "slug_with_section": "Annuncio-di-campo#Informare-il-comune-del-luogo-del-campo",
+        "menu_name": "Informare il comune",
+        "responsible": [
+          {
+            "id": 678,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 55,
+          "name": "B3 Einwohnergemeinde informieren.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B3_Einwohnergemeinde_informieren_16fdad7126",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 55.26,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901308/hering/B3_Einwohnergemeinde_informieren_16fdad7126.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B3_Einwohnergemeinde_informieren_16fdad7126",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:31.023Z",
+          "updated_at": "2022-01-23T01:28:31.031Z"
+        }
+      },
+      {
+        "id": 73,
+        "title": "Annuncio di campo MSS",
+        "content": "### Indicazioni del/della capo campo\nCon l'annuncio di campo MSS nella [MiData]($midata$), ogni campo viene annunciato previamente all'AC e al MSS. Il/la CC completa al più tardi 7 settimane prima del campo tutte le indicazioni relative al campo nella MiData e invia il programma di massima contemporaneamente a CSZ e Coach.\n\n### Indicazioni del/della coach\nIl/la Coach può ora effettuare il login nella [MiData]($midata$), compilare la sua parte dell'annuncio di campo e inoltrarla tramite un bottone. L'annuncio di campo viene poi trasmesso automaticamente al MSS e all'AC. Il MSS necessita di queste informazioni per poter reagire in caso di crisi e per motivi statistici nei confronti della Confederazione. Il/la Coach effettua il login nella MiData e naviga fino alla propria sezione. Procede poi come segue:\n1. Cliccare su \"Campi\"\n2. Selezionare il relativo campo\n3. Cliccare su \"Modificare\"\n4. Controllare le indicazioni in tutti i registri.\n5. Selezionare la scheda \"Accompagnamento\". Cliccare su \"Coach confermato\" e compilare le indicazioni relative alla visita del Coach e alle [attività negli ambiti di sicurezza]($sicherheitsbereich$).\n6. Cliccare su \"Salvare\"\n7. Se tutte le indicazioni sono complete: inviare l'annuncio di campo al MSS cliccando su \"Inoltrare\".\n\n![it-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/it_Lagerdaten_Coach_Mi_Data_A_68b4479b89.png)\n\n![it-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/it_Lagerdaten_Coach_Mi_Data_B_4c29a4be46.png)\n\n![it-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/it_Lagerdaten_Coach_Mi_Data_C_511a5f9498.png)\n",
+        "section": 24,
+        "locale": "it",
+        "published_at": "2022-01-22T17:15:24.645Z",
+        "created_at": "2022-01-22T17:15:21.966Z",
+        "updated_at": "2022-01-23T20:20:25.381Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 201,
+        "slug": "Annuncio-di-campo-MSS",
+        "link": 168,
+        "slug_with_section": "Annuncio-di-campo#Annuncio-di-campo-MSS",
+        "menu_name": "Annuncio di campo MSS",
+        "responsible": [
+          {
+            "id": 673,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 674,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 49,
+          "name": "B1 Lageranmeldung PBS.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B1_Lageranmeldung_PBS_6807658e89",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 18.5,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/B1_Lageranmeldung_PBS_6807658e89.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B1_Lageranmeldung_PBS_6807658e89",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.317Z",
+          "updated_at": "2022-01-23T01:28:28.341Z"
+        }
+      },
+      {
+        "id": 88,
+        "title": "Programma di massima (Picasso)",
+        "content": "Il programma di massima del campo serve agli animatori durante la preparazione del campo e durante il campo stesso come panoramica delle attività. L’allestimento del programma di massima dovrebbe iniziare con debito anticipo: 7 settimane prima del campo il programma di massima deve essere consegnato dal/dalla CC al/alla CSZ e al/alla Coach insieme all’Annuncio di campo MSS. Il/la Coach dà un feedback al/alla CC sul programma di massima. Nel fascicolo SC/Tg Campo del cudesch si trovano alcuni spunti e aiuti per allestire un programma di massima.\n\nNel programma di massima devono comparire:\n- Tema del campo\n- 3 punti forti del campo (vedi opuscolo G+S SC/Tg Campo, PAG 14)\n- Nome del/della Capo Campo\n- Organizzatore (sezione, branca)\n- Nome del/della Coach\n- Luogo e nome della casa o del terreno\n- Date del campo\n- Tipo di campo (casa/tenda, estivo/invernale)\n- Giorno, data, responsabile del giorno\n- Nome di ogni attività e del responsabile\n- Orario di partenza e di rientro\n- Per campi G+S: i blocchi di sport da campo (SC) e delle attività da campo (AC) devono essere numerati e contrassegnati in modo speciale (p.es. con colori differenti, v. fascicolo [G+S SC/Tg - Basi]($lst-grundlagen$))\n\nPer aiutarsi si possono usare un [Modello di programma di massima SC/Tg da G+S]($muster-gp-lager-lst-kinder-und-jugendsport$) oppure un [modello vuoto del MSS]($vorlage-gp-pbs$).\n\n### Direttive sul programma del MSS \nIl MSS lascia agli animatori/alle animatrici molta libertà nell’allestimento del programma del campo, tuttavia deve essere adatto alla fascia d’età, equilibrato e vario e deve rispettare i fondamenti scout. Il [Regolamento sulla preparazione e lo svolgimento dei campi]($lagerreglement$) deve essere rispettato.",
+        "section": 24,
+        "locale": "it",
+        "published_at": "2022-01-23T14:21:28.048Z",
+        "created_at": "2022-01-23T14:16:17.805Z",
+        "updated_at": "2022-01-23T14:21:28.084Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 202,
+        "slug": "Programma-di-massima-(Picasso)",
+        "link": null,
+        "slug_with_section": "Annuncio-di-campo#Programma-di-massima-(Picasso)",
+        "menu_name": "Programma di massima",
+        "responsible": [
+          {
+            "id": 685,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 50,
+          "name": "B2 Grobprogramm.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B2_Grobprogramm_8c5bae2213",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 48.64,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901306/hering/B2_Grobprogramm_8c5bae2213.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B2_Grobprogramm_8c5bae2213",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:28.622Z",
+          "updated_at": "2022-01-23T01:28:28.632Z"
+        }
+      },
+      {
+        "id": 90,
+        "title": "Condizioni G+S",
+        "content": "Per i campi G+S valgono ulteriori condizioni in merito al programma:\n\nSecondo [Guida per lo svolgimento delle offerte G+S Sport di campo/Trekking ]($js-angebotsleitfaden$)\n\n- Ogni giorno devono essere svolte 4 ore di attività G+S. Di queste 4 ore si possono svolgere al massimo 2 ore di attività da campo.\n- In un campo della durata di oltre 4 giorni si può svolgere un giorno senza attività G+S. (per questa giornata non si riceveranno indennità).\n- Il pranzo e la cena suddividono la giornata di campo in 3 parti. In due di queste 3 parti va svolta almeno 1h di attività G+S.\n- Il giorno di partenza e di rientro valgono insieme un giorno di campo se le ore sommate di attività G+S di questi due giorni sono almeno 4.\n- La durata minima di un blocco per un campo è di 30 minuti.",
+        "section": 24,
+        "locale": "it",
+        "published_at": "2022-01-23T14:34:31.130Z",
+        "created_at": "2022-01-23T14:33:54.646Z",
+        "updated_at": "2022-01-23T14:34:31.162Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 203,
+        "slug": "Condizioni-G+S",
+        "link": null,
+        "slug_with_section": "Annuncio-di-campo#Condizioni-G+S",
+        "menu_name": "Condizioni G+S",
+        "responsible": [
+          {
+            "id": 706,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 78,
+          "name": "B2b Vorgaben JS.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B2b_Vorgaben_JS_cc87a23350",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 6.82,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642946526/hering/B2b_Vorgaben_JS_cc87a23350.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B2b_Vorgaben_JS_cc87a23350",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T14:02:08.032Z",
+          "updated_at": "2022-01-23T14:02:08.055Z"
+        }
+      },
+      {
+        "id": 92,
+        "title": "Casi particolari per l’annuncio di campi",
+        "content": "### Campi in Ticino\nPer i campi in tenda nel Canton Ticino secondo il diritto cantonale è necessaria l’autorizzazione del comune. Per riceverla è necessario inoltrare al comune una richiesta di autorizzazione. Non esiste un formulario ufficiale per fare ciò. Il modo migliore di procedere è quello di contattare in anticipo il comune in cui avrà luogo il campo e di chiarire il modo di procedere. Per la richiesta di autorizzazione si scrive una breve lettera che abbia come oggetto “Richiesta di autorizzazione per campeggio occasionale”.\n\n### Campi nei Cantoni Lucerna, San Gallo e Turgovia\nNei Cantoni Lucerna, San Gallo e Turgovia valgono delle norme particolari per l’utilizzo del bosco. In questi cantoni se del caso i campi presso o nel bosco o che prevedono attività nel bosco devono venir annunciati. Si ricevono informazioni a questo riguardo presso l’ufficio forestale del cantone.\n- [Merkblatt Veranstaltungen im Luzerner Wald]($luzern-wald$)\n- [Merkblatt Pfadiaktivitäten im St.Galler Wald]($stgallen-wald$)\n- [www.forstamt.tg.ch]($forstamt-tg$) → Publikationen → Merkblätter → [Organisation von Jugendlagern]($lager-tg$)\n\n### Campi nel Canton Vaud\nI campi in casa ed in tenda nel Canton Vaud che durano più di 7 giorni devono pure venir annunciati. La legge cantonale per la protezione dei minorenni richiede che i campi vengano annunciati all’ufficio per la protezione dei giovani (Service de la Protection de la Jeunesse, SPJ). Per fare ciò è necessario spedire il formulario di annuncio ([Demande d’autorisation]($lager-vd$)) riempito a dovere assieme agli statuti della sezione, all’annuncio di campo del MSS ed al programma di dettaglio 3 settimane prima del campo al segretariato per la protezione dei giovani. Le [Richtlinien für Lager und Ferienkolonien von mehr als 7 Tagen auf Waadtländer Gebiet]($richtlinien-vd$) riassumono la procedura in tedesco.Valgono addirittura delle regole sul numero di animatori per partecipanti a dipendenza del gruppo di età.",
+        "section": 24,
+        "locale": "it",
+        "published_at": "2022-01-23T14:53:14.467Z",
+        "created_at": "2022-01-23T14:52:59.903Z",
+        "updated_at": "2022-01-23T15:23:06.658Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 205,
+        "slug": "Casi-particolari-per-l'annuncio-di-campi",
+        "link": null,
+        "slug_with_section": "Annuncio-di-campo#Casi-particolari-per-l'annuncio-di-campi",
+        "menu_name": "Casi particolari per l’annuncio di campi",
+        "responsible": [
+          {
+            "id": 723,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 74,
+          "name": "B4 Sonderfaelle der Lagermeldung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B4_Sonderfaelle_der_Lagermeldung_3c34592e67",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 16.57,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642902106/hering/B4_Sonderfaelle_der_Lagermeldung_3c34592e67.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B4_Sonderfaelle_der_Lagermeldung_3c34592e67",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:41:47.763Z",
+          "updated_at": "2022-01-23T01:41:47.772Z"
+        }
+      },
+      {
+        "id": 94,
+        "title": "Campi all’estero",
+        "content": "Ci sono numerose possibilità per svolgere campi scout all’estero ([www.internazionale.msds.ch]($international$)). Si trovano alcuni esempi di campi di questo genere e molte informazioni utili in merito all’organizzazione nel fascicolo del [MSS Campi scout all’estero]($auslandlager$). L’annuncio di un campo all'estero funziona analogamente a quello di un campo in Svizzera, nel campo \"Cantone/Paese\" deve essere selezionato \"Estero\". L’annuncio di un campo all’estero in [MiData]($midata$) è contemporaneamente la richiesta per una lettera di raccomandazione internazionale che verrà mandata al/alla capo campo. I campi all’estero possono essere annunciati a G+S e sottostanno alle stesse condizioni in vigore per i campi G+S in Svizzera. Il materiale in prestito può essere ordinato, ma viene consegnato solo in territorio svizzero e dunque va successivamente trasportato all’estero.\n\n>**Precauzioni particolari per i campi all’estero**  \nIn numerose nazioni, sopratutto in EU, vi sono direttive speciali per i campi con i giovani. Queste possono riguardare per esempio il grado di copertura assicurativa dei partecipanti, la formazione degli animatori o l’allestimento del luogo del campo. A volte occorre anche un annuncio speciale del campo presso le autorità locali (p.es. Francia). Già per il viaggio di andata e di ritorno possono esserci condizioni specifiche (vedi\n[Autorizzazione per bambino non accompagnato dai suoi genitori]($reisebewilligung-kind$)). È quindi importante informarsi in anticipo sulle particolarità giuridiche del luogo dove si vorrebbe trascorrere il campeggio. international@pbs.ch offre aiuto se per esempio si tratta di chiedere ad altre associazioni nazionali quali direttive speciali sono in vigore.",
+        "section": 24,
+        "locale": "it",
+        "published_at": "2022-01-23T16:18:19.216Z",
+        "created_at": "2022-01-23T16:18:17.604Z",
+        "updated_at": "2022-01-23T16:19:06.463Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 206,
+        "slug": "Campi-all'estero",
+        "link": null,
+        "slug_with_section": "Annuncio-di-campo#Campi-all'estero",
+        "menu_name": "Campi all’estero",
+        "responsible": [
+          {
+            "id": 730,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 52,
+          "name": "B5 Auslandlager.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "B5_Auslandlager_4e16c729c4",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 13.59,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901308/hering/B5_Auslandlager_4e16c729c4.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/B5_Auslandlager_4e16c729c4",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:30.329Z",
+          "updated_at": "2022-01-23T01:28:30.338Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 4,
+        "locale": "fr",
+        "published_at": "2021-10-07T08:57:16.439Z"
+      },
+      {
+        "id": 5,
+        "locale": "de",
+        "published_at": "2021-10-07T08:57:38.191Z"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "C. Ordinazione di materiale e altre prestazioni",
+    "content": null,
+    "locale": "it",
+    "published_at": "2022-01-22T09:39:25.644Z",
+    "created_at": "2022-01-22T09:39:22.286Z",
+    "updated_at": "2022-01-22T09:44:38.547Z",
+    "key": null,
+    "Sorting": null,
+    "sorting": 3,
+    "slug": "Ordinare-prestazioni",
+    "menu_name": "Ordinare prestazioni",
+    "identifier": null,
+    "chapters": [
+      {
+        "id": 96,
+        "title": "Ordinazione di materiale G+S",
+        "content": "Per i campi annunciati sotto G+S si può ordinare materiale da G+S. Per far ciò si utilizza il formulario attuale [Ordinazione di materiale G+S]($formular-js-leihmaterial$) in prestito. Il prestito del materiale costa 60 cts per chilo di materiale (inclusa la paletta). I costi vengono detratti direttamente dal pagamento dei sussidi G+S alla fine dell’anno. Il materiale mancante o rovinato per negligenza viene fatturato dopo il campo. L’organizzazione è responsabile del materiale. Il/la CC (chiamato capo corso sul formulario) manda il formulario completato al/alla coach. Il/la coach completa il formulario e lo manda all’[ufficio cantonale dello sport]($sportamt-kantone$). L’ufficio cantonale dello sport manda al/alla coach una conferma. Il formulario non deve essere firmato e può essere mandato per e-mail. Per ulteriori informazioni sulla consegna, ricezione e ritorno del materiale consultate [Guida concernente il materiale in prestito G+S per le offerte di sport e la formazione dei quadri dirigenti]($leitfaden-js-leihmaterial$). \nDi seguito alcuni chiarimenti:\n\n1. **“No. Personale”** + **“No. Offerta”**: il numero personale G+S del/della capo campo si trova sulla tessera G+S (o nella SPORTdb). Il numero dell’offerta è il numero dell’offerta G+S nella quale sono annunciati tutti i campi di un anno. Solo i Coach hanno accesso a tale numero nella SPORTdb (chiedere al Coach o lasciare il campo vuoto da completare dal Coach stesso).\n2. **\"Campo\" o \"Formazione di quadri\"**: in caso di campo porre una crocetta accanto a \"Campo\". Per \"Formazione di quadri\" si intendono i corsi di formazione per gli animatori.\n3. **“Data di consegna/Data di restituzione”**: indicare la data per il trasporto (solo giorni lavorativi). Se una settimana prima di questa scadenza non è arrivata una conferma scritta da parte di G+S, occorre prendere contatto con G+S. Il materiale può essere prestato per un massimo di 7 mesi e la restituzione avviene al massimo 3 giorni dopo la fine dell’(ultimo) campo. Il materiale deve essere consegnato pulito e il giorno del ritiro deve già essere pronto alle 08:00.\n4. **“Indirizzo di consegna del materiale G+S”**: è necessario indicare l’indirizzo esatto della consegna. Il materiale viene consegnato in giorni feriali tra le 8.00 e le 18.00. Se il materiale viene consegnato ad esempio presso una fattoria nelle vicinanze della casa o del terreno, il contadino deve essere avvisato in anticipo ed essere d’accordo. Il luogo di consegna deve essere raggiungibile con il camion e il materiale deve poter essere scaricato con un muletto; di conseguenza il materiale non può essere consegnato in mezzo al bosco. Il giorno della consegna bisogna essere raggiungibili \n telefonicamente (contatto in caso di problemi).\n5. **“Franco-Domicilio”**: di principio il materiale viene consegnato franco-domicilio. Questo significa che il materiale viene portato con il camion. In alternativa è comunque possibile ritirare il materiale presso il magazzino centrale a Thun.\n\n![C1-it-leihmaterialbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642957260/hering/C1_it_leihmaterialbestellung_99b98dbafe.png)\n\nContatto in caso di problemi con il materiale in prestito:  \n(indicare sempre numero materiale in prestito in base all’ordinazione/bolla di consegn)  \n- Centro Logistico dell'Esercito Thun: material-js.lba@vtg.admin.ch | 033 / 228 26 83\n- Servizio trasporto DDPS: 058 / 464 25 27",
+        "section": 23,
+        "locale": "it",
+        "published_at": "2022-01-23T17:17:07.229Z",
+        "created_at": "2022-01-23T17:16:53.900Z",
+        "updated_at": "2022-01-31T16:55:17.069Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 301,
+        "slug": "Ordinazione-di-materiale-G+S",
+        "link": 176,
+        "slug_with_section": "Ordinare-prestazioni#Ordinazione-di-materiale-G+S",
+        "menu_name": "Ordinazione di materiale G+S",
+        "responsible": [
+          {
+            "id": 1341,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1342,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 54,
+          "name": "C1 Leihmaterialbestellung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "C1_Leihmaterialbestellung_57a72b9e19",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 25.88,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901308/hering/C1_Leihmaterialbestellung_57a72b9e19.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/C1_Leihmaterialbestellung_57a72b9e19",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:30.911Z",
+          "updated_at": "2022-01-23T01:28:30.920Z"
+        }
+      },
+      {
+        "id": 103,
+        "title": "Ordinazione di cartine topografiche Swisstopo",
+        "content": "Per campi G+S si possono ordinare le carte topografiche Swisstopo tramite il [formulario ordinazione carte nazionali]($formular-landeskartenbestellung$). Il prestito è gratuito, ma la spedizione di ritorno è a carico della sezione. Per ritorni tardivi o incompleti verrà fatturato l’importo corrispondente. Si può ordinare un esemplare di ogni foglio ogni 3 partecipanti in età G+S. Il/la CC inoltra il formulario compilato al/alla Coach, che lo invia direttamente a Swisstopo (mapsales@swisstopo.ch). Il formulario può essere inviato anche via mail. Le firme possono essere inserite in formato digitale, non occorre stampare o scannerizzare. Le cartine verranno spedite al/alla CC per posta.\nDi seguito alcuni chiarimenti sul formulario:\n\n1. **“Disponibile”**: il/la CC indica la data entro la quale sono necessarie le cartine. Se l’ordinazione giunge a Swisstopo 3 settimane prima, le cartine vengono spedite all’indirizzo indicato entro la data desiderata. Consigliamo di ordinare le cartine con debito anticipo in modo che siano disponibili già al momento del sopralluogo.\n2. **“Ritorno”**: le cartine devono essere rispedite dal/dalla CC per posta entro i termini prestabiliti, ossia entro 3 giorni dopo la fine del campo (vedi [Guida riguardante le prestazioni particolari per le offerte G+S e la formazione dei quadri G+S]($leitfaden-js-spezielle-leistungen$)).\n3. **“Organizzazione”**: indicare il nome della sezione.\n4. **“Diritto al materiale”**: si possono ordinare cartine in scala 1:25’000, 1:50’000 e composizioni. Il/la CC può ordinare 1 copia di un foglio per ogni 3 partecipanti. I partecipanti devono avere dai 5 ai 20 anni.\n5. **“N. offerta”**: il/la Coach indica il numero di annuncio G+S secondo l’annuncio in [SPORTdb]($sportdb$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
+        "section": 23,
+        "locale": "it",
+        "published_at": "2022-01-23T18:54:09.890Z",
+        "created_at": "2022-01-23T18:54:07.421Z",
+        "updated_at": "2022-02-06T16:41:10.055Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 302,
+        "slug": "Ordinazione-di-cartine-topografiche-Swisstopo",
+        "link": 220,
+        "slug_with_section": "Ordinare-prestazioni#Ordinazione-di-cartine-topografiche-Swisstopo",
+        "menu_name": "Ordinazione di cartine topografiche Swisstopo",
+        "responsible": [
+          {
+            "id": 837,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 838,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 56,
+          "name": "C2 Kartenbestellung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "C2_Kartenbestellung_383a01d88c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 27.29,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901309/hering/C2_Kartenbestellung_383a01d88c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/C2_Kartenbestellung_383a01d88c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:31.086Z",
+          "updated_at": "2022-01-23T01:28:31.103Z"
+        }
+      },
+      {
+        "id": 105,
+        "title": "Biglietto per gruppi FFS",
+        "content": "Se il viaggio avviene con il treno, si può usufruire di un biglietto per gruppi (almeno 10 persone). Questo dà a tutti un ulteriore 30% di sconto. È possibile ordinare un biglietto per gruppi con il [calcolatore per i viaggi di gruppo]($sbb-gruppenreiserechner$), allo sportello oppure chiamando il Contact Center FFS ( 0848 44 66 88, CHF 0.08/min.). I viaggi di gruppo devono essere comunicati in anticipo. Nella misura del possibile viene eseguita una prenotazione dei posti, inclusa nel prezzo del viaggio di gruppo. \n\nUlteriori informazioni sulle [biglietti per gruppi FFS]($sbb-gruppenreisen-info$).\n\nPer i gruppi registrati c'è anche la possibilità di far trasportare i bagagli o le biciclette dalle FFS.\n\nUlteriori informazioni su [bagaglio gruppi FFS]($sbb-gepaeck-info$).\n",
+        "section": 23,
+        "locale": "it",
+        "published_at": "2022-01-23T18:57:35.367Z",
+        "created_at": "2022-01-23T18:57:33.588Z",
+        "updated_at": "2022-01-23T19:14:25.103Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 303,
+        "slug": "Biglietto-per-gruppi-FFS",
+        "link": null,
+        "slug_with_section": "Ordinare-prestazioni#Biglietto-per-gruppi-FFS",
+        "menu_name": "Biglietto per gruppi FFS",
+        "responsible": [
+          {
+            "id": 883,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 57,
+          "name": "C3 SBB-Gruppenbillette.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "C3_SBB_Gruppenbillette_f49eaf547b",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 36.66,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901309/hering/C3_SBB_Gruppenbillette_f49eaf547b.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/C3_SBB_Gruppenbillette_f49eaf547b",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:31.179Z",
+          "updated_at": "2022-01-23T01:28:31.187Z"
+        }
+      },
+      {
+        "id": 109,
+        "title": "Copertura Rega",
+        "content": "Tutti i partecipanti, gli animatori e gli accompagnatori di un campo possono beneficiare della copertura Rega per tutta la durata del campo (vedi [Guida riguardante leprestazioni particolari per le offerte G+S e la formazione dei quadri G+S]($leitfaden-js-spezielle-leistungen$)). Questa offerta vale solo all’interno dei confini svizzeri e nel Principato del Lichtenstein. Il/la CC registra i partecipanti nella MiData e lo comunica al/alla Coach (vedi [Amministrazione dei partecipanti nella MiData]($tn-administration-midata$)). Il/la Coach annuncia poi i partecipanti nella SPORTdb alla Rega. I lavori precisi incluse le istruzioni per l’uso passo a passo con le immagini sti trovano nel documento [SPORTdb –Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$). In cambio di questa prestazione, la Rega ha il diritto di chiedere ai partecipanti annunciati se desiderano affiliarsi quali soci al raggiungimento della loro maggiore età. I genitori dei partecipanti dovrebbero pertanto essere informati a tale proposito (indicare sull’iscrizione al campo).\n\nSe si deve ricorrere ai servizi della Rega, questo viene pagato principalmente dall'assicurazione sanitaria. Se questo dovesse rifiutare, la Rega si assumerebbe i costi delle persone assicurate come spiegato sopra.\n\n***Ulteriori informazioni***  \n[Le condizioni dell’impegno della Rega]($rega-rahmenbedingungen$)",
+        "section": 23,
+        "locale": "it",
+        "published_at": "2022-01-23T19:51:26.346Z",
+        "created_at": "2022-01-23T19:51:23.297Z",
+        "updated_at": "2022-01-23T20:27:33.830Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 304,
+        "slug": "Copertura-Rega",
+        "link": 174,
+        "slug_with_section": "Ordinare-prestazioni#Copertura-Rega",
+        "menu_name": "Copertura Rega",
+        "responsible": [
+          {
+            "id": 918,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 919,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 58,
+          "name": "C4 Rega-Versicherung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "C4_Rega_Versicherung_74f7ec4807",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 16.35,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901310/hering/C4_Rega_Versicherung_74f7ec4807.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/C4_Rega_Versicherung_74f7ec4807",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:32.585Z",
+          "updated_at": "2022-01-23T01:28:32.593Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 6,
+        "locale": "de",
+        "published_at": "2021-10-08T08:34:27.517Z"
+      },
+      {
+        "id": 7,
+        "locale": "fr",
+        "published_at": "2021-10-08T08:34:43.952Z"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "D. Inoltrare il dossier del campo",
+    "content": null,
+    "locale": "it",
+    "published_at": "2022-01-22T09:36:01.799Z",
+    "created_at": "2022-01-22T09:35:47.013Z",
+    "updated_at": "2022-01-22T09:45:20.155Z",
+    "key": null,
+    "Sorting": null,
+    "sorting": 4,
+    "slug": "Dossier-del-campo",
+    "menu_name": "Dossier del campo",
+    "identifier": null,
+    "chapters": [
+      {
+        "id": 66,
+        "title": "Attività nei settori di sicurezza",
+        "content": "Un’attività in un settore di sicurezza (montagna/inverno/acqua) è un’attività rilevante per la sicurezza per la quale devono venir adempite delle condizioni speciali. I limiti relativi sono spiegati nell’opuscolo [SC/Tg Sport di campo/Trekking – Monagna, inverno, ascua]($mb-sicherheitsbereiche$): definizioni. Queste attività devono venir seguite da animatori/tici con un riconoscimento supplementare nel settore di sicurezza che abbiano seguito il relativo modulo di G+S. Attività nel settore di sicurezza devono venir valutate e approvate da un esperto G+S SC/Tg con riconoscimento capo corso e il modulo seguito con successo della formazione continua per esperti nel relativo settore di sicurezza. Se non si conosce una simile persona il/la coach si rivolge all’associazione cantonale.\nDal momento che il/la coach conosce il gruppo, i suoi animatori ed il programma deve anche lui guardare il dossier prima di mandarlo all’esperto. Non può scaricare la responsabilità sulle sole spalle dell’esperto tirato in causa.",
+        "section": 22,
+        "locale": "it",
+        "published_at": "2022-01-22T12:31:53.161Z",
+        "created_at": "2022-01-22T12:31:51.317Z",
+        "updated_at": "2022-01-23T19:14:06.179Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 404,
+        "slug": "Attivita-nei-settori-di-sicurezza",
+        "link": 57,
+        "slug_with_section": "Dossier-del-campo#Attivita-nei-settori-di-sicurezza",
+        "menu_name": "Attività nei settori di sicurezza",
+        "responsible": [
+          {
+            "id": 878,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 62,
+          "name": "D4 Sicherheitsbereiche.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "D4_Sicherheitsbereiche_b88f92d79e",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 9.29,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901311/hering/D4_Sicherheitsbereiche_b88f92d79e.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/D4_Sicherheitsbereiche_b88f92d79e",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:33.247Z",
+          "updated_at": "2022-01-23T01:28:33.256Z"
+        }
+      },
+      {
+        "id": 100,
+        "title": "Parti che compongono il dossier del campo",
+        "content": "Viene creato un dossier del campo composto da tutta la documentazione allestita nella fase di preparazione. Questo è consegnato tre settimane prima del campo al/alla CSZ e al/alla Coach. Nel fascicolo G+S [Campo SC/Tg]($lst-lager-cudesch$) del cudesch viene spiegato quali sono i documenti che lo compongono. Qui sono riassunte le cose più importanti. In questo fascicolo non viene descritto il contenuto dei documenti. \nIl dossier del campo è un aiuto per tutti gli animatori/le animatrici durante il campo e la base per la valutazione finale del/della CSZ e del/della Coach. Nel dossier di campo devono essere presenti:\n- Programma di massima\n- 3 punti forti (vedi fascicolo G+S [campo SC/Tg]($lst-lager-cudesch$))\n- Tema e filo conduttore\n- Descrizione dei blocchi del programma (v. in seguito)\n- Per escursioni e gite in bicicletta: cartina a colori e tabella di marcia (v. Fascicolo G+S SC/Tg [Montagna]($lst-berg-cudesch$)), dispositivo di sicurezza per escursioni/gite in bicicletta\n- Dispositivo di sicurezza per il campo e per tutte le attività rilevanti dal punto di vista della sicurezza\n- Regole del campo (vedi fascicolo G+S [campo SC/Tg]($lst-lager-cudesch$))\n- Accordi tra animatori/le animatrici, p. es.: compiti resp. del giorno, prevenzione dipendenze, ecc. (vedi fascicolo G+S [campo SC/Tg]($lst-lager-cudesch$))\n- Lista dei partecipanti\n\nCome d’accordo con il/la CS/coach/cassiere:\n- Informazioni sui partecipanti (vedi fascicolo G+S [campo SC/Tg]($lst-lager-cudesch$))\n- Piano dei menu (vedi promemoria G+S [La cucina al campo]($lst-kueche$) e l’opuscolo G+S [campo SC/Tg]($lst-lager-cudesch$))\n- Budget del campo (vedi [Modello per un bilancio del campeggio del MSS]($lagerbudget$) e l’opuscolo G+S [campo SC/Tg]($lst-lager-cudesch$)\n- Programma della riunione genitori (vedi fascicolo G+S [campo SC/Tg]($lst-lager-cudesch$))",
+        "section": 22,
+        "locale": "it",
+        "published_at": "2022-01-23T18:12:12.594Z",
+        "created_at": "2022-01-23T18:12:10.490Z",
+        "updated_at": "2022-01-23T22:51:36.612Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 401,
+        "slug": "Parti-che-compongono-il-dossier-del-campo",
+        "link": null,
+        "slug_with_section": "Dossier-del-campo#Parti-che-compongono-il-dossier-del-campo",
+        "menu_name": "Parti che compongono il dossier del campo",
+        "responsible": [
+          {
+            "id": 1243,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 76,
+          "name": "D1 Lagerdossier.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "D1_Lagerdossier_06ab9efb8e",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 30.39,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642902106/hering/D1_Lagerdossier_06ab9efb8e.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/D1_Lagerdossier_06ab9efb8e",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:41:48.125Z",
+          "updated_at": "2022-01-23T01:41:48.134Z"
+        }
+      },
+      {
+        "id": 102,
+        "title": "Descrizione dei blocchi del programma",
+        "content": "La descrizione delle attività (blocchi) deve essere messa per iscritto. Per attività si intende giochi, sport e tutte le attività a tema. Per ogni blocco questo programma in dettaglio scritto include le seguenti informazioni:\n- Nome dell’attività\n- Giorno, data e ora dello svolgimento\n- Luogo\n- Tema\n- Responsabile dell’attività\n- Contenuti e svolgimento in dettaglio (inclusa tempistica) \n- Lista materiale\n- Variante per il brutto tempo\n- Dispositivo di sicurezza per attività, se necessario\n- Per escursioni e gite in bicicletta: cartina a colori con percorso e tabella di marcia, dispositivo di sicurezza dell’escursione/gita in bici\nNel fascicolo G+S [Sport da campo / Trekking – Basi]($lst-grundlagen$) si trovano indicazioni riguardanti i contenuti dei blocchi. \nSi trovano i modelli per la descrizione dei blocchi per SC e AC alla [Pagina web del MSS]($blockvorlagen$).",
+        "section": 22,
+        "locale": "it",
+        "published_at": "2022-01-23T18:47:59.060Z",
+        "created_at": "2022-01-23T18:47:44.557Z",
+        "updated_at": "2022-01-23T18:47:59.106Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 402,
+        "slug": "Descrizione-dei-blocchi-del-programma",
+        "link": null,
+        "slug_with_section": "Dossier-del-campo#Descrizione-dei-blocchi-del-programma",
+        "menu_name": "Descrizione dei blocchi del programma",
+        "responsible": [
+          {
+            "id": 832,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 60,
+          "name": "D2 Programmbloecke.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "D2_Programmbloecke_69dbc2bf58",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 11.63,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901311/hering/D2_Programmbloecke_69dbc2bf58.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/D2_Programmbloecke_69dbc2bf58",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:32.999Z",
+          "updated_at": "2022-01-23T01:28:33.008Z"
+        }
+      },
+      {
+        "id": 107,
+        "title": "Dispositivo di sicurezza",
+        "content": "Insieme alla preparazione del campo va allestito anche un dispositivo di sicurezza per tutto il campo e per le singole attività a rischio accresciuto. Ciò viene richiesto anche da G+S. Nel dispositivo di sicurezza da un lato indicate quali misure intraprendete per evitare incidenti in caso di possibili pericoli, dall’altro descrivete come vi comportate in caso di emergenza e quali passi devono essere intrapresi a tale scopo.\nNell’opuscolo [La sicurezza]($cudesch-sicherheit$). Assumersi delle responsabilità  nel cudesh si può apprendere se un’attività è rilevante dal punto di vista della sicurezza e come si può elaborare il relativo concetto di sicurezza. Nello stesso campo tematico “Sicurezza” si trova anche l’attuale [Informazioni di emergenza dei partecipanti al campo]($notfallinfos$).\nSi possono trovare ulteriori informazioni specifiche negli opuscoli G+S [SC/Tg Montagna SC/Tg Inverno,  SC/Tg Acqua]($lst-berg-cudesch$), [SC/Tg Campo]($lst-lager-cudesch$) e  [SC/Tg Basi]($lst-grundlagen$).",
+        "section": 22,
+        "locale": "it",
+        "published_at": "2022-01-23T19:08:02.476Z",
+        "created_at": "2022-01-23T19:07:02.967Z",
+        "updated_at": "2022-01-23T19:20:45.984Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 403,
+        "slug": "Dispositivo-di-sicurezza",
+        "link": null,
+        "slug_with_section": "Dossier-del-campo#Dispositivo-di-sicurezza",
+        "menu_name": "Dispositivo di sicurezza",
+        "responsible": [
+          {
+            "id": 896,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 61,
+          "name": "D3 Sicherheitskonzepte.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "D3_Sicherheitskonzepte_75993ee872",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 17.19,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901311/hering/D3_Sicherheitskonzepte_75993ee872.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/D3_Sicherheitskonzepte_75993ee872",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:33.130Z",
+          "updated_at": "2022-01-23T01:28:33.138Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 8,
+        "locale": "de",
+        "published_at": "2021-10-08T08:35:15.317Z"
+      },
+      {
+        "id": 9,
+        "locale": "fr",
+        "published_at": "2021-10-08T08:35:32.178Z"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "E. Amministrazione dei partecipanti",
+    "content": null,
+    "locale": "it",
+    "published_at": "2022-01-22T09:45:42.800Z",
+    "created_at": "2022-01-22T09:34:28.034Z",
+    "updated_at": "2022-01-22T09:45:42.820Z",
+    "key": null,
+    "Sorting": null,
+    "sorting": 5,
+    "slug": "Amministrazione-dei-partecipanti",
+    "menu_name": "Amministrazione dei partecipanti",
+    "identifier": null,
+    "chapters": [
+      {
+        "id": 80,
+        "title": "I partecipanti si iscrivono autonomamente al campo",
+        "content": "Se al momento dell'allestimento del campo è stata selezionata l'opzione \"Iscrizione possibile\", i partecipanti possono iscriversi al campo direttamente nella [MiData]($midata$) con il loro login. I partecipanti possono vedere solo i campi allestiti in un gruppo al quale appartengono (ad es. rispettiva branca). L'iscrizione avviene nel seguente modo: \n1. I partecipanti effettuano il login nella MiData e cliccano su \"Eventi\". Compare la panoramica dei \"Prossimi eventi\" \n2. I partecipanti possono iscriversi al campo cliccando su \"Iscriversi\". \n3. Cliccando sul nome del campo, i partecipanti vedono ulteriori informazioni sul campo. \n4. I partecipanti compilano l'iscrizione e cliccano su \"Iscriversi\". Al momento dell'allestimento del campo è possibile creare campi supplementari per l'iscrizione. Qui c’è la possibilità di lasciar compilare ai partecipanti le indicazioni obbligatorie che il/la coach ha bisogno per la SPORTdb. Una lista delle indicazioni necessarie si trova nel documento [Importazione dei dati personali di federazioni/club e di federazioni giovanili]($sportdb-technisch$).",
+        "section": 21,
+        "locale": "it",
+        "published_at": "2022-01-23T07:59:19.969Z",
+        "created_at": "2022-01-23T07:59:18.113Z",
+        "updated_at": "2022-01-23T22:09:54.460Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 501,
+        "slug": "I-partecipanti-si-iscrivono-autonomamente-al-campo",
+        "link": 189,
+        "slug_with_section": "Amministrazione-dei-partecipanti#I-partecipanti-si-iscrivono-autonomamente-al-campo",
+        "menu_name": "I partecipanti si iscrivono autonomamente",
+        "responsible": [
+          {
+            "id": 1213,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 63,
+          "name": "E1 Selbstaendige Anmeldung der TNs.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "E1_Selbstaendige_Anmeldung_der_T_Ns_c286db09f5",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 17.54,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901311/hering/E1_Selbstaendige_Anmeldung_der_T_Ns_c286db09f5.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/E1_Selbstaendige_Anmeldung_der_T_Ns_c286db09f5",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:33.410Z",
+          "updated_at": "2022-01-23T01:28:33.419Z"
+        }
+      },
+      {
+        "id": 82,
+        "title": "Aggiungere e cancellare dei partecipanti nella lista dei partecipanti nella MiData",
+        "content": "Il/la Capo Campo, il/la CSZ e il/la Coach hanno accesso alla lista dei partecipanti nella [MiData]($midata$). Qui possono aggiungere o cancellare direttamente dei partecipanti. Questo avviene analogamente all'[aggiunta di animatori/trici]($team-erfassen-midata-kapitel$). Se i partecipanti non si iscrivono al campo direttamente nella MiData, la lista dei partecipanti può essere registrata dal/dalla Capo Campo. Le informazioni necessarie dei partecipanti per l’annuncio alla Rega e al/alla coach sono però da completare dal/dalla CC. Una lista delle informazioni necessarie si trovano nel documento [Importazione dei dati personali di federazioni/club e di federazioni giovanili]($sportdb-technisch$).",
+        "section": 21,
+        "locale": "it",
+        "published_at": "2022-01-23T08:10:26.081Z",
+        "created_at": "2022-01-23T08:10:08.410Z",
+        "updated_at": "2022-01-23T19:20:49.754Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 502,
+        "slug": "Aggiungere-e-cancellare-dei-partecipanti-nella-lista-dei-partecipanti-nella-MiData",
+        "link": 158,
+        "slug_with_section": "Amministrazione-dei-partecipanti#Aggiungere-e-cancellare-dei-partecipanti-nella-lista-dei-partecipanti-nella-MiData",
+        "menu_name": "Aggiungere e cancellare dei partecipanti",
+        "responsible": [
+          {
+            "id": 1207,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1208,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 1210,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 64,
+          "name": "E2 TNs hinzufuegen und loeschen.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "E2_T_Ns_hinzufuegen_und_loeschen_f1383d900c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 12.78,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/E2_T_Ns_hinzufuegen_und_loeschen_f1383d900c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/E2_T_Ns_hinzufuegen_und_loeschen_f1383d900c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:34.885Z",
+          "updated_at": "2022-01-23T01:28:34.893Z"
+        }
+      },
+      {
+        "id": 84,
+        "title": "Esportazione della lista dei partecipanti dalla MiData ",
+        "content": "Se i partecipanti sono registrati nella [MiData]($midata$), la lista dei partecipanti può essere esportata dalla MiData come file csv per l'upload nella [SPORTdb]($sportdb$). Per questo il/la Coach procede come segue:\n1. Cercare e aprire il campo.\n2. Cliccare su \"Partecipanti\"\n3. Cliccare su \"esportare\"\n4. Selezionare \"CSV\" e in seguito \"SPORTdb\". Viene ora esportato un file csv che può essere usato per l'upload nella SPORTdb.  \n\n**Attenzione all‘ Encoding**  \nrilevantre nella rappresentazione dei segni particolari\nMiData esporta i file csv normalmente con UTF-8 Encoding (sistema per la codificazione dei segni). Per leggere in modo corretto i segni particolari si può scegliere questo encoding nell’importazione del file csv nella SPORTdb.\nSe la lista dovesse venire rielaborata ancora con Excel prima dell’importazione si può esportarla via «Export» &#8594; «Excel» &#8594; «per SPORTdb». Dopo l’elaborazione questa verrà esportata come file csv e importata nella SPORTdb con l’ Encoding UTF-8 oppure x-MacRoman.\n\n**Attenzione nel caso di due nomi**  \nLa SPORTdb nel caso di due nomi non può riconoscere ed importare senza errori la persona. Prima del caricamento del file è quindi meglio cancellare tutti i secondi nomi.\n\n**Direttiva riguardanti i campi obbligatori**  \nPer poter leggere il file alcuni campi devono obbligatoriamente essere compilati. Un riassunto si trova nel documento [Importazione dei dati personali di federazioni/club e di federazioni giovanili]($sportdb-technisch$). Se dovessero ancora mancare indicazioni sono da cercare dal CC. Nel caso ottimale le indicazioni vengono rilevate già durante [l’iscrizione]($tn-anmeldung-kapitel$).\n",
+        "section": 21,
+        "locale": "it",
+        "published_at": "2022-01-23T08:34:45.532Z",
+        "created_at": "2022-01-23T08:34:42.650Z",
+        "updated_at": "2022-01-23T08:50:59.681Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 503,
+        "slug": "Esportazione-della-lista-dei-partecipanti-dalla-MiData",
+        "link": null,
+        "slug_with_section": "Amministrazione-dei-partecipanti#Esportazione-della-lista-dei-partecipanti-dalla-MiData",
+        "menu_name": "Esportazione della lista dei partecipanti",
+        "responsible": [
+          {
+            "id": 1223,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 66,
+          "name": "E3 TN-Liste aus der MiData exportieren.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "E3_TN_Liste_aus_der_Mi_Data_exportieren_264bda6ca9",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 22.26,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/E3_TN_Liste_aus_der_Mi_Data_exportieren_264bda6ca9.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/E3_TN_Liste_aus_der_Mi_Data_exportieren_264bda6ca9",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:35.079Z",
+          "updated_at": "2022-01-23T01:28:35.087Z"
+        }
+      },
+      {
+        "id": 86,
+        "title": "Caricare la lista dei partecipanti in SPORTdb",
+        "content": "Il file csv viene importato dal/dalla coach nella [SPORTdb]($sportdb$). Questo può essere fatto sotto al tab «partecipante». I lavori precisi incluse le direttive passo a passo e le immagini sono nel documento [SPORTdb Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).\n\n>**Rilevamento del numero di assicurazione sociale (numero AVS)**  \nA partire dall’estate 2019 il numero di assicurazione sociale viene rilevato in maniera standard nella SPORTdb. Si tratta di evitare di avere due versioni della stessa persona e di migliorare la qualità dei dati. Le persone che **non sono ancora registrate** nella SPORTdb possono essere iscritte solo con il loro numero di assicuratzione sociale. Affinché il coach abbia queste informazioni devono venir richieste già al momento dell’iscrizione dei partecipanti al campo. I bambini ricevono il loro numero di assicurazione sociale personale con l’iscrizione alla cassa malati, perciò si può leggere questo numero sulla carta della cassa malati.",
+        "section": 21,
+        "locale": "it",
+        "published_at": "2022-01-23T08:44:30.729Z",
+        "created_at": "2022-01-23T08:43:35.344Z",
+        "updated_at": "2022-01-23T08:45:32.428Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 504,
+        "slug": "Caricare-la-lista-dei-partecipanti-in-SPORTdb",
+        "link": null,
+        "slug_with_section": "Amministrazione-dei-partecipanti#Caricare-la-lista-dei-partecipanti-in-SPORTdb",
+        "menu_name": "Caricare la lista dei partecipanti",
+        "responsible": [
+          {
+            "id": 1232,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 65,
+          "name": "E4 TN-Liste in die SPORTdb laden.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "E4_TN_Liste_in_die_SPOR_Tdb_laden_07b3bf4009",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 20.75,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/E4_TN_Liste_in_die_SPOR_Tdb_laden_07b3bf4009.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/E4_TN_Liste_in_die_SPOR_Tdb_laden_07b3bf4009",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:34.980Z",
+          "updated_at": "2022-01-23T01:28:34.989Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 16,
+        "locale": "de",
+        "published_at": "2021-11-20T13:37:08.961Z"
+      },
+      {
+        "id": 17,
+        "locale": "fr",
+        "published_at": "2022-01-22T09:47:53.382Z"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "F. Autorizzazione del campo",
+    "content": null,
+    "locale": "it",
+    "published_at": "2022-01-22T09:31:59.185Z",
+    "created_at": "2022-01-22T09:31:55.578Z",
+    "updated_at": "2022-01-22T09:31:59.222Z",
+    "key": null,
+    "Sorting": null,
+    "sorting": 6,
+    "slug": "Autorizzazione-del-campo",
+    "menu_name": "Autorizzazione del campo",
+    "identifier": null,
+    "chapters": [
+      {
+        "id": 64,
+        "title": "Valutazione del programma dettagliato con checklist",
+        "content": "Il/la CSZ e il/la Coach valutano il programma del campo con l’aiuto della checklist del [Autorizzazione al campo]($lagerbewilligung-download$) MSS. È consigliato discutere del programma in occasione di una riunione tra Coach e CC ed ev. CSZ; in quest’occasione la checklist può essere lo spunto per le riflessioni. I punti che devono essere migliorati vengono comiunicati dal/dalla CSZ e dal/dalla Coach al/alla CC durante la discussione sul programma.",
+        "section": 20,
+        "locale": "it",
+        "published_at": "2022-01-22T12:23:00.967Z",
+        "created_at": "2022-01-22T12:22:33.384Z",
+        "updated_at": "2022-01-22T12:23:01.004Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 601,
+        "slug": "Valutazione-del-programma-dettagliato-con-checklist",
+        "link": null,
+        "slug_with_section": "Autorizzazione-del-campo#Valutazione-del-programma-dettagliato-con-checklist",
+        "menu_name": "Valutazione del programma dettagliato",
+        "responsible": [
+          {
+            "id": 528,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 530,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 67,
+          "name": "F1 Lagerdossier beurteilen.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "F1_Lagerdossier_beurteilen_e20f7bc1ac",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 21.25,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/F1_Lagerdossier_beurteilen_e20f7bc1ac.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/F1_Lagerdossier_beurteilen_e20f7bc1ac",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:35.320Z",
+          "updated_at": "2022-01-23T01:28:35.328Z"
+        }
+      },
+      {
+        "id": 68,
+        "title": "Autorizzazione del campo",
+        "content": "Apponendo la firma sull’annuncio di campo il/la Coach e il/la CSZ autorizzano il campo. Per le attività negli ambiti di sicurezza occorre un’ulteriore firma da parte degli esperti responsabili (vedi [attività nei settori di sicurezza]($sicherheitsbereich$)). Il/la CSZ ed il/la coach informano i CC sull’autorizzazione del campo, se possibile in un incontro comune. Il/la coach manda una copia ciascuno dell’autorizzazione firmata al/alla CC e al/alla CSZ. Nel caso di una non autorizzazione manda inoltre una copia all’AC e al [segretariato del MSS](mailto:info@msds.ch). \n\n### Di seguito alcuni chiarimenti in merito al formulario\n1. “Approvazione”: “approvato” significa che il programma può essere svolto come previsto; “approvato con riserva” significa che il programma deve essere adattato dal/dalla CC in base alle osservazioni scritte; “non approvato” significa che il campo non può svolgersi così come è stato presentato.\n1. “Approvazione dei moduli di sicurezza”: il/la Coach autorizza o non autorizza i moduli di sicurezza firmando nell’apposito spazio. Nel caso in cui il/la Coach avesse delegato la supervisione a terzi, dovrà firmare quest’ultima persona.\n1. “Conferma del Capo campo”: nel caso di approvazione con riserva o di non approvazione, il/la CC conferma di esserne a conoscenza firmando il modulo.\n1. “Attività del Coach”: questa tabella serve al/alla Coach per indicare quando hanno avuto luogo i vari passi della preparazione del campo e può sostituire il diario del/della Coach G+S. Su richiesta l’Ufficio cantonale G+S può prenderne visione. \n\n### Ulteriori Informazioni:\n- [Regolamento sulla preparazione e lo svolgimento dei campi]($lagerreglement$)\n- [Guida per lo svolgimento delle offerte G+S Sport di campo/Trekking]($js-angebotsleitfaden$)\n\n![it-lagerreglement.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642855438/hering/it_lagerreglement_10c57e97e1.png)",
+        "section": 20,
+        "locale": "it",
+        "published_at": "2022-01-22T12:51:42.830Z",
+        "created_at": "2022-01-22T12:51:40.096Z",
+        "updated_at": "2022-01-23T23:39:03.914Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 602,
+        "slug": "Autorizzazione-del-campo",
+        "link": 170,
+        "slug_with_section": "Autorizzazione-del-campo#Autorizzazione-del-campo",
+        "menu_name": "Autorizzazione del campo",
+        "responsible": [
+          {
+            "id": 1313,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1314,
+            "label": null,
+            "rolle": "AL"
+          },
+          {
+            "id": 1315,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 68,
+          "name": "F2 Lagerbewilligung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "F2_Lagerbewilligung_fd04f91a20",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 24.78,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/F2_Lagerbewilligung_fd04f91a20.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/F2_Lagerbewilligung_fd04f91a20",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:35.414Z",
+          "updated_at": "2022-01-23T01:28:35.423Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 10,
+        "locale": "de",
+        "published_at": "2021-10-08T08:38:59.875Z"
+      },
+      {
+        "id": 11,
+        "locale": "fr",
+        "published_at": "2021-10-08T08:39:22.000Z"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "G. Chiusura del campo",
+    "content": null,
+    "locale": "it",
+    "published_at": "2022-01-22T09:30:39.764Z",
+    "created_at": "2022-01-22T09:30:18.920Z",
+    "updated_at": "2022-01-22T09:30:39.789Z",
+    "key": null,
+    "Sorting": null,
+    "sorting": 7,
+    "slug": "Chiusura-del-campo",
+    "menu_name": "Chiusura del campo",
+    "identifier": null,
+    "chapters": [
+      {
+        "id": 48,
+        "title": "Restituzione cartine topografiche",
+        "content": "Il/la CC spedisce le carte a swisstopo per posta (eventualmente per raccomandata) al massimo entro 3 giorni dopo la fine del campo. Nel caso mancassero cartine, Swisstopo invia la fattura al/alla CC.\n\n**swisstopo**  \nMarketing und Verkauf  \nVerlagsprodukte  \nSeftigenstr. 264  \nCasella postale  \n3084 Wabern",
+        "section": 19,
+        "locale": "it",
+        "published_at": "2022-01-22T11:02:10.035Z",
+        "created_at": "2022-01-22T11:00:41.754Z",
+        "updated_at": "2022-02-06T16:35:07.344Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 701,
+        "slug": "Restituzione-cartine-topografiche",
+        "link": 164,
+        "slug_with_section": "Chiusura-del-campo#Restituzione-cartine-topografiche",
+        "menu_name": "Cartine topografiche",
+        "responsible": [
+          {
+            "id": 1389,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 69,
+          "name": "G1 Landeskarten retournieren.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "G1_Landeskarten_retournieren_72dd42fb19",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 14.43,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901313/hering/G1_Landeskarten_retournieren_72dd42fb19.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/G1_Landeskarten_retournieren_72dd42fb19",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:35.516Z",
+          "updated_at": "2022-01-23T01:28:35.525Z"
+        }
+      },
+      {
+        "id": 51,
+        "title": "Lista partecipanti e chiusura del campo nella MiData",
+        "content": "Il/la CC aggiorna i partecipanti e gli animatori/trici registrati nella [MiData]($midata$) prima del campo e comunica l'aggiornamento al/alla Coach al più tardi 10 giorni dopo il campo.\nInfine, il/la coach riporta la lista attuale dei partecipanti in [SPORTdb]($sportdb$). Se l’annuncio Rega è già stato fatto tramite SPORTdb, i dati devono solo più venir aggiornati. I lavori precisi da eseguire comprese le istruzioni passo dopo passo per il/la coach e le immagini si trovano nel documento [SPORTdb – Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).\nIn seguito, il/la CC chiude il campo nella MiData, ponendo lo stato su \"Concluso\".",
+        "section": 19,
+        "locale": "it",
+        "published_at": "2022-01-22T11:21:46.588Z",
+        "created_at": "2022-01-22T11:17:47.839Z",
+        "updated_at": "2022-01-23T22:07:39.720Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 702,
+        "slug": "Lista-partecipanti-e-chiusura-del-campo-nella-MiData",
+        "link": null,
+        "slug_with_section": "Chiusura-del-campo#Lista-partecipanti-e-chiusura-del-campo-nella-MiData",
+        "menu_name": "Lista partecipanti",
+        "responsible": [
+          {
+            "id": 1127,
+            "label": null,
+            "rolle": "LL"
+          },
+          {
+            "id": 1128,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 70,
+          "name": "G2 Lagerabschluss MiData.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "G2_Lagerabschluss_Mi_Data_ea48b46e4c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 8.64,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901315/hering/G2_Lagerabschluss_Mi_Data_ea48b46e4c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/G2_Lagerabschluss_Mi_Data_ea48b46e4c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:36.964Z",
+          "updated_at": "2022-01-23T01:28:36.971Z"
+        }
+      },
+      {
+        "id": 55,
+        "title": "Chiusura del campo in SPORTdb",
+        "content": "Alla fine di ogni campo il/la Coach procede con il cosiddetto controllo delle presenze (CdP), vale a dire aggiorna la lista dei partecipanti in der  [SPORTdb]($sportdb$) secondo la lista ricevuta dopo il campo dal/dalla CC (vedi sopra). I lavori precisi da eseguire comprese le istruzioni passo dopo passo per il coach e le immagini si trovano nel documento  [SPORTdb – Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).",
+        "section": 19,
+        "locale": "it",
+        "published_at": "2022-01-22T11:44:08.288Z",
+        "created_at": "2022-01-22T11:41:22.880Z",
+        "updated_at": "2022-01-22T11:44:08.315Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 703,
+        "slug": "Chiusura-del-campo-in-SPORTdb",
+        "link": null,
+        "slug_with_section": "Chiusura-del-campo#Chiusura-del-campo-in-SPORTdb",
+        "menu_name": "Chiusura del campo in SPORTdb",
+        "responsible": [
+          {
+            "id": 1132,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 71,
+          "name": "G3 Lagerabschluss SPORTdb.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": {},
+          "hash": "G3_Lagerabschluss_SPOR_Tdb_4b0106a5a1",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 28.33,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642903593/hering/G3_Lagerabschluss_SPOR_Tdb_4b0106a5a1.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/G3_Lagerabschluss_SPOR_Tdb_4b0106a5a1",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:37.122Z",
+          "updated_at": "2022-01-23T02:06:35.121Z"
+        }
+      },
+      {
+        "id": 61,
+        "title": "Bilancio del campo",
+        "content": "Dopo il campo bisogna redigere la chiusura del campo e bisogna conteggiare tutte le spese. Se utilizzate il [Modello per un bilancio del campeggio del MSS]($lagerbudget$) potete inserire i numeri reali nello stesso modello del budget. Per utilizzare il procedimento preciso per la vostra sezione concordate le direttive con il/la vostro/a CS o il/la cassiere.",
+        "section": 19,
+        "locale": "it",
+        "published_at": "2022-01-22T12:10:08.324Z",
+        "created_at": "2022-01-22T12:10:04.852Z",
+        "updated_at": "2022-01-22T12:10:08.355Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 704,
+        "slug": "Bilancio-del-campo",
+        "link": null,
+        "slug_with_section": "Chiusura-del-campo#Bilancio-del-campo",
+        "menu_name": "Bilancio del campo",
+        "responsible": [
+          {
+            "id": 547,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 75,
+          "name": "G4 Lagerabrechnung.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "G4_Lagerabrechnung_5953da7a1c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 42.61,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642902106/hering/G4_Lagerabrechnung_5953da7a1c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/G4_Lagerabrechnung_5953da7a1c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:41:47.898Z",
+          "updated_at": "2022-01-23T01:41:47.908Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 12,
+        "locale": "de",
+        "published_at": "2021-10-08T08:40:28.681Z"
+      },
+      {
+        "id": 13,
+        "locale": "fr",
+        "published_at": "2021-10-08T08:40:41.651Z"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "H. Chiusura dell’offerta G+S",
+    "content": "Il/la Coach chiude l’offerta G+S in [SPORTdb]($sportdb$) al massimo entro 30 giorni della fine dell’ultimo campo. È importante rispettare i termini della chiusura: in caso di ritardo G+S Macolin può negare il versamento delle indennità. 80% delle indennità G+S e i rimborsi coach vengono versati alla sezione circa 2 mesi dopo la chiusura dell’offerta. Il restante 20% seguono all’inizio dell’anno seguente. Il versamento delle indennità viene notificato per posta al/alla Coach, che a sua volta informa il/la CSZ e/o il/la cassiere (inoltrando una copia per posta o per e-mail).",
+    "locale": "it",
+    "published_at": "2022-01-22T09:25:55.015Z",
+    "created_at": "2022-01-22T09:23:00.862Z",
+    "updated_at": "2022-01-22T10:46:11.323Z",
+    "key": null,
+    "Sorting": null,
+    "sorting": 8,
+    "slug": "Chiusura-dell'offerta-G+S",
+    "menu_name": "Chiusura dell’offerta G+S",
+    "identifier": null,
+    "chapters": [
+      {
+        "id": 42,
+        "title": "Chiusura dell’offerta G+S in SPORTdb",
+        "content": "Alla fine dell’ultimo campo il/la Coach riceve automaticamente un promemoria via e-mail (Oggetto: Promemoria: fine dell’offerta tra 30 giorni). Egli/ella dovrà chiudere l’offerta entro 30 giorni della fine dell’ultimo campo. Attenzione: prima di poter chiudere l’offerta occorre completare e chiudere il CdP di ogni singolo campo (in altre parole lo stato di ogni campo deve essere chiuso). \n\n- *Stato dell’offerta Procedimento di chiusura:* Con lo stato Procedimento di chiusura l’offerta viene elaborata dall’Ufficio cantonale G+S. Il/la Coach riceve via e-mail la conferma che l’elaborazione è in corso. Se non ci sono errori nell’offerta, G+S Macolin provvede al versamento delle indennità. Anche in questo caso il Coach riceve una conferma per e-mail (Oggetto: L’offerta XXXXXX è stata inoltrata per il pagamento). \n- *Stato dell’offerta Chiuso:* quando l’Ufficio cantonale conclude la procedura di chiusura, lo stato dell’offerta viene cambiato in Chiuso.\n\nI lavori precisi da eseguire comprese le istruzioni passo dopo passo per il coach e le immagini si trovano nel documento  [SPORTdb – Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).",
+        "section": 18,
+        "locale": "it",
+        "published_at": "2022-01-22T10:28:50.071Z",
+        "created_at": "2022-01-22T10:28:35.811Z",
+        "updated_at": "2022-01-23T20:18:44.902Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 801,
+        "slug": "Chiusura-dell'offerta-G+S-in-SPORTdb",
+        "link": 166,
+        "slug_with_section": "Chiusura-dell'offerta-G+S#Chiusura-dell'offerta-G+S-in-SPORTdb",
+        "menu_name": "Chiusura in SPORTdb",
+        "responsible": [
+          {
+            "id": 1101,
+            "label": null,
+            "rolle": "C"
+          }
+        ],
+        "icon": {
+          "id": 77,
+          "name": "H2 Abschluss JS-Angbebot.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "H2_Abschluss_JS_Angbebot_6ba9578df8",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 30.74,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642903609/hering/H2_Abschluss_JS_Angbebot_6ba9578df8.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/H2_Abschluss_JS_Angbebot_6ba9578df8",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T02:06:51.074Z",
+          "updated_at": "2022-01-23T02:06:51.082Z"
+        }
+      },
+      {
+        "id": 45,
+        "title": "Obbligo di conservazione dei documenti",
+        "content": "Il/la CC e il/la Coach sono obbligati secondo la legge a tenere i documenti del campo per i 5 anni successivi, nel caso sorgano domande o ci siano questioni sospese.",
+        "section": 18,
+        "locale": "it",
+        "published_at": "2022-01-22T10:55:19.636Z",
+        "created_at": "2022-01-22T10:55:13.587Z",
+        "updated_at": "2022-01-22T10:55:19.663Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 802,
+        "slug": "Obbligo-di-conservazione-dei-documenti",
+        "link": null,
+        "slug_with_section": "Chiusura-dell'offerta-G+S#Obbligo-di-conservazione-dei-documenti",
+        "menu_name": "Conservazione dei documenti",
+        "responsible": [
+          {
+            "id": 548,
+            "label": null,
+            "rolle": "C"
+          },
+          {
+            "id": 549,
+            "label": null,
+            "rolle": "LL"
+          }
+        ],
+        "icon": {
+          "id": 73,
+          "name": "H3 Aufbewahrungspflicht.svg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 1000,
+          "height": 1000,
+          "formats": null,
+          "hash": "H3_Aufbewahrungspflicht_096913aa0c",
+          "ext": ".svg",
+          "mime": "image/svg+xml",
+          "size": 13.58,
+          "url": "https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642901315/hering/H3_Aufbewahrungspflicht_096913aa0c.svg",
+          "previewUrl": null,
+          "provider": "cloudinary",
+          "provider_metadata": {
+            "public_id": "hering/H3_Aufbewahrungspflicht_096913aa0c",
+            "resource_type": "image"
+          },
+          "created_at": "2022-01-23T01:28:37.604Z",
+          "updated_at": "2022-01-23T01:28:37.613Z"
+        }
+      }
+    ],
+    "localizations": [
+      {
+        "id": 14,
+        "locale": "de",
+        "published_at": "2021-10-08T08:42:09.672Z"
+      },
+      {
+        "id": 15,
+        "locale": "fr",
+        "published_at": "2021-10-08T08:42:25.619Z"
+      }
+    ]
+  }
+]

@@ -1,10 +1,13 @@
 import React from 'react'
 import { withTranslation } from 'react-i18next';
-import client from '../client'
+// import client from '../client'
 import i18n from '../i18n';
 import CalendarTable from './CalendarTable';
 import { ChapterT } from './Chapter';
 import { TaskT } from './Task';
+import tasksFR from './../data/tasks/fr.json'
+import tasksDE from './../data/tasks/de.json'
+import tasksIT from './../data/tasks/it.json'
 
 type Props = {
   t: any
@@ -43,9 +46,23 @@ class CalendarForm extends React.Component<Props, MyState> {
   }
 
   componentDidMount() {
-    client.get('/tasks?_locale=' + i18n.language).then((response) => {
-      this.setState({ taskList: response.data })
-    })
+    // client.get('/tasks?_locale=' + i18n.language).then((response) => {
+    //   this.setState({ taskList: response.data })
+    // })
+    switch (i18n.language) {
+      case 'fr':
+        // @ts-ignore
+        return this.setState({ taskList:  tasksFR})
+      case 'de':
+        // @ts-ignore
+        return this.setState({ taskList:  tasksDE})
+      case 'it':
+        // @ts-ignore
+        return this.setState({ taskList:  tasksIT})
+      default:
+        // @ts-ignore
+        this.setState({ taskList:  tasksDE})
+    }
   }
 
   onChangeStartDate = (e: React.FormEvent<HTMLInputElement>): void => {
@@ -86,7 +103,8 @@ class CalendarForm extends React.Component<Props, MyState> {
         deadline.setMonth(0)
         deadline.setDate(1)
       }
-      return { 'deadline': deadline, 'key': task.title, title: task.title, 'targets': task.targets, 'responsible': task.responsible, chapters: task.chapters }
+      return { 'deadline': deadline, 'key': task.title, title: task.title, 
+        'targets': task.targets, 'responsible': task.responsible, chapters: task.chapters, t: '' }
     })
     this.setState({ tasks: tasks })
   }

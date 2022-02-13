@@ -1,0 +1,1349 @@
+[
+  {
+    "id": 14,
+    "title": "Abschluss J+S-Angebot",
+    "days": 30,
+    "locale": "de",
+    "published_at": "2022-01-22T09:52:38.262Z",
+    "created_at": "2022-01-22T09:52:31.964Z",
+    "updated_at": "2022-01-23T23:14:58.548Z",
+    "Slug": "Abschluss-J+S-Angebot",
+    "responsible": [
+      {
+        "id": 1286,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 12,
+        "rolle": "SPORTdb"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 40,
+        "title": "Abschluss des J+S-Angebots in der SPORTdb",
+        "content": "Nach dem letzten Lager wird ein automatisches Erinnerungsmail (Betreff: Erinnerung: Angebotsende in 30 Tagen) an den\\*die Coach gesendet. Er\\*sie muss das Angebot innerhalb von 30 Tagen nach dem letzten Lager abschliessen. Wichtig: Bevor das Angebot als Ganzes abgeschlossen wird, muss die IST-Daten-Erfassung, resp. AWK der einzelnen Lager abgeschlossen werden (d. h. der Status aller Lager ist «abgeschlossen»). \n\n- *Angebotsstatus «Abschlussverfahren»*: Im Status «Abschlussverfahren» wird das Angebot beim kantonalen Sportamt bearbeitet. Der Abrechnungsantrag von dem*der Coach an das kantonale Sportamt wird per E-Mail bestätigt. Ist das Angebot in Ordnung, wird die Auszahlung der J+S-Entschädigung bei J+S-Magglingen ausgelöst. Dies wird wiederum per E-Mail bestätigt (Betreff: Angebot Nr. XXXXXX zur Auszahlung weitergeleitet). \n- *Status «Abgeschlossen»*: Nach dem Abschlussverfahren durch das kantonale Sportamt wechselt das Angebot in den Status «abgeschlossen».\n\nDie genauen Arbeiten inklusive Schritt für Schritt Anleitungen sind im Dokument [SPORTdb Schritt für Schritt]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten.",
+        "section": {
+          "id": 14,
+          "title": "H. Abschluss J+S-Angebot",
+          "content": "Der\\*die Coach schliesst bis spätestens 30 Tage nach dem letzten Lager das ganze J+S-Angebot in der [SPORTdb]($sportdb$) ab. Es ist wichtig, das Angebot sorgfältig abzuschliessen, denn bei verspäteten Abrechnungen kann J+S die Entschädigung verweigern. Das kantonale Sportamt zahlt 80% der J+S-Entschädigung und die Coach-Entschädigung ungefähr 2 Monate nach dem letzten Lager an die Abteilung aus. Die restlichen 20% folgen am Anfang des kommenden Jahres. Die Auszahlungsbestätigung der J+S-Entschädigung wird dem\\*der Coach per Mail zugestellt. Er\\*sie informiert AL und/oder Kassier\\*in darüber (Kopie per E-Mail).",
+          "locale": "de",
+          "published_at": "2021-10-08T08:42:09.672Z",
+          "created_at": "2021-10-08T08:42:08.026Z",
+          "updated_at": "2022-01-22T10:46:40.923Z",
+          "key": "abschluss",
+          "Sorting": null,
+          "sorting": 8,
+          "slug": "Abschluss-des-J+S-Angebots",
+          "menu_name": "Abschluss des J+S-Angebots",
+          "identifier": "s J+S-Angebot"
+        },
+        "locale": "de",
+        "published_at": "2022-01-22T10:29:00.147Z",
+        "created_at": "2022-01-22T10:17:44.156Z",
+        "updated_at": "2022-01-23T02:07:18.936Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 801,
+        "slug": "Abschluss-des-J+S-Angebots-in-der-SPORTdb",
+        "link": null,
+        "slug_with_section": "Abschluss-des-J+S-Angebots#Abschluss-des-J+S-Angebots-in-der-SPORTdb",
+        "menu_name": "Abschluss SPORTdb"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Lagerabschluss in der SPORTdb",
+    "days": 15,
+    "locale": "de",
+    "published_at": "2022-01-22T11:42:30.443Z",
+    "created_at": "2022-01-22T11:42:29.237Z",
+    "updated_at": "2022-01-22T11:42:54.947Z",
+    "Slug": "Lagerabschluss-in-der-SPORTdb",
+    "responsible": [
+      {
+        "id": 320,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 22,
+        "rolle": "SPORTdb"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 53,
+        "title": "Lagerabschluss in der SPORTdb",
+        "content": "Nach jedem Lager führt der*die Coach die sogenannte Anwesenheitskontrolle (AWK) durch, d. h. er\\*sie bearbeitet die TN-Liste in der  [SPORTdb]($sportdb$) gemäss der Liste, welche er von der\\*m LL nach dem Lager erhalten hat (siehe oben). Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen sind im Dokument  [SPORTdb Schritt für Schritt für J+S-Coaches]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten.\n>**Grobprogramm bei J+S-Lagern**  \nDas Grobprogramm muss vor oder nach der Durchführung des Lagers in die SPORTdb hochgeladen werden. Die Bewilligungs- und Kontrollinstanzen überprüfen die Programme stichprobenweise. Der Abschluss der Anwesenheitskontrolle (AWK) ist ohne Grobprogramm (Excel-, Word- oder PDF-File) nicht möglich.",
+        "section": {
+          "id": 12,
+          "title": "G. Lagerabschluss",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:40:28.681Z",
+          "created_at": "2021-10-08T08:40:25.471Z",
+          "updated_at": "2022-01-22T09:29:47.322Z",
+          "key": "lagerabschluss",
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Lagerabschluss",
+          "menu_name": "Lagerabschluss",
+          "identifier": "Lagerabschluss"
+        },
+        "locale": "de",
+        "published_at": "2022-01-22T11:27:40.087Z",
+        "created_at": "2022-01-22T11:26:55.455Z",
+        "updated_at": "2022-01-23T22:10:18.715Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 703,
+        "slug": "Lagerabschluss-in-der-SPORTdb",
+        "link": 26,
+        "slug_with_section": "Lagerabschluss#Lagerabschluss-in-der-SPORTdb",
+        "menu_name": "Lagerabschluss in der SPORTdb"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Lageranmeldung einreichen",
+    "days": -42,
+    "locale": "de",
+    "published_at": "2021-11-21T07:57:07.455Z",
+    "created_at": "2021-11-21T07:57:00.931Z",
+    "updated_at": "2021-11-21T07:57:07.483Z",
+    "Slug": "Lageranmeldung-einreichen",
+    "responsible": [
+      {
+        "id": 159,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 7,
+        "rolle": "PBS (via MiData)"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 6,
+        "title": "Lageranmeldung PBS",
+        "content": "### Angaben des\\*der Lagerleiter\\*in\nMit der PBS-Lageranmeldung in der [MiData]($midata$) wird jedes Lager im Voraus beim KV und bei der PBS gemeldet. Der\\*die LL ergänzt bis spätestens 7&nbsp;Wochen vor dem Lager alle Angaben des Lagers in der MiData und schickt das Grobprogramm zeitgleich an AL und Coach.\n\n### Angaben des\\*der Coach\\*s\nDer\\*die Coach kann sich nun in der [MiData]($midata$) einloggen, seinen\\*ihren Teil der Lageranmeldung ausfüllen und per Button einreichen. Die Lageranmeldung wird dann automatisch an PBS und KV übermittelt. Die PBS benötigt diese Informationen für die Reaktion in Krisenfällen sowie für statistische Angaben gegenüber der Eidgenossenschaft. Der\\*die Coach loggt sich dafür mit seinem\\*ihren Login in der MiData ein und navigiert zur eigenen Coach-Abteilung. Danach geht er\\*sie wie folgt vor:\n1. «Lager» anklicken\n2. Entsprechendes Lager auswählen\n3. «Bearbeiten» klicken\n4. Angaben in allen Registern prüfen\n5. Das Register Betreuung wählen. «Coach bestätigt» klicken sowie die Angaben zum Coachbesuch und den [Aktivitäten im Sicherheitsbereich]($sicherheitsbereich$) ausfüllen.\n7. «Speichern» klicken\n7. Wenn alle Angaben vollständig sind: Lageranmeldung an die PBS schicken mittels Klicken des Buttons «Einreichen».\n\n![de-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_A_b3b32a88d3.png)\n\n![de-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_B_eb31dc00ec.png)\n\n![de-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_C_f62f7b963e.png)\n",
+        "section": {
+          "id": 5,
+          "title": "B. Lageranmeldung und Grobprogramm",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-07T08:57:38.191Z",
+          "created_at": "2021-10-07T08:57:35.643Z",
+          "updated_at": "2022-01-22T09:42:30.997Z",
+          "key": "lageranmeldung",
+          "Sorting": 2,
+          "sorting": 2,
+          "slug": "Lageranmeldung",
+          "menu_name": "Lageranmeldung",
+          "identifier": "a"
+        },
+        "locale": "de",
+        "published_at": "2021-10-07T09:04:37.416Z",
+        "created_at": "2021-10-07T09:03:55.201Z",
+        "updated_at": "2022-01-23T12:22:05.305Z",
+        "key": "lageranmeldung_pbs",
+        "Sorting": 1,
+        "sorting": 201,
+        "slug": "Lageranmeldung-PBS",
+        "link": 2,
+        "slug_with_section": "Lageranmeldung#Lageranmeldung-PBS",
+        "menu_name": "Lageranmeldung PBS"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Lagerdaten an Coach",
+    "days": -150,
+    "locale": "de",
+    "published_at": "2021-11-21T01:18:54.700Z",
+    "created_at": "2021-11-21T01:17:45.324Z",
+    "updated_at": "2021-11-21T01:18:54.734Z",
+    "Slug": "Lagerdaten-an-Coach",
+    "responsible": [
+      {
+        "id": 1021,
+        "label": null,
+        "rolle": "LL"
+      },
+      {
+        "id": 1022,
+        "label": null,
+        "rolle": "AL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 3,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 1,
+        "title": "Lagerdaten",
+        "content": "Anfangs Jahr überlegen sich LL und AL gemeinsam, welche Lager sie während des Jahres durchführen möchten. Sie erstellen eine Liste mit allen nötigen Angaben zur Abteilung und den Lagern. LL und AL entscheiden ebenfalls, welche Lager unter J+S angemeldet werden. Für das Zusammentragen dieser Angaben kann das Formular [Vom Coach benötigte Daten für die Anmeldung in der SPORTdb]($lagerdaten-formular$) verwendet werden. So ist sichergestellt, dass die Angaben vollständig sind. Die Liste mit den Angaben zu den geplanten Lagern geben LL und AL anfangs Jahr dem Coach weiter.\nHier folgen einige Erklärungen zum Formular:\n1. «Auszahlungskonto für die J+S-Pauschale»: Hier wird das Konto der Abteilung angegeben. J+S-Beiträge werden ausschliesslich auf ein schweizerisches Bank- oder Postkonto eines Vereins ausbezahlt. Die Angabe einer gültigen IBAN ist dabei zwingend. Nach der Abrechnung des J+S-Angebots Ende Jahr wird die J+S-Entschädigung auf dieses Konto überwiesen.\n2. «J+S-Sportart»: «Kindersport» entspricht der Wolfsstufe und wird gewählt für Lager mit 6 bis 10-jährigen TNs. «Jugendsport» entspricht der Pfadi- oder Pio-Stufe mit TNs, die zwischen 10 und 20 Jahre alt sind. In einem gemischten Lager können TNs von 6 bis 20 Jahren mitgenommen werden. Bei Wolfsstufen kann die Option des gemischten Lagers bei entsprechenden Anerkennungen geprüft werden, damit die 11-jährigen TNs für die Beiträge gelten. Gemäss Lagerreglement der PBS dürfen keine Lager mit Bibern durchgeführt werden (5–6 Jahre).\n3. «Geplante Anzahl TN»: Diese ist im Voraus wahrscheinlich noch nicht bekannt. Deshalb wird hier eine ungefähre Angabe gemacht. Die Zahl kann später korrigiert werden.\n4. «Geplante Anzahl Begleitpersonen»: Damit sind Personen gemeint, die zusätzlich zu den ausgebildeten J+S-Leitenden im Lager dabei sein werden.\n5. «Geplante Sicherheitsaktivität»: Provisorische Angabe, die später korrigiert werden kann, falls jedoch bereits feststeht, dass eine Aktivität im [Sicherheitsbereich]($sicherheitsbereich$) geplant wird, kann der Coach bereits einen Betreuer für diese suchen.\n6. «PLZ/Ort» und «Geburtsdatum»: Nur nötig für Leitende, welche in der Abteilung zum ersten Mal als J+S-Leiter\\*in zum Einsatz kommen, damit der\\*die Coach diese erfassen kann. Es ist wichtig, dass das vollständige Datum und nicht nur der Jahrgang notiert wird. Der Pfadiname ist lediglich als Hilfe für den*die Coach gedacht und wird in der [SPORTdb]($sportdb$) nicht benötigt.\n\n![Screenshot-Lagerdaten-de.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643651408/hering/Screenshot_Lagerdaten_de_c6b3a1cd46.png)",
+        "section": {
+          "id": 1,
+          "title": "A. Vorbereitung der Lagersaison",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-09-28T14:38:23.745Z",
+          "created_at": "2021-09-28T14:37:06.282Z",
+          "updated_at": "2022-01-22T09:42:23.209Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Vorbereitung",
+          "menu_name": "Vorbereitung",
+          "identifier": "bla"
+        },
+        "locale": "de",
+        "published_at": "2021-09-28T14:37:53.279Z",
+        "created_at": "2021-09-28T14:37:39.217Z",
+        "updated_at": "2022-01-31T17:51:12.030Z",
+        "key": "lagerdaten",
+        "Sorting": 1,
+        "sorting": 102,
+        "slug": "Lagerdaten",
+        "link": null,
+        "slug_with_section": "Vorbereitung#Lagerdaten",
+        "menu_name": "Lagerdaten"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Lagerdossier einreichen",
+    "days": -21,
+    "locale": "de",
+    "published_at": "2022-01-23T18:10:32.237Z",
+    "created_at": "2022-01-23T18:10:18.892Z",
+    "updated_at": "2022-01-23T22:12:10.361Z",
+    "Slug": "Lagerdossier-einreichen",
+    "responsible": [
+      {
+        "id": 809,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 52,
+        "rolle": "Abteilungsleiter*in"
+      },
+      {
+        "id": 53,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 16,
+        "title": "Bestandteile des Lagerdossiers",
+        "content": "Aus allen Planungsunterlagen wird ein Lagerdossier zusammengestellt. Dieses wird dem\\*der AL und dem\\*der Coach spätestens 3 Wochen vor dem Lager abgegeben. Informationen zum Lagerdossier findet man auch in der J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$). Das Wichtigste ist hier zusammengefasst. Auf die inhaltliche Gestaltung wird nicht näher eingegangen.\nDas Lagerdossier ist ein Hilfsmittel für alle Leitenden im Lager. Es ist auch die Grundlage für die Beurteilung des Lagerprogramms durch AL und Coach. Es umfasst folgende Unterlagen:\n- Grobprogramm\n- 3 Schwerpunkte (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 14)\n- Motto und roter Faden\n- Beschreibung der Programmblöcke (siehe unten)\n- Für Wanderungen und Velotouren: Marschzeitberechnungen und farbige Karten-ausschnitte (siehe J+S-Broschüre [LS/T Berg]($lst-berg-cudesch$)\n- Sicherheitskonzept fürs Lager und für alle sicherheitsrelevanten Aktivitäten \n- Lagerregeln (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$))\n- Abmachungen im Team, z.&nbsp;B. Aufgaben Tageschef*in, Umgang mit Suchtmitteln etc. (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 5–9)\n- TN-Liste\n\nJe nach Absprache mit AL/Coach/Kassier\\*in:\n- TN-Informationen (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 27f) \n- Menüplan (siehe J+S-Merkblatt [Kochen im Lager]($lst-kueche$) und J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 34)\n- Lager-Budget (siehe [leere Vorlage der PBS]($lagerbudget$) und J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$))\n- Programm Elternabend (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 29)\n",
+        "section": {
+          "id": 8,
+          "title": "D. Lagerdossier einreichen",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:35:15.317Z",
+          "created_at": "2021-10-08T08:35:13.902Z",
+          "updated_at": "2022-01-22T09:44:59.002Z",
+          "key": "lagerdossier",
+          "Sorting": null,
+          "sorting": 4,
+          "slug": "Lagerdossier",
+          "menu_name": "Lagerdossier",
+          "identifier": "Lagerdossier"
+        },
+        "locale": "de",
+        "published_at": "2021-11-17T18:34:01.071Z",
+        "created_at": "2021-11-17T18:33:39.118Z",
+        "updated_at": "2022-01-23T22:46:32.716Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 401,
+        "slug": "Bestandteile-des-Lagerdossiers",
+        "link": null,
+        "slug_with_section": "Lagerdossier#Bestandteile-des-Lagerdossiers",
+        "menu_name": "Bestandteile des Lagerdossiers"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Lagerabrechnung",
+    "days": 30,
+    "locale": "de",
+    "published_at": "2022-01-22T12:11:53.348Z",
+    "created_at": "2022-01-22T12:11:12.763Z",
+    "updated_at": "2022-01-22T12:11:53.384Z",
+    "Slug": "Lagerabrechnung",
+    "responsible": [
+      {
+        "id": 339,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 25,
+        "rolle": "Kassier*in"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 56,
+        "title": "Lagerabrechnung",
+        "content": "Nach dem Lager ist die Lagerabrechnung zu erstellen und es sind alle Spesen abzurechnen. Falls ihr die [leere Vorlage der PBS]($lagerbudget$) verwendet, könnt ihr die realen Zahlen in die gleiche Vorlage wie das Budget einfüllen. Um das genaue Vorgehen für eure Abteilung einzuhalten, besprecht ihr am besten die Vorgaben mit eurem\\*r AL oder Kassier\\*in.",
+        "section": {
+          "id": 12,
+          "title": "G. Lagerabschluss",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:40:28.681Z",
+          "created_at": "2021-10-08T08:40:25.471Z",
+          "updated_at": "2022-01-22T09:29:47.322Z",
+          "key": "lagerabschluss",
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Lagerabschluss",
+          "menu_name": "Lagerabschluss",
+          "identifier": "Lagerabschluss"
+        },
+        "locale": "de",
+        "published_at": "2022-01-22T12:01:18.497Z",
+        "created_at": "2022-01-22T12:00:34.487Z",
+        "updated_at": "2022-01-23T01:58:22.794Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 704,
+        "slug": "Lagerabrechnung",
+        "link": null,
+        "slug_with_section": "Lagerabschluss#Lagerabrechnung",
+        "menu_name": "Lagerabrechnung"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Leitungspersonen und Küche in der MiData erfassen",
+    "days": -30,
+    "locale": "de",
+    "published_at": "2021-11-21T08:05:56.009Z",
+    "created_at": "2021-11-21T07:58:41.662Z",
+    "updated_at": "2021-11-21T08:06:09.379Z",
+    "Slug": "Leitungspersonen-und-Kuche-in-der-MiData-erfassen",
+    "responsible": [
+      {
+        "id": 1206,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [],
+    "chapters": [
+      {
+        "id": 26,
+        "title": "Leitungspersonen und Küche in der MiData erfassen",
+        "content": "Die weiteren Leitungspersonen können sowohl von dem\\*der AL wie auch von dem\\*der erfassten Lagerleiter\\*in selbst hinzugefügt werden. Das Küchenteam soll ebenfalls erfasst werden, damit es der*die Coach für die [Rega-Versicherung]($rega$) einfach in der SPORTdb erfassen kann.\n1. Bereich Lager anwählen\n2. Gewünschtes bereits erfasstes Lager auswählen\n3. Teilnehmende anklicken\n4. Leitungsteam anklicken\n5. Person hinzufügen und gewünschte Art wählen.\n6. Bei «Person suchen» Namen eingeben, gewünschte Person auswählen. Bei Bezeichnung die konkrete Bezeichnung einfüllen (z. B Mitleiter\\*in) und «speichern» klicken.",
+        "section": {
+          "id": 1,
+          "title": "A. Vorbereitung der Lagersaison",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-09-28T14:38:23.745Z",
+          "created_at": "2021-09-28T14:37:06.282Z",
+          "updated_at": "2022-01-22T09:42:23.209Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Vorbereitung",
+          "menu_name": "Vorbereitung",
+          "identifier": "bla"
+        },
+        "locale": "de",
+        "published_at": "2021-11-20T18:46:03.725Z",
+        "created_at": "2021-11-20T18:46:01.545Z",
+        "updated_at": "2022-01-23T22:34:11.838Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 108,
+        "slug": "Leitungspersonen-und-Kuche-in-der-MiData-erfassen",
+        "link": 68,
+        "slug_with_section": "Vorbereitung#Leitungspersonen-und-Kuche-in-der-MiData-erfassen",
+        "menu_name": "Leitungspersonen und Küche in der MiData erfassen"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Rücksendung Landeskarten",
+    "days": 3,
+    "locale": "de",
+    "published_at": "2022-01-22T11:03:54.324Z",
+    "created_at": "2022-01-22T11:03:16.192Z",
+    "updated_at": "2022-01-22T11:06:00.652Z",
+    "Slug": "Rucksendung-Landeskarten",
+    "responsible": [
+      {
+        "id": 279,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 17,
+        "rolle": "swisstopo"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 46,
+        "title": "Landeskarten retournieren",
+        "content": "Die Landeskarten werden von der\\*dem LL per Post an die Swisstopo zurückgeschickt (eventuell per Einschreiben). Dies macht sie spätestens 3 Tage nach dem Lager. Falls nach dem Lager Karten fehlen, schickt die Swisstopo eine Rechnung an den\\*die LL.\n\n**Swisstopo**  \nMarketing und Verkauf  \nVerlagsprodukte  \nSeftigenstr. 264  \nPostfach  \n3084 Wabern",
+        "section": {
+          "id": 12,
+          "title": "G. Lagerabschluss",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:40:28.681Z",
+          "created_at": "2021-10-08T08:40:25.471Z",
+          "updated_at": "2022-01-22T09:29:47.322Z",
+          "key": "lagerabschluss",
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Lagerabschluss",
+          "menu_name": "Lagerabschluss",
+          "identifier": "Lagerabschluss"
+        },
+        "locale": "de",
+        "published_at": "2022-01-22T10:57:23.664Z",
+        "created_at": "2022-01-22T10:57:19.939Z",
+        "updated_at": "2022-02-06T16:33:14.402Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 701,
+        "slug": "Landeskarten-retournieren",
+        "link": 162,
+        "slug_with_section": "Lagerabschluss#Landeskarten-retournieren",
+        "menu_name": "Landeskarten"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Grobprogramm an AL und Coach",
+    "days": -49,
+    "locale": "de",
+    "published_at": "2022-01-17T21:17:27.936Z",
+    "created_at": "2022-01-17T21:12:36.696Z",
+    "updated_at": "2022-01-17T21:39:34.040Z",
+    "Slug": "Grobprogramm-an-AL-und-Coach",
+    "responsible": [
+      {
+        "id": 198,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 8,
+        "rolle": "Coach"
+      },
+      {
+        "id": 9,
+        "rolle": "AL"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 35,
+        "title": "Grobprogramm (Picasso)",
+        "content": "Das Grobprogramm dient dem Leitungsteam bei der Lagervorbereitung und im Lager selbst als Übersicht über die Aktivitäten. Mit der Planung des Grobprogramms sollte frühzeitig begonnen werden. 7 Wochen vor dem Lager gibt der\\*die LL das Grobprogramm zusammen mit der PBS-Lageranmeldung dem*der AL und dem\\*der Coach ab. Der*die Coach gibt dem\\*der LL eine Rückmeldung zum Grobprogramm. Zur Planung des Grobprogramms gibt es im cudesch in der J+S-Broschüre LS/T Lager wertvolle Hinweise.\n\nFolgende Bestandteile müssen im Grobprogramm aufgeführt sein:\n\n- Lagermotto\n- 3 Schwerpunkte des Lagers (siehe J+S-Broschüre LS/T Lager S. 14)\n- Name des*der Lagerleiter*in\n- Organisator (Einheit, Abteilung)\n- Name des*der Coach*s\n- Lagerort und Name des Lagerhauses/-platzes\n- Lagerdaten\n- Lagerart (Haus-/Zeltlager, Sommer-/Herbstlager)\n- Tag, Datum und Tageschef*in\n- Name jedes Programmblocks und der verantwortlichen Person\n- An- und Rückreisezeiten\n- Für J+S-Lager: Lagersportblöcke (LS) und Lageraktivitäten (LA) müssen im Grobprogramm mit einer Nummer versehen und speziell gekennzeichnet werden z. B. mit verschiedenen Farben, siehe [J+S-Broschüre LS/T Grundlagen]($lst-grundlagen$).\n\nZur Unterstützung kann ein [Mustergrobprogramm von J+S]($muster-gp-lager-lst-kinder-und-jugendsport$) oder eine [leere Vorlage der PBS ]($vorlage-gp-pbs$) dienen.\n\n### Programmvorgaben der PBS\nDie PBS lässt den Leitenden bei der Gestaltung des Programms sehr viele Freiheiten. Das Programm soll altersgerecht, ausgewogen und abwechslungsreich sein und die Pfadigrundlagen berücksichtigen. Das [PBS-Reglement über die Vorbereitung und Durchführung von Lagern]($lagerreglement$) muss eingehalten werden.",
+        "section": {
+          "id": 5,
+          "title": "B. Lageranmeldung und Grobprogramm",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-07T08:57:38.191Z",
+          "created_at": "2021-10-07T08:57:35.643Z",
+          "updated_at": "2022-01-22T09:42:30.997Z",
+          "key": "lageranmeldung",
+          "Sorting": 2,
+          "sorting": 2,
+          "slug": "Lageranmeldung",
+          "menu_name": "Lageranmeldung",
+          "identifier": "a"
+        },
+        "locale": "de",
+        "published_at": "2022-01-17T21:20:19.175Z",
+        "created_at": "2022-01-17T21:08:19.675Z",
+        "updated_at": "2022-01-23T14:12:47.345Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 202,
+        "slug": "Grobprogramm-(Picasso)",
+        "link": null,
+        "slug_with_section": "Lageranmeldung#Grobprogramm-(Picasso)",
+        "menu_name": "Grobprogramm"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Einwohnergemeinde informieren",
+    "days": -30,
+    "locale": "de",
+    "published_at": "2022-01-22T16:39:19.928Z",
+    "created_at": "2022-01-22T16:29:54.327Z",
+    "updated_at": "2022-01-22T16:39:19.963Z",
+    "Slug": "Einwohnergemeinde-informieren",
+    "responsible": [
+      {
+        "id": 447,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 31,
+        "rolle": "Einwohnergemeinde Lagerort"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 69,
+        "title": "Einwohnergemeinde des Lagerorts informieren",
+        "content": "Rund einen Monat vor der Durchführung des Lagers sollte die Einwohnergemeinde, auf deren Boden das Lager durchgeführt wird, über das Lager informiert werden. Die Kontaktaufnahme mit der Gemeinde ist aus verschiedenen Gründen sinnvoll. Einerseits kann euch die Gemeinde über kantonale oder kommunale Vorschriften informieren. Andererseits ist es im Katastrophenfall wichtig, dass die Behörden über eure Anwesenheit informiert sind (Evakuierung). Eventuell kann euch die Gemeinde ausserdem auch beim Finden einer Notunterkunft behilflich sein (z. B. kommunale Zivilschutzanlage). Folgende Angaben sollten der Gemeinde sinnvollerweise geschickt werden:\n- Dauer des Lagers und Lagerform\n- Name der Abteilung / Gruppe\n- Name und Kontaktangaben des\\*der Hauptlagerleiters\\*in\n- Name des Landbesitzers\n- Koordinaten des Lagerplatzes\n- Anfrage bezüglich spezieller kantonaler oder kommunaler Vorschriften (Feuerverbote, Grundwasserschutz, Naturschutzgebiete, Wildschonzeiten, …)\n",
+        "section": {
+          "id": 5,
+          "title": "B. Lageranmeldung und Grobprogramm",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-07T08:57:38.191Z",
+          "created_at": "2021-10-07T08:57:35.643Z",
+          "updated_at": "2022-01-22T09:42:30.997Z",
+          "key": "lageranmeldung",
+          "Sorting": 2,
+          "sorting": 2,
+          "slug": "Lageranmeldung",
+          "menu_name": "Lageranmeldung",
+          "identifier": "a"
+        },
+        "locale": "de",
+        "published_at": "2022-01-22T16:40:36.888Z",
+        "created_at": "2022-01-22T16:28:44.272Z",
+        "updated_at": "2022-01-23T14:03:21.200Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 204,
+        "slug": "Einwohnergemeinde-des-Lagerorts-informieren",
+        "link": null,
+        "slug_with_section": "Lageranmeldung#Einwohnergemeinde-des-Lagerorts-informieren",
+        "menu_name": "Einwohnergemeinde des Lagerorts informieren"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Lagerbewilligung",
+    "days": -7,
+    "locale": "de",
+    "published_at": "2022-01-22T12:53:30.793Z",
+    "created_at": "2022-01-22T12:53:27.360Z",
+    "updated_at": "2022-01-22T12:53:30.819Z",
+    "Slug": "Lagerbewilligung",
+    "responsible": [
+      {
+        "id": 413,
+        "label": null,
+        "rolle": "AL"
+      },
+      {
+        "id": 414,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 28,
+        "rolle": "LL"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 29,
+        "title": "Lagerbewilligung",
+        "content": "AL und Coach bewilligen mit ihrer Unterschrift das Lager. Für Aktivitäten im Sicherheitsbereich braucht es eine zusätzliche Unterschrift des,\\*der verantwortlichen Experten\\*in (siehe [Aktivitäten in den Sicherheitsbereichen]($sicherheitsbereich$)).\nAL und Coach informieren den\\*die LL über die Bewilligung des Lagers, am besten an einem gemeinsamen Treffen. Der\\*die Coach sendet je eine Kopie der von allen unterzeichneten Bewilligung an LL und AL. Im Falle einer Nichtbewilligung sendet er*sie zusätzlich eine Kopie an den KV und die [Geschäftsstelle der PBS](mailto:info@pbs.ch).\n\n### Erklärungen zum Formular\n1. «Bewilligung»: Dabei bedeutet «bewilligt», dass das Programm wie geplant durchgeführt werden kann; «bewilligt mit Auflagen», dass das Programm in den entsprechenden Punkten durch den*die LL angepasst werden muss; «nicht bewilligt», dass das Lager in der vorgesehenen Form nicht stattfinden darf.\n1. «Bewilligung Sicherheitsaktivitäten»: Der\\*die Coach bestätigt mit seiner Unterschrift die Bewilligung, bzw. Nicht-Bewilligung der Aktivität im Sicherheitsbereich. Falls er*sie die Betreuung der Sicherheitsaktivitäten an eine Drittperson delegiert hat, so unterschreibt hier diese Person.\n1. «Bestätigung durch den\\*die LL»: Im Falle von Bewilligung mit Auflagen oder bei Nichtbewilligung des Lagers bestätigt der\\*die LL ihre Kenntnisnahme mit ihrer Unterschrift.\n1. «Betreuungsaktivitäten des*der Coach\\*s»: In diesem Abschnitt hält der\\*die Coach fest, wann die einzelnen Schritte der Lagervorbereitung stattgefunden haben. Dieser Teil wird anstelle des J+S-Coachjournals ausgefüllt und kann vom kantonalen Sportamt zur Einsicht eingefordert werden.\n\n### Weitere Informationen\n- [Reglement zur Planung und Durchführung von Lagern (PBS)]($lagerreglement$)\n- [Leitfaden zur Durchführung von J+S-Angeboten LS/T (J+S)]($js-angebotsleitfaden$)\n\n![de-lagerreglement.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642855438/hering/de_lagerreglement_038b785506.png)\n",
+        "section": {
+          "id": 10,
+          "title": "F. Lagerbewilligung",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:38:59.875Z",
+          "created_at": "2021-10-08T08:38:58.056Z",
+          "updated_at": "2022-01-22T09:31:28.008Z",
+          "key": "lagerbewilligung",
+          "Sorting": null,
+          "sorting": 6,
+          "slug": "Lagerbewilligung",
+          "menu_name": "Lagerbewilligung",
+          "identifier": "Lagerbewilligung"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:26:12.845Z",
+        "created_at": "2021-11-21T00:25:01.676Z",
+        "updated_at": "2022-01-23T23:38:06.992Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 602,
+        "slug": "Lagerbewilligung",
+        "link": 24,
+        "slug_with_section": "Lagerbewilligung#Lagerbewilligung",
+        "menu_name": "Lagerbewilligung"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "TN-Liste anpassen",
+    "days": 10,
+    "locale": "de",
+    "published_at": "2022-01-22T11:19:39.770Z",
+    "created_at": "2022-01-22T11:19:11.373Z",
+    "updated_at": "2022-01-22T11:19:39.798Z",
+    "Slug": "TN-Liste-anpassen",
+    "responsible": [
+      {
+        "id": 303,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 19,
+        "rolle": "MiData"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 49,
+        "title": "TN-Liste und Lagerabschluss in der MiData",
+        "content": "Der\\*die LL passt die vor dem Lager erfassten TNs und Leitenden in der [MiData]($midata$) an und teilt dies dem\\*der Coach bis spätestens 10 Tage nach dem Lager mit.\nAnschliessend überträgt der*die Coach die aktuelle TN-Liste in die [SPORTdb]($sportdb$). Falls bereits die Rega-Anmeldung über die SPORTdb gemacht wurde, müssen die Angaben nur noch korrigiert werden. Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen für den\\*die Coach sind im Dokument  [SPORTdb Schritt für Schritt]($sportdb-schritt-fuer-schritt$).\nDer\\*die LL schliesst danach das Lager in der MiData ab, indem er\\*sie den Status auf «abgeschlossen» setzt.",
+        "section": {
+          "id": 12,
+          "title": "G. Lagerabschluss",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:40:28.681Z",
+          "created_at": "2021-10-08T08:40:25.471Z",
+          "updated_at": "2022-01-22T09:29:47.322Z",
+          "key": "lagerabschluss",
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Lagerabschluss",
+          "menu_name": "Lagerabschluss",
+          "identifier": "Lagerabschluss"
+        },
+        "locale": "de",
+        "published_at": "2022-01-22T11:11:30.450Z",
+        "created_at": "2022-01-22T11:08:42.691Z",
+        "updated_at": "2022-01-23T22:07:11.531Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 702,
+        "slug": "TN-Liste-und-Lagerabschluss-in-der-MiData",
+        "link": null,
+        "slug_with_section": "Lagerabschluss#TN-Liste-und-Lagerabschluss-in-der-MiData",
+        "menu_name": "TN-Liste"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Anmeldung der Lager bei J+S via SPORTdb",
+    "days": -30,
+    "locale": "de",
+    "published_at": "2021-11-21T07:44:57.834Z",
+    "created_at": "2021-11-21T07:44:54.631Z",
+    "updated_at": "2021-11-21T07:45:10.730Z",
+    "Slug": "Anmeldung-der-Lager-bei-J+S-via-SPORTdb",
+    "responsible": [
+      {
+        "id": 1242,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [],
+    "chapters": [
+      {
+        "id": 27,
+        "title": "Anmeldung der Lager bei J+S via SPORTdb",
+        "content": "Der\\*die Coach meldet alle Lager der Abteilung zusammen als Angebot bei J+S an. Diese Anmeldung macht er\\*sie online in der [SPORTdb]($sportdb$). Den Zugang zur SPORTdb erhält er\\*sie vom KV.\n\n### Eröffnung des J+S-Angebots\nIn der  SPORTdb wird anfangs Jahr unter «Angebotsverwaltung → Neues Angebot eröffnen» ein neues Angebot für das laufende Jahr erstellt, in dem alle J+S-Lager erfasst werden. Pro Abteilung wird nur ein Angebot eröffnet.\nNach der Eröffnung kann das Angebot unter «Angebotsverwaltung → Angebotsübersicht» jederzeit aufgerufen werden. Mit der Bearbeitung des Angebots während des Jahres ändert sich der sogenannte «Status». Die «Checkliste» des Angebots gibt einen Überblick über die nötigen Bearbeitungsschritte in jedem Status. Für die Bearbeitung des Angebots folgt man jeweils den Registerkarten von links nach rechts. Das neu eröffnete Angebot erscheint in der Angebotsübersicht unter «noch nicht gemeldete Angebote». \n\n### Bewilligungsverfahren\nIm Status «Bewilligungsverfahren» wird das Angebot beim kantonalen Sportamt geprüft. Der Bewilligungsantrag von dem\\*der Coach an das kantonale Sportamt wird per E-Mail bestätigt (Betreff: «Empfangsbestätigung für Ihr J+S Angebot Nr. XXXXXX»). Die anschliessende Bewilligung durch das kantonale Sportamt wird wiederum per E-Mail bestätigt (Betreff: «Bewilligung für Ihr J+S-Angebot Nr. XXXXXX»). Damit wechselt das Angebot in den Status «Durchführung».\n\n### Arbeiten in der SPORTdb\nDie genauen Abläufe inklusive Schritt für Schritt Anleitungen sind ausführlich im Dokument  [SPORTdb Schritt für Schritt für J+S-Coaches]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten. Fragen betreffend dem Datenschutz in der SPORTdb beantwortet das [Merkblatt Datenerfassung und Datenschutz in der SPORTdb (J+S)]($js-datenschutz$).\n",
+        "section": {
+          "id": 1,
+          "title": "A. Vorbereitung der Lagersaison",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-09-28T14:38:23.745Z",
+          "created_at": "2021-09-28T14:37:06.282Z",
+          "updated_at": "2022-01-22T09:42:23.209Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Vorbereitung",
+          "menu_name": "Vorbereitung",
+          "identifier": "bla"
+        },
+        "locale": "de",
+        "published_at": "2021-11-20T18:54:26.468Z",
+        "created_at": "2021-11-20T18:53:45.990Z",
+        "updated_at": "2022-01-23T22:56:48.982Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 109,
+        "slug": "Anmeldung-der-Lager-bei-J+S-via-SPORTdb",
+        "link": null,
+        "slug_with_section": "Vorbereitung#Anmeldung-der-Lager-bei-J+S-via-SPORTdb",
+        "menu_name": "Anmeldung der Lager bei J+S via SPORTdb"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "title": "J+S Leihmaterialbestellung",
+    "days": -40,
+    "locale": "de",
+    "published_at": "2022-01-23T16:53:07.857Z",
+    "created_at": "2022-01-23T16:53:00.705Z",
+    "updated_at": "2022-01-23T17:35:33.587Z",
+    "Slug": "J+S-Leihmaterialbestellung",
+    "responsible": [
+      {
+        "id": 742,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 44,
+        "rolle": "Kantonales Sportamt"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 31,
+        "title": "J+S-Leihmaterialbestellung",
+        "content": "Für Lager, welche unter J+S angemeldet werden, kann bei J+S diverses Material bestellt werden. Dafür verwendet man das aktuelle [Formular J+S-Leihmaterialbestellung]($formular-js-leihmaterial$). Die Ausleihe des Materials kostet 60 Rp. / kg Material (inkl. Palette). Die Kosten werden direkt bei der Auszahlung der J+S-Entschädigung Ende Jahr abgezogen. Fehlendes oder fahrlässig beschädigtes Material wird nach dem Lager in Rechnung gestellt. Die Organisation haftet dafür. Der\\*die LL (auf dem Formular als «Kursleiter» bezeichnet) sendet das ausgefüllte Formular an den\\*die Coach. Diese\\*r ergänzt das Formular und sendet es an das [kantonale Sportamt]($sportamt-kantone$) weiter. Dieses schickt dem Coach eine Bestätigung zurück. Das Formular muss nicht unterzeichnet werden und kann per E-Mail eingereicht werden.\nFür genaue Informationen zur Auslieferung, Annahme und Rückgabe des Materials siehe [Leitfaden für J+S-Leihmaterial für die Sportangebote und die J+S-Kaderbildung von J+S]($leitfaden-js-leihmaterial$). \nHier folgen einige Erklärungen zum Formular:\n\n1. **«Personen-Nr.»**: Die J+S-Personennummer von dem\\*r Lagerleiter\\*in ist auf dem J+S-Ausweis zu finden (oder in der SPORTdb). **«Angebotsnummer»**: Die Angebotsnummer ist die Nummer des J+S-Angebots, in dem alle Lager eines Jahres zusammengefasst sind. Sie ist nur für den\\*die Coach in der SPORTdb ersichtlich (bei Coach nachfragen oder freilassen und durch Coach ausfüllen lassen).\n2. **«Lager»** oder **«Kaderbildung»**: Bei einem Lager muss «Lager» angekreuzt werden. Mit Kaderbildung sind die Ausbildungskurse für Leitende gemeint.\n3. **«Lieferdatum/Datum der Rückgabe»**: Hier wird das Datum für den Transport festgelegt (nur Arbeitstage). Wenn eine Woche vor diesem Termin keine schriftliche Bestellbestätigung von J+S eingetroffen ist, muss mit J+S Kontakt aufgenommen werden. Das Material darf maximal für 7 Monate ausgeliehen werden. Die Rückgabe erfolgt spätestens 3 Tage nach dem Ende des (letzten) Lagers. Das Material muss in gereinigtem Zustand zurückgegeben werden. Am Abholtag muss das Material bereits um 8.00 Uhr bereitstehen.\n4. **«Zustelladresse des Materials»**: Hier muss eine genaue Adresse angegeben werden. Das Material wird werktags zwischen 8.00 und 18.00 Uhr ausgeliefert. Wird es beispielsweise auf einen Bauernhof in der Nähe des Lagerhauses/-platzes bestellt, so muss dies mit dem Landwirt vorgängig abgesprochen werden. Der Lieferungsplatz muss mit dem Lastwagen erreichbar sein und mit dem Palettrolli ein- und ausgeladen werden können, d. h. es kann nicht auf einen Platz im Wald geliefert werden. Am Liefertag muss man für den Lieferanten telefonisch erreichbar sein (Kontakt bei Problemen).\n5. **«Franko-Domizil»**: Die Lieferung des Materials erfolgt grundsätzlich «Franko Domizil». Das bedeutet, dass das Material per Lastwagen geliefert wird. Alternativ kann es in der Lagerbewirtschaftung in Thun abgeholt werden.\n\n![C1-de-leihmaterialbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642957260/hering/C1_de_leihmaterialbestellung_0da38973c9.png)\n\nKontakt bei Problemen mit Leihmaterial  \n(immer LM-Nummer gemäss Bestätigung/Lieferschein angeben)  \n- Armeelogistikcenter Thun: material-js.lba@vtg.admin.ch / 033 / 228 26 83\n- Transportservice VBS: 058 / 464 25 27\n",
+        "section": {
+          "id": 6,
+          "title": "C. Dienstleistungen bestellen",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:34:27.517Z",
+          "created_at": "2021-10-08T08:34:25.907Z",
+          "updated_at": "2022-01-22T09:43:32.812Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Dienstleistungen-bestellen",
+          "menu_name": "Dienstleistungen bestellen",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:41:06.629Z",
+        "created_at": "2021-11-21T00:38:53.810Z",
+        "updated_at": "2022-01-31T16:50:34.926Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 301,
+        "slug": "J+S-Leihmaterialbestellung",
+        "link": 27,
+        "slug_with_section": "Dienstleistungen-bestellen#J+S-Leihmaterialbestellung",
+        "menu_name": "J+S-Leihmaterialbestellung"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "title": "J+S Leihmaterialbestellung an Coach",
+    "days": -42,
+    "locale": "de",
+    "published_at": "2022-01-23T16:46:28.358Z",
+    "created_at": "2022-01-23T16:45:05.025Z",
+    "updated_at": "2022-01-23T16:46:28.390Z",
+    "Slug": "J+S-Leihmaterialbestellung-an-Coach",
+    "responsible": [
+      {
+        "id": 737,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 40,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 31,
+        "title": "J+S-Leihmaterialbestellung",
+        "content": "Für Lager, welche unter J+S angemeldet werden, kann bei J+S diverses Material bestellt werden. Dafür verwendet man das aktuelle [Formular J+S-Leihmaterialbestellung]($formular-js-leihmaterial$). Die Ausleihe des Materials kostet 60 Rp. / kg Material (inkl. Palette). Die Kosten werden direkt bei der Auszahlung der J+S-Entschädigung Ende Jahr abgezogen. Fehlendes oder fahrlässig beschädigtes Material wird nach dem Lager in Rechnung gestellt. Die Organisation haftet dafür. Der\\*die LL (auf dem Formular als «Kursleiter» bezeichnet) sendet das ausgefüllte Formular an den\\*die Coach. Diese\\*r ergänzt das Formular und sendet es an das [kantonale Sportamt]($sportamt-kantone$) weiter. Dieses schickt dem Coach eine Bestätigung zurück. Das Formular muss nicht unterzeichnet werden und kann per E-Mail eingereicht werden.\nFür genaue Informationen zur Auslieferung, Annahme und Rückgabe des Materials siehe [Leitfaden für J+S-Leihmaterial für die Sportangebote und die J+S-Kaderbildung von J+S]($leitfaden-js-leihmaterial$). \nHier folgen einige Erklärungen zum Formular:\n\n1. **«Personen-Nr.»**: Die J+S-Personennummer von dem\\*r Lagerleiter\\*in ist auf dem J+S-Ausweis zu finden (oder in der SPORTdb). **«Angebotsnummer»**: Die Angebotsnummer ist die Nummer des J+S-Angebots, in dem alle Lager eines Jahres zusammengefasst sind. Sie ist nur für den\\*die Coach in der SPORTdb ersichtlich (bei Coach nachfragen oder freilassen und durch Coach ausfüllen lassen).\n2. **«Lager»** oder **«Kaderbildung»**: Bei einem Lager muss «Lager» angekreuzt werden. Mit Kaderbildung sind die Ausbildungskurse für Leitende gemeint.\n3. **«Lieferdatum/Datum der Rückgabe»**: Hier wird das Datum für den Transport festgelegt (nur Arbeitstage). Wenn eine Woche vor diesem Termin keine schriftliche Bestellbestätigung von J+S eingetroffen ist, muss mit J+S Kontakt aufgenommen werden. Das Material darf maximal für 7 Monate ausgeliehen werden. Die Rückgabe erfolgt spätestens 3 Tage nach dem Ende des (letzten) Lagers. Das Material muss in gereinigtem Zustand zurückgegeben werden. Am Abholtag muss das Material bereits um 8.00 Uhr bereitstehen.\n4. **«Zustelladresse des Materials»**: Hier muss eine genaue Adresse angegeben werden. Das Material wird werktags zwischen 8.00 und 18.00 Uhr ausgeliefert. Wird es beispielsweise auf einen Bauernhof in der Nähe des Lagerhauses/-platzes bestellt, so muss dies mit dem Landwirt vorgängig abgesprochen werden. Der Lieferungsplatz muss mit dem Lastwagen erreichbar sein und mit dem Palettrolli ein- und ausgeladen werden können, d. h. es kann nicht auf einen Platz im Wald geliefert werden. Am Liefertag muss man für den Lieferanten telefonisch erreichbar sein (Kontakt bei Problemen).\n5. **«Franko-Domizil»**: Die Lieferung des Materials erfolgt grundsätzlich «Franko Domizil». Das bedeutet, dass das Material per Lastwagen geliefert wird. Alternativ kann es in der Lagerbewirtschaftung in Thun abgeholt werden.\n\n![C1-de-leihmaterialbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642957260/hering/C1_de_leihmaterialbestellung_0da38973c9.png)\n\nKontakt bei Problemen mit Leihmaterial  \n(immer LM-Nummer gemäss Bestätigung/Lieferschein angeben)  \n- Armeelogistikcenter Thun: material-js.lba@vtg.admin.ch / 033 / 228 26 83\n- Transportservice VBS: 058 / 464 25 27\n",
+        "section": {
+          "id": 6,
+          "title": "C. Dienstleistungen bestellen",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:34:27.517Z",
+          "created_at": "2021-10-08T08:34:25.907Z",
+          "updated_at": "2022-01-22T09:43:32.812Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Dienstleistungen-bestellen",
+          "menu_name": "Dienstleistungen bestellen",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:41:06.629Z",
+        "created_at": "2021-11-21T00:38:53.810Z",
+        "updated_at": "2022-01-31T16:50:34.926Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 301,
+        "slug": "J+S-Leihmaterialbestellung",
+        "link": 27,
+        "slug_with_section": "Dienstleistungen-bestellen#J+S-Leihmaterialbestellung",
+        "menu_name": "J+S-Leihmaterialbestellung"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Lageranmeldung PBS iniziieren",
+    "days": -49,
+    "locale": "de",
+    "published_at": "2021-11-21T07:55:46.666Z",
+    "created_at": "2021-11-21T07:55:27.988Z",
+    "updated_at": "2022-01-22T16:49:28.171Z",
+    "Slug": "Lageranmeldung-PBS-iniziieren",
+    "responsible": [
+      {
+        "id": 157,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 6,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 6,
+        "title": "Lageranmeldung PBS",
+        "content": "### Angaben des\\*der Lagerleiter\\*in\nMit der PBS-Lageranmeldung in der [MiData]($midata$) wird jedes Lager im Voraus beim KV und bei der PBS gemeldet. Der\\*die LL ergänzt bis spätestens 7&nbsp;Wochen vor dem Lager alle Angaben des Lagers in der MiData und schickt das Grobprogramm zeitgleich an AL und Coach.\n\n### Angaben des\\*der Coach\\*s\nDer\\*die Coach kann sich nun in der [MiData]($midata$) einloggen, seinen\\*ihren Teil der Lageranmeldung ausfüllen und per Button einreichen. Die Lageranmeldung wird dann automatisch an PBS und KV übermittelt. Die PBS benötigt diese Informationen für die Reaktion in Krisenfällen sowie für statistische Angaben gegenüber der Eidgenossenschaft. Der\\*die Coach loggt sich dafür mit seinem\\*ihren Login in der MiData ein und navigiert zur eigenen Coach-Abteilung. Danach geht er\\*sie wie folgt vor:\n1. «Lager» anklicken\n2. Entsprechendes Lager auswählen\n3. «Bearbeiten» klicken\n4. Angaben in allen Registern prüfen\n5. Das Register Betreuung wählen. «Coach bestätigt» klicken sowie die Angaben zum Coachbesuch und den [Aktivitäten im Sicherheitsbereich]($sicherheitsbereich$) ausfüllen.\n7. «Speichern» klicken\n7. Wenn alle Angaben vollständig sind: Lageranmeldung an die PBS schicken mittels Klicken des Buttons «Einreichen».\n\n![de-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_A_b3b32a88d3.png)\n\n![de-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_B_eb31dc00ec.png)\n\n![de-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_C_f62f7b963e.png)\n",
+        "section": {
+          "id": 5,
+          "title": "B. Lageranmeldung und Grobprogramm",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-07T08:57:38.191Z",
+          "created_at": "2021-10-07T08:57:35.643Z",
+          "updated_at": "2022-01-22T09:42:30.997Z",
+          "key": "lageranmeldung",
+          "Sorting": 2,
+          "sorting": 2,
+          "slug": "Lageranmeldung",
+          "menu_name": "Lageranmeldung",
+          "identifier": "a"
+        },
+        "locale": "de",
+        "published_at": "2021-10-07T09:04:37.416Z",
+        "created_at": "2021-10-07T09:03:55.201Z",
+        "updated_at": "2022-01-23T12:22:05.305Z",
+        "key": "lageranmeldung_pbs",
+        "Sorting": 1,
+        "sorting": 201,
+        "slug": "Lageranmeldung-PBS",
+        "link": 2,
+        "slug_with_section": "Lageranmeldung#Lageranmeldung-PBS",
+        "menu_name": "Lageranmeldung PBS"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Jugendurlaub inizieren",
+    "days": -77,
+    "locale": "de",
+    "published_at": "2021-11-21T07:48:39.294Z",
+    "created_at": "2021-11-21T07:48:07.205Z",
+    "updated_at": "2021-11-21T07:52:40.178Z",
+    "Slug": "Jugendurlaub-inizieren",
+    "responsible": [
+      {
+        "id": 1271,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 4,
+        "rolle": "AL"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 28,
+        "title": "Jugendurlaub",
+        "content": "Berufstätige Leitende können für ein Lager Jugendurlaub beziehen. Bis zum 30. Altersjahr haben Lernende und Arbeitende gesetzlichen Anspruch auf eine zusätzliche Woche unbezahlten Urlaub für ausserschulische Jugendarbeit (Lager, Ausbildungskurse, Anlässe). Die entsprechende Leitungsperson füllt alleine oder gemeinsam mit dem\\*der AL den oberen Teil des Formulars [Bestätigung für den Bezug von Urlaub]($jugendurlaub-formular$) aus. Der\\*die AL ergänzt den unteren Teil und bestätigt damit die Durchführung des Lagers. Mit diesem Formular kann der\\*die Leiter\\*in beim Lehrbetrieb bzw. dem Arbeitgeber bis spätestens 2 Monate im Voraus den Jugendurlaub beantragen. Weitere Informationen sind dem   [Merkblatt zum Jugendurlaub]($jugendurlaub-merkblatt$) oder der Webseite [jugendurlaub.ch]($jugendurlaub$) zu entnehmen.",
+        "section": {
+          "id": 1,
+          "title": "A. Vorbereitung der Lagersaison",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-09-28T14:38:23.745Z",
+          "created_at": "2021-09-28T14:37:06.282Z",
+          "updated_at": "2022-01-22T09:42:23.209Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Vorbereitung",
+          "menu_name": "Vorbereitung",
+          "identifier": "bla"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:21:19.732Z",
+        "created_at": "2021-11-20T18:58:45.133Z",
+        "updated_at": "2022-01-23T01:33:31.882Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 110,
+        "slug": "Jugendurlaub",
+        "link": null,
+        "slug_with_section": "Vorbereitung#Jugendurlaub",
+        "menu_name": "Jugendurlaub"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Landeskartenbestellung an Coach",
+    "days": -28,
+    "locale": "de",
+    "published_at": "2022-01-23T17:36:28.853Z",
+    "created_at": "2022-01-23T17:36:26.966Z",
+    "updated_at": "2022-01-23T17:37:39.958Z",
+    "Slug": "Landeskartenbestellung-an-Coach",
+    "responsible": [
+      {
+        "id": 782,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 46,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 32,
+        "title": "Landeskartenbestellung swisstopo",
+        "content": "Für J+S-Lager können bei der Swisstopo Landeskarten bestellt werden. Dafür verwendet man das Formular [Landeskartenbestellung]($formular-landeskartenbestellung$). Die Ausleihe ist kostenlos, der Rückversand mit der Post muss jedoch selber bezahlt werden. Fehlende und zu spät zurückgesendete Karten werden in Rechnung gestellt. Pro 3 TNs im J+S-Alter kann ein Exemplar eines Kartenblatts bestellt werden. Der\\*die LL sendet das ausgefüllte Bestellformular an den\\*die Coach. Diese\\*r sendet das Formular direkt an mapsales@swisstopo.ch. Das Formular kann auch per E-Mail eingereicht werden. Unterschriften können digital eingefügt werden, ein Ausdruck oder Scan ist nicht nötig. Die Karten werden dem\\*der LL per Post nach Hause geschickt. \nHier folgen einige Erklärungen zum Formular:\n\n1. **«Greifbar»**: Der\\*die LL überlegt sich, ab welchem Datum er\\*sie die Karten benötigt. Trifft die Bestellung 3 Wochen vorher bei der Swisstopo ein, werden die Karten bis zum angegebenen Zeitpunkt an die genannte Lieferadresse geschickt. Es ist sinnvoll, die Bestellung so früh zu machen, dass die Karten für das Rekognoszieren verwendet werden können.\n2. **«Rückgabe»**: Die Karten müssen von dem\\*der LL per Post fristgerecht zurückgesendet werden und zwar bis 3 Tage nach dem Lager (siehe [Leitfaden für spezielle Leistungen für die J+S-Angebote]($leitfaden-js-spezielle-leistungen$)).\n3. **«Organisation»**: Hier notiert der\\*die LL den Namen der Abteilung.\n4. **«Bezugsberechtigung»**: Es können Landeskarten im Massstab 1:25'000 und 1:50'000 und Zusammensetzungen ausgeliehen werden. Der\\*die LL ist berechtigt pro 3 J+S-TNs 1 Exemplar eines Kartenblatts zu bestellen.\n5. **«Angebot-Nr.»**: Hier ergänzt der\\*die Coach die Nummer des J+S-Angebots gemäss der Anmeldung in der [SPORTdb]($sportdb$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
+        "section": {
+          "id": 6,
+          "title": "C. Dienstleistungen bestellen",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:34:27.517Z",
+          "created_at": "2021-10-08T08:34:25.907Z",
+          "updated_at": "2022-01-22T09:43:32.812Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Dienstleistungen-bestellen",
+          "menu_name": "Dienstleistungen bestellen",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:41:11.157Z",
+        "created_at": "2021-11-21T00:39:22.839Z",
+        "updated_at": "2022-02-06T16:39:38.661Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 302,
+        "slug": "Landeskartenbestellung-swisstopo",
+        "link": 218,
+        "slug_with_section": "Dienstleistungen-bestellen#Landeskartenbestellung-swisstopo",
+        "menu_name": "Landeskartenbestellung swisstopo"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Jugendurlaub bestätigen",
+    "days": -62,
+    "locale": "de",
+    "published_at": "2021-11-21T07:50:53.893Z",
+    "created_at": "2021-11-21T07:49:44.955Z",
+    "updated_at": "2021-11-21T07:52:50.082Z",
+    "Slug": "Jugendurlaub-bestatigen",
+    "responsible": [
+      {
+        "id": 1280,
+        "label": null,
+        "rolle": "AL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 5,
+        "rolle": "Arbeitgeber*in"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 28,
+        "title": "Jugendurlaub",
+        "content": "Berufstätige Leitende können für ein Lager Jugendurlaub beziehen. Bis zum 30. Altersjahr haben Lernende und Arbeitende gesetzlichen Anspruch auf eine zusätzliche Woche unbezahlten Urlaub für ausserschulische Jugendarbeit (Lager, Ausbildungskurse, Anlässe). Die entsprechende Leitungsperson füllt alleine oder gemeinsam mit dem\\*der AL den oberen Teil des Formulars [Bestätigung für den Bezug von Urlaub]($jugendurlaub-formular$) aus. Der\\*die AL ergänzt den unteren Teil und bestätigt damit die Durchführung des Lagers. Mit diesem Formular kann der\\*die Leiter\\*in beim Lehrbetrieb bzw. dem Arbeitgeber bis spätestens 2 Monate im Voraus den Jugendurlaub beantragen. Weitere Informationen sind dem   [Merkblatt zum Jugendurlaub]($jugendurlaub-merkblatt$) oder der Webseite [jugendurlaub.ch]($jugendurlaub$) zu entnehmen.",
+        "section": {
+          "id": 1,
+          "title": "A. Vorbereitung der Lagersaison",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-09-28T14:38:23.745Z",
+          "created_at": "2021-09-28T14:37:06.282Z",
+          "updated_at": "2022-01-22T09:42:23.209Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Vorbereitung",
+          "menu_name": "Vorbereitung",
+          "identifier": "bla"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:21:19.732Z",
+        "created_at": "2021-11-20T18:58:45.133Z",
+        "updated_at": "2022-01-23T01:33:31.882Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 110,
+        "slug": "Jugendurlaub",
+        "link": null,
+        "slug_with_section": "Vorbereitung#Jugendurlaub",
+        "menu_name": "Jugendurlaub"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Landeskartenbestellung",
+    "days": -21,
+    "locale": "de",
+    "published_at": "2022-01-23T17:38:50.459Z",
+    "created_at": "2022-01-23T17:38:32.656Z",
+    "updated_at": "2022-01-23T17:38:50.479Z",
+    "Slug": "Landeskartenbestellung",
+    "responsible": [
+      {
+        "id": 786,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 49,
+        "rolle": "Swisstopo"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 32,
+        "title": "Landeskartenbestellung swisstopo",
+        "content": "Für J+S-Lager können bei der Swisstopo Landeskarten bestellt werden. Dafür verwendet man das Formular [Landeskartenbestellung]($formular-landeskartenbestellung$). Die Ausleihe ist kostenlos, der Rückversand mit der Post muss jedoch selber bezahlt werden. Fehlende und zu spät zurückgesendete Karten werden in Rechnung gestellt. Pro 3 TNs im J+S-Alter kann ein Exemplar eines Kartenblatts bestellt werden. Der\\*die LL sendet das ausgefüllte Bestellformular an den\\*die Coach. Diese\\*r sendet das Formular direkt an mapsales@swisstopo.ch. Das Formular kann auch per E-Mail eingereicht werden. Unterschriften können digital eingefügt werden, ein Ausdruck oder Scan ist nicht nötig. Die Karten werden dem\\*der LL per Post nach Hause geschickt. \nHier folgen einige Erklärungen zum Formular:\n\n1. **«Greifbar»**: Der\\*die LL überlegt sich, ab welchem Datum er\\*sie die Karten benötigt. Trifft die Bestellung 3 Wochen vorher bei der Swisstopo ein, werden die Karten bis zum angegebenen Zeitpunkt an die genannte Lieferadresse geschickt. Es ist sinnvoll, die Bestellung so früh zu machen, dass die Karten für das Rekognoszieren verwendet werden können.\n2. **«Rückgabe»**: Die Karten müssen von dem\\*der LL per Post fristgerecht zurückgesendet werden und zwar bis 3 Tage nach dem Lager (siehe [Leitfaden für spezielle Leistungen für die J+S-Angebote]($leitfaden-js-spezielle-leistungen$)).\n3. **«Organisation»**: Hier notiert der\\*die LL den Namen der Abteilung.\n4. **«Bezugsberechtigung»**: Es können Landeskarten im Massstab 1:25'000 und 1:50'000 und Zusammensetzungen ausgeliehen werden. Der\\*die LL ist berechtigt pro 3 J+S-TNs 1 Exemplar eines Kartenblatts zu bestellen.\n5. **«Angebot-Nr.»**: Hier ergänzt der\\*die Coach die Nummer des J+S-Angebots gemäss der Anmeldung in der [SPORTdb]($sportdb$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
+        "section": {
+          "id": 6,
+          "title": "C. Dienstleistungen bestellen",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:34:27.517Z",
+          "created_at": "2021-10-08T08:34:25.907Z",
+          "updated_at": "2022-01-22T09:43:32.812Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Dienstleistungen-bestellen",
+          "menu_name": "Dienstleistungen bestellen",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:41:11.157Z",
+        "created_at": "2021-11-21T00:39:22.839Z",
+        "updated_at": "2022-02-06T16:39:38.661Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 302,
+        "slug": "Landeskartenbestellung-swisstopo",
+        "link": 218,
+        "slug_with_section": "Dienstleistungen-bestellen#Landeskartenbestellung-swisstopo",
+        "menu_name": "Landeskartenbestellung swisstopo"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "title": "SBB-Gruppenbillett",
+    "days": -4,
+    "locale": "de",
+    "published_at": "2022-01-23T18:55:59.584Z",
+    "created_at": "2022-01-23T18:55:58.156Z",
+    "updated_at": "2022-01-23T18:55:59.609Z",
+    "Slug": "SBB-Gruppenbillett",
+    "responsible": [
+      {
+        "id": 847,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 58,
+        "rolle": "SBB"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 33,
+        "title": "SBB-Gruppenbillette",
+        "content": "Für die Anreise mit dem Zug kann ab einer Gruppengrösse von mehr als 10 Personen ein SBB-Gruppenbillett bestellt werden. Damit reisen alle mit einer zusätzlichen Ermässigung von 30%.\nDie Bestellung kann online über den [SBB-Gruppenreiserechner]($sbb-gruppenreiserechner$), am Billettschalter oder telefonisch ( 0848 44 66 88, CHF 0.08/Min) vorgenommen werden. Mindestens die Anmeldung einer Gruppenreise ist obligatorisch. Nach Möglichkeiten werden entsprechende Reservierungen vorgenommen. Diese sind im Gruppenbillet inklusive.\n\nDetailliertere Informationen zu den [SBB Gruppenreisen]($sbb-gruppenreisen-info$).\n\nFür angemeldete Gruppen besteht zusätzlich die Möglichkeit, Gepäck oder Velos von der SBB transportieren zu lassen.\n\nDetailliertere Informationen zum [SBB-Gruppengepäck]($sbb-gepaeck-info$).",
+        "section": {
+          "id": 6,
+          "title": "C. Dienstleistungen bestellen",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:34:27.517Z",
+          "created_at": "2021-10-08T08:34:25.907Z",
+          "updated_at": "2022-01-22T09:43:32.812Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Dienstleistungen-bestellen",
+          "menu_name": "Dienstleistungen bestellen",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:41:15.222Z",
+        "created_at": "2021-11-21T00:39:49.396Z",
+        "updated_at": "2022-01-23T19:07:39.354Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 303,
+        "slug": "SBB-Gruppenbillette",
+        "link": null,
+        "slug_with_section": "Dienstleistungen-bestellen#SBB-Gruppenbillette",
+        "menu_name": "SBB-Gruppenbillette"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "title": "TN-Liste für Rega-Versicherung auf MiData eintragen",
+    "days": -14,
+    "locale": "de",
+    "published_at": "2022-01-23T19:26:16.591Z",
+    "created_at": "2022-01-23T19:26:11.329Z",
+    "updated_at": "2022-01-23T19:26:16.620Z",
+    "Slug": "TN-Liste-fur-Rega-Versicherung-auf-MiData-eintragen",
+    "responsible": [
+      {
+        "id": 898,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 61,
+        "rolle": "MiData"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 34,
+        "title": "Rega-Versicherung",
+        "content": "Für die Dauer eines J+S-Lagers können alle TNs, Leitenden und Begleitpersonen eines Lagers bei der Rega versichert werden (siehe [Leitfaden für spezielle Leistungen für die J+S-Angebote und J+S-Kaderbildung]($leitfaden-js-spezielle-leistungen$)). Dieses Angebot gilt nur innerhalb der Schweizer Landesgrenzen und für das Fürstentum Lichtenstein. Der\\*die LL erfasst dafür die TNs in der MiData und teilt dies dem\\*der Coach mit (siehe [Administration der TN in der MiData]($tn-administration-midata$)). Diese\\*r meldet danach die TNs in der SPORTdb an die Rega. Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen sind im Dokument [SPORTdb Schritt für Schritt für J+S-Coaches]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten. Im Gegenzug erhält die Rega das Recht, den gemeldeten TNs bei Erreichen der Volljährigkeit eine Gönnerschaft anzubieten. Die Eltern der TNs sollten deshalb über die Datenweitergabe informiert werden (auf Lageranmeldung erwähnen).\n\nFalls man von den Dienstleistungen der Rega Gebrauch machen muss, bezahlt dies in erster Linie die Krankenkasse. Würde sich diese weigern, übernähme die Rega die Kosten von wie oben erklärt versicherten Personen.\n\n***Weitere Informationen***  \n[Rahmenbedingungen zum Engagement der Rega]($rega-rahmenbedingungen$)",
+        "section": {
+          "id": 6,
+          "title": "C. Dienstleistungen bestellen",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:34:27.517Z",
+          "created_at": "2021-10-08T08:34:25.907Z",
+          "updated_at": "2022-01-22T09:43:32.812Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Dienstleistungen-bestellen",
+          "menu_name": "Dienstleistungen bestellen",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:41:19.045Z",
+        "created_at": "2021-11-21T00:40:20.173Z",
+        "updated_at": "2022-01-23T19:43:45.936Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 304,
+        "slug": "Rega-Versicherung",
+        "link": 29,
+        "slug_with_section": "Dienstleistungen-bestellen#Rega-Versicherung",
+        "menu_name": "Rega-Versicherung"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "title": "TN-Liste für Rega-Versicherung in SPORTdb",
+    "days": -7,
+    "locale": "de",
+    "published_at": "2022-01-23T19:28:01.958Z",
+    "created_at": "2022-01-23T19:27:58.928Z",
+    "updated_at": "2022-01-23T19:28:01.983Z",
+    "Slug": "TN-Liste-fur-Rega-Versicherung-in-SPORTdb",
+    "responsible": [
+      {
+        "id": 901,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 64,
+        "rolle": "SPORTdb"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 34,
+        "title": "Rega-Versicherung",
+        "content": "Für die Dauer eines J+S-Lagers können alle TNs, Leitenden und Begleitpersonen eines Lagers bei der Rega versichert werden (siehe [Leitfaden für spezielle Leistungen für die J+S-Angebote und J+S-Kaderbildung]($leitfaden-js-spezielle-leistungen$)). Dieses Angebot gilt nur innerhalb der Schweizer Landesgrenzen und für das Fürstentum Lichtenstein. Der\\*die LL erfasst dafür die TNs in der MiData und teilt dies dem\\*der Coach mit (siehe [Administration der TN in der MiData]($tn-administration-midata$)). Diese\\*r meldet danach die TNs in der SPORTdb an die Rega. Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen sind im Dokument [SPORTdb Schritt für Schritt für J+S-Coaches]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten. Im Gegenzug erhält die Rega das Recht, den gemeldeten TNs bei Erreichen der Volljährigkeit eine Gönnerschaft anzubieten. Die Eltern der TNs sollten deshalb über die Datenweitergabe informiert werden (auf Lageranmeldung erwähnen).\n\nFalls man von den Dienstleistungen der Rega Gebrauch machen muss, bezahlt dies in erster Linie die Krankenkasse. Würde sich diese weigern, übernähme die Rega die Kosten von wie oben erklärt versicherten Personen.\n\n***Weitere Informationen***  \n[Rahmenbedingungen zum Engagement der Rega]($rega-rahmenbedingungen$)",
+        "section": {
+          "id": 6,
+          "title": "C. Dienstleistungen bestellen",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:34:27.517Z",
+          "created_at": "2021-10-08T08:34:25.907Z",
+          "updated_at": "2022-01-22T09:43:32.812Z",
+          "key": "dienstleistungen",
+          "Sorting": null,
+          "sorting": 3,
+          "slug": "Dienstleistungen-bestellen",
+          "menu_name": "Dienstleistungen bestellen",
+          "identifier": "Dienstleistungen"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:41:19.045Z",
+        "created_at": "2021-11-21T00:40:20.173Z",
+        "updated_at": "2022-01-23T19:43:45.936Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 304,
+        "slug": "Rega-Versicherung",
+        "link": 29,
+        "slug_with_section": "Dienstleistungen-bestellen#Rega-Versicherung",
+        "menu_name": "Rega-Versicherung"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Lager in der MiData eröffnen und LL sowie Coach zuweisen",
+    "days": -1000,
+    "locale": "de",
+    "published_at": "2021-11-21T01:21:51.242Z",
+    "created_at": "2021-11-21T01:21:35.559Z",
+    "updated_at": "2022-01-23T19:33:48.759Z",
+    "Slug": "Lager-in-der-MiData-eroffnen-und-LL-sowie-Coach-zuweisen",
+    "responsible": [
+      {
+        "id": 1096,
+        "label": null,
+        "rolle": "AL"
+      }
+    ],
+    "targets": [],
+    "chapters": [
+      {
+        "id": 24,
+        "title": "Lager in der MiData eröffnen und LL sowie Coach zuweisen",
+        "content": "Der\\*die AL eröffnet das Lager in der [MiData]($midata$). Dazu loggt er\\*sie sich ein und geht bei seiner\\*ihrer Abteilung auf «Lager», klickt «+ Lager erstellen» und füllt das Formular «Lager erstellen» aus. Sie weist dem Lager «Lagerleitung», «Abteilungsleitung» sowie «Coach» zu. Der\\*die Coach bekommt eine automatische Benachrichtigungs-E-Mail, dass er\\*sie dem Lager zugewiesen wurde.\n\n> Lager können auf verschiedenen Ebenen erstellt werden. Ein Lager kann sowohl auf Ebene Abteilung wie auch in einer einzelnen Gruppe/Stufe (z. B: Pfaditrupp, Roverrotte usw.) eröffnet werden. Eine Anmeldung oder Zuweisung zum Lager ist nur für die Mitglieder der jeweiligen Gruppe möglich.\n\n![Screenshot 2021-12-27 at 18.37.47.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1640626738/hering/Screenshot_2021_12_27_at_18_37_47_82eda77560.png)\n\n![de-lager-eroeffnen2.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643652771/hering/de_lager_eroeffnen2_a4eee01e45.png)\n\nFeld | Eingabe / Bemerkung | Füllt das Feld aus\n-------- | -------- | --------\nLagerreglement / Pfadiprofil  | Das  Reglement zur Planung und Durchführung von Lagern («[Lagerreglement]($lagerreglement$)») sowie das [Pfadiprofil]($pfadiprofil$) werden berücksichtigt und eingehalten. | LL\nVorschriften / Empfehlungen KV   | Allenfalls vorhandene Vorschriften oder Empfehlungen des Kantonalverbandes werden bei der Vorbereitung des Lagers berücksichtigt. | LL\nVorschriften J+S LS/T | Für J+S-Lager: Die  [aktuellen Vorschriften der Sportart LS/T]($js-angebotsleitfaden$) sind mir bekannt und werden eingehalten. | LL\nCoach bestätigt | Bestätigt der*die Coach die Angaben des Lagers? | C",
+        "section": {
+          "id": 1,
+          "title": "A. Vorbereitung der Lagersaison",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-09-28T14:38:23.745Z",
+          "created_at": "2021-09-28T14:37:06.282Z",
+          "updated_at": "2022-01-22T09:42:23.209Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Vorbereitung",
+          "menu_name": "Vorbereitung",
+          "identifier": "bla"
+        },
+        "locale": "de",
+        "published_at": "2021-11-20T18:21:22.622Z",
+        "created_at": "2021-11-20T18:20:30.259Z",
+        "updated_at": "2022-01-31T18:14:29.838Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 106,
+        "slug": "Lager-in-der-MiData-eroffnen-und-LL-sowie-Coach-zuweisen",
+        "link": 18,
+        "slug_with_section": "Vorbereitung#Lager-in-der-MiData-eroffnen-und-LL-sowie-Coach-zuweisen",
+        "menu_name": "Lager eröffnen"
+      }
+    ]
+  }
+]
