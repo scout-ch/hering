@@ -1,4 +1,5 @@
 import React from 'react'
+import { withTranslation } from 'react-i18next';
 import { HashLink } from 'react-router-hash-link';
 import { ChapterT, Role } from './Chapter';
 
@@ -8,6 +9,7 @@ export type TaskT = {
   targets: Array<Role>
   responsible: Array<Role>
   chapters: Array<ChapterT>
+  t: any
 }
 
 function Task(props: TaskT) {
@@ -17,7 +19,8 @@ function Task(props: TaskT) {
   // @ts-ignore
   const deadline = props.deadline.toLocaleDateString('de-DE', options)
   const targets = props.targets.map((target) => target['rolle']).join(', ')
-  const responsible = props.responsible.map((responsible) => responsible['rolle'].toUpperCase()).join(', ')
+  console.log(props.responsible)
+  const responsible = props.responsible.map((responsible) => props.t(`target.role.${responsible['rolle']}`)).join(', ')
   const chapters = props.chapters.map(function(chapter) {
       return <li key={chapter.slug}><HashLink to={chapter.section.slug + '#' + chapter.slug}>{chapter.title}</HashLink></li>
   })
@@ -30,4 +33,4 @@ function Task(props: TaskT) {
   </tr>
 }
 
-export default Task
+export default withTranslation()(Task)
