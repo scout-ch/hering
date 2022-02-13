@@ -19,7 +19,6 @@ function Task(props: TaskT) {
   // @ts-ignore
   const deadline = props.deadline.toLocaleDateString('de-DE', options)
   const targets = props.targets.map((target) => target['rolle']).join(', ')
-  console.log(props.responsible)
   const responsible = props.responsible.map((responsible) => props.t(`target.role.${responsible['rolle']}`)).join(', ')
   const chapters = props.chapters.map(function(chapter) {
       return <li key={chapter.slug}><HashLink to={chapter.section.slug + '#' + chapter.slug}>{chapter.title}</HashLink></li>
