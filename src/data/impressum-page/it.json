@@ -1,0 +1,22 @@
+{
+  "id": 3,
+  "title": "Impressum",
+  "content": "| Fasciolo originale:           \t| Sardina – guida all’amministrazione di campi scout \t|\n|----------------------\t|-------------------------------------------------------\t|\n| Rielaborazione 2021:  \t| Kay Hochuli / Platon, Tobias Juon / Appendix          \t|\n| Traduzione:  \t| Lilliana Schilling / Christina Germann-Chiari          \t|\n| Edizione:             \t| Versione 16, 2021                                      \t|\n| Riferimento:      \t| 2088.16.it                                            \t|\n| Copyright:           \t| Movimento Scout Svizzero Speichergasse 31 3011 Berna      \t|\n\nQuesto fascicolo è stato creato nell’ambito del progetto Gilwell di Lesly Helbling / Jampa. Si ringraziano: Bambus, Chapeau, David Guidon, Garfield, Haribo, Jenga, Lobo, Pi, Pikachu, Pinky, Platon, Talpa e Wega.\n\nLa versione web della sardina è stata prodotta nell’ambito del progetto Gilwell da Emily Wangler / Folletta, Tobias Juon / Appendix e Emanuel Wyss / Tschagon.",
+  "menu_name": "Impressum",
+  "locale": "it",
+  "published_at": "2022-02-04T18:30:24.225Z",
+  "created_at": "2022-02-04T18:26:39.013Z",
+  "updated_at": "2022-02-04T18:30:24.237Z",
+  "localizations": [
+    {
+      "id": 1,
+      "locale": "de",
+      "published_at": "2022-01-23T20:54:28.999Z"
+    },
+    {
+      "id": 2,
+      "locale": "fr",
+      "published_at": "2022-02-04T18:25:25.705Z"
+    }
+  ]
+}

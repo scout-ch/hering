@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "title": "Impressum",
+  "content": "| Original Broschüre:           \t| Hering – Leitfaden zur Administration von Pfadilagern \t|\n|----------------------\t|-------------------------------------------------------\t|\n| Überarbeitung 2021:  \t| Kay Hochuli / Platon, Tobias Juon / Appendix          \t|\n| Ausgabe:             \t| Version 16, 2021                                      \t|\n| Referenznummer:      \t| 2088.16.de                                            \t|\n| Copyright:           \t| Pfadibewegung Schweiz Speichergasse 31 3011 Bern      \t|\n\nDie Hering- Broschüre ist im Rahmen des Gilwell-Projekts von Lesly Helbling / Jampa entstanden. Der Dank geht an alle Helfer*innen: Bambus, Chapeau, David Guidon, Garfield, Haribo, Jenga, Lobo, Pi, Pikachu, Pinky, Platon, Talpa und Wega.\nDie Webversion des Hering ist im Rahmen des Gilwell-Projekts von Emily Wangler / Folletta, Tobias Juon / Appendix und Emanuel Wyss / Tschagon entstanden.",
+  "menu_name": "Impressum",
+  "locale": "de",
+  "published_at": "2022-01-23T20:54:28.999Z",
+  "created_at": "2022-01-23T20:54:15.580Z",
+  "updated_at": "2022-01-23T20:55:58.797Z",
+  "localizations": [
+    {
+      "id": 2,
+      "locale": "fr",
+      "published_at": "2022-02-04T18:25:25.705Z"
+    },
+    {
+      "id": 3,
+      "locale": "it",
+      "published_at": "2022-02-04T18:30:24.225Z"
+    }
+  ]
+}
