@@ -81,11 +81,12 @@ function App() {
               <HomePage page={startPage}></HomePage>
             </Route>
           </Switch>
+          
+          <div className='footer'>
+            <Footer lang={lang} sections={sections} />
+          </div>
         </main>
 
-        <div className='footer'>
-          <Footer lang={lang} sections={sections} />
-        </div>
       </LinksContext.Provider>
     </Router>
   </div>

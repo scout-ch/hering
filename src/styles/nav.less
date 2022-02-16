@@ -45,7 +45,7 @@ nav.header-nav {
 
   .header-nav-content {
     overflow: scroll;
-    height: calc(~"100vh - 15px");
+    height: calc(~"100vh - 40px");
 
     &>ul {
       list-style-type: disclosure-closed;
@@ -95,10 +95,19 @@ nav.header-nav {
 @media (max-width: 659px) {
 
   .header-nav {
+    z-index: 300;
     width: 100%;
+    height: 25px;
     ul {
       height: 100%;
     }
+  }
+
+  main {
+    position: fixed;
+    top: 44px;
+    overflow: scroll;
+    height: 90vh;
   }
 
   .header-nav-content {
@@ -114,7 +123,6 @@ nav.header-nav {
   }
 
   .content {
-    padding-top: 30px;
     padding-left: 1rem;
   }
 
