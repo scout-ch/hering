@@ -16,6 +16,7 @@ import Footer from './components/Footer';
 import SectionPage from './pages/SectionPage';
 import ImpressumPage from './pages/ImpressumPage';
 import { setLocalData } from './helper/LocalDataHelper';
+import { checkLinks } from './helper/LinkChecker';
 
 export type LinkT = {
   title: string
@@ -61,6 +62,8 @@ function App() {
     map[section.slug] = section
     return map
   }, {})
+
+  checkLinks(sections, links)
 
   return <div className='App'>
     <Router basename="/">
