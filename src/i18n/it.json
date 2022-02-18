@@ -12,7 +12,7 @@
     },
     "calendarPage": {
       "title": "Calendario",
-      "startDate": "L'inizio",
+      "startDate": "Primo giorno del campo",
       "responsible": "Responsabile",
       "responsibleOptions": {
         "all": "Tutti",

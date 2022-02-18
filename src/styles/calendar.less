@@ -1,26 +1,28 @@
 .calendar {
-  table {
-    width: 100%;
-    thead tr td {
-      font-weight: bold;
-    }
+  .calendar-table {
+    overflow: scroll;
 
-    #who, #when {
-      width: 10%;
+    table {
+      thead tr td {
+        font-weight: bold;
+      }
+  
+      #who, #when {
+        width: 10%;
+      }
+  
+      #what {
+        max-width: 40%;
+      }
+  
+      #target {
+        width: 20%;
+      }
+  
+      #chapters {
+        width: 30%;
+      }
     }
-
-    #what {
-      max-width: 40%;
-    }
-
-    #target {
-      width: 20%;
-    }
-
-    #chapters {
-      width: 30%;
-    }
-
   }
   .calendar-form-container {
     .calendar-form {

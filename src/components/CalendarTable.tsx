@@ -15,7 +15,7 @@ function CalendarTable(props: Props) {
       targets={task.targets} responsible={task.responsible} chapters={task.chapters}></Task>
   })
   return (
-    <div>
+    <div className='calendar-table'>
       <table>
         <thead>
           <tr>
