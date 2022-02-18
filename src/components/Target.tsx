@@ -12,7 +12,7 @@ function Target(props: Props) {
 
   const targetList = targets.map(function (target: Role) {
     return <>
-      <div className='role'>{t(`target.role.${target.rolle}`)}</div>
+      <div key={target.rolle} className='role'>{t(`target.role.${target.rolle}`)}</div>
     </>
   })
 

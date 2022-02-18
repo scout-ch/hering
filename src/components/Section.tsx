@@ -35,7 +35,7 @@ function Section(props: Props) {
     return <div className='content'>
         <Helmet><title>{props.section['title']}</title></Helmet>
 
-        <div className="section-title">
+        <div id="section-title" className="section-title">
             <h1>{props.section['title']}</h1>
         </div>
         <div className='content-main'>

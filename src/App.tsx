@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   HashRouter as Router,
   Switch,
@@ -48,6 +48,10 @@ function App() {
     //   setCalendarPage(values[3].data)
     // })
   }, [lang])
+
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
 
   library.add(faCalendar, faExclamationTriangle, faBars)
 
