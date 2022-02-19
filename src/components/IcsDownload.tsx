@@ -2,6 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled';
 import { withTranslation } from 'react-i18next'
 import { TaskT } from './Task'
+import { ChapterT } from './Chapter';
 
 const A = styled.a`
   border: none;
@@ -22,7 +23,9 @@ type Props = {
 }
 
 function buildDescription(task: TaskT): string {
-  return task.title + ' ' + task.targets
+  return task.chapters.map((chapter: ChapterT) => {
+    return chapter.slug_with_section
+  }).join(',')
 }
 
 function generateIcs(tasks: Array<TaskT>) {
@@ -30,14 +33,22 @@ function generateIcs(tasks: Array<TaskT>) {
 
   const events = tasks.map(function (task) {
     const deadline = task.deadline
+    const alarms = []
+    alarms.push({
+      action: 'display',
+      description: buildDescription(task),
+      trigger: { hours: 1, before: true },
+    })
+
     return {
       start: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
       end: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
       title: task.title,
-      describtion: buildDescription(task),
+      description: buildDescription(task),
       url: '',
       status: 'CONFIRMED',
-      busyStatus: 'FREE'
+      busyStatus: 'FREE',
+      alarms: alarms
     }
   })
 

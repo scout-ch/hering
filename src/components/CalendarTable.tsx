@@ -16,6 +16,7 @@ function CalendarTable(props: Props) {
   })
   return (
     <div className='calendar-table'>
+    <IcsDownload tasks={tasks}></IcsDownload>
       <table>
         <thead>
           <tr>
@@ -30,7 +31,6 @@ function CalendarTable(props: Props) {
           {taskList}
         </tbody>
       </table>
-      <IcsDownload tasks={tasks}></IcsDownload>
     </div>
   );
 }
