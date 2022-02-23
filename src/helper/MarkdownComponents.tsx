@@ -37,6 +37,13 @@ export const LinkComponent = {
                return <Link to={props.href || ''}>{children}</Link>
             }
         } else {
+            var mailto = link.match('(mailto:)')
+            if (mailto[1]) {    
+                return <Link to='#' onClick={(e) => { 
+                    window.location = props.href;
+                    e.preventDefault();
+                }}>{children}</Link>
+            }
             return <Link to={props.href || ''}>{children}</Link>
         }
         /* eslint-enable */
