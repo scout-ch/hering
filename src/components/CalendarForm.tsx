@@ -28,6 +28,7 @@ type ApiTask = {
 type MyState = {
   startDate: string
   responsible: string
+  puffer: number
   taskList: Array<ApiTask>,
   tasks: Array<TaskT>
 }
@@ -38,6 +39,7 @@ class CalendarForm extends React.Component<Props, MyState> {
     this.state = {
       startDate: new Date().toISOString().slice(0, 10),
       responsible: 'all',
+      puffer: 0,
       taskList: [],
       tasks: []
     };
@@ -73,6 +75,10 @@ class CalendarForm extends React.Component<Props, MyState> {
     this.setState({ responsible: e.currentTarget.value });
   };
 
+  onChangePuffer = (e: React.FormEvent<HTMLInputElement>): void => {
+    this.setState({ puffer: parseInt(e.currentTarget.value) });
+  };
+
   taskSort = (a: TaskT, b: TaskT) => {
     let aDate = a.deadline
     let bDate = b.deadline
@@ -90,6 +96,7 @@ class CalendarForm extends React.Component<Props, MyState> {
     event.preventDefault();
     const startDate = new Date(this.state.startDate)
     const responsible = this.state.responsible
+    let pufferDays = this.state.puffer || 0
 
     const filteredDates = this.state.taskList.filter(function (task) {
       const rollen = task.responsible.map((resp) => resp.rolle)
@@ -97,7 +104,8 @@ class CalendarForm extends React.Component<Props, MyState> {
     });
 
     const tasks = filteredDates.map(function (task) {
-      let deadline = new Date(startDate.getTime() + task.days * 86400000)
+
+      let deadline = new Date(startDate.getTime() + (task.days - pufferDays) * 86400000)
       if (task.days === -1000) {
         deadline = startDate
         deadline.setMonth(0)
@@ -125,9 +133,15 @@ class CalendarForm extends React.Component<Props, MyState> {
               </li>
               <li>
                 <label>
+                  {t('calendarPage.puffer')}
+                </label>
+                <input type="number" id="puffer" name="puffer" value={this.state.puffer} onChange={this.onChangePuffer} />
+              </li>
+              <li>
+                <label>
                   {t('calendarPage.responsible')}
                 </label>
-                <select name="responsible" value={this.state.responsible} onChange={this.onChangeResponsible}>
+                <select name="responsible" id="responsible" value={this.state.responsible} onChange={this.onChangeResponsible}>
                   <option value="all">{t('calendarPage.responsibleOptions.all')}</option>
                   <option value="LL">{t('calendarPage.responsibleOptions.ll')}</option>
                   <option value="AL">{t('calendarPage.responsibleOptions.al')}</option>

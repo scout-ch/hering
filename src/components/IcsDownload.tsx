@@ -27,6 +27,11 @@ function buildDescription(task: TaskT): string {
     return chapter.slug_with_section
   }).join(',')
 }
+function buildLinks(task: TaskT): string {
+  return task.chapters.map((chapter: ChapterT) => {
+    return 'http://hering.scout.ch/hering/#/' + chapter.slug_with_section
+  }).join(',')
+}
 
 function generateIcs(tasks: Array<TaskT>) {
   const ics = require('ics')
@@ -44,8 +49,8 @@ function generateIcs(tasks: Array<TaskT>) {
       start: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
       end: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
       title: task.title,
-      description: buildDescription(task),
-      url: '',
+      description: buildLinks(task),
+      url: buildLinks(task),
       status: 'CONFIRMED',
       busyStatus: 'FREE',
       alarms: alarms
@@ -66,7 +71,7 @@ function IcsDownload(props: Props) {
 
   if (props.tasks[0]) {
     const value = generateIcs(props.tasks)
-    console.log(value)
+    // console.log(value)
     const data = new Blob([value], { type: 'text/calendar' });
     const link = window.URL.createObjectURL(data);
     return (
