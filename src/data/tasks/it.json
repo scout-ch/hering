@@ -620,123 +620,6 @@
     ]
   },
   {
-    "id": 31,
-    "title": "Autorizzazione del campo",
-    "days": -7,
-    "locale": "it",
-    "published_at": "2022-01-22T12:54:52.686Z",
-    "created_at": "2022-01-22T12:54:51.467Z",
-    "updated_at": "2022-01-22T12:54:52.720Z",
-    "Slug": "Autorizzazione-del-campo",
-    "responsible": [
-      {
-        "id": 987,
-        "label": null,
-        "rolle": "AL"
-      },
-      {
-        "id": 988,
-        "label": null,
-        "rolle": "C"
-      }
-    ],
-    "targets": [
-      {
-        "id": 30,
-        "rolle": "Capo campo"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 68,
-        "title": "Autorizzazione del campo",
-        "content": "Apponendo la firma sull’annuncio di campo il/la Coach e il/la CSZ autorizzano il campo. Per le attività negli ambiti di sicurezza occorre un’ulteriore firma da parte degli esperti responsabili (vedi [attività nei settori di sicurezza]($sicherheitsbereich$)). Il/la CSZ ed il/la coach informano i CC sull’autorizzazione del campo, se possibile in un incontro comune. Il/la coach manda una copia ciascuno dell’autorizzazione firmata al/alla CC e al/alla CSZ. Nel caso di una non autorizzazione manda inoltre una copia all’AC e al [segretariato del MSS](mailto:info@msds.ch). \n\n### Di seguito alcuni chiarimenti in merito al formulario\n1. “Approvazione”: “approvato” significa che il programma può essere svolto come previsto; “approvato con riserva” significa che il programma deve essere adattato dal/dalla CC in base alle osservazioni scritte; “non approvato” significa che il campo non può svolgersi così come è stato presentato.\n1. “Approvazione dei moduli di sicurezza”: il/la Coach autorizza o non autorizza i moduli di sicurezza firmando nell’apposito spazio. Nel caso in cui il/la Coach avesse delegato la supervisione a terzi, dovrà firmare quest’ultima persona.\n1. “Conferma del Capo campo”: nel caso di approvazione con riserva o di non approvazione, il/la CC conferma di esserne a conoscenza firmando il modulo.\n1. “Attività del Coach”: questa tabella serve al/alla Coach per indicare quando hanno avuto luogo i vari passi della preparazione del campo e può sostituire il diario del/della Coach G+S. Su richiesta l’Ufficio cantonale G+S può prenderne visione. \n\n### Ulteriori Informazioni:\n- [Regolamento sulla preparazione e lo svolgimento dei campi]($lagerreglement$)\n- [Guida per lo svolgimento delle offerte G+S Sport di campo/Trekking]($js-angebotsleitfaden$)\n\n![it-lagerreglement.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642855438/hering/it_lagerreglement_10c57e97e1.png)",
-        "section": {
-          "id": 20,
-          "title": "F. Autorizzazione del campo",
-          "content": null,
-          "locale": "it",
-          "published_at": "2022-01-22T09:31:59.185Z",
-          "created_at": "2022-01-22T09:31:55.578Z",
-          "updated_at": "2022-01-22T09:31:59.222Z",
-          "key": null,
-          "Sorting": null,
-          "sorting": 6,
-          "slug": "Autorizzazione-del-campo",
-          "menu_name": "Autorizzazione del campo",
-          "identifier": null
-        },
-        "locale": "it",
-        "published_at": "2022-01-22T12:51:42.830Z",
-        "created_at": "2022-01-22T12:51:40.096Z",
-        "updated_at": "2022-01-23T23:39:03.914Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 602,
-        "slug": "Autorizzazione-del-campo",
-        "link": 170,
-        "slug_with_section": "Autorizzazione-del-campo#Autorizzazione-del-campo",
-        "menu_name": "Autorizzazione del campo"
-      }
-    ]
-  },
-  {
-    "id": 22,
-    "title": "Aggiornare la lsita dei partecipanti",
-    "days": 10,
-    "locale": "it",
-    "published_at": "2022-01-22T11:21:44.378Z",
-    "created_at": "2022-01-22T11:21:40.152Z",
-    "updated_at": "2022-01-22T11:21:44.413Z",
-    "Slug": "Aggiornare-la-lsita-dei-partecipanti",
-    "responsible": [
-      {
-        "id": 989,
-        "label": null,
-        "rolle": "LL"
-      }
-    ],
-    "targets": [
-      {
-        "id": 21,
-        "rolle": "MiData"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 51,
-        "title": "Lista partecipanti e chiusura del campo nella MiData",
-        "content": "Il/la CC aggiorna i partecipanti e gli animatori/trici registrati nella [MiData]($midata$) prima del campo e comunica l'aggiornamento al/alla Coach al più tardi 10 giorni dopo il campo.\nInfine, il/la coach riporta la lista attuale dei partecipanti in [SPORTdb]($sportdb$). Se l’annuncio Rega è già stato fatto tramite SPORTdb, i dati devono solo più venir aggiornati. I lavori precisi da eseguire comprese le istruzioni passo dopo passo per il/la coach e le immagini si trovano nel documento [SPORTdb – Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).\nIn seguito, il/la CC chiude il campo nella MiData, ponendo lo stato su \"Concluso\".",
-        "section": {
-          "id": 19,
-          "title": "G. Chiusura del campo",
-          "content": null,
-          "locale": "it",
-          "published_at": "2022-01-22T09:30:39.764Z",
-          "created_at": "2022-01-22T09:30:18.920Z",
-          "updated_at": "2022-01-22T09:30:39.789Z",
-          "key": null,
-          "Sorting": null,
-          "sorting": 7,
-          "slug": "Chiusura-del-campo",
-          "menu_name": "Chiusura del campo",
-          "identifier": null
-        },
-        "locale": "it",
-        "published_at": "2022-01-22T11:21:46.588Z",
-        "created_at": "2022-01-22T11:17:47.839Z",
-        "updated_at": "2022-01-23T22:07:39.720Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 702,
-        "slug": "Lista-partecipanti-e-chiusura-del-campo-nella-MiData",
-        "link": null,
-        "slug_with_section": "Chiusura-del-campo#Lista-partecipanti-e-chiusura-del-campo-nella-MiData",
-        "menu_name": "Lista partecipanti"
-      }
-    ]
-  },
-  {
     "id": 45,
     "title": "Ordinazione materiale G+S",
     "days": -40,
@@ -845,62 +728,6 @@
         "link": 176,
         "slug_with_section": "Ordinare-prestazioni#Ordinazione-di-materiale-G+S",
         "menu_name": "Ordinazione di materiale G+S"
-      }
-    ]
-  },
-  {
-    "id": 36,
-    "title": "Iniziare l'annuncio di campo MSS",
-    "days": -49,
-    "locale": "it",
-    "published_at": "2022-01-22T17:08:48.529Z",
-    "created_at": "2022-01-22T16:52:05.388Z",
-    "updated_at": "2022-01-22T17:08:48.563Z",
-    "Slug": "Iniziare-l'annuncio-di-campo-MSS",
-    "responsible": [
-      {
-        "id": 996,
-        "label": null,
-        "rolle": "LL"
-      }
-    ],
-    "targets": [
-      {
-        "id": 35,
-        "rolle": "C"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 73,
-        "title": "Annuncio di campo MSS",
-        "content": "### Indicazioni del/della capo campo\nCon l'annuncio di campo MSS nella [MiData]($midata$), ogni campo viene annunciato previamente all'AC e al MSS. Il/la CC completa al più tardi 7 settimane prima del campo tutte le indicazioni relative al campo nella MiData e invia il programma di massima contemporaneamente a CSZ e Coach.\n\n### Indicazioni del/della coach\nIl/la Coach può ora effettuare il login nella [MiData]($midata$), compilare la sua parte dell'annuncio di campo e inoltrarla tramite un bottone. L'annuncio di campo viene poi trasmesso automaticamente al MSS e all'AC. Il MSS necessita di queste informazioni per poter reagire in caso di crisi e per motivi statistici nei confronti della Confederazione. Il/la Coach effettua il login nella MiData e naviga fino alla propria sezione. Procede poi come segue:\n1. Cliccare su \"Campi\"\n2. Selezionare il relativo campo\n3. Cliccare su \"Modificare\"\n4. Controllare le indicazioni in tutti i registri.\n5. Selezionare la scheda \"Accompagnamento\". Cliccare su \"Coach confermato\" e compilare le indicazioni relative alla visita del Coach e alle [attività negli ambiti di sicurezza]($sicherheitsbereich$).\n6. Cliccare su \"Salvare\"\n7. Se tutte le indicazioni sono complete: inviare l'annuncio di campo al MSS cliccando su \"Inoltrare\".\n\n![it-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/it_Lagerdaten_Coach_Mi_Data_A_68b4479b89.png)\n\n![it-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/it_Lagerdaten_Coach_Mi_Data_B_4c29a4be46.png)\n\n![it-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/it_Lagerdaten_Coach_Mi_Data_C_511a5f9498.png)\n",
-        "section": {
-          "id": 24,
-          "title": "B. Annuncio di campo e programma di massima",
-          "content": null,
-          "locale": "it",
-          "published_at": "2022-01-22T09:40:19.212Z",
-          "created_at": "2022-01-22T09:40:15.072Z",
-          "updated_at": "2022-01-22T09:42:43.443Z",
-          "key": null,
-          "Sorting": null,
-          "sorting": 2,
-          "slug": "Annuncio-di-campo",
-          "menu_name": "Annuncio di campo",
-          "identifier": null
-        },
-        "locale": "it",
-        "published_at": "2022-01-22T17:15:24.645Z",
-        "created_at": "2022-01-22T17:15:21.966Z",
-        "updated_at": "2022-01-23T20:20:25.381Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 201,
-        "slug": "Annuncio-di-campo-MSS",
-        "link": 168,
-        "slug_with_section": "Annuncio-di-campo#Annuncio-di-campo-MSS",
-        "menu_name": "Annuncio di campo MSS"
       }
     ]
   },
@@ -1027,7 +854,7 @@
     "Slug": "Consegnare-il-dossier-del-campo",
     "responsible": [
       {
-        "id": 1134,
+        "id": 1445,
         "label": null,
         "rolle": "LL"
       }
@@ -1073,6 +900,67 @@
         "link": null,
         "slug_with_section": "Dossier-del-campo#Parti-che-compongono-il-dossier-del-campo",
         "menu_name": "Parti che compongono il dossier del campo"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Autorizzazione del campo",
+    "days": -7,
+    "locale": "it",
+    "published_at": "2022-01-22T12:54:52.686Z",
+    "created_at": "2022-01-22T12:54:51.467Z",
+    "updated_at": "2022-01-22T12:54:52.720Z",
+    "Slug": "Autorizzazione-del-campo",
+    "responsible": [
+      {
+        "id": 1447,
+        "label": null,
+        "rolle": "AL"
+      },
+      {
+        "id": 1448,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 30,
+        "rolle": "Capo campo"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 68,
+        "title": "Autorizzazione del campo",
+        "content": "Apponendo la firma sull’annuncio di campo il/la Coach e il/la CSZ autorizzano il campo. Per le attività negli ambiti di sicurezza occorre un’ulteriore firma da parte degli esperti responsabili (vedi [attività nei settori di sicurezza]($sicherheitsbereich$)). Il/la CSZ ed il/la coach informano i CC sull’autorizzazione del campo, se possibile in un incontro comune. Il/la coach manda una copia ciascuno dell’autorizzazione firmata al/alla CC e al/alla CSZ. Nel caso di una non autorizzazione manda inoltre una copia all’AC e al [segretariato del MSS](mailto:info@msds.ch). \n\n### Di seguito alcuni chiarimenti in merito al formulario\n1. “Approvazione”: “approvato” significa che il programma può essere svolto come previsto; “approvato con riserva” significa che il programma deve essere adattato dal/dalla CC in base alle osservazioni scritte; “non approvato” significa che il campo non può svolgersi così come è stato presentato.\n1. “Approvazione dei moduli di sicurezza”: il/la Coach autorizza o non autorizza i moduli di sicurezza firmando nell’apposito spazio. Nel caso in cui il/la Coach avesse delegato la supervisione a terzi, dovrà firmare quest’ultima persona.\n1. “Conferma del Capo campo”: nel caso di approvazione con riserva o di non approvazione, il/la CC conferma di esserne a conoscenza firmando il modulo.\n1. “Attività del Coach”: questa tabella serve al/alla Coach per indicare quando hanno avuto luogo i vari passi della preparazione del campo e può sostituire il diario del/della Coach G+S. Su richiesta l’Ufficio cantonale G+S può prenderne visione. \n\n### Ulteriori Informazioni:\n- [Regolamento sulla preparazione e lo svolgimento dei campi]($lagerreglement$)\n- [Guida per lo svolgimento delle offerte G+S Sport di campo/Trekking]($js-angebotsleitfaden$)\n\n![2084.06.it-Autorizzazione_del_Campo-20211210-CommAcc_Page_1.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1645801825/hering/2084_06_it_Autorizzazione_del_Campo_20211210_Comm_Acc_Page_1_8ba8aff78c.png)",
+        "section": {
+          "id": 20,
+          "title": "F. Autorizzazione del campo",
+          "content": null,
+          "locale": "it",
+          "published_at": "2022-01-22T09:31:59.185Z",
+          "created_at": "2022-01-22T09:31:55.578Z",
+          "updated_at": "2022-01-22T09:31:59.222Z",
+          "key": null,
+          "Sorting": null,
+          "sorting": 6,
+          "slug": "Autorizzazione-del-campo",
+          "menu_name": "Autorizzazione del campo",
+          "identifier": null
+        },
+        "locale": "it",
+        "published_at": "2022-01-22T12:51:42.830Z",
+        "created_at": "2022-01-22T12:51:40.096Z",
+        "updated_at": "2022-02-25T15:15:26.897Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 602,
+        "slug": "Autorizzazione-del-campo",
+        "link": 170,
+        "slug_with_section": "Autorizzazione-del-campo#Autorizzazione-del-campo",
+        "menu_name": "Autorizzazione del campo"
       }
     ]
   },
@@ -1189,7 +1077,7 @@
     "Slug": "Iniziare-il-congedo-giovanile",
     "responsible": [
       {
-        "id": 1272,
+        "id": 1441,
         "label": null,
         "rolle": "LL"
       }
@@ -1343,6 +1231,118 @@
         "link": 166,
         "slug_with_section": "Chiusura-dell'offerta-G+S#Chiusura-dell'offerta-G+S-in-SPORTdb",
         "menu_name": "Chiusura in SPORTdb"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Aggiornare la lista dei partecipanti",
+    "days": 10,
+    "locale": "it",
+    "published_at": "2022-01-22T11:21:44.378Z",
+    "created_at": "2022-01-22T11:21:40.152Z",
+    "updated_at": "2022-02-26T17:53:14.201Z",
+    "Slug": "Aggiornare-la-lista-dei-partecipanti",
+    "responsible": [
+      {
+        "id": 989,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 21,
+        "rolle": "MiData"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 51,
+        "title": "Lista partecipanti e chiusura del campo nella MiData",
+        "content": "Il/la CC aggiorna i partecipanti e gli animatori/trici registrati nella [MiData]($midata$) prima del campo e comunica l'aggiornamento al/alla Coach al più tardi 10 giorni dopo il campo.\nInfine, il/la coach riporta la lista attuale dei partecipanti in [SPORTdb]($sportdb$). Se l’annuncio Rega è già stato fatto tramite SPORTdb, i dati devono solo più venir aggiornati. I lavori precisi da eseguire comprese le istruzioni passo dopo passo per il/la coach e le immagini si trovano nel documento [SPORTdb – Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).\nIn seguito, il/la CC chiude il campo nella MiData, ponendo lo stato su \"Concluso\".",
+        "section": {
+          "id": 19,
+          "title": "G. Chiusura del campo",
+          "content": null,
+          "locale": "it",
+          "published_at": "2022-01-22T09:30:39.764Z",
+          "created_at": "2022-01-22T09:30:18.920Z",
+          "updated_at": "2022-01-22T09:30:39.789Z",
+          "key": null,
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Chiusura-del-campo",
+          "menu_name": "Chiusura del campo",
+          "identifier": null
+        },
+        "locale": "it",
+        "published_at": "2022-01-22T11:21:46.588Z",
+        "created_at": "2022-01-22T11:17:47.839Z",
+        "updated_at": "2022-01-23T22:07:39.720Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 702,
+        "slug": "Lista-partecipanti-e-chiusura-del-campo-nella-MiData",
+        "link": null,
+        "slug_with_section": "Chiusura-del-campo#Lista-partecipanti-e-chiusura-del-campo-nella-MiData",
+        "menu_name": "Lista partecipanti"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Iniziare l'annuncio di campo MSS",
+    "days": -49,
+    "locale": "it",
+    "published_at": "2022-01-22T17:08:48.529Z",
+    "created_at": "2022-01-22T16:52:05.388Z",
+    "updated_at": "2022-02-26T18:25:46.299Z",
+    "Slug": "Iniziare-l'annuncio-di-campo-MSS",
+    "responsible": [
+      {
+        "id": 1443,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 35,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 73,
+        "title": "Annuncio di campo MSS",
+        "content": "### Indicazioni del/della capo campo\nCon l'annuncio di campo MSS nella [MiData]($midata$), ogni campo viene annunciato previamente all'AC e al MSS. Il/la CC completa al più tardi 7 settimane prima del campo tutte le indicazioni relative al campo nella MiData e invia il programma di massima contemporaneamente a CSZ e Coach.\n\n### Indicazioni del/della coach\nIl/la Coach può ora effettuare il login nella [MiData]($midata$), compilare la sua parte dell'annuncio di campo e inoltrarla tramite un bottone. L'annuncio di campo viene poi trasmesso automaticamente al MSS e all'AC. Il MSS necessita di queste informazioni per poter reagire in caso di crisi e per motivi statistici nei confronti della Confederazione. Il/la Coach effettua il login nella MiData e naviga fino alla propria sezione. Procede poi come segue:\n1. Cliccare su \"Campi\"\n2. Selezionare il relativo campo\n3. Cliccare su \"Modificare\"\n4. Controllare le indicazioni in tutti i registri.\n5. Selezionare la scheda \"Accompagnamento\". Cliccare su \"Coach confermato\" e compilare le indicazioni relative alla visita del Coach e alle [attività negli ambiti di sicurezza]($sicherheitsbereich$).\n6. Cliccare su \"Salvare\"\n7. Se tutte le indicazioni sono complete: inviare l'annuncio di campo al MSS cliccando su \"Inoltrare\".\n\n![it-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/it_Lagerdaten_Coach_Mi_Data_A_68b4479b89.png)\n\n![it-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/it_Lagerdaten_Coach_Mi_Data_B_4c29a4be46.png)\n\n![it-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/it_Lagerdaten_Coach_Mi_Data_C_511a5f9498.png)\n",
+        "section": {
+          "id": 24,
+          "title": "B. Annuncio di campo e programma di massima",
+          "content": null,
+          "locale": "it",
+          "published_at": "2022-01-22T09:40:19.212Z",
+          "created_at": "2022-01-22T09:40:15.072Z",
+          "updated_at": "2022-01-22T09:42:43.443Z",
+          "key": null,
+          "Sorting": null,
+          "sorting": 2,
+          "slug": "Annuncio-di-campo",
+          "menu_name": "Annuncio di campo",
+          "identifier": null
+        },
+        "locale": "it",
+        "published_at": "2022-01-22T17:15:24.645Z",
+        "created_at": "2022-01-22T17:15:21.966Z",
+        "updated_at": "2022-01-23T20:20:25.381Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 201,
+        "slug": "Annuncio-di-campo-MSS",
+        "link": 168,
+        "slug_with_section": "Annuncio-di-campo#Annuncio-di-campo-MSS",
+        "menu_name": "Annuncio di campo MSS"
       }
     ]
   }

@@ -1,5 +1,75 @@
 [
   {
+    "id": 225,
+    "key": "js-datenschutz",
+    "title": "Datenschutz bei J+S",
+    "link": "https://www.jugendundsport.ch/content/jus-internet/it/infos-fuer/j-s-coaches/sportdb--hinweise-hilfe-/angebot-anmelden/_jcr_content/contentPar/accordion_copy/accordionItems/information_zum_date/accordionPar/downloadlist/downloadItems/49_1456398412065.download/Foglio_informativo_potenzione_dei_dati_I.pdf",
+    "slug": ""
+  },
+  {
+    "id": 230,
+    "key": "stgallen-wald",
+    "title": "Merkblatt Pfadiaktivitäten im St.Galler Wald",
+    "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/28/campi-scout-nel-foresta-di-san-gallo/",
+    "slug": ""
+  },
+  {
+    "id": 235,
+    "key": "lager-vd",
+    "title": "Lager VD",
+    "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/23/autorizzazione-di-campo-cantone-di-vaud/",
+    "slug": ""
+  },
+  {
+    "id": 241,
+    "key": "chapter-tns-selbstaendig",
+    "title": "TNs melden sich selbständig für Lager an",
+    "link": null,
+    "slug": "Amministrazione-dei-partecipanti#I-partecipanti-si-iscrivono-autonomamente-al-campo"
+  },
+  {
+    "id": 59,
+    "key": "js-angebotsleitfaden",
+    "title": " Guida per lo svolgimento delle offerte G+S SC/T",
+    "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/42/guida-per-lo-svolgimento-delle-offerte-gs-sct/",
+    "slug": ""
+  },
+  {
+    "id": 61,
+    "key": "lagerreglement",
+    "title": "Regolamento sulla preparazione e lo svolgimento dei campi",
+    "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/7/regolamento-sulla-preparazione-e-lo-svolgimento-dei-campi/",
+    "slug": ""
+  },
+  {
+    "id": 231,
+    "key": "faireslager",
+    "title": "Faires Lager",
+    "link": "https://www.faires-lager.ch/",
+    "slug": ""
+  },
+  {
+    "id": 236,
+    "key": "luzern-wald",
+    "title": "Luzern Wald",
+    "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/626/campi-nel-foresta-nel-cantone-di-lucerna/",
+    "slug": ""
+  },
+  {
+    "id": 228,
+    "key": "sportdb-technisch",
+    "title": "SPORTdb – Technische Anforderungen für den Import",
+    "link": "https://www.jugendundsport.ch/content/jus-internet/it/infos-fuer/j-s-coaches/sportdb--hinweise-hilfe-/angebot-anmelden/_jcr_content/contentPar/accordion_copy/accordionItems/merkbl_tter_zum_teil/accordionPar/downloadlist/downloadItems/47_1456398355913.download/3_Anforderungen_SPORTdb_i.pdf",
+    "slug": ""
+  },
+  {
+    "id": 179,
+    "key": "voila",
+    "title": "Voila",
+    "link": "http://www.voila.ch/de/",
+    "slug": ""
+  },
+  {
     "id": 43,
     "key": "sportdb-schritt-fuer-schritt",
     "title": "SPORTdb – Passo dopo passo per i coach G+S",
@@ -42,20 +112,6 @@
     "slug": ""
   },
   {
-    "id": 59,
-    "key": "js-angebotsleitfaden",
-    "title": " Guida per lo svolgimento delle offerte G+S SC/T",
-    "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/42/guida-per-lo-svolgimento-delle-offerte-gs-sct/",
-    "slug": ""
-  },
-  {
-    "id": 61,
-    "key": "lagerreglement",
-    "title": "Regolamento sulla preparazione e lo svolgimento dei campi",
-    "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/7/regolamento-sulla-preparazione-e-lo-svolgimento-dei-campi/",
-    "slug": ""
-  },
-  {
     "id": 75,
     "key": "vorlage-gp-pbs",
     "title": "Vorlage Grobprogramm PBS",
@@ -74,48 +130,6 @@
     "key": "lst-grundlagen",
     "title": "Broschüre Lagersport/Trekking - Grundlagen",
     "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/39/guida-gs-sct-basi/",
-    "slug": ""
-  },
-  {
-    "id": 87,
-    "key": "StGallenWald",
-    "title": "Merkblatt Pfadiaktivitäten im St. Galler Wald",
-    "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/626/pfadilager-im-luzerner-wald/",
-    "slug": ""
-  },
-  {
-    "id": 84,
-    "key": "LuzernerWald",
-    "title": "Merkblatt Veranstaltungen im Luzerner Wald",
-    "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/626/pfadilager-im-luzerner-wald/",
-    "slug": ""
-  },
-  {
-    "id": 90,
-    "key": "LagerThurgau",
-    "title": "Lager im Thurgau",
-    "link": "https://forstamt.tg.ch/public/upload/assets/78914/Organisation_von_Jugendlagern.pdf",
-    "slug": ""
-  },
-  {
-    "id": 93,
-    "key": "ForstamtTG",
-    "title": "Forstamt Thurgau",
-    "link": "https://forstamt.tg.ch/",
-    "slug": ""
-  },
-  {
-    "id": 96,
-    "key": "LagerVD",
-    "title": "Formulare di annuncio Vaud",
-    "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/23/bewilligung-lager-im-kanton-waadt/",
-    "slug": ""
-  },
-  {
-    "id": 99,
-    "key": "RichtlinienVD",
-    "title": "Linee guida Campi nel Vaud",
-    "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/25/richtlinien-fur-lager-und-ferienkolonien-von-mehr-als-7-tagen-auf-waadtlander-gebiet/",
     "slug": ""
   },
   {
@@ -273,13 +287,6 @@
     "slug": "Chiusura-del-campo#Restituzione-cartine-topografiche"
   },
   {
-    "id": 170,
-    "key": "lagerbewilligung-kapitel",
-    "title": "Autorizzazione del campo",
-    "link": null,
-    "slug": "Autorizzazione-del-campo#Autorizzazione-del-campo"
-  },
-  {
     "id": 168,
     "key": "lageranmeldung",
     "title": "Annuncio di campo MSS",
@@ -315,24 +322,10 @@
     "slug": ""
   },
   {
-    "id": 179,
-    "key": "voila",
-    "title": "Voila",
-    "link": "http://www.voila.ch/de/",
-    "slug": ""
-  },
-  {
     "id": 181,
     "key": "faireslager",
     "title": "Campo fair ",
     "link": "https://www.faires-lager.ch/",
-    "slug": ""
-  },
-  {
-    "id": 182,
-    "key": "documenti-campo-fair",
-    "title": "Documenti Camp fair francese",
-    "link": "http://www.faires-lager.ch/camp-%C3%A9quitable---mat%C3%A9riel-du-cours.php",
     "slug": ""
   },
   {
@@ -350,25 +343,18 @@
     "slug": ""
   },
   {
-    "id": 189,
-    "key": "tn-anmeldung-kapitel",
-    "title": "I partecipanti si iscrivono autonomamente al campo",
-    "link": null,
-    "slug": "Amministrazione-dei-partecipanti#I-partecipanti-si-iscrivono-autonomamente-al-campo"
-  },
-  {
-    "id": 191,
-    "key": "sportdb-technisch",
-    "title": "SPORTdb – Importazione dei dati personali di federazioni/club e di federazioni giovanili",
-    "link": "https://test.ch",
-    "slug": ""
-  },
-  {
     "id": 193,
     "key": "team-erfassen-midata-kapitel",
     "title": "Aggiunta di animatori/trici",
     "link": null,
     "slug": "Preparazione#Registrare-gli-animatori-ed-i-cuochi-in-MiData"
+  },
+  {
+    "id": 170,
+    "key": "lagerbewilligung-kapitel",
+    "title": "Autorizzazione del campo",
+    "link": null,
+    "slug": "Autorizzazione-del-campo#Autorizzazione-del-campo"
   },
   {
     "id": 199,
@@ -445,6 +431,20 @@
     "key": "forstamt-tg",
     "title": "Forstamt Thurgau",
     "link": "https://forstamt.tg.ch/",
+    "slug": ""
+  },
+  {
+    "id": 233,
+    "key": "lager-tg",
+    "title": "Lager TG",
+    "link": "https://forstamt.tg.ch/public/upload/assets/78914/Organisation_von_Jugendlagern.pdf",
+    "slug": ""
+  },
+  {
+    "id": 239,
+    "key": "richtlinien-vd",
+    "title": "Richtlinien VD",
+    "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/25/linee-guida-per-i-campi-nel-cantone-di-vaud/",
     "slug": ""
   }
 ]

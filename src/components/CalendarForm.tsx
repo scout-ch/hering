@@ -107,7 +107,7 @@ class CalendarForm extends React.Component<Props, MyState> {
 
       let deadline = new Date(startDate.getTime() + (task.days - pufferDays) * 86400000)
       if (task.days === -1000) {
-        deadline = startDate
+        deadline = new Date(startDate.valueOf())
         deadline.setMonth(0)
         deadline.setDate(1)
       }

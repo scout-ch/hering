@@ -56,6 +56,62 @@
     ]
   },
   {
+    "id": 20,
+    "title": "TN-Liste anpassen",
+    "days": 10,
+    "locale": "de",
+    "published_at": "2022-01-22T11:19:39.770Z",
+    "created_at": "2022-01-22T11:19:11.373Z",
+    "updated_at": "2022-01-22T11:19:39.798Z",
+    "Slug": "TN-Liste-anpassen",
+    "responsible": [
+      {
+        "id": 1437,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 19,
+        "rolle": "MiData"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 49,
+        "title": "TN-Liste und Lagerabschluss in der MiData",
+        "content": "Der\\*die LL passt die vor dem Lager erfassten TNs und Leitenden in der [MiData]($midata$) an und teilt dies dem\\*der Coach bis spätestens 10 Tage nach dem Lager mit.\nAnschliessend überträgt der*die Coach die aktuelle TN-Liste in die [SPORTdb]($sportdb$). Falls bereits die Rega-Anmeldung über die SPORTdb gemacht wurde, müssen die Angaben nur noch korrigiert werden. Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen für den\\*die Coach sind im Dokument  [SPORTdb Schritt für Schritt]($sportdb-schritt-fuer-schritt$).\nDer\\*die LL schliesst danach das Lager in der MiData ab, indem er\\*sie den Status auf «abgeschlossen» setzt.",
+        "section": {
+          "id": 12,
+          "title": "G. Lagerabschluss",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:40:28.681Z",
+          "created_at": "2021-10-08T08:40:25.471Z",
+          "updated_at": "2022-01-22T09:29:47.322Z",
+          "key": "lagerabschluss",
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Lagerabschluss",
+          "menu_name": "Lagerabschluss",
+          "identifier": "Lagerabschluss"
+        },
+        "locale": "de",
+        "published_at": "2022-01-22T11:11:30.450Z",
+        "created_at": "2022-01-22T11:08:42.691Z",
+        "updated_at": "2022-01-23T22:07:11.531Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 702,
+        "slug": "TN-Liste-und-Lagerabschluss-in-der-MiData",
+        "link": null,
+        "slug_with_section": "Lagerabschluss#TN-Liste-und-Lagerabschluss-in-der-MiData",
+        "menu_name": "TN-Liste"
+      }
+    ]
+  },
+  {
     "id": 23,
     "title": "Lagerabschluss in der SPORTdb",
     "days": 15,
@@ -108,6 +164,122 @@
         "link": 26,
         "slug_with_section": "Lagerabschluss#Lagerabschluss-in-der-SPORTdb",
         "menu_name": "Lagerabschluss in der SPORTdb"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Jugendurlaub inizieren",
+    "days": -77,
+    "locale": "de",
+    "published_at": "2021-11-21T07:48:39.294Z",
+    "created_at": "2021-11-21T07:48:07.205Z",
+    "updated_at": "2021-11-21T07:52:40.178Z",
+    "Slug": "Jugendurlaub-inizieren",
+    "responsible": [
+      {
+        "id": 1442,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 4,
+        "rolle": "AL"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 28,
+        "title": "Jugendurlaub",
+        "content": "Berufstätige Leitende können für ein Lager Jugendurlaub beziehen. Bis zum 30. Altersjahr haben Lernende und Arbeitende gesetzlichen Anspruch auf eine zusätzliche Woche unbezahlten Urlaub für ausserschulische Jugendarbeit (Lager, Ausbildungskurse, Anlässe). Die entsprechende Leitungsperson füllt alleine oder gemeinsam mit dem\\*der AL den oberen Teil des Formulars [Bestätigung für den Bezug von Urlaub]($jugendurlaub-formular$) aus. Der\\*die AL ergänzt den unteren Teil und bestätigt damit die Durchführung des Lagers. Mit diesem Formular kann der\\*die Leiter\\*in beim Lehrbetrieb bzw. dem Arbeitgeber bis spätestens 2 Monate im Voraus den Jugendurlaub beantragen. Weitere Informationen sind dem   [Merkblatt zum Jugendurlaub]($jugendurlaub-merkblatt$) oder der Webseite [jugendurlaub.ch]($jugendurlaub$) zu entnehmen.",
+        "section": {
+          "id": 1,
+          "title": "A. Vorbereitung der Lagersaison",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-09-28T14:38:23.745Z",
+          "created_at": "2021-09-28T14:37:06.282Z",
+          "updated_at": "2022-01-22T09:42:23.209Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Vorbereitung",
+          "menu_name": "Vorbereitung",
+          "identifier": "bla"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:21:19.732Z",
+        "created_at": "2021-11-20T18:58:45.133Z",
+        "updated_at": "2022-01-23T01:33:31.882Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 110,
+        "slug": "Jugendurlaub",
+        "link": null,
+        "slug_with_section": "Vorbereitung#Jugendurlaub",
+        "menu_name": "Jugendurlaub"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Lagerdossier einreichen",
+    "days": -21,
+    "locale": "de",
+    "published_at": "2022-01-23T18:10:32.237Z",
+    "created_at": "2022-01-23T18:10:18.892Z",
+    "updated_at": "2022-01-23T22:12:10.361Z",
+    "Slug": "Lagerdossier-einreichen",
+    "responsible": [
+      {
+        "id": 1446,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 52,
+        "rolle": "Abteilungsleiter*in"
+      },
+      {
+        "id": 53,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 16,
+        "title": "Bestandteile des Lagerdossiers",
+        "content": "Aus allen Planungsunterlagen wird ein Lagerdossier zusammengestellt. Dieses wird dem\\*der AL und dem\\*der Coach spätestens 3 Wochen vor dem Lager abgegeben. Informationen zum Lagerdossier findet man auch in der J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$). Das Wichtigste ist hier zusammengefasst. Auf die inhaltliche Gestaltung wird nicht näher eingegangen.\nDas Lagerdossier ist ein Hilfsmittel für alle Leitenden im Lager. Es ist auch die Grundlage für die Beurteilung des Lagerprogramms durch AL und Coach. Es umfasst folgende Unterlagen:\n- Grobprogramm\n- 3 Schwerpunkte (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 14)\n- Motto und roter Faden\n- Beschreibung der Programmblöcke (siehe unten)\n- Für Wanderungen und Velotouren: Marschzeitberechnungen und farbige Karten-ausschnitte (siehe J+S-Broschüre [LS/T Berg]($lst-berg-cudesch$)\n- Sicherheitskonzept fürs Lager und für alle sicherheitsrelevanten Aktivitäten \n- Lagerregeln (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$))\n- Abmachungen im Team, z.&nbsp;B. Aufgaben Tageschef*in, Umgang mit Suchtmitteln etc. (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 5–9)\n- TN-Liste\n\nJe nach Absprache mit AL/Coach/Kassier\\*in:\n- TN-Informationen (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 27f) \n- Menüplan (siehe J+S-Merkblatt [Kochen im Lager]($lst-kueche$) und J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 34)\n- Lager-Budget (siehe [leere Vorlage der PBS]($lagerbudget$) und J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$))\n- Programm Elternabend (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 29)\n",
+        "section": {
+          "id": 8,
+          "title": "D. Lagerdossier einreichen",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:35:15.317Z",
+          "created_at": "2021-10-08T08:35:13.902Z",
+          "updated_at": "2022-01-22T09:44:59.002Z",
+          "key": "lagerdossier",
+          "Sorting": null,
+          "sorting": 4,
+          "slug": "Lagerdossier",
+          "menu_name": "Lagerdossier",
+          "identifier": "Lagerdossier"
+        },
+        "locale": "de",
+        "published_at": "2021-11-17T18:34:01.071Z",
+        "created_at": "2021-11-17T18:33:39.118Z",
+        "updated_at": "2022-01-23T22:46:32.716Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 401,
+        "slug": "Bestandteile-des-Lagerdossiers",
+        "link": null,
+        "slug_with_section": "Lagerdossier#Bestandteile-des-Lagerdossiers",
+        "menu_name": "Bestandteile des Lagerdossiers"
       }
     ]
   },
@@ -229,62 +401,119 @@
     ]
   },
   {
-    "id": 52,
-    "title": "Lagerdossier einreichen",
-    "days": -21,
+    "id": 29,
+    "title": "Lagerbewilligung",
+    "days": -7,
     "locale": "de",
-    "published_at": "2022-01-23T18:10:32.237Z",
-    "created_at": "2022-01-23T18:10:18.892Z",
-    "updated_at": "2022-01-23T22:12:10.361Z",
-    "Slug": "Lagerdossier-einreichen",
+    "published_at": "2022-01-22T12:53:30.793Z",
+    "created_at": "2022-01-22T12:53:27.360Z",
+    "updated_at": "2022-01-22T12:53:30.819Z",
+    "Slug": "Lagerbewilligung",
     "responsible": [
       {
-        "id": 809,
+        "id": 1449,
+        "label": null,
+        "rolle": "AL"
+      },
+      {
+        "id": 1450,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 28,
+        "rolle": "LL"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 29,
+        "title": "Lagerbewilligung",
+        "content": "AL und Coach bewilligen mit ihrer Unterschrift das Lager. Für Aktivitäten im Sicherheitsbereich braucht es eine zusätzliche Unterschrift des,\\*der verantwortlichen Experten\\*in (siehe [Aktivitäten in den Sicherheitsbereichen]($sicherheitsbereich$)).\nAL und Coach informieren den\\*die LL über die Bewilligung des Lagers, am besten an einem gemeinsamen Treffen. Der\\*die Coach sendet je eine Kopie der von allen unterzeichneten Bewilligung an LL und AL. Im Falle einer Nichtbewilligung sendet er*sie zusätzlich eine Kopie an den KV und die [Geschäftsstelle der PBS](mailto:info@pbs.ch).\n\n### Erklärungen zum Formular\n1. «Bewilligung»: Dabei bedeutet «bewilligt», dass das Programm wie geplant durchgeführt werden kann; «bewilligt mit Auflagen», dass das Programm in den entsprechenden Punkten durch den*die LL angepasst werden muss; «nicht bewilligt», dass das Lager in der vorgesehenen Form nicht stattfinden darf.\n1. «Bewilligung Sicherheitsaktivitäten»: Der\\*die Coach bestätigt mit seiner Unterschrift die Bewilligung, bzw. Nicht-Bewilligung der Aktivität im Sicherheitsbereich. Falls er*sie die Betreuung der Sicherheitsaktivitäten an eine Drittperson delegiert hat, so unterschreibt hier diese Person.\n1. «Bestätigung durch den\\*die LL»: Im Falle von Bewilligung mit Auflagen oder bei Nichtbewilligung des Lagers bestätigt der\\*die LL ihre Kenntnisnahme mit ihrer Unterschrift.\n1. «Betreuungsaktivitäten des*der Coach\\*s»: In diesem Abschnitt hält der\\*die Coach fest, wann die einzelnen Schritte der Lagervorbereitung stattgefunden haben. Dieser Teil wird anstelle des J+S-Coachjournals ausgefüllt und kann vom kantonalen Sportamt zur Einsicht eingefordert werden.\n\n### Weitere Informationen\n- [Reglement zur Planung und Durchführung von Lagern (PBS)]($lagerreglement$)\n- [Leitfaden zur Durchführung von J+S-Angeboten LS/T (J+S)]($js-angebotsleitfaden$)\n\n![2084.06.de-Lagerbewilligung-20211210-BKom_Page_1.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1645801825/hering/2084_06_de_Lagerbewilligung_20211210_B_Kom_Page_1_751b764214.png)",
+        "section": {
+          "id": 10,
+          "title": "F. Lagerbewilligung",
+          "content": "",
+          "locale": "de",
+          "published_at": "2021-10-08T08:38:59.875Z",
+          "created_at": "2021-10-08T08:38:58.056Z",
+          "updated_at": "2022-01-22T09:31:28.008Z",
+          "key": "lagerbewilligung",
+          "Sorting": null,
+          "sorting": 6,
+          "slug": "Lagerbewilligung",
+          "menu_name": "Lagerbewilligung",
+          "identifier": "Lagerbewilligung"
+        },
+        "locale": "de",
+        "published_at": "2021-11-21T00:26:12.845Z",
+        "created_at": "2021-11-21T00:25:01.676Z",
+        "updated_at": "2022-02-25T15:14:46.898Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 602,
+        "slug": "Lagerbewilligung",
+        "link": 24,
+        "slug_with_section": "Lagerbewilligung#Lagerbewilligung",
+        "menu_name": "Lagerbewilligung"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Lageranmeldung PBS iniziieren",
+    "days": -49,
+    "locale": "de",
+    "published_at": "2021-11-21T07:55:46.666Z",
+    "created_at": "2021-11-21T07:55:27.988Z",
+    "updated_at": "2022-01-22T16:49:28.171Z",
+    "Slug": "Lageranmeldung-PBS-iniziieren",
+    "responsible": [
+      {
+        "id": 1451,
         "label": null,
         "rolle": "LL"
       }
     ],
     "targets": [
       {
-        "id": 52,
-        "rolle": "Abteilungsleiter*in"
-      },
-      {
-        "id": 53,
+        "id": 6,
         "rolle": "Coach"
       }
     ],
     "chapters": [
       {
-        "id": 16,
-        "title": "Bestandteile des Lagerdossiers",
-        "content": "Aus allen Planungsunterlagen wird ein Lagerdossier zusammengestellt. Dieses wird dem\\*der AL und dem\\*der Coach spätestens 3 Wochen vor dem Lager abgegeben. Informationen zum Lagerdossier findet man auch in der J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$). Das Wichtigste ist hier zusammengefasst. Auf die inhaltliche Gestaltung wird nicht näher eingegangen.\nDas Lagerdossier ist ein Hilfsmittel für alle Leitenden im Lager. Es ist auch die Grundlage für die Beurteilung des Lagerprogramms durch AL und Coach. Es umfasst folgende Unterlagen:\n- Grobprogramm\n- 3 Schwerpunkte (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 14)\n- Motto und roter Faden\n- Beschreibung der Programmblöcke (siehe unten)\n- Für Wanderungen und Velotouren: Marschzeitberechnungen und farbige Karten-ausschnitte (siehe J+S-Broschüre [LS/T Berg]($lst-berg-cudesch$)\n- Sicherheitskonzept fürs Lager und für alle sicherheitsrelevanten Aktivitäten \n- Lagerregeln (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$))\n- Abmachungen im Team, z.&nbsp;B. Aufgaben Tageschef*in, Umgang mit Suchtmitteln etc. (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 5–9)\n- TN-Liste\n\nJe nach Absprache mit AL/Coach/Kassier\\*in:\n- TN-Informationen (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 27f) \n- Menüplan (siehe J+S-Merkblatt [Kochen im Lager]($lst-kueche$) und J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 34)\n- Lager-Budget (siehe [leere Vorlage der PBS]($lagerbudget$) und J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$))\n- Programm Elternabend (siehe J+S-Broschüre [LS/T Lager]($lst-lager-cudesch$) S. 29)\n",
+        "id": 6,
+        "title": "Lageranmeldung PBS",
+        "content": "### Angaben des\\*der Lagerleiter\\*in\nMit der PBS-Lageranmeldung in der [MiData]($midata$) wird jedes Lager im Voraus beim KV und bei der PBS gemeldet. Der\\*die LL ergänzt bis spätestens 7&nbsp;Wochen vor dem Lager alle Angaben des Lagers in der MiData und schickt das Grobprogramm zeitgleich an AL und Coach.\n\n### Angaben des\\*der Coach\\*s\nDer\\*die Coach kann sich nun in der [MiData]($midata$) einloggen, seinen\\*ihren Teil der Lageranmeldung ausfüllen und per Button einreichen. Die Lageranmeldung wird dann automatisch an PBS und KV übermittelt. Die PBS benötigt diese Informationen für die Reaktion in Krisenfällen sowie für statistische Angaben gegenüber der Eidgenossenschaft. Der\\*die Coach loggt sich dafür mit seinem\\*ihren Login in der MiData ein und navigiert zur eigenen Coach-Abteilung. Danach geht er\\*sie wie folgt vor:\n1. «Lager» anklicken\n2. Entsprechendes Lager auswählen\n3. «Bearbeiten» klicken\n4. Angaben in allen Registern prüfen\n5. Das Register Betreuung wählen. «Coach bestätigt» klicken sowie die Angaben zum Coachbesuch und den [Aktivitäten im Sicherheitsbereich]($sicherheitsbereich$) ausfüllen.\n7. «Speichern» klicken\n7. Wenn alle Angaben vollständig sind: Lageranmeldung an die PBS schicken mittels Klicken des Buttons «Einreichen».\n\n![de-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_A_b3b32a88d3.png)\n\n![de-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_B_eb31dc00ec.png)\n\n![de-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_C_f62f7b963e.png)\n",
         "section": {
-          "id": 8,
-          "title": "D. Lagerdossier einreichen",
+          "id": 5,
+          "title": "B. Lageranmeldung und Grobprogramm",
           "content": "",
           "locale": "de",
-          "published_at": "2021-10-08T08:35:15.317Z",
-          "created_at": "2021-10-08T08:35:13.902Z",
-          "updated_at": "2022-01-22T09:44:59.002Z",
-          "key": "lagerdossier",
-          "Sorting": null,
-          "sorting": 4,
-          "slug": "Lagerdossier",
-          "menu_name": "Lagerdossier",
-          "identifier": "Lagerdossier"
+          "published_at": "2021-10-07T08:57:38.191Z",
+          "created_at": "2021-10-07T08:57:35.643Z",
+          "updated_at": "2022-01-22T09:42:30.997Z",
+          "key": "lageranmeldung",
+          "Sorting": 2,
+          "sorting": 2,
+          "slug": "Lageranmeldung",
+          "menu_name": "Lageranmeldung",
+          "identifier": "a"
         },
         "locale": "de",
-        "published_at": "2021-11-17T18:34:01.071Z",
-        "created_at": "2021-11-17T18:33:39.118Z",
-        "updated_at": "2022-01-23T22:46:32.716Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 401,
-        "slug": "Bestandteile-des-Lagerdossiers",
-        "link": null,
-        "slug_with_section": "Lagerdossier#Bestandteile-des-Lagerdossiers",
-        "menu_name": "Bestandteile des Lagerdossiers"
+        "published_at": "2021-10-07T09:04:37.416Z",
+        "created_at": "2021-10-07T09:03:55.201Z",
+        "updated_at": "2022-01-23T12:22:05.305Z",
+        "key": "lageranmeldung_pbs",
+        "Sorting": 1,
+        "sorting": 201,
+        "slug": "Lageranmeldung-PBS",
+        "link": 2,
+        "slug_with_section": "Lageranmeldung#Lageranmeldung-PBS",
+        "menu_name": "Lageranmeldung PBS"
       }
     ]
   },
@@ -568,123 +797,6 @@
     ]
   },
   {
-    "id": 29,
-    "title": "Lagerbewilligung",
-    "days": -7,
-    "locale": "de",
-    "published_at": "2022-01-22T12:53:30.793Z",
-    "created_at": "2022-01-22T12:53:27.360Z",
-    "updated_at": "2022-01-22T12:53:30.819Z",
-    "Slug": "Lagerbewilligung",
-    "responsible": [
-      {
-        "id": 413,
-        "label": null,
-        "rolle": "AL"
-      },
-      {
-        "id": 414,
-        "label": null,
-        "rolle": "C"
-      }
-    ],
-    "targets": [
-      {
-        "id": 28,
-        "rolle": "LL"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 29,
-        "title": "Lagerbewilligung",
-        "content": "AL und Coach bewilligen mit ihrer Unterschrift das Lager. Für Aktivitäten im Sicherheitsbereich braucht es eine zusätzliche Unterschrift des,\\*der verantwortlichen Experten\\*in (siehe [Aktivitäten in den Sicherheitsbereichen]($sicherheitsbereich$)).\nAL und Coach informieren den\\*die LL über die Bewilligung des Lagers, am besten an einem gemeinsamen Treffen. Der\\*die Coach sendet je eine Kopie der von allen unterzeichneten Bewilligung an LL und AL. Im Falle einer Nichtbewilligung sendet er*sie zusätzlich eine Kopie an den KV und die [Geschäftsstelle der PBS](mailto:info@pbs.ch).\n\n### Erklärungen zum Formular\n1. «Bewilligung»: Dabei bedeutet «bewilligt», dass das Programm wie geplant durchgeführt werden kann; «bewilligt mit Auflagen», dass das Programm in den entsprechenden Punkten durch den*die LL angepasst werden muss; «nicht bewilligt», dass das Lager in der vorgesehenen Form nicht stattfinden darf.\n1. «Bewilligung Sicherheitsaktivitäten»: Der\\*die Coach bestätigt mit seiner Unterschrift die Bewilligung, bzw. Nicht-Bewilligung der Aktivität im Sicherheitsbereich. Falls er*sie die Betreuung der Sicherheitsaktivitäten an eine Drittperson delegiert hat, so unterschreibt hier diese Person.\n1. «Bestätigung durch den\\*die LL»: Im Falle von Bewilligung mit Auflagen oder bei Nichtbewilligung des Lagers bestätigt der\\*die LL ihre Kenntnisnahme mit ihrer Unterschrift.\n1. «Betreuungsaktivitäten des*der Coach\\*s»: In diesem Abschnitt hält der\\*die Coach fest, wann die einzelnen Schritte der Lagervorbereitung stattgefunden haben. Dieser Teil wird anstelle des J+S-Coachjournals ausgefüllt und kann vom kantonalen Sportamt zur Einsicht eingefordert werden.\n\n### Weitere Informationen\n- [Reglement zur Planung und Durchführung von Lagern (PBS)]($lagerreglement$)\n- [Leitfaden zur Durchführung von J+S-Angeboten LS/T (J+S)]($js-angebotsleitfaden$)\n\n![de-lagerreglement.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642855438/hering/de_lagerreglement_038b785506.png)\n",
-        "section": {
-          "id": 10,
-          "title": "F. Lagerbewilligung",
-          "content": "",
-          "locale": "de",
-          "published_at": "2021-10-08T08:38:59.875Z",
-          "created_at": "2021-10-08T08:38:58.056Z",
-          "updated_at": "2022-01-22T09:31:28.008Z",
-          "key": "lagerbewilligung",
-          "Sorting": null,
-          "sorting": 6,
-          "slug": "Lagerbewilligung",
-          "menu_name": "Lagerbewilligung",
-          "identifier": "Lagerbewilligung"
-        },
-        "locale": "de",
-        "published_at": "2021-11-21T00:26:12.845Z",
-        "created_at": "2021-11-21T00:25:01.676Z",
-        "updated_at": "2022-01-23T23:38:06.992Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 602,
-        "slug": "Lagerbewilligung",
-        "link": 24,
-        "slug_with_section": "Lagerbewilligung#Lagerbewilligung",
-        "menu_name": "Lagerbewilligung"
-      }
-    ]
-  },
-  {
-    "id": 20,
-    "title": "TN-Liste anpassen",
-    "days": 10,
-    "locale": "de",
-    "published_at": "2022-01-22T11:19:39.770Z",
-    "created_at": "2022-01-22T11:19:11.373Z",
-    "updated_at": "2022-01-22T11:19:39.798Z",
-    "Slug": "TN-Liste-anpassen",
-    "responsible": [
-      {
-        "id": 303,
-        "label": null,
-        "rolle": "LL"
-      }
-    ],
-    "targets": [
-      {
-        "id": 19,
-        "rolle": "MiData"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 49,
-        "title": "TN-Liste und Lagerabschluss in der MiData",
-        "content": "Der\\*die LL passt die vor dem Lager erfassten TNs und Leitenden in der [MiData]($midata$) an und teilt dies dem\\*der Coach bis spätestens 10 Tage nach dem Lager mit.\nAnschliessend überträgt der*die Coach die aktuelle TN-Liste in die [SPORTdb]($sportdb$). Falls bereits die Rega-Anmeldung über die SPORTdb gemacht wurde, müssen die Angaben nur noch korrigiert werden. Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen für den\\*die Coach sind im Dokument  [SPORTdb Schritt für Schritt]($sportdb-schritt-fuer-schritt$).\nDer\\*die LL schliesst danach das Lager in der MiData ab, indem er\\*sie den Status auf «abgeschlossen» setzt.",
-        "section": {
-          "id": 12,
-          "title": "G. Lagerabschluss",
-          "content": "",
-          "locale": "de",
-          "published_at": "2021-10-08T08:40:28.681Z",
-          "created_at": "2021-10-08T08:40:25.471Z",
-          "updated_at": "2022-01-22T09:29:47.322Z",
-          "key": "lagerabschluss",
-          "Sorting": null,
-          "sorting": 7,
-          "slug": "Lagerabschluss",
-          "menu_name": "Lagerabschluss",
-          "identifier": "Lagerabschluss"
-        },
-        "locale": "de",
-        "published_at": "2022-01-22T11:11:30.450Z",
-        "created_at": "2022-01-22T11:08:42.691Z",
-        "updated_at": "2022-01-23T22:07:11.531Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 702,
-        "slug": "TN-Liste-und-Lagerabschluss-in-der-MiData",
-        "link": null,
-        "slug_with_section": "Lagerabschluss#TN-Liste-und-Lagerabschluss-in-der-MiData",
-        "menu_name": "TN-Liste"
-      }
-    ]
-  },
-  {
     "id": 5,
     "title": "Anmeldung der Lager bei J+S via SPORTdb",
     "days": -30,
@@ -844,118 +956,6 @@
         "link": 27,
         "slug_with_section": "Dienstleistungen-bestellen#J+S-Leihmaterialbestellung",
         "menu_name": "J+S-Leihmaterialbestellung"
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "title": "Lageranmeldung PBS iniziieren",
-    "days": -49,
-    "locale": "de",
-    "published_at": "2021-11-21T07:55:46.666Z",
-    "created_at": "2021-11-21T07:55:27.988Z",
-    "updated_at": "2022-01-22T16:49:28.171Z",
-    "Slug": "Lageranmeldung-PBS-iniziieren",
-    "responsible": [
-      {
-        "id": 157,
-        "label": null,
-        "rolle": "LL"
-      }
-    ],
-    "targets": [
-      {
-        "id": 6,
-        "rolle": "Coach"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 6,
-        "title": "Lageranmeldung PBS",
-        "content": "### Angaben des\\*der Lagerleiter\\*in\nMit der PBS-Lageranmeldung in der [MiData]($midata$) wird jedes Lager im Voraus beim KV und bei der PBS gemeldet. Der\\*die LL ergänzt bis spätestens 7&nbsp;Wochen vor dem Lager alle Angaben des Lagers in der MiData und schickt das Grobprogramm zeitgleich an AL und Coach.\n\n### Angaben des\\*der Coach\\*s\nDer\\*die Coach kann sich nun in der [MiData]($midata$) einloggen, seinen\\*ihren Teil der Lageranmeldung ausfüllen und per Button einreichen. Die Lageranmeldung wird dann automatisch an PBS und KV übermittelt. Die PBS benötigt diese Informationen für die Reaktion in Krisenfällen sowie für statistische Angaben gegenüber der Eidgenossenschaft. Der\\*die Coach loggt sich dafür mit seinem\\*ihren Login in der MiData ein und navigiert zur eigenen Coach-Abteilung. Danach geht er\\*sie wie folgt vor:\n1. «Lager» anklicken\n2. Entsprechendes Lager auswählen\n3. «Bearbeiten» klicken\n4. Angaben in allen Registern prüfen\n5. Das Register Betreuung wählen. «Coach bestätigt» klicken sowie die Angaben zum Coachbesuch und den [Aktivitäten im Sicherheitsbereich]($sicherheitsbereich$) ausfüllen.\n7. «Speichern» klicken\n7. Wenn alle Angaben vollständig sind: Lageranmeldung an die PBS schicken mittels Klicken des Buttons «Einreichen».\n\n![de-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_A_b3b32a88d3.png)\n\n![de-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_B_eb31dc00ec.png)\n\n![de-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_C_f62f7b963e.png)\n",
-        "section": {
-          "id": 5,
-          "title": "B. Lageranmeldung und Grobprogramm",
-          "content": "",
-          "locale": "de",
-          "published_at": "2021-10-07T08:57:38.191Z",
-          "created_at": "2021-10-07T08:57:35.643Z",
-          "updated_at": "2022-01-22T09:42:30.997Z",
-          "key": "lageranmeldung",
-          "Sorting": 2,
-          "sorting": 2,
-          "slug": "Lageranmeldung",
-          "menu_name": "Lageranmeldung",
-          "identifier": "a"
-        },
-        "locale": "de",
-        "published_at": "2021-10-07T09:04:37.416Z",
-        "created_at": "2021-10-07T09:03:55.201Z",
-        "updated_at": "2022-01-23T12:22:05.305Z",
-        "key": "lageranmeldung_pbs",
-        "Sorting": 1,
-        "sorting": 201,
-        "slug": "Lageranmeldung-PBS",
-        "link": 2,
-        "slug_with_section": "Lageranmeldung#Lageranmeldung-PBS",
-        "menu_name": "Lageranmeldung PBS"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "title": "Jugendurlaub inizieren",
-    "days": -77,
-    "locale": "de",
-    "published_at": "2021-11-21T07:48:39.294Z",
-    "created_at": "2021-11-21T07:48:07.205Z",
-    "updated_at": "2021-11-21T07:52:40.178Z",
-    "Slug": "Jugendurlaub-inizieren",
-    "responsible": [
-      {
-        "id": 1271,
-        "label": null,
-        "rolle": "LL"
-      }
-    ],
-    "targets": [
-      {
-        "id": 4,
-        "rolle": "AL"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 28,
-        "title": "Jugendurlaub",
-        "content": "Berufstätige Leitende können für ein Lager Jugendurlaub beziehen. Bis zum 30. Altersjahr haben Lernende und Arbeitende gesetzlichen Anspruch auf eine zusätzliche Woche unbezahlten Urlaub für ausserschulische Jugendarbeit (Lager, Ausbildungskurse, Anlässe). Die entsprechende Leitungsperson füllt alleine oder gemeinsam mit dem\\*der AL den oberen Teil des Formulars [Bestätigung für den Bezug von Urlaub]($jugendurlaub-formular$) aus. Der\\*die AL ergänzt den unteren Teil und bestätigt damit die Durchführung des Lagers. Mit diesem Formular kann der\\*die Leiter\\*in beim Lehrbetrieb bzw. dem Arbeitgeber bis spätestens 2 Monate im Voraus den Jugendurlaub beantragen. Weitere Informationen sind dem   [Merkblatt zum Jugendurlaub]($jugendurlaub-merkblatt$) oder der Webseite [jugendurlaub.ch]($jugendurlaub$) zu entnehmen.",
-        "section": {
-          "id": 1,
-          "title": "A. Vorbereitung der Lagersaison",
-          "content": "",
-          "locale": "de",
-          "published_at": "2021-09-28T14:38:23.745Z",
-          "created_at": "2021-09-28T14:37:06.282Z",
-          "updated_at": "2022-01-22T09:42:23.209Z",
-          "key": "vorbereitung",
-          "Sorting": 1,
-          "sorting": 1,
-          "slug": "Vorbereitung",
-          "menu_name": "Vorbereitung",
-          "identifier": "bla"
-        },
-        "locale": "de",
-        "published_at": "2021-11-21T00:21:19.732Z",
-        "created_at": "2021-11-20T18:58:45.133Z",
-        "updated_at": "2022-01-23T01:33:31.882Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 110,
-        "slug": "Jugendurlaub",
-        "link": null,
-        "slug_with_section": "Vorbereitung#Jugendurlaub",
-        "menu_name": "Jugendurlaub"
       }
     ]
   },

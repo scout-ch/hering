@@ -190,7 +190,7 @@
         "menu_name": "Faires Lager",
         "responsible": [
           {
-            "id": 1083,
+            "id": 1436,
             "label": null,
             "rolle": "LL"
           }
@@ -1515,12 +1515,12 @@
       {
         "id": 29,
         "title": "Lagerbewilligung",
-        "content": "AL und Coach bewilligen mit ihrer Unterschrift das Lager. Für Aktivitäten im Sicherheitsbereich braucht es eine zusätzliche Unterschrift des,\\*der verantwortlichen Experten\\*in (siehe [Aktivitäten in den Sicherheitsbereichen]($sicherheitsbereich$)).\nAL und Coach informieren den\\*die LL über die Bewilligung des Lagers, am besten an einem gemeinsamen Treffen. Der\\*die Coach sendet je eine Kopie der von allen unterzeichneten Bewilligung an LL und AL. Im Falle einer Nichtbewilligung sendet er*sie zusätzlich eine Kopie an den KV und die [Geschäftsstelle der PBS](mailto:info@pbs.ch).\n\n### Erklärungen zum Formular\n1. «Bewilligung»: Dabei bedeutet «bewilligt», dass das Programm wie geplant durchgeführt werden kann; «bewilligt mit Auflagen», dass das Programm in den entsprechenden Punkten durch den*die LL angepasst werden muss; «nicht bewilligt», dass das Lager in der vorgesehenen Form nicht stattfinden darf.\n1. «Bewilligung Sicherheitsaktivitäten»: Der\\*die Coach bestätigt mit seiner Unterschrift die Bewilligung, bzw. Nicht-Bewilligung der Aktivität im Sicherheitsbereich. Falls er*sie die Betreuung der Sicherheitsaktivitäten an eine Drittperson delegiert hat, so unterschreibt hier diese Person.\n1. «Bestätigung durch den\\*die LL»: Im Falle von Bewilligung mit Auflagen oder bei Nichtbewilligung des Lagers bestätigt der\\*die LL ihre Kenntnisnahme mit ihrer Unterschrift.\n1. «Betreuungsaktivitäten des*der Coach\\*s»: In diesem Abschnitt hält der\\*die Coach fest, wann die einzelnen Schritte der Lagervorbereitung stattgefunden haben. Dieser Teil wird anstelle des J+S-Coachjournals ausgefüllt und kann vom kantonalen Sportamt zur Einsicht eingefordert werden.\n\n### Weitere Informationen\n- [Reglement zur Planung und Durchführung von Lagern (PBS)]($lagerreglement$)\n- [Leitfaden zur Durchführung von J+S-Angeboten LS/T (J+S)]($js-angebotsleitfaden$)\n\n![de-lagerreglement.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642855438/hering/de_lagerreglement_038b785506.png)\n",
+        "content": "AL und Coach bewilligen mit ihrer Unterschrift das Lager. Für Aktivitäten im Sicherheitsbereich braucht es eine zusätzliche Unterschrift des,\\*der verantwortlichen Experten\\*in (siehe [Aktivitäten in den Sicherheitsbereichen]($sicherheitsbereich$)).\nAL und Coach informieren den\\*die LL über die Bewilligung des Lagers, am besten an einem gemeinsamen Treffen. Der\\*die Coach sendet je eine Kopie der von allen unterzeichneten Bewilligung an LL und AL. Im Falle einer Nichtbewilligung sendet er*sie zusätzlich eine Kopie an den KV und die [Geschäftsstelle der PBS](mailto:info@pbs.ch).\n\n### Erklärungen zum Formular\n1. «Bewilligung»: Dabei bedeutet «bewilligt», dass das Programm wie geplant durchgeführt werden kann; «bewilligt mit Auflagen», dass das Programm in den entsprechenden Punkten durch den*die LL angepasst werden muss; «nicht bewilligt», dass das Lager in der vorgesehenen Form nicht stattfinden darf.\n1. «Bewilligung Sicherheitsaktivitäten»: Der\\*die Coach bestätigt mit seiner Unterschrift die Bewilligung, bzw. Nicht-Bewilligung der Aktivität im Sicherheitsbereich. Falls er*sie die Betreuung der Sicherheitsaktivitäten an eine Drittperson delegiert hat, so unterschreibt hier diese Person.\n1. «Bestätigung durch den\\*die LL»: Im Falle von Bewilligung mit Auflagen oder bei Nichtbewilligung des Lagers bestätigt der\\*die LL ihre Kenntnisnahme mit ihrer Unterschrift.\n1. «Betreuungsaktivitäten des*der Coach\\*s»: In diesem Abschnitt hält der\\*die Coach fest, wann die einzelnen Schritte der Lagervorbereitung stattgefunden haben. Dieser Teil wird anstelle des J+S-Coachjournals ausgefüllt und kann vom kantonalen Sportamt zur Einsicht eingefordert werden.\n\n### Weitere Informationen\n- [Reglement zur Planung und Durchführung von Lagern (PBS)]($lagerreglement$)\n- [Leitfaden zur Durchführung von J+S-Angeboten LS/T (J+S)]($js-angebotsleitfaden$)\n\n![2084.06.de-Lagerbewilligung-20211210-BKom_Page_1.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1645801825/hering/2084_06_de_Lagerbewilligung_20211210_B_Kom_Page_1_751b764214.png)",
         "section": 10,
         "locale": "de",
         "published_at": "2021-11-21T00:26:12.845Z",
         "created_at": "2021-11-21T00:25:01.676Z",
-        "updated_at": "2022-01-23T23:38:06.992Z",
+        "updated_at": "2022-02-25T15:14:46.898Z",
         "key": null,
         "Sorting": null,
         "sorting": 602,
@@ -1530,17 +1530,17 @@
         "menu_name": "Lagerbewilligung",
         "responsible": [
           {
-            "id": 1319,
+            "id": 1418,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1320,
+            "id": 1420,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1321,
+            "id": 1422,
             "label": null,
             "rolle": "C"
           }
@@ -1571,12 +1571,12 @@
       {
         "id": 62,
         "title": "Beurteilung des Lagerdossiers mithilfe der Checkliste",
-        "content": "AL und Coach beurteilen mithilfe der Checkliste der [PBS-Lagerbewilligung]($lagerbewilligung-download$) das Lagerdossier. Am besten wird das Programm an einem gemeinsamen Höck von Coach und LL und evtl. AL besprochen. Die Checkliste kann dort auch als Gedankenstütze eingesetzt werden. Punkte, die verbessert werden müssen, teilen AL und Coach der\\*dem LL bei der Programmbesprechung mit.",
+        "content": "AL und Coach beurteilen mithilfe der Checkliste auf Seite 2 der [PBS-Lagerbewilligung]($lagerbewilligung-download$) das Lagerdossier. Am besten wird das Programm an einem gemeinsamen Höck von Coach und LL und evtl. AL besprochen. Die Checkliste kann dort auch als Gedankenstütze eingesetzt werden. Punkte, die verbessert werden müssen, teilen AL und Coach der\\*dem LL bei der Programmbesprechung mit.\n\n![2084.06.de-Lagerbewilligung-20211210-BKom_Page_2.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1645801825/hering/2084_06_de_Lagerbewilligung_20211210_B_Kom_Page_2_261b70f202.png)\n",
         "section": 10,
         "locale": "de",
         "published_at": "2022-01-22T12:19:35.326Z",
         "created_at": "2022-01-22T12:19:11.213Z",
-        "updated_at": "2022-01-23T01:56:10.336Z",
+        "updated_at": "2022-02-25T15:15:51.466Z",
         "key": null,
         "Sorting": null,
         "sorting": 601,
@@ -1586,12 +1586,12 @@
         "menu_name": "Beurteilung des Lagerdossiers",
         "responsible": [
           {
-            "id": 358,
+            "id": 1433,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 359,
+            "id": 1434,
             "label": null,
             "rolle": "C"
           }

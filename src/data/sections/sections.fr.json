@@ -190,7 +190,7 @@
         "menu_name": "Camp équitable",
         "responsible": [
           {
-            "id": 1084,
+            "id": 1435,
             "label": null,
             "rolle": "LL"
           }
@@ -1251,12 +1251,12 @@
         "locale": "fr",
         "published_at": "2022-01-23T07:56:18.489Z",
         "created_at": "2022-01-23T07:44:32.260Z",
-        "updated_at": "2022-01-23T22:40:34.986Z",
+        "updated_at": "2022-02-26T18:14:53.487Z",
         "key": null,
         "Sorting": null,
         "sorting": 501,
         "slug": "Inscription-des-participants-aux-camps-via-la-MiData",
-        "link": 188,
+        "link": 240,
         "slug_with_section": "Administration-des-participantes#Inscription-des-participants-aux-camps-via-la-MiData",
         "menu_name": "Inscription des participants via la MiData",
         "responsible": [
@@ -1469,12 +1469,12 @@
       {
         "id": 63,
         "title": "Évaluation du programme détaillé à l'aide de la liste de contrôle",
-        "content": "Le·la RG et le·la coach évaluent le programme du camp à l'aide de la liste de contrôle (deuxième page de  l’[autorisation de camp du MSdS]($lagerbewilligung-download$), non reproduite ici). L'idéal serait que le programme soit discuté entre le·la coach, le·la responsable de camp et éventuellement le·la RG. La liste de contrôle peut alors être utilisée comme base de réflexion. Pendant la discussion, le·la coach et le·la RG signalent au·à la responsable de camp les points qui doivent être améliorés.",
+        "content": "Le·la RG et le·la coach évaluent le programme du camp à l'aide de la liste de contrôle (deuxième page de  l’[autorisation de camp du MSdS]($lagerbewilligung-download$), non reproduite ici). L'idéal serait que le programme soit discuté entre le·la coach, le·la responsable de camp et éventuellement le·la RG. La liste de contrôle peut alors être utilisée comme base de réflexion. Pendant la discussion, le·la coach et le·la RG signalent au·à la responsable de camp les points qui doivent être améliorés.\n\n![2084.06.fr-Autorisation_de_Camp-20211210-CoEnc_Page_2.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1645801825/hering/2084_06_fr_Autorisation_de_Camp_20211210_Co_Enc_Page_2_79baae4160.png)",
         "section": 11,
         "locale": "fr",
         "published_at": "2022-01-22T12:21:49.313Z",
         "created_at": "2022-01-22T12:21:47.578Z",
-        "updated_at": "2022-01-22T12:21:49.350Z",
+        "updated_at": "2022-02-25T15:15:55.953Z",
         "key": null,
         "Sorting": null,
         "sorting": 601,
@@ -1484,12 +1484,12 @@
         "menu_name": "Évaluation du programme détaillé",
         "responsible": [
           {
-            "id": 529,
+            "id": 1431,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 531,
+            "id": 1432,
             "label": null,
             "rolle": "C"
           }
@@ -1520,12 +1520,12 @@
       {
         "id": 67,
         "title": "Autorisation de camp",
-        "content": "Avec leur signature, le·la RG et le·la coach délivrent l’autorisation de camp. Pour des activités dans le domaine de sécurité, il faut une signature supplémentaire de l’expert·e en charge (cf. [Activités des domaines de sécurité]($sicherheitsbereich$)).\nLe·la RG et le·la coach informent le·la responsable de camp sur l’autorisation de camp idéalement lors d'un entretien. Le·la coach envoie une copie de l'autorisation de camp signée par tou·te·s au·à la responsable de camp et au·à la RG. En cas de refus d’autorisation, il·elle envoie une copie supplémentaire à l'association cantonale (AC) et au [Secrétariat général du MSdS](mailto:info@msds.ch).\n\n### Explication du formulaire\n1. «&nbsp;Autorisation&nbsp;» : Si le programme est «&nbsp;autorisé&nbsp;», cela signifie qu'il peut être exécuté comme prévu ; s'il est «&nbsp;autorisé avec compléments&nbsp;», il faut que les points contestés du programme soient adaptés par le·la responsable de camp ; «&nbsp;non-autorisé&nbsp;» signifie que le camp ne peut pas avoir lieu sous cette forme. \n1. «&nbsp;Autorisation activités de sécurité&nbsp;» : Le·la coach confirme par sa signature l'autorisation ou le refus des activités de sécurité. Si il·elle a délégué l'encadrement des activités de sécurité à une tierce personne, il·elle consultera d’abord celle-ci, mais signera lui·elle-même. \n1. «&nbsp;Confirmation du·de la responsable de camp&nbsp;» : En cas d'autorisation avec compléments ou de refus d’autorisation de camper, le·la responsable de camp confirme en avoir pris connaissance par sa signature.\n1. «&nbsp;Activités d'encadrement du·de la coach&nbsp;» : Dans ce paragraphe, le·la coach consigne la date de chaque étape de la préparation du camp. Cette partie peut être remplie à la place du journal du·de la coach et peut être consultée par l'office cantonal des sports.\n\n### Plus d’informations\n- [Le règlement du MSdS pour la préparation et la réalisation de camps]($lagerreglement$)\n- [Guide J+S pour la réalisation des camps J+S Sport de camp/Trekking]($js-angebotsleitfaden$)\n\n![fr-lagerreglement.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642855438/hering/fr_lagerreglement_469838f44d.png)\n",
+        "content": "Avec leur signature, le·la RG et le·la coach délivrent l’autorisation de camp. Pour des activités dans le domaine de sécurité, il faut une signature supplémentaire de l’expert·e en charge (cf. [Activités des domaines de sécurité]($sicherheitsbereich$)).\nLe·la RG et le·la coach informent le·la responsable de camp sur l’autorisation de camp idéalement lors d'un entretien. Le·la coach envoie une copie de l'autorisation de camp signée par tou·te·s au·à la responsable de camp et au·à la RG. En cas de refus d’autorisation, il·elle envoie une copie supplémentaire à l'association cantonale (AC) et au [Secrétariat général du MSdS](mailto:info@msds.ch).\n\n### Explication du formulaire\n1. «&nbsp;Autorisation&nbsp;» : Si le programme est «&nbsp;autorisé&nbsp;», cela signifie qu'il peut être exécuté comme prévu ; s'il est «&nbsp;autorisé avec compléments&nbsp;», il faut que les points contestés du programme soient adaptés par le·la responsable de camp ; «&nbsp;non-autorisé&nbsp;» signifie que le camp ne peut pas avoir lieu sous cette forme. \n1. «&nbsp;Autorisation activités de sécurité&nbsp;» : Le·la coach confirme par sa signature l'autorisation ou le refus des activités de sécurité. Si il·elle a délégué l'encadrement des activités de sécurité à une tierce personne, il·elle consultera d’abord celle-ci, mais signera lui·elle-même. \n1. «&nbsp;Confirmation du·de la responsable de camp&nbsp;» : En cas d'autorisation avec compléments ou de refus d’autorisation de camper, le·la responsable de camp confirme en avoir pris connaissance par sa signature.\n1. «&nbsp;Activités d'encadrement du·de la coach&nbsp;» : Dans ce paragraphe, le·la coach consigne la date de chaque étape de la préparation du camp. Cette partie peut être remplie à la place du journal du·de la coach et peut être consultée par l'office cantonal des sports.\n\n### Plus d’informations\n- [Le règlement du MSdS pour la préparation et la réalisation de camps]($lagerreglement$)\n- [Guide J+S pour la réalisation des camps J+S Sport de camp/Trekking]($js-angebotsleitfaden$)\n\n![2084.06.fr-Autorisation_de_Camp-20211210-CoEnc_Page_1.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1645801825/hering/2084_06_fr_Autorisation_de_Camp_20211210_Co_Enc_Page_1_093effcc75.png)",
         "section": 11,
         "locale": "fr",
         "published_at": "2022-01-22T12:48:16.641Z",
         "created_at": "2022-01-22T12:48:05.811Z",
-        "updated_at": "2022-01-23T23:38:31.880Z",
+        "updated_at": "2022-02-25T15:15:12.023Z",
         "key": null,
         "Sorting": null,
         "sorting": 602,
@@ -1535,17 +1535,17 @@
         "menu_name": "Autorisation de camp",
         "responsible": [
           {
-            "id": 1322,
+            "id": 1417,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1323,
+            "id": 1419,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1324,
+            "id": 1421,
             "label": null,
             "rolle": "C"
           }

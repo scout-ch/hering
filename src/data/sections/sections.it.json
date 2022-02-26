@@ -175,12 +175,12 @@
       {
         "id": 116,
         "title": "Campo fair – Progetto per la sostenibilità al campo",
-        "content": "Il progetto campo fair organizza ogni estate un concorso su un aspetto della sostenibilità al campo estivo dove si possono vincere dei bei premi. Inoltre online vengono presentate diverse possibilità di rendere un campo sostenibile.\n[Campo fair]($faireslager$)\n    &rarr; Wettbewerb (tedesco) / Concours (francese)\n\n> Il sito web è disponibile solo in tedesco. Alcuni documenti sono tradotti in [francese]($documenti-campo-fair$).",
+        "content": "Il progetto campo fair organizza ogni estate un concorso su un aspetto della sostenibilità al campo estivo dove si possono vincere dei bei premi. Inoltre online vengono presentate diverse possibilità di rendere un campo sostenibile.\n[Campo fair]($faireslager$)\n    &rarr; Wettbewerb (tedesco) / Concours (francese)\n\n> Il sito web è disponibile solo in tedesco e francese.",
         "section": 25,
         "locale": "it",
         "published_at": "2022-01-23T21:32:40.201Z",
         "created_at": "2022-01-23T21:32:37.958Z",
-        "updated_at": "2022-01-23T21:32:40.231Z",
+        "updated_at": "2022-02-26T17:43:14.248Z",
         "key": null,
         "Sorting": null,
         "sorting": 104,
@@ -1297,12 +1297,12 @@
         "locale": "it",
         "published_at": "2022-01-23T07:59:19.969Z",
         "created_at": "2022-01-23T07:59:18.113Z",
-        "updated_at": "2022-01-23T22:09:54.460Z",
+        "updated_at": "2022-02-26T18:16:02.866Z",
         "key": null,
         "Sorting": null,
         "sorting": 501,
         "slug": "I-partecipanti-si-iscrivono-autonomamente-al-campo",
-        "link": 189,
+        "link": 241,
         "slug_with_section": "Amministrazione-dei-partecipanti#I-partecipanti-si-iscrivono-autonomamente-al-campo",
         "menu_name": "I partecipanti si iscrivono autonomamente",
         "responsible": [
@@ -1515,12 +1515,12 @@
       {
         "id": 64,
         "title": "Valutazione del programma dettagliato con checklist",
-        "content": "Il/la CSZ e il/la Coach valutano il programma del campo con l’aiuto della checklist del [Autorizzazione al campo]($lagerbewilligung-download$) MSS. È consigliato discutere del programma in occasione di una riunione tra Coach e CC ed ev. CSZ; in quest’occasione la checklist può essere lo spunto per le riflessioni. I punti che devono essere migliorati vengono comiunicati dal/dalla CSZ e dal/dalla Coach al/alla CC durante la discussione sul programma.",
+        "content": "Il/la CSZ e il/la Coach valutano il programma del campo con l’aiuto della checklist del [Autorizzazione al campo]($lagerbewilligung-download$) MSS. È consigliato discutere del programma in occasione di una riunione tra Coach e CC ed ev. CSZ; in quest’occasione la checklist può essere lo spunto per le riflessioni. I punti che devono essere migliorati vengono comiunicati dal/dalla CSZ e dal/dalla Coach al/alla CC durante la discussione sul programma.\n\n![2084.06.it-Autorizzazione_del_Campo-20211210-CommAcc_Page_2.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1645801825/hering/2084_06_it_Autorizzazione_del_Campo_20211210_Comm_Acc_Page_2_afc0c1a653.png)",
         "section": 20,
         "locale": "it",
         "published_at": "2022-01-22T12:23:00.967Z",
         "created_at": "2022-01-22T12:22:33.384Z",
-        "updated_at": "2022-01-22T12:23:01.004Z",
+        "updated_at": "2022-02-25T15:16:01.439Z",
         "key": null,
         "Sorting": null,
         "sorting": 601,
@@ -1530,12 +1530,12 @@
         "menu_name": "Valutazione del programma dettagliato",
         "responsible": [
           {
-            "id": 528,
+            "id": 1427,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 530,
+            "id": 1428,
             "label": null,
             "rolle": "C"
           }
@@ -1566,12 +1566,12 @@
       {
         "id": 68,
         "title": "Autorizzazione del campo",
-        "content": "Apponendo la firma sull’annuncio di campo il/la Coach e il/la CSZ autorizzano il campo. Per le attività negli ambiti di sicurezza occorre un’ulteriore firma da parte degli esperti responsabili (vedi [attività nei settori di sicurezza]($sicherheitsbereich$)). Il/la CSZ ed il/la coach informano i CC sull’autorizzazione del campo, se possibile in un incontro comune. Il/la coach manda una copia ciascuno dell’autorizzazione firmata al/alla CC e al/alla CSZ. Nel caso di una non autorizzazione manda inoltre una copia all’AC e al [segretariato del MSS](mailto:info@msds.ch). \n\n### Di seguito alcuni chiarimenti in merito al formulario\n1. “Approvazione”: “approvato” significa che il programma può essere svolto come previsto; “approvato con riserva” significa che il programma deve essere adattato dal/dalla CC in base alle osservazioni scritte; “non approvato” significa che il campo non può svolgersi così come è stato presentato.\n1. “Approvazione dei moduli di sicurezza”: il/la Coach autorizza o non autorizza i moduli di sicurezza firmando nell’apposito spazio. Nel caso in cui il/la Coach avesse delegato la supervisione a terzi, dovrà firmare quest’ultima persona.\n1. “Conferma del Capo campo”: nel caso di approvazione con riserva o di non approvazione, il/la CC conferma di esserne a conoscenza firmando il modulo.\n1. “Attività del Coach”: questa tabella serve al/alla Coach per indicare quando hanno avuto luogo i vari passi della preparazione del campo e può sostituire il diario del/della Coach G+S. Su richiesta l’Ufficio cantonale G+S può prenderne visione. \n\n### Ulteriori Informazioni:\n- [Regolamento sulla preparazione e lo svolgimento dei campi]($lagerreglement$)\n- [Guida per lo svolgimento delle offerte G+S Sport di campo/Trekking]($js-angebotsleitfaden$)\n\n![it-lagerreglement.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642855438/hering/it_lagerreglement_10c57e97e1.png)",
+        "content": "Apponendo la firma sull’annuncio di campo il/la Coach e il/la CSZ autorizzano il campo. Per le attività negli ambiti di sicurezza occorre un’ulteriore firma da parte degli esperti responsabili (vedi [attività nei settori di sicurezza]($sicherheitsbereich$)). Il/la CSZ ed il/la coach informano i CC sull’autorizzazione del campo, se possibile in un incontro comune. Il/la coach manda una copia ciascuno dell’autorizzazione firmata al/alla CC e al/alla CSZ. Nel caso di una non autorizzazione manda inoltre una copia all’AC e al [segretariato del MSS](mailto:info@msds.ch). \n\n### Di seguito alcuni chiarimenti in merito al formulario\n1. “Approvazione”: “approvato” significa che il programma può essere svolto come previsto; “approvato con riserva” significa che il programma deve essere adattato dal/dalla CC in base alle osservazioni scritte; “non approvato” significa che il campo non può svolgersi così come è stato presentato.\n1. “Approvazione dei moduli di sicurezza”: il/la Coach autorizza o non autorizza i moduli di sicurezza firmando nell’apposito spazio. Nel caso in cui il/la Coach avesse delegato la supervisione a terzi, dovrà firmare quest’ultima persona.\n1. “Conferma del Capo campo”: nel caso di approvazione con riserva o di non approvazione, il/la CC conferma di esserne a conoscenza firmando il modulo.\n1. “Attività del Coach”: questa tabella serve al/alla Coach per indicare quando hanno avuto luogo i vari passi della preparazione del campo e può sostituire il diario del/della Coach G+S. Su richiesta l’Ufficio cantonale G+S può prenderne visione. \n\n### Ulteriori Informazioni:\n- [Regolamento sulla preparazione e lo svolgimento dei campi]($lagerreglement$)\n- [Guida per lo svolgimento delle offerte G+S Sport di campo/Trekking]($js-angebotsleitfaden$)\n\n![2084.06.it-Autorizzazione_del_Campo-20211210-CommAcc_Page_1.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1645801825/hering/2084_06_it_Autorizzazione_del_Campo_20211210_Comm_Acc_Page_1_8ba8aff78c.png)",
         "section": 20,
         "locale": "it",
         "published_at": "2022-01-22T12:51:42.830Z",
         "created_at": "2022-01-22T12:51:40.096Z",
-        "updated_at": "2022-01-23T23:39:03.914Z",
+        "updated_at": "2022-02-25T15:15:26.897Z",
         "key": null,
         "Sorting": null,
         "sorting": 602,
@@ -1581,17 +1581,17 @@
         "menu_name": "Autorizzazione del campo",
         "responsible": [
           {
-            "id": 1313,
+            "id": 1414,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1314,
+            "id": 1415,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1315,
+            "id": 1416,
             "label": null,
             "rolle": "C"
           }

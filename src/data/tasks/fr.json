@@ -1,5 +1,61 @@
 [
   {
+    "id": 35,
+    "title": "Initier l'inscription du camp au MSdS",
+    "days": -49,
+    "locale": "fr",
+    "published_at": "2022-01-22T17:08:44.777Z",
+    "created_at": "2022-01-22T16:50:44.069Z",
+    "updated_at": "2022-02-26T18:24:11.305Z",
+    "Slug": "Initier-l'inscription-du-camp-au-MSdS",
+    "responsible": [
+      {
+        "id": 1452,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 34,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 72,
+        "title": "Annonce de camp au MSdS",
+        "content": "### Données du·de la responsable de camp\nAvec l’annonce de camp MSdS dans la [MiData]($midata$), chaque camp est inscrit à l’avance à l’AC et au MSdS. Le·la responsable de camp remplit toutes les informations sur le camp au plus tard 7 semaines avant le camp dans la MiData et envoie en même temps le programme général au·à la RG et au·à la coach.\n\n### Données du·de la coach\nLe·la coach peut alors se connecter à la [MiData]($midata$), remplir sa partie de l’annonce de camp et la transmettre. L’annonce de camp est ensuite transmise automatiquement du MSdS et à l’AC. Le MSdS utilise ces informations afin de pouvoir réagir en cas de crise, ainsi que pour des informations statistiques vis-à-vis de la confédération. A cet effet, le·la coach se connecte avec son login à la MiData et va à son groupe. S’il·elle n’a pas de login, il·elle s’adresse à son groupe, pour que celui-ci lui envoie un accès. Ensuite, il·elle procède de la façon suivante :\n1. Cliquer sur « Camp ». \n2. Choisir le camp correspondant\n3. Cliquer sur « modifier».\n4. Vérifier toutes les données\n5. Choisir le registre encadrement. Cliquer sur « Coach confirmé » et remplir les informations sur visite du coach et les activités dans les [domaines de sécurité]($sicherheitsbereich$).\n6. Cliquer sur « Enregistrer »\n7. Une fois que toutes les informations sont complètes : envoyer l’annonce de camp au MSdS en cliquant sur le bouton « Transmettre ».\n\n![fr-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_A_b4b4211669.png)\n\n![fr-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_B_8df45c3608.png)\n\n![fr-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/fr_Lagerdaten_Coach_Mi_Data_C_754fd2168a.png)\n",
+        "section": {
+          "id": 4,
+          "title": "B. Annonce de camp et programme général",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-07T08:57:16.439Z",
+          "created_at": "2021-10-07T08:57:11.498Z",
+          "updated_at": "2022-01-22T17:19:58.864Z",
+          "key": "lageranmeldung",
+          "Sorting": 2,
+          "sorting": 2,
+          "slug": "Annonce-de-camp",
+          "menu_name": "Annonce de camp",
+          "identifier": "a"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T17:08:29.428Z",
+        "created_at": "2022-01-22T17:00:32.381Z",
+        "updated_at": "2022-01-23T20:20:01.690Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 201,
+        "slug": "Annonce-de-camp-au-MSdS",
+        "link": 167,
+        "slug_with_section": "Annonce-de-camp#Annonce-de-camp-au-MSdS",
+        "menu_name": "Annonce de camp au MSdS"
+      }
+    ]
+  },
+  {
     "id": 24,
     "title": "Clôture du camp dans la SPORTdb",
     "days": 15,
@@ -569,123 +625,6 @@
     ]
   },
   {
-    "id": 30,
-    "title": "Autorisation de camp",
-    "days": -7,
-    "locale": "fr",
-    "published_at": "2022-01-22T12:54:19.294Z",
-    "created_at": "2022-01-22T12:54:16.395Z",
-    "updated_at": "2022-01-22T12:54:19.325Z",
-    "Slug": "Autorisation-de-camp",
-    "responsible": [
-      {
-        "id": 985,
-        "label": null,
-        "rolle": "AL"
-      },
-      {
-        "id": 986,
-        "label": null,
-        "rolle": "C"
-      }
-    ],
-    "targets": [
-      {
-        "id": 29,
-        "rolle": "Responsable de camp"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 67,
-        "title": "Autorisation de camp",
-        "content": "Avec leur signature, le·la RG et le·la coach délivrent l’autorisation de camp. Pour des activités dans le domaine de sécurité, il faut une signature supplémentaire de l’expert·e en charge (cf. [Activités des domaines de sécurité]($sicherheitsbereich$)).\nLe·la RG et le·la coach informent le·la responsable de camp sur l’autorisation de camp idéalement lors d'un entretien. Le·la coach envoie une copie de l'autorisation de camp signée par tou·te·s au·à la responsable de camp et au·à la RG. En cas de refus d’autorisation, il·elle envoie une copie supplémentaire à l'association cantonale (AC) et au [Secrétariat général du MSdS](mailto:info@msds.ch).\n\n### Explication du formulaire\n1. «&nbsp;Autorisation&nbsp;» : Si le programme est «&nbsp;autorisé&nbsp;», cela signifie qu'il peut être exécuté comme prévu ; s'il est «&nbsp;autorisé avec compléments&nbsp;», il faut que les points contestés du programme soient adaptés par le·la responsable de camp ; «&nbsp;non-autorisé&nbsp;» signifie que le camp ne peut pas avoir lieu sous cette forme. \n1. «&nbsp;Autorisation activités de sécurité&nbsp;» : Le·la coach confirme par sa signature l'autorisation ou le refus des activités de sécurité. Si il·elle a délégué l'encadrement des activités de sécurité à une tierce personne, il·elle consultera d’abord celle-ci, mais signera lui·elle-même. \n1. «&nbsp;Confirmation du·de la responsable de camp&nbsp;» : En cas d'autorisation avec compléments ou de refus d’autorisation de camper, le·la responsable de camp confirme en avoir pris connaissance par sa signature.\n1. «&nbsp;Activités d'encadrement du·de la coach&nbsp;» : Dans ce paragraphe, le·la coach consigne la date de chaque étape de la préparation du camp. Cette partie peut être remplie à la place du journal du·de la coach et peut être consultée par l'office cantonal des sports.\n\n### Plus d’informations\n- [Le règlement du MSdS pour la préparation et la réalisation de camps]($lagerreglement$)\n- [Guide J+S pour la réalisation des camps J+S Sport de camp/Trekking]($js-angebotsleitfaden$)\n\n![fr-lagerreglement.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642855438/hering/fr_lagerreglement_469838f44d.png)\n",
-        "section": {
-          "id": 11,
-          "title": "F. Autorisation de camp",
-          "content": "",
-          "locale": "fr",
-          "published_at": "2021-10-08T08:39:22.000Z",
-          "created_at": "2021-10-08T08:39:20.175Z",
-          "updated_at": "2022-01-22T09:30:54.391Z",
-          "key": "lagerbewilligung",
-          "Sorting": null,
-          "sorting": 6,
-          "slug": "Autorisation-de-camp",
-          "menu_name": "Autorisation de camp",
-          "identifier": "Lagerbewilligung"
-        },
-        "locale": "fr",
-        "published_at": "2022-01-22T12:48:16.641Z",
-        "created_at": "2022-01-22T12:48:05.811Z",
-        "updated_at": "2022-01-23T23:38:31.880Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 602,
-        "slug": "Autorisation-de-camp",
-        "link": 169,
-        "slug_with_section": "Autorisation-de-camp#Autorisation-de-camp",
-        "menu_name": "Autorisation de camp"
-      }
-    ]
-  },
-  {
-    "id": 21,
-    "title": "Ajuster la liste des participant·e·s",
-    "days": 10,
-    "locale": "fr",
-    "published_at": "2022-01-22T11:20:37.173Z",
-    "created_at": "2022-01-22T11:20:33.433Z",
-    "updated_at": "2022-01-22T11:20:37.208Z",
-    "Slug": "Ajuster-la-liste-des-participantes",
-    "responsible": [
-      {
-        "id": 990,
-        "label": null,
-        "rolle": "LL"
-      }
-    ],
-    "targets": [
-      {
-        "id": 20,
-        "rolle": "MiData"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 50,
-        "title": "Liste des participant·e·s et clôture du camp dans MiData",
-        "content": "Le·la responsable de camp ajuste dans [MiData]($midata$) les participant·e·s et responsables enregistré·e·s avant le camp et en informe le·la coach au plus tard 10 jours après le camp.\nEnsuite ce dernier reporte la liste actualisée des participant· e·s dans la [SPORTdb]($sportdb$).\nLes processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$). \nEnsuite le·la responsable de camp clôt le camp dans la MiData en plaçant le statut sur « clôturé ».",
-        "section": {
-          "id": 13,
-          "title": "G. Clôture du camp",
-          "content": "",
-          "locale": "fr",
-          "published_at": "2021-10-08T08:40:41.651Z",
-          "created_at": "2021-10-08T08:40:40.286Z",
-          "updated_at": "2022-01-23T20:33:44.365Z",
-          "key": "lagerabschluss",
-          "Sorting": null,
-          "sorting": 7,
-          "slug": "Cloture-du-camp",
-          "menu_name": "Clôture du camp",
-          "identifier": "Lagerabschluss"
-        },
-        "locale": "fr",
-        "published_at": "2022-01-22T11:14:49.556Z",
-        "created_at": "2022-01-22T11:14:46.752Z",
-        "updated_at": "2022-01-23T22:09:18.933Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 702,
-        "slug": "Liste-des-participantes-et-cloture-du-camp-dans-MiData",
-        "link": null,
-        "slug_with_section": "Cloture-du-camp#Liste-des-participantes-et-cloture-du-camp-dans-MiData",
-        "menu_name": "Liste des participant·e·s"
-      }
-    ]
-  },
-  {
     "id": 43,
     "title": "Commande de matériel de prêt J+S",
     "days": -40,
@@ -794,62 +733,6 @@
         "link": 175,
         "slug_with_section": "Commande-de-services#Commande-de-materiel-de-pret-J+S",
         "menu_name": "Commande de matériel de prêt J+S"
-      }
-    ]
-  },
-  {
-    "id": 35,
-    "title": "Initier l'inscription du camp au MSdS",
-    "days": -49,
-    "locale": "fr",
-    "published_at": "2022-01-22T17:08:44.777Z",
-    "created_at": "2022-01-22T16:50:44.069Z",
-    "updated_at": "2022-01-22T17:08:44.814Z",
-    "Slug": "Initier-l'inscription-du-camp-au-MSdS",
-    "responsible": [
-      {
-        "id": 995,
-        "label": null,
-        "rolle": "LL"
-      }
-    ],
-    "targets": [
-      {
-        "id": 34,
-        "rolle": "C"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 72,
-        "title": "Annonce de camp au MSdS",
-        "content": "### Données du·de la responsable de camp\nAvec l’annonce de camp MSdS dans la [MiData]($midata$), chaque camp est inscrit à l’avance à l’AC et au MSdS. Le·la responsable de camp remplit toutes les informations sur le camp au plus tard 7 semaines avant le camp dans la MiData et envoie en même temps le programme général au·à la RG et au·à la coach.\n\n### Données du·de la coach\nLe·la coach peut alors se connecter à la [MiData]($midata$), remplir sa partie de l’annonce de camp et la transmettre. L’annonce de camp est ensuite transmise automatiquement du MSdS et à l’AC. Le MSdS utilise ces informations afin de pouvoir réagir en cas de crise, ainsi que pour des informations statistiques vis-à-vis de la confédération. A cet effet, le·la coach se connecte avec son login à la MiData et va à son groupe. S’il·elle n’a pas de login, il·elle s’adresse à son groupe, pour que celui-ci lui envoie un accès. Ensuite, il·elle procède de la façon suivante :\n1. Cliquer sur « Camp ». \n2. Choisir le camp correspondant\n3. Cliquer sur « modifier».\n4. Vérifier toutes les données\n5. Choisir le registre encadrement. Cliquer sur « Coach confirmé » et remplir les informations sur visite du coach et les activités dans les [domaines de sécurité]($sicherheitsbereich$).\n6. Cliquer sur « Enregistrer »\n7. Une fois que toutes les informations sont complètes : envoyer l’annonce de camp au MSdS en cliquant sur le bouton « Transmettre ».\n\n![fr-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_A_b4b4211669.png)\n\n![fr-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_B_8df45c3608.png)\n\n![fr-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/fr_Lagerdaten_Coach_Mi_Data_C_754fd2168a.png)\n",
-        "section": {
-          "id": 4,
-          "title": "B. Annonce de camp et programme général",
-          "content": "",
-          "locale": "fr",
-          "published_at": "2021-10-07T08:57:16.439Z",
-          "created_at": "2021-10-07T08:57:11.498Z",
-          "updated_at": "2022-01-22T17:19:58.864Z",
-          "key": "lageranmeldung",
-          "Sorting": 2,
-          "sorting": 2,
-          "slug": "Annonce-de-camp",
-          "menu_name": "Annonce de camp",
-          "identifier": "a"
-        },
-        "locale": "fr",
-        "published_at": "2022-01-22T17:08:29.428Z",
-        "created_at": "2022-01-22T17:00:32.381Z",
-        "updated_at": "2022-01-23T20:20:01.690Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 201,
-        "slug": "Annonce-de-camp-au-MSdS",
-        "link": 167,
-        "slug_with_section": "Annonce-de-camp#Annonce-de-camp-au-MSdS",
-        "menu_name": "Annonce de camp au MSdS"
       }
     ]
   },
@@ -1017,66 +900,6 @@
     ]
   },
   {
-    "id": 53,
-    "title": "Remettre le dossier de camp",
-    "days": -21,
-    "locale": "fr",
-    "published_at": "2022-01-23T18:11:37.307Z",
-    "created_at": "2022-01-23T18:11:35.681Z",
-    "updated_at": "2022-01-23T22:12:10.426Z",
-    "Slug": "Remettre-le-dossier-de-camp",
-    "responsible": [
-      {
-        "id": 1133,
-        "label": null,
-        "rolle": "LL"
-      }
-    ],
-    "targets": [
-      {
-        "id": 54,
-        "rolle": "Responsable de camp"
-      },
-      {
-        "id": 55,
-        "rolle": "Coach"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 99,
-        "title": "Éléments du dossier de camp",
-        "content": "Un dossier de camp est constitué à partir de tous les documents de planification. Celui-ci est remis au·à la RG et au·à la coach trois semaines avant le début du camp. On trouve également des informations sur le dossier de camp dans la brochure J+S [SC/T Camp]($lst-lager-cudesch$) dans le cudesch. Le plus important est résumé ci-dessous. La conception des activités du camp n’est pas développée ici. \nLe programme détaillé est une aide pour tou·te·s les responsables de camp. Il sert également de base pour l’évaluation du programme de camp par le·la RG et le·la coach. Il contient les documents suivants :\n- Programme général\n- 3 priorités du camp (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 14)\n- Devise et fil conducteur\n- Description des blocs de programme (voir plus bas)\n- Pour les randonnées à pied et à vélo : calcul du temps de marche et copies de carte topographique en couleur (voir la brochure Montagne), concept de sécurité de la randonnée / du vélo (cf. brochure J+S [SC/T Montagne]($lst-berg-cudesch$))\n- Concept de sécurité d’un camp (voir la brochure La sécurité – assumer des responsabilités, p. 39)\n- Les règles du camp (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$))\n- Les arrangements au sein de l’équipe, par exemple concernant la distribution des tâches, les responsables du jour, le positionnement par rapport aux substances addictives, etc. (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 5-9)\n- Liste des participant(e)s\n\nSelon les demandes du·de la responsable de groupe/coach/caissier/ière :\n- Informations sur les participants (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 27sq.)\n- Menu (cf. aide-mémoire J+S [Faire la cuisine]($lst-kueche$) et brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 34)\n- Budget du camp (cf. [Budget de camp]($lagerbudget$) et brochure J+S [SC/T Camp]($lst-lager-cudesch$))\n- Programme de la soirée d’information aux parents (brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 29)",
-        "section": {
-          "id": 9,
-          "title": "D. Transmettre le programme détaillé",
-          "content": "",
-          "locale": "fr",
-          "published_at": "2021-10-08T08:35:32.178Z",
-          "created_at": "2021-10-08T08:35:30.339Z",
-          "updated_at": "2022-01-22T09:45:10.891Z",
-          "key": "lagerdossier",
-          "Sorting": null,
-          "sorting": 4,
-          "slug": "Programme-detaille",
-          "menu_name": "Programme détaillé",
-          "identifier": "Lagerdossier"
-        },
-        "locale": "fr",
-        "published_at": "2022-01-23T18:05:15.368Z",
-        "created_at": "2022-01-23T18:05:13.516Z",
-        "updated_at": "2022-01-23T22:49:33.297Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 401,
-        "slug": "Elements-du-dossier-de-camp",
-        "link": null,
-        "slug_with_section": "Programme-detaille#Elements-du-dossier-de-camp",
-        "menu_name": "Éléments du dossier de camp"
-      }
-    ]
-  },
-  {
     "id": 15,
     "title": "Clôturer l'offre J+S",
     "days": 30,
@@ -1184,62 +1007,6 @@
     ]
   },
   {
-    "id": 72,
-    "title": "Initier le congé jeunesse",
-    "days": -77,
-    "locale": "fr",
-    "published_at": "2022-01-23T23:13:11.553Z",
-    "created_at": "2022-01-23T23:11:42.108Z",
-    "updated_at": "2022-01-23T23:13:11.576Z",
-    "Slug": "Initier-le-conge-jeunesse",
-    "responsible": [
-      {
-        "id": 1270,
-        "label": null,
-        "rolle": "LL"
-      }
-    ],
-    "targets": [
-      {
-        "id": 69,
-        "rolle": "AL"
-      }
-    ],
-    "chapters": [
-      {
-        "id": 127,
-        "title": "Congé jeunesse",
-        "content": "Les responsables exerçant une activité professionnelle peuvent obtenir un congé jeunesse. En effet, par la loi, les apprentis et les personnes de moins de 30 ans exerçant une activité professionnelle ont droit à une semaine supplémentaire de congé non payé pour des activités d’encadrement des jeunes (camp, cours de formation, événements). Le·la responsable remplit seul·e ou avec le·la RG la partie supérieure du formulaire [Attestation relative au congé jeunesse (CSAJ)]($jugendurlaub-formular$). La RG complète la partie inférieure et confirme ainsi que le camp aura bien lieu. Ce formulaire permet au·à la responsable de demander un congé jeunesse à son maître d’apprentissage ou à son patron au plus tard deux mois avant le camp. D’autres renseignements se trouvent dans l’ [Aide-mémoire Congé jeunesse (CSAJ/OFAS)]($jugendurlaub-merkblatt$) ou sur le site internet [www.conge-jeunesse.ch]($jugendurlaub$).",
-        "section": {
-          "id": 3,
-          "title": "A. Préparation de la saison des camps",
-          "content": "",
-          "locale": "fr",
-          "published_at": "2021-10-14T18:07:46.751Z",
-          "created_at": "2021-10-06T16:01:50.136Z",
-          "updated_at": "2022-01-22T09:42:15.236Z",
-          "key": "vorbereitung",
-          "Sorting": 1,
-          "sorting": 1,
-          "slug": "Preparation",
-          "menu_name": "Préparation",
-          "identifier": "bla"
-        },
-        "locale": "fr",
-        "published_at": "2022-01-23T23:17:15.306Z",
-        "created_at": "2022-01-23T23:17:13.463Z",
-        "updated_at": "2022-01-23T23:17:15.343Z",
-        "key": null,
-        "Sorting": null,
-        "sorting": 110,
-        "slug": "Conge-jeunesse",
-        "link": null,
-        "slug_with_section": "Preparation#Conge-jeunesse",
-        "menu_name": "Congé jeunesse"
-      }
-    ]
-  },
-  {
     "id": 70,
     "title": "Enregistrement de l’offre J+S via la SPORTdb",
     "days": -30,
@@ -1343,6 +1110,239 @@
         "link": null,
         "slug_with_section": "Preparation#Conge-jeunesse",
         "menu_name": "Congé jeunesse"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Ajuster la liste des participant·e·s",
+    "days": 10,
+    "locale": "fr",
+    "published_at": "2022-01-22T11:20:37.173Z",
+    "created_at": "2022-01-22T11:20:33.433Z",
+    "updated_at": "2022-01-22T11:20:37.208Z",
+    "Slug": "Ajuster-la-liste-des-participantes",
+    "responsible": [
+      {
+        "id": 1438,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 20,
+        "rolle": "MiData"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 50,
+        "title": "Liste des participant·e·s et clôture du camp dans MiData",
+        "content": "Le·la responsable de camp ajuste dans [MiData]($midata$) les participant·e·s et responsables enregistré·e·s avant le camp et en informe le·la coach au plus tard 10 jours après le camp.\nEnsuite ce dernier reporte la liste actualisée des participant· e·s dans la [SPORTdb]($sportdb$).\nLes processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$). \nEnsuite le·la responsable de camp clôt le camp dans la MiData en plaçant le statut sur « clôturé ».",
+        "section": {
+          "id": 13,
+          "title": "G. Clôture du camp",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:40:41.651Z",
+          "created_at": "2021-10-08T08:40:40.286Z",
+          "updated_at": "2022-01-23T20:33:44.365Z",
+          "key": "lagerabschluss",
+          "Sorting": null,
+          "sorting": 7,
+          "slug": "Cloture-du-camp",
+          "menu_name": "Clôture du camp",
+          "identifier": "Lagerabschluss"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T11:14:49.556Z",
+        "created_at": "2022-01-22T11:14:46.752Z",
+        "updated_at": "2022-01-23T22:09:18.933Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 702,
+        "slug": "Liste-des-participantes-et-cloture-du-camp-dans-MiData",
+        "link": null,
+        "slug_with_section": "Cloture-du-camp#Liste-des-participantes-et-cloture-du-camp-dans-MiData",
+        "menu_name": "Liste des participant·e·s"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "title": "Initier le congé jeunesse",
+    "days": -77,
+    "locale": "fr",
+    "published_at": "2022-01-23T23:13:11.553Z",
+    "created_at": "2022-01-23T23:11:42.108Z",
+    "updated_at": "2022-02-26T18:23:29.336Z",
+    "Slug": "Initier-le-conge-jeunesse",
+    "responsible": [
+      {
+        "id": 1270,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 69,
+        "rolle": "RG"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 127,
+        "title": "Congé jeunesse",
+        "content": "Les responsables exerçant une activité professionnelle peuvent obtenir un congé jeunesse. En effet, par la loi, les apprentis et les personnes de moins de 30 ans exerçant une activité professionnelle ont droit à une semaine supplémentaire de congé non payé pour des activités d’encadrement des jeunes (camp, cours de formation, événements). Le·la responsable remplit seul·e ou avec le·la RG la partie supérieure du formulaire [Attestation relative au congé jeunesse (CSAJ)]($jugendurlaub-formular$). La RG complète la partie inférieure et confirme ainsi que le camp aura bien lieu. Ce formulaire permet au·à la responsable de demander un congé jeunesse à son maître d’apprentissage ou à son patron au plus tard deux mois avant le camp. D’autres renseignements se trouvent dans l’ [Aide-mémoire Congé jeunesse (CSAJ/OFAS)]($jugendurlaub-merkblatt$) ou sur le site internet [www.conge-jeunesse.ch]($jugendurlaub$).",
+        "section": {
+          "id": 3,
+          "title": "A. Préparation de la saison des camps",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-14T18:07:46.751Z",
+          "created_at": "2021-10-06T16:01:50.136Z",
+          "updated_at": "2022-01-22T09:42:15.236Z",
+          "key": "vorbereitung",
+          "Sorting": 1,
+          "sorting": 1,
+          "slug": "Preparation",
+          "menu_name": "Préparation",
+          "identifier": "bla"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T23:17:15.306Z",
+        "created_at": "2022-01-23T23:17:13.463Z",
+        "updated_at": "2022-01-23T23:17:15.343Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 110,
+        "slug": "Conge-jeunesse",
+        "link": null,
+        "slug_with_section": "Preparation#Conge-jeunesse",
+        "menu_name": "Congé jeunesse"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Autorisation de camp",
+    "days": -7,
+    "locale": "fr",
+    "published_at": "2022-01-22T12:54:19.294Z",
+    "created_at": "2022-01-22T12:54:16.395Z",
+    "updated_at": "2022-02-26T18:25:10.765Z",
+    "Slug": "Autorisation-de-camp",
+    "responsible": [
+      {
+        "id": 985,
+        "label": null,
+        "rolle": "AL"
+      },
+      {
+        "id": 986,
+        "label": null,
+        "rolle": "C"
+      }
+    ],
+    "targets": [
+      {
+        "id": 29,
+        "rolle": "RG"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 67,
+        "title": "Autorisation de camp",
+        "content": "Avec leur signature, le·la RG et le·la coach délivrent l’autorisation de camp. Pour des activités dans le domaine de sécurité, il faut une signature supplémentaire de l’expert·e en charge (cf. [Activités des domaines de sécurité]($sicherheitsbereich$)).\nLe·la RG et le·la coach informent le·la responsable de camp sur l’autorisation de camp idéalement lors d'un entretien. Le·la coach envoie une copie de l'autorisation de camp signée par tou·te·s au·à la responsable de camp et au·à la RG. En cas de refus d’autorisation, il·elle envoie une copie supplémentaire à l'association cantonale (AC) et au [Secrétariat général du MSdS](mailto:info@msds.ch).\n\n### Explication du formulaire\n1. «&nbsp;Autorisation&nbsp;» : Si le programme est «&nbsp;autorisé&nbsp;», cela signifie qu'il peut être exécuté comme prévu ; s'il est «&nbsp;autorisé avec compléments&nbsp;», il faut que les points contestés du programme soient adaptés par le·la responsable de camp ; «&nbsp;non-autorisé&nbsp;» signifie que le camp ne peut pas avoir lieu sous cette forme. \n1. «&nbsp;Autorisation activités de sécurité&nbsp;» : Le·la coach confirme par sa signature l'autorisation ou le refus des activités de sécurité. Si il·elle a délégué l'encadrement des activités de sécurité à une tierce personne, il·elle consultera d’abord celle-ci, mais signera lui·elle-même. \n1. «&nbsp;Confirmation du·de la responsable de camp&nbsp;» : En cas d'autorisation avec compléments ou de refus d’autorisation de camper, le·la responsable de camp confirme en avoir pris connaissance par sa signature.\n1. «&nbsp;Activités d'encadrement du·de la coach&nbsp;» : Dans ce paragraphe, le·la coach consigne la date de chaque étape de la préparation du camp. Cette partie peut être remplie à la place du journal du·de la coach et peut être consultée par l'office cantonal des sports.\n\n### Plus d’informations\n- [Le règlement du MSdS pour la préparation et la réalisation de camps]($lagerreglement$)\n- [Guide J+S pour la réalisation des camps J+S Sport de camp/Trekking]($js-angebotsleitfaden$)\n\n![2084.06.fr-Autorisation_de_Camp-20211210-CoEnc_Page_1.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1645801825/hering/2084_06_fr_Autorisation_de_Camp_20211210_Co_Enc_Page_1_093effcc75.png)",
+        "section": {
+          "id": 11,
+          "title": "F. Autorisation de camp",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:39:22.000Z",
+          "created_at": "2021-10-08T08:39:20.175Z",
+          "updated_at": "2022-01-22T09:30:54.391Z",
+          "key": "lagerbewilligung",
+          "Sorting": null,
+          "sorting": 6,
+          "slug": "Autorisation-de-camp",
+          "menu_name": "Autorisation de camp",
+          "identifier": "Lagerbewilligung"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-22T12:48:16.641Z",
+        "created_at": "2022-01-22T12:48:05.811Z",
+        "updated_at": "2022-02-25T15:15:12.023Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 602,
+        "slug": "Autorisation-de-camp",
+        "link": 169,
+        "slug_with_section": "Autorisation-de-camp#Autorisation-de-camp",
+        "menu_name": "Autorisation de camp"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Remettre le dossier de camp",
+    "days": -21,
+    "locale": "fr",
+    "published_at": "2022-01-23T18:11:37.307Z",
+    "created_at": "2022-01-23T18:11:35.681Z",
+    "updated_at": "2022-02-26T18:24:52.203Z",
+    "Slug": "Remettre-le-dossier-de-camp",
+    "responsible": [
+      {
+        "id": 1133,
+        "label": null,
+        "rolle": "LL"
+      }
+    ],
+    "targets": [
+      {
+        "id": 54,
+        "rolle": "RG"
+      },
+      {
+        "id": 55,
+        "rolle": "Coach"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 99,
+        "title": "Éléments du dossier de camp",
+        "content": "Un dossier de camp est constitué à partir de tous les documents de planification. Celui-ci est remis au·à la RG et au·à la coach trois semaines avant le début du camp. On trouve également des informations sur le dossier de camp dans la brochure J+S [SC/T Camp]($lst-lager-cudesch$) dans le cudesch. Le plus important est résumé ci-dessous. La conception des activités du camp n’est pas développée ici. \nLe programme détaillé est une aide pour tou·te·s les responsables de camp. Il sert également de base pour l’évaluation du programme de camp par le·la RG et le·la coach. Il contient les documents suivants :\n- Programme général\n- 3 priorités du camp (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 14)\n- Devise et fil conducteur\n- Description des blocs de programme (voir plus bas)\n- Pour les randonnées à pied et à vélo : calcul du temps de marche et copies de carte topographique en couleur (voir la brochure Montagne), concept de sécurité de la randonnée / du vélo (cf. brochure J+S [SC/T Montagne]($lst-berg-cudesch$))\n- Concept de sécurité d’un camp (voir la brochure La sécurité – assumer des responsabilités, p. 39)\n- Les règles du camp (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$))\n- Les arrangements au sein de l’équipe, par exemple concernant la distribution des tâches, les responsables du jour, le positionnement par rapport aux substances addictives, etc. (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 5-9)\n- Liste des participant(e)s\n\nSelon les demandes du·de la responsable de groupe/coach/caissier/ière :\n- Informations sur les participants (cf. brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 27sq.)\n- Menu (cf. aide-mémoire J+S [Faire la cuisine]($lst-kueche$) et brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 34)\n- Budget du camp (cf. [Budget de camp]($lagerbudget$) et brochure J+S [SC/T Camp]($lst-lager-cudesch$))\n- Programme de la soirée d’information aux parents (brochure J+S [SC/T Camp]($lst-lager-cudesch$) p. 29)",
+        "section": {
+          "id": 9,
+          "title": "D. Transmettre le programme détaillé",
+          "content": "",
+          "locale": "fr",
+          "published_at": "2021-10-08T08:35:32.178Z",
+          "created_at": "2021-10-08T08:35:30.339Z",
+          "updated_at": "2022-01-22T09:45:10.891Z",
+          "key": "lagerdossier",
+          "Sorting": null,
+          "sorting": 4,
+          "slug": "Programme-detaille",
+          "menu_name": "Programme détaillé",
+          "identifier": "Lagerdossier"
+        },
+        "locale": "fr",
+        "published_at": "2022-01-23T18:05:15.368Z",
+        "created_at": "2022-01-23T18:05:13.516Z",
+        "updated_at": "2022-01-23T22:49:33.297Z",
+        "key": null,
+        "Sorting": null,
+        "sorting": 401,
+        "slug": "Elements-du-dossier-de-camp",
+        "link": null,
+        "slug_with_section": "Programme-detaille#Elements-du-dossier-de-camp",
+        "menu_name": "Éléments du dossier de camp"
       }
     ]
   }
