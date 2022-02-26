@@ -2,9 +2,22 @@
   overflow-x: scroll;
   .calendar-table {
 
+    ul {
+      list-style-type: none;
+      padding-left: 2px;
+      margin: 5px 0;
+    }
+
     table {
+      width: 100%;
+
       thead tr td {
         font-weight: bold;
+      }
+
+      font-size: smaller;
+      a {
+        font-size: smaller;
       }
   
       #who, #when {
@@ -33,6 +46,17 @@
       list-style-type: none;
       padding: 0;
       max-width: 50%;
+
+      @media (max-width: 770px) {
+        max-width: 90%;
+        label {
+          min-width: 80px;
+        }
+      }
+
+      label {
+        min-width: 200px;
+      }
 
       li {
         display: flex;
