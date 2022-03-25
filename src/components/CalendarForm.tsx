@@ -105,7 +105,8 @@ class CalendarForm extends React.Component<Props, MyState> {
 
     const tasks = filteredDates.map(function (task) {
 
-      let deadline = new Date(startDate.getTime() + (task.days - pufferDays) * 86400000)
+      let subtractFromDeadline = task.days < 0 ? pufferDays : 0
+      let deadline = new Date(startDate.getTime() + (task.days - subtractFromDeadline) * 86400000)
       if (task.days === -1000) {
         deadline = new Date(startDate.valueOf())
         deadline.setMonth(0)
