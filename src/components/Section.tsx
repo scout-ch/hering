@@ -35,10 +35,10 @@ function Section(props: Props) {
     return <div className='content'>
         <Helmet><title>{props.section['title']}</title></Helmet>
 
-        <div id="section-title" className="section-title">
-            <h1>{props.section['title']}</h1>
-        </div>
         <div className='content-main'>
+            <div id="section-title" className="section-title">
+                <h1>{props.section['title']}</h1>
+            </div>
             <ReactMarkdown
                 plugins={[remarkGfm]}
                 components={LinkComponent}

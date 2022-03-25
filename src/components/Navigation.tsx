@@ -86,10 +86,10 @@ function Navigation(props: Props) {
                 <li key="home">
                     <Link to="/" className={homeActive} onClick={() => setNavbarOpen(!navbarOpen)}>{startPage.menu_name}</Link>
                 </li>
-                {sectionList}
                 <li key="calendar">
                     <Link to="/calendar" className={calendarActive} onClick={() => setNavbarOpen(!navbarOpen)}>{calendarPage.menu_name}</Link>
                 </li>
+                {sectionList}
             </ul>
         </div>
     </nav>

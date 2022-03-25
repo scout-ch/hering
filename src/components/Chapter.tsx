@@ -40,7 +40,7 @@ function Chapter(props: ChapterProps) {
                 {data.icon && (<img className='chapter-icon' src={data.icon.url} alt="icon" />)}
                 <h2 id={data.slug}>{data.title}</h2>
             </div>
-            <div className='content-main'>
+            <div className='chapter-main'>
                 <Target targets={data.responsible} />
                 <ReactMarkdown remarkPlugins={[remarkGfm]}
                     components={LinkComponent}>{data.content}</ReactMarkdown>
