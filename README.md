@@ -20,3 +20,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+
+## Contribute
+
+Willst du mithelfen oder hast einen Verbesserungsvorschlag?
+Schaue dir die Issues an oder erstelle ein Neues. 
+Wir freuen uns über jeden PR.
+Bei Fragen kannst du dich an die Betreuungskommission (inhaltlich) oder die IT Kommission (technisch) wenden.
