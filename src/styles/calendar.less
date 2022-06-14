@@ -1,5 +1,13 @@
 .calendar {
   overflow-x: scroll;
+
+  input, select {
+    border: 1px solid black;
+    height: 30px;
+    width: 200px;
+    margin: 0;
+  }
+
   .calendar-table {
 
     ul {
@@ -37,8 +45,17 @@
       }
     }
   }
+  
   .calendar-ics {
     margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    .calendar-title-prefix-hint {
+      font-weight: 200;
+      font-size: 12px;
+    }
   }
 
   .calendar-form-container {
@@ -64,13 +81,6 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 8px;
-
-        input, select {
-          border: 1px solid black;
-          height: 30px;
-          width: 200px;
-          margin: 0;
-        }
 
         #puffer {
           width: 197px;
