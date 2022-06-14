@@ -21,9 +21,13 @@
         "al": "Abteilungsleitung",
         "c": "Coach"
       },
-      "generate": "Generieren",
-      "download": "Download als .ics",
-      "filename": "Daten.ics",
+      "ics": {
+        "generate": "Generieren",
+        "download": "Download als .ics",
+        "filename": "Daten.ics",
+        "prefixPlaceholder": "Prefix für Titel der Kalendereinträge",
+        "prefixPreview": "Vorschau: {{calendarTitlePrefix}}Lagerdaten an Coach"
+      },
       "table": {
         "what": "Was",
         "who": "Wer",

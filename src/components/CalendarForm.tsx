@@ -150,7 +150,7 @@ class CalendarForm extends React.Component<Props, MyState> {
                 </select>
               </li>
               <li>
-                <button type="submit"> {t('calendarPage.generate')}</button>
+                <button type="submit"> {t('calendarPage.ics.generate')}</button>
               </li>
             </ul>
           </form>

@@ -10,7 +10,7 @@ const A = styled.a`
   background: var(--color-primary-light);
   padding: 0.3em;
   border-radius: 4px;
-
+  
   &:hover {
     color: white;
     opacity: 0.5;
@@ -33,7 +33,7 @@ function buildLinks(task: TaskT): string {
   }).join(',')
 }
 
-function generateIcs(tasks: Array<TaskT>) {
+function generateIcs(tasks: Array<TaskT>, calendarTitlePrefix: string) {
   const ics = require('ics')
 
   const events = tasks.map(function (task) {
@@ -48,7 +48,7 @@ function generateIcs(tasks: Array<TaskT>) {
     return {
       start: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
       end: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
-      title: task.title,
+      title: `${calendarTitlePrefix}${task.title}`,
       description: buildLinks(task),
       url: buildLinks(task),
       status: 'CONFIRMED',
@@ -66,17 +66,34 @@ function generateIcs(tasks: Array<TaskT>) {
   })
 }
 
+function downloadIcs(mouseClickEvent: React.MouseEvent<HTMLAnchorElement, MouseEvent>, tasks: TaskT[], calendarTitlePrefix: string) {
+  const value = generateIcs(tasks, calendarTitlePrefix)
+  const data = new Blob([value], { type: 'text/calendar' });
+  const link = window.URL.createObjectURL(data);
+
+  mouseClickEvent.currentTarget.href = link;
+}
+
 function IcsDownload(props: Props) {
   const { t } = props;
+  const [calendarTitlePrefix, setCalendarTitlePrefix] = React.useState('');
+
+  const onChangeTitlePrefix = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    setCalendarTitlePrefix(e.currentTarget.value);
+  }
 
   if (props.tasks[0]) {
-    const value = generateIcs(props.tasks)
-    // console.log(value)
-    const data = new Blob([value], { type: 'text/calendar' });
-    const link = window.URL.createObjectURL(data);
     return (
       <div className='calendar-ics'>
-        <A className="ics_download" id="link" download={t('calendarPage.filename')} href={link}>{t('calendarPage.download')}</A>
+        <A className="ics_download" id="link" download={t('calendarPage.ics.filename')} onClick={e => downloadIcs(e, props.tasks, calendarTitlePrefix)}>{t('calendarPage.ics.download')}</A>
+        <div>
+          <div>
+            <input type='text' name='calendar-prefix' placeholder={t('calendarPage.ics.prefixPlaceholder')} value={calendarTitlePrefix} onChange={onChangeTitlePrefix} />
+          </div>
+          <div className='calendar-title-prefix-hint'>
+            {t('calendarPage.ics.prefixPreview', { calendarTitlePrefix: calendarTitlePrefix })}
+          </div>
+        </div>
       </div>
     );
   }
