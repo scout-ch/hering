@@ -1,0 +1,33 @@
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+}
+
+.loading-spinner:after {
+  content: " ";
+  display: block;
+  width: 38px;
+  height: 38px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid @color-primary-light;
+  border-color: @color-primary-light transparent @color-primary-light transparent;
+  animation: spinner-dual-ring 1.2s linear infinite;
+}
+
+@keyframes spinner-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

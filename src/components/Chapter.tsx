@@ -3,7 +3,7 @@ import { withTranslation } from 'react-i18next'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent } from '../helper/MarkdownComponents'
-import { IconT, SectionT } from './Section'
+import { IconT } from './Section'
 import Target from './Target'
 
 export type Role = {
@@ -11,6 +11,7 @@ export type Role = {
 }
 
 export type ChapterT = {
+    id: number
     sorting: number
     title: string
     menu_name: string
@@ -18,7 +19,7 @@ export type ChapterT = {
     slug: string
     slug_with_section: string
     icon: IconT
-    section: SectionT
+    section: number
     responsible: Array<Role>
 }
 

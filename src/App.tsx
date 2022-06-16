@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { faCalendar, faExclamationTriangle, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faExclamationTriangle, faBars, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import HomePage from './pages/HomePage ';
 import CalendarPage from './pages/CalendarPage';
@@ -17,6 +17,7 @@ import SectionPage from './pages/SectionPage';
 import ImpressumPage from './pages/ImpressumPage';
 import { setLocalData } from './helper/LocalDataHelper';
 import { checkLinks } from './helper/LinkChecker';
+import SearchPage from './pages/SearchPage';
 
 export type LinkT = {
   title: string
@@ -33,6 +34,7 @@ function App() {
   const [links, setLinks] = React.useState(null);
   const [startPage, setStartPage] = React.useState(null);
   const [calendarPage, setCalendarPage] = React.useState(null);
+  const [searchPage, setSearchPage] = React.useState(null);
   const lang = i18n.language
 
   React.useEffect(() => {
@@ -41,7 +43,7 @@ function App() {
     // const startPagePromise = client.get('/start-page?_locale=' + lang)
     // const calendarPromise = client.get('/calendar-page?_locale=' + lang)
 
-    setLocalData(lang, setSections, setLinks, setStartPage, setCalendarPage);
+    setLocalData(lang, setSections, setLinks, setStartPage, setCalendarPage, setSearchPage)
     // Promise.all([sectionsPromise, linksPromise, startPagePromise, calendarPromise]).then((values) => {
     //   setSections(values[0].data)
     //   setLinks(values[1].data)
@@ -54,9 +56,9 @@ function App() {
     window.history.scrollRestoration = 'manual'
   }, []);
 
-  library.add(faCalendar, faExclamationTriangle, faBars)
+  library.add(faCalendar, faExclamationTriangle, faBars, faSearch)
 
-  if (!sections || !links || !startPage || !calendarPage) return null
+  if (!sections || !links || !startPage || !calendarPage || !searchPage) return null
   //@ts-ignore
   const sectionsByKey = sections.reduce(function (map, section: SectionT) {
     map[section.slug] = section
@@ -74,6 +76,9 @@ function App() {
 
         <main>
           <Switch>
+            <Route path="/search" >
+              <SearchPage page={searchPage} />
+            </Route>
             <Route path="/calendar" >
               <CalendarPage page={calendarPage} />
             </Route>
@@ -88,7 +93,7 @@ function App() {
               <HomePage page={startPage}></HomePage>
             </Route>
           </Switch>
-          
+
           <div className='footer'>
             <Footer lang={lang} sections={sections} />
           </div>

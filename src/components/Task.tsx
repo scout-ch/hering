@@ -21,7 +21,7 @@ function Task(props: TaskT) {
   const targets = props.targets.map((target) => target['rolle']).join(', ')
   const responsible = props.responsible.map((responsible) => props.t(`target.role.${responsible['rolle']}`)).join(', ')
   const chapters = props.chapters.map(function(chapter) {
-      return <li key={chapter.slug}><HashLink to={chapter.section.slug + '#' + chapter.slug}>{chapter.title}</HashLink></li>
+      return <li key={chapter.slug}><HashLink to={chapter.slug_with_section}>{chapter.title}</HashLink></li>
   })
   return <tr>
     <td>{deadline}</td>

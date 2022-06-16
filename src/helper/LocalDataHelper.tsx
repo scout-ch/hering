@@ -1,5 +1,3 @@
-
-
 import sectionsDE from './../data/sections/sections.de.json'
 import sectionsFR from './../data/sections/sections.fr.json'
 import sectionsIT from './../data/sections/sections.it.json'
@@ -15,7 +13,10 @@ import calendarPageDE from './../data/calendar-page/de.json'
 import calendarPageFR from './../data/calendar-page/fr.json'
 import calendarPageIT from './../data/calendar-page/it.json'
 
-export function setLocalData(lang: string, setSections: React.Dispatch<React.SetStateAction<null>>, setLinks: React.Dispatch<React.SetStateAction<null>>, setStartPage: React.Dispatch<React.SetStateAction<null>>, setCalendarPage: React.Dispatch<React.SetStateAction<null>>) {
+import searchPageDE from './../data/search-page/de.json'
+import { SectionT } from '../components/Section'
+
+export function setLocalData(lang: string, setSections: React.Dispatch<React.SetStateAction<null>>, setLinks: React.Dispatch<React.SetStateAction<null>>, setStartPage: React.Dispatch<React.SetStateAction<null>>, setCalendarPage: React.Dispatch<React.SetStateAction<null>>, setSearchPage: React.Dispatch<React.SetStateAction<null>>) {
   if (lang === 'de') {
     // @ts-ignore
     setSections(sectionsDE);
@@ -25,6 +26,8 @@ export function setLocalData(lang: string, setSections: React.Dispatch<React.Set
     setStartPage(startPageDE);
     // @ts-ignore
     setCalendarPage(calendarPageDE);
+    // @ts-ignore
+    setSearchPage(searchPageDE);
   } else if (lang === 'it') {
     // @ts-ignore
     setSections(sectionsIT);
@@ -34,6 +37,8 @@ export function setLocalData(lang: string, setSections: React.Dispatch<React.Set
     setStartPage(startPageIT);
     // @ts-ignore
     setCalendarPage(calendarPageIT);
+    // // @ts-ignore
+    // setSearchPage(searchPageIT);
   } else if (lang === 'fr') {
     // @ts-ignore
     setSections(sectionsFR);
@@ -43,10 +48,12 @@ export function setLocalData(lang: string, setSections: React.Dispatch<React.Set
     setStartPage(startPageFR);
     // @ts-ignore
     setCalendarPage(calendarPageFR);
+    // // @ts-ignore
+    // setSearchPage(searchPageFR);
   }
 }
 
-export function getLocalSectionData(lang: string) {
+export function getLocalSectionData(lang: string): SectionT[] {
   if (lang === 'de') {
     return sectionsDE
   } else if (lang === 'fr') {
@@ -54,4 +61,5 @@ export function getLocalSectionData(lang: string) {
   } else if (lang === 'it') {
     return sectionsIT
   }
+  return [];
 }
