@@ -10,7 +10,7 @@ export type SectionT = {
     chapters: Array<ChapterT>
     sorting: number
     title: string
-    content: string
+    content: string | null
     slug: string
     menu_name: string
     localizations: any
@@ -42,7 +42,7 @@ function Section(props: Props) {
             <ReactMarkdown
                 plugins={[remarkGfm]}
                 components={LinkComponent}
-            >{props.section.content}</ReactMarkdown>
+            >{props.section.content ?? ''}</ReactMarkdown>
             {chapters}
         </div>
     </div>

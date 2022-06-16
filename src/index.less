@@ -3,7 +3,9 @@
 @import './styles/chapter.less';
 @import './styles/nav.less';
 @import './styles/calendar.less';
+@import './styles/search.less';
 @import './styles/footer.less';
+@import './styles/loading.less';
 
 @color-primary: #521d3a;
 @color-primary-light: #8c3c4f;
@@ -22,10 +24,12 @@ body {
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: @color-primary-light
 }
 
@@ -42,11 +46,11 @@ h2 {
 }
 
 .bg-primary {
-  background-color: @color-primary !important;
+  background-color: @color-primary  !important;
 }
 
 .bg-secondary {
-  background-color: @color-primary-light !important;
+  background-color: @color-primary-light  !important;
 }
 
 a {
@@ -55,6 +59,7 @@ a {
   text-decoration: none;
   opacity: 1;
 }
+
 a:focus,
 a:hover,
 a:active,
@@ -87,7 +92,8 @@ div {
     font-size: 20px;
   }
 
-  .App, #root {
+  .App,
+  #root {
     display: block;
   }
 
@@ -95,6 +101,7 @@ div {
     margin: 40px 10px;
   }
 }
+
 @media (min-width: 660px) {
   h1 {
     font-size: 34px;
@@ -118,7 +125,9 @@ div {
     margin: 0 5rem 0 3rem;
   }
 }
+
 @media (min-width: 860px) {
+
   p,
   ul,
   li,
@@ -137,7 +146,9 @@ div {
     font-size: 30px;
   }
 }
+
 @media (min-width: 1100px) {
+
   p,
   ul,
   li,
@@ -160,7 +171,9 @@ div {
     font-size: 30px;
   }
 }
+
 @media (min-width: 1300px) {
+
   p,
   ul,
   li,
@@ -208,4 +221,3 @@ button {
   cursor: pointer;
   margin: 0.5em 0;
 }
-

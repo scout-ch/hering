@@ -1,12 +1,12 @@
-import React from 'react'
-import { SectionT } from './Section'
-import { Link, useHistory, useLocation } from 'react-router-dom'
-import { ChapterT } from './Chapter'
-import { HashLink } from 'react-router-hash-link'
-import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { StartPage } from '../pages/HomePage '
+import React, { useState } from 'react'
+import { Link, useHistory, useLocation } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import { CalendarPageT } from '../pages/CalendarPage'
+import { StartPage } from '../pages/HomePage '
+import { ChapterT } from './Chapter'
+import SearchInput from './SearchInput'
+import { SectionT } from './Section'
 
 type Props = {
     sections: Array<SectionT>
@@ -35,6 +35,26 @@ function Navigation(props: Props) {
 
     const handleToggle = () => {
         setNavbarOpen(!navbarOpen)
+    }
+
+    const onSearchKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter') {
+            const searchFieldValue = e.currentTarget.value;
+            const searchPageRoute = '/search';
+
+            if (history.location.pathname !== searchPageRoute) {
+                const location = { pathname: searchPageRoute, search: '' }
+                if (searchFieldValue?.length > 0) {
+                    location.search = `keyword=${searchFieldValue}`
+                }
+                history.push(location)
+            } else {
+                history.replace({ search: `keyword=${searchFieldValue}` })
+            }
+
+            e.currentTarget.value = '';
+            setNavbarOpen(false);
+        }
     }
 
     function chapterList(section: SectionT) {
@@ -77,11 +97,13 @@ function Navigation(props: Props) {
     var calendarActive = isCalendar ? 'active' : ''
     const isHome = location.pathname === '/'
     var homeActive = isHome ? 'active' : ''
+
     return <nav className="header-nav">
         <div className="toggle-btn">
             <i onClick={handleToggle}><FontAwesomeIcon icon="bars" /></i>
         </div>
         <div className={`header-nav-content ${navbarOpen ? "showMenu" : ""}`}>
+            <SearchInput onKeyDown={onSearchKeyDown} />
             <ul className={`menuItems ${navbarOpen ? "showMenu" : ""}`}>
                 <li key="home">
                     <Link to="/" className={homeActive} onClick={() => setNavbarOpen(!navbarOpen)}>{startPage.menu_name}</Link>
@@ -94,5 +116,4 @@ function Navigation(props: Props) {
         </div>
     </nav>
 }
-
 export default Navigation
