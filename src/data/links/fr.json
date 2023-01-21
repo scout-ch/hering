@@ -21,13 +21,6 @@
     "slug": ""
   },
   {
-    "id": 240,
-    "key": "chapter-tns-selbstaendig",
-    "title": "TNs melden sich selbständig für Lager an",
-    "link": null,
-    "slug": "Administration-des-participantes#Inscription-des-participants-aux-camps-via-la-MiData"
-  },
-  {
     "id": 60,
     "key": "lagerreglement",
     "title": "Règlement de camp MSdS",
@@ -70,6 +63,13 @@
     "slug": ""
   },
   {
+    "id": 243,
+    "key": "github",
+    "title": "GitHub",
+    "link": "https://github.com/scout-ch/hering",
+    "slug": ""
+  },
+  {
     "id": 138,
     "key": "cudesch-sicherheit",
     "title": "cudesch – sécurité",
@@ -91,6 +91,13 @@
     "slug": ""
   },
   {
+    "id": 240,
+    "key": "chapter-tns-selbstaendig",
+    "title": "TNs melden sich selbständig für Lager an",
+    "link": null,
+    "slug": "Administration-des-participantes#Inscription-des-participants-aux-camps-via-la-MiData"
+  },
+  {
     "id": 45,
     "key": "sportdb-schritt-fuer-schritt",
     "title": "SPORTdb – Guide pas-à-pas pour les coachs J+S",
@@ -105,20 +112,6 @@
     "slug": ""
   },
   {
-    "id": 46,
-    "key": "sportdb",
-    "title": "SPORTdb",
-    "link": "https://www.sportdb.ch/",
-    "slug": ""
-  },
-  {
-    "id": 56,
-    "key": "sicherheitsbereich",
-    "title": "Activités des domaines de sécurité",
-    "link": null,
-    "slug": "Programme-detaille#Activites-des-domaines-de-securite"
-  },
-  {
     "id": 51,
     "key": "lagerbudget",
     "title": "Formulaire « Budget de camp »",
@@ -131,6 +124,13 @@
     "title": "Autorisation de camp",
     "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/9/autorisation-de-camp-msds/",
     "slug": ""
+  },
+  {
+    "id": 56,
+    "key": "sicherheitsbereich",
+    "title": "Activités des domaines de sécurité",
+    "link": null,
+    "slug": "Programme-detaille#Activites-des-domaines-de-securite"
   },
   {
     "id": 64,
@@ -196,6 +196,13 @@
     "slug": ""
   },
   {
+    "id": 217,
+    "key": "ecamp",
+    "title": "eCamp",
+    "link": "https://ecamp.pfadiluzern.ch/login.php",
+    "slug": ""
+  },
+  {
     "id": 120,
     "key": "formular-landeskartenbestellung",
     "title": "Formular Landeskartenbestellung",
@@ -245,13 +252,6 @@
     "slug": ""
   },
   {
-    "id": 144,
-    "key": "sbb-gruppenreiserechner",
-    "title": "SBB Gruppenreiserechner",
-    "link": "https://www.sbb.ch/fr/acheter/pages/grouptravel/group.xhtml",
-    "slug": ""
-  },
-  {
     "id": 147,
     "key": "sbb-gruppenreisen-info",
     "title": "Informationen SBB Gruppenreisen",
@@ -287,25 +287,11 @@
     "slug": "Cloture-du-camp#Renvoi-les-cartes-nationales"
   },
   {
-    "id": 167,
-    "key": "lageranmeldung",
-    "title": "Annonce de camp au MSdS",
-    "link": null,
-    "slug": "Annonce-de-camp#Annonce-de-camp-au-MSdS"
-  },
-  {
     "id": 171,
     "key": "js-coachleitfaden",
     "title": "Guide pour le coach J+S",
     "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/41/brochure-js-guide-pour-le-coach-js/",
     "slug": ""
-  },
-  {
-    "id": 173,
-    "key": "rega",
-    "title": "Assurance Rega",
-    "link": null,
-    "slug": "Commande-de-services#Assurance-Rega"
   },
   {
     "id": 175,
@@ -315,25 +301,25 @@
     "slug": "Commande-de-services#Commande-de-materiel-de-pret-J+S"
   },
   {
+    "id": 167,
+    "key": "lageranmeldung",
+    "title": "Annonce de camp au MSdS",
+    "link": null,
+    "slug": "Annonce-de-camp#Annonce-de-camp-au-MSdS"
+  },
+  {
+    "id": 173,
+    "key": "rega",
+    "title": "Assurance Rega",
+    "link": null,
+    "slug": "Commande-de-services#Assurance-Rega"
+  },
+  {
     "id": 157,
     "key": "tn-administration-midata",
     "title": "Administration der TN in der MiData",
     "link": null,
     "slug": "Administration-des-participantes#Ajouter-et-effacer-des-participants-dans-la-liste-des-participants-dans-la-MiData"
-  },
-  {
-    "id": 165,
-    "key": "lagerabschluss-sportdb",
-    "title": "Clôture de l'offre J+S dans la SPORTdb",
-    "link": null,
-    "slug": "Cloture-de-l'offre-J+S#Cloture-de-l'offre-J+S-dans-la-SPORTdb"
-  },
-  {
-    "id": 177,
-    "key": "lagerdaten-formular",
-    "title": "Données nécessaires pour la SPORTdb",
-    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/252/donnees-necessaires-pour-la-sportdb/",
-    "slug": ""
   },
   {
     "id": 184,
@@ -350,25 +336,11 @@
     "slug": ""
   },
   {
-    "id": 198,
-    "key": "jugendurlaub",
-    "title": "Congé jeunesse",
-    "link": "http://www.conge-jeunesse.ch/",
-    "slug": ""
-  },
-  {
     "id": 180,
     "key": "faireslager",
     "title": "Camp équitable",
     "link": "https://www.faires-lager.ch/fr/",
     "slug": ""
-  },
-  {
-    "id": 192,
-    "key": "team-erfassen-midata-kapitel",
-    "title": "Ajouter la maitrise dans MiData",
-    "link": null,
-    "slug": "Preparation#Enregistrement-de-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData"
   },
   {
     "id": 194,
@@ -420,13 +392,6 @@
     "slug": ""
   },
   {
-    "id": 186,
-    "key": "midata-lager-eroeffnen",
-    "title": "Ouvrir un camp",
-    "link": null,
-    "slug": "Preparation#Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-a-la-responsable-de-camp-et-au-coach"
-  },
-  {
     "id": 215,
     "key": "ecamp",
     "title": "eCamp",
@@ -434,10 +399,66 @@
     "slug": ""
   },
   {
-    "id": 217,
-    "key": "ecamp",
-    "title": "eCamp",
-    "link": "https://ecamp.pfadiluzern.ch/login.php",
+    "id": 186,
+    "key": "midata-lager-eroeffnen",
+    "title": "Ouvrir un camp",
+    "link": null,
+    "slug": "Preparation#Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-aua-la-responsable-de-camp-et-aua-la-coach"
+  },
+  {
+    "id": 192,
+    "key": "team-erfassen-midata-kapitel",
+    "title": "Ajouter la maitrise dans MiData",
+    "link": null,
+    "slug": "Preparation#Enregistrement-dude-la-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData"
+  },
+  {
+    "id": 198,
+    "key": "jugendurlaub",
+    "title": "Congé jeunesse",
+    "link": "https://www.sajv.ch/fr/services-1/conge-jeunesse-aussi-pour-toi",
+    "slug": ""
+  },
+  {
+    "id": 221,
+    "key": "forstamt-tg",
+    "title": "Forstamt Thurgau",
+    "link": "https://forstamt.tg.ch/",
+    "slug": ""
+  },
+  {
+    "id": 248,
+    "key": "neundslagerleitende",
+    "title": "Séquence d'apprentissage : chef·fe de camp",
+    "link": "https://rise.articulate.com/share/UHcIPhVdD6_TfMwnw0DQnkH5X9KMS_Tb#/",
+    "slug": ""
+  },
+  {
+    "id": 46,
+    "key": "nds",
+    "title": "BDNS",
+    "link": "https://www.nds.baspo.admin.ch/#/startpage/dashboard",
+    "slug": ""
+  },
+  {
+    "id": 144,
+    "key": "sbb-gruppenbillet",
+    "title": "CFF - Billet de groupe",
+    "link": "https://www.sbb.ch/fr/abonnements-et-billets/billets-suisse/billets-de-groupe.html",
+    "slug": ""
+  },
+  {
+    "id": 250,
+    "key": "NDS",
+    "title": "BDNS",
+    "link": "https://www.nds.baspo.admin.ch/#/startpage/dashboard",
+    "slug": ""
+  },
+  {
+    "id": 246,
+    "key": "coachneunds",
+    "title": "Séquence d'apprentissage - coach",
+    "link": "https://rise.articulate.com/share/HpdR7xgTs3Hro1ALMcCZRVH_ugjXQ2ga#/",
     "slug": ""
   },
   {
@@ -448,10 +469,24 @@
     "slug": "Commande-de-services#Commande-de-cartes-nationales-Swisstopo"
   },
   {
-    "id": 221,
-    "key": "forstamt-tg",
-    "title": "Forstamt Thurgau",
-    "link": "https://forstamt.tg.ch/",
+    "id": 177,
+    "key": "lagerdaten-formular",
+    "title": "Données nécessaires pour la BDNS",
+    "link": "https://pfadi.swiss/fr/publications-telechargements/downloads/detail/252/donnees-necessaires-pour-la-sportdb/",
     "slug": ""
+  },
+  {
+    "id": 254,
+    "key": "sbb-tageskarten",
+    "title": "CFF Cartes journalières pour écoles",
+    "link": "https://www.sbb.ch/fr/abonnements-et-billets/billets-suisse/carte-journaliere/carte-journaliere-pour-ecoles.html",
+    "slug": ""
+  },
+  {
+    "id": 165,
+    "key": "lagerabschluss-nds",
+    "title": "Clôture de l'offre J+S dans la BDNS",
+    "link": null,
+    "slug": "Cloture-de-l'offre-J+S#Cloture-de-l'offre-J+S-dans-la-BDNS"
   }
 ]

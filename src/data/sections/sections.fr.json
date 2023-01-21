@@ -17,12 +17,12 @@
       {
         "id": 4,
         "title": "Conditions cadres pour camps (avec ou sans J+S)",
-        "content": "Les camps scouts peuvent avoir lieu avec ou sans inscription à J+S. Tous les camps scouts de plus de 3 jours avec ou sans J+S doivent être annoncés par [MiData]($midata$) à l’association cantonale (AC) et au Mouvement Scout de Suisse (MSdS) (cf. [Annonce de camp au MSdS]($lageranmeldung$)). Pour l’autorisation de camp on utilise [l’autorisation de camp du MSdS]($lagerbewilligung-kapitel$). Elle consiste en deux parties : L’autorisation (p. 1) et un aide-mémoire (p. 2) qui sert de base à l’encadrement pour donner son accord au programme du camp. Les consignes de base valables pour tous les camps scouts sont consignées dans le [Règlement concernant la préparation de camps du MSdS]($lagerreglement$). Pour les camps inscrits chez J+S, il faut suivre des dispositions supplémentaires. Si le camp remplit ces conditions, le groupe sera dédommagé d’un montant forfaitaire. Les montants applicables actuellement sont notés dans le [Guide pour le coach J+S]($js-coachleitfaden$). Chaque personne de l’âge J+S couverte par un·e responsable J+S a droit à un dédommagement. Toutes les dispositions concernant les camps J+S se trouvent dans le [Guide pour la réalisation des camps J+S Sport de camp/Trekking]($js-angebotsleitfaden$). Le programme général de chaque camp J+S doit être téléchargé par le·la coach dans la [Clôture du camp dans la SPORTdb]($lagerabschluss-sportdb$). L’office cantonal du sport peut faire des vérifications sporadiques et analyser les programmes. Il peut aussi demander à voir le programme détaillé pour le contrôler. Le coach inscrit et décompte tous les camps qui sont réalisés au cours d’une année par un groupe en tant qu’offre J+S dans la [SPORTdb]($sportdb$). Ces camps peuvent aussi profiter de conditions particulièrement bon marché pour :\n- [Le matériel de prêt J+S]($js-leihmaterial$)\n- [Les cartes nationales]($landeskarten$)\n- [Les assurances REGA]($rega$)",
+        "content": "Les camps scouts peuvent avoir lieu avec ou sans inscription à J+S. Tous les camps scouts de plus de 3 jours avec ou sans J+S doivent être annoncés par [MiData]($midata$) à l’association cantonale (AC) et au Mouvement Scout de Suisse (MSdS) (cf. [Annonce de camp au MSdS]($lageranmeldung$)). Pour l’autorisation de camp on utilise [l’autorisation de camp du MSdS]($lagerbewilligung-kapitel$). Elle consiste en deux parties : L’autorisation (p. 1) et un aide-mémoire (p. 2) qui sert de base à l’encadrement pour donner son accord au programme du camp. Les consignes de base valables pour tous les camps scouts sont consignées dans le [Règlement concernant la préparation de camps du MSdS]($lagerreglement$). Pour les camps inscrits chez J+S, il faut suivre des dispositions supplémentaires. Si le camp remplit ces conditions, le groupe sera dédommagé d’un montant forfaitaire. Les montants applicables actuellement sont notés dans le [Guide pour le coach J+S]($js-coachleitfaden$). Chaque personne de l’âge J+S couverte par un·e responsable J+S a droit à un dédommagement. Toutes les dispositions concernant les camps J+S se trouvent dans le [Guide pour la réalisation des camps J+S Sport de camp/Trekking]($js-angebotsleitfaden$). Le programme général de chaque camp J+S doit être téléchargé par le·la coach dans la [Clôture du camp dans la BDNS]($lagerabschluss-nds$). L’office cantonal du sport peut faire des vérifications sporadiques et analyser les programmes. Il peut aussi demander à voir le programme détaillé pour le contrôler. Le coach inscrit et décompte tous les camps qui sont réalisés au cours d’une année par un groupe en tant qu’offre J+S dans la [BDNS]($nds$). Ces camps peuvent aussi profiter de conditions particulièrement bon marché pour :\n- [Le matériel de prêt J+S]($js-leihmaterial$)\n- [Les cartes nationales]($landeskarten$)\n- [Les assurances REGA]($rega$)",
         "section": 3,
         "locale": "fr",
         "published_at": "2021-10-17T10:48:00.949Z",
         "created_at": "2021-10-07T09:00:28.464Z",
-        "updated_at": "2022-01-23T20:25:27.321Z",
+        "updated_at": "2023-01-19T12:47:01.781Z",
         "key": "rahmenbedingungen",
         "Sorting": 1,
         "sorting": 101,
@@ -32,17 +32,17 @@
         "menu_name": "Conditions cadres pour camps (avec ou sans J+S)",
         "responsible": [
           {
-            "id": 1379,
+            "id": 1526,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1380,
+            "id": 1529,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1381,
+            "id": 1530,
             "label": null,
             "rolle": "C"
           }
@@ -73,12 +73,12 @@
       {
         "id": 111,
         "title": "Données relatives aux camps",
-        "content": "Au début de l’année, responsable de camp et RG décident ensemble les camps qu’elles veulent organiser et les dates. Elles établissent une liste avec toutes les données nécessaires concernant le groupe et les camps. responsable de camp et RG décident également quels camps seront annoncés à J+S. Pour rassembler ces données, on peut consulter le mémento [Données nécessaires pour la SPORTdb]($lagerdaten-formular$), afin de s’assurer que les données sont complètes. En début d’année, responsable de camp et RG remettent au·à la coach la liste des données relatives aux camps. \nVoici quelques explications relatives au formulaire : \n1. « Compte de paiement du forfait J+S » : on donne le numéro de compte du groupe. Les paiements par J+S se font uniquement sur le compte bancaire ou postal suisse d’une association. L’indication d’un code IBAN valable est impératif. Après le décompte de l’offre J+S à la fin de l’année, la subvention est versée sur ce compte.\n2. « Type de camp J +S » : Kids correspond à la branche louveteaux et on la choisit pour les camps s’adressant principalement à des enfants de 7 à 10 ans. Teens correspond aux branches éclairs ou picos avec des participant(e)s majoritairement âgés de 10 à 20 ans. Un camp mixte permet de compter comme participants des personnes de 5 à 20 ans. Selon le règlement des camps du MSdS, il n’est pas permis d’organiser des camps avec la branche Castors (5-6 ans).\n3. « Nombre de participants prévu » : celui-ci n’est probablement pas connu à l’avance, c’est pourquoi on met un chiffre approximatif qui pourra être corrigé ultérieurement.\n4. « Nombre d’accompagnants prévus » : On entend par là des personnes qui seront présentes au camp en plus de responsables formés. \n5. « Activité de sécurité prévue » : données provisoires qui pourront être modifiées plus tard. Néanmoins, s’il est clair qu’une [activité dans ce domaine de sécurité]($sicherheitsbereich$) aura lieu, le coach peut déjà chercher un encadreur pour celle-ci.\n6. « NPA/Localité » et « Date de naissance » : Seulement pour les responsables qui s’engagent pour la première fois dans le groupe en tant que moniteur·trice J+S. C’est important d’inscrire la date de naissance précise et pas seulement l’année. Le totem ne sert qu’au·à la coach et n’est pas nécessaire à la [SPORTdb]($sportdb$).\n\n![Screenshot-Lagerdaten-fr.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643651409/hering/Screenshot_Lagerdaten_it_9b101acb5e.png)",
+        "content": "Au début de l’année, responsable de camp et RG décident ensemble les camps qu’ils·elles veulent organiser et les dates. Ils·Elles établissent une liste avec toutes les données nécessaires concernant le groupe et les camps. Responsable de camp et RG décident également quels camps seront annoncés à J+S. Pour rassembler ces données, on peut consulter le mémento [Données nécessaires pour la BDNS]($lagerdaten-formular$), afin de s’assurer que les données sont complètes. En début d’année, responsable de camp et RG remettent au·à la coach la liste des données relatives aux camps. \nVoici quelques explications relatives au formulaire : \n1. « Compte de paiement du forfait J+S » : on donne le numéro de compte du groupe. Les paiements par J+S se font uniquement sur le compte bancaire ou postal suisse d’une association. L’indication d’un code IBAN valable est impératif. Après le décompte de l’offre J+S à la fin de l’année, la subvention est versée sur ce compte.\n2. « Type de camp J +S » :  « Enfants » correspond à la branche louveteaux et on la choisit pour les camps s’adressant principalement à des enfants de 7 à 10 ans. « Jeunes » correspond aux branches éclairs ou picos avec des participant·e·s majoritairement âgés de 10 à 20 ans. Un camp mixte permet de compter comme participant·e·s des personnes de 5 à 20 ans. Selon le règlement des camps du MSdS, il n’est pas permis d’organiser des camps avec la branche Castors (5-6 ans).\n3. « Nombre de participant·e·s prévu·e·s » : celui-ci n’est probablement pas connu à l’avance, c’est pourquoi on met un chiffre approximatif qui pourra être corrigé ultérieurement.\n4. « Nombre d’accompagnant·e·s prévu·e·s » : On entend par là des personnes qui seront présentes au camp en plus de responsables formé·e·s. \n5. « Activité de sécurité prévue » : données provisoires qui pourront être modifiées plus tard. Néanmoins, s’il est clair qu’une [activité dans ce domaine de sécurité]($sicherheitsbereich$) aura lieu, le·la coach peut déjà chercher un·e expert·e pour celle-ci.\n6. « NPA/Localité » et « Date de naissance » : Seulement pour les responsables qui s’engagent pour la première fois dans le groupe en tant que moniteur·trice J+S. C’est important d’inscrire la date de naissance précise et pas seulement l’année. Le totem ne sert qu’au·à la coach et n’est pas nécessaire à la [BDNS]($nds$).\n\n![Screenshot-Lagerdaten-fr.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643651409/hering/Screenshot_Lagerdaten_it_9b101acb5e.png)",
         "section": 3,
         "locale": "fr",
         "published_at": "2022-01-23T21:08:20.990Z",
         "created_at": "2022-01-23T21:08:18.497Z",
-        "updated_at": "2022-01-31T17:51:41.948Z",
+        "updated_at": "2023-01-19T12:56:30.356Z",
         "key": null,
         "Sorting": null,
         "sorting": 102,
@@ -88,17 +88,17 @@
         "menu_name": "Données relatives aux camps",
         "responsible": [
           {
-            "id": 1361,
+            "id": 1561,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1362,
+            "id": 1562,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1363,
+            "id": 1564,
             "label": null,
             "rolle": "C"
           }
@@ -129,12 +129,12 @@
       {
         "id": 113,
         "title": "Voilà – programme pour la promotion de la santé et la prévention des dépendances",
-        "content": "Les responsable de camp et les RG décident également au début de l’année si ils·elles veulent inscrire les camps dans le programme Voilà. Voilà est le programme pour la promotion de la santé et la\nprévention des dépendances dans les associations de jeunesse. Il est proposé dans 17 cantons sous différents noms. Pour pouvoir profiter de ce programme c’est-à-dire pouvoir y inscrire son camp, il faut qu’au moins un membre de la maîtrise suive une formation. Cette formation permet aux responsables de demander des subventions pour un camp. Il faut décider avec le·la coach, s’il·elle peut ou doit vérifier les conditions ou si d’autres personnes de l’encadrement sont nécessaires. Des informations plus précises sur les dates des cours ainsi que sur les exigences cantonales spécifiques pour les subventions peuvent être obtenues en s’adressant auprès des personnes de contact des programmes Voilà cantonaux :  \n[Voilà]($voila$) &rarr; Programmes cantonaux &rarr; Adresses\n\n![alt: me*in- text, width: 80](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1640626943/hering/Screenshot_2021_12_27_at_18_41_44_54f3a6fbe5.png)\n\n\n",
+        "content": "Les responsable de camp et les RG décident également au début de l’année si ils·elles veulent inscrire les camps dans le programme Voilà. Voilà est le programme pour la promotion de la santé et la\nprévention des dépendances dans les associations de jeunesse. Il est proposé dans 17 cantons sous différents noms. Pour pouvoir profiter de ce programme c’est-à-dire pouvoir y inscrire son camp, il faut qu’au moins un·e membre de la maîtrise suive une formation. Cette formation permet aux responsables de demander des subventions pour un camp. Il faut décider avec le·la coach, s’il·elle peut ou doit vérifier les conditions ou si d’autres personnes de l’encadrement sont nécessaires. Des informations plus précises sur les dates des cours ainsi que sur les exigences cantonales spécifiques pour les subventions peuvent être obtenues en s’adressant auprès des personnes de contact des programmes Voilà cantonaux :  \n[Voilà]($voila$) &rarr; Programmes cantonaux &rarr; Adresses\n\n![alt: me*in- text, width: 80](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1640626943/hering/Screenshot_2021_12_27_at_18_41_44_54f3a6fbe5.png)\n\n\n",
         "section": 3,
         "locale": "fr",
         "published_at": "2022-01-23T21:16:55.231Z",
         "created_at": "2022-01-23T21:16:53.296Z",
-        "updated_at": "2022-01-23T21:17:23.341Z",
+        "updated_at": "2023-01-19T12:57:18.692Z",
         "key": null,
         "Sorting": null,
         "sorting": 103,
@@ -220,19 +220,19 @@
       },
       {
         "id": 118,
-        "title": "Ouvrir un camp dans la MiData et l’attribuer à la responsable de camp et au coach",
-        "content": "Le·la RG ouvre le camp dans la [MiData]($midata$). Pour cela, il·elle se connecte et, dans son groupe, va sur «&nbsp;Camp&nbsp;» et clique «&nbsp;+Établir un camp&nbsp;» et remplit le formulaire «&nbsp;Créer un camp&nbsp;». Un·e coach est attribué au groupe. Le·la coach reçoit un e-mail automatique de notification, qu’il·elle a été affecté·e au camp.\n\n> Des camps peuvent être créés à plusieurs niveaux. Un camp peut aussi bien être ouvert au niveau des groupes que par un groupe (par exemple : Eclais, Routiers, etc.) L’inscription au camp n’est possible que pour les membres du groupe correspondant.\n\n![A6-fr-lagererstellen.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642974389/hering/A6_fr_lagererstellen_fad591f5a7.png)\n\n![fr-lager-eroeffnen2.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643652772/hering/fr_lager_eroeffnen2_e922f94d44.png)\n\nChamps | Saisie / Remarque | Qui remplit\n-------- | -------- | --------\nRèglement du camp / Profil du scoutisme | Le [Règlement concernant la préparation de camps du MSdS]($lagerreglement$) («&nbsp;règlement de camp&nbsp;») ainsi que le [profil du scoutisme]($pfadiprofil$) sont pris en compte et respectés. | Responsable de camp\nConsignes/ Recommandations AC   | Les directives et recommandations disponibles de l'association cantonale sont prise en compte au mieux lors de la préparation du camp. | Responsable de camp\nConsignes J+S SC/T | Pour les camps J+S: je connais les [recommandations actuelles du dossier Sport de camp/Trekking]($js-angebotsleitfaden$) et j'en tiens compte. | Responsable de camp\nCoach confirmé | Le·la coach confirme-t-il·elle les données du camp ? | Coach\n\n\n\n",
+        "title": "Ouvrir un camp dans la MiData et l’attribuer au·à la responsable de camp et au·à la coach",
+        "content": "Le·la RG ouvre le camp dans la [MiData]($midata$). Pour cela, il·elle se connecte et, dans son groupe, va sur «&nbsp;Camp&nbsp;» et clique «&nbsp;+Établir un camp&nbsp;» et remplit le formulaire «&nbsp;Créer un camp&nbsp;». Un·e coach est attribué au groupe. Le·la coach reçoit un e-mail automatique de notification, qu’il·elle a été affecté·e au camp.\n\n> Des camps peuvent être créés à plusieurs niveaux. Un camp peut aussi bien être ouvert au niveau des groupes que par un sous-groupe (par exemple : Eclais, Routiers, etc.) L’inscription au camp n’est possible que pour les membres du groupe correspondant.\n\n![A6-fr-lagererstellen.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642974389/hering/A6_fr_lagererstellen_fad591f5a7.png)\n\n![fr-lager-eroeffnen2.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643652772/hering/fr_lager_eroeffnen2_e922f94d44.png)\n\nChamps | Saisie / Remarque | Qui remplit\n-------- | -------- | --------\nRèglement du camp / Profil du scoutisme | Le [Règlement concernant la préparation de camps du MSdS]($lagerreglement$) («&nbsp;règlement de camp&nbsp;») ainsi que le [profil du scoutisme]($pfadiprofil$) sont pris en compte et respectés. | Responsable de camp\nConsignes/ Recommandations AC   | Les directives et recommandations disponibles de l'association cantonale sont prise en compte au mieux lors de la préparation du camp. | Responsable de camp\nConsignes J+S SC/T | Pour les camps J+S: je connais les [recommandations actuelles du dossier Sport de camp/Trekking]($js-angebotsleitfaden$) et j'en tiens compte. | Responsable de camp\nCoach confirmé·e | Le·la coach confirme-t-il·elle les données du camp ? | Coach\n\n\n\n",
         "section": 3,
         "locale": "fr",
         "published_at": "2022-01-23T21:55:43.393Z",
         "created_at": "2022-01-23T21:55:33.284Z",
-        "updated_at": "2022-01-31T18:15:38.121Z",
+        "updated_at": "2023-01-19T13:00:10.442Z",
         "key": null,
         "Sorting": null,
         "sorting": 106,
-        "slug": "Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-a-la-responsable-de-camp-et-au-coach",
+        "slug": "Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-aua-la-responsable-de-camp-et-aua-la-coach",
         "link": 186,
-        "slug_with_section": "Preparation#Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-a-la-responsable-de-camp-et-au-coach",
+        "slug_with_section": "Preparation#Ouvrir-un-camp-dans-la-MiData-et-l'attribuer-aua-la-responsable-de-camp-et-aua-la-coach",
         "menu_name": "Ouvrir un camp",
         "responsible": [
           {
@@ -267,12 +267,12 @@
       {
         "id": 120,
         "title": "Administrer un camp à plusieurs unités sur MiData",
-        "content": "Dans le cas ou plusieurs unités font un camp ensemble, il peut être sensé de saisir le camp de manière hiérarchique. Ainsi, autant de camps que l’on souhaite peuvent être mis par-dessus ou sous un camp. L’administration de camp avant tout peut ainsi être massivement facilitée et le·la RC du camp supérieur peut voir tou·te·s les participant·e·s. Vu que les informations du camp principal sont copiées de manière unique dans le sous-camp, il est central de bien suivre les étapes décrites.\n\n### Créer le camp supérieur\nTout d’abord, le camp principal est créé de manière analogue au processus indiqué dans le chapitre [Ouvrir un camp dans la MiData et l’attribuer à la responsable de camp et au coach]($midata-lager-eroeffnen$). Le statut reste sous «&nbsp;créé&nbsp;», car ce n’est qu’ainsi que d’autres camps peuvent être mis dessous. Il faut faire attention que de nombreuses informations données ici seront reprises dans les sous-camps. Ainsi, cela vaut la peine de créer correctement le camp principal dès le début. Dans le cas où l’information pour l’un des champs n’est pas encore connue, celle-ci devrait être remplie par une «&nbsp;réservation&nbsp;» (par exemple : «&nbsp;inofrmations suivent&nbsp;». Les champs suivants en particulier devraient être choisis en connaissance de cause avant que des sous-camps soient autorisés :  \n•\tNom  \n•\tDate  \n•\tLieu, adresse  \n•\tCoûts  \n•\tCadre J+S  \n•\tDomaines de la sécurité  \n\n> Si l’on attend des données d’inscription ou de contact particulières des participant·e·s au camp (voir chapitre [Inscription des participants aux camps via la MiData]($tn-anmeldung-kapitel$)), elles doivent également être créées maintenant. Si une information est oubliée ici, elle devra ensuite être créée manuellement après coup dans chaque sous camp.\n\n### Autoriser les sous-camps\nDès que les points saillants importants ont été définis et sauvegardés, la case de contrôle «&nbsp;autoriser les sous-camps&nbsp;» est activée et le camp est sauvegardé. Dès lors, le camp est montré dans la liste des camps supérieurs possibles.\n\n### Créer et joindre les sous-camps :\nPour chaque sous-camp le processus suivant est répété :\n- Créer le camp au niveau des participant·e·s adéquat·e·s\n- Remplir quelques petits champs (ceux-ci sont écrasés lors du rattachement)\n- Choisir « rattacher au camp supérieur » dans la hiérarchie de camp\n- Trouver et choisir le camp supérieur souhaité dans la liste ou par recherche textuelle\n- Confirmer\n- Sauvegarder\n- Fermer le traitement\n\nLa plupart des informations du camp principal devraient maintenant également être disponibles dans le sous-camp. Sont exclu·e·s «&nbsp;statut du camp&nbsp;», «&nbsp;description&nbsp;», «&nbsp;nombre maximal de participant·e·s&nbsp;» et «&nbsp;nombre attendu de participant·e·s&nbsp;». Le lieu et la date doivent brièvement être contrôlés afin de s’assurer que le bon camp a été choisi. Lorsqu’il y a trop de points de cours avec des descriptions, des lieux et des dates, il faut effacer les mauvais.\n\n\n### Terminer la phase d’inscription\nDès que le sous-camp a été joint, le statut du camp principal peut passer de «&nbsp;crée&nbsp;» à «&nbsp;confirmé&nbsp;». Dorénavant, aucun nouveau camp ne peut se mettre dessous et les sous-camps existants ne peuvent plus être modifiés lors de leurs inscription auprès du camp principal. La structure est là et les participant·e·s peuvent s’inscrire au sous-camp.",
+        "content": "Dans le cas ou plusieurs unités font un camp ensemble, il peut être sensé de saisir le camp de manière hiérarchique. Ainsi, autant de camps que l’on souhaite peuvent être ralliés à un camp principal. L’administration de camp avant tout peut ainsi être massivement facilitée et le·la RC du camp supérieur peut voir tou·te·s les participant·e·s. Vu que les informations du camp principal sont copiées de manière unique dans le sous-camp, il est impératif de bien suivre les étapes décrites ci-dessous.\n\n### Créer le camp supérieur\nTout d’abord, le camp principal est créé de manière analogue au processus indiqué dans le chapitre [Ouvrir un camp dans la MiData et l’attribuer à la responsable de camp et au coach]($midata-lager-eroeffnen$). Le statut reste sous «&nbsp;créé&nbsp;», car ce n’est qu’ainsi que d’autres camps peuvent être mis dessous. Il faut faire attention au fait que de nombreuses informations données ici seront reprises dans les sous-camps. Ainsi, cela vaut la peine de créer correctement le camp principal dès le début. Dans le cas où l’information pour l’un des champs n’est pas encore connue, celle-ci devrait être remplie avec une remarque (par exemple : «&nbsp;inofrmations suivent&nbsp;». Les champs suivants en particulier devraient être choisis en connaissance de cause avant que des sous-camps soient autorisés :  \n•\tNom  \n•\tDate  \n•\tLieu, adresse  \n•\tCoûts  \n•\tCadre J+S  \n•\tDomaines de sécurité  \n\n> Si l’on attend des données d’inscription ou de contact particulières des participant·e·s au camp (voir chapitre [Inscription des participant·e·s aux camps via la MiData]($tn-anmeldung-kapitel$)), elles doivent également être créées maintenant. Si une information est oubliée ici, elle devra ensuite être créée manuellement après coup dans chaque sous camp.\n\n### Autoriser les sous-camps\nDès que les points de repères importants ont été définis et sauvegardés, la case de contrôle «&nbsp;autoriser les sous-camps&nbsp;» doit être activée et le camp est sauvegardé. Dès lors, le camp est montré dans la liste des camps supérieurs possibles.\n\n### Créer et joindre les sous-camps :\nPour chaque sous-camp le processus suivant est répété :\n- Créer le camp au niveau adéquat des participant·e·s\n- Remplir quelques petits champs (ceux-ci sont écrasés lors du rattachement)\n- Choisir « rattacher au camp supérieur » dans la hiérarchie de camp\n- Trouver et choisir le camp supérieur souhaité dans la liste ou par recherche textuelle\n- Confirmer\n- Sauvegarder\n- Fermer le traitement\n\nLa plupart des informations du camp principal devraient maintenant également être disponibles dans le sous-camp. Sont exclu·e·s «&nbsp;statut du camp&nbsp;», «&nbsp;description&nbsp;», «&nbsp;nombre maximal de participant·e·s&nbsp;» et «&nbsp;nombre attendu de participant·e·s&nbsp;». Le lieu et la date doivent brièvement être contrôlés afin de s’assurer que le bon camp a été choisi. S'il y a trop de blocs avec désignation, lieu et date dans l'onglet « Données », il faut supprimer les mauvais.\n\n\n### Terminer la phase d’inscription\nDès que le sous-camp a été joint, le statut du camp principal peut passer de «&nbsp;créé&nbsp;» à «&nbsp;confirmé&nbsp;». Dorénavant, aucun nouveau camp ne peut être rallié et les sous-camps existants ne peuvent plus rien changer à leur ralliement au camp principal. La structure est là et les participant·e·s peuvent s’inscrire au sous-camp.",
         "section": 3,
         "locale": "fr",
         "published_at": "2022-01-23T22:22:32.721Z",
         "created_at": "2022-01-23T22:17:34.827Z",
-        "updated_at": "2022-01-23T22:22:32.751Z",
+        "updated_at": "2023-01-19T13:14:02.411Z",
         "key": null,
         "Sorting": null,
         "sorting": 107,
@@ -282,12 +282,12 @@
         "menu_name": "Administrer un camp à plusieurs unités sur MiData",
         "responsible": [
           {
-            "id": 1305,
+            "id": 1586,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1306,
+            "id": 1587,
             "label": null,
             "rolle": "LL"
           }
@@ -317,28 +317,28 @@
       },
       {
         "id": 122,
-        "title": "Enregistrement de responsable de camp et de l'équipe cuisine dans MiData",
-        "content": "Le·la RG enregistre dans la MiData au moins le·la responsable de camp. Les autres personnes responsables peuvent être ajoutées aussi bien par le·la RG que par le·la responsable de camp enregistré. L’équipe cuisine doit également être ajoutée, afin que le·la coach puisse facilement compléter la SPORTdb pour l’[assurance de la REGA]($rega$).\n1. Sélectionner domaine camp\n2. Choisir le camp souhaité déjà enregistré\n3. Cliquer sur participants\n4. Cliquer sur maîtrise\n5. Ajouter une personne et choisir la forme souhaitée.\n6. Sous „Chercher une personne“, saisir un nom, choisir la personne souhaitée. Sous désignation, indiquer la désignation concrète (par exemple co-responsable) et «&nbsp;Enregistrer&nbsp;».",
+        "title": "Enregistrement du·de la responsable de camp et de l'équipe cuisine dans MiData",
+        "content": "Le·la RG enregistre dans la MiData au moins le·la responsable de camp. Les autres personnes responsables peuvent être ajoutées aussi bien par le·la RG que par le·la responsable de camp enregistré·e. L’équipe cuisine doit également être ajoutée, afin que le·la coach puisse facilement compléter la BDNS pour l’[assurance de la REGA]($rega$).\n1. Sélectionner l'onglet camp\n2. Choisir le camp souhaité déjà enregistré\n3. Cliquer sur participant·e·s\n4. Cliquer sur maîtrise\n5. Ajouter une personne et choisir le rôle souhaité.\n6. Sous „Chercher une personne“, saisir un nom, choisir la personne souhaitée. Sous désignation, indiquer la désignation concrète (par exemple co-responsable) et cliquer sur «&nbsp;Enregistrer&nbsp;».",
         "section": 3,
         "locale": "fr",
         "published_at": "2022-01-23T22:36:01.552Z",
         "created_at": "2022-01-23T22:35:58.255Z",
-        "updated_at": "2022-01-23T22:41:54.424Z",
+        "updated_at": "2023-01-19T13:16:21.178Z",
         "key": null,
         "Sorting": null,
         "sorting": 108,
-        "slug": "Enregistrement-de-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData",
+        "slug": "Enregistrement-dude-la-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData",
         "link": 192,
-        "slug_with_section": "Preparation#Enregistrement-de-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData",
+        "slug_with_section": "Preparation#Enregistrement-dude-la-responsable-de-camp-et-de-l'equipe-cuisine-dans-MiData",
         "menu_name": "Enregistrement de responsable de camp dans MiData",
         "responsible": [
           {
-            "id": 1227,
+            "id": 1618,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1229,
+            "id": 1619,
             "label": null,
             "rolle": "AL"
           }
@@ -368,23 +368,23 @@
       },
       {
         "id": 125,
-        "title": "Enregistrement de l’offre J+S via la SPORTdb",
-        "content": "Le·la coach enregistre tous les camps du groupe en une fois auprès de J+S. Il·elle le fait en ligne par la [SPORTdb]($sportdb$). Il*elle reçoit l'accès à la SPORTdb de l'AC.\n\n### Ouverture de l’offre J+S dans la SPORTdb\nAu début de l’année, une nouvelle offre pour l’année à venir est ouverte sous «&nbsp;Gestion de l’offre&nbsp;» → «&nbsp;Nouvelle offre&nbsp;». Une seule offre est ouverte par groupe. Avec cette offre, tous les camps du groupe seront inscrits à J+S. Après l’ouverture, l’offre peut être consultée n’importe quand sous «&nbsp;Gestion de l’offre&nbsp;» → «&nbsp;Vue d’ensemble de l’offre&nbsp;». A chaque modification pendant l’année, le «&nbsp;statut&nbsp;» change également. La «&nbsp;check-list&nbsp;» de l’offre donne une vue d’ensemble sur les étapes de modification nécessaires à chaque statut. Pour modifier l’offre, on suit les cartes du registre de la gauche vers la droite. La nouvelle offre ouverte s’affiche dans la vue d’ensemble de l’offre en tant qu’ «&nbsp;offre pas encore enregistrée&nbsp;». A partir de là, il s’agit d’enregistrer l’offre.\n\n### Statut de l’offre «&nbsp;Procédure d’autorisation&nbsp;»\nLe statut «&nbsp;Procédure d’autorisation&nbsp;» indique que l’office cantonal des sports traite l’offre. La demande d’autorisation du·de la coach est confirmée par message électronique (Objet&nbsp;: Confirma-tion de réception de votre offre J+S n° XXXXX). L’autorisation finale par l’OCS est également confirmée par message électronique (Objet&nbsp;: Autorisation de votre offre J+S n°XXXXX). Dès lors, l’offre entre dans le statut «&nbsp;Exécution&nbsp;».\n\n### Travailler dans la SPORTdb\nLes processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$). Le document [Saisie des données et protection des données dans la SPORTdb]($js-datenschutz$) répond aux questions liées à la protection des données dans la SPORTdb.",
+        "title": "Enregistrement de l’offre J+S via la BDNS",
+        "content": "Le·la coach enregistre tous les camps du groupe en une fois auprès de J+S. Il·elle le fait en ligne par la [BDNS]($NDS$). Il*elle reçoit l'accès à la NDS par son responsable de groupe ou l'ancien·ne coach.\n\n### Ouverture de l’offre J+S dans la NDS\nAu début de l’année, une nouvelle offre pour l’année à venir est ouverte sous «&nbsp;Fromation des jeunes&nbsp;» → «&nbsp;+ Saisir une offre&nbsp;». Une seule offre est ouverte par groupe sur une même période. Avec cette offre, tous les camps du groupe seront inscrits à J+S. Après l’ouverture, l’offre peut être consultée n’importe quand dans la liste qui se trouve dans «&nbsp;Organisations&nbsp;» → Sélection du groupe concerné →  «&nbsp;Formation des jeunes&nbsp;» et en cliquant sur «&nbsp;Détails&nbsp;». A chaque modification pendant l’année, le statut change également.\n# \n### Statut de l’offre «&nbsp;Procédure d’autorisation&nbsp;»\nLe statut «&nbsp;Procédure d’autorisation&nbsp;» indique que l’office cantonal des sports traite l’offre. La demande d’autorisation du·de la coach est confirmée par message électronique (Objet&nbsp;: Confirma-tion de réception de votre offre J+S n° XXXXX). L’autorisation finale par l’OCS est également confirmée par message électronique (Objet&nbsp;: Autorisation de votre offre J+S n°XXXXX). Dès lors, l’offre entre dans le statut «&nbsp;Exécution&nbsp;».\n\n### Travailler dans la SPORTdb\nLes processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$). Le document [Saisie des données et protection des données dans la SPORTdb]($js-datenschutz$) répond aux questions liées à la protection des données dans la SPORTdb.",
         "section": 3,
         "locale": "fr",
         "published_at": "2022-01-23T23:00:24.017Z",
         "created_at": "2022-01-23T22:54:00.092Z",
-        "updated_at": "2022-01-23T23:00:24.048Z",
+        "updated_at": "2023-01-19T10:51:49.354Z",
         "key": null,
         "Sorting": null,
         "sorting": 109,
-        "slug": "Enregistrement-de-l'offre-J+S-via-la-SPORTdb",
+        "slug": "Enregistrement-de-l'offre-J+S-via-la-BDNS",
         "link": null,
-        "slug_with_section": "Preparation#Enregistrement-de-l'offre-J+S-via-la-SPORTdb",
+        "slug_with_section": "Preparation#Enregistrement-de-l'offre-J+S-via-la-BDNS",
         "menu_name": "Enregistrement de l’offre J+S via la SPORTdb",
         "responsible": [
           {
-            "id": 1258,
+            "id": 1505,
             "label": null,
             "rolle": "C"
           }
@@ -495,12 +495,12 @@
       {
         "id": 36,
         "title": "Programme général",
-        "content": "Le programme général sert à l’équipe de responables comme vue d’ensemble des activités pour la préparation du camp et pendant le camp. Il \nest conseillé de commencer tôt à planifier le programme général. 7 semaines avant le camp, le·la responsable de camp rend le programme avec \nl’annonce du camp au·à la RG et au·à la coach. Le·la coach donne un feedback au·à la responsable de camp sur le programme général. Le \ncudesch contient de précieuses indications sur la planification du programme général dans la brochure J+S SC/T Camp.\n\nLes points suivants doivent y figurer :\n- Thème du camp\n- 3 priorités du camp (voir brochure J+S SC/T Camp, P. 14)\n- Nom du·de la responsable de camp\n- Organisateut·trice (unité, groupe)\n- Nom du·de la coach\n- Lieu de camp et nom du gîte / de l’emplacement du camp sous tentes\n- Dates du camp\n- Genre de camp (gîte/tentes, camp d’été/d’automne)\n- Jour, date et responsable de la journée\n- Nom de chaque activité et de la personne responsable\n- Heures d’arrivée et de départ\n- Pour les camps J+S : les blocs de sport de camp et d’activités de camp doivent figurer dans le programme général avec un numéro et de façon visible (par exemple en utilisant des couleurs différentes). Voir [J+S brochure SC/T Bases]($lst-grundlagen$).\n\nUn modèle du [programme général de J+S]($muster-gp-lager-lst-kinder-und-jugendsport$) ou un [modèle vide du MSdS]($vorlage-gp-pbs$) peuvent servir de soutien.\n\n### Instructions sur le programme du MSdS :\nLe MSdS laisse beaucoup de liberté aux responsables pour la composition du programme. Celui-ci doit être équilibré et varié et les fondements scouts pris en compte. Le [Règlement concernant la préparation de camps]($lagerreglement$) doit être respecté.",
+        "content": "Le programme général sert à l’équipe de responsables comme vue d’ensemble des activités pour la préparation du camp et pendant le camp. Il est conseillé de commencer tôt à planifier le programme général. 7 semaines avant le camp, le·la responsable de camp rend le programme avec l’annonce du camp au·à la RG et au·à la coach. Le·la coach donne un feedback au·à la responsable de camp sur le programme général. Le cudesch contient de précieuses indications sur la planification du programme général dans la brochure J+S SC/T Camp.\n\nLes points suivants doivent y figurer :\n- Thème du camp\n- 3 priorités du camp (voir brochure J+S SC/T Camp, P. 14)\n- Nom du·de la responsable de camp\n- Organisateur (unité, groupe)\n- Nom du·de la coach\n- Lieu de camp et nom du gîte / de l’emplacement du camp sous tentes\n- Dates du camp\n- Genre de camp (chalet/tentes, camp d’été/d’automne)\n- Jour, date et responsable de la journée\n- Nom de chaque activité et de la personne responsable\n- Heures d’arrivée et de départ\n- Pour les camps J+S : les blocs de sport de camp et d’activités de camp doivent figurer dans le programme général avec un numéro et de façon visible (par exemple en utilisant des couleurs différentes). Voir [J+S brochure SC/T Bases]($lst-grundlagen$).\n\nUn modèle du [programme général de J+S]($muster-gp-lager-lst-kinder-und-jugendsport$) ou un [modèle vide du MSdS]($vorlage-gp-pbs$) peuvent servir de soutien.\n\n### Instructions sur le programme du MSdS :\nLe MSdS laisse beaucoup de liberté aux responsables pour la composition du programme. Celui-ci doit être équilibré et varié et les fondements scouts pris en compte. Le [Règlement concernant la préparation de camps]($lagerreglement$) doit être respecté.",
         "section": 4,
         "locale": "fr",
         "published_at": "2022-01-17T21:36:48.335Z",
         "created_at": "2022-01-17T21:36:46.012Z",
-        "updated_at": "2022-01-23T14:06:29.195Z",
+        "updated_at": "2023-01-19T14:01:08.591Z",
         "key": null,
         "Sorting": null,
         "sorting": 202,
@@ -587,12 +587,12 @@
       {
         "id": 72,
         "title": "Annonce de camp au MSdS",
-        "content": "### Données du·de la responsable de camp\nAvec l’annonce de camp MSdS dans la [MiData]($midata$), chaque camp est inscrit à l’avance à l’AC et au MSdS. Le·la responsable de camp remplit toutes les informations sur le camp au plus tard 7 semaines avant le camp dans la MiData et envoie en même temps le programme général au·à la RG et au·à la coach.\n\n### Données du·de la coach\nLe·la coach peut alors se connecter à la [MiData]($midata$), remplir sa partie de l’annonce de camp et la transmettre. L’annonce de camp est ensuite transmise automatiquement du MSdS et à l’AC. Le MSdS utilise ces informations afin de pouvoir réagir en cas de crise, ainsi que pour des informations statistiques vis-à-vis de la confédération. A cet effet, le·la coach se connecte avec son login à la MiData et va à son groupe. S’il·elle n’a pas de login, il·elle s’adresse à son groupe, pour que celui-ci lui envoie un accès. Ensuite, il·elle procède de la façon suivante :\n1. Cliquer sur « Camp ». \n2. Choisir le camp correspondant\n3. Cliquer sur « modifier».\n4. Vérifier toutes les données\n5. Choisir le registre encadrement. Cliquer sur « Coach confirmé » et remplir les informations sur visite du coach et les activités dans les [domaines de sécurité]($sicherheitsbereich$).\n6. Cliquer sur « Enregistrer »\n7. Une fois que toutes les informations sont complètes : envoyer l’annonce de camp au MSdS en cliquant sur le bouton « Transmettre ».\n\n![fr-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_A_b4b4211669.png)\n\n![fr-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_B_8df45c3608.png)\n\n![fr-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/fr_Lagerdaten_Coach_Mi_Data_C_754fd2168a.png)\n",
+        "content": "Avec l’annonce de camp MSdS dans la [MiData]($midata$), chaque camp est annoncé à l’avance à l’AC et au MSdS.\n### Données du·de la responsable de camp\nAu plus tard 7 semaines avant le camp, le·la responsable de camp :\n1. se rend sur MiData et se rend sur le camp,\n2. clique sur « modifier »,\n3. complète toutes les informations sur le camp,\n4. coche les trois cases en bas de la page sur les règlements et directives de camp,\n5. envoie en même temps le programme général au·à la RG et au·à la coach.\n\n### Données du·de la coach\nLe·la coach peut ensuite se connecter avec son login à la [MiData]($midata$) et aller à son groupe. S’il·elle n’a pas de login, il·elle s’adresse à son groupe, pour que celui-ci lui envoie un accès. Ensuite, il·elle procède de la façon suivante :\n1. Cliquer sur « Camp ». \n2. Choisir le camp correspondant\n3. Cliquer sur « modifier».\n4. Vérifier toutes les données\n5. Choisir le registre encadrement. Cliquer sur « Coach confirmé » et remplir les informations sur visite du coach et les activités dans les [domaines de sécurité]($sicherheitsbereich$).\n6. Cliquer sur « Enregistrer »\n7. Une fois que toutes les informations sont complètes : envoyer l’annonce de camp au MSdS en cliquant sur le bouton « Transmettre » au plus tard 6 semaines avant le camp.\n\n![fr-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_A_b4b4211669.png)\n\n![fr-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/fr_Lagerdaten_Coach_Mi_Data_B_8df45c3608.png)\n\n![fr-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/fr_Lagerdaten_Coach_Mi_Data_C_754fd2168a.png)\n",
         "section": 4,
         "locale": "fr",
         "published_at": "2022-01-22T17:08:29.428Z",
         "created_at": "2022-01-22T17:00:32.381Z",
-        "updated_at": "2022-01-23T20:20:01.690Z",
+        "updated_at": "2023-01-19T13:51:31.174Z",
         "key": null,
         "Sorting": null,
         "sorting": 201,
@@ -602,12 +602,12 @@
         "menu_name": "Annonce de camp au MSdS",
         "responsible": [
           {
-            "id": 669,
+            "id": 1642,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 670,
+            "id": 1643,
             "label": null,
             "rolle": "C"
           }
@@ -856,12 +856,12 @@
       {
         "id": 98,
         "title": "Commande de cartes nationales Swisstopo",
-        "content": "Pour les camps J+S, on peut commander des cartes nationales auprès de Swisstopo. A cet effet, il faut utiliser le [formulaire Commande de cartes nationales]($formular-landeskartenbestellung$). Le prêt est gratuit mais les frais de port pour les renvoyer sont à la charge du groupe. Les cartes perdues ou renvoyées en retard sont facturées. On peut commander un exemplaire de chaque carte pour trois participant·e·s en âge J+S. Le·la responsable de camp envoie le formulaire rempli au·à la coach qui le transmet directement à Swisstopo ( mapsales@swisstopo.ch), par poste ou scannée par e-mail. Les signatures peuvent être apposées électroniquement, une copie ou un scan n’est pas nécessaire. Les cartes sont livrées par la poste au domicile du·de la responsable de camp.\nVoici quelques explications relatives au formulaire :\n\n1. **« Disponible »** : Le·la responsable de camp décide de la date à laquelle il·elle aura besoin des cartes. Si la commande est réceptionnée 3 semaines avant par Swisstopo, les cartes seront envoyées à cette date à l'adresse indiquée. Il est recommandé de passer commande assez tôt afin de pouvoir utiliser les cartes nationales lors de la reconnaissance des lieux.\n2. **« Reddition »** : Le·la responsable de camp doit renvoyer à temps les cartes par la poste, c’est-à-dire au plus tard 3 jours après la fin du camp (cf. l’ [Guide concernant les prestations spéciales pour les offres de sport J+S et la formation des cadres J+S]($leitfaden-js-spezielle-leistungen$))\n3. **« Organisation »** : Le·la responsable de camp note ici le nom du groupe.\n4. **« Droit au matériel »** : On peut emprunter des cartes nationales à l'échelle 1:25'000 et 1:50'000 ainsi que des assemblages. Le·la responsable de camp a le droit de commander un exemplaire pour 3 participants de l’âge J+S. Sont pris en considération tou·te·s les participant·e·s âgé·e·s de 5 à 20 ans.\n5. **« N° de l'offre »** : Le·la coach note ici le numéro de l'offre J+S selon l'inscription dans la [SPORTdb]($sportdb$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
+        "content": "Pour les camps J+S, on peut commander des cartes nationales auprès de Swisstopo. A cet effet, il faut utiliser le [formulaire Commande de cartes nationales]($formular-landeskartenbestellung$). Le prêt est gratuit mais les frais de port pour les renvoyer sont à la charge du groupe. Les cartes perdues ou renvoyées en retard sont facturées. On peut commander un exemplaire de chaque carte pour trois participant·e·s en âge J+S. Le·la responsable de camp envoie le formulaire rempli au·à la coach qui le transmet directement à Swisstopo ( mapsales@swisstopo.ch), par poste ou scannée par e-mail. Les signatures peuvent être apposées électroniquement, une copie ou un scan n’est pas nécessaire. Les cartes sont livrées par la poste au domicile du·de la responsable de camp.\nVoici quelques explications relatives au formulaire :\n\n1. **« Disponible »** : Le·la responsable de camp décide de la date à laquelle il·elle aura besoin des cartes. Si la commande est réceptionnée 3 semaines avant par Swisstopo, les cartes seront envoyées à cette date à l'adresse indiquée. Il est recommandé de passer commande assez tôt afin de pouvoir utiliser les cartes nationales lors de la reconnaissance des lieux.\n2. **« Reddition »** : Le·la responsable de camp doit renvoyer à temps les cartes par la poste, c’est-à-dire au plus tard 3 jours après la fin du camp (cf. l’ [Guide concernant les prestations spéciales pour les offres de sport J+S et la formation des cadres J+S]($leitfaden-js-spezielle-leistungen$))\n3. **« Organisation »** : Le·la responsable de camp note ici le nom du groupe.\n4. **« Droit au matériel »** : On peut emprunter des cartes nationales à l'échelle 1:25'000 et 1:50'000 ainsi que des assemblages. Le·la responsable de camp a le droit de commander un exemplaire pour 3 participants de l’âge J+S. Sont pris en considération tou·te·s les participant·e·s âgé·e·s de 5 à 20 ans.\n5. **« N° de l'offre »** : Le·la coach note ici le numéro de l'offre J+S selon l'inscription dans la [BDNS]($nds$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
         "section": 7,
         "locale": "fr",
         "published_at": "2022-01-23T17:46:28.436Z",
         "created_at": "2022-01-23T17:46:25.731Z",
-        "updated_at": "2022-02-06T16:40:42.333Z",
+        "updated_at": "2023-01-19T15:20:14.974Z",
         "key": null,
         "Sorting": null,
         "sorting": 302,
@@ -871,12 +871,12 @@
         "menu_name": "Commande de cartes nationales Swisstopo",
         "responsible": [
           {
-            "id": 843,
+            "id": 1660,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 844,
+            "id": 1662,
             "label": null,
             "rolle": "C"
           }
@@ -907,12 +907,12 @@
       {
         "id": 104,
         "title": "Billet de groupe CFF",
-        "content": "Si le voyage s’effectue en train, il est possible de commander un billet de groupe aux CFF à partir de dix personnes. Ce faisant, tout le monde voyage avec un rabais supplémentaire de 30%. La commande peut se faire en ligne via l’[outil pour calculer les voyages en groupe]($sbb-gruppenreiserechner$), au guichet à billet ou par téléphone ( 0848 44 66 88, CHF 0.08/Min). Au moins l’annonce du voyage en groupe est obligatoire. Des réservation seront faites selon les possibilités. Elles sont inclues au billet de groupe.\n\nInformations détaillées sur les [billets de groupe CFF]($sbb-gruppenreisen-info$).\n\nPour les groupes annoncés, il existe par ailleurs la possibilité de faire transporter les bagages et les vélos par les CFF.\n\nInformations détraillées sur les [bagages de groupe CFF]($sbb-gepaeck-info$).",
+        "content": "Si le voyage s’effectue en train, il est possible de commander un billet de groupe ou des cartes journalières pour les écoles aux CFF à partir de dix personnes. Ce faisant, tout le monde voyage avec un rabais supplémentaire de 30% ou pour 15.-. La commande peut se faire en ligne, au guichet à billet ou par téléphone ( 0848 44 66 88, CHF 0.08/Min). Au moins l’annonce du voyage en groupe est obligatoire. Des réservation seront faites selon les possibilités. Elles sont inclues au billet de groupe.\n\nInformations détaillées sur les [billets de groupe CFF]($sbb-gruppenreisen-info$) et les [cartes journalières pour les écoles]($sbb-tageskarten).\n\nPour les groupes annoncés, il existe par ailleurs la possibilité de faire transporter les bagages et les vélos par les CFF.\n\nInformations détraillées sur les [bagages de groupe CFF]($sbb-gepaeck-info$).",
         "section": 7,
         "locale": "fr",
         "published_at": "2022-01-23T18:57:38.653Z",
         "created_at": "2022-01-23T18:56:59.468Z",
-        "updated_at": "2022-01-23T19:16:27.202Z",
+        "updated_at": "2023-01-19T15:33:05.185Z",
         "key": null,
         "Sorting": null,
         "sorting": 303,
@@ -922,7 +922,7 @@
         "menu_name": "Billet de groupe CFF",
         "responsible": [
           {
-            "id": 881,
+            "id": 1673,
             "label": null,
             "rolle": "LL"
           }
@@ -953,12 +953,12 @@
       {
         "id": 108,
         "title": "Assurance Rega",
-        "content": "Tou·te·s les participants et les membres de la maitrise de camp ainsi que les personnes accompagnatrices peuvent être assurés auprès de la Rega pendant la durée du camp. (voir [Guide concernant les prestations spéciales pour les offres de sport J+S et la formation des cadres J+S]($leitfaden-js-spezielle-leistungen$)). La couverture ne s’étend qu’en Suisse et dans la principauté du Lichtenstein. A cet effet, le·la responsable de camp enregistre les participant·e·s dans la MiData et la partage avec le·la coach (cf. [Administration des participants dans la MiData]($tn-administration-midata$)). Ce dernier·cette dernière inscrit les participant·e·s dans la SPORTdb à la REGA. Les tâches exactes y compris les indications pas à pas se trouvent dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$) qui comprend également des images. En contrepartie, la Rega obtient le droit de proposer aux participants annoncés ayant atteint la majorité une demande de donateur. Les parents des participants doivent donc être informés de la transmission des données (à mentionner lors de l’inscription aux camps). \n\nDans le cas où il faut faire appel aux services de la REGA, c’est en premier lieu la caisse d’assurance maladie qui paye. Si elle refuse, c’est la REGA qui reprendrait en charge les coûts des personnes assurées comme décrit ci-dessus.\n\n***Plus d’information :***  \n[La Rega au service de J+S – Conditions générales]($rega-rahmenbedingungen$)",
+        "content": "Tou·te·s les participants et les membres de la maitrise de camp ainsi que les personnes accompagnatrices peuvent être assurés auprès de la Rega pendant la durée du camp. (voir [Guide concernant les prestations spéciales pour les offres de sport J+S et la formation des cadres J+S]($leitfaden-js-spezielle-leistungen$)). La couverture ne s’étend qu’en Suisse et dans la principauté du Lichtenstein. A cet effet, le·la responsable de camp enregistre les participant·e·s dans la MiData et la partage avec le·la coach (cf. [Administration des participants dans la MiData]($tn-administration-midata$)). Ce dernier·cette dernière inscrit les participant·e·s dans la BDNS à la REGA. En contrepartie, la Rega obtient le droit de proposer aux participants annoncés ayant atteint la majorité une demande de donateur. Les parents des participants doivent donc être informés de la transmission des données (à mentionner lors de l’inscription aux camps). \n\nDans le cas où il faut faire appel aux services de la REGA, c’est en premier lieu la caisse d’assurance maladie qui paye. Si elle refuse, c’est la REGA qui reprendrait en charge les coûts des personnes assurées comme décrit ci-dessus.\n\n***Plus d’information :***  \n[La Rega au service de J+S – Conditions générales]($rega-rahmenbedingungen$)",
         "section": 7,
         "locale": "fr",
         "published_at": "2022-01-23T19:43:09.627Z",
         "created_at": "2022-01-23T19:43:04.318Z",
-        "updated_at": "2022-01-23T20:26:32.789Z",
+        "updated_at": "2023-01-19T15:38:03.100Z",
         "key": null,
         "Sorting": null,
         "sorting": 304,
@@ -968,12 +968,12 @@
         "menu_name": "Assurance Rega",
         "responsible": [
           {
-            "id": 928,
+            "id": 1692,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 929,
+            "id": 1693,
             "label": null,
             "rolle": "C"
           }
@@ -1033,12 +1033,12 @@
       {
         "id": 65,
         "title": "Activités des domaines de sécurité",
-        "content": "Une activité ayant lieu dans un domaine de sécurité (Montagne/Hiver/Eau) est une activité qui est soumise à des dispositions de sécurité particulières. Les différences sont expliquées dans l’aide-mémoire [SC/T – Directives de sécurité dans les domaines Montagne, Hiver, Eau]($mb-sicherheitsbereiche$). Ces activités doivent être dirigées par des responsables ayant acquis la reconnaissance complémentaire nécessaire en suivant le module de sécurité concerné.\nLes activités du domaine de Sécurité doivent être lues et approuvées par un·e expert·e J+S SC/T possédant l’extension chef·fe de cours et ayant réussi le module de perfectionnement pour expert·e du domaine de sécurité correspondant. S’il·elle ne connait pas directement une personne assez formée, le·la coach se tournera vers l’association cantonale.\nLe·la coach étant la personne qui connait le mieux le groupe, ses responsables et le programme, il est important qu’il·elle analyse lui·elle aussi le dossier avant de l’envoyer à l’expert·e. L’expert·e ne peut pas en porter la responsabilitéseul·e.",
+        "content": "Une activité ayant lieu dans un domaine de sécurité (Montagne/Hiver/Eau) est une activité qui est soumise à des dispositions de sécurité particulières. Les différences sont expliquées dans l’aide-mémoire [SC/T – Directives de sécurité dans les domaines Montagne, Hiver, Eau]($mb-sicherheitsbereiche$). Ces activités doivent être dirigées par des responsables ayant acquis la reconnaissance complémentaire nécessaire en suivant le module de sécurité concerné.\nLes activités du domaine de Sécurité doivent être lues et approuvées par un·e expert·e J+S SC/T possédant l’extension chef·fe de cours et ayant réussi le module de perfectionnement pour expert·e du domaine de sécurité correspondant. S’il·elle ne connaît pas directement une personne assez formée, le·la coach se tournera vers l’association cantonale.\nLe·la coach étant la personne qui connaît le mieux le groupe, ses responsables et le programme, il est important qu’il·elle analyse lui·elle aussi le dossier avant de l’envoyer à l’expert·e. L’expert·e ne peut pas en porter la responsabilité seul·e.",
         "section": 9,
         "locale": "fr",
         "published_at": "2022-01-22T12:30:43.497Z",
         "created_at": "2022-01-22T12:30:41.554Z",
-        "updated_at": "2022-01-23T21:06:47.234Z",
+        "updated_at": "2023-01-19T15:42:09.739Z",
         "key": null,
         "Sorting": null,
         "sorting": 404,
@@ -1246,12 +1246,12 @@
       {
         "id": 79,
         "title": "Inscription des participants aux camps via la MiData",
-        "content": "Si, lors de la création du camp, l’option «&nbsp;Inscription possible&nbsp;» a été choisie, les participants peuvent s’inscrire au camp directement dans la [MiData]($midata$) avec leur login. Les participants ne peuvent voir que les camps créés dans un groupe auquel ils appartiennent (par exemple niveau correspondant). L’inscription se fait de la façon suivante :\n1. Les participants se connectent à la MiData et cliquent sur «&nbsp;Activités&nbsp;». L’aperçu des «&nbsp;Evènements prévus prochainement&nbsp;» apparaît.\n2. Les participants peuvent s’inscrire au camp directement avec le bouton «&nbsp;S’inscrire&nbsp;».\n3. En cliquant sur le nom du camp, les participants peuvent voir plus d’informations sur le camp.\n4. Les participants remplissent l’inscription (lors de la création du camp, des champs supplémentaires peuvent être enregistrés) et cliquent sur «&nbsp;Inscription&nbsp;». Il est utile de laisser les participants remplir les données obligatoires nécessaires au·à la coach pour la SPORTdb. Le document [Exigences techniques pour l'importation]($sportdb-technisch$) contient une liste des données requises.",
+        "content": "Si, lors de la création du camp, l’option «&nbsp;Inscription possible&nbsp;» a été choisie, les participants peuvent s’inscrire au camp directement dans la [MiData]($midata$) avec leur login. Les participants ne peuvent voir que les camps créés dans un groupe auquel ils appartiennent (par exemple niveau correspondant). L’inscription se fait de la façon suivante :\n1. Les participants se connectent à la MiData et cliquent sur «&nbsp;Activités&nbsp;». L’aperçu des «&nbsp;Evènements prévus prochainement&nbsp;» apparaît.\n2. Les participants peuvent s’inscrire au camp directement avec le bouton «&nbsp;S’inscrire&nbsp;».\n3. En cliquant sur le nom du camp, les participants peuvent voir plus d’informations sur le camp.\n4. Les participants remplissent l’inscription (lors de la création du camp, des champs supplémentaires peuvent être enregistrés) et cliquent sur «&nbsp;Inscription&nbsp;». Il est utile de laisser les participants remplir les données obligatoires nécessaires au·à la coach pour la BDNS pour que l'importation qui suivra soit plus simple. \n- Nom\n- Prénom\n- Date de naissance\n- Sexe\n- N°AVS ou PEID\n- Nationalité\n- Langue maternelle\n- NPA\n- Localité\n- Pays",
         "section": 17,
         "locale": "fr",
         "published_at": "2022-01-23T07:56:18.489Z",
         "created_at": "2022-01-23T07:44:32.260Z",
-        "updated_at": "2022-02-26T18:14:53.487Z",
+        "updated_at": "2023-01-19T15:45:29.308Z",
         "key": null,
         "Sorting": null,
         "sorting": 501,
@@ -1261,7 +1261,7 @@
         "menu_name": "Inscription des participants via la MiData",
         "responsible": [
           {
-            "id": 584,
+            "id": 1702,
             "label": null,
             "rolle": "LL"
           }
@@ -1292,12 +1292,12 @@
       {
         "id": 81,
         "title": "Ajouter et effacer des participants dans la liste des participants dans la MiData",
-        "content": "Le·la responsable de camp, le·la RG et le·la coach ont accès à la liste des participant·e·s dans la  [MiData]($midata$). Ils peuvent y ajouter ou effacer des participants directement. Cela se fait de la même façon que d’[ajouter des membres de la maîtrise]($team-erfassen-midata-kapitel$). Si les participant·e·s ne s’inscrivent pas au camp directement dans la MiData, le·la responsable de camp peut alors enregistrer la liste des participant·e·s. Les données des participant·e·s requises pour l’inscription à la REGA et pour le·la coach sont à compléter par le·la responsable de camp. Le document [Exigences techniques pour l'importation]($sportdb-technisch$) contient une liste des données requises.",
+        "content": "Le·la responsable de camp, le·la RG et le·la coach ont accès à la liste des participant·e·s dans la  [MiData]($midata$). Ils peuvent y ajouter ou effacer des participants directement. Cela se fait de la même façon que d’[ajouter des membres de la maîtrise]($team-erfassen-midata-kapitel$). Si les participant·e·s ne s’inscrivent pas au camp directement dans la MiData, le·la responsable de camp peut alors enregistrer la liste des participant·e·s. Les données des participant·e·s requises pour l’inscription à la REGA et pour le·la coach sont à compléter par le·la responsable de camp. Une liste des données requises se trouvent au chapitre précédent.",
         "section": 17,
         "locale": "fr",
         "published_at": "2022-01-23T08:07:09.389Z",
         "created_at": "2022-01-23T08:05:22.379Z",
-        "updated_at": "2022-01-23T22:39:08.688Z",
+        "updated_at": "2023-01-19T15:51:41.256Z",
         "key": null,
         "Sorting": null,
         "sorting": 502,
@@ -1307,17 +1307,17 @@
         "menu_name": "Ajouter et effacer des participants",
         "responsible": [
           {
-            "id": 612,
+            "id": 1722,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 613,
+            "id": 1723,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 614,
+            "id": 1724,
             "label": null,
             "rolle": "C"
           }
@@ -1348,12 +1348,12 @@
       {
         "id": 83,
         "title": "Exporter la liste des participants à partir de la MiData",
-        "content": "Si les participants sont enregistrés dans la [MiData]($midata$), la liste des participants peut être exportée sous forme de fichier csv pour la [SPORTdb]($sportdb$) à partir de la MiData. A cet effet, le·la coach procède de la façon suivante : \n1. Chercher le camp\n2. Cliquer sur «&nbsp;Participants&nbsp;»\n3. Cliquer sur «&nbsp;Exporter&nbsp;»\n4. Choisir «&nbsp;CSV&nbsp;», «&nbsp;SPORTdb&nbsp;». Exporter un fichier csv, qui peut être utilisé pour le téléchargement dans la SPORTdb.\n\n**Attention avec l’encoding**  \nC’est important pour l’affichage correct des caractères spéciaux\nPar défaut, la MiData exporte les fichiers csv avec l’encodage UTF-8 (un système de codage de caractères en informatique). Lors de l’import du fichier csv dans la SPORTdb, on peut choisir ce format pour garantir l’affichage correct des caractères spéciaux.\nSi une liste doit être retravaillée dans excel avant d’être importée dans la SPORTdb, on peut l’exporter sous «&nbsp;Exports&nbsp;» &#8594; «&nbsp;Excel&nbsp;» &#8594; «&nbsp;pour SPORTdb&nbsp;». Après l’avoir retravaillé, le fichier est exporté comme fichier csv et importé dans la SPORTdb avec l’encodage UTF-8 ou x-MacRoman.\n\n**Attention aux deuxièmes prénoms**  \nLa SPORTdb n’arrive pas à reconnaître et à importer sans erreur les personnes avec deux prénoms. Il vaut donc mieux effacer tous les deuxièmes prénoms avant de charger le fichier.\n\n**Instructions concernant les champs obligatoires**  \nCertains champs doivent être remplis afin de pouvoir charger le fichier. Le document [Exigences techniques pour l'importation]($sportdb-technisch$) contient une vue d’ensemble. Si des données manquent, il faut demander à la CC de les compléter. Idéalement, les données obligatoires auront déjà été collectées lors de [l’inscription]($tn-anmeldung-kapitel$).\n",
+        "content": "Si les participants sont enregistrés dans la [MiData]($midata$), la liste des participants peut être exportée sous forme de fichier csv pour la [BDNS]($nds$) à partir de la MiData. A cet effet, le·la coach procède de la façon suivante : \n1. Chercher le camp\n2. Cliquer sur «&nbsp;Participants&nbsp;»\n3. Cliquer sur «&nbsp;Exporter&nbsp;»\n4. Choisir «&nbsp;CSV&nbsp;», «&nbsp;BDNS-camp&nbsp;». Exporter un fichier csv, qui peut être utilisé pour le téléchargement dans la BDNS.\n\n**Attention avec l’encoding**  \nC’est important pour l’affichage correct des caractères spéciaux\nPar défaut, la MiData exporte les fichiers csv avec l’encodage UTF-8 (un système de codage de caractères en informatique). Lors de l’import du fichier csv dans la BDNS, on peut choisir ce format pour garantir l’affichage correct des caractères spéciaux.\nSi une liste doit être retravaillée dans excel avant d’être importée dans la BDNS, on peut l’exporter sous «&nbsp;Exports&nbsp;» &#8594; «&nbsp;Excel&nbsp;» &#8594; «&nbsp;BDNS-Camp&nbsp;». Après l’avoir retravaillé, le fichier est exporté comme fichier csv et importé dans la BDNS avec l’encodage UTF-8.\n\n**Instructions concernant les champs obligatoires**  \nCertains champs doivent être remplis afin de pouvoir charger le fichier. Le chapitre sur [l'inscription]($tn-anmeldung-kapitel$) contient une vue d’ensemble. Si des données manquent, il faut demander à la CC de les compléter. Idéalement, les données obligatoires auront déjà été collectées lors de [l’inscription]($tn-anmeldung-kapitel$).\n",
         "section": 17,
         "locale": "fr",
         "published_at": "2022-01-23T08:46:57.144Z",
         "created_at": "2022-01-23T08:28:39.586Z",
-        "updated_at": "2022-01-23T22:43:09.543Z",
+        "updated_at": "2023-01-19T15:54:47.255Z",
         "key": null,
         "Sorting": null,
         "sorting": 503,
@@ -1363,7 +1363,7 @@
         "menu_name": "Exporter la liste des participants",
         "responsible": [
           {
-            "id": 652,
+            "id": 1733,
             "label": null,
             "rolle": "C"
           }
@@ -1393,23 +1393,23 @@
       },
       {
         "id": 85,
-        "title": "Upload de la liste des participants dans SPORTdb",
-        "content": "Le fichier csv est importé dans [SPORTdb]($sportdb$) par le·la Coach. Ceci peut être fait sous l’onglet «&nbsp;Participant·e·s&nbsp;». Les processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$).\n\n>**Recensement du numéro de sécurité sociale (numéro AVS)**  \nDepuis l’été 2019, le numéro de sécurité sociale est recensé dans la SPORTdb. Il s’agit d’éviter les doublons et d’améliorer la qualité des données. **Les nouvelles** personnes ne peuvent plus être inscrites qu’avec ce numéro. Le plus simple est de récolter ces données lors de l’inscription des participants au camp afin que le·la coach les ait lorsqu’il·elle doit remplir la SPORTdb. Les enfants reçoivent leur numéro de sécurité sociale personnel lors de leur inscription à une caisse maladie, le numéro est donc inscrit sur la carte de l’assurance maladie.",
+        "title": "Upload de la liste des participants dans la BDNS",
+        "content": "Le fichier csv est importé dans la [BDNS]($nds$) par le·la Coach. Ceci peut être fait sous l’onglet «&nbsp;Participant·e·s&nbsp;». Les processus sont détaillés pas à pas (photos incluses) dans les [instructions JS]($coachneunds$).\n\n>**Recensement du numéro de sécurité sociale (numéro AVS)**  \nDepuis l'hiver 2022, le numéro AVS doit obligatoirement être enregistré sur la BDNS. Il s’agit d’éviter les doublons et d’améliorer la qualité des données. **Les nouvelles** personnes ne peuvent plus être inscrites qu’avec ce numéro. Le plus simple est de récolter ces données lors de l’inscription des participants au camp afin que le·la coach les ait lorsqu’il·elle doit remplir la BDNS. Les enfants reçoivent leur numéro de sécurité sociale personnel lors de leur inscription à une caisse maladie, le numéro est donc inscrit sur la carte de l’assurance maladie. Pour les personnes qui n'ont pas de numéro AVS, une demande d'exception doit être effectuée par le*la coach auprès de l'office cantonal du sport.",
         "section": 17,
         "locale": "fr",
         "published_at": "2022-01-23T08:42:39.825Z",
         "created_at": "2022-01-23T08:42:31.294Z",
-        "updated_at": "2022-01-23T22:44:26.012Z",
+        "updated_at": "2023-01-21T09:37:37.026Z",
         "key": null,
         "Sorting": null,
         "sorting": 504,
-        "slug": "Upload-de-la-liste-des-participants-dans-SPORTdb",
+        "slug": "Upload-de-la-liste-des-participants-dans-la-BDNS",
         "link": null,
-        "slug_with_section": "Administration-des-participantes#Upload-de-la-liste-des-participants-dans-SPORTdb",
+        "slug_with_section": "Administration-des-participantes#Upload-de-la-liste-des-participants-dans-la-BDNS",
         "menu_name": "Upload de la liste des participants",
         "responsible": [
           {
-            "id": 636,
+            "id": 1742,
             "label": null,
             "rolle": "C"
           }
@@ -1651,12 +1651,12 @@
       {
         "id": 50,
         "title": "Liste des participant·e·s et clôture du camp dans MiData",
-        "content": "Le·la responsable de camp ajuste dans [MiData]($midata$) les participant·e·s et responsables enregistré·e·s avant le camp et en informe le·la coach au plus tard 10 jours après le camp.\nEnsuite ce dernier reporte la liste actualisée des participant· e·s dans la [SPORTdb]($sportdb$).\nLes processus sont détaillés pas à pas (photos incluses) dans le document [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$). \nEnsuite le·la responsable de camp clôt le camp dans la MiData en plaçant le statut sur « clôturé ».",
+        "content": "Le·la responsable de camp ajuste dans [MiData]($midata$) les participant·e·s et responsables enregistré·e·s avant le camp et en informe le·la coach au plus tard 10 jours après le camp.\nEnsuite ce dernier reporte la liste actualisée des participant· e·s dans la [BDNS]($nds$). Si l'inscription à la Rega a déjà été faite via la BDNS, il suffit de corriger les données. \nLes processus sont détaillés pas à pas dans la [séquence d'apprentissage J+S pour la BDNS]($coachneunds$). \nEnsuite le·la responsable de camp clôt le camp dans la MiData en plaçant le statut sur « clôturé ».",
         "section": 13,
         "locale": "fr",
         "published_at": "2022-01-22T11:14:49.556Z",
         "created_at": "2022-01-22T11:14:46.752Z",
-        "updated_at": "2022-01-23T22:09:18.933Z",
+        "updated_at": "2023-01-21T09:50:11.484Z",
         "key": null,
         "Sorting": null,
         "sorting": 702,
@@ -1666,12 +1666,12 @@
         "menu_name": "Liste des participant·e·s",
         "responsible": [
           {
-            "id": 1117,
+            "id": 1753,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1119,
+            "id": 1755,
             "label": null,
             "rolle": "C"
           }
@@ -1701,23 +1701,23 @@
       },
       {
         "id": 54,
-        "title": "Clôture du camp dans la SPORTdb",
-        "content": "Après chaque camp, le·la coach gère le contrôle des présences (CdP), c’est-à-dire qu'il·elle adapte la liste des participant· e·s dans la  SPORTdb d'après la liste fournie par le·la responsable de camp, après le camp. Les processus sont détaillés pas à pas (photos incluses) dans le document  [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$).\n\n> **Le programme général pour les camps J+S**  \nLe programme général doit être chargé dans la SPORTdb avant ou après le camp. Les instances de contrôle font des analyses sporadiques des programmes. Il n’est pas possible de clôturer le contrôle des présences sans le programme détaillé (fichier excel, word ou pdf).",
+        "title": "Clôture du camp dans la BDNS",
+        "content": "Après chaque camp, le·la coach gère le contrôle des présences (CdP), c’est-à-dire qu'il·elle adapte la liste des participant· e·s dans la [BDNS]($nds$) d'après la liste fournie par le·la responsable de camp, après le camp. Les processus sont détaillés pas à pas (photos incluses) dans la [séquence d'apprentissage pour coach]($coachneunds$).\n\n> **Le programme général pour les camps J+S**  \nLe programme général doit être chargé dans la BDNS avant ou après le camp. Les instances de contrôle font des analyses sporadiques des programmes. Il n’est pas possible de clôturer le contrôle des présences sans le programme détaillé (fichier excel, word ou pdf).",
         "section": 13,
         "locale": "fr",
         "published_at": "2022-01-22T11:39:11.023Z",
         "created_at": "2022-01-22T11:34:11.419Z",
-        "updated_at": "2022-01-23T22:10:01.952Z",
+        "updated_at": "2023-01-21T09:53:37.832Z",
         "key": null,
         "Sorting": null,
         "sorting": 703,
-        "slug": "Cloture-du-camp-dans-la-SPORTdb",
+        "slug": "Cloture-du-camp-dans-la-BDNS",
         "link": null,
-        "slug_with_section": "Cloture-du-camp#Cloture-du-camp-dans-la-SPORTdb",
-        "menu_name": "Clôture du camp dans la SPORTdb",
+        "slug_with_section": "Cloture-du-camp#Cloture-du-camp-dans-la-BDNS",
+        "menu_name": "Clôture du camp dans la BDNS",
         "responsible": [
           {
-            "id": 1131,
+            "id": 1765,
             "label": null,
             "rolle": "C"
           }
@@ -1822,23 +1822,23 @@
     "chapters": [
       {
         "id": 41,
-        "title": "Clôture de l'offre J+S dans la SPORTdb",
-        "content": "Après le dernier camp, le·la coach reçoit un e-mail automatique de rappel (objet : Rappel fin de l'offre dans 30 jours). Il·elle doit clôturer l'offre dans les 30 jours suivant le dernier camp. Important : avant que l'offre elle-même puisse être clôturée, il faut que les données effectives et la mise à jour de la liste des présences de chaque camp soient définitivement enregistrées (c’est-à-dire que le statut de tous les camps doit être « clôturé »). Voici quelques explications sur la liste de contrôle de la SPORTdb :\n\n- *Statut de l’offre «&nbsp;Processus de clôture&nbsp;»* : Dans le statut «&nbsp;processus de clôture&nbsp;», l'offre est traitée par l'office cantonal des sports. La demande de décompte du·de la coach à l'office cantonal des sports est confirmée par e-mail. Si l’offre est en règle, le virement de la subvention J+S sera effectué par J+S Macolin. Ce dernier sera à nouveau confirmé par e-mail (Objet : offre N° XXXXXX transmise pour paiement).\n- *Statut de l’offre «&nbsp;clôture&nbsp;»* : Après le procédé de clôture par l'office cantonal du sport, l'offre passe dans le statut «&nbsp;clôturé&nbsp;».\n\nLes processus sont détaillés pas à pas (photos incluses) dans le document  [SPORTdb – Guide pas-à-pas pour les coachs J+S]($sportdb-schritt-fuer-schritt$).",
+        "title": "Clôture de l'offre J+S dans la BDNS",
+        "content": "Le·la coach doit clôturer l'offre dans les 30 jours suivant le dernier camp. Important : avant que l'offre elle-même puisse être clôturée, il faut que les données effectives et la mise à jour de la liste des présences de chaque camp soient définitivement enregistrées (c’est-à-dire que le statut de tous les camps doit être « contrôle des présences clôturé »). Voici quelques explications sur la liste de contrôle de la BDNS :\n\n- *Statut de l’offre «&nbsp;Processus de clôture&nbsp;»* : Dans le statut «&nbsp;processus de clôture&nbsp;», l'offre est traitée par l'office cantonal des sports. La demande de décompte du·de la coach à l'office cantonal des sports est confirmée par e-mail. Si l’offre est en règle, le virement de la subvention J+S sera effectué par J+S Macolin. Ce dernier sera à nouveau confirmé par e-mail (Objet : offre N° XXXXXX transmise pour paiement).\n- *Statut de l’offre «&nbsp;clôture&nbsp;»* : Après le procédé de clôture par l'office cantonal du sport, l'offre passe dans le statut «&nbsp;clôturé&nbsp;».\n\nLes processus sont détaillés pas à pas (photos incluses) dans la [séquence d'apprentissage]($coachneunds$).",
         "section": 15,
         "locale": "fr",
         "published_at": "2022-01-22T10:28:55.836Z",
         "created_at": "2022-01-22T10:20:30.514Z",
-        "updated_at": "2022-01-23T21:58:14.404Z",
+        "updated_at": "2023-01-21T10:01:59.579Z",
         "key": null,
         "Sorting": null,
         "sorting": 801,
-        "slug": "Cloture-de-l'offre-J+S-dans-la-SPORTdb",
+        "slug": "Cloture-de-l'offre-J+S-dans-la-BDNS",
         "link": 165,
-        "slug_with_section": "Cloture-de-l'offre-J+S#Cloture-de-l'offre-J+S-dans-la-SPORTdb",
-        "menu_name": "Clôture dans la SPORTdb",
+        "slug_with_section": "Cloture-de-l'offre-J+S#Cloture-de-l'offre-J+S-dans-la-BDNS",
+        "menu_name": "Clôture dans la BDNS",
         "responsible": [
           {
-            "id": 553,
+            "id": 1770,
             "label": null,
             "rolle": "C"
           }

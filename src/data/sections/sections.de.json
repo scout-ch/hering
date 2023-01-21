@@ -17,12 +17,12 @@
       {
         "id": 1,
         "title": "Lagerdaten",
-        "content": "Anfangs Jahr überlegen sich LL und AL gemeinsam, welche Lager sie während des Jahres durchführen möchten. Sie erstellen eine Liste mit allen nötigen Angaben zur Abteilung und den Lagern. LL und AL entscheiden ebenfalls, welche Lager unter J+S angemeldet werden. Für das Zusammentragen dieser Angaben kann das Formular [Vom Coach benötigte Daten für die Anmeldung in der SPORTdb]($lagerdaten-formular$) verwendet werden. So ist sichergestellt, dass die Angaben vollständig sind. Die Liste mit den Angaben zu den geplanten Lagern geben LL und AL anfangs Jahr dem Coach weiter.\nHier folgen einige Erklärungen zum Formular:\n1. «Auszahlungskonto für die J+S-Pauschale»: Hier wird das Konto der Abteilung angegeben. J+S-Beiträge werden ausschliesslich auf ein schweizerisches Bank- oder Postkonto eines Vereins ausbezahlt. Die Angabe einer gültigen IBAN ist dabei zwingend. Nach der Abrechnung des J+S-Angebots Ende Jahr wird die J+S-Entschädigung auf dieses Konto überwiesen.\n2. «J+S-Sportart»: «Kindersport» entspricht der Wolfsstufe und wird gewählt für Lager mit 6 bis 10-jährigen TNs. «Jugendsport» entspricht der Pfadi- oder Pio-Stufe mit TNs, die zwischen 10 und 20 Jahre alt sind. In einem gemischten Lager können TNs von 6 bis 20 Jahren mitgenommen werden. Bei Wolfsstufen kann die Option des gemischten Lagers bei entsprechenden Anerkennungen geprüft werden, damit die 11-jährigen TNs für die Beiträge gelten. Gemäss Lagerreglement der PBS dürfen keine Lager mit Bibern durchgeführt werden (5–6 Jahre).\n3. «Geplante Anzahl TN»: Diese ist im Voraus wahrscheinlich noch nicht bekannt. Deshalb wird hier eine ungefähre Angabe gemacht. Die Zahl kann später korrigiert werden.\n4. «Geplante Anzahl Begleitpersonen»: Damit sind Personen gemeint, die zusätzlich zu den ausgebildeten J+S-Leitenden im Lager dabei sein werden.\n5. «Geplante Sicherheitsaktivität»: Provisorische Angabe, die später korrigiert werden kann, falls jedoch bereits feststeht, dass eine Aktivität im [Sicherheitsbereich]($sicherheitsbereich$) geplant wird, kann der Coach bereits einen Betreuer für diese suchen.\n6. «PLZ/Ort» und «Geburtsdatum»: Nur nötig für Leitende, welche in der Abteilung zum ersten Mal als J+S-Leiter\\*in zum Einsatz kommen, damit der\\*die Coach diese erfassen kann. Es ist wichtig, dass das vollständige Datum und nicht nur der Jahrgang notiert wird. Der Pfadiname ist lediglich als Hilfe für den*die Coach gedacht und wird in der [SPORTdb]($sportdb$) nicht benötigt.\n\n![Screenshot-Lagerdaten-de.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643651408/hering/Screenshot_Lagerdaten_de_c6b3a1cd46.png)",
+        "content": "Anfangs Jahr überlegen sich LL und AL gemeinsam, welche Lager sie während des Jahres durchführen möchten. Sie erstellen eine Liste mit allen nötigen Angaben zur Abteilung und den Lagern. LL und AL entscheiden ebenfalls, welche Lager unter J+S angemeldet werden. Für das Zusammentragen dieser Angaben kann das Formular [Vom Coach benötigte Daten für die Anmeldung in der NDS]($lagerdaten-formular$) verwendet werden. So ist sichergestellt, dass die Angaben vollständig sind. Die Liste mit den Angaben zu den geplanten Lagern geben LL und AL anfangs Jahr dem Coach weiter.\nHier folgen einige Erklärungen zum Formular:\n1. «Auszahlungskonto für die J+S-Pauschale»: Hier wird das Konto der Abteilung angegeben. J+S-Beiträge werden ausschliesslich auf ein schweizerisches Bank- oder Postkonto eines Vereins ausbezahlt. Die Angabe einer gültigen IBAN ist dabei zwingend. Nach der Abrechnung des J+S-Angebots Ende Jahr wird die J+S-Entschädigung auf dieses Konto überwiesen.\n2. «J+S-Sportart»: «Kinder» entspricht der Wolfsstufe und wird gewählt für Lager mit 6 bis 10-jährigen TNs. «Jugendlichet» entspricht der Pfadi- oder Pio-Stufe mit TNs, die zwischen 10 und 20 Jahre alt sind. In einem gemischten Lager können TNs von 6 bis 20 Jahren mitgenommen werden. Bei Wolfsstufen kann die Option des gemischten Lagers bei entsprechenden Anerkennungen geprüft werden, damit die 11-jährigen TNs für die Beiträge gelten. Gemäss Lagerreglement der PBS dürfen keine Lager mit Bibern durchgeführt werden (5–6 Jahre).\n3. «Geplante Anzahl TN»: Diese ist im Voraus wahrscheinlich noch nicht bekannt. Deshalb wird hier eine ungefähre Angabe gemacht. Die Zahl kann später korrigiert werden.\n4. «Geplante Anzahl Begleitpersonen»: Damit sind Personen gemeint, die zusätzlich zu den ausgebildeten J+S-Leitenden im Lager dabei sein werden.\n5. «Geplante Sicherheitsaktivität»: Provisorische Angabe, die später korrigiert werden kann, falls jedoch bereits feststeht, dass eine Aktivität im [Sicherheitsbereich]($sicherheitsbereich$) geplant wird, kann der*die Coach bereits einen*e Betreuer*in für diese suchen.\n6. «PLZ/Ort» und «Geburtsdatum»: Nur nötig für Leitende, welche in der Abteilung zum ersten Mal als J+S-Leiter\\*in zum Einsatz kommen, damit der\\*die Coach diese erfassen kann. Es ist wichtig, dass das vollständige Datum und nicht nur der Jahrgang notiert wird. Der Pfadiname ist lediglich als Hilfe für den*die Coach gedacht und wird in der [BDNS]($nds$) nicht benötigt.\n\n![Screenshot-Lagerdaten-de.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643651408/hering/Screenshot_Lagerdaten_de_c6b3a1cd46.png)",
         "section": 1,
         "locale": "de",
         "published_at": "2021-09-28T14:37:53.279Z",
         "created_at": "2021-09-28T14:37:39.217Z",
-        "updated_at": "2022-01-31T17:51:12.030Z",
+        "updated_at": "2023-01-19T12:56:07.386Z",
         "key": "lagerdaten",
         "Sorting": 1,
         "sorting": 102,
@@ -32,17 +32,17 @@
         "menu_name": "Lagerdaten",
         "responsible": [
           {
-            "id": 1364,
+            "id": 1569,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1365,
+            "id": 1571,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1366,
+            "id": 1572,
             "label": null,
             "rolle": "C"
           }
@@ -73,12 +73,12 @@
       {
         "id": 2,
         "title": "Rahmenbedingungen für Lager (mit oder ohne J+S)",
-        "content": "Pfadilager können mit oder ohne Anmeldung unter J+S stattfinden. Alle Pfadilager, mit oder ohne J+S, werden ab einer Dauer von 3 Tagen via [MiData]($midata$) dem Kantonalverband und der Pfadibewegung Schweiz (PBS) gemeldet (s. [Lageranmeldung PBS]($lageranmeldung$)). Für die Bewilligung des Lagers wird die [Lagerbewilligung]($lagerbewilligung-kapitel$) verwendet. Diese besteht aus der Lagerbewilligung (S. 1), sowie einer Checkliste (S. 2), welche den Betreuenden als Grundlage für die Bewilligung des Lagerprogramms dient. Die grundlegenden Bestimmungen für alle Pfadilager sind im  [PBS-Reglement über die Vorbereitung und Durchführung von Lagern]($lagerreglement$) festgehalten.\nFür Lager, welche unter J+S angemeldet werden, gibt es weiterführende Bestimmungen. Erfüllt ein Lager diese Anforderungen, wird die Abteilung dafür mit einer Pauschale entschädigt. Die aktuell gültigen Beiträge sind im [Leitfaden für den J+S-Coach]($js-coachleitfaden$) zu finden. Entschädigungsberechtigt sind Personen im J+S-Alter, welche durch eine\\*n J+S-Leiter\\*in abgedeckt sind. Alle Bestimmungen zur Durchführung von J+S-Lagern sind im [Leitfaden zur Durchführung von J+S-Angeboten LS/T mit Kindern und Jugendlichen]($js-angebotsleitfaden$) festgehalten.\nDas Grobprogramm jedes J+S-Lagers ist von dem*der Coach vor dem  [Lagerabschluss in der SPORTdb]($lagerabschluss-sportdb$) hochzuladen. Das kantonale Sportamt kann Stichproben durchführen, bei denen die Programme überprüft werden. Es können auch die Blockbeschriebe des Lagers zur Kontrolle angefordert werden.\nAlle Lager einer Abteilung, welche während eines Jahres durchgeführt werden, werden vom Coach in der [SPORTdb]($sportdb$) als Angebot bei J+S angemeldet und abgerechnet. Für diese Lager gibt es besonders günstige Konditionen für:\n-\t[J+S-Leihmaterial]($js-leihmaterial$)\n-\t[Landeskarten]($landeskarten$)\n-\t[Rega-Versicherungen]($rega$)",
+        "content": "Pfadilager können mit oder ohne Anmeldung unter J+S stattfinden. Alle Pfadilager, mit oder ohne J+S, werden ab einer Dauer von 3 Tagen via [MiData]($midata$) dem Kantonalverband und der Pfadibewegung Schweiz (PBS) gemeldet (s. [Lageranmeldung PBS]($lageranmeldung$)). Für die Bewilligung des Lagers wird die [Lagerbewilligung]($lagerbewilligung-kapitel$) verwendet. Diese besteht aus der Lagerbewilligung (S. 1), sowie einer Checkliste (S. 2), welche den Betreuenden als Grundlage für die Bewilligung des Lagerprogramms dient. Die grundlegenden Bestimmungen für alle Pfadilager sind im  [PBS-Reglement über die Vorbereitung und Durchführung von Lagern]($lagerreglement$) festgehalten.\nFür Lager, welche unter J+S angemeldet werden, gibt es weiterführende Bestimmungen. Erfüllt ein Lager diese Anforderungen, wird die Abteilung dafür mit einer Pauschale entschädigt. Die aktuell gültigen Beiträge sind im [Leitfaden für den J+S-Coach]($js-coachleitfaden$) zu finden. Entschädigungsberechtigt sind Personen im J+S-Alter, welche durch eine\\*n J+S-Leiter\\*in abgedeckt sind. Alle Bestimmungen zur Durchführung von J+S-Lagern sind im [Leitfaden zur Durchführung von J+S-Angeboten LS/T mit Kindern und Jugendlichen]($js-angebotsleitfaden$) festgehalten.\nDas Grobprogramm jedes J+S-Lagers ist von dem*der Coach vor dem  [Lagerabschluss in der NDS]($lagerabschluss-nds$) hochzuladen. Das kantonale Sportamt kann Stichproben durchführen, bei denen die Programme überprüft werden. Es können auch die Blockbeschriebe des Lagers zur Kontrolle angefordert werden.\nAlle Lager einer Abteilung, welche während eines Jahres durchgeführt werden, werden vom Coach in der [NDS]($nds$) als Angebot bei J+S angemeldet und abgerechnet. Für diese Lager gibt es besonders günstige Konditionen für:\n-\t[J+S-Leihmaterial]($js-leihmaterial$)\n-\t[Landeskarten]($landeskarten$)\n-\t[Rega-Versicherungen]($rega$)",
         "section": 1,
         "locale": "de",
         "published_at": "2021-09-28T14:38:20.600Z",
         "created_at": "2021-09-28T14:38:17.229Z",
-        "updated_at": "2022-02-06T16:32:28.770Z",
+        "updated_at": "2023-01-19T12:45:51.811Z",
         "key": "rahmenbedingungen",
         "Sorting": 1,
         "sorting": 101,
@@ -88,17 +88,17 @@
         "menu_name": "Rahmenbedingungen für Lager",
         "responsible": [
           {
-            "id": 959,
+            "id": 1533,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 960,
+            "id": 1535,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 961,
+            "id": 1536,
             "label": null,
             "rolle": "C"
           }
@@ -144,7 +144,7 @@
         "menu_name": "Voilà",
         "responsible": [
           {
-            "id": 1071,
+            "id": 1574,
             "label": null,
             "rolle": "LL"
           }
@@ -221,12 +221,12 @@
       {
         "id": 23,
         "title": "eCamp – Webapplikation zur Vereinfachung der Lagerplanung",
-        "content": "Um allen Beteiligten Zugriff auf die Planungsunterlagen zu gewähren, kann auf eine Cloudlösung gesetzt werden. Häufig wird auch die Webapplikation  [eCamp]($ecamp$) verwendet. Dabei handelt es sich um eine Plattform, die vom Kantonalverband Luzern spezifisch für die Planung von Pfadilagern und -kursen entwickelt wurde. Verantwortlichkeiten, Materiallisten und vor allem die Programmplanung können damit einfach und überschaubar koordiniert werden.",
+        "content": "Um allen Beteiligten Zugriff auf die Planungsunterlagen zu gewähren, kann auf eine Cloudlösung gesetzt werden. Häufig wird auch die Webapplikation [eCamp]($ecamp$) verwendet. Dabei handelt es sich um eine Plattform, die vom Kantonalverband Luzern spezifisch für die Planung von Pfadilagern und -kursen entwickelt wurde. Verantwortlichkeiten, Materiallisten und vor allem die Programmplanung können damit einfach und überschaubar koordiniert werden.",
         "section": 1,
         "locale": "de",
         "published_at": "2021-11-20T18:19:27.076Z",
         "created_at": "2021-11-20T18:18:33.918Z",
-        "updated_at": "2022-01-23T21:37:33.588Z",
+        "updated_at": "2023-01-19T12:58:29.399Z",
         "key": null,
         "Sorting": null,
         "sorting": 105,
@@ -282,7 +282,7 @@
         "menu_name": "Lager eröffnen",
         "responsible": [
           {
-            "id": 1372,
+            "id": 1576,
             "label": null,
             "rolle": "AL"
           }
@@ -328,12 +328,12 @@
         "menu_name": "Einheitsübergreifende Lager mit MiData administrieren",
         "responsible": [
           {
-            "id": 1303,
+            "id": 1604,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1304,
+            "id": 1605,
             "label": null,
             "rolle": "LL"
           }
@@ -364,12 +364,12 @@
       {
         "id": 26,
         "title": "Leitungspersonen und Küche in der MiData erfassen",
-        "content": "Die weiteren Leitungspersonen können sowohl von dem\\*der AL wie auch von dem\\*der erfassten Lagerleiter\\*in selbst hinzugefügt werden. Das Küchenteam soll ebenfalls erfasst werden, damit es der*die Coach für die [Rega-Versicherung]($rega$) einfach in der SPORTdb erfassen kann.\n1. Bereich Lager anwählen\n2. Gewünschtes bereits erfasstes Lager auswählen\n3. Teilnehmende anklicken\n4. Leitungsteam anklicken\n5. Person hinzufügen und gewünschte Art wählen.\n6. Bei «Person suchen» Namen eingeben, gewünschte Person auswählen. Bei Bezeichnung die konkrete Bezeichnung einfüllen (z. B Mitleiter\\*in) und «speichern» klicken.",
+        "content": "Die weiteren Leitungspersonen können sowohl von dem\\*der AL wie auch von dem\\*der erfassten Lagerleiter\\*in selbst hinzugefügt werden. Das Küchenteam soll ebenfalls erfasst werden, damit es der*die Coach für die [Rega-Versicherung]($rega$) einfach in der NDS erfassen kann.\n1. Bereich Lager anwählen\n2. Gewünschtes bereits erfasstes Lager auswählen\n3. Teilnehmende anklicken\n4. Leitungsteam anklicken\n5. Person hinzufügen und gewünschte Art wählen.\n6. Bei «Person suchen» Namen eingeben, gewünschte Person auswählen. Bei Bezeichnung die konkrete Bezeichnung einfüllen (z. B Mitleiter\\*in) und «speichern» klicken.",
         "section": 1,
         "locale": "de",
         "published_at": "2021-11-20T18:46:03.725Z",
         "created_at": "2021-11-20T18:46:01.545Z",
-        "updated_at": "2022-01-23T22:34:11.838Z",
+        "updated_at": "2023-01-19T13:16:34.333Z",
         "key": null,
         "Sorting": null,
         "sorting": 108,
@@ -379,12 +379,12 @@
         "menu_name": "Leitungspersonen und Küche in der MiData erfassen",
         "responsible": [
           {
-            "id": 1228,
+            "id": 1620,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1230,
+            "id": 1621,
             "label": null,
             "rolle": "AL"
           }
@@ -414,23 +414,23 @@
       },
       {
         "id": 27,
-        "title": "Anmeldung der Lager bei J+S via SPORTdb",
-        "content": "Der\\*die Coach meldet alle Lager der Abteilung zusammen als Angebot bei J+S an. Diese Anmeldung macht er\\*sie online in der [SPORTdb]($sportdb$). Den Zugang zur SPORTdb erhält er\\*sie vom KV.\n\n### Eröffnung des J+S-Angebots\nIn der  SPORTdb wird anfangs Jahr unter «Angebotsverwaltung → Neues Angebot eröffnen» ein neues Angebot für das laufende Jahr erstellt, in dem alle J+S-Lager erfasst werden. Pro Abteilung wird nur ein Angebot eröffnet.\nNach der Eröffnung kann das Angebot unter «Angebotsverwaltung → Angebotsübersicht» jederzeit aufgerufen werden. Mit der Bearbeitung des Angebots während des Jahres ändert sich der sogenannte «Status». Die «Checkliste» des Angebots gibt einen Überblick über die nötigen Bearbeitungsschritte in jedem Status. Für die Bearbeitung des Angebots folgt man jeweils den Registerkarten von links nach rechts. Das neu eröffnete Angebot erscheint in der Angebotsübersicht unter «noch nicht gemeldete Angebote». \n\n### Bewilligungsverfahren\nIm Status «Bewilligungsverfahren» wird das Angebot beim kantonalen Sportamt geprüft. Der Bewilligungsantrag von dem\\*der Coach an das kantonale Sportamt wird per E-Mail bestätigt (Betreff: «Empfangsbestätigung für Ihr J+S Angebot Nr. XXXXXX»). Die anschliessende Bewilligung durch das kantonale Sportamt wird wiederum per E-Mail bestätigt (Betreff: «Bewilligung für Ihr J+S-Angebot Nr. XXXXXX»). Damit wechselt das Angebot in den Status «Durchführung».\n\n### Arbeiten in der SPORTdb\nDie genauen Abläufe inklusive Schritt für Schritt Anleitungen sind ausführlich im Dokument  [SPORTdb Schritt für Schritt für J+S-Coaches]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten. Fragen betreffend dem Datenschutz in der SPORTdb beantwortet das [Merkblatt Datenerfassung und Datenschutz in der SPORTdb (J+S)]($js-datenschutz$).\n",
+        "title": "Anmeldung der Lager bei J+S via NDS",
+        "content": "Der\\*die Coach meldet alle Lager der Abteilung zusammen als Angebot bei J+S an. Diese Anmeldung macht er\\*sie online in der [NDS]($NDS$). Den Zugang zur NDS erhält er\\*sie vom KV.\n\n### Eröffnung des J+S-Angebots\nIn der  SPORTdb wird anfangs Jahr unter «Angebotsverwaltung → Neues Angebot eröffnen» ein neues Angebot für das laufende Jahr erstellt, in dem alle J+S-Lager erfasst werden. Pro Abteilung wird nur ein Angebot eröffnet.\nNach der Eröffnung kann das Angebot unter «Angebotsverwaltung → Angebotsübersicht» jederzeit aufgerufen werden. Mit der Bearbeitung des Angebots während des Jahres ändert sich der sogenannte «Status». Die «Checkliste» des Angebots gibt einen Überblick über die nötigen Bearbeitungsschritte in jedem Status. Für die Bearbeitung des Angebots folgt man jeweils den Registerkarten von links nach rechts. Das neu eröffnete Angebot erscheint in der Angebotsübersicht unter «noch nicht gemeldete Angebote». \n\n### Bewilligungsverfahren\nIm Status «Bewilligungsverfahren» wird das Angebot beim kantonalen Sportamt geprüft. Der Bewilligungsantrag von dem\\*der Coach an das kantonale Sportamt wird per E-Mail bestätigt (Betreff: «Empfangsbestätigung für Ihr J+S Angebot Nr. XXXXXX»). Die anschliessende Bewilligung durch das kantonale Sportamt wird wiederum per E-Mail bestätigt (Betreff: «Bewilligung für Ihr J+S-Angebot Nr. XXXXXX»). Damit wechselt das Angebot in den Status «Durchführung».\n\n### Arbeiten in der SPORTdb\nDie genauen Abläufe inklusive Schritt für Schritt Anleitungen sind ausführlich im Dokument  [SPORTdb Schritt für Schritt für J+S-Coaches]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten. Fragen betreffend dem Datenschutz in der SPORTdb beantwortet das [Merkblatt Datenerfassung und Datenschutz in der SPORTdb (J+S)]($js-datenschutz$).\n",
         "section": 1,
         "locale": "de",
         "published_at": "2021-11-20T18:54:26.468Z",
         "created_at": "2021-11-20T18:53:45.990Z",
-        "updated_at": "2022-01-23T22:56:48.982Z",
+        "updated_at": "2023-01-19T10:55:37.957Z",
         "key": null,
         "Sorting": null,
         "sorting": 109,
-        "slug": "Anmeldung-der-Lager-bei-J+S-via-SPORTdb",
+        "slug": "Anmeldung-der-Lager-bei-J+S-via-NDS",
         "link": null,
-        "slug_with_section": "Vorbereitung#Anmeldung-der-Lager-bei-J+S-via-SPORTdb",
-        "menu_name": "Anmeldung der Lager bei J+S via SPORTdb",
+        "slug_with_section": "Vorbereitung#Anmeldung-der-Lager-bei-J+S-via-NDS",
+        "menu_name": "Anmeldung der Lager bei J+S via NDS",
         "responsible": [
           {
-            "id": 1259,
+            "id": 1472,
             "label": null,
             "rolle": "C"
           }
@@ -541,12 +541,12 @@
       {
         "id": 6,
         "title": "Lageranmeldung PBS",
-        "content": "### Angaben des\\*der Lagerleiter\\*in\nMit der PBS-Lageranmeldung in der [MiData]($midata$) wird jedes Lager im Voraus beim KV und bei der PBS gemeldet. Der\\*die LL ergänzt bis spätestens 7&nbsp;Wochen vor dem Lager alle Angaben des Lagers in der MiData und schickt das Grobprogramm zeitgleich an AL und Coach.\n\n### Angaben des\\*der Coach\\*s\nDer\\*die Coach kann sich nun in der [MiData]($midata$) einloggen, seinen\\*ihren Teil der Lageranmeldung ausfüllen und per Button einreichen. Die Lageranmeldung wird dann automatisch an PBS und KV übermittelt. Die PBS benötigt diese Informationen für die Reaktion in Krisenfällen sowie für statistische Angaben gegenüber der Eidgenossenschaft. Der\\*die Coach loggt sich dafür mit seinem\\*ihren Login in der MiData ein und navigiert zur eigenen Coach-Abteilung. Danach geht er\\*sie wie folgt vor:\n1. «Lager» anklicken\n2. Entsprechendes Lager auswählen\n3. «Bearbeiten» klicken\n4. Angaben in allen Registern prüfen\n5. Das Register Betreuung wählen. «Coach bestätigt» klicken sowie die Angaben zum Coachbesuch und den [Aktivitäten im Sicherheitsbereich]($sicherheitsbereich$) ausfüllen.\n7. «Speichern» klicken\n7. Wenn alle Angaben vollständig sind: Lageranmeldung an die PBS schicken mittels Klicken des Buttons «Einreichen».\n\n![de-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_A_b3b32a88d3.png)\n\n![de-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_B_eb31dc00ec.png)\n\n![de-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_C_f62f7b963e.png)\n",
+        "content": "Mit der PBS-Lageranmeldung in der [MiData]($midata$) wird jedes Lager im Voraus beim KV und bei der PBS gemeldet.\n### Angaben des/der Lagerleiters/in\nSpätestens 7 Wochen vor dem Lager wird der/die LL :\n1. geht auf MiData und besucht das Lager,\n2. klickt auf «Bearbeiten»,\n3. ergänzt alle Informationen über das Lager,\n4. kreuzt die drei Checkbox unten auf der Seite zu den Lagerregeln und -richtlinien an,\n5. sendet gleichzeitig das allgemeine Programm an den/die AL und den/die Coach.\n\n### Angaben des\\*der Coach\\*s\nDer\\*die Coach kann sich nun in der [MiData]($midata$) einloggen, seinen\\*ihren Teil der Lageranmeldung ausfüllen und per Button einreichen. Die Lageranmeldung wird dann automatisch an PBS und KV übermittelt. Die PBS benötigt diese Informationen für die Reaktion in Krisenfällen sowie für statistische Angaben gegenüber der Eidgenossenschaft. Der\\*die Coach loggt sich dafür mit seinem\\*ihren Login in der MiData ein und navigiert zur eigenen Coach-Abteilung. Danach geht er\\*sie wie folgt vor:\n1. «Lager» anklicken\n2. Entsprechendes Lager auswählen\n3. «Bearbeiten» klicken\n4. Angaben in allen Registern prüfen\n5. Das Register Betreuung wählen. «Coach bestätigt» klicken sowie die Angaben zum Coachbesuch und den [Aktivitäten im Sicherheitsbereich]($sicherheitsbereich$) ausfüllen.\n7. «Speichern» klicken\n7. Wenn alle Angaben vollständig sind: Lageranmeldung an die PBS schicken mittels Klicken des Buttons «Einreichen».\n\n![de-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_A_b3b32a88d3.png)\n\n![de-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_B_eb31dc00ec.png)\n\n![de-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642453538/hering/Lagerdaten_Coach_Mi_Data_C_f62f7b963e.png)\n",
         "section": 5,
         "locale": "de",
         "published_at": "2021-10-07T09:04:37.416Z",
         "created_at": "2021-10-07T09:03:55.201Z",
-        "updated_at": "2022-01-23T12:22:05.305Z",
+        "updated_at": "2023-01-19T13:53:35.478Z",
         "key": "lageranmeldung_pbs",
         "Sorting": 1,
         "sorting": 201,
@@ -556,12 +556,12 @@
         "menu_name": "Lageranmeldung PBS",
         "responsible": [
           {
-            "id": 671,
+            "id": 1644,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 672,
+            "id": 1645,
             "label": null,
             "rolle": "C"
           }
@@ -607,7 +607,7 @@
         "menu_name": "Grobprogramm",
         "responsible": [
           {
-            "id": 690,
+            "id": 1650,
             "label": null,
             "rolle": "LL"
           }
@@ -902,12 +902,12 @@
       {
         "id": 32,
         "title": "Landeskartenbestellung swisstopo",
-        "content": "Für J+S-Lager können bei der Swisstopo Landeskarten bestellt werden. Dafür verwendet man das Formular [Landeskartenbestellung]($formular-landeskartenbestellung$). Die Ausleihe ist kostenlos, der Rückversand mit der Post muss jedoch selber bezahlt werden. Fehlende und zu spät zurückgesendete Karten werden in Rechnung gestellt. Pro 3 TNs im J+S-Alter kann ein Exemplar eines Kartenblatts bestellt werden. Der\\*die LL sendet das ausgefüllte Bestellformular an den\\*die Coach. Diese\\*r sendet das Formular direkt an mapsales@swisstopo.ch. Das Formular kann auch per E-Mail eingereicht werden. Unterschriften können digital eingefügt werden, ein Ausdruck oder Scan ist nicht nötig. Die Karten werden dem\\*der LL per Post nach Hause geschickt. \nHier folgen einige Erklärungen zum Formular:\n\n1. **«Greifbar»**: Der\\*die LL überlegt sich, ab welchem Datum er\\*sie die Karten benötigt. Trifft die Bestellung 3 Wochen vorher bei der Swisstopo ein, werden die Karten bis zum angegebenen Zeitpunkt an die genannte Lieferadresse geschickt. Es ist sinnvoll, die Bestellung so früh zu machen, dass die Karten für das Rekognoszieren verwendet werden können.\n2. **«Rückgabe»**: Die Karten müssen von dem\\*der LL per Post fristgerecht zurückgesendet werden und zwar bis 3 Tage nach dem Lager (siehe [Leitfaden für spezielle Leistungen für die J+S-Angebote]($leitfaden-js-spezielle-leistungen$)).\n3. **«Organisation»**: Hier notiert der\\*die LL den Namen der Abteilung.\n4. **«Bezugsberechtigung»**: Es können Landeskarten im Massstab 1:25'000 und 1:50'000 und Zusammensetzungen ausgeliehen werden. Der\\*die LL ist berechtigt pro 3 J+S-TNs 1 Exemplar eines Kartenblatts zu bestellen.\n5. **«Angebot-Nr.»**: Hier ergänzt der\\*die Coach die Nummer des J+S-Angebots gemäss der Anmeldung in der [SPORTdb]($sportdb$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
+        "content": "Für J+S-Lager können bei der Swisstopo Landeskarten bestellt werden. Dafür verwendet man das Formular [Landeskartenbestellung]($formular-landeskartenbestellung$). Die Ausleihe ist kostenlos, der Rückversand mit der Post muss jedoch selber bezahlt werden. Fehlende und zu spät zurückgesendete Karten werden in Rechnung gestellt. Pro 3 TNs im J+S-Alter kann ein Exemplar eines Kartenblatts bestellt werden. Der\\*die LL sendet das ausgefüllte Bestellformular an den\\*die Coach. Diese\\*r sendet das Formular direkt an mapsales@swisstopo.ch. Das Formular kann auch per E-Mail eingereicht werden. Unterschriften können digital eingefügt werden, ein Ausdruck oder Scan ist nicht nötig. Die Karten werden dem\\*der LL per Post nach Hause geschickt. \nHier folgen einige Erklärungen zum Formular:\n\n1. **«Greifbar»**: Der\\*die LL überlegt sich, ab welchem Datum er\\*sie die Karten benötigt. Trifft die Bestellung 3 Wochen vorher bei der Swisstopo ein, werden die Karten bis zum angegebenen Zeitpunkt an die genannte Lieferadresse geschickt. Es ist sinnvoll, die Bestellung so früh zu machen, dass die Karten für das Rekognoszieren verwendet werden können.\n2. **«Rückgabe»**: Die Karten müssen von dem\\*der LL per Post fristgerecht zurückgesendet werden und zwar bis 3 Tage nach dem Lager (siehe [Leitfaden für spezielle Leistungen für die J+S-Angebote]($leitfaden-js-spezielle-leistungen$)).\n3. **«Organisation»**: Hier notiert der\\*die LL den Namen der Abteilung.\n4. **«Bezugsberechtigung»**: Es können Landeskarten im Massstab 1:25'000 und 1:50'000 und Zusammensetzungen ausgeliehen werden. Der\\*die LL ist berechtigt pro 3 J+S-TNs 1 Exemplar eines Kartenblatts zu bestellen.\n5. **«Angebot-Nr.»**: Hier ergänzt der\\*die Coach die Nummer des J+S-Angebots gemäss der Anmeldung in der [NDS]($nds$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
         "section": 6,
         "locale": "de",
         "published_at": "2021-11-21T00:41:11.157Z",
         "created_at": "2021-11-21T00:39:22.839Z",
-        "updated_at": "2022-02-06T16:39:38.661Z",
+        "updated_at": "2023-01-19T15:20:25.918Z",
         "key": null,
         "Sorting": null,
         "sorting": 302,
@@ -917,12 +917,12 @@
         "menu_name": "Landeskartenbestellung swisstopo",
         "responsible": [
           {
-            "id": 845,
+            "id": 1661,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 846,
+            "id": 1663,
             "label": null,
             "rolle": "C"
           }
@@ -953,12 +953,12 @@
       {
         "id": 33,
         "title": "SBB-Gruppenbillette",
-        "content": "Für die Anreise mit dem Zug kann ab einer Gruppengrösse von mehr als 10 Personen ein SBB-Gruppenbillett bestellt werden. Damit reisen alle mit einer zusätzlichen Ermässigung von 30%.\nDie Bestellung kann online über den [SBB-Gruppenreiserechner]($sbb-gruppenreiserechner$), am Billettschalter oder telefonisch ( 0848 44 66 88, CHF 0.08/Min) vorgenommen werden. Mindestens die Anmeldung einer Gruppenreise ist obligatorisch. Nach Möglichkeiten werden entsprechende Reservierungen vorgenommen. Diese sind im Gruppenbillet inklusive.\n\nDetailliertere Informationen zu den [SBB Gruppenreisen]($sbb-gruppenreisen-info$).\n\nFür angemeldete Gruppen besteht zusätzlich die Möglichkeit, Gepäck oder Velos von der SBB transportieren zu lassen.\n\nDetailliertere Informationen zum [SBB-Gruppengepäck]($sbb-gepaeck-info$).",
+        "content": "Für die Anreise mit dem Zug kann ab einer Gruppengrösse von mehr als 10 Personen ein SBB-Gruppenbillett oder Tageskarten für Schulen bestellt werden. Damit reisen alle mit einer zusätzlichen Ermässigung von 30% oder für 15.-.\nDie Bestellung kann online, am Billettschalter oder telefonisch ( 0848 44 66 88, CHF 0.08/Min) vorgenommen werden. Mindestens die Anmeldung einer Gruppenreise ist obligatorisch. Nach Möglichkeiten werden entsprechende Reservierungen vorgenommen. Diese sind im Gruppenbillet inklusive.\n\nDetailliertere Informationen zu den [SBB Gruppenreisen]($sbb-gruppenreisen-info$) oder [SBB Tageskarten für Schulen]($sbb-tageskarten$).\n\nFür angemeldete Gruppen besteht zusätzlich die Möglichkeit, Gepäck oder Velos von der SBB transportieren zu lassen.\n\nDetailliertere Informationen zum [SBB-Gruppengepäck]($sbb-gepaeck-info$).",
         "section": 6,
         "locale": "de",
         "published_at": "2021-11-21T00:41:15.222Z",
         "created_at": "2021-11-21T00:39:49.396Z",
-        "updated_at": "2022-01-23T19:07:39.354Z",
+        "updated_at": "2023-01-19T15:33:39.986Z",
         "key": null,
         "Sorting": null,
         "sorting": 303,
@@ -968,7 +968,7 @@
         "menu_name": "SBB-Gruppenbillette",
         "responsible": [
           {
-            "id": 884,
+            "id": 1672,
             "label": null,
             "rolle": "LL"
           }
@@ -999,12 +999,12 @@
       {
         "id": 34,
         "title": "Rega-Versicherung",
-        "content": "Für die Dauer eines J+S-Lagers können alle TNs, Leitenden und Begleitpersonen eines Lagers bei der Rega versichert werden (siehe [Leitfaden für spezielle Leistungen für die J+S-Angebote und J+S-Kaderbildung]($leitfaden-js-spezielle-leistungen$)). Dieses Angebot gilt nur innerhalb der Schweizer Landesgrenzen und für das Fürstentum Lichtenstein. Der\\*die LL erfasst dafür die TNs in der MiData und teilt dies dem\\*der Coach mit (siehe [Administration der TN in der MiData]($tn-administration-midata$)). Diese\\*r meldet danach die TNs in der SPORTdb an die Rega. Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen sind im Dokument [SPORTdb Schritt für Schritt für J+S-Coaches]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten. Im Gegenzug erhält die Rega das Recht, den gemeldeten TNs bei Erreichen der Volljährigkeit eine Gönnerschaft anzubieten. Die Eltern der TNs sollten deshalb über die Datenweitergabe informiert werden (auf Lageranmeldung erwähnen).\n\nFalls man von den Dienstleistungen der Rega Gebrauch machen muss, bezahlt dies in erster Linie die Krankenkasse. Würde sich diese weigern, übernähme die Rega die Kosten von wie oben erklärt versicherten Personen.\n\n***Weitere Informationen***  \n[Rahmenbedingungen zum Engagement der Rega]($rega-rahmenbedingungen$)",
+        "content": "Für die Dauer eines J+S-Lagers können alle TNs, Leitenden und Begleitpersonen eines Lagers bei der Rega versichert werden (siehe [Leitfaden für spezielle Leistungen für die J+S-Angebote und J+S-Kaderbildung]($leitfaden-js-spezielle-leistungen$)). Dieses Angebot gilt nur innerhalb der Schweizer Landesgrenzen und für das Fürstentum Lichtenstein. Der\\*die LL erfasst dafür die TNs in der MiData und teilt dies dem\\*der Coach mit (siehe [Administration der TN in der MiData]($tn-administration-midata$)). Diese\\*r meldet danach die TNs in der NDS an die Rega. Im Gegenzug erhält die Rega das Recht, den gemeldeten TNs bei Erreichen der Volljährigkeit eine Gönnerschaft anzubieten. Die Eltern der TNs sollten deshalb über die Datenweitergabe informiert werden (auf Lageranmeldung erwähnen).\n\nFalls man von den Dienstleistungen der Rega Gebrauch machen muss, bezahlt dies in erster Linie die Krankenkasse. Würde sich diese weigern, übernähme die Rega die Kosten von wie oben erklärt versicherten Personen.\n\n***Weitere Informationen***  \n[Rahmenbedingungen zum Engagement der Rega]($rega-rahmenbedingungen$)",
         "section": 6,
         "locale": "de",
         "published_at": "2021-11-21T00:41:19.045Z",
         "created_at": "2021-11-21T00:40:20.173Z",
-        "updated_at": "2022-01-23T19:43:45.936Z",
+        "updated_at": "2023-01-19T15:38:24.128Z",
         "key": null,
         "Sorting": null,
         "sorting": 304,
@@ -1014,12 +1014,12 @@
         "menu_name": "Rega-Versicherung",
         "responsible": [
           {
-            "id": 930,
+            "id": 1690,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 931,
+            "id": 1691,
             "label": null,
             "rolle": "C"
           }
@@ -1232,7 +1232,7 @@
         "menu_name": "Aktivitäten in den Sicherheitsbereichen",
         "responsible": [
           {
-            "id": 880,
+            "id": 1696,
             "label": null,
             "rolle": "LL"
           }
@@ -1292,12 +1292,12 @@
       {
         "id": 19,
         "title": "TNs melden sich selbstständig für Lager an",
-        "content": "Falls für das Lager die Option «Anmeldung möglich» gewählt wurde, können sich TNs direkt über ihr Login in der [MiData]($midata$) für das Lager anmelden. TNs können nur Lager sehen, welche in einer Gruppe erstellt wurden, zu welcher sie gehören (z. B entsprechende Stufe). Die Anmeldung läuft folgendermassen ab:\n1. Die TNs loggen sich in der MiData ein und klicken auf «Anlässe». Es erscheint die Übersicht über «Demnächst stattfindende Anlässe»\n1. Die TNs können sich beim Lager direkt via Button «Anmelden» anmelden.\n1. Weitere Infos zum Lager sehen die TNs, wenn sie auf den Lagernamen klicken.\n1. Die TNs füllen die Anmeldung aus und klicken «anmelden». Zusätzliche Anmeldefelder können bei der Erstellung des Lagers erfasst werden. Hier bietet es sich an, die Pflichtangaben, die der\\*die Coach für die SPORTdb benötigt durch die TN ausfüllen zu lassen. Eine Liste der benötigten Angaben findet sich im Dokument  [Technische Anforderungen für den Import]($sportdb-technisch$).",
+        "content": "Falls für das Lager die Option «Anmeldung möglich» gewählt wurde, können sich TNs direkt über ihr Login in der [MiData]($midata$) für das Lager anmelden. TNs können nur Lager sehen, welche in einer Gruppe erstellt wurden, zu welcher sie gehören (z. B entsprechende Stufe). Die Anmeldung läuft folgendermassen ab:\n1. Die TNs loggen sich in der MiData ein und klicken auf «Anlässe». Es erscheint die Übersicht über «Demnächst stattfindende Anlässe»\n1. Die TNs können sich beim Lager direkt via Button «Anmelden» anmelden.\n1. Weitere Infos zum Lager sehen die TNs, wenn sie auf den Lagernamen klicken.\n1. Die TNs füllen die Anmeldung aus und klicken «anmelden». Zusätzliche Anmeldefelder können bei der Erstellung des Lagers erfasst werden. Hier bietet es sich an, die Pflichtangaben, die der\\*die Coach für die NDS benötigt durch die TN ausfüllen zu lassen :\n- Name\n- Vorname\n- Geburtsdatum\n- Geschlecht\n- AHV nr oder PEID\n- Nationalität\n- Muttersprache\n- PLZ\n- Ort\n- Land",
         "section": 16,
         "locale": "de",
         "published_at": "2021-11-17T18:36:40.000Z",
         "created_at": "2021-11-17T18:36:38.343Z",
-        "updated_at": "2022-02-06T12:32:55.246Z",
+        "updated_at": "2023-01-19T15:46:58.268Z",
         "key": null,
         "Sorting": null,
         "sorting": 501,
@@ -1307,7 +1307,7 @@
         "menu_name": "TNs melden sich selbstständig an",
         "responsible": [
           {
-            "id": 1214,
+            "id": 1703,
             "label": null,
             "rolle": "LL"
           }
@@ -1338,12 +1338,12 @@
       {
         "id": 20,
         "title": "Hinzufügen und Löschen von TNs in der TN-Liste der MiData",
-        "content": "Die\\*der Lagerleiter\\*in, die*der AL und die\\*der Coach haben Zugang zur TN-Liste in der [MiData]($midata$). Dort können sie auch direkt TNs hinzufügen oder löschen. Dies geschieht analog zum [Hinzufügen von Mitgliedern des Leitungsteam]($team-erfassen-midata-kapitel$). Falls sich die TNs nicht direkt in der MiData für das Lager anmelden, kann so die Liste der TNs durch den\\*die Lagerleiter\\*in erfasst werden. Die benötigten Angaben der TN für die Rega-Anmeldung und den\\*die Coach sind dann jedoch durch den\\*die LL zu ergänzen. Eine Liste der benötigten Angaben findet sich im Dokument [Technische Anforderungen für den Import]($sportdb-technisch$).",
+        "content": "Die\\*der Lagerleiter\\*in, die*der AL und die\\*der Coach haben Zugang zur TN-Liste in der [MiData]($midata$). Dort können sie auch direkt TNs hinzufügen oder löschen. Dies geschieht analog zum [Hinzufügen von Mitgliedern des Leitungsteam]($team-erfassen-midata-kapitel$). Falls sich die TNs nicht direkt in der MiData für das Lager anmelden, kann so die Liste der TNs durch den\\*die Lagerleiter\\*in erfasst werden. Die benötigten Angaben der TN für die Rega-Anmeldung und den\\*die Coach sind dann jedoch durch den\\*die LL zu ergänzen. Eine Liste der benötigten Angaben findet sich im vorherigen Kapitel.",
         "section": 16,
         "locale": "de",
         "published_at": "2021-11-20T13:38:37.879Z",
         "created_at": "2021-11-20T13:36:29.054Z",
-        "updated_at": "2022-01-23T19:20:23.816Z",
+        "updated_at": "2023-01-19T15:52:34.396Z",
         "key": null,
         "Sorting": null,
         "sorting": 502,
@@ -1353,17 +1353,17 @@
         "menu_name": "Hinzufügen und Löschen von TNs in der TN-Liste der MiData",
         "responsible": [
           {
-            "id": 1209,
+            "id": 1710,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1211,
+            "id": 1711,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1212,
+            "id": 1713,
             "label": null,
             "rolle": "C"
           }
@@ -1394,12 +1394,12 @@
       {
         "id": 77,
         "title": "Export der TN-Liste aus der MiData",
-        "content": "Sind die TNs in der [MiData]($midata$) erfasst (siehe oben), kann die TN-Liste für den Upload in der [SPORTdb]($sportdb$) als csv-File aus der MiData exportiert werden. Dabei geht der\\*die Coach wie folgt vor:\n1. Lager suchen und öffnen\n2. «Teilnehmende» anklicken\n3. «Export» klicken\n4. «CSV» und dann «SPORTdb» wählen. Es wird nun ein csv-File exportiert, welches für den Upload in die SPORTdb verwendet werden kann\n\n**Aufgepasst mit dem Encoding (relevant für die Darstellung der Sonderzeichen)**  \nDie MiData exportiert csv-Dateien standartmässig mit dem UTF-8 Encoding (System für Zeichenkodierung). Beim Import der csv-Datei in der SPORTdb kann dieses angewählt werden, um die Sonderzeichen richtig zu setzen.\nFalls eine Liste vor dem Hochladen noch mit Excel bearbeitet werden soll, kann man sie via «Export» &#8594; «Excel» &#8594; «für SPORTdb» exportieren. Diese wird nach der Bearbeitung als csv-Datei exportiert und in der SPORTdb mit dem Encoding UTF-8 oder x-MacRoman importiert.\n\n**Achtung mit zweiten Vornamen**  \nDie SPORTdb kann bei zwei Vornamen die Personen nicht fehlerfrei zuweisen und Importieren. Vor dem Raufladen der Datei sind daher am besten alle zweiten Vornamen zu löschen.\n\n**Vorgaben bezüglich Pflichtfeldern**  \nUm die Datei einlesen zu können, müssen gewisse Felder pflichtmässig ausgefüllt sein. Eine Übersicht findet sich im Dokument [Technische Anforderungen für den Import]($sportdb-technisch$). Sollten noch Angaben fehlen sind diese vom LL einzuholen. Im Optimalfall werden die Angaben bereits bei der [Anmeldung]($tn-anmeldung-kapitel$) erhoben.",
+        "content": "Sind die TNs in der [MiData]($midata$) erfasst (siehe oben), kann die TN-Liste für den Upload in der [NDS]($nds$) als csv-File aus der MiData exportiert werden. Dabei geht der\\*die Coach wie folgt vor:\n1. Lager suchen und öffnen\n2. «Teilnehmende» anklicken\n3. «Export» klicken\n4. «CSV» und dann «NDS-Lager» wählen. Es wird nun ein csv-File exportiert, welches für den Upload in die NDS verwendet werden kann\n\n**Aufgepasst mit dem Encoding (relevant für die Darstellung der Sonderzeichen)**  \nDie MiData exportiert csv-Dateien standartmässig mit dem UTF-8 Encoding (System für Zeichenkodierung). Beim Import der csv-Datei in der NDS kann dieses angewählt werden, um die Sonderzeichen richtig zu setzen.\nFalls eine Liste vor dem Hochladen noch mit Excel bearbeitet werden soll, kann man sie via «Export» &#8594; «Excel» &#8594; «NDS-Lager» exportieren. Diese wird nach der Bearbeitung als csv-Datei exportiert und in der NDS mit dem Encoding UTF-8.\n\n**Vorgaben bezüglich Pflichtfeldern**  \nUm die Datei einlesen zu können, müssen gewisse Felder pflichtmässig ausgefüllt sein. Eine Übersicht findet sich im Kapitel der [Anmeldung]($tn-anmeldung-kapitel$). Sollten noch Angaben fehlen sind diese vom LL einzuholen. Im Optimalfall werden die Angaben bereits bei der [Anmeldung]($tn-anmeldung-kapitel$) erhoben.",
         "section": 16,
         "locale": "de",
         "published_at": "2022-01-23T01:54:15.306Z",
         "created_at": "2022-01-23T01:54:06.892Z",
-        "updated_at": "2022-01-23T08:50:01.979Z",
+        "updated_at": "2023-01-19T15:56:05.579Z",
         "key": null,
         "Sorting": null,
         "sorting": 503,
@@ -1409,7 +1409,7 @@
         "menu_name": "Export der TN-Liste",
         "responsible": [
           {
-            "id": 1224,
+            "id": 1732,
             "label": null,
             "rolle": "C"
           }
@@ -1439,23 +1439,23 @@
       },
       {
         "id": 78,
-        "title": "Hochladen der TN-Liste in die SPORTdb",
-        "content": "Das csv-File wird von dem\\*der Coach in die [SPORTdb]($sportdb$) importiert. Dies kann unter dem Reiter «Teilnehmende» gemacht werden. Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen sind im Dokument [SPORTdb Schritt für Schritt für J+S-Coaches]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten.\n\n>**Erfassen der Sozialversicherungsnummer (AHV-Nr.)**  \nSeit dem Sommer 2019 wird die Sozialversicherungsnummer standardmässig in der SPORTdb erfasst. Es geht dabei um das Vermeiden von Doppelerfassungen und die Verbesserung der Datenqualität. **Neue** Personen können in der SPORTdb nur noch mit dieser Nummer erfasst werden. Damit der\\*die Coach diese Angaben hat, sollten diese bereits beim Anmelden der TN zum Lager hinterlegt werden. Kinder erhalten ihre persönliche Sozialversicherungsnummer mit der Anmeldung zur Krankenkasse, die Nummer kann somit auf der Krankenkassenkarte abgelesen werden.",
+        "title": "Hochladen der TN-Liste in die NDS",
+        "content": "Das csv-File wird von dem\\*der Coach in die [NDS]($nds$) importiert. Dies kann unter dem Reiter «Teilnehmende» gemacht werden.\n\n>**Erfassen der Sozialversicherungsnummer (AHV-Nr.)**  \nSeit dem Winter 2022 muss die AHV-Nummer zwingend in der NDS gespeichert werden. Es geht dabei um das Vermeiden von Doppelerfassungen und die Verbesserung der Datenqualität. Neue Personen können in der NDS nur noch mit dieser Nummer erfasst werden. Damit der\\*die Coach diese Angaben hat, sollten diese bereits beim Anmelden der TN zum Lager hinterlegt werden. Kinder erhalten ihre persönliche Sozialversicherungsnummer mit der Anmeldung zur Krankenkasse, die Nummer kann somit auf der Krankenkassenkarte abgelesen werden. Für Personen, die keine AHV-Nummer haben, muss der*die Coach beim kantonalen Sportamt einen Antrag auf eine Ausnahme stellen.",
         "section": 16,
         "locale": "de",
         "published_at": "2022-01-23T01:55:38.316Z",
         "created_at": "2022-01-23T01:55:36.555Z",
-        "updated_at": "2022-01-23T08:45:41.253Z",
+        "updated_at": "2023-01-21T09:37:00.366Z",
         "key": null,
         "Sorting": null,
         "sorting": 504,
-        "slug": "Hochladen-der-TN-Liste-in-die-SPORTdb",
+        "slug": "Hochladen-der-TN-Liste-in-die-NDS",
         "link": null,
-        "slug_with_section": "Administration-der-TNs#Hochladen-der-TN-Liste-in-die-SPORTdb",
+        "slug_with_section": "Administration-der-TNs#Hochladen-der-TN-Liste-in-die-NDS",
         "menu_name": "Hochladen der TN-Liste",
         "responsible": [
           {
-            "id": 1231,
+            "id": 1743,
             "label": null,
             "rolle": "C"
           }
@@ -1697,12 +1697,12 @@
       {
         "id": 49,
         "title": "TN-Liste und Lagerabschluss in der MiData",
-        "content": "Der\\*die LL passt die vor dem Lager erfassten TNs und Leitenden in der [MiData]($midata$) an und teilt dies dem\\*der Coach bis spätestens 10 Tage nach dem Lager mit.\nAnschliessend überträgt der*die Coach die aktuelle TN-Liste in die [SPORTdb]($sportdb$). Falls bereits die Rega-Anmeldung über die SPORTdb gemacht wurde, müssen die Angaben nur noch korrigiert werden. Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen für den\\*die Coach sind im Dokument  [SPORTdb Schritt für Schritt]($sportdb-schritt-fuer-schritt$).\nDer\\*die LL schliesst danach das Lager in der MiData ab, indem er\\*sie den Status auf «abgeschlossen» setzt.",
+        "content": "Der\\*die LL passt die vor dem Lager erfassten TNs und Leitenden in der [MiData]($midata$) an und teilt dies dem\\*der Coach bis spätestens 10 Tage nach dem Lager mit.\nAnschliessend überträgt der*die Coach die aktuelle TN-Liste in die [NDS]($nds$). Falls bereits die Rega-Anmeldung über die NDS gemacht wurde, müssen die Angaben nur noch korrigiert werden. Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen für den\\*die Coach sind im [Lernbaustein J+S neu NDS]($coachneunds$).\nDer\\*die LL schliesst danach das Lager in der MiData ab, indem er\\*sie den Status auf «abgeschlossen» setzt.",
         "section": 12,
         "locale": "de",
         "published_at": "2022-01-22T11:11:30.450Z",
         "created_at": "2022-01-22T11:08:42.691Z",
-        "updated_at": "2022-01-23T22:07:11.531Z",
+        "updated_at": "2023-01-21T09:46:56.502Z",
         "key": null,
         "Sorting": null,
         "sorting": 702,
@@ -1712,12 +1712,12 @@
         "menu_name": "TN-Liste",
         "responsible": [
           {
-            "id": 1125,
+            "id": 1758,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1126,
+            "id": 1759,
             "label": null,
             "rolle": "C"
           }
@@ -1747,23 +1747,23 @@
       },
       {
         "id": 53,
-        "title": "Lagerabschluss in der SPORTdb",
-        "content": "Nach jedem Lager führt der*die Coach die sogenannte Anwesenheitskontrolle (AWK) durch, d. h. er\\*sie bearbeitet die TN-Liste in der  [SPORTdb]($sportdb$) gemäss der Liste, welche er von der\\*m LL nach dem Lager erhalten hat (siehe oben). Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen sind im Dokument  [SPORTdb Schritt für Schritt für J+S-Coaches]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten.\n>**Grobprogramm bei J+S-Lagern**  \nDas Grobprogramm muss vor oder nach der Durchführung des Lagers in die SPORTdb hochgeladen werden. Die Bewilligungs- und Kontrollinstanzen überprüfen die Programme stichprobenweise. Der Abschluss der Anwesenheitskontrolle (AWK) ist ohne Grobprogramm (Excel-, Word- oder PDF-File) nicht möglich.",
+        "title": "Lagerabschluss in der NDS",
+        "content": "Nach jedem Lager führt der*die Coach die sogenannte Anwesenheitskontrolle (AWK) durch, d. h. er\\*sie bearbeitet die TN-Liste in der [NDS]($nds$) gemäss der Liste, welche er von der\\*m LL nach dem Lager erhalten hat (siehe oben). Die genauen Arbeiten inklusive Schritt für Schritt Anleitungen sind im [Lernbaustein für Coach]($coachneunds$).\n>**Grobprogramm bei J+S-Lagern**  \nDas Grobprogramm muss vor oder nach der Durchführung des Lagers in die NDS hochgeladen werden. Die Bewilligungs- und Kontrollinstanzen überprüfen die Programme stichprobenweise. Der Abschluss der Anwesenheitskontrolle (AWK) ist ohne Grobprogramm (Excel-, Word- oder PDF-File) nicht möglich.",
         "section": 12,
         "locale": "de",
         "published_at": "2022-01-22T11:27:40.087Z",
         "created_at": "2022-01-22T11:26:55.455Z",
-        "updated_at": "2022-01-23T22:10:18.715Z",
+        "updated_at": "2023-01-21T09:52:34.931Z",
         "key": null,
         "Sorting": null,
         "sorting": 703,
-        "slug": "Lagerabschluss-in-der-SPORTdb",
+        "slug": "Lagerabschluss-in-der-NDS",
         "link": 26,
-        "slug_with_section": "Lagerabschluss#Lagerabschluss-in-der-SPORTdb",
-        "menu_name": "Lagerabschluss in der SPORTdb",
+        "slug_with_section": "Lagerabschluss#Lagerabschluss-in-der-NDS",
+        "menu_name": "Lagerabschluss in der NDS",
         "responsible": [
           {
-            "id": 1130,
+            "id": 1764,
             "label": null,
             "rolle": "C"
           }
@@ -1868,23 +1868,23 @@
     "chapters": [
       {
         "id": 40,
-        "title": "Abschluss des J+S-Angebots in der SPORTdb",
-        "content": "Nach dem letzten Lager wird ein automatisches Erinnerungsmail (Betreff: Erinnerung: Angebotsende in 30 Tagen) an den\\*die Coach gesendet. Er\\*sie muss das Angebot innerhalb von 30 Tagen nach dem letzten Lager abschliessen. Wichtig: Bevor das Angebot als Ganzes abgeschlossen wird, muss die IST-Daten-Erfassung, resp. AWK der einzelnen Lager abgeschlossen werden (d. h. der Status aller Lager ist «abgeschlossen»). \n\n- *Angebotsstatus «Abschlussverfahren»*: Im Status «Abschlussverfahren» wird das Angebot beim kantonalen Sportamt bearbeitet. Der Abrechnungsantrag von dem*der Coach an das kantonale Sportamt wird per E-Mail bestätigt. Ist das Angebot in Ordnung, wird die Auszahlung der J+S-Entschädigung bei J+S-Magglingen ausgelöst. Dies wird wiederum per E-Mail bestätigt (Betreff: Angebot Nr. XXXXXX zur Auszahlung weitergeleitet). \n- *Status «Abgeschlossen»*: Nach dem Abschlussverfahren durch das kantonale Sportamt wechselt das Angebot in den Status «abgeschlossen».\n\nDie genauen Arbeiten inklusive Schritt für Schritt Anleitungen sind im Dokument [SPORTdb Schritt für Schritt]($sportdb-schritt-fuer-schritt$) inklusive Bildern festgehalten.",
+        "title": "Abschluss des J+S-Angebots in der NDS",
+        "content": "Der\\*die Coach muss das Angebot innerhalb von 30 Tagen nach dem letzten Lager abschliessen. Wichtig: Bevor das Angebot als Ganzes abgeschlossen wird, muss die IST-Daten-Erfassung, resp. AWK der einzelnen Lager abgeschlossen werden (d. h. der Status aller Lager ist «Anwesenheitskontrolle abgeschlossen»). \n\n- *Angebotsstatus «Abschlussverfahren»*: Im Status «Abschlussverfahren» wird das Angebot beim kantonalen Sportamt bearbeitet. Der Abrechnungsantrag von dem*der Coach an das kantonale Sportamt wird per E-Mail bestätigt. Ist das Angebot in Ordnung, wird die Auszahlung der J+S-Entschädigung bei J+S-Magglingen ausgelöst. Dies wird wiederum per E-Mail bestätigt (Betreff: Angebot Nr. XXXXXX zur Auszahlung weitergeleitet). \n- *Status «Abgeschlossen»*: Nach dem Abschlussverfahren durch das kantonale Sportamt wechselt das Angebot in den Status «abgeschlossen».\n\nDie genauen Arbeiten inklusive Schritt für Schritt Anleitungen sind im [Lernbaustein]($coachneunds$) festgehalten.",
         "section": 14,
         "locale": "de",
         "published_at": "2022-01-22T10:29:00.147Z",
         "created_at": "2022-01-22T10:17:44.156Z",
-        "updated_at": "2022-01-23T02:07:18.936Z",
+        "updated_at": "2023-01-21T10:00:51.557Z",
         "key": null,
         "Sorting": null,
         "sorting": 801,
-        "slug": "Abschluss-des-J+S-Angebots-in-der-SPORTdb",
+        "slug": "Abschluss-des-J+S-Angebots-in-der-NDS",
         "link": null,
-        "slug_with_section": "Abschluss-des-J+S-Angebots#Abschluss-des-J+S-Angebots-in-der-SPORTdb",
-        "menu_name": "Abschluss SPORTdb",
+        "slug_with_section": "Abschluss-des-J+S-Angebots#Abschluss-des-J+S-Angebots-in-der-NDS",
+        "menu_name": "Abschluss NDS",
         "responsible": [
           {
-            "id": 1100,
+            "id": 1771,
             "label": null,
             "rolle": "C"
           }
