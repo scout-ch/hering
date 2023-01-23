@@ -15,8 +15,9 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import SectionPage from './pages/SectionPage';
 import ImpressumPage from './pages/ImpressumPage';
-import { setLocalData } from './helper/LocalDataHelper';
+// import { setLocalData } from './helper/LocalDataHelper';
 import { checkLinks } from './helper/LinkChecker';
+import client from './client';
 
 export type LinkT = {
   title: string
@@ -36,18 +37,18 @@ function App() {
   const lang = i18n.language
 
   React.useEffect(() => {
-    // const sectionsPromise = client.get('/sections?_sort=sorting:ASC&_locale=' + lang)
-    // const linksPromise = client.get('/links?_locale=' + lang)
-    // const startPagePromise = client.get('/start-page?_locale=' + lang)
-    // const calendarPromise = client.get('/calendar-page?_locale=' + lang)
+    const sectionsPromise = client.get('/sections?_sort=sorting:ASC&_locale=' + lang)
+    const linksPromise = client.get('/links?_locale=' + lang)
+    const startPagePromise = client.get('/start-page?_locale=' + lang)
+    const calendarPromise = client.get('/calendar-page?_locale=' + lang)
 
-    setLocalData(lang, setSections, setLinks, setStartPage, setCalendarPage);
-    // Promise.all([sectionsPromise, linksPromise, startPagePromise, calendarPromise]).then((values) => {
-    //   setSections(values[0].data)
-    //   setLinks(values[1].data)
-    //   setStartPage(values[2].data)
-    //   setCalendarPage(values[3].data)
-    // })
+    // setLocalData(lang, setSections, setLinks, setStartPage, setCalendarPage);
+    Promise.all([sectionsPromise, linksPromise, startPagePromise, calendarPromise]).then((values) => {
+      setSections(values[0].data)
+      setLinks(values[1].data)
+      setStartPage(values[2].data)
+      setCalendarPage(values[3].data)
+    })
   }, [lang])
 
   useEffect(() => {
