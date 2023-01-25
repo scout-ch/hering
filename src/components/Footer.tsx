@@ -6,7 +6,8 @@ import i18n from './../i18n';
 // import client from "./../client";
 import { Link, useHistory, useLocation } from 'react-router-dom'
 import { SectionT } from './Section';
-import { getLocalSectionData } from '../helper/LocalDataHelper';
+// import { getLocalSectionData } from '../helper/LocalDataHelper';
+import client from '../client';
 
 
 const Button = styled.button`
@@ -39,8 +40,8 @@ function Footer(props: Props) {
         redirect = true
         return
       }
-      // client.get('/sections?_sort=sorting:ASC&_locale=' + lang).then((response: { data: any }) => {
-        const newSections = getLocalSectionData(lang)
+      client.get('/sections?_sort=sorting:ASC&_locale=' + lang).then((response: { data: any }) => {
+        // const newSections = getLocalSectionData(lang)
         if (currentSection) {
           const otherSection = currentSection['localizations'].find((l: any) => { return l.locale === lang })
           // @ts-ignore
@@ -50,11 +51,11 @@ function Footer(props: Props) {
             history.push('/' + newCurrentSection.slug)
           }
         }
-      // }).finally(() => {
+      }).finally(() => {
         if (!redirect) {
           history.push('/')
         }
-      // })
+      })
     });
   }
   const location = useLocation();
