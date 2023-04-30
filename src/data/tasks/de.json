@@ -169,13 +169,13 @@
   },
   {
     "id": 6,
-    "title": "Jugendurlaub inizieren",
+    "title": "Jugendurlaub initiieren",
     "days": -77,
     "locale": "de",
     "published_at": "2021-11-21T07:48:39.294Z",
     "created_at": "2021-11-21T07:48:07.205Z",
     "updated_at": "2021-11-21T07:52:40.178Z",
-    "Slug": "Jugendurlaub-inizieren",
+    "Slug": "Jugendurlaub-initiieren",
     "responsible": [
       {
         "id": 1442,
@@ -463,13 +463,13 @@
   },
   {
     "id": 9,
-    "title": "Lageranmeldung PBS iniziieren",
+    "title": "Lageranmeldung PBS initiieren",
     "days": -49,
     "locale": "de",
     "published_at": "2021-11-21T07:55:46.666Z",
     "created_at": "2021-11-21T07:55:27.988Z",
     "updated_at": "2022-01-22T16:49:28.171Z",
-    "Slug": "Lageranmeldung-PBS-iniziieren",
+    "Slug": "Lageranmeldung-PBS-initiieren",
     "responsible": [
       {
         "id": 1451,
