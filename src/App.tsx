@@ -15,7 +15,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import SectionPage from './pages/SectionPage';
 import ImpressumPage from './pages/ImpressumPage';
-// import { setLocalData } from './helper/LocalDataHelper';
+import {setSearchLocalData} from './helper/LocalDataHelper';
 import { checkLinks } from './helper/LinkChecker';
 import client from './client';
 import SearchPage from './pages/SearchPage';
@@ -35,6 +35,7 @@ function App() {
   const [links, setLinks] = React.useState(null);
   const [startPage, setStartPage] = React.useState(null);
   const [calendarPage, setCalendarPage] = React.useState(null);
+  const [searchPage, setSearchPage] = React.useState(null);
   const lang = i18n.language
 
   React.useEffect(() => {
@@ -44,6 +45,7 @@ function App() {
     const calendarPromise = client.get('/calendar-page?_locale=' + lang)
 
     // setLocalData(lang, setSections, setLinks, setStartPage, setCalendarPage);
+    setSearchLocalData(lang, setSearchPage)
     Promise.all([sectionsPromise, linksPromise, startPagePromise, calendarPromise]).then((values) => {
       setSections(values[0].data)
       setLinks(values[1].data)

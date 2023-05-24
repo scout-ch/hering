@@ -53,6 +53,14 @@ export function setLocalData(lang: string, setSections: React.Dispatch<React.Set
   }
 }
 
+export function setSearchLocalData(lang: string, setSearchPage: React.Dispatch<React.SetStateAction<null>>) {
+  if (lang === 'de') {
+    // @ts-ignore
+    setSearchPage(searchPageDE);
+  }
+}
+
+
 export function getLocalSectionData(lang: string): SectionT[] {
   if (lang === 'de') {
     return sectionsDE
