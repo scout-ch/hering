@@ -5,9 +5,10 @@ import i18n from '../i18n';
 import CalendarTable from './CalendarTable';
 import { ChapterT } from './Chapter';
 import { TaskT } from './Task';
-import tasksFR from './../data/tasks/fr.json'
-import tasksDE from './../data/tasks/de.json'
-import tasksIT from './../data/tasks/it.json'
+// import tasksFR from './../data/tasks/fr.json'
+// import tasksDE from './../data/tasks/de.json'
+// import tasksIT from './../data/tasks/it.json'
+import client from '../client';
 
 type Props = {
   t: any
@@ -48,23 +49,23 @@ class CalendarForm extends React.Component<Props, MyState> {
   }
 
   componentDidMount() {
-    // client.get('/tasks?_locale=' + i18n.language).then((response) => {
-    //   this.setState({ taskList: response.data })
-    // })
-    switch (i18n.language) {
-      case 'fr':
-        // @ts-ignore
-        return this.setState({ taskList:  tasksFR})
-      case 'de':
-        // @ts-ignore
-        return this.setState({ taskList:  tasksDE})
-      case 'it':
-        // @ts-ignore
-        return this.setState({ taskList:  tasksIT})
-      default:
-        // @ts-ignore
-        this.setState({ taskList:  tasksDE})
-    }
+    client.get('/tasks?_locale=' + i18n.language).then((response) => {
+      this.setState({ taskList: response.data })
+    })
+    // switch (i18n.language) {
+    //   case 'fr':
+    //     // @ts-ignore
+    //     return this.setState({ taskList:  tasksFR})
+    //   case 'de':
+    //     // @ts-ignore
+    //     return this.setState({ taskList:  tasksDE})
+    //   case 'it':
+    //     // @ts-ignore
+    //     return this.setState({ taskList:  tasksIT})
+    //   default:
+    //     // @ts-ignore
+    //     this.setState({ taskList:  tasksDE})
+    // }
   }
 
   onChangeStartDate = (e: React.FormEvent<HTMLInputElement>): void => {

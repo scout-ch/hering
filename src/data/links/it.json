@@ -21,13 +21,6 @@
     "slug": ""
   },
   {
-    "id": 241,
-    "key": "chapter-tns-selbstaendig",
-    "title": "TNs melden sich selbständig für Lager an",
-    "link": null,
-    "slug": "Amministrazione-dei-partecipanti#I-partecipanti-si-iscrivono-autonomamente-al-campo"
-  },
-  {
     "id": 59,
     "key": "js-angebotsleitfaden",
     "title": " Guida per lo svolgimento delle offerte G+S SC/T",
@@ -63,11 +56,25 @@
     "slug": ""
   },
   {
+    "id": 244,
+    "key": "github",
+    "title": "GitHub",
+    "link": "https://github.com/scout-ch/hering",
+    "slug": ""
+  },
+  {
     "id": 179,
     "key": "voila",
     "title": "Voila",
     "link": "http://www.voila.ch/de/",
     "slug": ""
+  },
+  {
+    "id": 241,
+    "key": "chapter-tns-selbstaendig",
+    "title": "TNs melden sich selbständig für Lager an",
+    "link": null,
+    "slug": "Amministrazione-dei-partecipanti#I-partecipanti-si-iscrivono-autonomamente-al-campo"
   },
   {
     "id": 43,
@@ -82,13 +89,6 @@
     "title": "Attività nei settori di sicurezza",
     "link": null,
     "slug": "Dossier-del-campo#Attivita-nei-settori-di-sicurezza"
-  },
-  {
-    "id": 47,
-    "key": "sportdb",
-    "title": "SPORTdb",
-    "link": "https://www.sportdb.ch/",
-    "slug": ""
   },
   {
     "id": 49,
@@ -224,10 +224,10 @@
     "slug": ""
   },
   {
-    "id": 145,
-    "key": "sbb-gruppenreiserechner",
-    "title": "SBB Gruppenreiserechner",
-    "link": "https://www.sbb.ch/it/acquistare/pages/grouptravel/group.xhtml",
+    "id": 183,
+    "key": "ecamp",
+    "title": "eCamp",
+    "link": "https://ecamp.pfadiluzern.ch/login.php",
     "slug": ""
   },
   {
@@ -252,13 +252,6 @@
     "slug": ""
   },
   {
-    "id": 158,
-    "key": "tn-administration-midata",
-    "title": "Administration der TN in der MiData",
-    "link": null,
-    "slug": "Amministrazione-dei-partecipanti#Aggiungere-e-cancellare-dei-partecipanti-nella-lista-dei-partecipanti-nella-MiData"
-  },
-  {
     "id": 112,
     "key": "formular-js-leihmaterial",
     "title": "Formulare ordinazione di materiale in prestito G+S",
@@ -273,25 +266,11 @@
     "slug": ""
   },
   {
-    "id": 166,
-    "key": "lagerabschluss-sportdb",
-    "title": "Chiusura dell'offerta G+S in SPORTdb",
-    "link": null,
-    "slug": "Chiusura-dell'offerta-G+S#Chiusura-dell'offerta-G+S-in-SPORTdb"
-  },
-  {
     "id": 164,
     "key": "landeskartenretour",
     "title": "Cartine topografiche",
     "link": null,
     "slug": "Chiusura-del-campo#Restituzione-cartine-topografiche"
-  },
-  {
-    "id": 168,
-    "key": "lageranmeldung",
-    "title": "Annuncio di campo MSS",
-    "link": null,
-    "slug": "Annuncio-di-campo#Annuncio-di-campo-MSS"
   },
   {
     "id": 176,
@@ -308,6 +287,13 @@
     "slug": ""
   },
   {
+    "id": 168,
+    "key": "lageranmeldung",
+    "title": "Annuncio di campo MSS",
+    "link": null,
+    "slug": "Annuncio-di-campo#Annuncio-di-campo-MSS"
+  },
+  {
     "id": 174,
     "key": "rega",
     "title": "Copertura Rega",
@@ -315,11 +301,11 @@
     "slug": "Ordinare-prestazioni#Copertura-Rega"
   },
   {
-    "id": 178,
-    "key": "lagerdaten-formular",
-    "title": "Dati necessari per la SPORTdb",
-    "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/252/dati-necessari-per-la-sportdb/",
-    "slug": ""
+    "id": 158,
+    "key": "tn-administration-midata",
+    "title": "Administration der TN in der MiData",
+    "link": null,
+    "slug": "Amministrazione-dei-partecipanti#Aggiungere-e-cancellare-dei-partecipanti-nella-lista-dei-partecipanti-nella-MiData"
   },
   {
     "id": 181,
@@ -343,25 +329,11 @@
     "slug": ""
   },
   {
-    "id": 193,
-    "key": "team-erfassen-midata-kapitel",
-    "title": "Aggiunta di animatori/trici",
-    "link": null,
-    "slug": "Preparazione#Registrare-gli-animatori-ed-i-cuochi-in-MiData"
-  },
-  {
     "id": 170,
     "key": "lagerbewilligung-kapitel",
     "title": "Autorizzazione del campo",
     "link": null,
     "slug": "Autorizzazione-del-campo#Autorizzazione-del-campo"
-  },
-  {
-    "id": 199,
-    "key": "jugendurlaub",
-    "title": "Congedo giovanile",
-    "link": "http://congedogiovanile.ch/",
-    "slug": ""
   },
   {
     "id": 195,
@@ -413,18 +385,18 @@
     "slug": "Preparazione#Aprire-un-campo-nella-MiData-e-assegnare-il-CC-e-Coach"
   },
   {
-    "id": 183,
-    "key": "ecamp",
-    "title": "eCamp",
-    "link": "https://ecamp.pfadiluzern.ch/login.php",
-    "slug": ""
+    "id": 193,
+    "key": "team-erfassen-midata-kapitel",
+    "title": "Aggiunta di animatori/trici",
+    "link": null,
+    "slug": "Preparazione#Registrare-gli-animatori-ed-i-cuochi-in-MiData"
   },
   {
-    "id": 220,
-    "key": "landeskarten",
-    "title": "Ordinazione di cartine topografiche Swisstopo",
-    "link": null,
-    "slug": "Ordinare-prestazioni#Ordinazione-di-cartine-topografiche-Swisstopo"
+    "id": 199,
+    "key": "jugendurlaub",
+    "title": "Congedo giovanile",
+    "link": "https://www.sajv.ch/it/servizi-1/congedo-giovanile-anche-per-te",
+    "slug": ""
   },
   {
     "id": 222,
@@ -446,5 +418,61 @@
     "title": "Richtlinien VD",
     "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/25/linee-guida-per-i-campi-nel-cantone-di-vaud/",
     "slug": ""
+  },
+  {
+    "id": 47,
+    "key": "nds",
+    "title": "BDNS",
+    "link": "https://www.nds.baspo.admin.ch/#/startpage/dashboard",
+    "slug": ""
+  },
+  {
+    "id": 251,
+    "key": "neundslagerleitende",
+    "title": "Modulo di apprendimento: monitori",
+    "link": "https://rise.articulate.com/share/VD0Qs8mgXfJfF1yi8il_DaJ_ngUaQynw",
+    "slug": ""
+  },
+  {
+    "id": 145,
+    "key": "sbb-gruppenbillet",
+    "title": "SBB Gruppenreiserechner",
+    "link": "https://www.sbb.ch/it/abbonamenti-e-biglietti/biglietti-svizzera/biglietti-per-gruppi.html",
+    "slug": ""
+  },
+  {
+    "id": 252,
+    "key": "coachneunds",
+    "title": "Modulo di apprendimento - Coach",
+    "link": "https://rise.articulate.com/share/R8X0MwCczr3X2boIQl237N4zZGkh7uS_#/",
+    "slug": ""
+  },
+  {
+    "id": 178,
+    "key": "lagerdaten-formular",
+    "title": "Dati necessari per la BDNS",
+    "link": "https://pfadi.swiss/it/pubblicazioni-downloads/downloads/detail/252/dati-necessari-per-la-sportdb/",
+    "slug": ""
+  },
+  {
+    "id": 220,
+    "key": "landeskarten",
+    "title": "Ordinazione di cartine topografiche Swisstopo",
+    "link": null,
+    "slug": "Ordinare-prestazioni#Ordinazione-di-cartine-topografiche-Swisstopo"
+  },
+  {
+    "id": 255,
+    "key": "sbb-tageskarten",
+    "title": "Carta giornaliera per le scuole",
+    "link": "https://www.sbb.ch/it/abbonamenti-e-biglietti/biglietti-svizzera/carta-giornaliera/carta-giornaliera-per-scuole.html",
+    "slug": ""
+  },
+  {
+    "id": 166,
+    "key": "lagerabschluss-nds",
+    "title": "Chiusura dell'offerta G+S in BDNS",
+    "link": null,
+    "slug": "Chiusura-dell'offerta-G+S#Chiusura-dell'offerta-G+S-in-BDNS"
   }
 ]

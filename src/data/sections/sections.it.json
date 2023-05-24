@@ -17,12 +17,12 @@
       {
         "id": 110,
         "title": "Condizioni quadro per campi (con o senza G+S)",
-        "content": "I campi scout possono svolgersi con o senza annuncio G+S. Tutti i campi scout, con o senza G+S, della durata di 3 o più giorni vengono annunciati all’Associazione Cantonale e al MSS via [MiData]($midata$) (vedere [Annuncio di campo MSS]($lageranmeldung$)). Per l’autorizzazione del campo si utilizza [Autorizzazione del campo MSS]($lagerbewilligung-kapitel$). Questa è formata dall’autorizzazione del campo (PAG. 1) e dalla lista di controllo (PAG.2), che serve a chi aiuta come base per l’autorizzazione del programma del campo. Le disposizioni fondamentali per tutti i campi scout si trovano nel [Regolamento sulla preparazione e lo svolgimento dei campi MSS]($lagerreglement$). \nPer i campi annunciati a G+S ci sono disposizioni supplementari. Se un campo adempie queste richieste la sezione viene ripagata con una somma forfettaria. I contributi attualmente in vigore si trovano nel documento [Guida per il coach G+S]($js-coachleitfaden$). Hanno diritto ad un’indennità le persone in età G+S che sono coperte da un/una animatore/trice G+S. Tutte le norme per lo svolgimento di campi G+S si trovano in [Linee guida per lo svolgimento delle offerte G+S Sport di campo /Trekking]($js-angebotsleitfaden$). Il programma di massima di ogni campo G+S deve venir caricato dal/dalla coach prima della [chiusura del campo in SPORTdb]($lagerabschluss-sportdb$). L’ufficio cantonale dello sport può eseguire dei controlli a campione in cui viene controllato il programma. Può anche richiedere il programma dettagliato del campo per un controllo. \nTutti i campi di una sezione che vengono svolti durante un anno vengono inseriti dal coach nella [SPORTdb]($sportdb$) quale offerta di G+S. Per questi campi ci sono condizioni particolarmente favorevoli per:\n- [il materiale in prestito di G+S]($js-leihmaterial$)\n- [le cartine nazionali]($landeskarten$)\n- [le assicurazioni Rega]($rega$)\n",
+        "content": "I campi scout possono svolgersi con o senza annuncio G+S. Tutti i campi scout, con o senza G+S, della durata di 3 o più giorni vengono annunciati all’Associazione Cantonale e al MSS via [MiData]($midata$) (vedere [Annuncio di campo MSS]($lageranmeldung$)). Per l’autorizzazione del campo si utilizza [Autorizzazione del campo MSS]($lagerbewilligung-kapitel$). Questa è formata dall’autorizzazione del campo (PAG. 1) e dalla lista di controllo (PAG.2), che serve a chi aiuta come base per l’autorizzazione del programma del campo. Le disposizioni fondamentali per tutti i campi scout si trovano nel [Regolamento sulla preparazione e lo svolgimento dei campi MSS]($lagerreglement$). \nPer i campi annunciati a G+S ci sono disposizioni supplementari. Se un campo adempie queste richieste la sezione viene ripagata con una somma forfettaria. I contributi attualmente in vigore si trovano nel documento [Guida per il coach G+S]($js-coachleitfaden$). Hanno diritto ad un’indennità le persone in età G+S che sono coperte da un/una animatore/trice G+S. Tutte le norme per lo svolgimento di campi G+S si trovano in [Linee guida per lo svolgimento delle offerte G+S Sport di campo /Trekking]($js-angebotsleitfaden$). Il programma di massima di ogni campo G+S deve venir caricato dal/dalla coach prima della [chiusura del campo in BDNS]($lagerabschluss-nds$). L’ufficio cantonale dello sport può eseguire dei controlli a campione in cui viene controllato il programma. Può anche richiedere il programma dettagliato del campo per un controllo. \nTutti i campi di una sezione che vengono svolti durante un anno vengono inseriti dal coach nella [BDNS]($nds$) quale offerta di G+S. Per questi campi ci sono condizioni particolarmente favorevoli per:\n- [il materiale in prestito di G+S]($js-leihmaterial$)\n- [le cartine nazionali]($landeskarten$)\n- [le assicurazioni Rega]($rega$)\n",
         "section": 25,
         "locale": "it",
         "published_at": "2022-01-23T20:11:43.393Z",
         "created_at": "2022-01-23T20:11:40.682Z",
-        "updated_at": "2022-01-23T20:11:43.430Z",
+        "updated_at": "2023-01-19T12:46:52.559Z",
         "key": null,
         "Sorting": null,
         "sorting": 101,
@@ -32,17 +32,17 @@
         "menu_name": "Condizioni quadro per campi",
         "responsible": [
           {
-            "id": 1382,
+            "id": 1531,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1383,
+            "id": 1532,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1384,
+            "id": 1534,
             "label": null,
             "rolle": "C"
           }
@@ -73,12 +73,12 @@
       {
         "id": 112,
         "title": "Dati del campo",
-        "content": "All’inizio dell’anno CC e CSZ decidono assieme quale campi vogliono organizzare durante l’anno. Redigono una lista con tutte le informazioni necessarie alla sezione ed ai campi. CC e CSZ decidono pure quale campo annunciare sotto G+S. Per avere tutti i dati in un solo posto si può utilizzare il formulario [Dati necessari per la SPORTdb]($lagerdaten-formular$). Così ci si assicura che i dati siano completi. CC e CSZ danno al coach ad inizio anno la lista con le indicazioni sui campi pianificati. \nDi seguito alcune spiegazioni sul formulario:\n1. «Conto per il pagamento del forfait G+S»: qui si indica il conto della sezione. I contributi G+S vengono versati unicamente su un conto bancale o postale svizzero di un’associazione. È pertanto assolutamente necessaria l’indicazione di un IBAN valevole. Dopo il calcolo dell’offerta G+S alla fine dell’anno i contributi G+S saranno versati su questo conto.\n2. «Tipo di sport G+S»: «Sport per bambini» corrisponde alla branca lupetti e si sceglie per campi con partecipanti tra i 6 ed i 10 anni. «Sport per giovani» corrisponde alle branche esploratori o pionieri con partecipanti tra i 10 ed i 20 anni. In un campo misto possono venir accettati partecipanti tra i 6 ed i 20 anni. Nelle branche lupetti si può verificare l’opzione di un campo misto se si hanno le qualifiche, in modo che anche i partecipanti di 11 anni ricevano i contributi. Secondo il regolamento del MSS non si possono organizzare campi per i castori.\n3. «Numero di partecipanti pianificato»: questo numero probabilmente non si conosce ancora. Perciò qui si dà solo un’indicazione di massima. Il numero può venir corretto più tardi.\n4. «Numero di accompagnatori pianificati»: con accompagnatori si intendono persone che saranno presenti al campo oltre ai monitori G+S qualificati.\n5. «Attività soggette a sicurezza pianificate»: indicazioni provvisorie che possono essere corrette più tardi. Se però si sa già che si prevede un’[attività soggetta a sicurezza]($sicherheitsbereich$) il coach può già cercare un accompagnatore per questa attività.\n6. «NAP/Luogo» e «data di nascita»: necessaria solo per animatori/trici che in sezione sono per la prima volta monitrici/tori G+S, in modo che il/la coach li/le possa registrare. È importante che venga indicata la data di nascita completa e non solo l’anno di nascita. Il totem è pensato unicamente come aiuto per il/la coach e non è necessario per la [SPORTdb]($sportdb$).\n\n![Screenshot-Lagerdaten-it.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643651408/hering/Screenshot_Lagerdaten_fr_32301ee856.png)",
+        "content": "All’inizio dell’anno CC e CSZ decidono assieme quale campi vogliono organizzare durante l’anno. Redigono una lista con tutte le informazioni necessarie alla sezione ed ai campi. CC e CSZ decidono pure quale campo annunciare sotto G+S. Per avere tutti i dati in un solo posto si può utilizzare il formulario [Dati necessari per la BDNS]($lagerdaten-formular$). Così ci si assicura che i dati siano completi. CC e CSZ danno al coach ad inizio anno la lista con le indicazioni sui campi pianificati. \nDi seguito alcune spiegazioni sul formulario:\n1. «Conto per il pagamento del forfait G+S»: qui si indica il conto della sezione. I contributi G+S vengono versati unicamente su un conto bancale o postale svizzero di un’associazione. È pertanto assolutamente necessaria l’indicazione di un IBAN valevole. Dopo il calcolo dell’offerta G+S alla fine dell’anno i contributi G+S saranno versati su questo conto.\n2. «Tipo di sport G+S»: «Bambini» corrisponde alla branca lupetti e si sceglie per campi con partecipanti tra i 6 ed i 10 anni. «Giovani» corrisponde alle branche esploratori o pionieri con partecipanti tra i 10 ed i 20 anni. In un campo misto possono venir accettati partecipanti tra i 6 ed i 20 anni. Nelle branche lupetti si può verificare l’opzione di un campo misto se si hanno le qualifiche, in modo che anche i partecipanti di 11 anni ricevano i contributi. Secondo il regolamento del MSS non si possono organizzare campi per i castori.\n3. «Numero di partecipanti pianificato»: questo numero probabilmente non si conosce ancora. Perciò qui si dà solo un’indicazione di massima. Il numero può venir corretto più tardi.\n4. «Numero di accompagnatori pianificati»: con accompagnatori si intendono persone che saranno presenti al campo oltre ai monitori G+S qualificati.\n5. «Attività soggette a sicurezza pianificate»: indicazioni provvisorie che possono essere corrette più tardi. Se però si sa già che si prevede un’[attività soggetta a sicurezza]($sicherheitsbereich$) il coach può già cercare un accompagnatore per questa attività.\n6. «NAP/Luogo» e «data di nascita»: necessaria solo per animatori/trici che in sezione sono per la prima volta monitrici/tori G+S, in modo che il/la coach li/le possa registrare. È importante che venga indicata la data di nascita completa e non solo l’anno di nascita. Il totem è pensato unicamente come aiuto per il/la coach e non è necessario per la [BDNS]($nds$).\n\n![Screenshot-Lagerdaten-it.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1643651408/hering/Screenshot_Lagerdaten_fr_32301ee856.png)",
         "section": 25,
         "locale": "it",
         "published_at": "2022-01-23T21:12:45.391Z",
         "created_at": "2022-01-23T21:12:43.501Z",
-        "updated_at": "2022-01-31T17:52:07.795Z",
+        "updated_at": "2023-01-19T12:54:57.429Z",
         "key": null,
         "Sorting": null,
         "sorting": 102,
@@ -88,17 +88,17 @@
         "menu_name": "Dati del campo",
         "responsible": [
           {
-            "id": 1355,
+            "id": 1567,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1356,
+            "id": 1568,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1357,
+            "id": 1570,
             "label": null,
             "rolle": "C"
           }
@@ -144,7 +144,7 @@
         "menu_name": "Voilà",
         "responsible": [
           {
-            "id": 1072,
+            "id": 1573,
             "label": null,
             "rolle": "LL"
           }
@@ -236,7 +236,7 @@
         "menu_name": "eCamp",
         "responsible": [
           {
-            "id": 1087,
+            "id": 1575,
             "label": null,
             "rolle": "LL"
           }
@@ -282,7 +282,7 @@
         "menu_name": "Aprire un campo",
         "responsible": [
           {
-            "id": 1370,
+            "id": 1577,
             "label": null,
             "rolle": "AL"
           }
@@ -313,12 +313,12 @@
       {
         "id": 121,
         "title": "Amministrare con MiData i campi che coinvolgono più di un’unità",
-        "content": "Se diverse unità effettuano assieme un campo può fare senso rilevare il campo in maniera gerarchica. In questo modo un numero a piacere di campi possono venir subordinati ad un campo superiore. Soprattutto l’amministrazione dei partecipanti può in questo modo venir semplificata massicciamente ed il/la CC del campo superiore può vedere tutti i partecipanti. Dal momento che le informazioni del campo principale possono venir copiate nel relativo sottocampo unicamente una volta è centrale la sequenza dei passi descritta.\n\n### Creare il campo principale\nCome prima cosa viene rilevato il campo principale analogamente al processo nel capitolo [Aprire un campo nella MiData e assegnare il CC e Coach]($midata-lager-eroeffnen$). Lo stato rimane ancora „creato“ in quanto solo così possono venir subordinati altri campi a questo. \nÈ da notare che molte delle informazioni inserite qui vengono passate ai sottocampi. Perciò vale la pena inserire il campo in modo corretto sin dall’inizio. Se l’informazione per uno dei campi non è ancora conosciuta il campo dovrebbe venir riempito con un segnaposto (p.es.: “L’informazione seguirà”). In particolare i seguenti campi devono venir scelti consapevolmente prima che i campi associati vengano permessi:\n- Nome  \n- Data  \n- Luogo, indirizzo  \n- Costi  \n- Quadro G+S  \n- Settori di sicurezza  \n\n> Se dai partecipanti al campo ci si apetta dei dati di iscrizione o di contatto particolari (vedi capitolo [I partecipanti si iscrivono autonomamente al campo]($tn-anmeldung-kapitel$)), anche questi devono già venir rilevati. Se qui ci si dovesse dimenticare qualcosa l’informazione dovrà poi venir inserita manualmente da tutti i sottocampi.\n\n### Permettere dei campi subordinati\nAppena i punti i punti più importanti sono definiti e salvati viene attivato il checkbox “permettere campi subordinati” ed il campo viene salvato. A partire da questo momento il campo viene mostrato nella lista dei possibili campi subordinati.\n\n### Creare e connettere un campo subordinato\nPer ogni campo subordinato viene ripetuto il seguente processo:\n- Creare il campo aul livello dei relativi partecipanti\n- Non riempire ancora nessun campo (questi vengono sovrascritti al momento in cui vengono connessi)\n- Nella gerarchia dei campi scegliere “Connettere al campo superiore”\n- Trovare e scegliere il campo superiore desiderato nella lista oppure tramite la ricerca di testo\n- Confermare\n- Salvare (solo in questo modo il campo viene subordinato).\n- Chiudere l‘elaborazione\n\nLa maggior parte delle informazioni del campo principale dovrebbero essere presenti ora anche nel campo subordinato. Sono esclusi “Stato del campo”, “Descrizione”, “Numero massimo di partecipanti” e “Numero di partecipanti previsto”. Data e luogo dovrebbero venir controllati brevemente per essere sicuri di aver scelto il campo giusto. Se nel campo “Date” ci sono troppi blocchi con denominazione, luogo e data bisogna cancellare quelli sbagliati.\n\n### Concludere al fase di iscrizione\nAppena tutti i sottocampi vengono collegati lo stato del campo principale può venir cambiato da “Ccreato” a “Confermato”. Ora non può più venir subordinato nessun campo ed i sottocampi esistenti non possono più cambiare nessuno dei dati necessari all’iscrizione al campo principale.\nLa struttura è fissa ed i partecipanti possono iscriversi ai sottocampi.\n",
+        "content": "Se diverse unità effettuano assieme un campo può fare senso rilevare il campo in maniera gerarchica. In questo modo un numero a piacere di campi possono venir subordinati ad un campo superiore. Soprattutto l’amministrazione dei partecipanti può in questo modo venir semplificata massicciamente ed il/la CC del campo superiore può vedere tutti i partecipanti. Dal momento che le informazioni del campo principale possono venir copiate nel relativo sottocampo unicamente una volta è centrale la sequenza dei passi descritta.\n\n### Creare il campo principale\nCome prima cosa viene rilevato il campo principale analogamente al processo nel capitolo [Aprire un campo nella MiData e assegnare il CC e Coach]($midata-lager-eroeffnen$). Lo stato rimane ancora „creato“ in quanto solo così possono venir subordinati altri campi a questo. \nÈ da notare che molte delle informazioni inserite qui vengono passate ai sottocampi. Perciò vale la pena inserire il campo in modo corretto sin dall’inizio. Se l’informazione per uno dei campi non è ancora conosciuta il campo dovrebbe venir riempito con un segnaposto (p.es.: “L’informazione seguirà”). In particolare i seguenti campi devono venir scelti consapevolmente prima che i campi associati vengano permessi:\n- Nome  \n- Data  \n- Luogo, indirizzo  \n- Costi  \n- Quadro G+S  \n- Settori di sicurezza  \n\n> Se dai partecipanti al campo ci si apetta dei dati di iscrizione o di contatto particolari (vedi capitolo [I partecipanti si iscrivono autonomamente al campo]($tn-anmeldung-kapitel$)), anche questi devono già venir rilevati. Se qui ci si dovesse dimenticare qualcosa l’informazione dovrà poi venir inserita manualmente da tutti i sottocampi.\n\n### Permettere dei campi subordinati\nNon appena i punti più importanti sono stati definiti e salvati, è necessario attivare la casella di controllo \"Consenti campi subordinati\" e salvare il campo. A partire da questo momento il campo viene mostrato nella lista dei possibili campi subordinati.\n\n### Creare e connettere un campo subordinato\nPer ogni campo subordinato viene ripetuto il seguente processo:\n- Creare il campo aul livello dei relativi partecipanti\n- Non riempire ancora nessun campo (questi vengono sovrascritti al momento in cui vengono connessi)\n- Nella gerarchia dei campi scegliere “Connettere al campo superiore”\n- Trovare e scegliere il campo superiore desiderato nella lista oppure tramite la ricerca di testo\n- Confermare\n- Salvare (solo in questo modo il campo viene subordinato).\n- Chiudere l‘elaborazione\n\nLa maggior parte delle informazioni del campo principale dovrebbero essere presenti ora anche nel campo subordinato. Sono esclusi “Stato del campo”, “Descrizione”, “Numero massimo di partecipanti” e “Numero di partecipanti previsto”. Data e luogo dovrebbero venir controllati brevemente per essere sicuri di aver scelto il campo giusto. Se nel campo “Date” ci sono troppi blocchi con denominazione, luogo e data bisogna cancellare quelli sbagliati.\n\n### Concludere al fase di iscrizione\nAppena tutti i sottocampi vengono collegati lo stato del campo principale può venir cambiato da “Ccreato” a “Confermato”. Ora non può più venir subordinato nessun campo ed i sottocampi esistenti non possono più cambiare nessuno dei dati necessari all’iscrizione al campo principale.\nLa struttura è fissa ed i partecipanti possono iscriversi ai sottocampi.\n",
         "section": 25,
         "locale": "it",
         "published_at": "2022-01-23T22:31:56.557Z",
         "created_at": "2022-01-23T22:31:52.135Z",
-        "updated_at": "2022-01-23T23:32:44.389Z",
+        "updated_at": "2023-01-19T13:10:49.743Z",
         "key": null,
         "Sorting": null,
         "sorting": 107,
@@ -328,12 +328,12 @@
         "menu_name": "Amministrare con MiData i campi che coinvolgono più di un’unità",
         "responsible": [
           {
-            "id": 1171,
+            "id": 1602,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1172,
+            "id": 1603,
             "label": null,
             "rolle": "LL"
           }
@@ -364,12 +364,12 @@
       {
         "id": 123,
         "title": "Registrare gli animatori ed i cuochi in MiData ",
-        "content": "Gli altri animatori possono essere aggiunti sia dal/dalla CSZ, sia dal/dalla Capo Campo registrato/a. Il team cucina deve anche essere registrato affinché il/la coach lo possa registrare semplicemente nella SPORTdb per l’[assicurazione Rega]($rega$).\n1. Selezionare l'ambito “campi”\n2. Selezionare il campo desiderato già registrato\n3. Cliccare sui partecipanti\n4. Cliccare sugli animatori del campo\n5. Aggiungere una persona e selezionare il tipo desiderato\n6. Nel campo \"Cercare persona\" immettere il nome e selezionare la persona desiderata. Nel campo \"Designazione\" immettere la designazione concreta (ad es. monitori) e cliccare su \"Salva\".",
+        "content": "Gli altri animatori possono essere aggiunti sia dal/dalla CSZ, sia dal/dalla Capo Campo registrato/a. Il team cucina deve anche essere registrato affinché il/la coach lo possa registrare semplicemente nella BDNS per l’[assicurazione Rega]($rega$).\n1. Selezionare l'ambito “campi”\n2. Selezionare il campo desiderato già registrato\n3. Cliccare sui partecipanti\n4. Cliccare sugli animatori del campo\n5. Aggiungere una persona e selezionare il tipo desiderato\n6. Nel campo \"Cercare persona\" immettere il nome e selezionare la persona desiderata. Nel campo \"Designazione\" immettere la designazione concreta (ad es. monitori) e cliccare su \"Salva\".",
         "section": 25,
         "locale": "it",
         "published_at": "2022-01-23T22:36:20.710Z",
         "created_at": "2022-01-23T22:36:19.078Z",
-        "updated_at": "2022-01-23T22:43:10.288Z",
+        "updated_at": "2023-01-19T13:16:44.575Z",
         "key": null,
         "Sorting": null,
         "sorting": 108,
@@ -379,12 +379,12 @@
         "menu_name": "Registrare gli animatori ed i cuochi in MiData ",
         "responsible": [
           {
-            "id": 1225,
+            "id": 1614,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1226,
+            "id": 1616,
             "label": null,
             "rolle": "AL"
           }
@@ -414,23 +414,23 @@
       },
       {
         "id": 126,
-        "title": "Annuncio del campo a G+S tramite SPORTdb",
+        "title": "Annuncio del campo a G+S tramite BDNS",
         "content": "Il/la coach annuncia a G+S tutti i campi della sezione assieme quale offerta. Questo annuncio viene fatto online nella banca dati [SPORTdb]($sportdb$). Il/la Coach riceve l’accesso a SPORTdb dall’ AC.\n\n### Apertura dell’offerta G+S\nAll’inizio dell’anno è necessario aprire una nuova offerta in SPORTdb (Amministrazione dell’offerta → *Creare una nuova offerta*), in cui vengono registrati tutti i campi G+S. Per ogni sezione viene aperta solo un’offerta.\nDopo l’apertura è possibile accedere all’offerta sotto *Amministrazione dell’offertai* → *Quadro d’insieme dell’offerta*. Man mano che si elabora l’offerta durante l’anno lo stato dell’offerta è aggiornato. La *Lista di controllo per le offerte* ricorda quali sono i passi sono da intraprendere per ogni stato. I pannelli visualizzati mostrano i passi da seguire durante l’amministrazione dell’offerta e sono disposte in ordine di elaborazione, da sinistra a destra (v. immagine). Nel quadro d’insieme lo stato di un’offerta aperta di recente è registrata come *Offerta non ancora annunciata*.\n\n### Procedimento per l’autorizzazione\nNello stato *Procedimento per l’autorizzazione* l’offerta viene verificata dall’ufficio cantonale dello sport. La ricezione della richiesta di autorizzazione da parte dell’ufficio cantonale viene confermata al/alla Coach per e-mail (Oggetto: Conferma di ricezione della sua offerta G+S n° XXXXXX). Anche la conferma dell’autorizzazione viene inviata al Coach per e-mail (Oggetto: Autorizzazione della sua offerta G+S n° XXXXXX). In questo modo lo stato dell’offerta cambia in *Svolgimento*.\n\n### Lavorare in SPORTdb\nIl processo preciso incluse le istruzioni passo passo con le immagini sono descrtitti in modo esaustivo nel documento [SPORTdb – Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$). Le risposte alle domande a proposito della protezione dei dati si trovano invece nel documento [Raccolta e protezione dei dati nella SPORTdb]($js-datenschutz$).",
         "section": 25,
         "locale": "it",
         "published_at": "2022-01-23T23:04:23.036Z",
         "created_at": "2022-01-23T23:04:20.919Z",
-        "updated_at": "2022-01-23T23:04:23.074Z",
+        "updated_at": "2023-01-19T10:51:43.457Z",
         "key": null,
         "Sorting": null,
         "sorting": 109,
-        "slug": "Annuncio-del-campo-a-G+S-tramite-SPORTdb",
+        "slug": "Annuncio-del-campo-a-G+S-tramite-BDNS",
         "link": null,
-        "slug_with_section": "Preparazione#Annuncio-del-campo-a-G+S-tramite-SPORTdb",
+        "slug_with_section": "Preparazione#Annuncio-del-campo-a-G+S-tramite-BDNS",
         "menu_name": "Annuncio del campo a G+S tramite SPORTdb",
         "responsible": [
           {
-            "id": 1255,
+            "id": 1506,
             "label": null,
             "rolle": "C"
           }
@@ -587,12 +587,12 @@
       {
         "id": 73,
         "title": "Annuncio di campo MSS",
-        "content": "### Indicazioni del/della capo campo\nCon l'annuncio di campo MSS nella [MiData]($midata$), ogni campo viene annunciato previamente all'AC e al MSS. Il/la CC completa al più tardi 7 settimane prima del campo tutte le indicazioni relative al campo nella MiData e invia il programma di massima contemporaneamente a CSZ e Coach.\n\n### Indicazioni del/della coach\nIl/la Coach può ora effettuare il login nella [MiData]($midata$), compilare la sua parte dell'annuncio di campo e inoltrarla tramite un bottone. L'annuncio di campo viene poi trasmesso automaticamente al MSS e all'AC. Il MSS necessita di queste informazioni per poter reagire in caso di crisi e per motivi statistici nei confronti della Confederazione. Il/la Coach effettua il login nella MiData e naviga fino alla propria sezione. Procede poi come segue:\n1. Cliccare su \"Campi\"\n2. Selezionare il relativo campo\n3. Cliccare su \"Modificare\"\n4. Controllare le indicazioni in tutti i registri.\n5. Selezionare la scheda \"Accompagnamento\". Cliccare su \"Coach confermato\" e compilare le indicazioni relative alla visita del Coach e alle [attività negli ambiti di sicurezza]($sicherheitsbereich$).\n6. Cliccare su \"Salvare\"\n7. Se tutte le indicazioni sono complete: inviare l'annuncio di campo al MSS cliccando su \"Inoltrare\".\n\n![it-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/it_Lagerdaten_Coach_Mi_Data_A_68b4479b89.png)\n\n![it-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/it_Lagerdaten_Coach_Mi_Data_B_4c29a4be46.png)\n\n![it-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/it_Lagerdaten_Coach_Mi_Data_C_511a5f9498.png)\n",
+        "content": "Con l'annuncio di campo MSS nella [MiData]($midata$), ogni campo viene annunciato previamente all'AC e al MSS.\n### Indicazioni del/della capo campo\nAl massimo 7 settimane prima del campo, il/la CC :\n1. si reca a MiData e visita il campo,\n2. fare clic su \"modificare\",\n3. compilare tutte le informazioni sul campo,\n4. spunta le tre checkbox in fondo alla pagina sulle regole e le linee guida del campo,\n5. invia il programma generale al SCZ e all'allenatore contemporaneamente.\n \n\n### Indicazioni del/della coach\nIl/la Coach può ora effettuare il login nella [MiData]($midata$), compilare la sua parte dell'annuncio di campo e inoltrarla tramite un bottone. L'annuncio di campo viene poi trasmesso automaticamente al MSS e all'AC. Il MSS necessita di queste informazioni per poter reagire in caso di crisi e per motivi statistici nei confronti della Confederazione. Il/la Coach effettua il login nella MiData e naviga fino alla propria sezione. Procede poi come segue:\n1. Cliccare su \"Campi\"\n2. Selezionare il relativo campo\n3. Cliccare su \"Modificare\"\n4. Controllare le indicazioni in tutti i registri.\n5. Selezionare la scheda \"Accompagnamento\". Cliccare su \"Coach confermato\" e compilare le indicazioni relative alla visita del Coach e alle [attività negli ambiti di sicurezza]($sicherheitsbereich$).\n6. Cliccare su \"Salvare\"\n7. Se tutte le indicazioni sono complete: inviare l'annuncio di campo al MSS cliccando su \"Inoltrare\".\n\n![it-Lagerdaten_Coach_MiDataA.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/it_Lagerdaten_Coach_Mi_Data_A_68b4479b89.png)\n\n![it-Lagerdaten_Coach_MiDataB.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870704/hering/it_Lagerdaten_Coach_Mi_Data_B_4c29a4be46.png)\n\n![it-Lagerdaten_Coach_MiDataC.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642870705/hering/it_Lagerdaten_Coach_Mi_Data_C_511a5f9498.png)\n",
         "section": 24,
         "locale": "it",
         "published_at": "2022-01-22T17:15:24.645Z",
         "created_at": "2022-01-22T17:15:21.966Z",
-        "updated_at": "2022-01-23T20:20:25.381Z",
+        "updated_at": "2023-01-19T13:56:54.280Z",
         "key": null,
         "Sorting": null,
         "sorting": 201,
@@ -602,12 +602,12 @@
         "menu_name": "Annuncio di campo MSS",
         "responsible": [
           {
-            "id": 673,
+            "id": 1638,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 674,
+            "id": 1639,
             "label": null,
             "rolle": "C"
           }
@@ -653,7 +653,7 @@
         "menu_name": "Programma di massima",
         "responsible": [
           {
-            "id": 685,
+            "id": 1651,
             "label": null,
             "rolle": "LL"
           }
@@ -902,12 +902,12 @@
       {
         "id": 103,
         "title": "Ordinazione di cartine topografiche Swisstopo",
-        "content": "Per campi G+S si possono ordinare le carte topografiche Swisstopo tramite il [formulario ordinazione carte nazionali]($formular-landeskartenbestellung$). Il prestito è gratuito, ma la spedizione di ritorno è a carico della sezione. Per ritorni tardivi o incompleti verrà fatturato l’importo corrispondente. Si può ordinare un esemplare di ogni foglio ogni 3 partecipanti in età G+S. Il/la CC inoltra il formulario compilato al/alla Coach, che lo invia direttamente a Swisstopo (mapsales@swisstopo.ch). Il formulario può essere inviato anche via mail. Le firme possono essere inserite in formato digitale, non occorre stampare o scannerizzare. Le cartine verranno spedite al/alla CC per posta.\nDi seguito alcuni chiarimenti sul formulario:\n\n1. **“Disponibile”**: il/la CC indica la data entro la quale sono necessarie le cartine. Se l’ordinazione giunge a Swisstopo 3 settimane prima, le cartine vengono spedite all’indirizzo indicato entro la data desiderata. Consigliamo di ordinare le cartine con debito anticipo in modo che siano disponibili già al momento del sopralluogo.\n2. **“Ritorno”**: le cartine devono essere rispedite dal/dalla CC per posta entro i termini prestabiliti, ossia entro 3 giorni dopo la fine del campo (vedi [Guida riguardante le prestazioni particolari per le offerte G+S e la formazione dei quadri G+S]($leitfaden-js-spezielle-leistungen$)).\n3. **“Organizzazione”**: indicare il nome della sezione.\n4. **“Diritto al materiale”**: si possono ordinare cartine in scala 1:25’000, 1:50’000 e composizioni. Il/la CC può ordinare 1 copia di un foglio per ogni 3 partecipanti. I partecipanti devono avere dai 5 ai 20 anni.\n5. **“N. offerta”**: il/la Coach indica il numero di annuncio G+S secondo l’annuncio in [SPORTdb]($sportdb$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
+        "content": "Per campi G+S si possono ordinare le carte topografiche Swisstopo tramite il [formulario ordinazione carte nazionali]($formular-landeskartenbestellung$). Il prestito è gratuito, ma la spedizione di ritorno è a carico della sezione. Per ritorni tardivi o incompleti verrà fatturato l’importo corrispondente. Si può ordinare un esemplare di ogni foglio ogni 3 partecipanti in età G+S. Il/la CC inoltra il formulario compilato al/alla Coach, che lo invia direttamente a Swisstopo (mapsales@swisstopo.ch). Il formulario può essere inviato anche via mail. Le firme possono essere inserite in formato digitale, non occorre stampare o scannerizzare. Le cartine verranno spedite al/alla CC per posta.\nDi seguito alcuni chiarimenti sul formulario:\n\n1. **“Disponibile”**: il/la CC indica la data entro la quale sono necessarie le cartine. Se l’ordinazione giunge a Swisstopo 3 settimane prima, le cartine vengono spedite all’indirizzo indicato entro la data desiderata. Consigliamo di ordinare le cartine con debito anticipo in modo che siano disponibili già al momento del sopralluogo.\n2. **“Ritorno”**: le cartine devono essere rispedite dal/dalla CC per posta entro i termini prestabiliti, ossia entro 3 giorni dopo la fine del campo (vedi [Guida riguardante le prestazioni particolari per le offerte G+S e la formazione dei quadri G+S]($leitfaden-js-spezielle-leistungen$)).\n3. **“Organizzazione”**: indicare il nome della sezione.\n4. **“Diritto al materiale”**: si possono ordinare cartine in scala 1:25’000, 1:50’000 e composizioni. Il/la CC può ordinare 1 copia di un foglio per ogni 3 partecipanti. I partecipanti devono avere dai 5 ai 20 anni.\n5. **“N. offerta”**: il/la Coach indica il numero di annuncio G+S secondo l’annuncio in [BDNS]($nds$).\n\n![C2-de-kartenbestellung.png](https://res.cloudinary.com/dxxcsbqpy/image/upload/v1642959800/hering/C2_de_kartenbestellung_b33512ed28.png)",
         "section": 23,
         "locale": "it",
         "published_at": "2022-01-23T18:54:09.890Z",
         "created_at": "2022-01-23T18:54:07.421Z",
-        "updated_at": "2022-02-06T16:41:10.055Z",
+        "updated_at": "2023-01-19T15:20:46.067Z",
         "key": null,
         "Sorting": null,
         "sorting": 302,
@@ -917,12 +917,12 @@
         "menu_name": "Ordinazione di cartine topografiche Swisstopo",
         "responsible": [
           {
-            "id": 837,
+            "id": 1657,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 838,
+            "id": 1658,
             "label": null,
             "rolle": "C"
           }
@@ -953,12 +953,12 @@
       {
         "id": 105,
         "title": "Biglietto per gruppi FFS",
-        "content": "Se il viaggio avviene con il treno, si può usufruire di un biglietto per gruppi (almeno 10 persone). Questo dà a tutti un ulteriore 30% di sconto. È possibile ordinare un biglietto per gruppi con il [calcolatore per i viaggi di gruppo]($sbb-gruppenreiserechner$), allo sportello oppure chiamando il Contact Center FFS ( 0848 44 66 88, CHF 0.08/min.). I viaggi di gruppo devono essere comunicati in anticipo. Nella misura del possibile viene eseguita una prenotazione dei posti, inclusa nel prezzo del viaggio di gruppo. \n\nUlteriori informazioni sulle [biglietti per gruppi FFS]($sbb-gruppenreisen-info$).\n\nPer i gruppi registrati c'è anche la possibilità di far trasportare i bagagli o le biciclette dalle FFS.\n\nUlteriori informazioni su [bagaglio gruppi FFS]($sbb-gepaeck-info$).\n",
+        "content": "Se il viaggio avviene con il treno, si può usufruire di un biglietto per gruppi (almeno 10 persone). Questo dà a tutti un ulteriore 30% di sconto. È possibile ordinare un biglietto per gruppi online, allo sportello oppure chiamando il Contact Center FFS ( 0848 44 66 88, CHF 0.08/min.). I viaggi di gruppo devono essere comunicati in anticipo. Nella misura del possibile viene eseguita una prenotazione dei posti, inclusa nel prezzo del viaggio di gruppo. \n\nUlteriori informazioni sulle [biglietti per gruppi FFS]($sbb-gruppenreisen-info$) o [Carta giornaliera per le scuole]($sbb-tageskarten$).\n\nPer i gruppi registrati c'è anche la possibilità di far trasportare i bagagli o le biciclette dalle FFS.\n\nUlteriori informazioni su [bagaglio gruppi FFS]($sbb-gepaeck-info$).\n",
         "section": 23,
         "locale": "it",
         "published_at": "2022-01-23T18:57:35.367Z",
         "created_at": "2022-01-23T18:57:33.588Z",
-        "updated_at": "2022-01-23T19:14:25.103Z",
+        "updated_at": "2023-01-19T15:35:44.996Z",
         "key": null,
         "Sorting": null,
         "sorting": 303,
@@ -968,7 +968,7 @@
         "menu_name": "Biglietto per gruppi FFS",
         "responsible": [
           {
-            "id": 883,
+            "id": 1669,
             "label": null,
             "rolle": "LL"
           }
@@ -999,12 +999,12 @@
       {
         "id": 109,
         "title": "Copertura Rega",
-        "content": "Tutti i partecipanti, gli animatori e gli accompagnatori di un campo possono beneficiare della copertura Rega per tutta la durata del campo (vedi [Guida riguardante leprestazioni particolari per le offerte G+S e la formazione dei quadri G+S]($leitfaden-js-spezielle-leistungen$)). Questa offerta vale solo all’interno dei confini svizzeri e nel Principato del Lichtenstein. Il/la CC registra i partecipanti nella MiData e lo comunica al/alla Coach (vedi [Amministrazione dei partecipanti nella MiData]($tn-administration-midata$)). Il/la Coach annuncia poi i partecipanti nella SPORTdb alla Rega. I lavori precisi incluse le istruzioni per l’uso passo a passo con le immagini sti trovano nel documento [SPORTdb –Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$). In cambio di questa prestazione, la Rega ha il diritto di chiedere ai partecipanti annunciati se desiderano affiliarsi quali soci al raggiungimento della loro maggiore età. I genitori dei partecipanti dovrebbero pertanto essere informati a tale proposito (indicare sull’iscrizione al campo).\n\nSe si deve ricorrere ai servizi della Rega, questo viene pagato principalmente dall'assicurazione sanitaria. Se questo dovesse rifiutare, la Rega si assumerebbe i costi delle persone assicurate come spiegato sopra.\n\n***Ulteriori informazioni***  \n[Le condizioni dell’impegno della Rega]($rega-rahmenbedingungen$)",
+        "content": "Tutti i partecipanti, gli animatori e gli accompagnatori di un campo possono beneficiare della copertura Rega per tutta la durata del campo (vedi [Guida riguardante leprestazioni particolari per le offerte G+S e la formazione dei quadri G+S]($leitfaden-js-spezielle-leistungen$)). Questa offerta vale solo all’interno dei confini svizzeri e nel Principato del Lichtenstein. Il/la CC registra i partecipanti nella MiData e lo comunica al/alla Coach (vedi [Amministrazione dei partecipanti nella MiData]($tn-administration-midata$)). Il/la Coach annuncia poi i partecipanti nella BDNS alla Rega. In cambio di questa prestazione, la Rega ha il diritto di chiedere ai partecipanti annunciati se desiderano affiliarsi quali soci al raggiungimento della loro maggiore età. I genitori dei partecipanti dovrebbero pertanto essere informati a tale proposito (indicare sull’iscrizione al campo).\n\nSe si deve ricorrere ai servizi della Rega, questo viene pagato principalmente dall'assicurazione sanitaria. Se questo dovesse rifiutare, la Rega si assumerebbe i costi delle persone assicurate come spiegato sopra.\n\n***Ulteriori informazioni***  \n[Le condizioni dell’impegno della Rega]($rega-rahmenbedingungen$)",
         "section": 23,
         "locale": "it",
         "published_at": "2022-01-23T19:51:26.346Z",
         "created_at": "2022-01-23T19:51:23.297Z",
-        "updated_at": "2022-01-23T20:27:33.830Z",
+        "updated_at": "2023-01-19T15:38:42.571Z",
         "key": null,
         "Sorting": null,
         "sorting": 304,
@@ -1014,12 +1014,12 @@
         "menu_name": "Copertura Rega",
         "responsible": [
           {
-            "id": 918,
+            "id": 1686,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 919,
+            "id": 1687,
             "label": null,
             "rolle": "C"
           }
@@ -1094,7 +1094,7 @@
         "menu_name": "Attività nei settori di sicurezza",
         "responsible": [
           {
-            "id": 878,
+            "id": 1697,
             "label": null,
             "rolle": "LL"
           }
@@ -1292,12 +1292,12 @@
       {
         "id": 80,
         "title": "I partecipanti si iscrivono autonomamente al campo",
-        "content": "Se al momento dell'allestimento del campo è stata selezionata l'opzione \"Iscrizione possibile\", i partecipanti possono iscriversi al campo direttamente nella [MiData]($midata$) con il loro login. I partecipanti possono vedere solo i campi allestiti in un gruppo al quale appartengono (ad es. rispettiva branca). L'iscrizione avviene nel seguente modo: \n1. I partecipanti effettuano il login nella MiData e cliccano su \"Eventi\". Compare la panoramica dei \"Prossimi eventi\" \n2. I partecipanti possono iscriversi al campo cliccando su \"Iscriversi\". \n3. Cliccando sul nome del campo, i partecipanti vedono ulteriori informazioni sul campo. \n4. I partecipanti compilano l'iscrizione e cliccano su \"Iscriversi\". Al momento dell'allestimento del campo è possibile creare campi supplementari per l'iscrizione. Qui c’è la possibilità di lasciar compilare ai partecipanti le indicazioni obbligatorie che il/la coach ha bisogno per la SPORTdb. Una lista delle indicazioni necessarie si trova nel documento [Importazione dei dati personali di federazioni/club e di federazioni giovanili]($sportdb-technisch$).",
+        "content": "Se al momento dell'allestimento del campo è stata selezionata l'opzione \"Iscrizione possibile\", i partecipanti possono iscriversi al campo direttamente nella [MiData]($midata$) con il loro login. I partecipanti possono vedere solo i campi allestiti in un gruppo al quale appartengono (ad es. rispettiva branca). L'iscrizione avviene nel seguente modo: \n1. I partecipanti effettuano il login nella MiData e cliccano su \"Eventi\". Compare la panoramica dei \"Prossimi eventi\" \n2. I partecipanti possono iscriversi al campo cliccando su \"Iscriversi\". \n3. Cliccando sul nome del campo, i partecipanti vedono ulteriori informazioni sul campo. \n4. I partecipanti compilano l'iscrizione e cliccano su \"Iscriversi\". Al momento dell'allestimento del campo è possibile creare campi supplementari per l'iscrizione. Qui c’è la possibilità di lasciar compilare ai partecipanti le indicazioni obbligatorie che il/la coach ha bisogno per la BDNS:\n- cognome\n- nome\n- data di nascita\n- sesso\n- n°AVS o PEID\n- nazionalita\n- lingua madre\n- NPA\n- Localita\n- Paese",
         "section": 21,
         "locale": "it",
         "published_at": "2022-01-23T07:59:19.969Z",
         "created_at": "2022-01-23T07:59:18.113Z",
-        "updated_at": "2022-02-26T18:16:02.866Z",
+        "updated_at": "2023-01-19T15:48:32.047Z",
         "key": null,
         "Sorting": null,
         "sorting": 501,
@@ -1307,7 +1307,7 @@
         "menu_name": "I partecipanti si iscrivono autonomamente",
         "responsible": [
           {
-            "id": 1213,
+            "id": 1701,
             "label": null,
             "rolle": "LL"
           }
@@ -1338,12 +1338,12 @@
       {
         "id": 82,
         "title": "Aggiungere e cancellare dei partecipanti nella lista dei partecipanti nella MiData",
-        "content": "Il/la Capo Campo, il/la CSZ e il/la Coach hanno accesso alla lista dei partecipanti nella [MiData]($midata$). Qui possono aggiungere o cancellare direttamente dei partecipanti. Questo avviene analogamente all'[aggiunta di animatori/trici]($team-erfassen-midata-kapitel$). Se i partecipanti non si iscrivono al campo direttamente nella MiData, la lista dei partecipanti può essere registrata dal/dalla Capo Campo. Le informazioni necessarie dei partecipanti per l’annuncio alla Rega e al/alla coach sono però da completare dal/dalla CC. Una lista delle informazioni necessarie si trovano nel documento [Importazione dei dati personali di federazioni/club e di federazioni giovanili]($sportdb-technisch$).",
+        "content": "Il/la Capo Campo, il/la CSZ e il/la Coach hanno accesso alla lista dei partecipanti nella [MiData]($midata$). Qui possono aggiungere o cancellare direttamente dei partecipanti. Questo avviene analogamente all'[aggiunta di animatori/trici]($team-erfassen-midata-kapitel$). Se i partecipanti non si iscrivono al campo direttamente nella MiData, la lista dei partecipanti può essere registrata dal/dalla Capo Campo. Le informazioni necessarie dei partecipanti per l’annuncio alla Rega e al/alla coach sono però da completare dal/dalla CC. Una lista delle informazioni necessarie si trovano nel capitolo precedente.",
         "section": 21,
         "locale": "it",
         "published_at": "2022-01-23T08:10:26.081Z",
         "created_at": "2022-01-23T08:10:08.410Z",
-        "updated_at": "2022-01-23T19:20:49.754Z",
+        "updated_at": "2023-01-19T15:51:14.808Z",
         "key": null,
         "Sorting": null,
         "sorting": 502,
@@ -1353,17 +1353,17 @@
         "menu_name": "Aggiungere e cancellare dei partecipanti",
         "responsible": [
           {
-            "id": 1207,
+            "id": 1725,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1208,
+            "id": 1726,
             "label": null,
             "rolle": "AL"
           },
           {
-            "id": 1210,
+            "id": 1727,
             "label": null,
             "rolle": "C"
           }
@@ -1394,12 +1394,12 @@
       {
         "id": 84,
         "title": "Esportazione della lista dei partecipanti dalla MiData ",
-        "content": "Se i partecipanti sono registrati nella [MiData]($midata$), la lista dei partecipanti può essere esportata dalla MiData come file csv per l'upload nella [SPORTdb]($sportdb$). Per questo il/la Coach procede come segue:\n1. Cercare e aprire il campo.\n2. Cliccare su \"Partecipanti\"\n3. Cliccare su \"esportare\"\n4. Selezionare \"CSV\" e in seguito \"SPORTdb\". Viene ora esportato un file csv che può essere usato per l'upload nella SPORTdb.  \n\n**Attenzione all‘ Encoding**  \nrilevantre nella rappresentazione dei segni particolari\nMiData esporta i file csv normalmente con UTF-8 Encoding (sistema per la codificazione dei segni). Per leggere in modo corretto i segni particolari si può scegliere questo encoding nell’importazione del file csv nella SPORTdb.\nSe la lista dovesse venire rielaborata ancora con Excel prima dell’importazione si può esportarla via «Export» &#8594; «Excel» &#8594; «per SPORTdb». Dopo l’elaborazione questa verrà esportata come file csv e importata nella SPORTdb con l’ Encoding UTF-8 oppure x-MacRoman.\n\n**Attenzione nel caso di due nomi**  \nLa SPORTdb nel caso di due nomi non può riconoscere ed importare senza errori la persona. Prima del caricamento del file è quindi meglio cancellare tutti i secondi nomi.\n\n**Direttiva riguardanti i campi obbligatori**  \nPer poter leggere il file alcuni campi devono obbligatoriamente essere compilati. Un riassunto si trova nel documento [Importazione dei dati personali di federazioni/club e di federazioni giovanili]($sportdb-technisch$). Se dovessero ancora mancare indicazioni sono da cercare dal CC. Nel caso ottimale le indicazioni vengono rilevate già durante [l’iscrizione]($tn-anmeldung-kapitel$).\n",
+        "content": "Se i partecipanti sono registrati nella [MiData]($midata$), la lista dei partecipanti può essere esportata dalla MiData come file csv per l'upload nella [BDNS]($nds$). Per questo il/la Coach procede come segue:\n1. Cercare e aprire il campo.\n2. Cliccare su \"Partecipanti\"\n3. Cliccare su \"esportare\"\n4. Selezionare \"CSV\" e in seguito \"BDNS-Campo\". Viene ora esportato un file csv che può essere usato per l'upload nella BDNS.  \n\n**Attenzione all‘ Encoding**  \nrilevantre nella rappresentazione dei segni particolari\nMiData esporta i file csv normalmente con UTF-8 Encoding (sistema per la codificazione dei segni). Per leggere in modo corretto i segni particolari si può scegliere questo encoding nell’importazione del file csv nella SPORTdb.\nSe la lista dovesse venire rielaborata ancora con Excel prima dell’importazione si può esportarla via «Export» &#8594; «Excel» &#8594; «BDNS-Campo». Dopo l’elaborazione questa verrà esportata come file csv e importata nella BDNS con l’ Encoding UTF-8.\n\n**Direttiva riguardanti i campi obbligatori**  \nPer poter leggere il file alcuni campi devono obbligatoriamente essere compilati. Un riassunto si trova nel [l’iscrizione]($tn-anmeldung-kapitel$). Se dovessero ancora mancare indicazioni sono da cercare dal CC. Nel caso ottimale le indicazioni vengono rilevate già durante [l’iscrizione]($tn-anmeldung-kapitel$).\n",
         "section": 21,
         "locale": "it",
         "published_at": "2022-01-23T08:34:45.532Z",
         "created_at": "2022-01-23T08:34:42.650Z",
-        "updated_at": "2022-01-23T08:50:59.681Z",
+        "updated_at": "2023-01-19T15:57:18.617Z",
         "key": null,
         "Sorting": null,
         "sorting": 503,
@@ -1409,7 +1409,7 @@
         "menu_name": "Esportazione della lista dei partecipanti",
         "responsible": [
           {
-            "id": 1223,
+            "id": 1731,
             "label": null,
             "rolle": "C"
           }
@@ -1439,23 +1439,23 @@
       },
       {
         "id": 86,
-        "title": "Caricare la lista dei partecipanti in SPORTdb",
-        "content": "Il file csv viene importato dal/dalla coach nella [SPORTdb]($sportdb$). Questo può essere fatto sotto al tab «partecipante». I lavori precisi incluse le direttive passo a passo e le immagini sono nel documento [SPORTdb Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).\n\n>**Rilevamento del numero di assicurazione sociale (numero AVS)**  \nA partire dall’estate 2019 il numero di assicurazione sociale viene rilevato in maniera standard nella SPORTdb. Si tratta di evitare di avere due versioni della stessa persona e di migliorare la qualità dei dati. Le persone che **non sono ancora registrate** nella SPORTdb possono essere iscritte solo con il loro numero di assicuratzione sociale. Affinché il coach abbia queste informazioni devono venir richieste già al momento dell’iscrizione dei partecipanti al campo. I bambini ricevono il loro numero di assicurazione sociale personale con l’iscrizione alla cassa malati, perciò si può leggere questo numero sulla carta della cassa malati.",
+        "title": "Caricare la lista dei partecipanti in BDNS",
+        "content": "Il file csv viene importato dal/dalla coach nella [BDNS]($nds$). Questo può essere fatto sotto al tab «partecipante». I lavori precisi incluse le direttive passo a passo e le immagini sono nel documento [BDNS Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).\n\n>**Rilevamento del numero di assicurazione sociale (numero AVS)**  \nA partire dall’estate 2019 il numero di assicurazione sociale viene rilevato in maniera standard nella BDNS. Si tratta di evitare di avere due versioni della stessa persona e di migliorare la qualità dei dati. Le persone che **non sono ancora registrate** nella BDNS possono essere iscritte solo con il loro numero di assicuratzione sociale. Affinché il coach abbia queste informazioni devono venir richieste già al momento dell’iscrizione dei partecipanti al campo. I bambini ricevono il loro numero di assicurazione sociale personale con l’iscrizione alla cassa malati, perciò si può leggere questo numero sulla carta della cassa malati.",
         "section": 21,
         "locale": "it",
         "published_at": "2022-01-23T08:44:30.729Z",
         "created_at": "2022-01-23T08:43:35.344Z",
-        "updated_at": "2022-01-23T08:45:32.428Z",
+        "updated_at": "2023-01-21T09:39:04.839Z",
         "key": null,
         "Sorting": null,
         "sorting": 504,
-        "slug": "Caricare-la-lista-dei-partecipanti-in-SPORTdb",
+        "slug": "Caricare-la-lista-dei-partecipanti-in-BDNS",
         "link": null,
-        "slug_with_section": "Amministrazione-dei-partecipanti#Caricare-la-lista-dei-partecipanti-in-SPORTdb",
+        "slug_with_section": "Amministrazione-dei-partecipanti#Caricare-la-lista-dei-partecipanti-in-BDNS",
         "menu_name": "Caricare la lista dei partecipanti",
         "responsible": [
           {
-            "id": 1232,
+            "id": 1741,
             "label": null,
             "rolle": "C"
           }
@@ -1697,12 +1697,12 @@
       {
         "id": 51,
         "title": "Lista partecipanti e chiusura del campo nella MiData",
-        "content": "Il/la CC aggiorna i partecipanti e gli animatori/trici registrati nella [MiData]($midata$) prima del campo e comunica l'aggiornamento al/alla Coach al più tardi 10 giorni dopo il campo.\nInfine, il/la coach riporta la lista attuale dei partecipanti in [SPORTdb]($sportdb$). Se l’annuncio Rega è già stato fatto tramite SPORTdb, i dati devono solo più venir aggiornati. I lavori precisi da eseguire comprese le istruzioni passo dopo passo per il/la coach e le immagini si trovano nel documento [SPORTdb – Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).\nIn seguito, il/la CC chiude il campo nella MiData, ponendo lo stato su \"Concluso\".",
+        "content": "Il/la CC aggiorna i partecipanti e gli animatori/trici registrati nella [MiData]($midata$) prima del campo e comunica l'aggiornamento al/alla Coach al più tardi 10 giorni dopo il campo.\nInfine, il/la coach riporta la lista attuale dei partecipanti in [BDNS]($nds$). Se l’annuncio Rega è già stato fatto tramite BDNS, i dati devono solo più venir aggiornati. I lavori precisi da eseguire comprese le istruzioni passo dopo passo per il/la coach e le immagini si trovano nel [Modulo di apprendimento G+S]($coachneunds$).\nIn seguito, il/la CC chiude il campo nella MiData, ponendo lo stato su \"Concluso\".",
         "section": 19,
         "locale": "it",
         "published_at": "2022-01-22T11:21:46.588Z",
         "created_at": "2022-01-22T11:17:47.839Z",
-        "updated_at": "2022-01-23T22:07:39.720Z",
+        "updated_at": "2023-01-21T09:49:22.468Z",
         "key": null,
         "Sorting": null,
         "sorting": 702,
@@ -1712,12 +1712,12 @@
         "menu_name": "Lista partecipanti",
         "responsible": [
           {
-            "id": 1127,
+            "id": 1756,
             "label": null,
             "rolle": "LL"
           },
           {
-            "id": 1128,
+            "id": 1757,
             "label": null,
             "rolle": "C"
           }
@@ -1747,23 +1747,23 @@
       },
       {
         "id": 55,
-        "title": "Chiusura del campo in SPORTdb",
-        "content": "Alla fine di ogni campo il/la Coach procede con il cosiddetto controllo delle presenze (CdP), vale a dire aggiorna la lista dei partecipanti in der  [SPORTdb]($sportdb$) secondo la lista ricevuta dopo il campo dal/dalla CC (vedi sopra). I lavori precisi da eseguire comprese le istruzioni passo dopo passo per il coach e le immagini si trovano nel documento  [SPORTdb – Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).",
+        "title": "Chiusura del campo in BDNS",
+        "content": "Alla fine di ogni campo il/la Coach procede con il cosiddetto controllo delle presenze (CdP), vale a dire aggiorna la lista dei partecipanti in der  [BDNS]($nds$) secondo la lista ricevuta dopo il campo dal/dalla CC (vedi sopra). I lavori precisi da eseguire comprese le istruzioni passo dopo passo per il coach si trovano nel [modulo di apprendimento coach]($coachneunds$).",
         "section": 19,
         "locale": "it",
         "published_at": "2022-01-22T11:44:08.288Z",
         "created_at": "2022-01-22T11:41:22.880Z",
-        "updated_at": "2022-01-22T11:44:08.315Z",
+        "updated_at": "2023-01-21T09:54:46.103Z",
         "key": null,
         "Sorting": null,
         "sorting": 703,
-        "slug": "Chiusura-del-campo-in-SPORTdb",
+        "slug": "Chiusura-del-campo-in-BDNS",
         "link": null,
-        "slug_with_section": "Chiusura-del-campo#Chiusura-del-campo-in-SPORTdb",
-        "menu_name": "Chiusura del campo in SPORTdb",
+        "slug_with_section": "Chiusura-del-campo#Chiusura-del-campo-in-BDNS",
+        "menu_name": "Chiusura del campo in BDNS",
         "responsible": [
           {
-            "id": 1132,
+            "id": 1762,
             "label": null,
             "rolle": "C"
           }
@@ -1868,23 +1868,23 @@
     "chapters": [
       {
         "id": 42,
-        "title": "Chiusura dell’offerta G+S in SPORTdb",
-        "content": "Alla fine dell’ultimo campo il/la Coach riceve automaticamente un promemoria via e-mail (Oggetto: Promemoria: fine dell’offerta tra 30 giorni). Egli/ella dovrà chiudere l’offerta entro 30 giorni della fine dell’ultimo campo. Attenzione: prima di poter chiudere l’offerta occorre completare e chiudere il CdP di ogni singolo campo (in altre parole lo stato di ogni campo deve essere chiuso). \n\n- *Stato dell’offerta Procedimento di chiusura:* Con lo stato Procedimento di chiusura l’offerta viene elaborata dall’Ufficio cantonale G+S. Il/la Coach riceve via e-mail la conferma che l’elaborazione è in corso. Se non ci sono errori nell’offerta, G+S Macolin provvede al versamento delle indennità. Anche in questo caso il Coach riceve una conferma per e-mail (Oggetto: L’offerta XXXXXX è stata inoltrata per il pagamento). \n- *Stato dell’offerta Chiuso:* quando l’Ufficio cantonale conclude la procedura di chiusura, lo stato dell’offerta viene cambiato in Chiuso.\n\nI lavori precisi da eseguire comprese le istruzioni passo dopo passo per il coach e le immagini si trovano nel documento  [SPORTdb – Passo dopo passo per i coach G+S]($sportdb-schritt-fuer-schritt$).",
+        "title": "Chiusura dell’offerta G+S in BDNS",
+        "content": "Il/la Coach dovrà chiudere l’offerta entro 30 giorni della fine dell’ultimo campo. Attenzione: prima di poter chiudere l’offerta occorre completare e chiudere il CdP di ogni singolo campo (in altre parole lo stato di ogni campo deve essere \"Controlle delle presenze concluso\"). \n\n- *Stato dell’offerta Procedimento di chiusura:* Con lo stato Procedimento di chiusura l’offerta viene elaborata dall’Ufficio cantonale G+S. Il/la Coach riceve via e-mail la conferma che l’elaborazione è in corso. Se non ci sono errori nell’offerta, G+S Macolin provvede al versamento delle indennità. Anche in questo caso il Coach riceve una conferma per e-mail (Oggetto: L’offerta XXXXXX è stata inoltrata per il pagamento). \n- *Stato dell’offerta Chiuso:* quando l’Ufficio cantonale conclude la procedura di chiusura, lo stato dell’offerta viene cambiato in Chiuso.\n\nI lavori precisi da eseguire comprese le istruzioni passo dopo passo per il coach si trovano nel [modulo di apprendimento]($coachneunds$).",
         "section": 18,
         "locale": "it",
         "published_at": "2022-01-22T10:28:50.071Z",
         "created_at": "2022-01-22T10:28:35.811Z",
-        "updated_at": "2022-01-23T20:18:44.902Z",
+        "updated_at": "2023-01-21T10:05:08.817Z",
         "key": null,
         "Sorting": null,
         "sorting": 801,
-        "slug": "Chiusura-dell'offerta-G+S-in-SPORTdb",
+        "slug": "Chiusura-dell'offerta-G+S-in-BDNS",
         "link": 166,
-        "slug_with_section": "Chiusura-dell'offerta-G+S#Chiusura-dell'offerta-G+S-in-SPORTdb",
-        "menu_name": "Chiusura in SPORTdb",
+        "slug_with_section": "Chiusura-dell'offerta-G+S#Chiusura-dell'offerta-G+S-in-BDNS",
+        "menu_name": "Chiusura in BDNS",
         "responsible": [
           {
-            "id": 1101,
+            "id": 1768,
             "label": null,
             "rolle": "C"
           }

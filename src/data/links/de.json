@@ -28,27 +28,6 @@
     "slug": ""
   },
   {
-    "id": 26,
-    "key": "lagerabschluss-sportdb",
-    "title": "Lagerabschluss in der SPORTdb",
-    "link": null,
-    "slug": "Lagerabschluss#Lagerabschluss-in-der-SPORTdb"
-  },
-  {
-    "id": 29,
-    "key": "rega",
-    "title": "Rega-Versicherung",
-    "link": null,
-    "slug": "Dienstleistungen-bestellen#Rega-Versicherung"
-  },
-  {
-    "id": 2,
-    "key": "lageranmeldung",
-    "title": "Lageranmeldung PBS",
-    "link": null,
-    "slug": "Lageranmeldung#Lageranmeldung-PBS"
-  },
-  {
     "id": 103,
     "key": "auslandlager",
     "title": "Broschüre Auslandlager",
@@ -63,6 +42,13 @@
     "slug": ""
   },
   {
+    "id": 242,
+    "key": "github",
+    "title": "GitHub",
+    "link": "https://github.com/scout-ch/hering",
+    "slug": ""
+  },
+  {
     "id": 13,
     "key": "faireslager",
     "title": "Faires Lager",
@@ -70,11 +56,18 @@
     "slug": ""
   },
   {
-    "id": 35,
-    "key": "sportdb-schritt-fuer-schritt",
-    "title": "SPORTdb Schritt für Schritt",
-    "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/711/sportdb-schritt-fur-schritt-fur-die-js-coaches/",
-    "slug": ""
+    "id": 2,
+    "key": "lageranmeldung",
+    "title": "Lageranmeldung PBS",
+    "link": null,
+    "slug": "Lageranmeldung#Lageranmeldung-PBS"
+  },
+  {
+    "id": 29,
+    "key": "rega",
+    "title": "Rega-Versicherung",
+    "link": null,
+    "slug": "Dienstleistungen-bestellen#Rega-Versicherung"
   },
   {
     "id": 50,
@@ -105,24 +98,10 @@
     "slug": ""
   },
   {
-    "id": 20,
-    "key": "sportdb",
-    "title": "SPORTdb",
-    "link": "https://www.sportdb.ch/",
-    "slug": ""
-  },
-  {
     "id": 21,
     "key": "jugendurlaub-formular",
     "title": "Bestätigung für den Bezug von Jugendurlaub",
     "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/24/formular-jugendurlaub/",
-    "slug": ""
-  },
-  {
-    "id": 22,
-    "key": "jugendurlaub",
-    "title": "Jugendurlaub",
-    "link": "https://www.jugendurlaub.ch/",
     "slug": ""
   },
   {
@@ -137,13 +116,6 @@
     "key": "js-coachleitfaden",
     "title": "Leitfaden für den J+S-Coach",
     "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/41/js-leitfaden-fur-den-js-coach/",
-    "slug": ""
-  },
-  {
-    "id": 30,
-    "key": "lagerdaten-formular",
-    "title": "Vom Coach benötigte Daten für die Anmeldung in der SPORTdb",
-    "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/252/von-demr-coach-benotigte-daten-fur-die-sportdb/",
     "slug": ""
   },
   {
@@ -196,13 +168,6 @@
     "slug": ""
   },
   {
-    "id": 19,
-    "key": "chapter-tns-selbstaendig",
-    "title": "TNs melden sich selbständig für Lager an",
-    "link": null,
-    "slug": "Administration-der-TNs#TNs-melden-sich-selbststandig-fur-Lager-an"
-  },
-  {
     "id": 91,
     "key": "forstamt-tg",
     "title": "Forstamt Thurgau",
@@ -210,11 +175,25 @@
     "slug": ""
   },
   {
-    "id": 68,
-    "key": "team-erfassen-midata-kapitel",
-    "title": "Leitungspersonen und Küche in der MiData erfassen",
+    "id": 19,
+    "key": "chapter-tns-selbstaendig",
+    "title": "TNs melden sich selbständig für Lager an",
     "link": null,
-    "slug": "Vorbereitung#Leitungspersonen-und-Kuche-in-der-MiData-erfassen"
+    "slug": "Administration-der-TNs#TNs-melden-sich-selbststandig-fur-Lager-an"
+  },
+  {
+    "id": 30,
+    "key": "lagerdaten-formular",
+    "title": "Vom Coach benötigte Daten für die Anmeldung in der NDS",
+    "link": "https://pfadi.swiss/de/publikationen-downloads/downloads/detail/252/von-demr-coach-benotigte-daten-fur-die-sportdb/",
+    "slug": ""
+  },
+  {
+    "id": 22,
+    "key": "jugendurlaub",
+    "title": "Jugendurlaub",
+    "link": "https://www.jugendurlaub.ch/",
+    "slug": ""
   },
   {
     "id": 100,
@@ -329,13 +308,6 @@
     "slug": ""
   },
   {
-    "id": 143,
-    "key": "sbb-gruppenreiserechner",
-    "title": "SBB Gruppenreiserechner",
-    "link": "http://sbb-gruppentool.mxm.ch/gruppentool/",
-    "slug": ""
-  },
-  {
     "id": 146,
     "key": "sbb-gruppenreisen-info",
     "title": "Informationen SBB Gruppenreisen",
@@ -362,6 +334,13 @@
     "title": "Merkblatt Sicherheitsbereiche",
     "link": "https://www.jugendundsport.ch/content/jus-internet/de/sportarten/lagersport-trekking-uebersicht/sicherheit-/_jcr_content/contentPar/downloadlist/downloadItems/1219_1460465008581.download/mb_d_LST_Berg_Winter_Wasser.pdf",
     "slug": ""
+  },
+  {
+    "id": 218,
+    "key": "landeskarten",
+    "title": "Landeskartenbestellung",
+    "link": null,
+    "slug": "Dienstleistungen-bestellen#Landeskartenbestellung-swisstopo"
   },
   {
     "id": 156,
@@ -413,13 +392,6 @@
     "slug": ""
   },
   {
-    "id": 218,
-    "key": "landeskarten",
-    "title": "Landeskartenbestellung",
-    "link": null,
-    "slug": "Dienstleistungen-bestellen#Landeskartenbestellung-swisstopo"
-  },
-  {
     "id": 223,
     "key": "js-datenschutz",
     "title": "Datenschutz bei J+S",
@@ -438,6 +410,55 @@
     "key": "lager-tg",
     "title": "Lager im Thurgau",
     "link": "https://forstamt.tg.ch/public/upload/assets/78914/Organisation_von_Jugendlagern.pdf",
+    "slug": ""
+  },
+  {
+    "id": 247,
+    "key": "neundslagerleitende",
+    "title": "Lernbaustein: Lagerleitende",
+    "link": "https://rise.articulate.com/share/3QzuPib3lww-tl4sA2N8qk27VmPFRJs2#/",
+    "slug": ""
+  },
+  {
+    "id": 20,
+    "key": "nds",
+    "title": "NDS",
+    "link": "https://www.nds.baspo.admin.ch/#/startpage/dashboard",
+    "slug": ""
+  },
+  {
+    "id": 143,
+    "key": "sbb-gruppenbillet",
+    "title": "SBB Gruppenbilletechner",
+    "link": "https://www.sbb.ch/de/abos-billette/billette-schweiz/gruppenbillette.html",
+    "slug": ""
+  },
+  {
+    "id": 245,
+    "key": "coachneunds",
+    "title": "Lernbaustein: Coach",
+    "link": "https://rise.articulate.com/share/4NJ7WKD9ImpbZW8M_YmzmbzcbvgchO89#/",
+    "slug": ""
+  },
+  {
+    "id": 68,
+    "key": "team-erfassen-midata-kapitel",
+    "title": "Leitungspersonen und Küche in der MiData erfassen",
+    "link": null,
+    "slug": "Vorbereitung#Leitungspersonen-und-Kuche-in-der-MiData-erfassen"
+  },
+  {
+    "id": 26,
+    "key": "lagerabschluss-nds",
+    "title": "Lagerabschluss in der NDS",
+    "link": null,
+    "slug": "Lagerabschluss#Lagerabschluss-in-der-NDS"
+  },
+  {
+    "id": 253,
+    "key": "sbb-tageskarten",
+    "title": "SBB - Tageskarten für Schulen",
+    "link": "https://www.sbb.ch/de/abos-billette/billette-schweiz/tageskarten/schultageskarte.html",
     "slug": ""
   }
 ]
