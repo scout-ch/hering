@@ -51,7 +51,7 @@ function ImpressumPage() {
     <div className='calendar'>
       <h1><FontAwesomeIcon icon="calendar" /> {impressumPage.title}</h1>
       <ReactMarkdown
-        plugins={[remarkGfm]}
+        remarkPlugins={[remarkGfm]}
         components={LinkComponent}
       >{impressumPage.content}</ReactMarkdown>
 

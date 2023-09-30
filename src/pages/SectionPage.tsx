@@ -18,7 +18,7 @@ type Props = {
 
 function SectionPage(props: Props) {
   const { slug } = useParams<Params>()
-  const section = props.sections[slug]
+  const section = props.sections[slug!]
   const location = useLocation();
   useEffect(() => {
     const hash = location.hash
