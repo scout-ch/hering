@@ -14,16 +14,20 @@
       "title": "Calendario",
       "startDate": "Primo giorno del campo",
       "responsible": "Responsabile",
-      "puffer": "Puffer",
+      "puffer": "Tampone (giorni)",
       "responsibleOptions": {
         "all": "Tutti",
         "ll": "Capo campo",
         "al": "Capo Sezione",
         "c": "Coach"
       },
-      "generate": "Generieren",
-      "download": "Download als .ics",
-      "filename": "Dati.ics",
+      "prefixPlaceholder": "Prefisso per le voci del calendario",
+      "prefixPreview": "Anteprima: {{calendarTitlePrefix}} Dati del campo",
+      "ics": {
+        "generate": "Generare",
+        "download": "Scarica come .ics",
+        "filename": "Dati.ics"
+      },
       "table": {
         "what": "Cosa",
         "who": "Chi",
