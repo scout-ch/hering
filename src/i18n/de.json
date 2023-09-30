@@ -14,16 +14,20 @@
       "title": "Kalender",
       "startDate": "Startdatum Lager",
       "responsible": "Verantwortlich",
-      "puffer": "Puffer",
+      "puffer": "Puffer (Tage)",
       "responsibleOptions": {
         "all": "Alle",
         "ll": "Lagerleitung",
         "al": "Abteilungsleitung",
         "c": "Coach"
       },
-      "generate": "Generieren",
-      "download": "Download als .ics",
-      "filename": "Daten.ics",
+      "prefixPlaceholder": "Prefix für Kalendereinträge",
+      "prefixPreview": "Vorschau: {{calendarTitlePrefix}} Lagerdaten an Coach",
+      "ics": {
+        "generate": "Generieren",
+        "download": "Download als .ics",
+        "filename": "Daten.ics"
+      },
       "table": {
         "what": "Was",
         "who": "Wer",

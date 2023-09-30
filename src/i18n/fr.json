@@ -14,16 +14,20 @@
       "title": "Calendrier",
       "startDate": "Premier jour du camp",
       "responsible": "Responsable",
-      "puffer": "Marge",
+      "puffer": "Marge (jours)",
       "responsibleOptions": {
         "all": "Tous",
         "ll": "Responsable de camp",
         "al": "Responsable de groupe",
         "c": "Coach"
       },
-      "generate": "Générer",
-      "download": "Télécharger .ics",
-      "filename": "Dates.ics",
+      "prefixPlaceholder": "Préfixe pour les entrées de calendrier",
+      "prefixPreview": "Aperçu: {{calendarTitlePrefix}} Données relatives",
+      "ics": {
+        "generate": "Générer",
+        "download": "Télécharger .ics",
+        "filename": "Dates.ics"
+      },
       "table": {
         "what": "Quoi",
         "who": "Qui",

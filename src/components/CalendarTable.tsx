@@ -6,6 +6,7 @@ import Task, { TaskT } from './Task';
 type Props = {
   t: any
   tasks: Array<TaskT>
+  prefix: string
 }
 
 function CalendarTable(props: Props) {
@@ -16,7 +17,7 @@ function CalendarTable(props: Props) {
   })
   return (
     <div className='calendar-table'>
-    <IcsDownload tasks={tasks}></IcsDownload>
+    <IcsDownload tasks={tasks} calendarTitlePrefix={props.prefix}></IcsDownload>
       <table>
         <thead>
           <tr>

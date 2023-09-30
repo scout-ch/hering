@@ -30,6 +30,7 @@ type MyState = {
   startDate: string
   responsible: string
   puffer: number
+  calendarTitlePrefix: string
   taskList: Array<ApiTask>,
   tasks: Array<TaskT>
 }
@@ -41,6 +42,7 @@ class CalendarForm extends React.Component<Props, MyState> {
       startDate: new Date().toISOString().slice(0, 10),
       responsible: 'all',
       puffer: 0,
+      calendarTitlePrefix: '',
       taskList: [],
       tasks: []
     };
@@ -78,6 +80,10 @@ class CalendarForm extends React.Component<Props, MyState> {
 
   onChangePuffer = (e: React.FormEvent<HTMLInputElement>): void => {
     this.setState({ puffer: parseInt(e.currentTarget.value) });
+  };
+
+  onChangeTitlePrefix= (e: React.FormEvent<HTMLInputElement>): void => {
+    this.setState({ calendarTitlePrefix: e.currentTarget.value });
   };
 
   taskSort = (a: TaskT, b: TaskT) => {
@@ -135,12 +141,6 @@ class CalendarForm extends React.Component<Props, MyState> {
               </li>
               <li>
                 <label>
-                  {t('calendarPage.puffer')}
-                </label>
-                <input type="number" id="puffer" name="puffer" value={this.state.puffer} onChange={this.onChangePuffer} />
-              </li>
-              <li>
-                <label>
                   {t('calendarPage.responsible')}
                 </label>
                 <select name="responsible" id="responsible" value={this.state.responsible} onChange={this.onChangeResponsible}>
@@ -150,13 +150,31 @@ class CalendarForm extends React.Component<Props, MyState> {
                   <option value="C">{t('calendarPage.responsibleOptions.c')}</option>
                 </select>
               </li>
+              <hr/>
               <li>
-                <button type="submit"> {t('calendarPage.generate')}</button>
+                <label>
+                  {t('calendarPage.puffer')}
+                </label>
+                <input type="number" id="puffer" name="puffer" value={this.state.puffer} onChange={this.onChangePuffer} />
+              </li>
+              <li>
+                <label>
+                  {t('calendarPage.prefixPlaceholder')}
+                </label>
+                <div>
+                  <input type='text' name='calendar-prefix' value={this.state.calendarTitlePrefix} onChange={this.onChangeTitlePrefix} />
+                  <div className='calendar-title-prefix-hint'>
+                    {t('calendarPage.prefixPreview', { calendarTitlePrefix: this.state.calendarTitlePrefix })}
+                  </div>
+                </div>
+              </li>
+              <li>
+                <button type="submit"> {t('calendarPage.ics.generate')}</button>
               </li>
             </ul>
           </form>
         </div>
-        <CalendarTable tasks={this.state.tasks.sort(this.taskSort)} />
+        <CalendarTable tasks={this.state.tasks.sort(this.taskSort)} prefix={this.state.calendarTitlePrefix} />
       </div>
     );
   }
