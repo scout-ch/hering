@@ -74,7 +74,7 @@ function Footer(props: Props) {
         </ul>
       </nav>
       <div className='footer-bottom'>
-        <p className="footer-copyright">© 2022 Pfadibewegung Schweiz</p>
+        <p className="footer-copyright">© 2023 Pfadibewegung Schweiz</p>
         <ul className='footer-bottom-nav'>
           <li className="child">
             <Link to="/impressum">Impressum</Link>
