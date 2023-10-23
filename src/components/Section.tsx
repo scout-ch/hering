@@ -40,7 +40,7 @@ function Section(props: Props) {
                 <h1>{props.section['title']}</h1>
             </div>
             <ReactMarkdown
-                plugins={[remarkGfm]}
+                remarkPlugins={[remarkGfm]}
                 components={LinkComponent}
             >{props.section.content}</ReactMarkdown>
             {chapters}

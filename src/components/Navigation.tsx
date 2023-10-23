@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionT } from './Section'
-import { Link, useHistory, useLocation } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { ChapterT } from './Chapter'
 import { HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
@@ -18,7 +18,7 @@ function Navigation(props: Props) {
 
     const [navbarOpen, setNavbarOpen] = useState(false)
     const location = useLocation()
-    const history = useHistory()
+    const history = useNavigate()
 
     const sections = props.sections
     const [checkedState, setCheckedState] = useState(
@@ -30,7 +30,7 @@ function Navigation(props: Props) {
             index === sectionNav ? !item : false
         );
         setCheckedState(updatedCheckedState)
-        history.push('/' + section.slug)
+        history('/' + section.slug)
     }
 
     const handleToggle = () => {

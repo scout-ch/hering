@@ -29,7 +29,7 @@ function HomePage(props: Props) {
     <h1>{startPage.title}</h1>
 
     <ReactMarkdown
-            plugins={[remarkGfm]}
+            remarkPlugins={[remarkGfm]}
             components={LinkComponent}
         >{startPage.content}</ReactMarkdown>
 

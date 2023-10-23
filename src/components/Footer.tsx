@@ -1,13 +1,13 @@
 import React from 'react'
-import { ReactComponent as FooterLogo } from './../images/footer.svg'
-import { ReactComponent as PBSLogo } from './../images/pbs_logo.svg'
 import styled from '@emotion/styled';
 import i18n from './../i18n';
 // import client from "./../client";
-import { Link, useHistory, useLocation } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { SectionT } from './Section';
 // import { getLocalSectionData } from '../helper/LocalDataHelper';
 import client from '../client';
+import FooterSvg from './FooterSvg';
+import PbsLogoSvg from './PbsLogoSvg';
 
 
 const Button = styled.button`
@@ -48,23 +48,27 @@ function Footer(props: Props) {
           const newCurrentSection = newSections.find((s: any) => { return s['id'] === otherSection['id'] })
           if (newCurrentSection) {
             redirect = true
-            history.push('/' + newCurrentSection.slug)
+            history('/' + newCurrentSection.slug)
           }
         }
       }).finally(() => {
         if (!redirect) {
-          history.push('/')
+          history('/')
         }
       })
     });
   }
   const location = useLocation();
-  const history = useHistory();
+  const history = useNavigate();
   return <>
-    <div className='footer-image'><FooterLogo></FooterLogo></div>
+    <div className='footer-image'>
+      <FooterSvg />
+      </div>
     <div className="footer-content">
       <nav className="footer-nav">
-        <div className='footer-logo'><PBSLogo></PBSLogo></div>
+        <div className='footer-logo'>
+          <PbsLogoSvg />
+        </div>
         <ul>
           <li>
             <Button className={props.lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de', history, location, props.sections)}>Deutsch</Button>

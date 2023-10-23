@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import {
   HashRouter as Router,
-  Switch,
   Route,
+  Routes,
 } from "react-router-dom";
 import { faCalendar, faExclamationTriangle, faBars } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -74,21 +74,13 @@ function App() {
         </div>
 
         <main>
-          <Switch>
-            <Route path="/calendar" >
-              <CalendarPage page={calendarPage} />
-            </Route>
-            <Route path="/impressum" >
-              <ImpressumPage />
-            </Route>
-            <Route path="/:slug" children={<SectionPage sections={sectionsByKey} />} />
-            <Route exact path="/">
-              <HomePage page={startPage}></HomePage>
-            </Route>
-            <Route exact path="/hering/">
-              <HomePage page={startPage}></HomePage>
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/calendar" element={ <CalendarPage page={calendarPage} />} />
+            <Route path="/impressum" element={<ImpressumPage />} />
+            <Route path="/:slug" element={<SectionPage sections={sectionsByKey} />} />
+            <Route path="/" element={<HomePage page={startPage}/>} />
+            <Route path="/hering/" element={<HomePage page={startPage}/>} />
+          </Routes>
           
           <div className='footer'>
             <Footer lang={lang} sections={sections} />
