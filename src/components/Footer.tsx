@@ -1,5 +1,4 @@
 import React from 'react'
-// import { ReactComponent as PBSLogo } from './../images/pbs_logo.svg'
 import styled from '@emotion/styled';
 import i18n from './../i18n';
 // import client from "./../client";
