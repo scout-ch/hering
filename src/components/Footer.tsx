@@ -54,7 +54,7 @@ function Footer(props: Props) {
         }
       }).finally(() => {
         if (!redirect) {
-          history.push('/')
+          history('/')
         }
       })
     });

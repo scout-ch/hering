@@ -29,7 +29,7 @@ export const LinkComponent = {
                 if (foundLink['link']) {
                     return <a href={foundLink['link']} target="_blank" rel="noreferrer">{children}</a>
                 } else if(foundLink['slug']) {
-                    return <HashLink to={foundLink['slug']}>{children}</HashLink>
+                    return <HashLink to={`/${foundLink['slug']}`}>{children}</HashLink>
                 } else {
                     return <Link to={props.href || ''}>{children}</Link>
                 }
