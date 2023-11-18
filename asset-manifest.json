@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hering/static/css/main.d08eadb3.css",
-    "main.js": "/hering/static/js/main.1a1be391.js",
+    "main.js": "/hering/static/js/main.1abbda25.js",
     "static/media/SourceSansPro-Regular.svg": "/hering/static/media/SourceSansPro-Regular.70198363adc97876a497.svg",
     "static/media/SourceSansPro-SemiBold.svg": "/hering/static/media/SourceSansPro-SemiBold.67659b46fab992fe0bb2.svg",
     "static/media/SourceSansPro-Bold.svg": "/hering/static/media/SourceSansPro-Bold.56042c485ba9f70b2b99.svg",
@@ -64,10 +64,10 @@
     "static/media/SourceSansPro-ExtraLightItalic.woff2": "/hering/static/media/SourceSansPro-ExtraLightItalic.e18594a38c6a04711f56.woff2",
     "index.html": "/hering/index.html",
     "main.d08eadb3.css.map": "/hering/static/css/main.d08eadb3.css.map",
-    "main.1a1be391.js.map": "/hering/static/js/main.1a1be391.js.map"
+    "main.1abbda25.js.map": "/hering/static/js/main.1abbda25.js.map"
   },
   "entrypoints": [
     "static/css/main.d08eadb3.css",
-    "static/js/main.1a1be391.js"
+    "static/js/main.1abbda25.js"
   ]
 }
