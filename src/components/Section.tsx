@@ -1,10 +1,9 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { withTranslation } from 'react-i18next'
-import ReactMarkdown from 'react-markdown'
+import React, {useEffect} from 'react'
+import {withTranslation} from 'react-i18next'
+import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { LinkComponent } from '../helper/MarkdownComponents'
-import Chapter, { ChapterT } from './Chapter'
+import {LinkComponent} from '../helper/MarkdownComponents'
+import Chapter, {ChapterT} from './Chapter'
 
 export type SectionT = {
     chapters: Array<ChapterT>
@@ -26,23 +25,25 @@ type Props = {
 }
 
 function Section(props: Props) {
-    const chapters = props.section['chapters'].sort(function (a: ChapterT, b: ChapterT) {
-        return a.sorting - b.sorting;
-    }).map(function (chapter: any) {
-        return <Chapter key={chapter['title']} data={chapter}></Chapter>
-    })
+
+    const chapters = props.section['chapters']
+        .sort((a: ChapterT, b: ChapterT) => a.sorting - b.sorting)
+        .map(chapter => <Chapter key={chapter['title']} data={chapter}></Chapter>)
+
+    useEffect(() => {
+        document.title = props.section['title']
+    }, [props]);
 
     return <div className='content'>
-        <Helmet><title>{props.section['title']}</title></Helmet>
-
         <div className='content-main'>
             <div id="section-title" className="section-title">
                 <h1>{props.section['title']}</h1>
             </div>
-            <ReactMarkdown
-                plugins={[remarkGfm]}
-                components={LinkComponent}
-            >{props.section.content}</ReactMarkdown>
+            <Markdown
+                remarkPlugins={[remarkGfm]}
+                components={LinkComponent}>
+                {props.section.content}
+            </Markdown>
             {chapters}
         </div>
     </div>

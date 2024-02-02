@@ -1,61 +1,62 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ReactMarkdown from 'react-markdown';
+import React, {useEffect, useState} from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { LinkComponent } from '../helper/MarkdownComponents';
-import { withTranslation } from 'react-i18next'
-// import client from '../client';
+import {LinkComponent} from '../helper/MarkdownComponents';
+import {withTranslation} from 'react-i18next'
 import impressumPageFR from './../data/impressum-page/fr.json'
 import impressumPageDE from './../data/impressum-page/de.json'
 import impressumPageIT from './../data/impressum-page/it.json'
 import i18n from '../i18n';
 
 export type ImpressumPageT = {
-  title: string
-  menu_name: string
-  content: string
+    title: string
+    menu_name: string
+    content: string
 }
 
 function ImpressumPage() {
-  const lang = i18n.language
-  
-  const [impressumPage, setImpressumPage] = React.useState<ImpressumPageT>();
+    const lang = i18n.language
 
-  React.useEffect(() => {
-    // client.get('/impressum-page?_locale=' + lang).then((response: { data: any }) => {
-    //   setImpressumPage(response.data)
-    // })
-    switch (i18n.language) {
-      case 'fr':
-        // @ts-ignore
-        return setImpressumPage(impressumPageFR)
-      case 'de':
-        // @ts-ignore
-        return setImpressumPage(impressumPageDE)
-      case 'it':
-        // @ts-ignore
-        return setImpressumPage(impressumPageIT)
-      default:
-        // @ts-ignore
-        setImpressumPage(impressumPageDE)
-    }
-  }, [lang])
+    const [impressumPage, setImpressumPage] = useState<ImpressumPageT>();
 
-  if (!impressumPage) return null
+    useEffect(() => {
+        document.title = impressumPage?.title ?? '';
+    }, [impressumPage]);
 
-  return <div className='content-main'>
-    <Helmet>
-      <title>{impressumPage.title}</title>
-    </Helmet>
-    <div className='calendar'>
-      <h1><FontAwesomeIcon icon="calendar" /> {impressumPage.title}</h1>
-      <ReactMarkdown
-        plugins={[remarkGfm]}
-        components={LinkComponent}
-      >{impressumPage.content}</ReactMarkdown>
+    useEffect(() => {
+        // client.get('/impressum-page?_locale=' + lang).then((response: { data: any }) => {
+        //   setImpressumPage(response.data)
+        // })
+        switch (i18n.language) {
+            case 'fr':
+                // @ts-ignore
+                return setImpressumPage(impressumPageFR)
+            case 'de':
+                // @ts-ignore
+                return setImpressumPage(impressumPageDE)
+            case 'it':
+                // @ts-ignore
+                return setImpressumPage(impressumPageIT)
+            default:
+                // @ts-ignore
+                setImpressumPage(impressumPageDE)
+        }
+    }, [lang])
 
+    if (!impressumPage) return null
+
+    return <div className='content-main'>
+        <div className='calendar'>
+            <h1><FontAwesomeIcon icon="calendar"/> {impressumPage.title}</h1>
+            <Markdown
+                remarkPlugins={[remarkGfm]}
+                components={LinkComponent}>
+                {impressumPage.content}
+            </Markdown>
+
+        </div>
     </div>
-  </div>
 }
+
 export default withTranslation()(ImpressumPage)

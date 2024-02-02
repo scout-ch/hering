@@ -1,38 +1,38 @@
-// import styled from '@emotion/styled'
-import React from 'react'
-import { Helmet } from 'react-helmet'
+import React, {useEffect} from 'react'
 
-import ReactMarkdown from 'react-markdown';
+import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { LinkComponent } from '../helper/MarkdownComponents';
-import { withTranslation } from 'react-i18next';
-import { IconT } from '../components/Section';
+import {withTranslation} from 'react-i18next';
+import {IconT} from '../components/Section';
+import {LinkComponent} from "../helper/MarkdownComponents";
 
 export type StartPage = {
-  title: string
-  menu_name: string
-  icon: IconT
-  content: string
+    title: string
+    menu_name: string
+    icon: IconT
+    content: string
 }
 type Props = {
-  page: StartPage
+    page: StartPage
 }
 
 function HomePage(props: Props) {
-  const startPage = props.page
+    const startPage = props.page
 
-  return <div className='content-main'>
-    <Helmet>
-      <title>{startPage.title}</title>
-    </Helmet>
-    
-    <h1>{startPage.title}</h1>
+    useEffect(() => {
+        document.title = startPage.title
+    }, [startPage]);
 
-    <ReactMarkdown
-            plugins={[remarkGfm]}
-            components={LinkComponent}
-        >{startPage.content}</ReactMarkdown>
+    return <div className='content-main'>
 
-  </div>
+        <h1>{startPage.title}</h1>
+
+        <Markdown
+            remarkPlugins={[remarkGfm]}
+            components={LinkComponent}>
+            {startPage.content}
+        </Markdown>
+    </div>
 }
+
 export default withTranslation()(HomePage)

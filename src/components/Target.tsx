@@ -1,24 +1,22 @@
 import React from 'react'
-import { withTranslation } from 'react-i18next'
-import { Role } from './Chapter'
+import {withTranslation} from 'react-i18next'
+import {Role} from './Chapter'
 
 type Props = {
-  t: any
-  targets: Array<Role>
+    t: any
+    targets: Array<Role>
 }
 
 function Target(props: Props) {
- const { t, targets } = props
+    const {t, targets} = props
 
-  const targetList = targets.map(function (target: Role) {
-    return <>
-      <div key={target.rolle} className='role'>{t(`target.role.${target.rolle}`)}</div>
-    </>
-  })
+    const targetList = targets.map(function (target: Role) {
+        return <div key={target.rolle} className='role'>{t(`target.role.${target.rolle}`)}</div>
+    })
 
-  return <div className='targets'>
-    {targetList}
-  </div>
+    return <div className='targets'>
+        {targetList}
+    </div>
 }
 
 export default withTranslation()(Target)

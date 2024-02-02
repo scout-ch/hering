@@ -1,9 +1,9 @@
 import React from 'react'
-import { withTranslation } from 'react-i18next'
-import ReactMarkdown from 'react-markdown'
+import {withTranslation} from 'react-i18next'
+import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { LinkComponent } from '../helper/MarkdownComponents'
-import { IconT, SectionT } from './Section'
+import {LinkComponent} from '../helper/MarkdownComponents'
+import {IconT, SectionT} from './Section'
 import Target from './Target'
 
 export type Role = {
@@ -28,6 +28,7 @@ type ChapterProps = {
 };
 
 function Chapter(props: ChapterProps) {
+    
     const data = props.data
     if (!data) {
         return null
@@ -35,15 +36,18 @@ function Chapter(props: ChapterProps) {
 
     return <div className='chapter'>
         <div id={data.slug}>
-
             <div className="chapter-title">
-                {data.icon && (<img className='chapter-icon' src={data.icon.url} alt="icon" />)}
+                {data.icon && (<img className='chapter-icon' src={data.icon.url} alt="icon"/>)}
                 <h2 id={data.slug}>{data.title}</h2>
             </div>
+
             <div className='chapter-main'>
-                <Target targets={data.responsible} />
-                <ReactMarkdown remarkPlugins={[remarkGfm]}
-                    components={LinkComponent}>{data.content}</ReactMarkdown>
+                <Target targets={data.responsible}/>
+                <Markdown
+                    remarkPlugins={[remarkGfm]}
+                    components={LinkComponent}>
+                    {data.content}
+                </Markdown>
             </div>
         </div>
     </div>
