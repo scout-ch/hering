@@ -13,6 +13,7 @@ import ImpressumPage from './pages/ImpressumPage';
 import {checkLinks} from './helper/LinkChecker';
 import client from './client';
 import {SectionT} from "./components/Section";
+import SectionHashHelper from "./helper/SectionHashHelper";
 
 export type LinkT = {
     title: string
@@ -63,6 +64,7 @@ function App() {
 
     return <div className='App'>
         <Router basename="/">
+            <SectionHashHelper />
             <LinksContext.Provider value={links}>
                 <div className='header'>
                     <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}></Navigation>
