@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import styled from '@emotion/styled';
 import {withTranslation} from 'react-i18next'
 import {TaskT} from './Task'
@@ -29,16 +29,18 @@ function buildDescription(task: TaskT): string {
 }
 
 function buildLinks(task: TaskT): string {
-    // TODO: Links anpassen
-    return task.chapters.map((chapter: ChapterT) => 'http://hering.scout.ch/hering/#/' + chapter.slug_with_section).join(',')
+    return task.chapters
+        .map((chapter: ChapterT) => 'https://scout-ch.github.io/hering/' + chapter.slug_with_section)
+        .join(',')
 }
 
-function generateIcs(tasks: Array<TaskT>) {
+async function generateIcsLink(tasks: Array<TaskT>): Promise<string> {
     const ics = require('ics')
 
     const events = tasks.map(function (task) {
         const deadline = task.deadline
         const alarms = []
+
         alarms.push({
             action: 'display',
             description: buildDescription(task),
@@ -57,31 +59,55 @@ function generateIcs(tasks: Array<TaskT>) {
         }
     })
 
-    return ics.createEvents(events, (error: any, value: any) => {
-        if (error) {
-            console.log(error)
-            return
-        }
-        return value
+    return new Promise((resolve, reject) => {
+        ics.createEvents(events, (error: any, value: any) => {
+            if (error) {
+                reject(error)
+                return
+            }
+
+            if (!value) {
+                reject('invalid ics value')
+                return
+            }
+
+            const data = new Blob([value], {type: 'text/calendar'});
+            const link = window.URL.createObjectURL(data);
+            resolve(link)
+        })
     })
 }
 
 function IcsDownload(props: Props) {
-    const {t} = props;
 
-    if (props.tasks[0]) {
-        const value = generateIcs(props.tasks)
-        // console.log(value)
-        const data = new Blob([value], {type: 'text/calendar'});
-        const link = window.URL.createObjectURL(data);
-        return (
-            <div className='calendar-ics'>
-                <A className="ics_download" id="link" download={t('calendarPage.filename')}
-                   href={link}>{t('calendarPage.download')}</A>
-            </div>
-        );
+    const [downloadLink, setDownloadLink] = useState<string>();
+
+    useEffect(() => {
+        const prepareDownloadLink = async () => {
+            if (!props.tasks || props.tasks.length === 0) {
+                setDownloadLink('')
+                return
+            }
+
+            const downloadLink = await generateIcsLink(props.tasks);
+            setDownloadLink(downloadLink)
+        }
+
+        prepareDownloadLink()
+    }, [props.tasks]);
+
+
+    if (!downloadLink || downloadLink.length === 0) {
+        return <div></div>
     }
-    return <div></div>
+
+    const {t} = props;
+    return (
+        <div className='calendar-ics'>
+            <A className="ics_download" id="link" download={t('calendarPage.filename')}
+               href={downloadLink}>{t('calendarPage.download')}</A>
+        </div>
+    );
 }
 
 export default withTranslation()(IcsDownload)
