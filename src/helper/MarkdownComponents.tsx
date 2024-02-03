@@ -55,6 +55,13 @@ export const LinkComponent: Components = {
     },
     img({node, children, ...props}) {
         const alt = props.alt
+        /*
+        * matches the following:
+        * alt: text, size: 50x50
+        * or
+        * alt: text, width: 50
+        * maybe later: alt.match('alt:\\s([\\w\\s\-\_\*]*),?\\s?(size:\\s((\\d*)x(\\d*)))?,?\\s?(width:\\s(\\d*))?,?\\s?(float: (\\w*))?');
+        */
         const found = alt?.match('alt: (.*), (size: ((\\d*)x(\\d*)))?(width: (\\d*))?');
         if (found) {
             if (found[7]) {

@@ -1,11 +1,11 @@
 import React from 'react'
-import {ReactComponent as FooterLogo} from './../images/footer.svg'
-import {ReactComponent as PBSLogo} from './../images/pbs_logo.svg'
 import styled from '@emotion/styled';
 import i18n from './../i18n';
 import {Link, NavigateFunction, useLocation, useNavigate} from 'react-router-dom'
 import {SectionT} from './Section';
 import client from '../client';
+import FooterSvg from './FooterSvg';
+import PbsLogoSvg from './PbsLogoSvg';
 
 
 const Button = styled.button`
@@ -24,8 +24,7 @@ type Props = {
 }
 
 function Footer(props: Props) {
-
-    const changeLanguage = (lang: string, navigate: NavigateFunction, location: any, oldSections: SectionT[]) => {
+    const changeLanguage = (lang: string, history: NavigateFunction, location: any, oldSections: SectionT[]) => {
         let redirect = false
 
         const path = location.pathname.replace('/', '')
@@ -37,54 +36,61 @@ function Footer(props: Props) {
                 redirect = true
                 return
             }
+
             if (path === 'impressum') {
                 redirect = true
                 return
             }
+
             client.get('/sections?_sort=sorting:ASC&_locale=' + lang).then((response: { data: any }) => {
                 // const newSections = getLocalSectionData(lang)
                 if (currentSection) {
                     const otherSection = currentSection['localizations'].find((l: any) => {
                         return l.locale === lang
                     })
+
                     // @ts-ignore
                     const newCurrentSection = newSections.find((s: any) => {
                         return s['id'] === otherSection['id']
                     })
+
                     if (newCurrentSection) {
                         redirect = true
-                        navigate('/' + newCurrentSection.slug)
+                        history('/' + newCurrentSection.slug)
                     }
                 }
             }).finally(() => {
                 if (!redirect) {
-                    navigate('/')
+                    history('/')
                 }
             })
         });
     }
-
     const location = useLocation();
-    const navigate = useNavigate();
+    const history = useNavigate();
 
     return <>
-        <div className='footer-image'><FooterLogo></FooterLogo></div>
+        <div className='footer-image'>
+            <FooterSvg/>
+        </div>
         <div className="footer-content">
             <nav className="footer-nav">
-                <div className='footer-logo'><PBSLogo></PBSLogo></div>
+                <div className='footer-logo'>
+                    <PbsLogoSvg/>
+                </div>
                 <ul>
                     <li>
                         <Button className={props.lang === 'de' ? 'active' : ''}
-                                onClick={() => changeLanguage('de', navigate, location, props.sections)}>Deutsch</Button>
+                                onClick={() => changeLanguage('de', history, location, props.sections)}>Deutsch</Button>
                         <Button className={props.lang === 'fr' ? 'active' : ''}
-                                onClick={() => changeLanguage('fr', navigate, location, props.sections)}>Français</Button>
+                                onClick={() => changeLanguage('fr', history, location, props.sections)}>Français</Button>
                         <Button className={props.lang === 'it' ? 'active' : ''}
-                                onClick={() => changeLanguage('it', navigate, location, props.sections)}>Italiano</Button>
+                                onClick={() => changeLanguage('it', history, location, props.sections)}>Italiano</Button>
                     </li>
                 </ul>
             </nav>
             <div className='footer-bottom'>
-                <p className="footer-copyright">© 2022 Pfadibewegung Schweiz</p>
+                <p className="footer-copyright">© 2023 Pfadibewegung Schweiz</p>
                 <ul className='footer-bottom-nav'>
                     <li className="child">
                         <Link to="/impressum">Impressum</Link>

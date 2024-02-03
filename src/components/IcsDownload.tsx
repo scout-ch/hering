@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import {withTranslation} from 'react-i18next'
 import {TaskT} from './Task'
 import {ChapterT} from './Chapter';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 const A = styled.a`
     border: none;
@@ -20,6 +21,7 @@ const A = styled.a`
 type Props = {
     t: any
     tasks: Array<TaskT>
+    calendarTitlePrefix: string
 }
 
 function buildDescription(task: TaskT): string {
@@ -34,7 +36,7 @@ function buildLinks(task: TaskT): string {
         .join(',')
 }
 
-async function generateIcsLink(tasks: Array<TaskT>): Promise<string> {
+async function generateIcsLink(tasks: TaskT[], calendarTitlePrefix: string): Promise<string> {
     const ics = require('ics')
 
     const events = tasks.map(function (task) {
@@ -50,7 +52,7 @@ async function generateIcsLink(tasks: Array<TaskT>): Promise<string> {
         return {
             start: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
             end: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
-            title: task.title,
+            title: `${calendarTitlePrefix} ${task.title}`,
             description: buildLinks(task),
             url: buildLinks(task),
             status: 'CONFIRMED',
@@ -89,12 +91,12 @@ function IcsDownload(props: Props) {
                 return
             }
 
-            const downloadLink = await generateIcsLink(props.tasks);
+            const downloadLink = await generateIcsLink(props.tasks, props.calendarTitlePrefix);
             setDownloadLink(downloadLink)
         }
 
         prepareDownloadLink()
-    }, [props.tasks]);
+    }, [props.tasks, props.calendarTitlePrefix]);
 
 
     if (!downloadLink || downloadLink.length === 0) {
@@ -104,8 +106,12 @@ function IcsDownload(props: Props) {
     const {t} = props;
     return (
         <div className='calendar-ics'>
-            <A className="ics_download" id="link" download={t('calendarPage.filename')}
-               href={downloadLink}>{t('calendarPage.download')}</A>
+            <A className="ics_download" id="link"
+               download={t('calendarPage.ics.filename')}
+               href={downloadLink}>
+                <i><FontAwesomeIcon icon="calendar"/> </i>
+                {t('calendarPage.ics.download')}
+            </A>
         </div>
     );
 }

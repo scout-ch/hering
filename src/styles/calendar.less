@@ -1,5 +1,13 @@
 .calendar {
   overflow-x: scroll;
+
+  input, select {
+    border: 1px solid black;
+    height: 30px;
+    width: 200px;
+    margin: 0;
+  }
+
   .calendar-table {
 
     ul {
@@ -36,13 +44,40 @@
         width: 30%;
       }
     }
+
+    @media (max-width: 659px) {
+      table {
+        width: 100vw;
+        display: block;
+        overflow: scroll;
+      }
+    }
   }
+  
   .calendar-ics {
     margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 8px;
+
+    .ics_download {
+      padding: 0.5em;
+      line-height: normal;
+    }
   }
 
   .calendar-form-container {
+    hr {
+      border: 0.5px solid #8c3c4f
+    }
     .calendar-form {
+      .calendar-title-prefix-hint {
+        font-weight: 200;
+        font-size: 15px;
+        width: 206px;
+      }
+
       list-style-type: none;
       padding: 0;
       max-width: 50%;
@@ -65,19 +100,12 @@
         justify-content: space-between;
         margin-top: 8px;
 
-        input, select {
-          border: 1px solid black;
-          height: 30px;
-          width: 200px;
-          margin: 0;
-        }
-
         #puffer {
-          width: 197px;
+          width: 200px;
         }
 
         #responsible {
-          width: 201px;
+          width: 206px;
         }
       }
     }

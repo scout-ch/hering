@@ -39,10 +39,6 @@ function App() {
             const startPagePromise = client.get('/start-page?_locale=' + lang)
             const calendarPromise = client.get('/calendar-page?_locale=' + lang)
 
-            await new Promise(resolve => {
-                setTimeout(() => resolve(''), 10000)
-            })
-
             const responses = await Promise.all([
                 sectionsPromise,
                 linksPromise,

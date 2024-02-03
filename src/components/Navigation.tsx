@@ -16,7 +16,7 @@ function Navigation(props: Props) {
 
     const [navbarOpen, setNavbarOpen] = useState(false)
     const location = useLocation()
-    const navigate = useNavigate()
+    const history = useNavigate()
 
     const sections = props.sections
     const [checkedState, setCheckedState] = useState(
@@ -28,7 +28,7 @@ function Navigation(props: Props) {
             index === sectionNav ? !item : false
         );
         setCheckedState(updatedCheckedState)
-        navigate('/' + section.slug)
+        history('/' + section.slug)
     }
 
     const handleToggle = () => {
