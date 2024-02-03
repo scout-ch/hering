@@ -11,7 +11,7 @@ import Warning from "../components/Warning";
 //   };
 
 export const LinkComponent: Components = {
-    blockquote({node, children, ...props}) {
+    blockquote({children}) {
         return <Warning content={children}/>
     },
     a({node, children, ...props}) {
