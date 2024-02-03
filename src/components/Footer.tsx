@@ -42,15 +42,13 @@ function Footer(props: Props) {
                 return
             }
 
-            client.get('/sections?_sort=sorting:ASC&_locale=' + lang).then((response: { data: any }) => {
-                // const newSections = getLocalSectionData(lang)
+            client.get('/sections?_sort=sorting:ASC&_locale=' + lang).then((response: { data: any[] }) => {
                 if (currentSection) {
                     const otherSection = currentSection['localizations'].find((l: any) => {
                         return l.locale === lang
                     })
-
-                    // @ts-ignore
-                    const newCurrentSection = newSections.find((s: any) => {
+                    
+                    const newCurrentSection = response.data.find((s: any) => {
                         return s['id'] === otherSection['id']
                     })
 
