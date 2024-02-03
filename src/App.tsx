@@ -26,34 +26,59 @@ export const LinksContext = createContext<LinkT[]>([])
 
 function App() {
 
+    const lang = i18n.language
     const [sections, setSections] = useState(null);
     const [links, setLinks] = useState(null);
     const [startPage, setStartPage] = useState(null);
     const [calendarPage, setCalendarPage] = useState(null);
-    const lang = i18n.language
 
     useEffect(() => {
-        const sectionsPromise = client.get('/sections?_sort=sorting:ASC&_locale=' + lang)
-        const linksPromise = client.get('/links?_locale=' + lang)
-        const startPagePromise = client.get('/start-page?_locale=' + lang)
-        const calendarPromise = client.get('/calendar-page?_locale=' + lang)
+        const fetchData = async () => {
+            const sectionsPromise = client.get('/sections?_sort=sorting:ASC&_locale=' + lang)
+            const linksPromise = client.get('/links?_locale=' + lang)
+            const startPagePromise = client.get('/start-page?_locale=' + lang)
+            const calendarPromise = client.get('/calendar-page?_locale=' + lang)
 
-        // setLocalData(lang, setSections, setLinks, setStartPage, setCalendarPage);
-        Promise.all([sectionsPromise, linksPromise, startPagePromise, calendarPromise]).then((values) => {
-            setSections(values[0].data)
-            setLinks(values[1].data)
-            setStartPage(values[2].data)
-            setCalendarPage(values[3].data)
-        })
+            await new Promise(resolve => {
+                setTimeout(() => resolve(''), 10000)
+            })
+
+            const responses = await Promise.all([
+                sectionsPromise,
+                linksPromise,
+                startPagePromise,
+                calendarPromise])
+
+            setSections(responses[0].data)
+            setLinks(responses[1].data)
+            setStartPage(responses[2].data)
+            setCalendarPage(responses[3].data)
+        }
+
+        fetchData()
     }, [lang])
-
-    useEffect(() => {
-        window.history.scrollRestoration = 'manual'
-    }, []);
 
     library.add(faCalendar, faExclamationTriangle, faBars)
 
-    if (!sections || !links || !startPage || !calendarPage) return null
+    if (!sections || !links || !startPage || !calendarPage) {
+        return <div className='loading'>
+            <div className="lds-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                Hering wird vorbereitet...
+            </div>
+        </div>
+    }
+
     //@ts-ignore
     const sectionsByKey = sections.reduce(function (map, section: SectionT) {
         map[section.slug] = section
@@ -64,7 +89,7 @@ function App() {
 
     return <div className='App'>
         <Router basename="/">
-            <SectionHashHelper />
+            <SectionHashHelper/>
             <LinksContext.Provider value={links}>
                 <div className='header'>
                     <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}></Navigation>
@@ -73,9 +98,9 @@ function App() {
                 <main>
                     <Routes>
                         <Route path="/" element={<HomePage page={startPage}/>}/>
-                        <Route path="calendar" element={<CalendarPage page={calendarPage}/>} />
-                        <Route path="impressum" element={<ImpressumPage/>} />
-                        <Route path=":slug" element={<SectionPage sections={sectionsByKey}/>} />
+                        <Route path="calendar" element={<CalendarPage page={calendarPage}/>}/>
+                        <Route path="impressum" element={<ImpressumPage/>}/>
+                        <Route path=":slug" element={<SectionPage sections={sectionsByKey}/>}/>
                     </Routes>
 
                     <div className='footer'>
