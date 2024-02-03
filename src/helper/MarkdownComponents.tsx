@@ -1,7 +1,8 @@
-import {useContext} from 'react';
+import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
 import {LinksContext} from '../App';
 import {Components} from "react-markdown/lib";
+import Warning from "../components/Warning";
 
 // // @ts-ignore
 // remark.macros.img = function (altText, width) {
@@ -10,9 +11,8 @@ import {Components} from "react-markdown/lib";
 //   };
 
 export const LinkComponent: Components = {
-    // @ts-ignore
     blockquote({node, children, ...props}) {
-        // return <Warning content={children}/>
+        return <Warning content={children}/>
     },
     a({node, children, ...props}) {
         /* eslint-disable */
