@@ -25,7 +25,7 @@ function Task(props: TaskT) {
 
     const chapters = props.chapters.map((chapter: ChapterT) => {
         return <li key={chapter.slug}>
-            <Link to={chapter.section.slug + '#' + chapter.slug}>{chapter.title}</Link>
+            <Link to={'/' + chapter.section.slug + '#' + chapter.slug}>{chapter.title}</Link>
         </li>
     })
 
