@@ -20,7 +20,8 @@ const ScrollToHashElement = () => {
         }
 
         hashElement.scrollIntoView({
-            behavior: "smooth"
+            behavior: "instant",
+            block: 'start'
         });
     }, [location]);
 
