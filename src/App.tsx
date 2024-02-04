@@ -57,20 +57,10 @@ function App() {
     library.add(faCalendar, faExclamationTriangle, faBars)
 
     if (!sections || !links || !startPage || !calendarPage) {
-        return <div className='loading'>
-            <div className="lds-grid">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+        return <div className='app-loading'>
+            <Loading isLoading={true}></Loading>
             <div>
-                Hering wird vorbereitet...
+                {t('homePage.loading')}
             </div>
         </div>
     }

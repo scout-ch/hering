@@ -8,7 +8,8 @@
       }
     },
     "homePage": {
-      "title": "Hallo Hering"
+      "title": "Hallo Hering",
+      "loading": "Hering wird geladen..."
     },
     "calendarPage": {
       "title": "Kalender",
