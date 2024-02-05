@@ -16,6 +16,7 @@ import {SectionT} from "./components/Section";
 import SectionHashHelper from "./helper/SectionHashHelper";
 import SearchPage from "./pages/SearchPage";
 import Loading from "./components/Loading";
+import LegacyUrlRedirectHelper from "./helper/LegacyUrlRedirectHelper";
 
 export type LinkT = {
     title: string
@@ -73,6 +74,7 @@ function App() {
 
     return <div className='App'>
         <Router basename="/">
+            <LegacyUrlRedirectHelper/>
             <SectionHashHelper/>
             <LinksContext.Provider value={links}>
                 <div className='header'>
