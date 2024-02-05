@@ -4,7 +4,6 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import {LinkComponent} from '../helper/MarkdownComponents';
 import CalendarForm from '../components/CalendarForm';
-import {withTranslation} from 'react-i18next'
 import {IconT} from '../components/Section';
 
 export type CalendarPageT = {
@@ -39,4 +38,4 @@ function CalendarPage(props: Props) {
     </div>
 }
 
-export default withTranslation()(CalendarPage)
+export default CalendarPage

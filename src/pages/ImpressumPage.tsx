@@ -3,7 +3,6 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import {LinkComponent} from '../helper/MarkdownComponents';
-import {withTranslation} from 'react-i18next'
 import impressumPageFR from './../data/impressum-page/fr.json'
 import impressumPageDE from './../data/impressum-page/de.json'
 import impressumPageIT from './../data/impressum-page/it.json'
@@ -16,6 +15,7 @@ export type ImpressumPageT = {
 }
 
 function ImpressumPage() {
+
     const lang = i18n.language
 
     const [impressumPage, setImpressumPage] = useState<ImpressumPageT>();
@@ -30,17 +30,13 @@ function ImpressumPage() {
         // })
         switch (i18n.language) {
             case 'fr':
-                // @ts-ignore
                 return setImpressumPage(impressumPageFR)
             case 'de':
-                // @ts-ignore
                 return setImpressumPage(impressumPageDE)
             case 'it':
-                // @ts-ignore
                 return setImpressumPage(impressumPageIT)
             default:
-                // @ts-ignore
-                setImpressumPage(impressumPageDE)
+                return setImpressumPage(impressumPageDE)
         }
     }, [lang])
 
@@ -59,4 +55,4 @@ function ImpressumPage() {
     </div>
 }
 
-export default withTranslation()(ImpressumPage)
+export default ImpressumPage

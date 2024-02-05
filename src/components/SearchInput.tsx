@@ -1,16 +1,17 @@
-import React from "react";
+import React from "react"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {withTranslation} from "react-i18next"
+import {useTranslation} from "react-i18next"
 
 type Props = {
-    t: any,
     keyword?: string,
     onChange?: (e: React.FormEvent<HTMLInputElement>) => void,
     onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void
 }
 
 function SearchInput(props: Props) {
-    const {t, keyword, onChange, onKeyDown} = props
+
+    const {t} = useTranslation()
+    const {keyword, onChange, onKeyDown} = props
 
     return <div className='search-input'>
         <div className='icon-input'>
@@ -29,4 +30,4 @@ function SearchInput(props: Props) {
     </div>
 }
 
-export default withTranslation()(SearchInput)
+export default SearchInput

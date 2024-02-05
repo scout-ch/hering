@@ -1,5 +1,4 @@
 import React from 'react'
-import {withTranslation} from 'react-i18next'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import {LinkComponent} from '../helper/MarkdownComponents'
@@ -24,7 +23,6 @@ export type ChapterT = {
 }
 
 type ChapterProps = {
-    t: any
     data: ChapterT;
 };
 
@@ -54,4 +52,4 @@ function Chapter(props: ChapterProps) {
     </div>
 }
 
-export default withTranslation()(Chapter)
+export default Chapter

@@ -5,10 +5,9 @@ import {ChapterT} from './Chapter'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {StartPageT} from '../pages/HomePage '
 import {CalendarPageT} from '../pages/CalendarPage'
-import {withTranslation} from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 type Props = {
-    t: any
     startPage: StartPageT
     calendarPage: CalendarPageT
     sections: Array<SectionT>
@@ -16,11 +15,11 @@ type Props = {
 
 function Navigation(props: Props) {
 
-    const location = useLocation()
-    const history = useNavigate()
-
-    const t = props.t
     const sections = props.sections
+
+    const {t} = useTranslation()
+    const location = useLocation()
+    const navigate = useNavigate()
 
     const [navbarOpen, setNavbarOpen] = useState(false)
     const [checkedState, setCheckedState] = useState(
@@ -32,7 +31,7 @@ function Navigation(props: Props) {
             index === sectionNav ? !item : false
         );
         setCheckedState(updatedCheckedState)
-        history('/' + section.slug)
+        navigate('/' + section.slug)
     }
 
     const handleToggle = () => {
@@ -113,4 +112,4 @@ function Navigation(props: Props) {
     </nav>
 }
 
-export default withTranslation()(Navigation)
+export default Navigation

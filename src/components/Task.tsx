@@ -1,5 +1,5 @@
 import React from 'react'
-import {withTranslation} from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 import {ChapterT, Role} from './Chapter';
 import {Link} from "react-router-dom";
 
@@ -9,18 +9,19 @@ export type TaskT = {
     targets: Array<Role>
     responsible: Array<Role>
     chapters: Array<ChapterT>
-    t: any
 }
 
 function Task(props: TaskT) {
+
+    const {t} = useTranslation()
+
     const options = {year: 'numeric', month: 'numeric', day: 'numeric'} as Intl.DateTimeFormatOptions
-    const deadline = props.deadline
-        .toLocaleDateString('de-DE', options)
+    const deadline = props.deadline.toLocaleDateString('de-DE', options)
     const targets = props.targets
         .map((target) => target['rolle'])
         .join(', ')
     const responsible = props.responsible
-        .map((responsible) => props.t(`target.role.${responsible['rolle']}`))
+        .map((responsible) => t(`target.role.${responsible['rolle']}`))
         .join(', ')
 
     const chapters = props.chapters.map((chapter: ChapterT) => {
@@ -40,4 +41,4 @@ function Task(props: TaskT) {
     </tr>
 }
 
-export default withTranslation()(Task)
+export default Task

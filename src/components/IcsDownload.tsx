@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import styled from '@emotion/styled';
-import {withTranslation} from 'react-i18next'
+import styled from '@emotion/styled'
 import {TaskT} from './Task'
-import {ChapterT} from './Chapter';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {ChapterT} from './Chapter'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {useTranslation} from "react-i18next"
 
 const A = styled.a`
     border: none;
@@ -19,7 +19,6 @@ const A = styled.a`
 `
 
 type Props = {
-    t: any
     tasks: Array<TaskT>
     calendarTitlePrefix: string
 }
@@ -82,6 +81,7 @@ async function generateIcsLink(tasks: TaskT[], calendarTitlePrefix: string): Pro
 
 function IcsDownload(props: Props) {
 
+    const {t} = useTranslation();
     const [downloadLink, setDownloadLink] = useState<string>();
 
     useEffect(() => {
@@ -103,7 +103,6 @@ function IcsDownload(props: Props) {
         return <div></div>
     }
 
-    const {t} = props;
     return (
         <div className='calendar-ics'>
             <A className="ics_download" id="link"
@@ -116,4 +115,4 @@ function IcsDownload(props: Props) {
     );
 }
 
-export default withTranslation()(IcsDownload)
+export default IcsDownload

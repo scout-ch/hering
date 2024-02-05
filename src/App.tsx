@@ -5,7 +5,7 @@ import {library} from '@fortawesome/fontawesome-svg-core'
 import HomePage, {StartPageT} from './pages/HomePage ';
 import CalendarPage, {CalendarPageT} from './pages/CalendarPage';
 import i18n from './i18n';
-import {withTranslation} from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import SectionPage, {SectionsByKey} from './pages/SectionPage';
@@ -26,14 +26,10 @@ export type LinkT = {
 
 export const LinksContext = createContext<LinkT[]>([])
 
-type Props = {
-    t: any
-}
-
-function App(props: Props) {
+function App() {
 
     const lang = i18n.language
-    const t = props.t
+    const {t} = useTranslation()
 
     const [sections, setSections] = useState<SectionT[] | undefined>();
     const [links, setLinks] = useState<LinkT[] | undefined>();
@@ -93,7 +89,7 @@ function App(props: Props) {
                     </Routes>
 
                     <div className='footer'>
-                        <Footer lang={lang} sections={sections}/>
+                        <Footer sections={sections}/>
                     </div>
                 </main>
             </LinksContext.Provider>
@@ -101,4 +97,4 @@ function App(props: Props) {
     </div>
 }
 
-export default withTranslation()(App);
+export default App;

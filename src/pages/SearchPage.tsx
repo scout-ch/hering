@@ -1,15 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import Markdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import {LinkComponent} from '../helper/MarkdownComponents';
-import {withTranslation} from 'react-i18next'
-import i18n from '../i18n';
-import SearchForm from '../components/SearchForm';
-import searchPageDE from "../data/search-page/de.json";
-import searchPageFR from "../data/search-page/fr.json";
-import searchPageIT from "../data/search-page/it.json";
-import {SectionT} from "../components/Section";
+import Markdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import {LinkComponent} from '../helper/MarkdownComponents'
+import i18n from '../i18n'
+import SearchForm from '../components/SearchForm'
+import searchPageDE from "../data/search-page/de.json"
+import searchPageFR from "../data/search-page/fr.json"
+import searchPageIT from "../data/search-page/it.json"
+import {SectionT} from "../components/Section"
 
 type Props = {
     sections: SectionT[]
@@ -44,7 +43,7 @@ function SearchPage(props: Props) {
 
     useEffect(() => {
         document.title = searchPage?.title ?? '';
-    }, [searchPage]);
+    }, [searchPage])
 
     if (!searchPage) {
         return null
@@ -63,4 +62,4 @@ function SearchPage(props: Props) {
     </div>
 }
 
-export default withTranslation()(SearchPage)
+export default SearchPage

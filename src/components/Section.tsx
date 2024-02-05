@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import {withTranslation} from 'react-i18next'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import {LinkComponent} from '../helper/MarkdownComponents'
@@ -49,4 +48,4 @@ function Section(props: Props) {
     </div>
 }
 
-export default withTranslation()(Section)
+export default Section

@@ -1,7 +1,6 @@
 import React from 'react'
 import Section, {SectionT} from '../components/Section'
 import {useParams} from 'react-router'
-import {withTranslation} from 'react-i18next'
 
 type Params = {
     slug: string
@@ -24,4 +23,4 @@ function SectionPage(props: Props) {
         : null;
 }
 
-export default withTranslation()(SectionPage)
+export default SectionPage

@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react'
-import {withTranslation} from "react-i18next"
+import {useTranslation} from "react-i18next"
 import Loading from './Loading'
 import {ChapterT} from './Chapter';
 import Markdown from 'react-markdown';
@@ -11,7 +11,6 @@ import {SectionT} from "./Section";
 import {SearchHelper} from "../helper/SearchHelper";
 
 type Props = {
-    t: any,
     sections: SectionT[]
 }
 
@@ -23,7 +22,8 @@ type SearchResult = {
 }
 
 function SearchForm(props: Props) {
-    const t = props.t
+
+    const {t} = useTranslation()
     const [searchParams, setSearchParams] = useSearchParams();
 
     const isQueryLoaded = useRef<boolean>(false);
@@ -143,4 +143,4 @@ function SearchForm(props: Props) {
     </>
 }
 
-export default withTranslation()(SearchForm)
+export default SearchForm
