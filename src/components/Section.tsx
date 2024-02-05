@@ -5,7 +5,7 @@ import {LinkComponent} from '../helper/MarkdownComponents'
 import Chapter, {ChapterT} from './Chapter'
 
 export type SectionT = {
-    chapters: Array<ChapterT>
+    chapters: ChapterT[]
     sorting: number
     title: string
     content: string

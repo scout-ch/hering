@@ -19,7 +19,7 @@ export type ChapterT = {
     slug_with_section: string
     icon: IconT
     section: SectionT
-    responsible: Array<Role>
+    responsible: Role[]
 }
 
 type ChapterProps = {

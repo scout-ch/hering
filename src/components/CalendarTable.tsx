@@ -4,7 +4,7 @@ import Task, {TaskT} from './Task';
 import {useTranslation} from "react-i18next";
 
 type Props = {
-    tasks: Array<TaskT>
+    tasks: TaskT[]
     prefix: string
 }
 

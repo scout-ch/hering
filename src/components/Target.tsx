@@ -3,7 +3,7 @@ import {useTranslation} from 'react-i18next'
 import {Role} from './Chapter'
 
 type Props = {
-    targets: Array<Role>
+    targets: Role[]
 }
 
 function Target(props: Props) {

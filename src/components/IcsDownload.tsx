@@ -19,7 +19,7 @@ const A = styled.a`
 `
 
 type Props = {
-    tasks: Array<TaskT>
+    tasks: TaskT[]
     calendarTitlePrefix: string
 }
 
