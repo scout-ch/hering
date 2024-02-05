@@ -52,11 +52,9 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@types/node": "^20.11.16",
-    "@types/react": "^17.0.0",
+    "@types/react": "^18.2.54",
     "@types/react-dom": "^18.2.18",
-    "@types/react-helmet": "^6.1.1",
     "@types/react-router-dom": "^5.3.3",
-    "@types/react-router-hash-link": "^2.4.2",
     "craco-less": "^3.0.1",
     "typescript": "~5.1.0",
     "webpack": "^5.0.0"
