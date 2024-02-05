@@ -1,6 +1,6 @@
 import React, {createContext, useEffect, useState} from 'react';
 import {BrowserRouter as Router, Route, Routes,} from "react-router-dom";
-import {faBars, faCalendar, faExclamationTriangle, faSearch} from '@fortawesome/free-solid-svg-icons'
+import {faBars, faCalendar, faExclamationTriangle, faSearch, faHome} from '@fortawesome/free-solid-svg-icons'
 import {library} from '@fortawesome/fontawesome-svg-core'
 import HomePage, {StartPageT} from './pages/HomePage ';
 import CalendarPage, {CalendarPageT} from './pages/CalendarPage';
@@ -54,7 +54,7 @@ function App() {
         fetchData()
     }, [lang])
 
-    library.add(faCalendar, faExclamationTriangle, faBars, faSearch)
+    library.add(faCalendar, faExclamationTriangle, faBars, faSearch, faHome)
 
     if (!sections || !links || !startPage || !calendarPage) {
         return <div className='app-loading'>

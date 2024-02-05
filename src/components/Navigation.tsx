@@ -10,7 +10,7 @@ import {useTranslation} from "react-i18next";
 type Props = {
     startPage: StartPageT
     calendarPage: CalendarPageT
-    sections: Array<SectionT>
+    sections: SectionT[]
 }
 
 function Navigation(props: Props) {
@@ -40,7 +40,7 @@ function Navigation(props: Props) {
 
     function chapterList(section: SectionT) {
         const chapters = section.chapters
-        const chapterItems = chapters.map(function (chapter: ChapterT) {
+        const chapterItems = chapters.map((chapter: ChapterT) => {
             const isActive = location.hash.replace('#', '') === chapter.slug
             const className = isActive ? 'active' : ''
             return <li key={chapter.slug_with_section} className="subMenu" onClick={handleToggle}>
@@ -53,7 +53,7 @@ function Navigation(props: Props) {
         </ul>
     }
 
-    const sectionList = sections.map(function (section: SectionT, index: number) {
+    const sectionList = sections.map((section: SectionT, index: number) => {
         const isActive = location.pathname.replace('/', '') === section.slug
         const className = isActive ? 'active' : ''
         return <li key={section.slug} className={className}>
@@ -84,28 +84,44 @@ function Navigation(props: Props) {
 
     return <nav className="header-nav">
         <div className="toggle-btn">
-            <i onClick={handleToggle}><FontAwesomeIcon icon="bars"/></i>
+            <i onClick={handleToggle}>
+                <FontAwesomeIcon icon="bars"/>
+            </i>
         </div>
-        <div className={`header-nav-content ${navbarOpen ? "showMenu" : ""}`}>
-            <ul className={`menuItems ${navbarOpen ? "showMenu" : ""}`}>
-                <li key="home">
-                    <Link to="/" className={homeActive}
+        <div className={`header-nav-content ${navbarOpen ? "show-menu" : ""}`}>
+            <div className={"header-nav-primary"}>
+                <div key="home" className={"primary-link"}>
+                    <Link to="/" className={homeActive + ''}
                           onClick={() => setNavbarOpen(!navbarOpen)}>
+                        <i>
+                            <FontAwesomeIcon icon="home"/>
+                        </i>
                         {props.startPage.menu_name}
                     </Link>
-                </li>
-                <li key="search">
+                </div>
+                <div key="search" className={"primary-link"}>
                     <Link to="/search" className={searchActive}
                           onClick={() => setNavbarOpen(!navbarOpen)}>
+                        <i>
+                            <FontAwesomeIcon icon="search"/>
+                        </i>
                         {t('searchPage.title')}
                     </Link>
-                </li>
-                <li key="calendar">
+                </div>
+                <div key="calendar" className={"primary-link"}>
                     <Link to="/calendar" className={calendarActive}
                           onClick={() => setNavbarOpen(!navbarOpen)}>
+                        <i>
+                            <FontAwesomeIcon icon="calendar"/>
+                        </i>
                         {props.calendarPage.menu_name}
                     </Link>
-                </li>
+                </div>
+            </div>
+
+            <hr/>
+
+            <ul className={`menu-items ${navbarOpen ? "show-menu" : ""}`}>
                 {sectionList}
             </ul>
         </div>

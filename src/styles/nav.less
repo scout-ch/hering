@@ -37,6 +37,7 @@ nav.header-nav {
   .with-icon {
     display: flex;
     justify-content: space-between;
+
     img {
       width: 25px;
     }
@@ -46,7 +47,7 @@ nav.header-nav {
     overflow-y: scroll;
     height: calc(~"100vh - 40px");
 
-    &>ul {
+    & > ul {
       list-style-type: disclosure-closed;
       margin: 0;
       color: white;
@@ -60,6 +61,23 @@ nav.header-nav {
     li.active {
       list-style-type: disclosure-open;
     }
+
+    .header-nav-primary {
+      display: grid;
+      gap: 0.5em;
+
+
+      .primary-link a {
+        display: flex;
+        gap: 0.5em;
+        align-items: center;
+        padding: 0 8px;
+      }
+    }
+  }
+
+  hr {
+    margin: 0.8em 0.3em;
   }
 
   .accordion_input {
@@ -97,6 +115,7 @@ nav.header-nav {
     z-index: 300;
     width: 100%;
     height: 25px;
+
     ul {
       height: 100%;
     }
@@ -124,12 +143,12 @@ nav.header-nav {
     padding-left: 1rem;
   }
 
-  .showMenu {
+  .show-menu {
     display: block;
     background-color: var(--color-primary);
   }
 
-  .menuItems {
+  .menu-items {
     background-color: var(--color-primary);
     height: 100vh;
     max-width: 400px;
@@ -138,7 +157,7 @@ nav.header-nav {
     transition: transform 0.3s ease-out;
   }
 
-  .menuItems.showMenu {
+  .menu-items.show-menu {
     transform: translateX(0);
     background-color: @color-primary;
   }
