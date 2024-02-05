@@ -81,6 +81,7 @@ function SearchForm(props: Props) {
 
     const findMatchingContents = (keyword: string, content: string): string[] => {
         const markdownLinkRegex = new RegExp('!?\\[(.*?)]\\((.*?)\\)', 'gmi')
+        // eslint-disable-next-line
         const keywordRegex = new RegExp(`[^.!?:;#\n]*(?=${keyword}).*?[.!?](?=\s?|\p{Lu}|$)`, 'gmi')
 
         const filteredContent = content.replace(markdownLinkRegex, '') // Remove Markdown links from search results
