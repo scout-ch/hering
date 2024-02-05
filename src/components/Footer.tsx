@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled';
 import i18n from './../i18n';
-import {Link, NavigateFunction, useLocation, useNavigate} from 'react-router-dom'
+import {Link, useLocation, useNavigate} from 'react-router-dom'
 import {SectionT} from './Section';
 import client from '../client';
 import FooterSvg from './FooterSvg';
@@ -19,12 +19,16 @@ const Button = styled.button`
     }
 `
 type Props = {
-    lang: string
     sections: SectionT[]
 }
 
 function Footer(props: Props) {
-    const changeLanguage = (lang: string, history: NavigateFunction, location: any, oldSections: SectionT[]) => {
+
+    const lang = i18n.language
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const changeLanguage = (lang: string, oldSections: SectionT[]) => {
         let redirect = false
 
         const path = location.pathname.replace('/', '')
@@ -47,25 +51,23 @@ function Footer(props: Props) {
                     const otherSection = currentSection['localizations'].find((l: any) => {
                         return l.locale === lang
                     })
-                    
+
                     const newCurrentSection = response.data.find((s: any) => {
                         return s['id'] === otherSection['id']
                     })
 
                     if (newCurrentSection) {
                         redirect = true
-                        history('/' + newCurrentSection.slug)
+                        navigate('/' + newCurrentSection.slug)
                     }
                 }
             }).finally(() => {
                 if (!redirect) {
-                    history('/')
+                    navigate('/')
                 }
             })
         });
     }
-    const location = useLocation();
-    const history = useNavigate();
 
     return <>
         <div className='footer-image'>
@@ -78,12 +80,12 @@ function Footer(props: Props) {
                 </div>
                 <ul>
                     <li>
-                        <Button className={props.lang === 'de' ? 'active' : ''}
-                                onClick={() => changeLanguage('de', history, location, props.sections)}>Deutsch</Button>
-                        <Button className={props.lang === 'fr' ? 'active' : ''}
-                                onClick={() => changeLanguage('fr', history, location, props.sections)}>Français</Button>
-                        <Button className={props.lang === 'it' ? 'active' : ''}
-                                onClick={() => changeLanguage('it', history, location, props.sections)}>Italiano</Button>
+                        <Button className={lang === 'de' ? 'active' : ''}
+                                onClick={() => changeLanguage('de', props.sections)}>Deutsch</Button>
+                        <Button className={lang === 'fr' ? 'active' : ''}
+                                onClick={() => changeLanguage('fr', props.sections)}>Français</Button>
+                        <Button className={lang === 'it' ? 'active' : ''}
+                                onClick={() => changeLanguage('it', props.sections)}>Italiano</Button>
                     </li>
                 </ul>
             </nav>
