@@ -8,7 +8,8 @@
       }
     },
     "homePage": {
-      "title": "Ciao Hering"
+      "title": "Ciao Sardina",
+      "loading": "Sardina si sta caricando..."
     },
     "calendarPage": {
       "title": "Calendario",
@@ -35,6 +36,12 @@
         "target": "a chi",
         "chapters": "Links"
       }
+    },
+    "searchPage": {
+      "title": "Cerca",
+      "searchPlaceholder": "Inserisci il termine di ricerca...",
+      "noResults": "Non sono stati trovati risultati. Provare con un altro termine di ricerca.",
+      "noKeyword": "Inserire un termine di ricerca con almeno {{amountOfCharacters}} caratteri per avviare la ricerca."
     }
   }
 }

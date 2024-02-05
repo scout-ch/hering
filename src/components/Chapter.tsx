@@ -11,6 +11,7 @@ export type Role = {
 }
 
 export type ChapterT = {
+    id: number
     sorting: number
     title: string
     menu_name: string
@@ -28,7 +29,7 @@ type ChapterProps = {
 };
 
 function Chapter(props: ChapterProps) {
-    
+
     const data = props.data
     if (!data) {
         return null

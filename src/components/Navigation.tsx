@@ -3,22 +3,26 @@ import {SectionT} from './Section'
 import {Link, useLocation, useNavigate} from 'react-router-dom'
 import {ChapterT} from './Chapter'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {StartPage} from '../pages/HomePage '
+import {StartPageT} from '../pages/HomePage '
 import {CalendarPageT} from '../pages/CalendarPage'
+import {withTranslation} from "react-i18next";
 
 type Props = {
-    sections: Array<SectionT>
-    startPage: StartPage
+    t: any
+    startPage: StartPageT
     calendarPage: CalendarPageT
+    sections: Array<SectionT>
 }
 
 function Navigation(props: Props) {
 
-    const [navbarOpen, setNavbarOpen] = useState(false)
     const location = useLocation()
     const history = useNavigate()
 
+    const t = props.t
     const sections = props.sections
+
+    const [navbarOpen, setNavbarOpen] = useState(false)
     const [checkedState, setCheckedState] = useState(
         new Array(sections.length).fill(false)
     );
@@ -69,12 +73,15 @@ function Navigation(props: Props) {
         </li>
     })
 
-    const startPage = props.startPage
-    const calendarPage = props.calendarPage
-    const isCalendar = location.pathname === '/calendar'
-    const calendarActive = isCalendar ? 'active' : ''
-    const isHome = location.pathname === '/'
-    const homeActive = isHome ? 'active' : ''
+    const homeActive = location.pathname === '/'
+        ? 'active'
+        : ''
+    const calendarActive = location.pathname === '/calendar'
+        ? 'active'
+        : ''
+    const searchActive = location.pathname === '/search'
+        ? 'active' :
+        ''
 
     return <nav className="header-nav">
         <div className="toggle-btn">
@@ -84,11 +91,21 @@ function Navigation(props: Props) {
             <ul className={`menuItems ${navbarOpen ? "showMenu" : ""}`}>
                 <li key="home">
                     <Link to="/" className={homeActive}
-                          onClick={() => setNavbarOpen(!navbarOpen)}>{startPage.menu_name}</Link>
+                          onClick={() => setNavbarOpen(!navbarOpen)}>
+                        {props.startPage.menu_name}
+                    </Link>
+                </li>
+                <li key="search">
+                    <Link to="/search" className={searchActive}
+                          onClick={() => setNavbarOpen(!navbarOpen)}>
+                        {t('searchPage.title')}
+                    </Link>
                 </li>
                 <li key="calendar">
                     <Link to="/calendar" className={calendarActive}
-                          onClick={() => setNavbarOpen(!navbarOpen)}>{calendarPage.menu_name}</Link>
+                          onClick={() => setNavbarOpen(!navbarOpen)}>
+                        {props.calendarPage.menu_name}
+                    </Link>
                 </li>
                 {sectionList}
             </ul>
@@ -96,4 +113,4 @@ function Navigation(props: Props) {
     </nav>
 }
 
-export default Navigation
+export default withTranslation()(Navigation)

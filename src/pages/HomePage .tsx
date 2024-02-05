@@ -6,14 +6,14 @@ import {withTranslation} from 'react-i18next';
 import {IconT} from '../components/Section';
 import {LinkComponent} from "../helper/MarkdownComponents";
 
-export type StartPage = {
+export type StartPageT = {
     title: string
     menu_name: string
     icon: IconT
     content: string
 }
 type Props = {
-    page: StartPage
+    page: StartPageT
 }
 
 function HomePage(props: Props) {

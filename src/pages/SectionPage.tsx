@@ -7,7 +7,7 @@ type Params = {
     slug: string
 }
 
-type SectionsByKey = {
+export type SectionsByKey = {
     [key: string]: SectionT
 }
 

@@ -8,7 +8,8 @@
       }
     },
     "homePage": {
-      "title": "Salut Hering"
+      "title": "Salut Hering",
+      "loading": "Chargement de la Sardine ..."
     },
     "calendarPage": {
       "title": "Calendrier",
@@ -35,6 +36,12 @@
         "target": "À qui",
         "chapters": "Voir"
       }
+    },
+    "searchPage": {
+      "title": "Recherche",
+      "searchPlaceholder": "Saisir un terme de recherche...",
+      "noResults": "Aucun résultat trouvé. Essayez un autre terme de recherche.",
+      "noKeyword": "Entrez un terme de recherche contenant au moins {{amountOfCharacters}} caractères pour lancer la recherche."
     }
   }
 }
