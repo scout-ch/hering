@@ -6,9 +6,9 @@ import {Link} from "react-router-dom";
 export type TaskT = {
     deadline: Date
     title: string
-    targets: Array<Role>
-    responsible: Array<Role>
-    chapters: Array<ChapterT>
+    targets: Role[]
+    responsible: Role[]
+    chapters: ChapterT[]
 }
 
 function Task(props: TaskT) {
