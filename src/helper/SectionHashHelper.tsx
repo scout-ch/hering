@@ -2,7 +2,7 @@ import {useEffect} from "react"
 import {useLocation} from "react-router-dom"
 
 const ScrollToHashElement = () => {
-    
+
     const location = useLocation();
 
     useEffect(() => {
@@ -17,6 +17,7 @@ const ScrollToHashElement = () => {
 
         const hashElement = getHashElement();
         if (!hashElement) {
+            window.scrollTo(0, 0)
             return;
         }
 
