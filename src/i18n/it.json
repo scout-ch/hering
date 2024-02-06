@@ -29,6 +29,7 @@
         "download": "Scarica come .ics",
         "filename": "Dati.ics"
       },
+      "resetValues": "Azzeramento dei valori",
       "table": {
         "what": "Cosa",
         "who": "Chi",

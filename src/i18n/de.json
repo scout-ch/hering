@@ -29,6 +29,7 @@
         "download": "Download als .ics",
         "filename": "Daten.ics"
       },
+      "resetValues": "Werte zurücksetzen",
       "table": {
         "what": "Was",
         "who": "Wer",
