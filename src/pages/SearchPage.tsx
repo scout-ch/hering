@@ -51,7 +51,9 @@ function SearchPage(props: Props) {
 
     return <div className='content-main'>
         <div className='search'>
-            <h1><FontAwesomeIcon icon="search"/> {searchPage.title}</h1>
+            <h1>
+                <FontAwesomeIcon icon="search"/> {searchPage.title}
+            </h1>
             <Markdown remarkPlugins={[remarkGfm]}
                       components={LinkComponent}>
                 {searchPage.content}

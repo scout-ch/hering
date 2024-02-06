@@ -112,7 +112,7 @@ function Navigation(props: Props) {
                     <Link to="/calendar" className={calendarActive}
                           onClick={() => setNavbarOpen(!navbarOpen)}>
                         <i>
-                            <FontAwesomeIcon icon="calendar"/>
+                            <FontAwesomeIcon icon="calendar-days"/>
                         </i>
                         {props.calendarPage.menu_name}
                     </Link>

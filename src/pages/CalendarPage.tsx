@@ -27,7 +27,9 @@ function CalendarPage(props: Props) {
 
     return <div className='content-main'>
         <div className='calendar'>
-            <h1><FontAwesomeIcon icon="calendar"/> {calendarPage.title}</h1>
+            <h1>
+                <FontAwesomeIcon icon="calendar-days"/> {calendarPage.title}
+            </h1>
             <Markdown
                 remarkPlugins={[remarkGfm]}
                 components={LinkComponent}>

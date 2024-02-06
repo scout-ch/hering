@@ -108,7 +108,7 @@ function IcsDownload(props: Props) {
             <A className="ics_download" id="link"
                download={t('calendarPage.ics.filename')}
                href={downloadLink}>
-                <i><FontAwesomeIcon icon="calendar"/> </i>
+                <i><FontAwesomeIcon icon="calendar-days"/> </i>
                 {t('calendarPage.ics.download')}
             </A>
         </div>
