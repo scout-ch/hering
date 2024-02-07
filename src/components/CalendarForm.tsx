@@ -70,6 +70,27 @@ function CalendarForm() {
         window.sessionStorage.setItem(calendarPrefixCacheKey, newPrefix);
     }
 
+    const resetValues = () => {
+        window.sessionStorage.removeItem(startDateCacheKey);
+        setStartDate(initialStartDate)
+
+        window.sessionStorage.removeItem(responsibleCacheKey);
+        setResponsible(initialResponsible)
+
+        window.sessionStorage.removeItem(bufferCacheKey);
+        setPuffer(0)
+
+        window.sessionStorage.removeItem(calendarPrefixCacheKey);
+        setCalendarTitlePrefix('')
+    }
+
+    const hasActiveCache = () => {
+        return !!window.sessionStorage.getItem(startDateCacheKey)
+            || !!window.sessionStorage.getItem(responsibleCacheKey)
+            || !!window.sessionStorage.getItem(bufferCacheKey)
+            || !!window.sessionStorage.getItem(calendarPrefixCacheKey)
+    }
+
     const createTasks = useCallback((event?: FormEvent<HTMLFormElement> | undefined) => {
         event?.preventDefault()
 
@@ -102,28 +123,11 @@ function CalendarForm() {
             .sort((a: TaskT, b: TaskT) => a.deadline.getTime() - b.deadline.getTime())
 
         setTasks(tasks)
-    }, [taskList, startDate, responsible, puffer])
+    }, [startDate, responsible, puffer, taskList]);
 
-    const resetValues = () => {
-        window.sessionStorage.removeItem(startDateCacheKey);
-        setStartDate(initialStartDate)
-
-        window.sessionStorage.removeItem(responsibleCacheKey);
-        setResponsible(initialResponsible)
-
-        window.sessionStorage.removeItem(bufferCacheKey);
-        setPuffer(0)
-
-        window.sessionStorage.removeItem(calendarPrefixCacheKey);
-        setCalendarTitlePrefix('')
-    }
-
-    const hasActiveCache = () => {
-        return !!window.sessionStorage.getItem(startDateCacheKey)
-            || !!window.sessionStorage.getItem(responsibleCacheKey)
-            || !!window.sessionStorage.getItem(bufferCacheKey)
-            || !!window.sessionStorage.getItem(calendarPrefixCacheKey)
-    }
+    useEffect(() => {
+        createTasks()
+    }, [createTasks]);
 
     useEffect(() => {
         const getTasks = async () => {
@@ -146,13 +150,13 @@ function CalendarForm() {
         }
 
         loadCachedValues()
-        getTasks().then(() => createTasks())
-    }, [taskList, createTasks]);
+        getTasks()
+    }, []);
 
     return (
         <div>
             <div className='calendar-form-container'>
-                <form onSubmit={createTasks}>
+                <form>
                     <ul className='calendar-form'>
                         <li>
                             <label>
@@ -195,7 +199,6 @@ function CalendarForm() {
                         </li>
                         <li>
                             <div style={buttonGroupStyle}>
-                                <button type="submit"> {t('calendarPage.ics.generate')}</button>
                                 {hasActiveCache() ?
                                     <button className={"as-link"}
                                             onClick={resetValues}>
