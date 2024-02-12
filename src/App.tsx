@@ -1,5 +1,5 @@
 import React, {createContext, useEffect, useState} from 'react';
-import {BrowserRouter as Router, Route, Routes,} from "react-router-dom";
+import {HashRouter as Router, Route, Routes} from "react-router-dom";
 import {
     faBars,
     faCalendarDays,
@@ -23,7 +23,6 @@ import {SectionT} from "./components/Section";
 import SectionHashHelper from "./helper/SectionHashHelper";
 import SearchPage from "./pages/SearchPage";
 import Loading from "./components/Loading";
-import LegacyUrlRedirectHelper from "./helper/LegacyUrlRedirectHelper";
 
 export type LinkT = {
     title: string
@@ -84,8 +83,7 @@ function App() {
     checkLinks(sections, links)
 
     return <div className='App'>
-        <Router basename="/hering">
-            <LegacyUrlRedirectHelper/>
+        <Router basename="/">
             <SectionHashHelper/>
             <LinksContext.Provider value={links}>
                 <div className='header'>
@@ -95,9 +93,10 @@ function App() {
                 <main>
                     <Routes>
                         <Route path="/" element={<HomePage page={startPage}/>}/>
+                        <Route path="/hering/" element={<HomePage page={startPage}/>}/>
                         <Route path="search" element={<SearchPage sections={sections}/>}/>
                         <Route path="calendar" element={<CalendarPage page={calendarPage}/>}/>
-                        <Route path="impressum" element={<ImpressumPage page={impressumPage} />}/>
+                        <Route path="impressum" element={<ImpressumPage page={impressumPage}/>}/>
                         <Route path=":slug" element={<SectionPage sections={sectionsByKey}/>}/>
                     </Routes>
 
