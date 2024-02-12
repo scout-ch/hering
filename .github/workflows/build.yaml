@@ -25,7 +25,7 @@ jobs:
         id: yarn-cache-dir-path
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
 
-      - name: Cache npm packages
+      - name: Cache yarn packages
         uses: actions/cache@v4
         id: yarn-cache
         with:
@@ -34,9 +34,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      - if: steps.yarn-cache.outputs.cache-hit != 'true'
+        name: List the state of node modules
+        continue-on-error: true
+        run: yarn list
+
       - name: Install dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install
-        
+
       - name: Build app
         run: yarn build
