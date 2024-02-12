@@ -1,12 +1,8 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import {LinkComponent} from '../helper/MarkdownComponents';
-import impressumPageFR from './../data/impressum-page/fr.json'
-import impressumPageDE from './../data/impressum-page/de.json'
-import impressumPageIT from './../data/impressum-page/it.json'
-import i18n from '../i18n';
 
 export type ImpressumPageT = {
     title: string
@@ -14,33 +10,17 @@ export type ImpressumPageT = {
     content: string
 }
 
-function ImpressumPage() {
+type Props = {
+    page: ImpressumPageT
+}
 
-    const lang = i18n.language
+function ImpressumPage(props: Props) {
 
-    const [impressumPage, setImpressumPage] = useState<ImpressumPageT>();
+    const impressumPage = props.page;
 
     useEffect(() => {
         document.title = impressumPage?.title ?? '';
     }, [impressumPage]);
-
-    useEffect(() => {
-        // client.get('/impressum-page?_locale=' + lang).then((response: { data: any }) => {
-        //   setImpressumPage(response.data)
-        // })
-        switch (i18n.language) {
-            case 'fr':
-                return setImpressumPage(impressumPageFR)
-            case 'de':
-                return setImpressumPage(impressumPageDE)
-            case 'it':
-                return setImpressumPage(impressumPageIT)
-            default:
-                return setImpressumPage(impressumPageDE)
-        }
-    }, [lang])
-
-    if (!impressumPage) return null
 
     return <div className='content-main'>
         <div className='calendar'>
@@ -52,7 +32,6 @@ function ImpressumPage() {
                 components={LinkComponent}>
                 {impressumPage.content}
             </Markdown>
-
         </div>
     </div>
 }

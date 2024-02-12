@@ -16,7 +16,7 @@ import {useTranslation} from 'react-i18next';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import SectionPage, {SectionsByKey} from './pages/SectionPage';
-import ImpressumPage from './pages/ImpressumPage';
+import ImpressumPage, {ImpressumPageT} from './pages/ImpressumPage';
 import {checkLinks} from './helper/LinkChecker';
 import client from './client';
 import {SectionT} from "./components/Section";
@@ -46,6 +46,7 @@ function App() {
     const [links, setLinks] = useState<LinkT[] | undefined>();
     const [startPage, setStartPage] = useState<StartPageT | undefined>();
     const [calendarPage, setCalendarPage] = useState<CalendarPageT | undefined>();
+    const [impressumPage, setImpressumPage] = useState<ImpressumPageT | undefined>();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -53,18 +54,20 @@ function App() {
                 client.get('/sections?_sort=sorting:ASC&_locale=' + lang),
                 client.get('/links?_locale=' + lang),
                 client.get('/start-page?_locale=' + lang),
-                client.get('/calendar-page?_locale=' + lang)])
+                client.get('/calendar-page?_locale=' + lang),
+                client.get('/impressum-page?_locale=' + lang)])
 
             setSections(responses[0].data)
             setLinks(responses[1].data)
             setStartPage(responses[2].data)
             setCalendarPage(responses[3].data)
+            setImpressumPage(responses[4].data)
         }
 
         fetchData()
     }, [lang])
 
-    if (!sections || !links || !startPage || !calendarPage) {
+    if (!sections || !links || !startPage || !calendarPage || !impressumPage) {
         return <div className='app-loading'>
             <Loading isLoading={true}></Loading>
             <div>
@@ -94,7 +97,7 @@ function App() {
                         <Route path="/" element={<HomePage page={startPage}/>}/>
                         <Route path="search" element={<SearchPage sections={sections}/>}/>
                         <Route path="calendar" element={<CalendarPage page={calendarPage}/>}/>
-                        <Route path="impressum" element={<ImpressumPage/>}/>
+                        <Route path="impressum" element={<ImpressumPage page={impressumPage} />}/>
                         <Route path=":slug" element={<SectionPage sections={sectionsByKey}/>}/>
                     </Routes>
 
