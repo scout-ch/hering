@@ -1,4 +1,9 @@
 # Changelog
+## [v2.0.1] - 2024-02-12
+### :bug: Bug Fixes
+- [`c5c3342`](https://github.com/scout-ch/hering/commit/c5c3342ecbd0c144be78c1f2972e114e6ac53caa) - set correct router base path *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.0.0] - 2024-02-12
 ### :boom: BREAKING CHANGES
 - due to [`73485a6`](https://github.com/scout-ch/hering/commit/73485a60d6611eee335c1efcbb65fd4920bf7427) - added legacy URL redirect handler *(commit by [@mario-zelger](https://github.com/mario-zelger))*:
@@ -46,3 +51,4 @@
 
 
 [v2.0.0]: https://github.com/scout-ch/hering/compare/v1.0.0...v2.0.0
+[v2.0.1]: https://github.com/scout-ch/hering/compare/v2.0.0...v2.0.1
