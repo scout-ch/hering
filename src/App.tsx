@@ -84,7 +84,7 @@ function App() {
     checkLinks(sections, links)
 
     return <div className='App'>
-        <Router basename="/">
+        <Router basename="/hering">
             <LegacyUrlRedirectHelper/>
             <SectionHashHelper/>
             <LinksContext.Provider value={links}>
