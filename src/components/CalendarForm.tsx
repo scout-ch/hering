@@ -29,12 +29,6 @@ const responsibleCacheKey = 'responsible'
 const bufferCacheKey = 'buffer'
 const calendarPrefixCacheKey = 'calendar-prefix'
 
-const buttonGroupStyle = {
-    display: 'flex',
-    gap: '0.5em',
-    alignItems: 'center'
-}
-
 function CalendarForm() {
 
     const {t} = useTranslation()
@@ -198,15 +192,13 @@ function CalendarForm() {
                             </div>
                         </li>
                         <li>
-                            <div style={buttonGroupStyle}>
-                                {hasActiveCache() ?
-                                    <button className={"as-link"}
-                                            onClick={resetValues}>
-                                        {t('calendarPage.resetValues')}
-                                    </button>
-                                    : <></>
-                                }
-                            </div>
+                            {hasActiveCache() ?
+                                <button className={"as-link"}
+                                        onClick={resetValues}>
+                                    {t('calendarPage.resetValues')}
+                                </button>
+                                : <></>
+                            }
                         </li>
                     </ul>
                 </form>
