@@ -5,7 +5,7 @@ import CalendarTable from './CalendarTable';
 import {ChapterT} from './Chapter';
 import {TaskT} from './Task';
 import client from '../client';
-import {addDays, format, parse} from "date-fns";
+import {addDays, format, parse, startOfDay} from "date-fns";
 
 type Roles = {
     rolle: string
@@ -109,7 +109,7 @@ function CalendarForm() {
                     : task.days
 
                 const deadline = task.days !== -1000
-                    ? addDays(parsedStartDate, dayOffsetFromStartDate)
+                    ? startOfDay(addDays(parsedStartDate, dayOffsetFromStartDate))
                     : new Date(parsedStartDate.getFullYear(), 0, 1)
 
                 return {
