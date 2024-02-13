@@ -27,7 +27,7 @@
       "ics": {
         "generate": "Générer",
         "download": "Télécharger .ics",
-        "filename": "Dates.ics"
+        "filename": "{{calendarTitlePrefix}}Données du camp.ics"
       },
       "resetValues": "Réinitialiser les valeurs",
       "table": {

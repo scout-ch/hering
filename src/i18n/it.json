@@ -27,7 +27,7 @@
       "ics": {
         "generate": "Generare",
         "download": "Scarica come .ics",
-        "filename": "Dati.ics"
+        "filename": "{{calendarTitlePrefix}}Dati del campo.ics"
       },
       "resetValues": "Azzeramento dei valori",
       "table": {

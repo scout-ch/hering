@@ -27,7 +27,7 @@
       "ics": {
         "generate": "Generieren",
         "download": "Download als .ics",
-        "filename": "Daten.ics"
+        "filename": "{{calendarTitlePrefix}}Lagerdaten.ics"
       },
       "resetValues": "Werte zurücksetzen",
       "table": {

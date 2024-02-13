@@ -89,9 +89,13 @@ function IcsDownload(props: Props) {
         return <div></div>
     }
 
+    const spacedCalendarPrefix = (props.calendarTitlePrefix ?? '').length > 0
+        ? props.calendarTitlePrefix + ' '
+        : ''
+
     return (
         <a className="download-btn" id="ics-download"
-           download={t('calendarPage.ics.filename')}
+           download={t('calendarPage.ics.filename', {calendarTitlePrefix: spacedCalendarPrefix})}
            href={downloadLink}>
             <i><FontAwesomeIcon icon="calendar-days"/></i>
             {t('calendarPage.ics.download')}
