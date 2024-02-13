@@ -24,22 +24,23 @@
       }
 
       font-size: smaller;
+
       a {
         font-size: smaller;
       }
-  
+
       #who, #when {
         width: 10%;
       }
-  
+
       #what {
         max-width: 40%;
       }
-  
+
       #target {
         width: 20%;
       }
-  
+
       #chapters {
         width: 30%;
       }
@@ -53,17 +54,29 @@
       }
     }
   }
-  
-  .calendar-ics {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    gap: 8px;
 
-    .ics_download {
-      padding: 0.5em;
+  .download-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 0.5em;
+
+    .download-btn {
+      padding: 0.4em 0.5em;
       line-height: normal;
+      border: none;
+      color: white;
+      background: var(--color-primary-light);
+      border-radius: 4px;
+      display: flex;
+      gap: 0.4em;
+
+      &:hover {
+        color: white;
+        opacity: 0.5;
+      }
     }
   }
 
@@ -71,6 +84,7 @@
     hr {
       border: 0.5px solid #8c3c4f
     }
+
     .calendar-form {
       .calendar-title-prefix-hint {
         font-weight: 200;

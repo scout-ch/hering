@@ -1,22 +1,8 @@
 import React, {useEffect, useState} from 'react'
-import styled from '@emotion/styled'
 import {TaskT} from './Task'
 import {ChapterT} from './Chapter'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {useTranslation} from "react-i18next"
-
-const A = styled.a`
-    border: none;
-    color: white;
-    background: var(--color-primary-light);
-    padding: 0.3em;
-    border-radius: 4px;
-
-    &:hover {
-        color: white;
-        opacity: 0.5;
-    }
-`
 
 type Props = {
     tasks: TaskT[]
@@ -104,14 +90,12 @@ function IcsDownload(props: Props) {
     }
 
     return (
-        <div className='calendar-ics'>
-            <A className="ics_download" id="link"
-               download={t('calendarPage.ics.filename')}
-               href={downloadLink}>
-                <i><FontAwesomeIcon icon="calendar-days"/> </i>
-                {t('calendarPage.ics.download')}
-            </A>
-        </div>
+        <a className="download-btn" id="ics-download"
+           download={t('calendarPage.ics.filename')}
+           href={downloadLink}>
+            <i><FontAwesomeIcon icon="calendar-days"/></i>
+            {t('calendarPage.ics.download')}
+        </a>
     );
 }
 

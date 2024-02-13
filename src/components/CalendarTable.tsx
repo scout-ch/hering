@@ -1,5 +1,4 @@
 import React from 'react'
-import IcsDownload from './IcsDownload';
 import Task, {TaskT} from './Task';
 import {useTranslation} from "react-i18next";
 
@@ -17,9 +16,9 @@ function CalendarTable(props: Props) {
         return <Task deadline={task.deadline} key={task.title} title={task.title}
                      targets={task.targets} responsible={task.responsible} chapters={task.chapters}></Task>
     })
+    
     return (
         <div className='calendar-table'>
-            <IcsDownload tasks={tasks} calendarTitlePrefix={props.prefix}></IcsDownload>
             <table>
                 <thead>
                 <tr>
