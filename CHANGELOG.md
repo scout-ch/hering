@@ -1,4 +1,20 @@
 # Changelog
+## [v2.1.0] - 2024-02-14
+### :sparkles: New Features
+- [`d4622a2`](https://github.com/scout-ch/hering/commit/d4622a26fb5e066f166de87c16ccc6d8960cbddb) - **calendar**: include calendar prefix in downloaded ics file name *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`b769859`](https://github.com/scout-ch/hering/commit/b769859523d6b0cd4d900a91e0a5cec16125a868) - **calendar**: added ability to download the tasks as a CSV file *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :bug: Bug Fixes
+- [`4909d00`](https://github.com/scout-ch/hering/commit/4909d006dbe7de709af1c9904143f1940f450e90) - **calendar**: use 'flex-end' instead of 'end' css value *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :recycle: Refactors
+- [`abac219`](https://github.com/scout-ch/hering/commit/abac219c5a69135f0d7f6a397970555f77cf04c3) - **calendar**: set deadline time to start of the day (00:00:00) *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`98a13db`](https://github.com/scout-ch/hering/commit/98a13db1bbacc5764b47996fd481f326f24b784d) - **calendar**: remove unnecessary button styling *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`46b2177`](https://github.com/scout-ch/hering/commit/46b21777a1657d3501d1dc6cb7f6161a6566a00c) - **calendar**: moved ics download button outside of calendar table *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`5c3516f`](https://github.com/scout-ch/hering/commit/5c3516f7dc2d26f24ffb6fdf2a6136b42f541549) - **calendar**: format deadline with double digit months *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`59f4f44`](https://github.com/scout-ch/hering/commit/59f4f4438b401560962c5afd6501b3fd6efcb500) - **calendar**: removed unused translation *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.0.1] - 2024-02-12
 ### :bug: Bug Fixes
 - [`c5c3342`](https://github.com/scout-ch/hering/commit/c5c3342ecbd0c144be78c1f2972e114e6ac53caa) - set correct router base path *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -52,3 +68,4 @@
 
 [v2.0.0]: https://github.com/scout-ch/hering/compare/v1.0.0...v2.0.0
 [v2.0.1]: https://github.com/scout-ch/hering/compare/v2.0.0...v2.0.1
+[v2.1.0]: https://github.com/scout-ch/hering/compare/v2.0.1...v2.1.0
