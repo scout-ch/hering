@@ -6,7 +6,8 @@ import {
     faCircleInfo,
     faExclamationTriangle,
     faHome,
-    faSearch
+    faSearch,
+    faFileCsv
 } from '@fortawesome/free-solid-svg-icons'
 import {library} from '@fortawesome/fontawesome-svg-core'
 import HomePage, {StartPageT} from './pages/HomePage ';
@@ -34,7 +35,7 @@ export type LinkT = {
 export const LinksContext = createContext<LinkT[]>([])
 
 // Font Awesome Icons
-library.add(faCalendarDays, faExclamationTriangle, faBars, faSearch, faHome, faCircleInfo)
+library.add(faCalendarDays, faExclamationTriangle, faBars, faSearch, faHome, faCircleInfo, faFileCsv)
 
 function App() {
 

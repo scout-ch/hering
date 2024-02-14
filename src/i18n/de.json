@@ -24,12 +24,16 @@
       },
       "prefixPlaceholder": "Prefix für Kalendereinträge",
       "prefixPreview": "Vorschau: {{calendarTitlePrefix}} Lagerdaten an Coach",
+      "resetValues": "Werte zurücksetzen",
       "ics": {
         "generate": "Generieren",
         "download": "Download als .ics",
         "filename": "{{calendarTitlePrefix}}Lagerdaten.ics"
       },
-      "resetValues": "Werte zurücksetzen",
+      "csv": {
+        "download": "Download als .csv",
+        "filename": "{{calendarTitlePrefix}}Lagerdaten.csv"
+      },
       "table": {
         "what": "Was",
         "who": "Wer",

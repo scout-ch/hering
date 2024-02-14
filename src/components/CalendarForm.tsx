@@ -7,6 +7,7 @@ import {TaskT} from './Task';
 import client from '../client';
 import {addDays, format, parse, startOfDay} from "date-fns";
 import IcsDownload from "./IcsDownload";
+import CsvDownload from "./CsvDownload";
 
 type Roles = {
     rolle: string
@@ -207,6 +208,7 @@ function CalendarForm() {
 
             <div className="download-btn-group">
                 <IcsDownload tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}></IcsDownload>
+                <CsvDownload tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}></CsvDownload>
             </div>
 
             <CalendarTable tasks={tasks} prefix={calendarTitlePrefix}/>

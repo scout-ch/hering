@@ -24,12 +24,16 @@
       },
       "prefixPlaceholder": "Préfixe pour les entrées de calendrier",
       "prefixPreview": "Aperçu: {{calendarTitlePrefix}} Données relatives",
+      "resetValues": "Réinitialiser les valeurs",
       "ics": {
         "generate": "Générer",
         "download": "Télécharger .ics",
         "filename": "{{calendarTitlePrefix}}Données du camp.ics"
       },
-      "resetValues": "Réinitialiser les valeurs",
+      "csv": {
+        "download": "Télécharger .csv",
+        "filename": "{{calendarTitlePrefix}}Données du camp.csv"
+      },
       "table": {
         "what": "Quoi",
         "who": "Qui",

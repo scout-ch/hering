@@ -24,12 +24,16 @@
       },
       "prefixPlaceholder": "Prefisso per le voci del calendario",
       "prefixPreview": "Anteprima: {{calendarTitlePrefix}} Dati del campo",
+      "resetValues": "Azzeramento dei valori",
       "ics": {
         "generate": "Generare",
         "download": "Scarica come .ics",
         "filename": "{{calendarTitlePrefix}}Dati del campo.ics"
       },
-      "resetValues": "Azzeramento dei valori",
+      "csv": {
+        "download": "Scarica come .csv",
+        "filename": "{{calendarTitlePrefix}}Dati del campo.csv"
+      },
       "table": {
         "what": "Cosa",
         "who": "Chi",
