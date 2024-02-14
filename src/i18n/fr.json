@@ -26,7 +26,6 @@
       "prefixPreview": "Aperçu: {{calendarTitlePrefix}} Données relatives",
       "resetValues": "Réinitialiser les valeurs",
       "ics": {
-        "generate": "Générer",
         "download": "Télécharger .ics",
         "filename": "{{calendarTitlePrefix}}Données du camp.ics"
       },

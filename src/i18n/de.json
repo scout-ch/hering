@@ -26,7 +26,6 @@
       "prefixPreview": "Vorschau: {{calendarTitlePrefix}} Lagerdaten an Coach",
       "resetValues": "Werte zurücksetzen",
       "ics": {
-        "generate": "Generieren",
         "download": "Download als .ics",
         "filename": "{{calendarTitlePrefix}}Lagerdaten.ics"
       },

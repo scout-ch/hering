@@ -26,7 +26,6 @@
       "prefixPreview": "Anteprima: {{calendarTitlePrefix}} Dati del campo",
       "resetValues": "Azzeramento dei valori",
       "ics": {
-        "generate": "Generare",
         "download": "Scarica come .ics",
         "filename": "{{calendarTitlePrefix}}Dati del campo.ics"
       },
