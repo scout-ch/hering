@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hering/static/css/main.42ddc8d4.css",
-    "main.js": "/hering/static/js/main.566d625e.js",
+    "main.css": "/hering/static/css/main.6f7b991e.css",
+    "main.js": "/hering/static/js/main.6e8a9130.js",
     "static/media/SourceSansPro-Regular.svg": "/hering/static/media/SourceSansPro-Regular.70198363adc97876a497.svg",
     "static/media/SourceSansPro-SemiBold.svg": "/hering/static/media/SourceSansPro-SemiBold.67659b46fab992fe0bb2.svg",
     "static/media/SourceSansPro-Bold.svg": "/hering/static/media/SourceSansPro-Bold.56042c485ba9f70b2b99.svg",
@@ -63,11 +63,11 @@
     "static/media/SourceSansPro-BlackItalic.woff2": "/hering/static/media/SourceSansPro-BlackItalic.dc2aeed524020417e75e.woff2",
     "static/media/SourceSansPro-ExtraLightItalic.woff2": "/hering/static/media/SourceSansPro-ExtraLightItalic.e18594a38c6a04711f56.woff2",
     "index.html": "/hering/index.html",
-    "main.42ddc8d4.css.map": "/hering/static/css/main.42ddc8d4.css.map",
-    "main.566d625e.js.map": "/hering/static/js/main.566d625e.js.map"
+    "main.6f7b991e.css.map": "/hering/static/css/main.6f7b991e.css.map",
+    "main.6e8a9130.js.map": "/hering/static/js/main.6e8a9130.js.map"
   },
   "entrypoints": [
-    "static/css/main.42ddc8d4.css",
-    "static/js/main.566d625e.js"
+    "static/css/main.6f7b991e.css",
+    "static/js/main.6e8a9130.js"
   ]
 }
