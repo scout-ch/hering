@@ -2,6 +2,7 @@ import React from 'react'
 import {useTranslation} from 'react-i18next';
 import {ChapterT, Role} from './Chapter';
 import {Link} from "react-router-dom";
+import {format} from "date-fns";
 
 export type TaskT = {
     deadline: Date
@@ -15,8 +16,6 @@ function Task(props: TaskT) {
 
     const {t} = useTranslation()
 
-    const options = {year: 'numeric', month: 'numeric', day: 'numeric'} as Intl.DateTimeFormatOptions
-    const deadline = props.deadline.toLocaleDateString('de-DE', options)
     const targets = props.targets
         .map((target) => target['rolle'])
         .join(', ')
@@ -31,7 +30,7 @@ function Task(props: TaskT) {
     })
 
     return <tr>
-        <td>{deadline}</td>
+        <td>{format(props.deadline, 'dd.MM.yyyy')}</td>
         <td>{props.title}</td>
         <td>{responsible}</td>
         <td>{targets}</td>
