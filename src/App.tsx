@@ -9,10 +9,10 @@ import {CalendarPageT} from './pages/calendar/CalendarPage';
 import {SectionsByKey} from './pages/section/SectionPage';
 import {ImpressumPageT} from './pages/impressum/ImpressumPage';
 import {SectionT} from "./pages/section/components/Section";
-import Loading from "./components/Loading";
-import Navigation from "./components/Navigation";
+import Loading from "./components/loading/Loading";
+import Navigation from "./components/navigation/Navigation";
 
-const Footer = lazy(() => import('./components/Footer'))
+const Footer = lazy(() => import('./components/footer/Footer'))
 const SectionHashHelper = lazy(() => import('./helper/SectionHashHelper'))
 const HomePage = lazy(() => import('./pages/home/HomePage'))
 const ImpressumPage = lazy(() => import('./pages/impressum/ImpressumPage'))

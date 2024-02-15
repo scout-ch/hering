@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react'
 import {useTranslation} from "react-i18next"
-import Loading from '../../../components/Loading'
+import Loading from '../../../components/loading/Loading'
 import {ChapterT} from '../../section/components/Chapter';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
