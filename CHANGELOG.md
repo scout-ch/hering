@@ -1,4 +1,23 @@
 # Changelog
+## [v2.2.0] - 2024-02-15
+### :sparkles: New Features
+- [`65f7a65`](https://github.com/scout-ch/hering/commit/65f7a65ea6a740ffcb9619adf83216091ad1d300) - added ability to set subtext in loading component *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :zap: Performance Improvements
+- [`eb1708b`](https://github.com/scout-ch/hering/commit/eb1708b17742af42b0b47fa2ac55eea5f02b8dc3) - **app**: lazy load components for faster initial startup *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :recycle: Refactors
+- [`04323b5`](https://github.com/scout-ch/hering/commit/04323b5c9174dac31ed48682e94a4161137033cf) - remove unnecessary whitespace in filename *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`a342f63`](https://github.com/scout-ch/hering/commit/a342f63eb14f36f8d53ea0323a8acf3eccdadd47) - load Font Awesome icons via module import *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`85f9b1f`](https://github.com/scout-ch/hering/commit/85f9b1f9cbe3a692bb3aca102b69a017e0a5144c) - removed unused parameter *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`4140b1f`](https://github.com/scout-ch/hering/commit/4140b1f9814c8351ba6991c65fe2ea8420e7b6b7) - updated folder structure and moved page components *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`8a26303`](https://github.com/scout-ch/hering/commit/8a2630335e199f37f3b1179664799aef52aa87d9) - moved less files to appropriate components *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`aa4cbfc`](https://github.com/scout-ch/hering/commit/aa4cbfc6a0723305f0e726cc3e34aaeb18e122e3) - moved shared components in separate subdirectories *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :wrench: Chores
+- [`65e7a07`](https://github.com/scout-ch/hering/commit/65e7a07876a9dc82abf4ef3e7e2837efe15b6a5f) - **translation**: removed unused translations *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.1.0] - 2024-02-14
 ### :sparkles: New Features
 - [`d4622a2`](https://github.com/scout-ch/hering/commit/d4622a26fb5e066f166de87c16ccc6d8960cbddb) - **calendar**: include calendar prefix in downloaded ics file name *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -69,3 +88,4 @@
 [v2.0.0]: https://github.com/scout-ch/hering/compare/v1.0.0...v2.0.0
 [v2.0.1]: https://github.com/scout-ch/hering/compare/v2.0.0...v2.0.1
 [v2.1.0]: https://github.com/scout-ch/hering/compare/v2.0.1...v2.1.0
+[v2.2.0]: https://github.com/scout-ch/hering/compare/v2.1.0...v2.2.0
