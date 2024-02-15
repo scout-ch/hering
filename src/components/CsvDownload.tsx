@@ -23,7 +23,7 @@ function CsvDownload(props: Props) {
     const [downloadLink, setDownloadLink] = useState<string>();
 
     useEffect(() => {
-        const generateCsv = (tasks: TaskT[], calendarTitlePrefix: string): string => {
+        const generateCsv = (tasks: TaskT[]): string => {
             // Headers
             let csvContent = `${t('calendarPage.table.when')},${t('calendarPage.table.what')},${t('calendarPage.table.who')},${t('calendarPage.table.target')},${t('calendarPage.table.chapters')}\n`;
 
@@ -56,7 +56,7 @@ function CsvDownload(props: Props) {
                 return
             }
 
-            const downloadLink = generateCsv(props.tasks, props.calendarTitlePrefix);
+            const downloadLink = generateCsv(props.tasks);
             setDownloadLink(downloadLink)
         }
 
