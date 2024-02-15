@@ -1,36 +1,19 @@
 import React, {createContext, lazy, Suspense, useEffect, useState} from 'react';
 import {HashRouter as Router, Route, Routes} from "react-router-dom";
 import {useTranslation} from 'react-i18next';
-import {
-    faBars,
-    faCalendarDays,
-    faCircleInfo,
-    faExclamationTriangle,
-    faFileCsv,
-    faHome,
-    faSearch
-} from '@fortawesome/free-solid-svg-icons'
-import {library} from '@fortawesome/fontawesome-svg-core'
 import i18n from './i18n';
 import client from './client';
-
 import {checkLinks} from './helper/LinkChecker';
-
-import Loading from "./components/Loading";
-import Navigation from "./components/Navigation";
-
 import {StartPageT} from "./pages/HomePage";
 import {CalendarPageT} from './pages/CalendarPage';
 import {SectionsByKey} from './pages/SectionPage';
 import {ImpressumPageT} from './pages/ImpressumPage';
 import {SectionT} from "./components/Section";
-
-// Font Awesome Icons
-library.add(faCalendarDays, faExclamationTriangle, faBars, faSearch, faHome, faCircleInfo, faFileCsv)
+import Loading from "./components/Loading";
+import Navigation from "./components/Navigation";
 
 const Footer = lazy(() => import('./components/Footer'))
 const SectionHashHelper = lazy(() => import('./helper/SectionHashHelper'))
-
 const HomePage = lazy(() => import('./pages/HomePage'))
 const ImpressumPage = lazy(() => import('./pages/ImpressumPage'))
 const SectionPage = lazy(() => import('./pages/SectionPage'))

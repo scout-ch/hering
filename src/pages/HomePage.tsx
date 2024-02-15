@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm'
 import {IconT} from '../components/Section'
 import {LinkComponent} from "../helper/MarkdownComponents"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faHome} from "@fortawesome/free-solid-svg-icons";
 
 export type StartPageT = {
     title: string
@@ -25,7 +26,7 @@ function HomePage(props: Props) {
 
     return <div className='content-main'>
         <h1>
-            <FontAwesomeIcon icon="home"/> {startPage.title}
+            <FontAwesomeIcon icon={faHome}/> {startPage.title}
         </h1>
         <Markdown
             remarkPlugins={[remarkGfm]}

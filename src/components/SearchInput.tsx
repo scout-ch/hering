@@ -1,6 +1,7 @@
 import React from "react"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {useTranslation} from "react-i18next"
+import {faSearch} from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
     keyword?: string,
@@ -16,7 +17,7 @@ function SearchInput(props: Props) {
     return <div className='search-input'>
         <div className='icon-input'>
             <div className='icon'>
-                <FontAwesomeIcon icon="search"/>
+                <FontAwesomeIcon icon={faSearch}/>
             </div>
             <input type='text'
                    name='search'

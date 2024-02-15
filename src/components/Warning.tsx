@@ -2,6 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faExclamationTriangle} from "@fortawesome/free-solid-svg-icons";
 
 const WarningDiv = styled.div`
     border: 1px solid black;
@@ -25,7 +26,7 @@ function Warning(props: Props) {
     return (
         <WarningDiv>
             <div>
-                <FontAwesomeIcon icon="exclamation-triangle"/>
+                <FontAwesomeIcon icon={faExclamationTriangle}/>
             </div>
             {content}
         </WarningDiv>

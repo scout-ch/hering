@@ -4,6 +4,7 @@ import React, {useEffect, useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {ChapterT} from "./Chapter";
 import {format} from "date-fns";
+import {faFileCsv} from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
     tasks: TaskT[]
@@ -75,7 +76,7 @@ function CsvDownload(props: Props) {
         <a className="download-btn" id="csv-download"
            download={t('calendarPage.csv.filename', {calendarTitlePrefix: spacedCalendarPrefix})}
            href={downloadLink}>
-            <i><FontAwesomeIcon icon="file-csv"/></i>
+            <FontAwesomeIcon icon={faFileCsv}/>
             {t('calendarPage.csv.download')}
         </a>
     );

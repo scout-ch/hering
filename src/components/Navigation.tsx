@@ -3,9 +3,10 @@ import {SectionT} from './Section'
 import {Link, useLocation, useNavigate} from 'react-router-dom'
 import {ChapterT} from './Chapter'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {StartPageT} from '../pages/HomePage '
 import {CalendarPageT} from '../pages/CalendarPage'
 import {useTranslation} from "react-i18next";
+import {StartPageT} from '../pages/HomePage';
+import {faBars, faCalendarDays, faHome, faSearch} from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
     startPage: StartPageT
@@ -85,7 +86,7 @@ function Navigation(props: Props) {
     return <nav className="header-nav">
         <div className="toggle-btn">
             <i onClick={handleToggle}>
-                <FontAwesomeIcon icon="bars"/>
+                <FontAwesomeIcon icon={faBars}/>
             </i>
         </div>
         <div className={`header-nav-content ${navbarOpen ? "show-menu" : ""}`}>
@@ -93,27 +94,21 @@ function Navigation(props: Props) {
                 <div key="home" className={"primary-link"}>
                     <Link to="/" className={homeActive + ''}
                           onClick={() => setNavbarOpen(!navbarOpen)}>
-                        <i>
-                            <FontAwesomeIcon icon="home"/>
-                        </i>
+                        <FontAwesomeIcon icon={faHome}/>
                         {props.startPage.menu_name}
                     </Link>
                 </div>
                 <div key="search" className={"primary-link"}>
                     <Link to="/search" className={searchActive}
                           onClick={() => setNavbarOpen(!navbarOpen)}>
-                        <i>
-                            <FontAwesomeIcon icon="search"/>
-                        </i>
+                        <FontAwesomeIcon icon={faSearch}/>
                         {t('searchPage.title')}
                     </Link>
                 </div>
                 <div key="calendar" className={"primary-link"}>
                     <Link to="/calendar" className={calendarActive}
                           onClick={() => setNavbarOpen(!navbarOpen)}>
-                        <i>
-                            <FontAwesomeIcon icon="calendar-days"/>
-                        </i>
+                        <FontAwesomeIcon icon={faCalendarDays}/>
                         {props.calendarPage.menu_name}
                     </Link>
                 </div>

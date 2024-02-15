@@ -9,6 +9,7 @@ import searchPageDE from "../data/search-page/de.json"
 import searchPageFR from "../data/search-page/fr.json"
 import searchPageIT from "../data/search-page/it.json"
 import {SectionT} from "../components/Section"
+import {faSearch} from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
     sections: SectionT[]
@@ -52,7 +53,7 @@ function SearchPage(props: Props) {
     return <div className='content-main'>
         <div className='search'>
             <h1>
-                <FontAwesomeIcon icon="search"/> {searchPage.title}
+                <FontAwesomeIcon icon={faSearch}/> {searchPage.title}
             </h1>
             <Markdown remarkPlugins={[remarkGfm]}
                       components={LinkComponent}>

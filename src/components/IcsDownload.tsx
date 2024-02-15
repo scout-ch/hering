@@ -3,6 +3,7 @@ import {TaskT} from './Task'
 import {ChapterT} from './Chapter'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {useTranslation} from "react-i18next"
+import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
     tasks: TaskT[]
@@ -97,7 +98,7 @@ function IcsDownload(props: Props) {
         <a className="download-btn" id="ics-download"
            download={t('calendarPage.ics.filename', {calendarTitlePrefix: spacedCalendarPrefix})}
            href={downloadLink}>
-            <i><FontAwesomeIcon icon="calendar-days"/></i>
+            <FontAwesomeIcon icon={faCalendarDays}/>
             {t('calendarPage.ics.download')}
         </a>
     );

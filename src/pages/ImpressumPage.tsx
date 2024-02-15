@@ -3,6 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import {LinkComponent} from '../helper/MarkdownComponents';
+import {faCircleInfo} from "@fortawesome/free-solid-svg-icons";
 
 export type ImpressumPageT = {
     title: string
@@ -25,7 +26,7 @@ function ImpressumPage(props: Props) {
     return <div className='content-main'>
         <div className='calendar'>
             <h1>
-                <FontAwesomeIcon icon="circle-info"/> {impressumPage.title}
+                <FontAwesomeIcon icon={faCircleInfo}/> {impressumPage.title}
             </h1>
             <Markdown
                 remarkPlugins={[remarkGfm]}
