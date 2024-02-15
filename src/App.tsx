@@ -1,29 +1,41 @@
-import React, {createContext, useEffect, useState} from 'react';
+import React, {createContext, lazy, Suspense, useEffect, useState} from 'react';
 import {HashRouter as Router, Route, Routes} from "react-router-dom";
+import {useTranslation} from 'react-i18next';
 import {
     faBars,
     faCalendarDays,
     faCircleInfo,
     faExclamationTriangle,
+    faFileCsv,
     faHome,
-    faSearch,
-    faFileCsv
+    faSearch
 } from '@fortawesome/free-solid-svg-icons'
 import {library} from '@fortawesome/fontawesome-svg-core'
-import HomePage, {StartPageT} from './pages/HomePage ';
-import CalendarPage, {CalendarPageT} from './pages/CalendarPage';
 import i18n from './i18n';
-import {useTranslation} from 'react-i18next';
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
-import SectionPage, {SectionsByKey} from './pages/SectionPage';
-import ImpressumPage, {ImpressumPageT} from './pages/ImpressumPage';
-import {checkLinks} from './helper/LinkChecker';
 import client from './client';
-import {SectionT} from "./components/Section";
-import SectionHashHelper from "./helper/SectionHashHelper";
-import SearchPage from "./pages/SearchPage";
+
+import {checkLinks} from './helper/LinkChecker';
+
 import Loading from "./components/Loading";
+import Navigation from "./components/Navigation";
+
+import {StartPageT} from "./pages/HomePage";
+import {CalendarPageT} from './pages/CalendarPage';
+import {SectionsByKey} from './pages/SectionPage';
+import {ImpressumPageT} from './pages/ImpressumPage';
+import {SectionT} from "./components/Section";
+
+// Font Awesome Icons
+library.add(faCalendarDays, faExclamationTriangle, faBars, faSearch, faHome, faCircleInfo, faFileCsv)
+
+const Footer = lazy(() => import('./components/Footer'))
+const SectionHashHelper = lazy(() => import('./helper/SectionHashHelper'))
+
+const HomePage = lazy(() => import('./pages/HomePage'))
+const ImpressumPage = lazy(() => import('./pages/ImpressumPage'))
+const SectionPage = lazy(() => import('./pages/SectionPage'))
+const CalendarPage = lazy(() => import('./pages/CalendarPage'))
+const SearchPage = lazy(() => import('./pages/SearchPage'))
 
 export type LinkT = {
     title: string
@@ -34,10 +46,7 @@ export type LinkT = {
 
 export const LinksContext = createContext<LinkT[]>([])
 
-// Font Awesome Icons
-library.add(faCalendarDays, faExclamationTriangle, faBars, faSearch, faHome, faCircleInfo, faFileCsv)
-
-function App() {
+export default function App() {
 
     const lang = i18n.language
     const {t} = useTranslation()
@@ -85,26 +94,49 @@ function App() {
             <SectionHashHelper/>
             <LinksContext.Provider value={links}>
                 <div className='header'>
-                    <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}></Navigation>
+                    <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}/>
                 </div>
 
                 <main>
                     <Routes>
-                        <Route path="/" element={<HomePage page={startPage}/>}/>
-                        <Route path="/hering/" element={<HomePage page={startPage}/>}/>
-                        <Route path="search" element={<SearchPage sections={sections}/>}/>
-                        <Route path="calendar" element={<CalendarPage page={calendarPage}/>}/>
-                        <Route path="impressum" element={<ImpressumPage page={impressumPage}/>}/>
-                        <Route path=":slug" element={<SectionPage sections={sectionsByKey}/>}/>
+                        <Route path="/" element={
+                            <Suspense fallback={<Loading centerInViewport={true}/>}>
+                                <HomePage page={startPage}/>
+                            </Suspense>
+                        }/>
+                        <Route path="/hering/" element={
+                            <Suspense fallback={<Loading centerInViewport={true}/>}>
+                                <HomePage page={startPage}/>
+                            </Suspense>}/>
+                        <Route path="search" element={
+                            <Suspense fallback={<Loading centerInViewport={true}/>}>
+                                <SearchPage sections={sections}/>
+                            </Suspense>
+                        }/>
+                        <Route path="calendar" element={
+                            <Suspense fallback={<Loading centerInViewport={true}/>}>
+                                <CalendarPage page={calendarPage}/>
+                            </Suspense>
+                        }/>
+                        <Route path="impressum" element={
+                            <Suspense fallback={<Loading centerInViewport={true}/>}>
+                                <ImpressumPage page={impressumPage}/>
+                            </Suspense>
+                        }/>
+                        <Route path=":slug" element={
+                            <Suspense fallback={<Loading centerInViewport={true}/>}>
+                                <SectionPage sections={sectionsByKey}/>
+                            </Suspense>
+                        }/>
                     </Routes>
 
                     <div id='footer' className='footer'>
-                        <Footer sections={sections}/>
+                        <Suspense fallback={<Loading/>}>
+                            <Footer sections={sections}/>
+                        </Suspense>
                     </div>
                 </main>
             </LinksContext.Provider>
         </Router>
     </div>
 }
-
-export default App;
