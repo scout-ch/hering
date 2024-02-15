@@ -24,11 +24,9 @@ function HomePage(props: Props) {
     }, [startPage])
 
     return <div className='content-main'>
-
         <h1>
             <FontAwesomeIcon icon="home"/> {startPage.title}
         </h1>
-
         <Markdown
             remarkPlugins={[remarkGfm]}
             components={LinkComponent}>
