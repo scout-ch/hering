@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {TaskT} from './Task'
-import {ChapterT} from './Chapter'
+import {ChapterT} from '../../section/components/Chapter'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {useTranslation} from "react-i18next"
 import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";

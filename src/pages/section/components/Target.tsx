@@ -6,7 +6,7 @@ type Props = {
     targets: Role[]
 }
 
-function Target(props: Props) {
+export default function Target(props: Props) {
 
     const {t} = useTranslation()
 
@@ -18,5 +18,3 @@ function Target(props: Props) {
         {targetList}
     </div>
 }
-
-export default Target

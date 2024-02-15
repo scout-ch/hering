@@ -1,14 +1,14 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react'
 import {useTranslation} from "react-i18next"
-import Loading from './Loading'
-import {ChapterT} from './Chapter';
+import Loading from '../../../components/Loading'
+import {ChapterT} from '../../section/components/Chapter';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import {LinkComponent} from '../helper/MarkdownComponents';
+import {LinkComponent} from '../../../helper/MarkdownComponents';
 import SearchInput from './SearchInput';
 import {Link, useSearchParams} from "react-router-dom";
-import {SectionT} from "./Section";
-import {SearchHelper} from "../helper/SearchHelper";
+import {SectionT} from "../../section/components/Section";
+import {SearchHelper} from "../../../helper/SearchHelper";
 
 type Props = {
     sections: SectionT[]

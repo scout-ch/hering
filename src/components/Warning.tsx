@@ -20,7 +20,7 @@ type Props = {
     content: any
 }
 
-function Warning(props: Props) {
+export default function Warning(props: Props) {
     const {content} = props;
 
     return (
@@ -32,5 +32,3 @@ function Warning(props: Props) {
         </WarningDiv>
     );
 }
-
-export default Warning

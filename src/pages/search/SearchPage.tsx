@@ -2,13 +2,13 @@ import React, {useEffect, useState} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import {LinkComponent} from '../helper/MarkdownComponents'
-import i18n from '../i18n'
-import SearchForm from '../components/SearchForm'
-import searchPageDE from "../data/search-page/de.json"
-import searchPageFR from "../data/search-page/fr.json"
-import searchPageIT from "../data/search-page/it.json"
-import {SectionT} from "../components/Section"
+import {LinkComponent} from '../../helper/MarkdownComponents'
+import i18n from '../../i18n'
+import SearchForm from './components/SearchForm'
+import searchPageDE from "../../data/search-page/de.json"
+import searchPageFR from "../../data/search-page/fr.json"
+import searchPageIT from "../../data/search-page/it.json"
+import {SectionT} from "../section/components/Section"
 import {faSearch} from "@fortawesome/free-solid-svg-icons";
 
 type Props = {

@@ -1,10 +1,10 @@
 import React, {ChangeEvent, FormEvent, useCallback, useEffect, useState} from 'react'
 import {useTranslation} from 'react-i18next';
-import i18n from '../i18n';
+import i18n from '../../../i18n';
 import CalendarTable from './CalendarTable';
-import {ChapterT} from './Chapter';
+import {ChapterT} from '../../section/components/Chapter';
 import {TaskT} from './Task';
-import client from '../client';
+import client from '../../../client';
 import {addDays, format, parse, startOfDay} from "date-fns";
 import IcsDownload from "./IcsDownload";
 import CsvDownload from "./CsvDownload";

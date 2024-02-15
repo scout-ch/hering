@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import {LinkComponent} from '../helper/MarkdownComponents'
+import {LinkComponent} from '../../../helper/MarkdownComponents'
 import Chapter, {ChapterT} from './Chapter'
 
 export type SectionT = {

@@ -2,7 +2,7 @@ import {TaskT} from "./Task";
 import {useTranslation} from "react-i18next";
 import React, {useEffect, useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {ChapterT} from "./Chapter";
+import {ChapterT} from "../../section/components/Chapter";
 import {format} from "date-fns";
 import {faFileCsv} from "@fortawesome/free-solid-svg-icons";
 

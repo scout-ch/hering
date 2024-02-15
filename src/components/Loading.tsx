@@ -25,7 +25,7 @@ export default function Loading(probs: Props) {
             clearTimeout(waitOneTimeoutId);
             clearTimeout(waitTwoTimeoutId);
         }
-    }, []);
+    }, [t]);
 
     if (probs.isLoading !== undefined && !probs.isLoading) {
         return <></>

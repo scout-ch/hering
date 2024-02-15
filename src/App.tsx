@@ -4,21 +4,21 @@ import {useTranslation} from 'react-i18next';
 import i18n from './i18n';
 import client from './client';
 import {checkLinks} from './helper/LinkChecker';
-import {StartPageT} from "./pages/HomePage";
-import {CalendarPageT} from './pages/CalendarPage';
-import {SectionsByKey} from './pages/SectionPage';
-import {ImpressumPageT} from './pages/ImpressumPage';
-import {SectionT} from "./components/Section";
+import {StartPageT} from "./pages/home/HomePage";
+import {CalendarPageT} from './pages/calendar/CalendarPage';
+import {SectionsByKey} from './pages/section/SectionPage';
+import {ImpressumPageT} from './pages/impressum/ImpressumPage';
+import {SectionT} from "./pages/section/components/Section";
 import Loading from "./components/Loading";
 import Navigation from "./components/Navigation";
 
 const Footer = lazy(() => import('./components/Footer'))
 const SectionHashHelper = lazy(() => import('./helper/SectionHashHelper'))
-const HomePage = lazy(() => import('./pages/HomePage'))
-const ImpressumPage = lazy(() => import('./pages/ImpressumPage'))
-const SectionPage = lazy(() => import('./pages/SectionPage'))
-const CalendarPage = lazy(() => import('./pages/CalendarPage'))
-const SearchPage = lazy(() => import('./pages/SearchPage'))
+const HomePage = lazy(() => import('./pages/home/HomePage'))
+const ImpressumPage = lazy(() => import('./pages/impressum/ImpressumPage'))
+const SectionPage = lazy(() => import('./pages/section/SectionPage'))
+const CalendarPage = lazy(() => import('./pages/calendar/CalendarPage'))
+const SearchPage = lazy(() => import('./pages/search/SearchPage'))
 
 export type LinkT = {
     title: string

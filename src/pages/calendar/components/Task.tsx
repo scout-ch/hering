@@ -1,6 +1,6 @@
 import React from 'react'
 import {useTranslation} from 'react-i18next';
-import {ChapterT, Role} from './Chapter';
+import {ChapterT, Role} from '../../section/components/Chapter';
 import {Link} from "react-router-dom";
 import {format} from "date-fns";
 

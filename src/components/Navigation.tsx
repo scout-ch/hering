@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-import {SectionT} from './Section'
+import {SectionT} from '../pages/section/components/Section'
 import {Link, useLocation, useNavigate} from 'react-router-dom'
-import {ChapterT} from './Chapter'
+import {ChapterT} from '../pages/section/components/Chapter'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {CalendarPageT} from '../pages/CalendarPage'
+import {CalendarPageT} from '../pages/calendar/CalendarPage'
 import {useTranslation} from "react-i18next";
-import {StartPageT} from '../pages/HomePage';
+import {StartPageT} from '../pages/home/HomePage';
 import {faBars, faCalendarDays, faHome, faSearch} from "@fortawesome/free-solid-svg-icons";
 
 type Props = {

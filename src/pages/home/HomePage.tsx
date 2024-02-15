@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import {IconT} from '../components/Section'
-import {LinkComponent} from "../helper/MarkdownComponents"
+import {IconT} from '../section/components/Section'
+import {LinkComponent} from "../../helper/MarkdownComponents"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHome} from "@fortawesome/free-solid-svg-icons";
 

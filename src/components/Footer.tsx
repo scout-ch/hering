@@ -2,7 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled';
 import i18n from './../i18n';
 import {Link, useLocation, useNavigate} from 'react-router-dom'
-import {SectionT} from './Section';
+import {SectionT} from '../pages/section/components/Section';
 import client from '../client';
 import FooterSvg from './FooterSvg';
 import PbsLogoSvg from './PbsLogoSvg';

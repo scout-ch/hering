@@ -2,9 +2,9 @@ import React, {useEffect} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import {LinkComponent} from '../helper/MarkdownComponents';
-import CalendarForm from '../components/CalendarForm';
-import {IconT} from '../components/Section';
+import {LinkComponent} from '../../helper/MarkdownComponents';
+import CalendarForm from './components/CalendarForm';
+import {IconT} from '../section/components/Section';
 import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";
 
 export type CalendarPageT = {

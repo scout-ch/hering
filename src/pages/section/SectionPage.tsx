@@ -1,5 +1,5 @@
 import React from 'react'
-import Section, {SectionT} from '../components/Section'
+import Section, {SectionT} from './components/Section'
 import {useParams} from 'react-router'
 
 type Params = {

@@ -1,7 +1,4 @@
-import React from 'react'
-
-
-function PbsLogoSvg() {
+export default function PbsLogoSvg() {
   // @ts-ignore
   return (
     <svg id="RZ" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.77047 68.72007">
@@ -300,5 +297,3 @@ function PbsLogoSvg() {
 </svg>
   );
 }
-
-export default PbsLogoSvg

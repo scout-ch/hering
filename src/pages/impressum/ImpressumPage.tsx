@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import {LinkComponent} from '../helper/MarkdownComponents';
+import {LinkComponent} from '../../helper/MarkdownComponents';
 import {faCircleInfo} from "@fortawesome/free-solid-svg-icons";
 
 export type ImpressumPageT = {
