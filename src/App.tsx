@@ -69,10 +69,7 @@ function App() {
 
     if (!sections || !links || !startPage || !calendarPage || !impressumPage) {
         return <div className='app-loading'>
-            <Loading isLoading={true}></Loading>
-            <div>
-                {t('homePage.loading')}
-            </div>
+            <Loading subtext={t('homePage.loading')}/>
         </div>
     }
 
@@ -101,7 +98,7 @@ function App() {
                         <Route path=":slug" element={<SectionPage sections={sectionsByKey}/>}/>
                     </Routes>
 
-                    <div className='footer'>
+                    <div id='footer' className='footer'>
                         <Footer sections={sections}/>
                     </div>
                 </main>

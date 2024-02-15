@@ -7,6 +7,10 @@
         "AL": "Abteilungsleiter*in"
       }
     },
+    "loading": {
+      "waitOne": "Wir sind bald bereit...",
+      "waitTwo": "Fast geschafft..."
+    },
     "homePage": {
       "loading": "Hering wird geladen..."
     },

@@ -7,6 +7,10 @@
         "AL": "Responsable de groupe"
       }
     },
+    "loading": {
+      "waitOne": "On sera bientôt prêts...",
+      "waitTwo": "On y est presque..."
+    },
     "homePage": {
       "loading": "Chargement de la Sardine ..."
     },

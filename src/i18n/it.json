@@ -7,6 +7,10 @@
         "AL": "Capo sezione"
       }
     },
+    "loading": {
+      "waitOne": "Saremo presto pronti...",
+      "waitTwo": "Ci siamo quasi..."
+    },
     "homePage": {
       "loading": "Sardina si sta caricando..."
     },
