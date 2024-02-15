@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import {useTranslation} from "react-i18next";
+import {useTranslation} from "react-i18next"
+import './loading.less'
 
 type Props = {
     isLoading?: boolean

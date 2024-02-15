@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm'
 import {LinkComponent} from '../../../helper/MarkdownComponents'
 import {IconT, SectionT} from './Section'
 import Target from './Target'
+import './chapter.less'
 
 export type Role = {
     rolle: string

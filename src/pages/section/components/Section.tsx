@@ -3,6 +3,7 @@ import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import {LinkComponent} from '../../../helper/MarkdownComponents'
 import Chapter, {ChapterT} from './Chapter'
+import './section.less'
 
 export type SectionT = {
     chapters: ChapterT[]

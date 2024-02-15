@@ -7,6 +7,7 @@ import {CalendarPageT} from '../pages/calendar/CalendarPage'
 import {useTranslation} from "react-i18next";
 import {StartPageT} from '../pages/home/HomePage';
 import {faBars, faCalendarDays, faHome, faSearch} from "@fortawesome/free-solid-svg-icons";
+import './nav.less'
 
 type Props = {
     startPage: StartPageT

@@ -1,5 +1,5 @@
 import {createRoot} from 'react-dom/client';
-import './index.less';
+import './style.less';
 import App from './App';
 import React from 'react';
 
