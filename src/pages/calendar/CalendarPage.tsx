@@ -4,9 +4,9 @@ import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import {LinkComponent} from '../../helper/MarkdownComponents'
 import CalendarForm from './components/CalendarForm'
-import {IconT} from '../section/components/Section'
 import {faCalendarDays} from "@fortawesome/free-solid-svg-icons"
 import './calendar.less'
+import {IconT} from "../../shared/types";
 
 export type CalendarPageT = {
     title: string

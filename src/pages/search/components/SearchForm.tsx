@@ -7,8 +7,8 @@ import remarkGfm from 'remark-gfm';
 import {LinkComponent} from '../../../helper/MarkdownComponents';
 import SearchInput from './SearchInput';
 import {Link, useSearchParams} from "react-router-dom";
-import {SectionT} from "../../section/components/Section";
 import {SearchHelper} from "../../../helper/SearchHelper";
+import {SectionT} from "../../section/SectionPage";
 
 type Props = {
     sections: SectionT[]

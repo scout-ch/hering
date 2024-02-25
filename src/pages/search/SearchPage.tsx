@@ -8,9 +8,9 @@ import SearchForm from './components/SearchForm'
 import searchPageDE from "../../data/search-page/de.json"
 import searchPageFR from "../../data/search-page/fr.json"
 import searchPageIT from "../../data/search-page/it.json"
-import {SectionT} from "../section/components/Section"
 import {faSearch} from "@fortawesome/free-solid-svg-icons"
 import './search.less'
+import {SectionT} from "../section/SectionPage";
 
 type Props = {
     sections: SectionT[]
