@@ -14,6 +14,9 @@ export const LinkComponent: Components = {
     blockquote({children}) {
         return <Warning content={children}/>
     },
+    table({children}) {
+        return <div className="table-overflow"><table>{children}</table></div>
+    },
     a({node, children, ...props}) {
         /* eslint-disable */
         const links = useContext(LinksContext)
