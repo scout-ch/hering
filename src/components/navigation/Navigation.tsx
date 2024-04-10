@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {CalendarPageT} from '../../pages/calendar/CalendarPage'
 import {useTranslation} from "react-i18next";
 import {StartPageT} from '../../pages/home/HomePage';
-import {faBars, faCalendarDays, faHome, faSearch} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faCalendarDays, faFishFins, faSearch} from "@fortawesome/free-solid-svg-icons";
 import './nav.less'
 
 type Props = {
@@ -89,7 +89,7 @@ function Navigation(props: Props) {
                 <li key="home" className={"primary-link " + homeActive}>
                     <Link to="/"
                           onClick={() => setNavbarOpen(!navbarOpen)}>
-                        <FontAwesomeIcon icon={faHome}/>
+                        <FontAwesomeIcon icon={faFishFins}/>
                         {props.startPage.menu_name}
                     </Link>
                 </li>
