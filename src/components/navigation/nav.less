@@ -19,6 +19,10 @@ nav.header-nav {
     text-decoration: none;
     min-width: 180px;
 
+    @media (max-width: 860px) {
+      font-size: 17px;
+    }
+
     svg {
       width: 1.125rem;
       height: 1.125rem;
@@ -90,6 +94,10 @@ nav.header-nav {
       padding: 0.5rem 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
+      .primary-link {
+        display: block;
+      }
+      
       .primary-link a {
         display: flex;
         gap: 0.5em;
@@ -154,13 +162,15 @@ nav.header-nav {
   }
 }
 
-main {
-  min-height: 100vh;
-  @supports (height: 100dvh) {
-    min-height: 100dvh;
+@media (min-width: 860px) {
+  main {
+    min-height: 100vh;
+    @supports (min-height: 100dvh) {
+      min-height: 100dvh;
+    }
+    display: flex;
+    flex-direction: column;
   }
-  display: flex;
-  flex-direction: column;
 }
 
 .content-main {

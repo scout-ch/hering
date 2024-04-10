@@ -59,11 +59,11 @@ function Navigation(props: Props) {
         const isActive = location.pathname.replace('/', '') === section.slug
         const className = isActive ? 'active' : ''
         return <details key={section.slug} className={className} open={isActive}>
-            <summary className={`accordion_label ${className}`} onClick={handleToggle}>
+            <summary className={`accordion_label ${className}`}>
                 {
                     isActive
                         ? <span>{section.menu_name}</span>
-                        : <Link to={section.slug}>{section.menu_name}</Link>
+                        : <Link to={section.slug} onClick={handleToggle}>{section.menu_name}</Link>
                 }
             </summary>
             {chapterList(section)}
