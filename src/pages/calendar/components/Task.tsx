@@ -31,7 +31,7 @@ function Task(props: TaskT) {
 
     return <tr>
         <td>{format(props.deadline, 'dd.MM.yyyy')}</td>
-        <td>{props.title}</td>
+        <th align={"left"}>{props.title}</th>
         <td>{responsible}</td>
         <td>{targets}</td>
         <td>
