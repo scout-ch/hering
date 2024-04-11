@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {SectionT} from '../../pages/section/components/Section'
-import {Link, useLocation, useNavigate} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import {ChapterT} from '../../pages/section/components/Chapter'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {CalendarPageT} from '../../pages/calendar/CalendarPage'
@@ -21,20 +21,8 @@ function Navigation(props: Props) {
 
     const {t} = useTranslation()
     const location = useLocation()
-    const navigate = useNavigate()
 
     const [navbarOpen, setNavbarOpen] = useState(false)
-    const [checkedState, setCheckedState] = useState(
-        new Array(sections.length).fill(false)
-    );
-
-    const handleOnChange = (sectionNav: any, section: SectionT) => {
-        const updatedCheckedState = checkedState.map((item, index) =>
-            index === sectionNav ? !item : false
-        );
-        setCheckedState(updatedCheckedState)
-        navigate('/' + section.slug)
-    }
 
     const handleToggle = () => {
         setNavbarOpen(!navbarOpen)
