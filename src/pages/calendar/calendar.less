@@ -3,11 +3,13 @@
 
   input, select {
     border: 1px solid black;
-    height: 30px;
     width: 200px;
     margin: 0;
     padding: 4px;
     box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    border-radius: 3px;
   }
   
   select {
@@ -24,30 +26,25 @@
 
     table {
 
-      thead tr td {
+      tr {
+        vertical-align: baseline;
+      }
+      
+      thead tr th {
+        border-top: none;
         font-weight: bold;
+        text-align: left;
+      }
+      
+      tbody tr th {
+        font-weight: 600;
       }
 
       font-size: smaller;
+      width: 100%;
 
       a {
-        font-size: smaller;
-      }
-
-      #who, #when {
-        width: 10%;
-      }
-
-      #what {
-        max-width: 40%;
-      }
-
-      #target {
-        width: 20%;
-      }
-
-      #chapters {
-        width: 30%;
+        font-size: unset;
       }
     }
   }
@@ -66,7 +63,7 @@
     gap: 0.5em;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 0.5em;
+    margin-bottom: 2rem;
 
     .download-btn {
       padding: 0.4em 0.5em;
@@ -92,6 +89,8 @@
     }
 
     .calendar-form {
+      display: grid;
+      row-gap: 10px;
       .calendar-title-prefix-hint {
         font-weight: 200;
         font-size: 15px;
@@ -100,32 +99,41 @@
 
       list-style-type: none;
       padding: 0;
-      max-width: 50%;
+      max-width: 500px;
 
       @media (max-width: 770px) {
-        max-width: 90%;
         label {
           min-width: 80px;
         }
       }
+      @media (max-width: 590px) {
+        li {
+          flex-direction: column;
+        }
+      }
+      
+      hr {
+        width: 100%;
+      }
 
       label {
-        min-width: 200px;
+        min-width: 220px;
+        max-width: 100%;
+        line-height: normal;
       }
 
       li {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        align-items: baseline;
         justify-content: space-between;
-        margin-top: 8px;
+        row-gap: 4px;
+        column-gap: 32px;
 
-        #puffer {
-          width: 200px;
-        }
-
-        #responsible {
-          width: 200px;
+        input, select, .input {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
         }
       }
     }

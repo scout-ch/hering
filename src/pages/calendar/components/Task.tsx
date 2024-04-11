@@ -23,20 +23,20 @@ function Task(props: TaskT) {
         .map((responsible) => t(`target.role.${responsible['rolle']}`))
         .join(', ')
 
-    const chapters = props.chapters.map((chapter: ChapterT) => {
+    const chapters = props.chapters.length > 1 ? <ul>{props.chapters.map((chapter: ChapterT) => {
         return <li key={chapter.slug}>
             <Link to={'/' + chapter.section.slug + '#' + chapter.slug}>{chapter.title}</Link>
         </li>
+    })}</ul> : props.chapters.map((chapter: ChapterT) => {
+        return <Link to={'/' + chapter.section.slug + '#' + chapter.slug}>{t(`calendarPage.table.link`)}</Link>
     })
 
     return <tr>
-        <td>{format(props.deadline, 'dd.MM.yyyy')}</td>
+        <td align={"center"}>{format(props.deadline, 'dd.MM.yyyy')}</td>
         <th align={"left"}>{props.title}</th>
         <td>{responsible}</td>
         <td>{targets}</td>
-        <td>
-            <ul>{chapters}</ul>
-        </td>
+        <td align={"center"}>{chapters}</td>
     </tr>
 }
 
