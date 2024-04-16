@@ -1,4 +1,9 @@
 # Changelog
+## [v2.2.1] - 2024-04-16
+### :recycle: Refactors
+- [`52d3595`](https://github.com/scout-ch/hering/commit/52d3595d38364142c39a63ec2819fc09d3748bd8) - removed unnecessary Section component *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.2.0] - 2024-02-15
 ### :sparkles: New Features
 - [`65f7a65`](https://github.com/scout-ch/hering/commit/65f7a65ea6a740ffcb9619adf83216091ad1d300) - added ability to set subtext in loading component *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -89,3 +94,4 @@
 [v2.0.1]: https://github.com/scout-ch/hering/compare/v2.0.0...v2.0.1
 [v2.1.0]: https://github.com/scout-ch/hering/compare/v2.0.1...v2.1.0
 [v2.2.0]: https://github.com/scout-ch/hering/compare/v2.1.0...v2.2.0
+[v2.2.1]: https://github.com/scout-ch/hering/compare/v2.2.0...v2.2.1
