@@ -2,9 +2,10 @@ import React from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import {LinkComponent} from '../../../helper/MarkdownComponents'
-import {IconT, SectionT} from './Section'
 import Target from './Target'
 import './chapter.less'
+import {IconT} from "../../../shared/types";
+import {SectionT} from "../SectionPage";
 
 export type Role = {
     rolle: string

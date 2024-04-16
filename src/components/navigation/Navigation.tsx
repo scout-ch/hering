@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import {SectionT} from '../../pages/section/components/Section'
 import {Link, useLocation} from 'react-router-dom'
 import {ChapterT} from '../../pages/section/components/Chapter'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -8,6 +7,7 @@ import {useTranslation} from "react-i18next";
 import {StartPageT} from '../../pages/home/HomePage';
 import {faBars, faCalendarDays, faFishFins, faSearch} from "@fortawesome/free-solid-svg-icons";
 import './nav.less'
+import {SectionT} from "../../pages/section/SectionPage";
 
 type Props = {
     startPage: StartPageT

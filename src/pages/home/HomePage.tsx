@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import {IconT} from '../section/components/Section'
 import {LinkComponent} from "../../helper/MarkdownComponents"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFishFins} from "@fortawesome/free-solid-svg-icons";
+import {IconT} from "../../shared/types";
 
 export type StartPageT = {
     title: string

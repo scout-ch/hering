@@ -6,9 +6,8 @@ import client from './client';
 import {checkLinks} from './helper/LinkChecker';
 import {StartPageT} from "./pages/home/HomePage";
 import {CalendarPageT} from './pages/calendar/CalendarPage';
-import {SectionsByKey} from './pages/section/SectionPage';
+import {SectionsByKey, SectionT} from './pages/section/SectionPage';
 import {ImpressumPageT} from './pages/impressum/ImpressumPage';
-import {SectionT} from "./pages/section/components/Section";
 import Loading from "./components/loading/Loading";
 import Navigation from "./components/navigation/Navigation";
 
