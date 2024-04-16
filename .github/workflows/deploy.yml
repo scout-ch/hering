@@ -102,6 +102,7 @@ jobs:
         with:
           token: ${{ github.token }}
           tag: ${{ steps.semver.outputs.next }}
+          excludeTypes: "build,docs,other"
 
       - name: Create Release
         uses: ncipollo/release-action@v1
