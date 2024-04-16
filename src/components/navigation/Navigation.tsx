@@ -43,14 +43,14 @@ function Navigation(props: Props) {
         </ul>
     }
 
-    const sectionList = sections.map((section: SectionT, index: number) => {
+    const sectionList = sections.map((section: SectionT) => {
         const isActive = location.pathname.replace('/', '') === section.slug
         const className = isActive ? 'active' : ''
         return <details key={section.slug} className={className} open={isActive}>
             <summary className={`accordion_label ${className}`}>
                 {
                     isActive
-                        ? <span>{section.menu_name}</span>
+                        ? <span className="cursor-pointer">{section.menu_name}</span>
                         : <Link to={section.slug} onClick={handleToggle}>{section.menu_name}</Link>
                 }
             </summary>
