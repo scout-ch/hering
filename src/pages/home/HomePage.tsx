@@ -3,7 +3,7 @@ import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import {LinkComponent} from "../../helper/MarkdownComponents"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHome} from "@fortawesome/free-solid-svg-icons";
+import {faFishFins} from "@fortawesome/free-solid-svg-icons";
 import {IconT} from "../../shared/types";
 
 export type StartPageT = {
@@ -26,7 +26,7 @@ function HomePage(props: Props) {
 
     return <div className='content-main'>
         <h1>
-            <FontAwesomeIcon icon={faHome}/> {startPage.title}
+            <FontAwesomeIcon icon={faFishFins}/> {startPage.title}
         </h1>
         <Markdown
             remarkPlugins={[remarkGfm]}

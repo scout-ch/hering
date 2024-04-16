@@ -155,14 +155,14 @@ function CalendarForm() {
                 <form>
                     <ul className='calendar-form'>
                         <li>
-                            <label>
+                            <label htmlFor="startDate">
                                 {t('calendarPage.startDate')}
                             </label>
-                            <input type="date" name="startDate" value={startDate}
+                            <input id="startDate" type="date" name="startDate" value={startDate}
                                    onChange={onStartDateChanged}/>
                         </li>
                         <li>
-                            <label>
+                            <label htmlFor={"responsible"}>
                                 {t('calendarPage.responsible')}
                             </label>
                             <select name="responsible" id="responsible" value={responsible}
@@ -175,38 +175,35 @@ function CalendarForm() {
                         </li>
                         <hr/>
                         <li>
-                            <label>
+                            <label htmlFor={"puffer"}>
                                 {t('calendarPage.puffer')}
                             </label>
                             <input type="number" id="puffer" name="puffer" value={puffer.toString()}
                                    onChange={onBufferChanged}/>
                         </li>
                         <li>
-                            <label>
+                            <label htmlFor={"calendar-prefix"}>
                                 {t('calendarPage.prefixPlaceholder')}
                             </label>
-                            <div>
-                                <input type='text' name='calendar-prefix' value={calendarTitlePrefix}
+                            <div className="input">
+                                <input type='text' name='calendar-prefix' id={"calendar-prefix"} value={calendarTitlePrefix}
                                        onChange={onCalendarPrefixChanged}/>
                                 <div className='calendar-title-prefix-hint'>
                                     {t('calendarPage.prefixPreview', {calendarTitlePrefix: calendarTitlePrefix})}
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            {hasActiveCache() ?
-                                <button className={"as-link"}
-                                        onClick={resetValues}>
-                                    {t('calendarPage.resetValues')}
-                                </button>
-                                : <></>
-                            }
-                        </li>
                     </ul>
                 </form>
             </div>
 
             <div className="download-btn-group">
+                {hasActiveCache() &&
+                    <button className="download-btn" style={{margin: '0 auto 0 0'}}
+                        onClick={resetValues}>
+                        {t('calendarPage.resetValues')}
+                    </button>
+                }
                 <IcsDownload tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}></IcsDownload>
                 <CsvDownload tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}></CsvDownload>
             </div>
