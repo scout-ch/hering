@@ -5,29 +5,29 @@ const ScrollToHashElement = () => {
 
     const location = useLocation();
 
-    const getHashElement = () => {
-        if (location.hash) {
-            const id = location.hash.replace('#', '');
-            return document.getElementById(id);
-        }
-
-        return document.getElementById('section-title')
-    }
-
-    const scrollToHashElement = () => {
-        const hashElement = getHashElement();
-        if (!hashElement) {
-            window.scrollTo(0, 0)
-            return;
-        }
-
-        hashElement.scrollIntoView({
-            behavior: "instant",
-            block: 'start'
-        });
-    }
-
     useEffect(() => {
+        const scrollToHashElement = () => {
+            const getHashElement = () => {
+                if (location.hash) {
+                    const id = location.hash.replace('#', '');
+                    return document.getElementById(id);
+                }
+
+                return document.getElementById('section-title')
+            }
+
+            const hashElement = getHashElement();
+            if (!hashElement) {
+                window.scrollTo(0, 0)
+                return;
+            }
+
+            hashElement.scrollIntoView({
+                behavior: "instant",
+                block: 'start'
+            });
+        }
+
         // wait for section to be loaded into the DOM
         const mutationObserver = new MutationObserver((records) => {
             records.forEach(record => {
@@ -59,14 +59,12 @@ const ScrollToHashElement = () => {
         const mainElement = document.getElementById('main')
         mutationObserver.observe(mainElement!, { attributes: false, childList: true, subtree: true });
 
+        scrollToHashElement();
+
         return () => {
             mutationObserver.disconnect()
         }
-    }, []);
-
-    useEffect(() => {
-        scrollToHashElement();
-    }, [location]);
+    }, [location.hash]);
 
     return null;
 };
