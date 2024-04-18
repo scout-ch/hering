@@ -79,7 +79,7 @@ export default function App() {
                     <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}/>
                 </div>
 
-                <main>
+                <main id="main">
                     <Routes>
                         <Route path="/" element={
                             <Suspense fallback={<Loading centerInViewport={true}/>}>

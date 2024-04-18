@@ -43,8 +43,8 @@ function SectionPage(props: Props) {
         .sort((a: ChapterT, b: ChapterT) => a.sorting - b.sorting)
         .map(chapter => <Chapter key={chapter['title']} data={chapter}></Chapter>)
 
-    return <div className='content'>
-        <div className='content-main'>
+    return <div className="content" id="section">
+        <div className="content-main">
             <div id="section-title" className="section-title">
                 <h1>{section['title']}</h1>
             </div>
