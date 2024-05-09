@@ -1,4 +1,26 @@
 # Changelog
+## [v2.3.0] - 2024-05-09
+### :sparkles: New Features
+- [`24e2525`](https://github.com/scout-ch/hering/commit/24e2525606004a4b7cdf8785e0af68d5ef24568d) - change active menu item while scrolling [#11](https://github.com/scout-ch/hering/pull/11) *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :bug: Bug Fixes
+- [`86182de`](https://github.com/scout-ch/hering/commit/86182de7312d168ac15bd65fe49419dd90d6c667) - more robust navigation to hash location after page reload *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`a317f3b`](https://github.com/scout-ch/hering/commit/a317f3b3fa6bc1f3f1800e7666f5190bdfcc73c0) - use react dependency tracking correctly *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :recycle: Refactors
+- [`b66370f`](https://github.com/scout-ch/hering/commit/b66370f2e62a23d94cf8b4a8d3a8db922a1cf637) - removed unused code *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :art: Code Style Changes
+- [`5aba007`](https://github.com/scout-ch/hering/commit/5aba007c6d4ff84315f3de7aa5063add38e8852f) - use cursor pointer on open nav item *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`216c29c`](https://github.com/scout-ch/hering/commit/216c29c1c9395d23f2ee6aa9843f43dfdd00e1ac) - footer ui optimizations *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`9696dc4`](https://github.com/scout-ch/hering/commit/9696dc4e0eaf71d24c4b8f3d579954c4558c436b) - warning component without @emotion/styled dependency *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :wrench: Chores
+- [`b052f7e`](https://github.com/scout-ch/hering/commit/b052f7e31bef7db251585135611f9740ad4806a5) - **deps**: npm dependency updates *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`2363b37`](https://github.com/scout-ch/hering/commit/2363b378835cbfab514a2e146d34b5f19cb64830) - **deps**: removed unused dependencies *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`249d16b`](https://github.com/scout-ch/hering/commit/249d16bcf15e2cb00b9c58a6a34620f032c75640) - **deps**: removed ESLint Jest extension *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.2.1] - 2024-04-16
 ### :recycle: Refactors
 - [`52d3595`](https://github.com/scout-ch/hering/commit/52d3595d38364142c39a63ec2819fc09d3748bd8) - removed unnecessary Section component *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -95,3 +117,4 @@
 [v2.1.0]: https://github.com/scout-ch/hering/compare/v2.0.1...v2.1.0
 [v2.2.0]: https://github.com/scout-ch/hering/compare/v2.1.0...v2.2.0
 [v2.2.1]: https://github.com/scout-ch/hering/compare/v2.2.0...v2.2.1
+[v2.3.0]: https://github.com/scout-ch/hering/compare/v2.2.1...v2.3.0
