@@ -1,24 +1,12 @@
 import React from 'react'
-import styled from '@emotion/styled'
 import i18n from '../../i18n'
-import {Link, useLocation, useNavigate} from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import client from '../../client'
 import FooterSvg from './FooterSvg'
 import PbsLogoSvg from './PbsLogoSvg'
 import './footer.less'
-import {SectionT} from "../../pages/section/SectionPage";
+import { SectionT } from "../../pages/section/SectionPage";
 
-
-const Button = styled.button`
-    border: none;
-    background: none;
-    color: white;
-
-    &:hover {
-        color: white;
-        opacity: 0.5;
-    }
-`
 type Props = {
     sections: SectionT[]
 }
@@ -28,6 +16,7 @@ function Footer(props: Props) {
     const lang = i18n.language
     const location = useLocation();
     const navigate = useNavigate();
+    const currentYear = new Date().getFullYear()
 
     const changeLanguage = (lang: string, oldSections: SectionT[]) => {
         let redirect = false
@@ -71,32 +60,36 @@ function Footer(props: Props) {
     }
 
     return <>
-        <div className='footer-image'>
-            <FooterSvg/>
-        </div>
-        <div className="footer-content">
-            <nav className="footer-nav">
-                <div className='footer-logo'>
-                    <PbsLogoSvg/>
-                </div>
-                <ul>
-                    <li>
-                        <Button className={lang === 'de' ? 'active' : ''}
-                                onClick={() => changeLanguage('de', props.sections)}>Deutsch</Button>
-                        <Button className={lang === 'fr' ? 'active' : ''}
-                                onClick={() => changeLanguage('fr', props.sections)}>Français</Button>
-                        <Button className={lang === 'it' ? 'active' : ''}
-                                onClick={() => changeLanguage('it', props.sections)}>Italiano</Button>
-                    </li>
-                </ul>
-            </nav>
-            <div className='footer-bottom'>
-                <p className="footer-copyright">© 2023 Pfadibewegung Schweiz</p>
-                <ul className='footer-bottom-nav'>
-                    <li className="child">
+        <div id='footer' className='footer'>
+            <div className='footer-image'>
+                <FooterSvg/>
+            </div>
+            <div className="footer-content">
+                <nav className="footer-nav">
+                    <div className='footer-logo'>
+                        <PbsLogoSvg/>
+                    </div>
+                    <div className='language-switcher'>
+                        <button className={lang === 'de' ? 'active' : ''}
+                                onClick={() => changeLanguage('de', props.sections)}
+                                aria-label={'Deutsch'}>Deutsch
+                        </button>
+                        <button className={lang === 'fr' ? 'active' : ''}
+                                onClick={() => changeLanguage('fr', props.sections)}
+                                aria-label={'Français'}>Français
+                        </button>
+                        <button className={lang === 'it' ? 'active' : ''}
+                                onClick={() => changeLanguage('it', props.sections)}
+                                aria-label={'Italiano'}>Italiano
+                        </button>
+                    </div>
+                </nav>
+                <div className='footer-bottom'>
+                    <div className="footer-copyright">© {currentYear} Pfadibewegung Schweiz</div>
+                    <div className='footer-bottom-nav'>
                         <Link to="/impressum">Impressum</Link>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </>

@@ -112,11 +112,7 @@ export default function App() {
                         }/>
                     </Routes>
 
-                    <div id='footer' className='footer'>
-                        <Suspense fallback={<Loading/>}>
-                            <Footer sections={sections}/>
-                        </Suspense>
-                    </div>
+                    <Footer sections={sections}/>
                 </main>
             </LinksContext.Provider>
         </Router>
