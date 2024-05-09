@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import {Link} from 'react-router-dom'
 import {LinksContext} from '../App'
 import {Components} from "react-markdown/lib"
-import Warning from "../components/Warning"
+import Warning from "../components/warning/Warning"
 
 // // @ts-ignore
 // remark.macros.img = function (altText, width) {
