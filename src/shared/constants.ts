@@ -1,0 +1,1 @@
+export const CHAPTER_NAV_UPDATED_EVENT = 'chapterNavUpdated'

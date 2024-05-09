@@ -1,9 +1,11 @@
-import React, {useEffect} from 'react'
-import {useParams} from 'react-router'
-import Chapter, {ChapterT} from "./components/Chapter";
+import React, { useEffect } from 'react'
+import { useParams } from 'react-router'
+import Chapter, { ChapterT } from "./components/Chapter";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import {LinkComponent} from "../../helper/MarkdownComponents";
+import { LinkComponent } from "../../helper/MarkdownComponents";
+import { useLocation } from "react-router-dom";
+import { handleIntersectionChanged } from "./helpers/intersection.helper";
 
 export type SectionT = {
     chapters: ChapterT[]
@@ -28,12 +30,31 @@ type Params = {
 }
 
 function SectionPage(props: Props) {
-    const {slug} = useParams<Params>()
+    const { slug } = useParams<Params>()
     const section = props.sections[slug || '']
+    const location = useLocation()
 
     useEffect(() => {
-        document.title = section['title']
+        if (section) {
+            document.title = section['title']
+        }
     }, [section]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => handleIntersectionChanged(entries, location.hash), {
+            root: document,
+            rootMargin: '0px',
+            threshold: [0.2]
+        });
+
+        document.querySelectorAll('.chapter').forEach((chapter) => {
+            observer.observe(chapter);
+        });
+
+        return () => {
+            observer.disconnect()
+        };
+    }, [section, location]);
 
     if (!section) {
         return null
