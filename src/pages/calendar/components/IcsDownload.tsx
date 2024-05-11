@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from 'react'
-import {TaskT} from './Task'
-import {ChapterT} from '../../section/components/Chapter'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {useTranslation} from "react-i18next"
-import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect, useState } from 'react'
+import { TaskT } from './Task'
+import { ChapterT } from '../../section/components/Chapter'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from "react-i18next"
+import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import ics, { EventAttributes } from "ics";
 
 type Props = {
     tasks: TaskT[]
@@ -23,8 +24,6 @@ function buildLinks(task: TaskT): string {
 }
 
 async function generateIcsLink(tasks: TaskT[], calendarTitlePrefix: string): Promise<string> {
-    const ics = require('ics')
-
     const events = tasks.map(function (task) {
         const deadline = task.deadline
         const alarms = []
@@ -32,7 +31,7 @@ async function generateIcsLink(tasks: TaskT[], calendarTitlePrefix: string): Pro
         alarms.push({
             action: 'display',
             description: buildDescription(task),
-            trigger: {hours: 1, before: true},
+            trigger: { hours: 1, before: true },
         })
 
         return {
@@ -44,7 +43,7 @@ async function generateIcsLink(tasks: TaskT[], calendarTitlePrefix: string): Pro
             status: 'CONFIRMED',
             busyStatus: 'FREE',
             alarms: alarms
-        }
+        } as EventAttributes
     })
 
     return new Promise((resolve, reject) => {
@@ -59,7 +58,7 @@ async function generateIcsLink(tasks: TaskT[], calendarTitlePrefix: string): Pro
                 return
             }
 
-            const data = new Blob([value], {type: 'text/calendar'});
+            const data = new Blob([value], { type: 'text/calendar' });
             const link = window.URL.createObjectURL(data);
             resolve(link)
         })
@@ -68,7 +67,7 @@ async function generateIcsLink(tasks: TaskT[], calendarTitlePrefix: string): Pro
 
 function IcsDownload(props: Props) {
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const [downloadLink, setDownloadLink] = useState<string>();
 
     useEffect(() => {
@@ -96,7 +95,7 @@ function IcsDownload(props: Props) {
 
     return (
         <a className="download-btn" id="ics-download"
-           download={t('calendarPage.ics.filename', {calendarTitlePrefix: spacedCalendarPrefix})}
+           download={t('calendarPage.ics.filename', { calendarTitlePrefix: spacedCalendarPrefix })}
            href={downloadLink}>
             <FontAwesomeIcon icon={faCalendarDays}/>
             {t('calendarPage.ics.download')}

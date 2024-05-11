@@ -1,14 +1,14 @@
-import React, {useCallback, useEffect, useRef, useState} from 'react'
-import {useTranslation} from "react-i18next"
+import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { useTranslation } from "react-i18next"
 import Loading from '../../../components/loading/Loading'
-import {ChapterT} from '../../section/components/Chapter';
+import { ChapterT } from '../../section/components/Chapter';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import {LinkComponent} from '../../../helper/MarkdownComponents';
+import { LinkComponent } from '../../../helper/MarkdownComponents';
 import SearchInput from './SearchInput';
-import {Link, useSearchParams} from "react-router-dom";
-import {SearchHelper} from "../../../helper/SearchHelper";
-import {SectionT} from "../../section/SectionPage";
+import { Link, useSearchParams } from "react-router-dom";
+import { SearchHelper } from "../../../helper/SearchHelper";
+import { SectionT } from "../../section/SectionPage";
 
 type Props = {
     sections: SectionT[]
@@ -23,7 +23,7 @@ type SearchResult = {
 
 function SearchForm(props: Props) {
 
-    const {t} = useTranslation()
+    const { t } = useTranslation()
     const [searchParams, setSearchParams] = useSearchParams();
 
     const isQueryLoaded = useRef<boolean>(false);
@@ -31,7 +31,7 @@ function SearchForm(props: Props) {
     const [searchResults, setSearchResults] = useState<SearchResult[]>([])
     const [isLoadingResults, setIsLoadingResults] = useState<boolean>(false)
 
-    const timeoutId = useRef<NodeJS.Timeout | undefined>();
+    const timeoutId = useRef<number | undefined>();
     const searchableSectionChapters = useRef<ChapterT[]>(props.sections
         .reduce((chapters: ChapterT[], currentSection: SectionT) => chapters.concat(currentSection.chapters), []))
 
@@ -97,9 +97,9 @@ function SearchForm(props: Props) {
 
         setKeyword(keyword)
         const queryParams = keyword.length > 0
-            ? {'keyword': keyword}
+            ? { 'keyword': keyword }
             : undefined;
-        setSearchParams(queryParams, {replace: true})
+        setSearchParams(queryParams, { replace: true })
 
         executeSearch(keyword)
     }
@@ -129,7 +129,7 @@ function SearchForm(props: Props) {
 
                 return <div>{t('searchPage.noResults')}</div>
             }
-            return <div> {t('searchPage.noKeyword', {amountOfCharacters: 3})}</div>
+            return <div> {t('searchPage.noKeyword', { amountOfCharacters: 3 })}</div>
         }
         return null
     }
