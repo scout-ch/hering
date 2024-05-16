@@ -1,11 +1,11 @@
-import React, {ChangeEvent, FormEvent, useCallback, useEffect, useState} from 'react'
-import {useTranslation} from 'react-i18next';
+import React, { ChangeEvent, FormEvent, useCallback, useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next';
 import i18n from '../../../i18n';
 import CalendarTable from './CalendarTable';
-import {ChapterT} from '../../section/components/Chapter';
-import {TaskT} from './Task';
+import { ChapterT } from '../../section/components/Chapter';
+import { TaskT } from './Task';
 import client from '../../../client';
-import {addDays, format, parse, startOfDay} from "date-fns";
+import { addDays, format, isValid, parse, startOfDay } from "date-fns";
 import IcsDownload from "./IcsDownload";
 import CsvDownload from "./CsvDownload";
 
@@ -33,7 +33,7 @@ const calendarPrefixCacheKey = 'calendar-prefix'
 
 function CalendarForm() {
 
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     const [startDate, setStartDate] = useState<string>(initialStartDate)
     const [responsible, setResponsible] = useState<string>(initialResponsible)
@@ -91,6 +91,11 @@ function CalendarForm() {
         event?.preventDefault()
 
         const parsedStartDate = parse(startDate, dateFormat, Date.now())
+        const isValidDate = isValid(parsedStartDate)
+        if (!isValidDate) {
+            return
+        }
+
         const filteredTasks = taskList.filter((task: Task) => {
             const rollen = task.responsible.map((resp) => resp.rolle)
             return responsible === 'all'
@@ -186,10 +191,11 @@ function CalendarForm() {
                                 {t('calendarPage.prefixPlaceholder')}
                             </label>
                             <div className="input">
-                                <input type='text' name='calendar-prefix' id={"calendar-prefix"} value={calendarTitlePrefix}
+                                <input type='text' name='calendar-prefix' id={"calendar-prefix"}
+                                       value={calendarTitlePrefix}
                                        onChange={onCalendarPrefixChanged}/>
                                 <div className='calendar-title-prefix-hint'>
-                                    {t('calendarPage.prefixPreview', {calendarTitlePrefix: calendarTitlePrefix})}
+                                    {t('calendarPage.prefixPreview', { calendarTitlePrefix: calendarTitlePrefix })}
                                 </div>
                             </div>
                         </li>
@@ -199,8 +205,8 @@ function CalendarForm() {
 
             <div className="download-btn-group">
                 {hasActiveCache() &&
-                    <button className="download-btn" style={{margin: '0 auto 0 0'}}
-                        onClick={resetValues}>
+                    <button className="download-btn" style={{ margin: '0 auto 0 0' }}
+                            onClick={resetValues}>
                         {t('calendarPage.resetValues')}
                     </button>
                 }
