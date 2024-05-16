@@ -1,8 +1,8 @@
 import React from 'react'
-import {useTranslation} from 'react-i18next';
-import {ChapterT, Role} from '../../section/components/Chapter';
-import {Link} from "react-router-dom";
-import {format} from "date-fns";
+import { useTranslation } from 'react-i18next';
+import { ChapterT, Role } from '../../section/components/Chapter';
+import { Link } from "react-router-dom";
+import { format } from "date-fns";
 
 export type TaskT = {
     deadline: Date
@@ -14,7 +14,7 @@ export type TaskT = {
 
 function Task(props: TaskT) {
 
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     const targets = props.targets
         .map((target) => target['rolle'])
@@ -23,13 +23,16 @@ function Task(props: TaskT) {
         .map((responsible) => t(`target.role.${responsible['rolle']}`))
         .join(', ')
 
-    const chapters = props.chapters.length > 1 ? <ul>{props.chapters.map((chapter: ChapterT) => {
-        return <li key={chapter.slug}>
-            <Link to={'/' + chapter.section.slug + '#' + chapter.slug}>{chapter.title}</Link>
-        </li>
-    })}</ul> : props.chapters.map((chapter: ChapterT) => {
-        return <Link to={'/' + chapter.section.slug + '#' + chapter.slug}>{t(`calendarPage.table.link`)}</Link>
-    })
+    const createChapterLink = (chapter: ChapterT) => `/${chapter.section.slug}#${chapter.slug}`
+    const chapters = props.chapters.length > 1
+        ? <ul>{props.chapters.map((chapter: ChapterT) => {
+            return <li key={chapter.slug}>
+                <Link to={createChapterLink(chapter)}>{chapter.title}</Link>
+            </li>
+        })}</ul>
+        : props.chapters.map((chapter: ChapterT) => {
+            return <Link key={chapter.slug} to={createChapterLink(chapter)}>{t(`calendarPage.table.link`)}</Link>
+        })
 
     return <tr>
         <td align={"center"}>{format(props.deadline, 'dd.MM.yyyy')}</td>
