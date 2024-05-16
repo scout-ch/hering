@@ -4,7 +4,8 @@ import { ChapterT } from '../../section/components/Chapter'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from "react-i18next"
 import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
-import ics, { EventAttributes } from "ics";
+import * as ics from 'ics'
+import { EventAttributes } from 'ics'
 
 type Props = {
     tasks: TaskT[]
