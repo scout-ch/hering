@@ -1,4 +1,11 @@
 # Changelog
+## [v2.3.1] - 2024-05-16
+### :bug: Bug Fixes
+- [`1960571`](https://github.com/scout-ch/hering/commit/1960571b1e23c652bb1db2175a08d733156ae99f) - validate parsed date before creating tasks [#30](https://github.com/scout-ch/hering/pull/30) *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`cae3807`](https://github.com/scout-ch/hering/commit/cae3807c24c09db5dc1d065558e5e50de5081a09) - use correct import for ics package *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`298d79e`](https://github.com/scout-ch/hering/commit/298d79e38a266c312a37d9117209ab0e7e609424) - use unique key for Link *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.3.0] - 2024-05-09
 ### :sparkles: New Features
 - [`24e2525`](https://github.com/scout-ch/hering/commit/24e2525606004a4b7cdf8785e0af68d5ef24568d) - change active menu item while scrolling [#11](https://github.com/scout-ch/hering/pull/11) *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -118,3 +125,4 @@
 [v2.2.0]: https://github.com/scout-ch/hering/compare/v2.1.0...v2.2.0
 [v2.2.1]: https://github.com/scout-ch/hering/compare/v2.2.0...v2.2.1
 [v2.3.0]: https://github.com/scout-ch/hering/compare/v2.2.1...v2.3.0
+[v2.3.1]: https://github.com/scout-ch/hering/compare/v2.3.0...v2.3.1
