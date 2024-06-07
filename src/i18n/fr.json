@@ -36,6 +36,17 @@
         "download": "Télécharger au format CSV",
         "filename": "{{calendarTitlePrefix}}Données du camp.csv"
       },
+      "excel": {
+        "title": "Dates de planification du camp",
+        "firstCampDay": "Premier jour de camp",
+        "dueSoonInfo": "orange = à faire bientôt (max. 14 jours jusqu'à la date limite)",
+        "overdueInfo": "rouge = à faire de toute urgence (rendez-vous déjà passé)",
+        "beforeCamp": "Avant le camp",
+        "afterCamp": "Après le camp",
+        "done": "Fait",
+        "download": "Télécharger au format Excel",
+        "filename": "{{calendarTitlePrefix}}Données du camp.xlsx"
+      },
       "table": {
         "what": "Quoi",
         "who": "Qui",

@@ -8,6 +8,7 @@ import client from '../../../client';
 import { addDays, format, isValid, parse, startOfDay } from "date-fns";
 import IcsDownload from "./IcsDownload";
 import CsvDownload from "./CsvDownload";
+import ExcelDownload from "./ExcelDownload";
 
 type Roles = {
     rolle: string
@@ -36,6 +37,7 @@ function CalendarForm() {
     const { t } = useTranslation()
 
     const [startDate, setStartDate] = useState<string>(initialStartDate)
+    const [parsedStartDate, setParsedStartDate] = useState<Date>(new Date())
     const [responsible, setResponsible] = useState<string>(initialResponsible)
     const [puffer, setPuffer] = useState<number>(0)
     const [calendarTitlePrefix, setCalendarTitlePrefix] = useState<string>('')
@@ -46,6 +48,12 @@ function CalendarForm() {
         const newStartDate = e.currentTarget.value
         setStartDate(newStartDate)
         window.sessionStorage.setItem(startDateCacheKey, newStartDate)
+
+        const parsedStartDate = parse(startDate, dateFormat, Date.now())
+        const isValidDate = isValid(parsedStartDate)
+        if (isValidDate) {
+            setParsedStartDate(parsedStartDate)
+        }
     }
 
     const onResponsibleeChanged = (e: ChangeEvent<HTMLSelectElement>) => {
@@ -90,7 +98,6 @@ function CalendarForm() {
     const createTasks = useCallback((event?: FormEvent<HTMLFormElement> | undefined) => {
         event?.preventDefault()
 
-        const parsedStartDate = parse(startDate, dateFormat, Date.now())
         const isValidDate = isValid(parsedStartDate)
         if (!isValidDate) {
             return
@@ -212,6 +219,9 @@ function CalendarForm() {
                 }
                 <IcsDownload tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}></IcsDownload>
                 <CsvDownload tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}></CsvDownload>
+                <ExcelDownload tasks={tasks}
+                               startOfCamp={parsedStartDate}
+                               calendarTitlePrefix={calendarTitlePrefix}></ExcelDownload>
             </div>
 
             <CalendarTable tasks={tasks} prefix={calendarTitlePrefix}/>

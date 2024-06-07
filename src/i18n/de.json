@@ -36,6 +36,17 @@
         "download": "Download als CSV",
         "filename": "{{calendarTitlePrefix}}Lagerdaten.csv"
       },
+      "excel": {
+        "title": "Termine Lagerplanung",
+        "firstCampDay": "Erster Lagertag",
+        "dueSoonInfo": "orange = bald erledigen (max. 14 Tage bis zum Termin)",
+        "overdueInfo": "rot = dringend erledigen (Termin schon vorbei)",
+        "beforeCamp": "Vor dem Lager",
+        "afterCamp": "Nach dem Lager",
+        "done": "Erledigt",
+        "download": "Download als Excel",
+        "filename": "{{calendarTitlePrefix}}Lagerdaten.xlsx"
+      },
       "table": {
         "what": "Was",
         "who": "Wer",
