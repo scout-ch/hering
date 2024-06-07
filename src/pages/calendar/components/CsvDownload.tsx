@@ -1,10 +1,10 @@
-import {TaskT} from "./Task";
-import {useTranslation} from "react-i18next";
-import React, {useEffect, useState} from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {ChapterT} from "../../section/components/Chapter";
-import {format} from "date-fns";
-import {faFileCsv} from "@fortawesome/free-solid-svg-icons";
+import { TaskT } from "./Task";
+import { useTranslation } from "react-i18next";
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ChapterT } from "../../section/components/Chapter";
+import { format } from "date-fns";
+import { faFileCsv } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
     tasks: TaskT[]
@@ -19,7 +19,7 @@ function buildLinks(task: TaskT): string {
 
 function CsvDownload(props: Props) {
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const [downloadLink, setDownloadLink] = useState<string>();
 
     useEffect(() => {
@@ -46,7 +46,7 @@ function CsvDownload(props: Props) {
                 csvContent += row + '\n';
             });
 
-            const blob = new Blob([csvContent], {type: 'text/csv;charset=utf-8;'});
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
             return URL.createObjectURL(blob);
         }
 
@@ -74,7 +74,7 @@ function CsvDownload(props: Props) {
 
     return (
         <a className="download-btn" id="csv-download"
-           download={t('calendarPage.csv.filename', {calendarTitlePrefix: spacedCalendarPrefix})}
+           download={t('calendarPage.csv.filename', { calendarTitlePrefix: spacedCalendarPrefix })}
            href={downloadLink}>
             <FontAwesomeIcon icon={faFileCsv}/>
             {t('calendarPage.csv.download')}
