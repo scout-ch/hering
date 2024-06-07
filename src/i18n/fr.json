@@ -29,11 +29,11 @@
       "prefixPreview": "Aperçu: {{calendarTitlePrefix}} Données relatives",
       "resetValues": "Réinitialiser les valeurs",
       "ics": {
-        "download": "Télécharger .ics",
+        "download": "Télécharger au format calendrier",
         "filename": "{{calendarTitlePrefix}}Données du camp.ics"
       },
       "csv": {
-        "download": "Télécharger .csv",
+        "download": "Télécharger au format CSV",
         "filename": "{{calendarTitlePrefix}}Données du camp.csv"
       },
       "table": {

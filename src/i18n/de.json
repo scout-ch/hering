@@ -29,11 +29,11 @@
       "prefixPreview": "Vorschau: {{calendarTitlePrefix}} Lagerdaten an Coach",
       "resetValues": "Werte zurücksetzen",
       "ics": {
-        "download": "Download als .ics",
+        "download": "Download als Kalender",
         "filename": "{{calendarTitlePrefix}}Lagerdaten.ics"
       },
       "csv": {
-        "download": "Download als .csv",
+        "download": "Download als CSV",
         "filename": "{{calendarTitlePrefix}}Lagerdaten.csv"
       },
       "table": {
