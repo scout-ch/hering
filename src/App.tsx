@@ -1,13 +1,13 @@
-import React, {createContext, lazy, Suspense, useEffect, useState} from 'react';
-import {HashRouter as Router, Route, Routes} from "react-router-dom";
-import {useTranslation} from 'react-i18next';
+import React, { createContext, lazy, Suspense, useEffect, useState } from 'react';
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import i18n from './i18n';
 import client from './client';
-import {checkLinks} from './helper/LinkChecker';
-import {StartPageT} from "./pages/home/HomePage";
-import {CalendarPageT} from './pages/calendar/CalendarPage';
-import {SectionsByKey, SectionT} from './pages/section/SectionPage';
-import {ImpressumPageT} from './pages/impressum/ImpressumPage';
+import { checkLinks } from './helper/LinkChecker';
+import { StartPageT } from "./pages/home/HomePage";
+import { CalendarPageT } from './pages/calendar/CalendarPage';
+import { SectionsByKey, SectionT } from './pages/section/SectionPage';
+import { ImpressumPageT } from './pages/impressum/ImpressumPage';
 import Loading from "./components/loading/Loading";
 import Navigation from "./components/navigation/Navigation";
 
@@ -31,7 +31,7 @@ export const LinksContext = createContext<LinkT[]>([])
 export default function App() {
 
     const lang = i18n.language
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     const [sections, setSections] = useState<SectionT[] | undefined>();
     const [links, setLinks] = useState<LinkT[] | undefined>();
@@ -71,14 +71,11 @@ export default function App() {
 
     checkLinks(sections, links)
 
-    return <div className='App'>
+    return <div className='app'>
         <Router basename="/">
             <SectionHashHelper/>
             <LinksContext.Provider value={links}>
-                <div className='header'>
-                    <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}/>
-                </div>
-
+                <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}/>
                 <main id="main">
                     <Routes>
                         <Route path="/" element={

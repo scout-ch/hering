@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { ChapterT } from '../../pages/section/components/Chapter'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,14 +16,23 @@ type Props = {
     sections: SectionT[]
 }
 
-function Navigation(props: Props) {
-
-    const sections = props.sections
+function Navigation({ startPage, calendarPage, sections }: Props) {
 
     const { t } = useTranslation()
     const location = useLocation()
     const [currentChapterSlug, setCurrentChapterSlug] = useState('')
     const [navbarOpen, setNavbarOpen] = useState(false)
+    const sidebarRef = useRef<HTMLDivElement>(null);
+
+    const handleToggle = () => {
+        setNavbarOpen(!navbarOpen)
+    }
+
+    const handleClickOutside = (event: MouseEvent) => {
+        if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
+            setNavbarOpen(false);
+        }
+    };
 
     useEffect(() => {
         const updateSlug = (event: Event) => {
@@ -39,6 +48,13 @@ function Navigation(props: Props) {
     }, []);
 
     useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+    useEffect(() => {
         if (location.hash.length > 0) {
             setCurrentChapterSlug(location.hash.replace('#', ''))
         } else {
@@ -46,10 +62,6 @@ function Navigation(props: Props) {
             window.scrollTo(0, 0)
         }
     }, [location]);
-
-    const handleToggle = () => {
-        setNavbarOpen(!navbarOpen)
-    }
 
     function chapterList(section: SectionT) {
         const chapters = section.chapters
@@ -73,7 +85,7 @@ function Navigation(props: Props) {
                 {
                     isActive
                         ? <span className="cursor-pointer">{section.menu_name}</span>
-                        : <Link to={section.slug} onClick={handleToggle}>{section.menu_name}</Link>
+                        : <Link to={section.slug}>{section.menu_name}</Link>
                 }
             </summary>
             {chapterList(section)}
@@ -90,39 +102,45 @@ function Navigation(props: Props) {
         ? 'active' :
         ''
 
-    return <nav className="header-nav">
-        <button className="toggle-btn" onClick={handleToggle}>
-            <FontAwesomeIcon icon={faBars}/> Menu
-        </button>
-        <div className={`header-nav-content ${navbarOpen ? "show-menu" : ""}`}>
-            <ul className={"header-nav-primary"}>
-                <li key="home" className={"primary-link " + homeActive}>
-                    <Link to="/"
-                          onClick={() => setNavbarOpen(!navbarOpen)}>
-                        <FontAwesomeIcon icon={faFishFins}/>
-                        {props.startPage.menu_name}
-                    </Link>
-                </li>
-                <li key="search" className={"primary-link " + searchActive}>
-                    <Link to="/search"
-                          onClick={() => setNavbarOpen(!navbarOpen)}>
-                        <FontAwesomeIcon icon={faSearch}/>
-                        {t('searchPage.title')}
-                    </Link>
-                </li>
-                <li key="calendar" className={"primary-link " + calendarActive}>
-                    <Link to="/calendar"
-                          onClick={() => setNavbarOpen(!navbarOpen)}>
-                        <FontAwesomeIcon icon={faCalendarDays}/>
-                        {props.calendarPage.menu_name}
-                    </Link>
-                </li>
-            </ul>
-            <ul className={`menu-items ${navbarOpen ? "show-menu" : ""}`}>
-                {sectionList}
-            </ul>
+    return <div ref={sidebarRef}>
+        <div className="mobile-header">
+            <button className="mobile-menu-btn" onClick={handleToggle}>
+                <FontAwesomeIcon icon={faBars}/> Menu
+            </button>
         </div>
-    </nav>
+        <div className='sidebar'>
+            <nav className={`header-nav ${navbarOpen ? "active" : ""}`}>
+                <div className={`header-nav-content`}>
+                    <ul className={"header-nav-primary"}>
+                        <li key="home" className={"primary-link " + homeActive}>
+                            <Link to="/"
+                                  onClick={() => setNavbarOpen(!navbarOpen)}>
+                                <FontAwesomeIcon icon={faFishFins}/>
+                                {startPage.menu_name}
+                            </Link>
+                        </li>
+                        <li key="search" className={"primary-link " + searchActive}>
+                            <Link to="/search"
+                                  onClick={() => setNavbarOpen(!navbarOpen)}>
+                                <FontAwesomeIcon icon={faSearch}/>
+                                {t('searchPage.title')}
+                            </Link>
+                        </li>
+                        <li key="calendar" className={"primary-link " + calendarActive}>
+                            <Link to="/calendar"
+                                  onClick={() => setNavbarOpen(!navbarOpen)}>
+                                <FontAwesomeIcon icon={faCalendarDays}/>
+                                {calendarPage.menu_name}
+                            </Link>
+                        </li>
+                    </ul>
+                    <ul className={`menu-items ${navbarOpen ? "show-menu" : ""}`}>
+                        {sectionList}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
 }
 
 export default Navigation
