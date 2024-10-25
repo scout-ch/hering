@@ -28,23 +28,23 @@
       "prefixPlaceholder": "Préfixe pour les entrées de calendrier",
       "prefixPreview": "Aperçu: {{calendarTitlePrefix}} Données relatives",
       "resetValues": "Réinitialiser les valeurs",
+      "download": "Télécharger",
       "ics": {
-        "download": "Télécharger au format calendrier",
+        "download": "comme calendrier",
         "filename": "{{calendarTitlePrefix}}Données du camp.ics"
       },
       "csv": {
-        "download": "Télécharger au format CSV",
+        "download": "comme CSV",
         "filename": "{{calendarTitlePrefix}}Données du camp.csv"
       },
       "excel": {
         "title": "Dates de planification du camp",
-        "firstCampDay": "Premier jour de camp",
         "dueSoonInfo": "orange = à faire bientôt (max. 14 jours jusqu'à la date limite)",
         "overdueInfo": "rouge = à faire de toute urgence (rendez-vous déjà passé)",
         "beforeCamp": "Avant le camp",
         "afterCamp": "Après le camp",
         "done": "Fait",
-        "download": "Télécharger au format Excel",
+        "download": "comme Excel",
         "filename": "{{calendarTitlePrefix}}Données du camp.xlsx"
       },
       "table": {

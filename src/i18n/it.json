@@ -28,23 +28,23 @@
       "prefixPlaceholder": "Prefisso per le voci del calendario",
       "prefixPreview": "Anteprima: {{calendarTitlePrefix}} Dati del campo",
       "resetValues": "Azzeramento dei valori",
+      "download": "Scaricare",
       "ics": {
-        "download": "Scarica come calendario",
+        "download": "come calendario",
         "filename": "{{calendarTitlePrefix}}Dati del campo.ics"
       },
       "csv": {
-        "download": "Scarica come CSV",
+        "download": "come CSV",
         "filename": "{{calendarTitlePrefix}}Dati del campo.csv"
       },
       "excel": {
         "title": "Date di pianificazione del campo",
-        "firstCampDay": "Primo giorno di campo",
         "dueSoonInfo": "arancione = completamento a breve (massimo 14 giorni prima della scadenza)",
         "overdueInfo": "rosso = urgente (l'appuntamento è già finito)",
         "beforeCamp": "Davanti al campo",
         "afterCamp": "Dopo il campo",
         "done": "Fatto",
-        "download": "Scarica come Excel",
+        "download": "come Excel",
         "filename": "{{calendarTitlePrefix}}Dati del campo.xlsx"
       },
       "table": {

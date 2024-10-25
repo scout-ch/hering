@@ -11,7 +11,7 @@
     font-size: 1rem;
     border-radius: 3px;
   }
-  
+
   select {
     padding: 4px 0;
   }
@@ -25,24 +25,22 @@
     }
 
     table {
+      width: 100%;
 
       tr {
         vertical-align: baseline;
       }
-      
+
       thead tr th {
         border-top: none;
         font-weight: bold;
         text-align: left;
       }
-      
+
       tbody tr th {
         font-weight: 600;
       }
-
-      font-size: smaller;
-      width: 100%;
-
+      
       a {
         font-size: unset;
       }
@@ -57,32 +55,6 @@
     }
   }
 
-  .download-btn-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 2rem;
-
-    .download-btn {
-      padding: 0.4em 0.5em;
-      line-height: normal;
-      border: none;
-      color: white;
-      background: var(--color-primary-light);
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      gap: 0.4em;
-
-      &:hover {
-        color: white;
-        opacity: 0.5;
-      }
-    }
-  }
-
   .calendar-form-container {
     hr {
       border: 0.5px solid #8c3c4f
@@ -91,6 +63,7 @@
     .calendar-form {
       display: grid;
       row-gap: 10px;
+
       .calendar-title-prefix-hint {
         font-weight: 200;
         font-size: 15px;
@@ -111,7 +84,7 @@
           flex-direction: column;
         }
       }
-      
+
       hr {
         width: 100%;
       }

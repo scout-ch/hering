@@ -6,9 +6,7 @@ import { ChapterT } from '../../section/components/Chapter';
 import { TaskT } from './Task';
 import client from '../../../client';
 import { addDays, format, isValid, parse, startOfDay } from "date-fns";
-import IcsDownload from "./IcsDownload";
-import CsvDownload from "./CsvDownload";
-import ExcelDownload from "./ExcelDownload";
+import Downloads from "./Downloads";
 
 type Roles = {
     rolle: string
@@ -210,18 +208,14 @@ function CalendarForm() {
                 </form>
             </div>
 
-            <div className="download-btn-group">
+            <div className="btn-group">
                 {hasActiveCache() &&
                     <button className="download-btn" style={{ margin: '0 auto 0 0' }}
                             onClick={resetValues}>
                         {t('calendarPage.resetValues')}
                     </button>
                 }
-                <IcsDownload tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}></IcsDownload>
-                <CsvDownload tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}></CsvDownload>
-                <ExcelDownload tasks={tasks}
-                               startOfCamp={parsedStartDate}
-                               calendarTitlePrefix={calendarTitlePrefix}></ExcelDownload>
+                <Downloads startDate={parsedStartDate} tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}/>
             </div>
 
             <CalendarTable tasks={tasks} prefix={calendarTitlePrefix}/>
