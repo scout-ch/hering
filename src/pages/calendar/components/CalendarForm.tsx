@@ -210,7 +210,7 @@ function CalendarForm() {
 
             <div className="btn-group">
                 {hasActiveCache() &&
-                    <button className="download-btn" style={{ margin: '0 auto 0 0' }}
+                    <button className="btn" style={{ margin: '0 auto 0 0' }}
                             onClick={resetValues}>
                         {t('calendarPage.resetValues')}
                     </button>

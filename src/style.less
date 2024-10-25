@@ -100,8 +100,7 @@ li {
 
   p,
   ul,
-  li,
-  h2 .btn {
+  li {
     font-size: 16.25px;
   }
 }
@@ -127,8 +126,7 @@ li {
 
   p,
   ul,
-  li,
-  h2 .btn {
+  li {
     font-size: 17.5px;
   }
 }
@@ -148,8 +146,7 @@ li {
 
   p,
   ul,
-  li,
-  h2 .btn {
+  li {
     font-size: 18.75px;
   }
 }
@@ -165,8 +162,7 @@ li {
 
   p,
   ul,
-  li,
-  h2 .btn {
+  li {
     font-size: 20px;
   }
 }
@@ -216,13 +212,9 @@ table {
   margin-bottom: 2rem;
 }
 
-button.btn-primary,
-a.btn-primary {
+button.btn {
   padding: 0.4em 0.5em;
   line-height: normal;
-  border: none;
-  color: white;
-  background: @color-primary-light;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -230,8 +222,21 @@ a.btn-primary {
   font-size: 1.1rem;
   cursor: pointer;
 
+  border: 1px solid @color-primary-light;
+  color: @color-primary-light;
+  background: #fff;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+button.btn-primary,
+a.btn-primary {
+  color: white;
+  background: @color-primary-light;
+
   &:hover {
     color: white;
-    opacity: 0.5;
   }
 }

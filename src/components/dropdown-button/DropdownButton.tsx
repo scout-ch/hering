@@ -41,7 +41,7 @@ const DropdownButton = ({ title, buttonContent, children }: Props) => {
 
     return (
         <div className="dropdown-container" ref={dropdownRef}>
-            <button className="btn-primary dropdown-button" onClick={toggleDropdown}>
+            <button className="btn btn-primary dropdown-button" onClick={toggleDropdown}>
                 {!!title ? (
                     title
                 ) : (!!buttonContent ? (
