@@ -113,6 +113,10 @@ li {
   main {
     margin-top: calc(@header-height + 10px);
   }
+
+  .content-main {
+    overflow-x: auto;
+  }
 }
 
 @media (min-width: @header-nav-breakpoint) {
@@ -184,8 +188,11 @@ table {
 }
 
 .table-overflow {
-  width: 100%;
   overflow-x: auto;
+}
+
+.table-overflow table {
+  border-collapse: collapse;
 }
 
 .app-loading {

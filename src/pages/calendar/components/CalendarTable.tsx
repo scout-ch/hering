@@ -1,6 +1,6 @@
 import React from 'react'
-import Task, {TaskT} from './Task';
-import {useTranslation} from "react-i18next";
+import Task, { TaskT } from './Task';
+import { useTranslation } from "react-i18next";
 
 type Props = {
     tasks: TaskT[]
@@ -10,15 +10,15 @@ type Props = {
 function CalendarTable(props: Props) {
 
     const tasks = props.tasks;
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     const taskList = tasks.map(function (task) {
         return <Task deadline={task.deadline} key={task.title} title={task.title}
                      targets={task.targets} responsible={task.responsible} chapters={task.chapters}></Task>
     })
-    
+
     return (
-        <div className='calendar-table'>
+        <div className='calendar-table table-overflow'>
             <table>
                 <thead>
                 <tr>
