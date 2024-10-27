@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useCallback, useEffect, useState } from 'react'
+import React, { ChangeEvent, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import i18n from '../../../i18n';
 import CalendarTable from './CalendarTable';
@@ -46,12 +46,6 @@ function CalendarForm() {
         const newStartDate = e.currentTarget.value
         setStartDate(newStartDate)
         window.sessionStorage.setItem(startDateCacheKey, newStartDate)
-
-        const parsedStartDate = parse(startDate, dateFormat, Date.now())
-        const isValidDate = isValid(parsedStartDate)
-        if (isValidDate) {
-            setParsedStartDate(parsedStartDate)
-        }
     }
 
     const onResponsibleeChanged = (e: ChangeEvent<HTMLSelectElement>) => {
@@ -93,9 +87,15 @@ function CalendarForm() {
             || !!window.sessionStorage.getItem(calendarPrefixCacheKey)
     }
 
-    const createTasks = useCallback((event?: FormEvent<HTMLFormElement> | undefined) => {
-        event?.preventDefault()
+    useEffect(() => {
+        const parsedStartDate = parse(startDate, dateFormat, Date.now())
+        const isValidDate = isValid(parsedStartDate)
+        if (isValidDate) {
+            setParsedStartDate(parsedStartDate)
+        }
+    }, [startDate])
 
+    useEffect(() => {
         const isValidDate = isValid(parsedStartDate)
         if (!isValidDate) {
             return
@@ -129,11 +129,7 @@ function CalendarForm() {
             .sort((a: TaskT, b: TaskT) => a.deadline.getTime() - b.deadline.getTime())
 
         setTasks(tasks)
-    }, [startDate, responsible, puffer, taskList]);
-
-    useEffect(() => {
-        createTasks()
-    }, [createTasks]);
+    }, [parsedStartDate, responsible, puffer, taskList]);
 
     useEffect(() => {
         const getTasks = async () => {
