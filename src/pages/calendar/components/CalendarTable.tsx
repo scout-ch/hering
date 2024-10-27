@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 type Props = {
     tasks: TaskT[]
     prefix: string
+    isUpdating: boolean;
 }
 
 function CalendarTable(props: Props) {
@@ -18,7 +19,7 @@ function CalendarTable(props: Props) {
     })
 
     return (
-        <div className='calendar-table table-overflow'>
+        <div className={`calendar-table table-overflow ${props.isUpdating ? 'is-updating' : ''}`}>
             <table>
                 <thead>
                 <tr>

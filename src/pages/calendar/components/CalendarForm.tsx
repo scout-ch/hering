@@ -7,6 +7,7 @@ import { TaskT } from './Task';
 import client from '../../../client';
 import { addDays, format, isValid, parse, startOfDay } from "date-fns";
 import Downloads from "./Downloads";
+import Loading from "../../../components/loading/Loading";
 
 type Roles = {
     rolle: string
@@ -34,12 +35,14 @@ function CalendarForm() {
 
     const { t } = useTranslation()
 
+    const [isLoadingTasks, setIsLoadingTasks] = useState<boolean>(true)
+    const [isUpdatingTasks, setIsUpdatingTasks] = useState<boolean>(true)
     const [startDate, setStartDate] = useState<string>(initialStartDate)
     const [parsedStartDate, setParsedStartDate] = useState<Date>(new Date())
     const [responsible, setResponsible] = useState<string>(initialResponsible)
     const [puffer, setPuffer] = useState<number>(0)
     const [calendarTitlePrefix, setCalendarTitlePrefix] = useState<string>('')
-    const [taskList, setTaskList] = useState<Task[]>([])
+    const [taskList, setTaskList] = useState<Task[] | undefined>(undefined)
     const [tasks, setTasks] = useState<TaskT[]>([])
 
     const onStartDateChanged = (e: ChangeEvent<HTMLInputElement>) => {
@@ -97,9 +100,12 @@ function CalendarForm() {
 
     useEffect(() => {
         const isValidDate = isValid(parsedStartDate)
-        if (!isValidDate) {
+        if (!isValidDate || !taskList) {
             return
         }
+
+        // Introduce pseudo loading time so that the user sees that something is updating
+        setIsUpdatingTasks(true);
 
         const filteredTasks = taskList.filter((task: Task) => {
             const rollen = task.responsible.map((resp) => resp.rolle)
@@ -128,13 +134,18 @@ function CalendarForm() {
             })
             .sort((a: TaskT, b: TaskT) => a.deadline.getTime() - b.deadline.getTime())
 
-        setTasks(tasks)
+        // Update tasks after the pseudo loading time
+        setTimeout(() => {
+            setTasks(tasks)
+            setIsUpdatingTasks(false)
+        }, 500)
     }, [parsedStartDate, responsible, puffer, taskList]);
 
     useEffect(() => {
         const getTasks = async () => {
             const response = await client.get('/tasks?_locale=' + i18n.language)
             setTaskList(response.data)
+            setIsLoadingTasks(false)
         }
 
         const loadCachedValues = () => {
@@ -214,7 +225,9 @@ function CalendarForm() {
                 <Downloads startDate={parsedStartDate} tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}/>
             </div>
 
-            <CalendarTable tasks={tasks} prefix={calendarTitlePrefix}/>
+            <Loading isLoading={isLoadingTasks || !taskList}/>
+            {!isLoadingTasks && !!taskList
+                && <CalendarTable tasks={tasks} prefix={calendarTitlePrefix} isUpdating={isUpdatingTasks}/>}
         </div>
     );
 }
