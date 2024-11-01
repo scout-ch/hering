@@ -1,7 +1,7 @@
 import React from "react"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {useTranslation} from "react-i18next"
-import {faSearch} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useTranslation } from "react-i18next"
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
     keyword?: string,
@@ -11,8 +11,8 @@ type Props = {
 
 function SearchInput(props: Props) {
 
-    const {t} = useTranslation()
-    const {keyword, onChange, onKeyDown} = props
+    const { t } = useTranslation()
+    const { keyword, onChange, onKeyDown } = props
 
     return <div className='search-input'>
         <div className='icon-input'>

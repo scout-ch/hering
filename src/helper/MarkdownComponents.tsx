@@ -1,7 +1,7 @@
-import React, {useContext} from 'react'
-import {Link} from 'react-router-dom'
-import {LinksContext} from '../App'
-import {Components} from "react-markdown/lib"
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { LinksContext } from '../App'
+import { Components } from "react-markdown/lib"
 import Warning from "../components/warning/Warning"
 
 // // @ts-ignore
@@ -11,13 +11,15 @@ import Warning from "../components/warning/Warning"
 //   };
 
 export const LinkComponent: Components = {
-    blockquote({children}) {
+    blockquote({ children }) {
         return <Warning content={children}/>
     },
-    table({children}) {
-        return <div className="table-overflow"><table>{children}</table></div>
+    table({ children }) {
+        return <div className="table-overflow">
+            <table>{children}</table>
+        </div>
     },
-    a({node, children, ...props}) {
+    a({ node, children, ...props }) {
         /* eslint-disable */
         const links = useContext(LinksContext)
         const link = props.href
@@ -56,7 +58,7 @@ export const LinkComponent: Components = {
         }
         return <Link to={props.href || ''}>{children}</Link>
     },
-    img({node, children, ...props}) {
+    img({ node, children, ...props }) {
         const alt = props.alt
         /*
         * matches the following:

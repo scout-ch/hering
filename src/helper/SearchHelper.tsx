@@ -2,8 +2,7 @@ export class SearchHelper {
     static matches(keywords: string, ...values: any[]) {
         if (!keywords) {
             return true;
-        }
-        else {
+        } else {
             const keywordValues = [] as any[];
             const terms = keywords.split(' ').filter(t => t.length > 0);
 
@@ -20,8 +19,7 @@ export class SearchHelper {
     static matchesExact(keywords: string, ...values: any[]) {
         if (!keywords) {
             return true;
-        }
-        else {
+        } else {
             const keywordValues = [] as any[];
 
             values.forEach(v => {
@@ -37,8 +35,7 @@ export class SearchHelper {
             Object.keys(value).forEach(key => {
                 this.extractKeywordValues(value[key], keywordValues);
             });
-        }
-        else if (value !== undefined && value !== null) {
+        } else if (value !== undefined && value !== null) {
             keywordValues.push(value);
         }
     }
