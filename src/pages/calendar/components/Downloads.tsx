@@ -11,7 +11,7 @@ import { CalendarTask } from "./Task";
 type Props = {
     startDate: Date,
     tasks: CalendarTask[],
-    calendarTitlePrefix: string
+    designation: string
 }
 
 const downloadOptionStyle: React.CSSProperties = {
@@ -20,30 +20,30 @@ const downloadOptionStyle: React.CSSProperties = {
     justifyContent: 'space-between'
 }
 
-function Downloads({ startDate, tasks, calendarTitlePrefix }: Props) {
+function Downloads({ startDate, tasks, designation }: Props) {
 
     const { t } = useTranslation()
 
-    const spacedCalendarPrefix = (calendarTitlePrefix ?? '').length > 0
-        ? calendarTitlePrefix + ' '
-        : ''
+    const fixedDesignation = (designation ?? '').length > 0
+        ? designation
+        : t('calendarPage.defaultDesignation')
 
     return <DropdownButton
         buttonContent={<span>{t('calendarPage.download')} <FontAwesomeIcon icon={faChevronDown}/></span>}>
         <div
-            onClick={() => downloadAsIcs(tasks, calendarTitlePrefix, t('calendarPage.ics.filename', { calendarTitlePrefix: spacedCalendarPrefix }))}
+            onClick={() => downloadAsIcs(tasks, fixedDesignation, t('calendarPage.ics.filename', { calendarDesignation: fixedDesignation }))}
             style={downloadOptionStyle}>
             {t('calendarPage.ics.download')} (.ics)
             <FontAwesomeIcon icon={faCalendarDays} fixedWidth={true}/>
         </div>
         <div
-            onClick={() => downloadAsExcel(startDate, tasks, t('calendarPage.excel.filename', { calendarTitlePrefix: spacedCalendarPrefix }))}
+            onClick={() => downloadAsExcel(startDate, tasks, t('calendarPage.excel.filename', { calendarDesignation: fixedDesignation }))}
             style={downloadOptionStyle}>
             {t('calendarPage.excel.download')} (.xlsx)
             <FontAwesomeIcon icon={faFileExcel} fixedWidth={true}/>
         </div>
         <div
-            onClick={() => downloadAsCsv(tasks, t('calendarPage.csv.filename', { calendarTitlePrefix: spacedCalendarPrefix }))}
+            onClick={() => downloadAsCsv(tasks, t('calendarPage.csv.filename', { calendarDesignation: fixedDesignation }))}
             style={downloadOptionStyle}>
             {t('calendarPage.csv.download')} (.csv)
             <FontAwesomeIcon icon={faFileCsv} fixedWidth={true}/>

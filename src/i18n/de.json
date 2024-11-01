@@ -25,17 +25,17 @@
         "al": "Abteilungsleitung",
         "c": "Coach"
       },
-      "prefixPlaceholder": "Prefix für Kalendereinträge",
-      "prefixPreview": "Vorschau: {{calendarTitlePrefix}} Lagerdaten an Coach",
+      "designation": "Bezeichnung",
+      "defaultDesignation": "Lagerdaten",
       "resetValues": "Werte zurücksetzen",
       "download": "Herunterladen",
       "ics": {
         "download": "als Kalender",
-        "filename": "{{calendarTitlePrefix}}Lagerdaten.ics"
+        "filename": "{{calendarDesignation}}.ics"
       },
       "csv": {
         "download": "als CSV",
-        "filename": "{{calendarTitlePrefix}}Lagerdaten.csv"
+        "filename": "{{calendarDesignation}}.csv"
       },
       "excel": {
         "title": "Termine Lagerplanung",
@@ -45,7 +45,7 @@
         "afterCamp": "Nach dem Lager",
         "done": "Erledigt",
         "download": "als Excel",
-        "filename": "{{calendarTitlePrefix}}Lagerdaten.xlsx"
+        "filename": "{{calendarDesignation}}.xlsx"
       },
       "table": {
         "what": "Was",

@@ -5,7 +5,7 @@ import { saveAs } from "../../../helper/FileHelper";
 import { buildLinks } from "./download-shared";
 import { HApiChapter } from "../../../apis/hering-api";
 
-export async function downloadAsIcs(tasks: CalendarTask[], calendarTitlePrefix: string, filename: string) {
+export async function downloadAsIcs(tasks: CalendarTask[], designation: string, filename: string) {
     const events = tasks.map(function (task) {
         const deadline = task.deadline
         const alarms = []
@@ -19,7 +19,7 @@ export async function downloadAsIcs(tasks: CalendarTask[], calendarTitlePrefix: 
         return {
             start: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
             end: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
-            title: `${calendarTitlePrefix} ${task.title}`,
+            title: `${designation} ${task.title}`,
             description: buildLinks(task),
             url: buildLinks(task),
             status: 'CONFIRMED',

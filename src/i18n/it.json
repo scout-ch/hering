@@ -25,17 +25,17 @@
         "al": "Capo Sezione",
         "c": "Coach"
       },
-      "prefixPlaceholder": "Prefisso per le voci del calendario",
-      "prefixPreview": "Anteprima: {{calendarTitlePrefix}} Dati del campo",
+      "designation": "Designazione",
+      "defaultDesignation": "Dati del campo",
       "resetValues": "Azzeramento dei valori",
       "download": "Scaricare",
       "ics": {
         "download": "come calendario",
-        "filename": "{{calendarTitlePrefix}}Dati del campo.ics"
+        "filename": "{{calendarDesignation}}.ics"
       },
       "csv": {
         "download": "come CSV",
-        "filename": "{{calendarTitlePrefix}}Dati del campo.csv"
+        "filename": "{{calendarDesignation}}.csv"
       },
       "excel": {
         "title": "Date di pianificazione del campo",
@@ -45,7 +45,7 @@
         "afterCamp": "Dopo il campo",
         "done": "Fatto",
         "download": "come Excel",
-        "filename": "{{calendarTitlePrefix}}Dati del campo.xlsx"
+        "filename": "{{calendarDesignation}}.xlsx"
       },
       "table": {
         "what": "Cosa",

@@ -25,17 +25,17 @@
         "al": "Responsable de groupe",
         "c": "Coach"
       },
-      "prefixPlaceholder": "Préfixe pour les entrées de calendrier",
-      "prefixPreview": "Aperçu: {{calendarTitlePrefix}} Données relatives",
+      "designation": "Désignation",
+      "defaultDesignation": "Données du camp",
       "resetValues": "Réinitialiser les valeurs",
       "download": "Télécharger",
       "ics": {
         "download": "comme calendrier",
-        "filename": "{{calendarTitlePrefix}}Données du camp.ics"
+        "filename": "{{calendarDesignation}}.ics"
       },
       "csv": {
         "download": "comme CSV",
-        "filename": "{{calendarTitlePrefix}}Données du camp.csv"
+        "filename": "{{calendarDesignation}}.csv"
       },
       "excel": {
         "title": "Dates de planification du camp",
@@ -45,7 +45,7 @@
         "afterCamp": "Après le camp",
         "done": "Fait",
         "download": "comme Excel",
-        "filename": "{{calendarTitlePrefix}}Données du camp.xlsx"
+        "filename": "{{calendarDesignation}}.xlsx"
       },
       "table": {
         "what": "Quoi",

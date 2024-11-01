@@ -5,7 +5,6 @@ import remarkGfm from 'remark-gfm'
 import { LinkComponent } from '../../helper/MarkdownComponents'
 import CalendarForm from './components/CalendarForm'
 import { faCalendarDays } from "@fortawesome/free-solid-svg-icons"
-import './calendar.less'
 import { HApiCalendarPage } from "../../apis/hering-api";
 
 type Props = {
@@ -21,7 +20,7 @@ function CalendarPage(props: Props) {
     }, [calendarPage]);
 
     return <div className='content-main'>
-        <div className='calendar'>
+        <div>
             <h1>
                 <FontAwesomeIcon icon={faCalendarDays}/> {calendarPage.title}
             </h1>

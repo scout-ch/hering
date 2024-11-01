@@ -1,6 +1,7 @@
 import React from 'react'
 import Task, { CalendarTask } from './Task';
 import { useTranslation } from "react-i18next";
+import './calendar-table.less';
 
 type Props = {
     tasks: CalendarTask[]

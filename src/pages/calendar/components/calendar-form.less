@@ -1,0 +1,47 @@
+@import "../../../variables";
+
+.calendar-form {
+  display: grid;
+  gap: 1em;
+
+  .filter {
+    .filter-inputs {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1em;
+      margin-bottom: 0.5em;
+
+      @media (max-width: @header-nav-breakpoint) {
+        gap: 0.5em;
+      }
+    }
+  }
+
+  .form-entry {
+    label {
+      color: @color-primary;
+      font-weight: 600;
+    }
+
+    input, select {
+      border: 1px solid black;
+      width: 100%;
+      margin: 0;
+      padding: 4px;
+      box-sizing: border-box;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1rem;
+      border-radius: 3px;
+    }
+
+    select {
+      padding: 4px 0;
+    }
+  }
+
+  .download {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+}

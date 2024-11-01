@@ -1,33 +1,37 @@
-import React, { ChangeEvent, useEffect, useState } from 'react'
+import React, { ChangeEvent, useCallback, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import CalendarTable from './CalendarTable';
 import { CalendarTask } from './Task';
 import { addDays, format, isValid, parse, startOfDay } from "date-fns";
 import Downloads from "./Downloads";
 import Loading from "../../../components/loading/Loading";
-import { loadTasks, HApiTask } from "../../../apis/hering-api";
+import { HApiTask, loadTasks } from "../../../apis/hering-api";
 import i18n from "i18next";
+import './calendar-form.less'
 
 const dateFormat = 'yyyy-MM-dd'
 const initialStartDate = format(Date.now(), dateFormat)
 const initialResponsible = 'all'
+const initialPuffer = 0;
 
 const startDateCacheKey = 'start-date'
 const responsibleCacheKey = 'responsible'
 const bufferCacheKey = 'buffer'
-const calendarPrefixCacheKey = 'calendar-prefix'
+const calendarDesignationCacheKey = 'calendar-designation'
 
 function CalendarForm() {
 
     const { t } = useTranslation()
+
+    const defaultCalendarDesignation = t('calendarPage.defaultDesignation');
 
     const [isLoadingTasks, setIsLoadingTasks] = useState<boolean>(true)
     const [isUpdatingTasks, setIsUpdatingTasks] = useState<boolean>(true)
     const [startDate, setStartDate] = useState<string>(initialStartDate)
     const [parsedStartDate, setParsedStartDate] = useState<Date>(new Date())
     const [responsible, setResponsible] = useState<string>(initialResponsible)
-    const [puffer, setPuffer] = useState<number>(0)
-    const [calendarTitlePrefix, setCalendarTitlePrefix] = useState<string>('')
+    const [puffer, setPuffer] = useState<number>(initialPuffer)
+    const [designation, setDesignation] = useState<string>(defaultCalendarDesignation)
     const [taskList, setTaskList] = useState<HApiTask[] | undefined>(undefined)
     const [calendarTasks, setCalendarTasks] = useState<CalendarTask[]>([])
 
@@ -44,15 +48,15 @@ function CalendarForm() {
     }
 
     const onBufferChanged = (e: ChangeEvent<HTMLInputElement>) => {
-        const newBuffer = parseInt(e.currentTarget.value) || 0;
+        const newBuffer = parseInt(e.currentTarget.value) || initialPuffer;
         setPuffer(newBuffer)
         window.sessionStorage.setItem(bufferCacheKey, newBuffer.toString());
     }
 
-    const onCalendarPrefixChanged = (e: ChangeEvent<HTMLInputElement>) => {
+    const onDesignationChanged = (e: ChangeEvent<HTMLInputElement>) => {
         const newPrefix = e.currentTarget.value
-        setCalendarTitlePrefix(newPrefix)
-        window.sessionStorage.setItem(calendarPrefixCacheKey, newPrefix);
+        setDesignation(newPrefix)
+        window.sessionStorage.setItem(calendarDesignationCacheKey, newPrefix);
     }
 
     const resetValues = () => {
@@ -63,18 +67,22 @@ function CalendarForm() {
         setResponsible(initialResponsible)
 
         window.sessionStorage.removeItem(bufferCacheKey);
-        setPuffer(0)
+        setPuffer(initialPuffer)
 
-        window.sessionStorage.removeItem(calendarPrefixCacheKey);
-        setCalendarTitlePrefix('')
+        window.sessionStorage.removeItem(calendarDesignationCacheKey);
+        setDesignation(defaultCalendarDesignation)
     }
 
-    const hasActiveCache = () => {
+    const hasActiveCache = useCallback(() => {
+        const calendarDesignationCache = window.sessionStorage.getItem(calendarDesignationCacheKey)
+
         return !!window.sessionStorage.getItem(startDateCacheKey)
             || !!window.sessionStorage.getItem(responsibleCacheKey)
             || !!window.sessionStorage.getItem(bufferCacheKey)
-            || !!window.sessionStorage.getItem(calendarPrefixCacheKey)
-    }
+            || !!calendarDesignationCache
+            || calendarDesignationCache?.length === 0
+
+    }, [startDate, responsible, puffer, designation])
 
     useEffect(() => {
         const parsedStartDate = parse(startDate, dateFormat, Date.now())
@@ -144,8 +152,8 @@ function CalendarForm() {
             const buffer = window.sessionStorage.getItem(bufferCacheKey);
             setPuffer(parseInt(buffer || '') || 0)
 
-            const calendarPrefix = window.sessionStorage.getItem(calendarPrefixCacheKey);
-            setCalendarTitlePrefix(calendarPrefix || '')
+            const calendarPrefix = window.sessionStorage.getItem(calendarDesignationCacheKey);
+            setDesignation(calendarPrefix || t('calendarPage.defaultDesignation'))
         }
 
         loadCachedValues()
@@ -153,67 +161,66 @@ function CalendarForm() {
     }, []);
 
     return (
-        <div>
-            <div className='calendar-form-container'>
-                <form>
-                    <ul className='calendar-form'>
-                        <li>
-                            <label htmlFor="startDate">
-                                {t('calendarPage.startDate')}
-                            </label>
-                            <input id="startDate" type="date" name="startDate" value={startDate}
-                                   onChange={onStartDateChanged}/>
-                        </li>
-                        <li>
-                            <label htmlFor={"responsible"}>
-                                {t('calendarPage.responsible')}
-                            </label>
-                            <select name="responsible" id="responsible" value={responsible}
-                                    onChange={onResponsibleeChanged}>
-                                <option value="all">{t('calendarPage.responsibleOptions.all')}</option>
-                                <option value="LL">{t('calendarPage.responsibleOptions.ll')}</option>
-                                <option value="AL">{t('calendarPage.responsibleOptions.al')}</option>
-                                <option value="C">{t('calendarPage.responsibleOptions.c')}</option>
-                            </select>
-                        </li>
-                        <hr/>
-                        <li>
-                            <label htmlFor={"puffer"}>
-                                {t('calendarPage.puffer')}
-                            </label>
-                            <input type="number" id="puffer" name="puffer" value={puffer.toString()}
-                                   onChange={onBufferChanged}/>
-                        </li>
-                        <li>
-                            <label htmlFor={"calendar-prefix"}>
-                                {t('calendarPage.prefixPlaceholder')}
-                            </label>
-                            <div className="input">
-                                <input type='text' name='calendar-prefix' id={"calendar-prefix"}
-                                       value={calendarTitlePrefix}
-                                       onChange={onCalendarPrefixChanged}/>
-                                <div className='calendar-title-prefix-hint'>
-                                    {t('calendarPage.prefixPreview', { calendarTitlePrefix: calendarTitlePrefix })}
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+        <div className='calendar-form'>
+            <div className='filter'>
+                <form className='filter-inputs'>
+                    <div className='form-entry'>
+                        <label htmlFor="startDate">
+                            {t('calendarPage.startDate')}
+                        </label>
+                        <input id="startDate" type="date" name="startDate" value={startDate}
+                               onChange={onStartDateChanged}/>
+                    </div>
+
+                    <div className='form-entry'>
+                        <label htmlFor={"responsible"}>
+                            {t('calendarPage.responsible')}
+                        </label>
+                        <select name="responsible" id="responsible" value={responsible}
+                                onChange={onResponsibleeChanged}>
+                            <option value="all">{t('calendarPage.responsibleOptions.all')}</option>
+                            <option value="LL">{t('calendarPage.responsibleOptions.ll')}</option>
+                            <option value="AL">{t('calendarPage.responsibleOptions.al')}</option>
+                            <option value="C">{t('calendarPage.responsibleOptions.c')}</option>
+                        </select>
+                    </div>
+
+                    <div className='form-entry'>
+                        <label htmlFor={"puffer"}>
+                            {t('calendarPage.puffer')}
+                        </label>
+                        <input type="number" id="puffer" name="puffer" value={puffer.toString()}
+                               onChange={onBufferChanged}/>
+                    </div>
+
+                    <div className='form-entry'>
+                        <label htmlFor="calendar-designation">
+                            {t('calendarPage.designation')}
+                        </label>
+                        <div className="input">
+                            <input type='text' name='calendar-designation' id="calendar-designation"
+                                   value={designation}
+                                   onChange={onDesignationChanged}/>
+                        </div>
+                    </div>
                 </form>
+
+                <div>
+                    {hasActiveCache() &&
+                        <a className='cursor-pointer' onClick={resetValues}>
+                            {t('calendarPage.resetValues')}
+                        </a>
+                    }
+                </div>
             </div>
 
-            <div className="btn-group">
-                {hasActiveCache() &&
-                    <button className="btn" style={{ margin: '0 auto 0 0' }}
-                            onClick={resetValues}>
-                        {t('calendarPage.resetValues')}
-                    </button>
-                }
-                <Downloads startDate={parsedStartDate} tasks={calendarTasks} calendarTitlePrefix={calendarTitlePrefix}/>
+            <div className='download'>
+                <Downloads startDate={parsedStartDate} tasks={calendarTasks} designation={designation}/>
             </div>
 
             <Loading isLoading={isLoadingTasks || !taskList}/>
             {!isLoadingTasks && !!taskList
-                && <CalendarTable tasks={calendarTasks} prefix={calendarTitlePrefix} isUpdating={isUpdatingTasks}/>}
+                && <CalendarTable tasks={calendarTasks} prefix={designation} isUpdating={isUpdatingTasks}/>}
         </div>
     );
 }
