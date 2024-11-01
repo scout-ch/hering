@@ -1,11 +1,11 @@
-import { TaskT } from "./Task";
-import { ChapterT } from "../../section/components/Chapter";
+import { CalendarTask } from "./Task";
 import * as ics from "ics";
 import { EventAttributes } from "ics";
 import { saveAs } from "../../../helper/FileHelper";
 import { buildLinks } from "./download-shared";
+import { HApiChapter } from "../../../apis/hering-api";
 
-export async function downloadAsIcs(tasks: TaskT[], calendarTitlePrefix: string, filename: string) {
+export async function downloadAsIcs(tasks: CalendarTask[], calendarTitlePrefix: string, filename: string) {
     const events = tasks.map(function (task) {
         const deadline = task.deadline
         const alarms = []
@@ -51,8 +51,8 @@ export async function downloadAsIcs(tasks: TaskT[], calendarTitlePrefix: string,
     URL.revokeObjectURL(downloadUrl);
 }
 
-function buildDescription(task: TaskT): string {
+function buildDescription(task: CalendarTask): string {
     return task.chapters
-        .map((chapter: ChapterT) => chapter.slug_with_section)
+        .map((chapter: HApiChapter) => chapter.slug_with_section)
         .join(',')
 }

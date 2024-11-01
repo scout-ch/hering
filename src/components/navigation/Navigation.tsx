@@ -1,19 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { ChapterT } from '../../pages/section/components/Chapter'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { CalendarPageT } from '../../pages/calendar/CalendarPage'
 import { useTranslation } from "react-i18next";
-import { StartPageT } from '../../pages/home/HomePage';
 import { faBars, faCalendarDays, faFishFins, faSearch } from "@fortawesome/free-solid-svg-icons";
 import './nav.less'
-import { SectionT } from "../../pages/section/SectionPage";
 import { CHAPTER_NAV_UPDATED_EVENT } from "../../shared/constants";
+import { HApiCalendarPage, HApiChapter, HApiSection, HApiStartPage } from "../../apis/hering-api";
 
 type Props = {
-    startPage: StartPageT
-    calendarPage: CalendarPageT
-    sections: SectionT[]
+    startPage: HApiStartPage
+    calendarPage: HApiCalendarPage
+    sections: HApiSection[]
 }
 
 function Navigation({ startPage, calendarPage, sections }: Props) {
@@ -63,9 +60,9 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
         }
     }, [location]);
 
-    function chapterList(section: SectionT) {
+    function chapterList(section: HApiSection) {
         const chapters = section.chapters
-        const chapterItems = chapters.map((chapter: ChapterT) => {
+        const chapterItems = chapters.map((chapter: HApiChapter) => {
             const isActive = currentChapterSlug === chapter.slug
             return <li key={chapter.slug_with_section} className="subMenu" onClick={handleToggle}>
                 <Link to={chapter.slug_with_section} className={isActive ? 'active' : ''}>{chapter.menu_name}</Link>
@@ -77,7 +74,7 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
         </ul>
     }
 
-    const sectionList = sections.map((section: SectionT) => {
+    const sectionList = sections.map((section: HApiSection) => {
         const isActive = location.pathname.replace('/', '') === section.slug
         const className = isActive ? 'active' : ''
         return <details key={section.slug} className={className} open={isActive}>

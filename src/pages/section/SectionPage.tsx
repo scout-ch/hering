@@ -1,24 +1,15 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router'
-import Chapter, { ChapterT } from "./components/Chapter";
+import Chapter from "./components/Chapter";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { LinkComponent } from "../../helper/MarkdownComponents";
 import { useLocation } from "react-router-dom";
 import { handleIntersectionChanged } from "./helpers/intersection.helper";
-
-export type SectionT = {
-    chapters: ChapterT[]
-    sorting: number
-    title: string
-    content: string
-    slug: string
-    menu_name: string
-    localizations: any
-}
+import { HApiChapter, HApiSection } from "../../apis/hering-api";
 
 export type SectionsByKey = {
-    [key: string]: SectionT
+    [key: string]: HApiSection
 }
 
 type Props = {
@@ -61,7 +52,7 @@ function SectionPage(props: Props) {
     }
 
     const chapters = section['chapters']
-        .sort((a: ChapterT, b: ChapterT) => a.sorting - b.sorting)
+        .sort((a: HApiChapter, b: HApiChapter) => a.sorting - b.sorting)
         .map(chapter => <Chapter key={chapter['title']} data={chapter}></Chapter>)
 
     return <div className="content" id="section">

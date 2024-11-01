@@ -1,22 +1,15 @@
-import React, {useEffect} from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import React, { useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import {LinkComponent} from '../../helper/MarkdownComponents'
+import { LinkComponent } from '../../helper/MarkdownComponents'
 import CalendarForm from './components/CalendarForm'
-import {faCalendarDays} from "@fortawesome/free-solid-svg-icons"
+import { faCalendarDays } from "@fortawesome/free-solid-svg-icons"
 import './calendar.less'
-import {IconT} from "../../shared/types";
-
-export type CalendarPageT = {
-    title: string
-    menu_name: string
-    icon: IconT
-    content: string
-}
+import { HApiCalendarPage } from "../../apis/hering-api";
 
 type Props = {
-    page: CalendarPageT
+    page: HApiCalendarPage
 }
 
 function CalendarPage(props: Props) {

@@ -1,36 +1,18 @@
 import React from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import {LinkComponent} from '../../../helper/MarkdownComponents'
+import { LinkComponent } from '../../../helper/MarkdownComponents'
 import Target from './Target'
 import './chapter.less'
-import {IconT} from "../../../shared/types";
-import {SectionT} from "../SectionPage";
-
-export type Role = {
-    rolle: string
-}
-
-export type ChapterT = {
-    id: number
-    sorting: number
-    title: string
-    menu_name: string
-    content: string
-    slug: string
-    slug_with_section: string
-    icon: IconT
-    section: SectionT
-    responsible: Role[]
-}
+import { HApiChapter } from "../../../apis/hering-api";
 
 type ChapterProps = {
-    data: ChapterT;
+    data: HApiChapter;
 };
 
 function Chapter(props: ChapterProps) {
-
     const data = props.data
+    
     if (!data) {
         return null
     }

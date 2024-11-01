@@ -2,14 +2,11 @@ import React, { createContext, lazy, Suspense, useEffect, useState } from 'react
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import i18n from './i18n';
-import client from './client';
 import { checkLinks } from './helper/LinkChecker';
-import { StartPageT } from "./pages/home/HomePage";
-import { CalendarPageT } from './pages/calendar/CalendarPage';
-import { SectionsByKey, SectionT } from './pages/section/SectionPage';
-import { ImpressumPageT } from './pages/impressum/ImpressumPage';
+import { SectionsByKey } from './pages/section/SectionPage';
 import Loading from "./components/loading/Loading";
 import Navigation from "./components/navigation/Navigation";
+import { HApiCalendarPage, HApiImpressumPage, HApiLink, loadCalendarPage, loadImpressumPage, loadLinks, loadSections, loadStartPage, HApiSection, HApiStartPage } from "./apis/hering-api";
 
 const Footer = lazy(() => import('./components/footer/Footer'))
 const SectionHashHelper = lazy(() => import('./helper/SectionHashHelper'))
@@ -19,40 +16,33 @@ const SectionPage = lazy(() => import('./pages/section/SectionPage'))
 const CalendarPage = lazy(() => import('./pages/calendar/CalendarPage'))
 const SearchPage = lazy(() => import('./pages/search/SearchPage'))
 
-export type LinkT = {
-    title: string
-    link: string | undefined
-    key: string
-    slug: string | null
-}
-
-export const LinksContext = createContext<LinkT[]>([])
+export const LinksContext = createContext<HApiLink[]>([])
 
 export default function App() {
 
     const lang = i18n.language
     const { t } = useTranslation()
 
-    const [sections, setSections] = useState<SectionT[] | undefined>();
-    const [links, setLinks] = useState<LinkT[] | undefined>();
-    const [startPage, setStartPage] = useState<StartPageT | undefined>();
-    const [calendarPage, setCalendarPage] = useState<CalendarPageT | undefined>();
-    const [impressumPage, setImpressumPage] = useState<ImpressumPageT | undefined>();
+    const [sections, setSections] = useState<HApiSection[] | undefined>();
+    const [links, setLinks] = useState<HApiLink[] | undefined>();
+    const [startPage, setStartPage] = useState<HApiStartPage | undefined>();
+    const [calendarPage, setCalendarPage] = useState<HApiCalendarPage | undefined>();
+    const [impressumPage, setImpressumPage] = useState<HApiImpressumPage | undefined>();
 
     useEffect(() => {
         const fetchData = async () => {
             const responses = await Promise.all([
-                client.get('/sections?_sort=sorting:ASC&_locale=' + lang),
-                client.get('/links?_locale=' + lang),
-                client.get('/start-page?_locale=' + lang),
-                client.get('/calendar-page?_locale=' + lang),
-                client.get('/impressum-page?_locale=' + lang)])
+                loadSections(lang),
+                loadLinks(lang),
+                loadStartPage(lang),
+                loadCalendarPage(lang),
+                loadImpressumPage(lang)])
 
-            setSections(responses[0].data)
-            setLinks(responses[1].data)
-            setStartPage(responses[2].data)
-            setCalendarPage(responses[3].data)
-            setImpressumPage(responses[4].data)
+            setSections(responses[0])
+            setLinks(responses[1])
+            setStartPage(responses[2])
+            setCalendarPage(responses[3])
+            setImpressumPage(responses[4])
         }
 
         fetchData()
@@ -64,7 +54,7 @@ export default function App() {
         </div>
     }
 
-    const sectionsByKey = sections.reduce((map: SectionsByKey, section: SectionT) => {
+    const sectionsByKey = sections.reduce((map: SectionsByKey, section: HApiSection) => {
         map[section.slug] = section
         return map
     }, {})

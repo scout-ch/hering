@@ -1,9 +1,9 @@
 import React from 'react'
-import Task, { TaskT } from './Task';
+import Task, { CalendarTask } from './Task';
 import { useTranslation } from "react-i18next";
 
 type Props = {
-    tasks: TaskT[]
+    tasks: CalendarTask[]
     prefix: string
     isUpdating: boolean;
 }

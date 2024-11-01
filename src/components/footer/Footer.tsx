@@ -1,14 +1,13 @@
 import React from 'react'
 import i18n from '../../i18n'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import client from '../../client'
 import FooterSvg from './FooterSvg'
 import PbsLogoSvg from './PbsLogoSvg'
 import './footer.less'
-import { SectionT } from "../../pages/section/SectionPage";
+import { loadSections, HApiSection } from "../../apis/hering-api";
 
 type Props = {
-    sections: SectionT[]
+    sections: HApiSection[]
 }
 
 function Footer(props: Props) {
@@ -18,7 +17,7 @@ function Footer(props: Props) {
     const navigate = useNavigate();
     const currentYear = new Date().getFullYear()
 
-    const changeLanguage = (lang: string, oldSections: SectionT[]) => {
+    const changeLanguage = (lang: string, oldSections: HApiSection[]) => {
         let redirect = false
 
         const path = location.pathname.replace('/', '')
@@ -36,13 +35,13 @@ function Footer(props: Props) {
                 return
             }
 
-            client.get('/sections?_sort=sorting:ASC&_locale=' + lang).then((response: { data: any[] }) => {
+            loadSections(lang).then((sections: HApiSection[]) => {
                 if (currentSection) {
                     const otherSection = currentSection['localizations'].find((l: any) => {
                         return l.locale === lang
                     })
 
-                    const newCurrentSection = response.data.find((s: any) => {
+                    const newCurrentSection = sections.find((s: any) => {
                         return s['id'] === otherSection['id']
                     })
 

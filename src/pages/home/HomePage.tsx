@@ -1,19 +1,13 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import {LinkComponent} from "../../helper/MarkdownComponents"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFishFins} from "@fortawesome/free-solid-svg-icons";
-import {IconT} from "../../shared/types";
+import { LinkComponent } from "../../helper/MarkdownComponents"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFishFins } from "@fortawesome/free-solid-svg-icons";
+import { HApiStartPage } from "../../apis/hering-api";
 
-export type StartPageT = {
-    title: string
-    menu_name: string
-    icon: IconT
-    content: string
-}
 type Props = {
-    page: StartPageT
+    page: HApiStartPage
 }
 
 function HomePage(props: Props) {

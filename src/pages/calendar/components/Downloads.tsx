@@ -6,11 +6,11 @@ import { downloadAsExcel } from "./download-excel";
 import { downloadAsCsv } from "./download-csv";
 import { downloadAsIcs } from "./download-ics";
 import DropdownButton from "../../../components/dropdown-button/DropdownButton";
-import { TaskT } from "./Task";
+import { CalendarTask } from "./Task";
 
 type Props = {
     startDate: Date,
-    tasks: TaskT[],
+    tasks: CalendarTask[],
     calendarTitlePrefix: string
 }
 

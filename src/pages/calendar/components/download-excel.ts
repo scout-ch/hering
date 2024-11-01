@@ -1,4 +1,4 @@
-import { TaskT } from "./Task";
+import { CalendarTask } from "./Task";
 import { Borders, Color, Fill, Font, Workbook, Worksheet } from "exceljs";
 import { isBefore } from "date-fns";
 import i18n from "i18next";
@@ -49,7 +49,7 @@ const redBackground: Fill = {
     bgColor: redColor
 }
 
-export async function downloadAsExcel(startOfCamp: Date, tasks: TaskT[], filename: string) {
+export async function downloadAsExcel(startOfCamp: Date, tasks: CalendarTask[], filename: string) {
     const workbook = new Workbook();
     workbook.creator = 'Hering / Sardine / Sardina';
     workbook.created = new Date();
@@ -170,7 +170,7 @@ export async function downloadAsExcel(startOfCamp: Date, tasks: TaskT[], filenam
     URL.revokeObjectURL(downloadUrl);
 }
 
-function addTaskRows(subtitle: string, tasks: TaskT[], sheet: Worksheet) {
+function addTaskRows(subtitle: string, tasks: CalendarTask[], sheet: Worksheet) {
     const subtitleRow = sheet.addRow({ when: subtitle })
     subtitleRow.font = { bold: true, size: 10 }
 

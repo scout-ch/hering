@@ -1,17 +1,16 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from "react-i18next"
-import Loading from '../../../components/loading/Loading'
-import { ChapterT } from '../../section/components/Chapter';
+import Loading from '../../../components/loading/Loading';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../../../helper/MarkdownComponents';
 import SearchInput from './SearchInput';
 import { Link, useSearchParams } from "react-router-dom";
 import { SearchHelper } from "../../../helper/SearchHelper";
-import { SectionT } from "../../section/SectionPage";
+import { HApiChapter, HApiSection } from "../../../apis/hering-api";
 
 type Props = {
-    sections: SectionT[]
+    sections: HApiSection[]
 }
 
 type SearchResult = {
@@ -32,8 +31,8 @@ function SearchForm(props: Props) {
     const [isLoadingResults, setIsLoadingResults] = useState<boolean>(false)
 
     const timeoutId = useRef<number | undefined>();
-    const searchableSectionChapters = useRef<ChapterT[]>(props.sections
-        .reduce((chapters: ChapterT[], currentSection: SectionT) => chapters.concat(currentSection.chapters), []))
+    const searchableSectionChapters = useRef<HApiChapter[]>(props.sections
+        .reduce((chapters: HApiChapter[], currentSection: HApiSection) => chapters.concat(currentSection.chapters), []))
 
     const executeSearch = useCallback((currentKeyword: string) => {
         setIsLoadingResults(true)

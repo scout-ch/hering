@@ -1,26 +1,12 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
-import i18n from '../../../i18n';
 import CalendarTable from './CalendarTable';
-import { ChapterT } from '../../section/components/Chapter';
-import { TaskT } from './Task';
-import client from '../../../client';
+import { CalendarTask } from './Task';
 import { addDays, format, isValid, parse, startOfDay } from "date-fns";
 import Downloads from "./Downloads";
 import Loading from "../../../components/loading/Loading";
-
-type Roles = {
-    rolle: string
-}
-
-type Task = {
-    id: number
-    title: string
-    days: number
-    responsible: Roles[]
-    targets: Roles[]
-    chapters: ChapterT[]
-}
+import { loadTasks, HApiTask } from "../../../apis/hering-api";
+import i18n from "i18next";
 
 const dateFormat = 'yyyy-MM-dd'
 const initialStartDate = format(Date.now(), dateFormat)
@@ -42,8 +28,8 @@ function CalendarForm() {
     const [responsible, setResponsible] = useState<string>(initialResponsible)
     const [puffer, setPuffer] = useState<number>(0)
     const [calendarTitlePrefix, setCalendarTitlePrefix] = useState<string>('')
-    const [taskList, setTaskList] = useState<Task[] | undefined>(undefined)
-    const [tasks, setTasks] = useState<TaskT[]>([])
+    const [taskList, setTaskList] = useState<HApiTask[] | undefined>(undefined)
+    const [calendarTasks, setCalendarTasks] = useState<CalendarTask[]>([])
 
     const onStartDateChanged = (e: ChangeEvent<HTMLInputElement>) => {
         const newStartDate = e.currentTarget.value
@@ -107,7 +93,7 @@ function CalendarForm() {
         // Introduce pseudo loading time so that the user sees that something is updating
         setIsUpdatingTasks(true);
 
-        const filteredTasks = taskList.filter((task: Task) => {
+        const filteredTasks = taskList.filter((task: HApiTask) => {
             const rollen = task.responsible.map((resp) => resp.rolle)
             return responsible === 'all'
                 ? true
@@ -115,7 +101,7 @@ function CalendarForm() {
         })
 
         const tasks = filteredTasks
-            .map((task: Task) => {
+            .map((task: HApiTask) => {
                 const dayOffsetFromStartDate = task.days < 0
                     ? task.days - puffer
                     : task.days
@@ -130,21 +116,21 @@ function CalendarForm() {
                     targets: task.targets,
                     responsible: task.responsible,
                     chapters: task.chapters
-                } as TaskT
+                } as CalendarTask
             })
-            .sort((a: TaskT, b: TaskT) => a.deadline.getTime() - b.deadline.getTime())
+            .sort((a: CalendarTask, b: CalendarTask) => a.deadline.getTime() - b.deadline.getTime())
 
-        // Update tasks after the pseudo loading time
+        // Update calendarTasks after the pseudo loading time
         setTimeout(() => {
-            setTasks(tasks)
+            setCalendarTasks(tasks)
             setIsUpdatingTasks(false)
         }, 500)
     }, [parsedStartDate, responsible, puffer, taskList]);
 
     useEffect(() => {
         const getTasks = async () => {
-            const response = await client.get('/tasks?_locale=' + i18n.language)
-            setTaskList(response.data)
+            const tasks = await loadTasks(i18n.language)
+            setTaskList(tasks)
             setIsLoadingTasks(false)
         }
 
@@ -222,12 +208,12 @@ function CalendarForm() {
                         {t('calendarPage.resetValues')}
                     </button>
                 }
-                <Downloads startDate={parsedStartDate} tasks={tasks} calendarTitlePrefix={calendarTitlePrefix}/>
+                <Downloads startDate={parsedStartDate} tasks={calendarTasks} calendarTitlePrefix={calendarTitlePrefix}/>
             </div>
 
             <Loading isLoading={isLoadingTasks || !taskList}/>
             {!isLoadingTasks && !!taskList
-                && <CalendarTable tasks={tasks} prefix={calendarTitlePrefix} isUpdating={isUpdatingTasks}/>}
+                && <CalendarTable tasks={calendarTasks} prefix={calendarTitlePrefix} isUpdating={isUpdatingTasks}/>}
         </div>
     );
 }

@@ -1,18 +1,18 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import { ChapterT, Role } from '../../section/components/Chapter';
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
+import { HApiChapter, HApiRole } from "../../../apis/hering-api";
 
-export type TaskT = {
+export type CalendarTask = {
     deadline: Date
     title: string
-    targets: Role[]
-    responsible: Role[]
-    chapters: ChapterT[]
+    targets: HApiRole[]
+    responsible: HApiRole[]
+    chapters: HApiChapter[]
 }
 
-function Task(props: TaskT) {
+function Task(props: CalendarTask) {
 
     const { t } = useTranslation()
 
@@ -23,14 +23,14 @@ function Task(props: TaskT) {
         .map((responsible) => t(`target.role.${responsible['rolle']}`))
         .join(', ')
 
-    const createChapterLink = (chapter: ChapterT) => `/${chapter.section.slug}#${chapter.slug}`
+    const createChapterLink = (chapter: HApiChapter) => `/${chapter.section.slug}#${chapter.slug}`
     const chapters = props.chapters.length > 1
-        ? <ul>{props.chapters.map((chapter: ChapterT) => {
+        ? <ul>{props.chapters.map((chapter: HApiChapter) => {
             return <li key={chapter.slug}>
                 <Link to={createChapterLink(chapter)}>{chapter.title}</Link>
             </li>
         })}</ul>
-        : props.chapters.map((chapter: ChapterT) => {
+        : props.chapters.map((chapter: HApiChapter) => {
             return <Link key={chapter.slug} to={createChapterLink(chapter)}>{t(`calendarPage.table.link`)}</Link>
         })
 

@@ -1,4 +1,4 @@
-import { TaskT } from "./Task";
+import { CalendarTask } from "./Task";
 import { format } from "date-fns";
 import { saveAs } from "../../../helper/FileHelper";
 import i18n from "i18next";
@@ -6,7 +6,7 @@ import { buildLinks } from "./download-shared";
 
 const t = i18n.t
 
-export function downloadAsCsv(tasks: TaskT[], filename: string) {
+export function downloadAsCsv(tasks: CalendarTask[], filename: string) {
     if (tasks.length === 0) {
         return
     }
