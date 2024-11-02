@@ -1,4 +1,18 @@
 # Changelog
+## [v2.5.0] - 2024-11-02
+### :sparkles: New Features
+- [`703cf4f`](https://github.com/scout-ch/hering/commit/703cf4f8d844418b601665a3eb935710204cdfff) - added loading and updating indication for calendar tasks *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`a4307a6`](https://github.com/scout-ch/hering/commit/a4307a6a136c5aa37ab89e12dd5af7dd05abdef1) - changed the UI for the calendar filter options *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`749ae01`](https://github.com/scout-ch/hering/commit/749ae0152012136b8faf4cb72b4b548a67a7f191) - added tooltips to explain certain calendar filters in more detail *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :bug: Bug Fixes
+- [`bcbfd60`](https://github.com/scout-ch/hering/commit/bcbfd60a08202b1b8c419867112cc29ed8a9ab5e) - fix table scrolling on small screens *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :recycle: Refactors
+- [`6f4b53d`](https://github.com/scout-ch/hering/commit/6f4b53d4d10e576b985485c373ffd65b563e8c6a) - optimize use of useEffect hooks *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`4494bff`](https://github.com/scout-ch/hering/commit/4494bff30552bb54e556547629ac58b095d40e17) - use explicit functions for Hering API calls *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.4.0] - 2024-10-25
 ### :sparkles: New Features
 - [`b3ca8a8`](https://github.com/scout-ch/hering/commit/b3ca8a8b4bfdbb04bf52def204a1f2cfd3e0343d) - added ability to download tasks as an Excel workbook *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -153,3 +167,4 @@
 [v2.3.0]: https://github.com/scout-ch/hering/compare/v2.2.1...v2.3.0
 [v2.3.1]: https://github.com/scout-ch/hering/compare/v2.3.0...v2.3.1
 [v2.4.0]: https://github.com/scout-ch/hering/compare/v2.3.1...v2.4.0
+[v2.5.0]: https://github.com/scout-ch/hering/compare/v2.4.0...v2.5.0
