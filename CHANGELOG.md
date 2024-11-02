@@ -1,4 +1,30 @@
 # Changelog
+## [v2.4.0] - 2024-10-25
+### :sparkles: New Features
+- [`b3ca8a8`](https://github.com/scout-ch/hering/commit/b3ca8a8b4bfdbb04bf52def204a1f2cfd3e0343d) - added ability to download tasks as an Excel workbook *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :recycle: Refactors
+- [`3675adb`](https://github.com/scout-ch/hering/commit/3675adb98fe9ef536fcd67edb217ecb87fae86b1) - reformatted file *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`d1151f7`](https://github.com/scout-ch/hering/commit/d1151f7458fd0b1e0e9c95e1a60a80b4a978b17b) - CSS refactorings *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :art: Code Style Changes
+- [`db7e49f`](https://github.com/scout-ch/hering/commit/db7e49f9104e8a1e773e16ffebfc12e56366fc84) - use file meaning instead of file type in download link *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`57bc295`](https://github.com/scout-ch/hering/commit/57bc2959ea02c93ff52bf3dbb2f540698e43a442) - added dropdown button component *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`1fff4bc`](https://github.com/scout-ch/hering/commit/1fff4bce302f87ab043910ba32ce16ea3b2015dd) - use dropdown button for calendar downloads *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`7c0daac`](https://github.com/scout-ch/hering/commit/7c0daac31ff7b1dc8a5c318b2d753a506437c9ad) - added style for calendar reset button *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`5b29968`](https://github.com/scout-ch/hering/commit/5b29968c3176825b917a0c6677a58019d01f21c1) - vertically align table content to middle *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :wrench: Chores
+- [`030a32c`](https://github.com/scout-ch/hering/commit/030a32cf04ba53058dea10f6d018701ad1c2d8a2) - **deps**: axios update *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`91636c3`](https://github.com/scout-ch/hering/commit/91636c3a29d111494167bd50cd3d33eb3365e502) - **deps**: date-fns upgrade *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`ef91c89`](https://github.com/scout-ch/hering/commit/ef91c89fecfc07386bf7af6d17d9eb6270d9729a) - **deps**: i18next-browser-languagedetector upgrade *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`232acd8`](https://github.com/scout-ch/hering/commit/232acd8cdf10bfeec836eea837162b1efda6d8ce) - **deps**: ics upgrade *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`b22f5b5`](https://github.com/scout-ch/hering/commit/b22f5b549800beb8e89278e68207ee2203eaa7a0) - **deps**: react-i18next upgrade *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`f09730a`](https://github.com/scout-ch/hering/commit/f09730a6df2e64ebee940bc379ebfb0264ec2e6c) - **deps**: removed unnecessary react router dom types *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`c7872f8`](https://github.com/scout-ch/hering/commit/c7872f8783d2cd54eb2056c95e49d290db76bb5e) - **deps**: vite-tsconfig-paths upgrade *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`3db133b`](https://github.com/scout-ch/hering/commit/3db133b1686e3bda8d019725f491d425a89cc04b) - **deps**: use latest v5 TypeScript versions *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.3.1] - 2024-05-16
 ### :bug: Bug Fixes
 - [`1960571`](https://github.com/scout-ch/hering/commit/1960571b1e23c652bb1db2175a08d733156ae99f) - validate parsed date before creating tasks [#30](https://github.com/scout-ch/hering/pull/30) *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -126,3 +152,4 @@
 [v2.2.1]: https://github.com/scout-ch/hering/compare/v2.2.0...v2.2.1
 [v2.3.0]: https://github.com/scout-ch/hering/compare/v2.2.1...v2.3.0
 [v2.3.1]: https://github.com/scout-ch/hering/compare/v2.3.0...v2.3.1
+[v2.4.0]: https://github.com/scout-ch/hering/compare/v2.3.1...v2.4.0
