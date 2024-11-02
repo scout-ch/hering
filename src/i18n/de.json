@@ -19,6 +19,7 @@
       "startDate": "Erster Lagertag",
       "responsible": "Verantwortlich",
       "puffer": "Puffer (Tage)",
+      "pufferDescription": "Reduziert das Datum der Termine um die angegebene Anzahl an Tagen.",
       "responsibleOptions": {
         "all": "Alle",
         "ll": "Lagerleitung",
@@ -27,6 +28,7 @@
       },
       "designation": "Bezeichnung",
       "defaultDesignation": "Lagerdaten",
+      "designationDescription": "Diese Bezeichnung wird beim Herunterladen für den Dateinamen und die Kalendereinträge verwendet.",
       "resetValues": "Werte zurücksetzen",
       "download": "Herunterladen",
       "ics": {

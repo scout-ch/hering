@@ -8,6 +8,9 @@ import Loading from "../../../components/loading/Loading";
 import { HApiTask, loadTasks } from "../../../apis/hering-api";
 import i18n from "i18next";
 import './calendar-form.less'
+import { Tooltip } from 'react-tooltip'
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const dateFormat = 'yyyy-MM-dd'
 const initialStartDate = format(Date.now(), dateFormat)
@@ -186,17 +189,41 @@ function CalendarForm() {
                     </div>
 
                     <div className='form-entry'>
-                        <label htmlFor={"puffer"}>
-                            {t('calendarPage.puffer')}
-                        </label>
+                        <div className="label-with-icon">
+                            <label htmlFor={"puffer"}>
+                                {t('calendarPage.puffer')}
+                            </label>
+                            <div>
+                                <FontAwesomeIcon icon={faCircleInfo} data-tooltip-id="buffer-tooltip"/>
+                                <Tooltip id="buffer-tooltip">
+                                    <div style={{ maxWidth: '200px' }}>
+                                        {t('calendarPage.pufferDescription')}
+                                    </div>
+                                </Tooltip>
+                            </div>
+                        </div>
+
                         <input type="number" id="puffer" name="puffer" value={puffer.toString()}
                                onChange={onBufferChanged}/>
                     </div>
 
                     <div className='form-entry'>
-                        <label htmlFor="calendar-designation">
-                            {t('calendarPage.designation')}
-                        </label>
+                        <div className="label-with-icon">
+                            <label htmlFor="calendar-designation">
+                                {t('calendarPage.designation')}
+                            </label>
+                            <div>
+                                <FontAwesomeIcon icon={faCircleInfo} data-tooltip-id="designation-tooltip"/>
+                                <Tooltip id="designation-tooltip">
+                                    <div style={{
+                                        maxWidth: '200px'
+                                    }}>
+                                        {t('calendarPage.designationDescription')}
+                                    </div>
+                                </Tooltip>
+                            </div>
+                        </div>
+
                         <div className="input">
                             <input type='text' name='calendar-designation' id="calendar-designation"
                                    value={designation}

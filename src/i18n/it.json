@@ -19,6 +19,7 @@
       "startDate": "Primo giorno del campo",
       "responsible": "Responsabile",
       "puffer": "Tampone (giorni)",
+      "pufferDescription": "Riduce la data degli appuntamenti del numero di giorni specificato.",
       "responsibleOptions": {
         "all": "Tutti",
         "ll": "Capo campo",
@@ -27,6 +28,7 @@
       },
       "designation": "Designazione",
       "defaultDesignation": "Dati del campo",
+      "designationDescription": "Questa designazione viene utilizzata per il nome del file e per le voci del calendario durante il download.",
       "resetValues": "Azzeramento dei valori",
       "download": "Scaricare",
       "ics": {
