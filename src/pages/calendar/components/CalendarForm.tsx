@@ -203,7 +203,7 @@ function CalendarForm() {
                             </div>
                         </div>
 
-                        <input type="number" id="puffer" name="puffer" value={puffer.toString()}
+                        <input type="number" id="puffer" name="puffer" value={puffer.toString()} min="0"
                                onChange={onBufferChanged}/>
                     </div>
 
