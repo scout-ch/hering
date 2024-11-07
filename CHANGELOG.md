@@ -1,4 +1,9 @@
 # Changelog
+## [v2.5.1] - 2024-11-07
+### :bug: Bug Fixes
+- [`5e42947`](https://github.com/scout-ch/hering/commit/5e42947b98585b4e6942ee159e686e5605351188) - ensure form entry styling is consistent across browsers and platforms *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.5.0] - 2024-11-02
 ### :sparkles: New Features
 - [`703cf4f`](https://github.com/scout-ch/hering/commit/703cf4f8d844418b601665a3eb935710204cdfff) - added loading and updating indication for calendar tasks *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -168,3 +173,4 @@
 [v2.3.1]: https://github.com/scout-ch/hering/compare/v2.3.0...v2.3.1
 [v2.4.0]: https://github.com/scout-ch/hering/compare/v2.3.1...v2.4.0
 [v2.5.0]: https://github.com/scout-ch/hering/compare/v2.4.0...v2.5.0
+[v2.5.1]: https://github.com/scout-ch/hering/compare/v2.5.0...v2.5.1
