@@ -8,33 +8,28 @@ const client = axios.create({
     },
 });
 
-const getData = async <T>(url: string): Promise<T> => {
-    const response = await client.get(url);
-    return response.data as T;
-};
-
 export const loadStartPage = async (lang: string): Promise<HApiStartPage> => {
-    return await getData<HApiStartPage>(`/start-page?_locale=${lang}`)
+    return (await client.get<HApiStartPage>(`/start-page?_locale=${lang}`)).data
 }
 
 export const loadCalendarPage = async (lang: string): Promise<HApiCalendarPage> => {
-    return await getData<HApiCalendarPage>(`/calendar-page?_locale=${lang}`)
+    return (await client.get<HApiCalendarPage>(`/calendar-page?_locale=${lang}`)).data
 }
 
 export const loadImpressumPage = async (lang: string): Promise<HApiImpressumPage> => {
-    return await getData<HApiImpressumPage>(`/impressum-page?_locale=${lang}`)
+    return (await client.get<HApiImpressumPage>(`/impressum-page?_locale=${lang}`)).data
 }
 
 export const loadSections = async (lang: string): Promise<HApiSection[]> => {
-    return await getData<HApiSection[]>(`/sections?_sort=sorting:ASC&_locale=${lang}`)
+    return (await client.get<HApiSection[]>(`/sections?_sort=sorting:ASC&_locale=${lang}`)).data
 };
 
 export const loadLinks = async (lang: string): Promise<HApiLink[]> => {
-    return await getData<HApiLink[]>(`/links?_locale=${lang}`)
+    return (await client.get<HApiLink[]>(`/links?_locale=${lang}`)).data
 }
 
 export const loadTasks = async (lang: string): Promise<HApiTask[]> => {
-    return await getData<HApiTask[]>(`/tasks?_locale=${lang}`)
+    return (await client.get<HApiTask[]>(`/tasks?_locale=${lang}`)).data
 }
 
 export interface HApiStartPage {

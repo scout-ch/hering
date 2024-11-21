@@ -6,7 +6,7 @@ import { checkLinks } from './helper/LinkChecker';
 import { SectionsByKey } from './pages/section/SectionPage';
 import Loading from "./components/loading/Loading";
 import Navigation from "./components/navigation/Navigation";
-import { HApiCalendarPage, HApiImpressumPage, HApiLink, loadCalendarPage, loadImpressumPage, loadLinks, loadSections, loadStartPage, HApiSection, HApiStartPage } from "./apis/hering-api";
+import { HApiCalendarPage, HApiImpressumPage, HApiLink, HApiSection, HApiStartPage, loadCalendarPage, loadImpressumPage, loadLinks, loadSections, loadStartPage } from "./apis/hering-api";
 
 const Footer = lazy(() => import('./components/footer/Footer'))
 const SectionHashHelper = lazy(() => import('./helper/SectionHashHelper'))
