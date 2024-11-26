@@ -1,19 +1,24 @@
-import React, {useEffect, useState} from 'react'
-import {useTranslation} from "react-i18next"
+import React, { useEffect, useState } from 'react'
+import { useTranslation } from "react-i18next"
 import './loading.less'
 
 type Props = {
     isLoading?: boolean
     centerInViewport?: boolean
     subtext?: string
+    showWaitMessages?: boolean
 }
 
-export default function Loading(probs: Props) {
+export default function Loading(props: Props) {
 
-    const {t} = useTranslation()
-    const [subtextInternal, setSubtextInternal] = useState<string | undefined>(probs.subtext)
+    const { t } = useTranslation()
+    const [subtextInternal, setSubtextInternal] = useState<string | undefined>(props.subtext)
 
     useEffect(() => {
+        if (!props.showWaitMessages) {
+            return;
+        }
+
         const waitOneTimeoutId = setTimeout(() => {
             setSubtextInternal(t('loading.waitOne'))
         }, 5000);
@@ -26,13 +31,13 @@ export default function Loading(probs: Props) {
             clearTimeout(waitOneTimeoutId);
             clearTimeout(waitTwoTimeoutId);
         }
-    }, [t]);
+    }, [t, props.showWaitMessages]);
 
-    if (probs.isLoading !== undefined && !probs.isLoading) {
+    if (props.isLoading !== undefined && !props.isLoading) {
         return <></>
     }
 
-    return <div className='loading-container' style={{height: getLoadingHeight(probs.centerInViewport)}}>
+    return <div className='loading-container' style={{ height: getLoadingHeight(props.centerInViewport) }}>
         <div>
             <div className='loading-spinner'></div>
         </div>

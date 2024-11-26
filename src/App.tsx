@@ -50,7 +50,7 @@ export default function App() {
 
     if (!sections || !links || !startPage || !calendarPage || !impressumPage) {
         return <div className='app-loading'>
-            <Loading subtext={t('homePage.loading')}/>
+            <Loading subtext={t('homePage.loading')} showWaitMessages={true}/>
         </div>
     }
 
