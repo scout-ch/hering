@@ -1,4 +1,13 @@
 # Changelog
+## [v2.6.0] - 2024-11-26
+### :sparkles: New Features
+- [`222621a`](https://github.com/scout-ch/hering/commit/222621afa68a9a91b82be2e0a8268fa0141cde59) - added ability to list swiss holidays for easier camp start selection [#12](https://github.com/scout-ch/hering/pull/12) *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :recycle: Refactors
+- [`d6a4a73`](https://github.com/scout-ch/hering/commit/d6a4a737362bab38b87e23ce23d03ff71618fc25) - highlight non-default values instead of using filter reset button *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`1ea0e8c`](https://github.com/scout-ch/hering/commit/1ea0e8cb590c8a95240dc11743b4d42333444566) - only show delayed loading messages on initial load *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.5.1] - 2024-11-07
 ### :bug: Bug Fixes
 - [`5e42947`](https://github.com/scout-ch/hering/commit/5e42947b98585b4e6942ee159e686e5605351188) - ensure form entry styling is consistent across browsers and platforms *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -174,3 +183,4 @@
 [v2.4.0]: https://github.com/scout-ch/hering/compare/v2.3.1...v2.4.0
 [v2.5.0]: https://github.com/scout-ch/hering/compare/v2.4.0...v2.5.0
 [v2.5.1]: https://github.com/scout-ch/hering/compare/v2.5.0...v2.5.1
+[v2.6.0]: https://github.com/scout-ch/hering/compare/v2.5.1...v2.6.0
