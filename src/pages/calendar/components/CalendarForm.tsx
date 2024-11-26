@@ -9,6 +9,7 @@ import { HApiTask, loadTasks } from "../../../apis/hering-api";
 import i18n from "i18next";
 import './calendar-form.less'
 import { Tooltip } from 'react-tooltip'
+import { sessionCache } from "../../../shared/session-cache";
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -40,48 +41,52 @@ function CalendarForm() {
 
     const onStartDateChanged = (e: ChangeEvent<HTMLInputElement>) => {
         const newStartDate = e.currentTarget.value
+        updateStartDate(newStartDate)
+    }
+
+    const updateStartDate = (newStartDate: string) => {
         setStartDate(newStartDate)
-        window.sessionStorage.setItem(startDateCacheKey, newStartDate)
+        sessionCache.set(startDateCacheKey, newStartDate)
     }
 
     const onResponsibleeChanged = (e: ChangeEvent<HTMLSelectElement>) => {
         const newResponsible = e.currentTarget.value
         setResponsible(newResponsible)
-        window.sessionStorage.setItem(responsibleCacheKey, newResponsible);
+        sessionCache.set(responsibleCacheKey, newResponsible);
     }
 
     const onBufferChanged = (e: ChangeEvent<HTMLInputElement>) => {
         const newBuffer = parseInt(e.currentTarget.value) || initialPuffer;
         setPuffer(newBuffer)
-        window.sessionStorage.setItem(bufferCacheKey, newBuffer.toString());
+        sessionCache.set(bufferCacheKey, newBuffer);
     }
 
     const onDesignationChanged = (e: ChangeEvent<HTMLInputElement>) => {
         const newPrefix = e.currentTarget.value
         setDesignation(newPrefix)
-        window.sessionStorage.setItem(calendarDesignationCacheKey, newPrefix);
+        sessionCache.set(calendarDesignationCacheKey, newPrefix);
     }
 
     const resetValues = () => {
-        window.sessionStorage.removeItem(startDateCacheKey);
         setStartDate(initialStartDate)
-
-        window.sessionStorage.removeItem(responsibleCacheKey);
         setResponsible(initialResponsible)
-
-        window.sessionStorage.removeItem(bufferCacheKey);
         setPuffer(initialPuffer)
-
-        window.sessionStorage.removeItem(calendarDesignationCacheKey);
         setDesignation(defaultCalendarDesignation)
+
+        sessionCache.removeAll([
+            startDateCacheKey,
+            responsibleCacheKey,
+            bufferCacheKey,
+            calendarDesignationCacheKey
+        ])
     }
 
     const hasActiveCache = useCallback(() => {
-        const calendarDesignationCache = window.sessionStorage.getItem(calendarDesignationCacheKey)
+        const calendarDesignationCache = sessionCache.get<string>(calendarDesignationCacheKey)
 
-        return !!window.sessionStorage.getItem(startDateCacheKey)
-            || !!window.sessionStorage.getItem(responsibleCacheKey)
-            || !!window.sessionStorage.getItem(bufferCacheKey)
+        return sessionCache.hasItem(startDateCacheKey)
+            || sessionCache.hasItem(responsibleCacheKey)
+            || sessionCache.hasItem(bufferCacheKey)
             || !!calendarDesignationCache
             || calendarDesignationCache?.length === 0
 
@@ -146,16 +151,16 @@ function CalendarForm() {
         }
 
         const loadCachedValues = () => {
-            const startDate = window.sessionStorage.getItem(startDateCacheKey);
+            const startDate = sessionCache.get<string>(startDateCacheKey);
             setStartDate(startDate || initialStartDate)
 
-            const responsible = window.sessionStorage.getItem(responsibleCacheKey);
+            const responsible = sessionCache.get<string>(responsibleCacheKey);
             setResponsible(responsible || initialResponsible)
 
-            const buffer = window.sessionStorage.getItem(bufferCacheKey);
-            setPuffer(parseInt(buffer || '') || 0)
+            const buffer = sessionCache.get<number>(bufferCacheKey);
+            setPuffer(buffer || 0)
 
-            const calendarPrefix = window.sessionStorage.getItem(calendarDesignationCacheKey);
+            const calendarPrefix = sessionCache.get<string>(calendarDesignationCacheKey);
             setDesignation(calendarPrefix || t('calendarPage.defaultDesignation'))
         }
 
