@@ -39,26 +39,46 @@ function CalendarForm() {
     const [taskList, setTaskList] = useState<HApiTask[] | undefined>(undefined)
     const [calendarTasks, setCalendarTasks] = useState<CalendarTask[]>([])
 
-    const onStartDateChanged = (e: ChangeEvent<HTMLInputElement>) => {
-        const newStartDate = e.currentTarget.value
-        updateStartDate(newStartDate)
-    }
-
     const updateStartDate = (newStartDate: string) => {
         setStartDate(newStartDate)
         sessionCache.set(startDateCacheKey, newStartDate)
     }
 
-    const onResponsibleeChanged = (e: ChangeEvent<HTMLSelectElement>) => {
-        const newResponsible = e.currentTarget.value
+    const updateResponsible = (newResponsible: string) => {
         setResponsible(newResponsible)
         sessionCache.set(responsibleCacheKey, newResponsible);
+
+        const reponsibleSelect = document.getElementById('responsible')
+        if (newResponsible === 'all') {
+            reponsibleSelect?.classList.remove('highlight')
+        } else {
+            reponsibleSelect?.classList.add('highlight')
+        }
+    }
+
+    const updatePuffer = (newPuffer: number) => {
+        setPuffer(newPuffer)
+        sessionCache.set(bufferCacheKey, newPuffer);
+
+        const pufferInput = document.getElementById('puffer')
+        if (newPuffer === 0) {
+            pufferInput?.classList.remove('highlight')
+        } else {
+            pufferInput?.classList.add('highlight')
+        }
+    }
+
+    const onStartDateChanged = (e: ChangeEvent<HTMLInputElement>) => {
+        const newStartDate = e.currentTarget.value
+        updateStartDate(newStartDate)
+    }
+
+    const onResponsibleeChanged = (e: ChangeEvent<HTMLSelectElement>) => {
+        updateResponsible(e.currentTarget.value)
     }
 
     const onBufferChanged = (e: ChangeEvent<HTMLInputElement>) => {
-        const newBuffer = parseInt(e.currentTarget.value) || initialPuffer;
-        setPuffer(newBuffer)
-        sessionCache.set(bufferCacheKey, newBuffer);
+        updatePuffer(parseInt(e.currentTarget.value) || initialPuffer)
     }
 
     const onDesignationChanged = (e: ChangeEvent<HTMLInputElement>) => {
@@ -66,31 +86,6 @@ function CalendarForm() {
         setDesignation(newPrefix)
         sessionCache.set(calendarDesignationCacheKey, newPrefix);
     }
-
-    const resetValues = () => {
-        setStartDate(initialStartDate)
-        setResponsible(initialResponsible)
-        setPuffer(initialPuffer)
-        setDesignation(defaultCalendarDesignation)
-
-        sessionCache.removeAll([
-            startDateCacheKey,
-            responsibleCacheKey,
-            bufferCacheKey,
-            calendarDesignationCacheKey
-        ])
-    }
-
-    const hasActiveCache = useCallback(() => {
-        const calendarDesignationCache = sessionCache.get<string>(calendarDesignationCacheKey)
-
-        return sessionCache.hasItem(startDateCacheKey)
-            || sessionCache.hasItem(responsibleCacheKey)
-            || sessionCache.hasItem(bufferCacheKey)
-            || !!calendarDesignationCache
-            || calendarDesignationCache?.length === 0
-
-    }, [startDate, responsible, puffer, designation])
 
     useEffect(() => {
         const parsedStartDate = parse(startDate, dateFormat, Date.now())
@@ -155,24 +150,24 @@ function CalendarForm() {
             setStartDate(startDate || initialStartDate)
 
             const responsible = sessionCache.get<string>(responsibleCacheKey);
-            setResponsible(responsible || initialResponsible)
+            updateResponsible(responsible || initialResponsible)
 
             const buffer = sessionCache.get<number>(bufferCacheKey);
-            setPuffer(buffer || 0)
+            updatePuffer(buffer || 0)
 
             const calendarPrefix = sessionCache.get<string>(calendarDesignationCacheKey);
             setDesignation(calendarPrefix || t('calendarPage.defaultDesignation'))
         }
 
         loadCachedValues()
-        getTasks()
+        getTasks().catch(console.error)
     }, []);
 
     return (
-        <div className='calendar-form'>
-            <div className='filter'>
-                <form className='filter-inputs'>
-                    <div className='form-entry'>
+        <div className="calendar-form">
+            <div className="filter">
+                <form className="filter-inputs">
+                    <div className="form-entry">
                         <label htmlFor="startDate">
                             {t('calendarPage.startDate')}
                         </label>
@@ -180,11 +175,11 @@ function CalendarForm() {
                                onChange={onStartDateChanged}/>
                     </div>
 
-                    <div className='form-entry'>
+                    <div className="form-entry">
                         <label htmlFor={"responsible"}>
                             {t('calendarPage.responsible')}
                         </label>
-                        <select name="responsible" id="responsible" value={responsible}
+                        <select id="responsible" name="responsible" value={responsible}
                                 onChange={onResponsibleeChanged}>
                             <option value="all">{t('calendarPage.responsibleOptions.all')}</option>
                             <option value="LL">{t('calendarPage.responsibleOptions.ll')}</option>
@@ -193,7 +188,7 @@ function CalendarForm() {
                         </select>
                     </div>
 
-                    <div className='form-entry'>
+                    <div className="form-entry">
                         <div className="label-with-icon">
                             <label htmlFor={"puffer"}>
                                 {t('calendarPage.puffer')}
@@ -208,11 +203,11 @@ function CalendarForm() {
                             </div>
                         </div>
 
-                        <input type="number" id="puffer" name="puffer" value={puffer.toString()} min="0"
+                        <input id="puffer" type="number" name="puffer" value={puffer.toString()} min="0"
                                onChange={onBufferChanged}/>
                     </div>
 
-                    <div className='form-entry'>
+                    <div className="form-entry">
                         <div className="label-with-icon">
                             <label htmlFor="calendar-designation">
                                 {t('calendarPage.designation')}
@@ -236,14 +231,6 @@ function CalendarForm() {
                         </div>
                     </div>
                 </form>
-
-                <div>
-                    {hasActiveCache() &&
-                        <a className='cursor-pointer' onClick={resetValues}>
-                            {t('calendarPage.resetValues')}
-                        </a>
-                    }
-                </div>
             </div>
 
             <div className='download'>

@@ -29,7 +29,6 @@
       "designation": "Designazione",
       "defaultDesignation": "Dati del campo",
       "designationDescription": "Questa designazione viene utilizzata per il nome del file e per le voci del calendario durante il download.",
-      "resetValues": "Azzeramento dei valori",
       "download": "Scaricare",
       "ics": {
         "download": "come calendario",

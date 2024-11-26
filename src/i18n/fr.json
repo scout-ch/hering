@@ -29,7 +29,6 @@
       "designation": "Désignation",
       "defaultDesignation": "Données du camp",
       "designationDescription": "Cette désignation est utilisée pour le nom du fichier et les entrées du calendrier lors du téléchargement.",
-      "resetValues": "Réinitialiser les valeurs",
       "download": "Télécharger",
       "ics": {
         "download": "comme calendrier",

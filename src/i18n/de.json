@@ -29,7 +29,6 @@
       "designation": "Bezeichnung",
       "defaultDesignation": "Lagerdaten",
       "designationDescription": "Diese Bezeichnung wird beim Herunterladen für den Dateinamen und die Kalendereinträge verwendet.",
-      "resetValues": "Werte zurücksetzen",
       "download": "Herunterladen",
       "ics": {
         "download": "als Kalender",
