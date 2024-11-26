@@ -1,0 +1,32 @@
+.holiday-selection {
+  display: grid;
+  gap: 1.5em;
+
+  .filter {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  table.holidays {
+    thead tr th.date {
+      width: 120px;
+    }
+
+    tbody tr td.type {
+      font-weight: 600;
+      display: flex;
+      gap: 0.3em;
+      align-items: center;
+    }
+  }
+}
+
+.md-footer {
+  justify-content: space-between;
+
+  .data-hint {
+    font-style: italic;
+    font-size: 13px;
+  }
+}

@@ -17,6 +17,7 @@
     "calendarPage": {
       "title": "Kalender",
       "startDate": "Erster Lagertag",
+      "viewHolidays": "Ferientage suchen",
       "responsible": "Verantwortlich",
       "puffer": "Puffer (Tage)",
       "pufferDescription": "Reduziert das Datum der Termine um die angegebene Anzahl an Tagen.",
@@ -56,6 +57,19 @@
         "chapters": "Links",
         "link": "Zum Kapitel"
       }
+    },
+    "holidaysModal": {
+      "title": "Ferien und Feiertage",
+      "description": "Wähle einen Kanton aus und definiere das Jahr für welches du die Ferien und Feiertage sehen möchtest. Wenn du auf ein Datum klickst wird dieses als der erste Lagertag ausgewählt.",
+      "canton": "Kanton",
+      "selectCanton": "Kanton auswählen...",
+      "year": "Jahr",
+      "from": "Von",
+      "to": "Bis",
+      "type": "Art",
+      "noResults": "Keine Informationen zu Ferien und Feiertage gefunden.",
+      "close": "Schliessen",
+      "dataHint": "Die Informationen werden durch das <a href=\"https://www.openholidaysapi.org/\" rel=\"noreferrer\">OpenHolidays API</a> bereitgestellt."
     },
     "searchPage": {
       "title": "Suche",

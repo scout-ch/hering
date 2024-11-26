@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useCallback, useEffect, useState } from 'react'
+ import React, { ChangeEvent, useContext, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import CalendarTable from './CalendarTable';
 import { CalendarTask } from './Task';
@@ -12,6 +12,9 @@ import { Tooltip } from 'react-tooltip'
 import { sessionCache } from "../../../shared/session-cache";
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ModalContext } from "../../../components/modal/ModalContext";
+import HolidaySelectModal, { HolidayModalResultData } from "./HolidaySelectModal";
+
 
 const dateFormat = 'yyyy-MM-dd'
 const initialStartDate = format(Date.now(), dateFormat)
@@ -26,6 +29,7 @@ const calendarDesignationCacheKey = 'calendar-designation'
 function CalendarForm() {
 
     const { t } = useTranslation()
+    const { openModal } = useContext(ModalContext);
 
     const defaultCalendarDesignation = t('calendarPage.defaultDesignation');
 
@@ -86,6 +90,15 @@ function CalendarForm() {
         setDesignation(newPrefix)
         sessionCache.set(calendarDesignationCacheKey, newPrefix);
     }
+
+    const openHolidaysModal = async () => {
+        const result = await openModal<HolidayModalResultData>(HolidaySelectModal, {}, { isWide: true });
+        if (result.isCancelled || !result.data?.selectedDate) {
+            return
+        }
+
+        updateStartDate(result.data.selectedDate)
+    };
 
     useEffect(() => {
         const parsedStartDate = parse(startDate, dateFormat, Date.now())
@@ -173,6 +186,9 @@ function CalendarForm() {
                         </label>
                         <input id="startDate" type="date" name="startDate" value={startDate}
                                onChange={onStartDateChanged}/>
+                        <a className="cursor-pointer" onClick={openHolidaysModal}>
+                            {t('calendarPage.viewHolidays')}
+                        </a>
                     </div>
 
                     <div className="form-entry">

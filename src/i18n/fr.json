@@ -17,6 +17,7 @@
     "calendarPage": {
       "title": "Calendrier",
       "startDate": "Premier jour du camp",
+      "viewHolidays": "Chercher des jours de vacances",
       "responsible": "Responsable",
       "puffer": "Marge (jours)",
       "pufferDescription": "Réduit la date des rendez-vous du nombre de jours indiqué.",
@@ -56,6 +57,19 @@
         "chapters": "Voir",
         "link": "Au chapitre"
       }
+    },
+    "holidaysModal": {
+      "title": "Ferien und Feiertage",
+      "description": "Choisis un canton et définis l'année pour laquelle tu souhaites voir les vacances et les jours fériés. Si tu cliques sur une date, celle-ci sera sélectionnée comme premier jour de camp.",
+      "canton": "Canton",
+      "selectCanton": "Sélectionner un canton...",
+      "year": "Année",
+      "from": "Du",
+      "to": "À",
+      "type": "Type",
+      "noResults": "Aucune information trouvée sur les vacances et les jours fériés",
+      "close": "Fermer",
+      "dataHint": "Les informations sont fournies par <a href=\"https://www.openholidaysapi.org/\" rel=\"noreferrer\">API OpenHolidays</a>."
     },
     "searchPage": {
       "title": "Recherche",

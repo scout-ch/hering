@@ -17,6 +17,7 @@
     "calendarPage": {
       "title": "Calendario",
       "startDate": "Primo giorno del campo",
+      "viewHolidays": "Ricerca giorni di vacanza",
       "responsible": "Responsabile",
       "puffer": "Tampone (giorni)",
       "pufferDescription": "Riduce la data degli appuntamenti del numero di giorni specificato.",
@@ -56,6 +57,19 @@
         "chapters": "Links",
         "link": "Al capitolo"
       }
+    },
+    "holidaysModal": {
+      "title": "Ferien und Feiertage",
+      "description": "Selezionare un cantone e definire l'anno per il quale si desidera visualizzare le vacanze e i giorni festivi. Se si fa clic su una data, questa verrà selezionata come primo giorno del campo.",
+      "canton": "Canton",
+      "selectCanton": "Selezionare il cantone...",
+      "year": "Anno",
+      "from": "Da",
+      "to": "A",
+      "type": "Tipo",
+      "noResults": "Non sono state trovate informazioni sulle vacanze e sui giorni festivi.",
+      "close": "Chiudere",
+      "dataHint": "Le informazioni sono fornite da <a href=\"https://www.openholidaysapi.org/\" rel=\"noreferrer\">API di OpenHolidays</a>."
     },
     "searchPage": {
       "title": "Cerca",
