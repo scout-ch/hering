@@ -1,14 +1,16 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import de from './de.json'
-import fr from './fr.json'
-import it from './it.json'
+import translationsGerman from './de.json'
+import translationsFrench from './fr.json'
+import translationsItalian from './it.json'
 import LanguageDetector from 'i18next-browser-languagedetector';
+import { setDefaultOptions } from "date-fns";
+import { de, fr, it } from "date-fns/locale";
 
 const resources = {
-    de: de,
-    fr: fr,
-    it: it
+    de: translationsGerman,
+    fr: translationsFrench,
+    it: translationsItalian
 } as const;
 
 i18n
@@ -22,5 +24,15 @@ i18n
             escapeValue: false
         }
     });
+
+setDefaultOptions({
+    locale: i18n.language === 'de'
+        ? de
+        : i18n.language === 'fr'
+            ? fr
+            : i18n.language === 'it'
+                ? it
+                : de
+});
 
 export default i18n;
