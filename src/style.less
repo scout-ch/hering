@@ -195,7 +195,7 @@ table {
   border-collapse: collapse;
 }
 
-.app-loading {
+.app-init {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,6 +204,16 @@ table {
   height: 100vh;
   background: @color-primary;
   color: #fff;
+
+  &.error {
+    hr {
+      width: 200px;
+    }
+
+    .message {
+      font-style: italic;
+    }
+  }
 }
 
 .cursor-pointer {

@@ -7,6 +7,8 @@ import { SectionsByKey } from './pages/section/SectionPage';
 import Loading from "./components/loading/Loading";
 import Navigation from "./components/navigation/Navigation";
 import { HApiCalendarPage, HApiImpressumPage, HApiLink, HApiSection, HApiStartPage, loadCalendarPage, loadImpressumPage, loadLinks, loadSections, loadStartPage } from "./apis/hering-api";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBug } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = lazy(() => import('./components/footer/Footer'))
 const SectionHashHelper = lazy(() => import('./helper/SectionHashHelper'))
@@ -23,6 +25,7 @@ export default function App() {
     const lang = i18n.language
     const { t } = useTranslation()
 
+    const [initError, setInitError] = useState<string | undefined>();
     const [sections, setSections] = useState<HApiSection[] | undefined>();
     const [links, setLinks] = useState<HApiLink[] | undefined>();
     const [startPage, setStartPage] = useState<HApiStartPage | undefined>();
@@ -31,25 +34,43 @@ export default function App() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const responses = await Promise.all([
-                loadSections(lang),
-                loadLinks(lang),
-                loadStartPage(lang),
-                loadCalendarPage(lang),
-                loadImpressumPage(lang)])
+            try {
+                const responses = await Promise.all([
+                    loadSections(lang),
+                    loadLinks(lang),
+                    loadStartPage(lang),
+                    loadCalendarPage(lang),
+                    loadImpressumPage(lang)
+                ])
 
-            setSections(responses[0])
-            setLinks(responses[1])
-            setStartPage(responses[2])
-            setCalendarPage(responses[3])
-            setImpressumPage(responses[4])
+                setSections(responses[0])
+                setLinks(responses[1])
+                setStartPage(responses[2])
+                setCalendarPage(responses[3])
+                setImpressumPage(responses[4])
+            } catch (e: any) {
+                if (!(e instanceof Error)) {
+                    e = new Error(e);
+                }
+
+                setInitError(e.message ?? 'unknown');
+            }
         }
 
         fetchData()
     }, [lang])
 
+    if (initError) {
+        return <div className='app-init error'>
+            <FontAwesomeIcon icon={faBug} size="2x"/>
+            <div>Es gab einen unerwarteten Fehler. Bitte versuche es später erneut.</div>
+            <hr/>
+            <div className="message">{initError}</div>
+        </div>
+    }
+
     if (!sections || !links || !startPage || !calendarPage || !impressumPage) {
-        return <div className='app-loading'>
+        return <div className='app-init'>
             <Loading subtext={t('homePage.loading')} showWaitMessages={true}/>
         </div>
     }
