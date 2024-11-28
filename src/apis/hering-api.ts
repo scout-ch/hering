@@ -1,4 +1,5 @@
 import axios from "axios";
+import axiosRetry from "axios-retry";
 
 const client = axios.create({
     // baseURL: 'http://localhost:1337/',
@@ -7,6 +8,8 @@ const client = axios.create({
         "Content-type": "application/json",
     },
 });
+
+axiosRetry(client, { retries: 5, retryDelay: axiosRetry.linearDelay(1000) });
 
 export const loadStartPage = async (lang: string): Promise<HApiStartPage> => {
     return (await client.get<HApiStartPage>(`/start-page?_locale=${lang}`)).data

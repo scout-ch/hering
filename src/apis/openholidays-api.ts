@@ -1,5 +1,6 @@
 import axios from "axios";
 import { format } from "date-fns";
+import axiosRetry from "axios-retry";
 
 const client = axios.create({
     baseURL: 'https://openholidaysapi.org/',
@@ -7,6 +8,8 @@ const client = axios.create({
         "Content-type": "application/json",
     },
 });
+
+axiosRetry(client, { retries: 5, retryDelay: axiosRetry.linearDelay(1000) });
 
 export const loadSubdivisions = async (languageCode?: OHApiLanguageCode): Promise<OHApiSubdivision[]> => {
     const params = getBaseParams(languageCode);
