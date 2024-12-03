@@ -31,6 +31,9 @@
   transform: translateY(-50px);
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 
   &.wide {
     max-width: 800px;
@@ -46,27 +49,25 @@
   }
 
   .md-header {
+    margin-bottom: 0.5em;
+
     h3 {
-      margin: 0 0 0.5em 0;
+      margin: 0;
       font-size: 1.5rem;
       font-weight: normal;
     }
   }
 
   .md-footer {
-    margin-top: 1em;
+    margin-top: 0.5em;
     display: flex;
     align-items: center;
     gap: 0.5em;
   }
-}
 
-.modal-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: none;
-  background: none;
-  font-size: 24px;
-  cursor: pointer;
+  .md-content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
 }

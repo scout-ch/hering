@@ -111,77 +111,81 @@ function HolidaySelectModal() {
         <div className="md-header">
             <h3>{t('holidaysModal.title')}</h3>
         </div>
-        <div className="holiday-selection">
-            <div>{t('holidaysModal.description')}</div>
+        <div className="md-content">
+            <div className="holiday-selection">
+                <div>{t('holidaysModal.description')}</div>
 
-            <div className="filter">
-                <div className='form-entry'>
-                    <label htmlFor={"responsible"}>{t('holidaysModal.canton')}</label>
-                    <select name="responsible" id="responsible"
-                            value={selectedCanton?.code ?? "DEFAULT"}
-                            onChange={onCantonChanged}>
-                        <option disabled value="DEFAULT">{t('holidaysModal.selectCanton')}</option>
-                        {cantons.map(canton => (
-                            <option key={canton.code}
-                                    value={canton.code}>
-                                {canton.name} ({canton.shortName})
-                            </option>
-                        ))}
-                    </select>
+                <div className="filter">
+                    <div className='form-entry'>
+                        <label htmlFor={"responsible"}>{t('holidaysModal.canton')}</label>
+                        <select name="responsible" id="responsible"
+                                value={selectedCanton?.code ?? "DEFAULT"}
+                                onChange={onCantonChanged}>
+                            <option disabled value="DEFAULT">{t('holidaysModal.selectCanton')}</option>
+                            {cantons.map(canton => (
+                                <option key={canton.code}
+                                        value={canton.code}>
+                                    {canton.name} ({canton.shortName})
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                    <div className='form-entry'>
+                        <label htmlFor={"responsible"}>{t('holidaysModal.year')}</label>
+                        <input type="number" id="year" name="year" value={selectedYear} min={minYear}
+                               max={maxYear}
+                               onChange={onYearChanged}/>
+                    </div>
                 </div>
-                <div className='form-entry'>
-                    <label htmlFor={"responsible"}>{t('holidaysModal.year')}</label>
-                    <input type="number" id="year" name="year" value={selectedYear} min={minYear}
-                           max={maxYear}
-                           onChange={onYearChanged}/>
-                </div>
+
+                {selectedCanton && !isUpdatingHolidays && (
+                    <div className="table-overflow">
+                        <table className="holidays">
+                            <thead>
+                            <tr>
+                                <th className="date">{t('holidaysModal.from')}</th>
+                                <th className="date">{t('holidaysModal.to')}</th>
+                                <th>{t('holidaysModal.type')}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {holidays.map(holiday => (
+                                <tr key={holiday.id}>
+                                    <td>
+                                        <a className="cursor-pointer" onClick={() => selectDate(holiday.startDate)}>
+                                            {format(holiday.startDate, 'EEEEEE, dd.MM.yyyy')}
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a className="cursor-pointer" onClick={() => selectDate(holiday.endDate)}>
+                                            {format(holiday.endDate, 'EEEEEE, dd.MM.yyyy')}
+                                        </a>
+                                    </td>
+                                    <td className="type">
+                                        <span>{holiday.name}</span>
+                                        {holiday.comment.length > 0 &&
+                                            <span className="icon">
+                                                <FontAwesomeIcon icon={faCircleInfo} data-tooltip-id={holiday.id}/>
+                                                <Tooltip id={holiday.id}>
+                                                    {holiday.comment}
+                                                </Tooltip>
+                                            </span>
+                                        }
+                                    </td>
+                                </tr>
+                            ))}
+                            {holidays.length === 0 && (
+                                <tr>
+                                    <td colSpan={3}>{t('holidaysModal.noResults')}</td>
+                                </tr>
+                            )}
+                            </tbody>
+                        </table>
+                    </div>
+                )}
+
+                {isUpdatingHolidays && <Loading subtext="Ferien werden geladen..."/>}
             </div>
-
-            {selectedCanton && !isUpdatingHolidays && (
-                <table className="holidays">
-                    <thead>
-                    <tr>
-                        <th className="date">{t('holidaysModal.from')}</th>
-                        <th className="date">{t('holidaysModal.to')}</th>
-                        <th>{t('holidaysModal.type')}</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {holidays.map(holiday => (
-                        <tr key={holiday.id}>
-                            <td>
-                                <a className="cursor-pointer" onClick={() => selectDate(holiday.startDate)}>
-                                    {format(holiday.startDate, 'EEEEEE, dd.MM.yyyy')}
-                                </a>
-                            </td>
-                            <td>
-                                <a className="cursor-pointer" onClick={() => selectDate(holiday.endDate)}>
-                                    {format(holiday.endDate, 'EEEEEE, dd.MM.yyyy')}
-                                </a>
-                            </td>
-                            <td className="type">
-                                <span>{holiday.name}</span>
-                                {holiday.comment.length > 0 &&
-                                    <>
-                                        <FontAwesomeIcon icon={faCircleInfo} data-tooltip-id={holiday.id}/>
-                                        <Tooltip id={holiday.id}>
-                                            {holiday.comment}
-                                        </Tooltip>
-                                    </>
-                                }
-                            </td>
-                        </tr>
-                    ))}
-                    {holidays.length === 0 && (
-                        <tr>
-                            <td colSpan={3}>{t('holidaysModal.noResults')}</td>
-                        </tr>
-                    )}
-                    </tbody>
-                </table>
-            )}
-
-            {isUpdatingHolidays && <Loading subtext="Ferien werden geladen..."/>}
         </div>
         <div className="md-footer">
             <button className="btn" onClick={cancel}>{t('holidaysModal.close')}</button>
