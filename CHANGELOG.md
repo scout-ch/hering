@@ -1,4 +1,11 @@
 # Changelog
+## [v2.6.1] - 2024-12-03
+### :recycle: Refactors
+- [`feb6b69`](https://github.com/scout-ch/hering/commit/feb6b69358461d0a24ecbd518bd864ca9741df76) - added basic error handling during data initialisation *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`e662632`](https://github.com/scout-ch/hering/commit/e662632ed3a281ea5b53dfd6bc15416a3f868a44) - added simple retry policy for API requests *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`7a2defb`](https://github.com/scout-ch/hering/commit/7a2defb03aa49260fdce671b64bfb2c6827e96ad) - keep modal header and footer always visible *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.6.0] - 2024-11-26
 ### :sparkles: New Features
 - [`222621a`](https://github.com/scout-ch/hering/commit/222621afa68a9a91b82be2e0a8268fa0141cde59) - added ability to list swiss holidays for easier camp start selection [#12](https://github.com/scout-ch/hering/pull/12) *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -184,3 +191,4 @@
 [v2.5.0]: https://github.com/scout-ch/hering/compare/v2.4.0...v2.5.0
 [v2.5.1]: https://github.com/scout-ch/hering/compare/v2.5.0...v2.5.1
 [v2.6.0]: https://github.com/scout-ch/hering/compare/v2.5.1...v2.6.0
+[v2.6.1]: https://github.com/scout-ch/hering/compare/v2.6.0...v2.6.1
