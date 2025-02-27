@@ -1,8 +1,6 @@
-import { CalendarTask } from "./Task";
-import { HApiChapter } from "../../../apis/hering-api";
+import { CalendarTask } from "./CalendarForm";
+import { HERING_BASE_URL } from "../../../shared/constants";
 
 export function buildLinks(task: CalendarTask): string {
-    return task.chapters
-        .map((chapter: HApiChapter) => 'https://scout-ch.github.io/hering/' + chapter.slug_with_section)
-        .join(', ')
+    return `${HERING_BASE_URL}/#/${task.chapter.section.documentId}#${task.chapter.documentId}`
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import Chapter from "./components/Chapter";
 import Markdown from "react-markdown";
@@ -6,30 +6,37 @@ import remarkGfm from "remark-gfm";
 import { LinkComponent } from "../../helper/MarkdownComponents";
 import { useLocation } from "react-router-dom";
 import { handleIntersectionChanged } from "./helpers/intersection.helper";
-import { HApiChapter, HApiSection } from "../../apis/hering-api";
+import { HApiSection } from "../../apis/hering-api";
 
-export type SectionsByKey = {
+export type SectionsById = {
     [key: string]: HApiSection
 }
 
 type Props = {
-    sections: SectionsByKey
+    sections: SectionsById
 }
 
 type Params = {
-    slug: string
+    sectionId: string
 }
 
 function SectionPage(props: Props) {
-    const { slug } = useParams<Params>()
-    const section = props.sections[slug || '']
+
     const location = useLocation()
+    const { sectionId } = useParams<Params>()
+    const [section, setSection] = useState<HApiSection | undefined>()
 
     useEffect(() => {
+        const sectionHashIndex = sectionId?.indexOf('#')
+        const cleanSectionId = sectionHashIndex === -1
+            ? sectionId
+            : sectionId?.substring(0, sectionHashIndex);
+        setSection(props.sections[cleanSectionId || ''])
+
         if (section) {
-            document.title = section['title']
+            document.title = section.title
         }
-    }, [section]);
+    }, [sectionId]);
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => handleIntersectionChanged(entries, location.hash), {
@@ -51,8 +58,7 @@ function SectionPage(props: Props) {
         return null
     }
 
-    const chapters = section['chapters']
-        .sort((a: HApiChapter, b: HApiChapter) => a.sorting - b.sorting)
+    const chapters = (section.chapters ?? [])
         .map(chapter => <Chapter key={chapter['title']} data={chapter}></Chapter>)
 
     return <div className="content" id="section">
@@ -60,10 +66,8 @@ function SectionPage(props: Props) {
             <div id="section-title" className="section-title">
                 <h1>{section['title']}</h1>
             </div>
-            <Markdown
-                remarkPlugins={[remarkGfm]}
-                components={LinkComponent}>
-                {section.content}
+            <Markdown remarkPlugins={[remarkGfm]}
+                      components={LinkComponent}>
             </Markdown>
             {chapters}
         </div>

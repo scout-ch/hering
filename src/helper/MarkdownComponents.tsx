@@ -1,14 +1,6 @@
-import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { LinksContext } from '../App'
 import { Components } from "react-markdown/lib"
 import Warning from "../components/warning/Warning"
-
-// // @ts-ignore
-// remark.macros.img = function (altText, width) {
-//     var url = this;
-//     return '<img alt="' + altText + '" src="' + url + '" style="width: ' + width + '" />';
-//   };
 
 export const LinkComponent: Components = {
     blockquote({ children }) {
@@ -20,34 +12,10 @@ export const LinkComponent: Components = {
         </div>
     },
     a({ node, children, ...props }) {
-        /* eslint-disable */
-        const links = useContext(LinksContext)
         const link = props.href
 
-        const linkMatch = link?.match('\\$(.*)\\$');
-        if (linkMatch) {
-            const foundLink = links.find((l) => {
-                return l['key'] == linkMatch[1]
-            })
-
-            if (!foundLink) {
-                return <Link to={props.href || ''}>{children}</Link>
-            }
-
-            if (foundLink['link']) {
-                return <a href={foundLink['link']} target="_blank" rel="noreferrer">{children}</a>
-            }
-
-            if (foundLink['slug']) {
-                return <Link to={'/' + foundLink['slug']}>{children}</Link>
-            }
-
-            return <Link to={props.href || ''}>{children}</Link>
-
-        }
-
-        const mailto = link?.match('(mailto:)')
-        if (mailto && mailto.length > 2 && mailto[1]) {
+        const isMailtoLink = link?.startsWith('mailto:')
+        if (isMailtoLink) {
             return <Link to='#'
                          onClick={(e) => {
                              window.location.href = props.href || '';
@@ -56,6 +24,17 @@ export const LinkComponent: Components = {
                 {children}
             </Link>
         }
+
+        const isPublicLink = link?.startsWith('http')
+        if (isPublicLink) {
+            return <a href={link} target="_blank" rel="noreferrer">{children}</a>
+        }
+
+        const isChapterLink = link?.startsWith('/')
+        if (isChapterLink) {
+            return <Link to={link || ''}>{children}</Link>
+        }
+
         return <Link to={props.href || ''}>{children}</Link>
     },
     img({ node, children, ...props }) {

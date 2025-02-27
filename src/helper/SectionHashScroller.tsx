@@ -1,31 +1,45 @@
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
+import { CHAPTER_NAV_UPDATED_EVENT } from "../shared/constants";
 
-const ScrollToHashElement = () => {
+const SectionHashScroller = () => {
 
     const location = useLocation();
 
     useEffect(() => {
         const scrollToHashElement = () => {
-            const getHashElement = () => {
-                if (location.hash) {
-                    const id = location.hash.replace('#', '');
+            // Ensure as much as possible that the content is rendered and the hash position is correct
+            requestAnimationFrame(() => setTimeout(() => {
+                const getHashElement = () => {
+                    const locationHash = !!location.hash
+                        ? location.hash
+                        : decodeURIComponent(location.pathname);
+
+                    if (!locationHash || locationHash.indexOf('#') === -1) {
+                        return null;
+                    }
+
+                    const id = locationHash.slice(locationHash.indexOf('#') + 1);
                     return document.getElementById(id);
                 }
 
-                return document.getElementById('section-title')
-            }
+                const hashElement = getHashElement();
+                if (!hashElement) {
+                    window.scrollTo(0, 0)
+                    return;
+                }
 
-            const hashElement = getHashElement();
-            if (!hashElement) {
-                window.scrollTo(0, 0)
-                return;
-            }
+                hashElement.scrollIntoView({
+                    behavior: "instant",
+                    block: 'start'
+                });
 
-            hashElement.scrollIntoView({
-                behavior: "instant",
-                block: 'start'
-            });
+                window.dispatchEvent(new CustomEvent(CHAPTER_NAV_UPDATED_EVENT, {
+                    detail: {
+                        chapterId: hashElement.id
+                    }
+                }))
+            }, 50));
         }
 
         // wait for section to be loaded into the DOM
@@ -59,14 +73,14 @@ const ScrollToHashElement = () => {
         const mainElement = document.getElementById('main')
         mutationObserver.observe(mainElement!, { attributes: false, childList: true, subtree: true });
 
-        scrollToHashElement();
+        scrollToHashElement()
 
         return () => {
             mutationObserver.disconnect()
         }
-    }, [location.hash]);
+    }, [location.pathname, location.hash]);
 
     return null;
 };
 
-export default ScrollToHashElement;
+export default SectionHashScroller;

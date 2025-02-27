@@ -1,61 +1,19 @@
 import React from 'react'
 import i18n from '../../i18n'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import FooterSvg from './FooterSvg'
 import PbsLogoSvg from './PbsLogoSvg'
 import './footer.less'
-import { loadSections, HApiSection } from "../../apis/hering-api";
 
-type Props = {
-    sections: HApiSection[]
-}
-
-function Footer(props: Props) {
+function Footer() {
 
     const lang = i18n.language
-    const location = useLocation();
-    const navigate = useNavigate();
     const currentYear = new Date().getFullYear()
 
-    const changeLanguage = (lang: string, oldSections: HApiSection[]) => {
-        let redirect = false
-
-        const path = location.pathname.replace('/', '')
-        const currentSection = oldSections.find((s) => s['slug'] === path)
-
-        i18n.changeLanguage(lang).then((_t) => {
-            if (path === 'calendar') {
-                window.location.reload();
-                redirect = true
-                return
-            }
-
-            if (path === 'impressum') {
-                redirect = true
-                return
-            }
-
-            loadSections(lang).then((sections: HApiSection[]) => {
-                if (currentSection) {
-                    const otherSection = currentSection['localizations'].find((l: any) => {
-                        return l.locale === lang
-                    })
-
-                    const newCurrentSection = sections.find((s: any) => {
-                        return s['id'] === otherSection['id']
-                    })
-
-                    if (newCurrentSection) {
-                        redirect = true
-                        navigate('/' + newCurrentSection.slug)
-                    }
-                }
-            }).finally(() => {
-                if (!redirect) {
-                    navigate('/')
-                }
-            })
-        });
+    const changeLanguage = (lang: string) => {
+        i18n.changeLanguage(lang).then(_ => {
+            window.location.reload()
+        })
     }
 
     return <>
@@ -70,15 +28,15 @@ function Footer(props: Props) {
                     </div>
                     <div className='language-switcher'>
                         <button className={lang === 'de' ? 'active' : ''}
-                                onClick={() => changeLanguage('de', props.sections)}
+                                onClick={() => changeLanguage('de')}
                                 aria-label={'Deutsch'}>Deutsch
                         </button>
                         <button className={lang === 'fr' ? 'active' : ''}
-                                onClick={() => changeLanguage('fr', props.sections)}
+                                onClick={() => changeLanguage('fr')}
                                 aria-label={'Français'}>Français
                         </button>
                         <button className={lang === 'it' ? 'active' : ''}
-                                onClick={() => changeLanguage('it', props.sections)}
+                                onClick={() => changeLanguage('it')}
                                 aria-label={'Italiano'}>Italiano
                         </button>
                     </div>

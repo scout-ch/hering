@@ -1,7 +1,9 @@
 import React from 'react'
-import Task, { CalendarTask } from './Task';
 import { useTranslation } from "react-i18next";
 import './calendar-table.less';
+import { format } from "date-fns";
+import { Link } from "react-router-dom";
+import { CalendarTask } from "./CalendarForm";
 
 type Props = {
     tasks: CalendarTask[]
@@ -11,13 +13,7 @@ type Props = {
 
 function CalendarTable(props: Props) {
 
-    const tasks = props.tasks;
     const { t } = useTranslation()
-
-    const taskList = tasks.map(function (task) {
-        return <Task deadline={task.deadline} key={task.title} title={task.title}
-                     targets={task.targets} responsible={task.responsible} chapters={task.chapters}></Task>
-    })
 
     return (
         <div className={`calendar-table table-overflow ${props.isUpdating ? 'is-updating' : ''}`}>
@@ -32,7 +28,29 @@ function CalendarTable(props: Props) {
                 </tr>
                 </thead>
                 <tbody>
-                {taskList}
+                {props.tasks.map(task => {
+                    const targets = task.targets
+                        .map((target) => target.name)
+                        .join(', ')
+                    const responsible = task.responsible
+                        .map((responsible) => responsible.name)
+                        .join(', ')
+
+                    return <tr key={task.id}>
+                        <td align={"center"}>{format(task.deadline, 'dd.MM.yyyy')}</td>
+                        <td align={"left"}>{task.title}</td>
+                        <td>{responsible}</td>
+                        <td>{targets}</td>
+                        <td align={"center"}>
+                            {!!task.chapter &&
+                                <Link key={task.chapter.documentId}
+                                      to={`/${task.chapter.section.documentId}#${task.chapter.documentId}`}>
+                                    {t(`calendarPage.table.link`)}
+                                </Link>
+                            }
+                        </td>
+                    </tr>
+                })}
                 </tbody>
             </table>
         </div>

@@ -13,8 +13,7 @@ const resources = {
     it: translationsItalian
 } as const;
 
-i18n
-    .use(initReactI18next)
+i18n.use(initReactI18next)
     .use(LanguageDetector)
     .init({
         resources,
@@ -22,6 +21,10 @@ i18n
         fallbackLng: 'de',
         interpolation: {
             escapeValue: false
+        },
+        detection: {
+            order: ['path', 'localStorage', 'navigator'],
+            caches: ['localStorage']
         }
     });
 
