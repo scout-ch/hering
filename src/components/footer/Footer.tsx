@@ -1,5 +1,5 @@
 import React from 'react'
-import i18n from '../../i18n'
+import { i18n, redirectToLanguage } from '../../i18n'
 import { Link } from 'react-router-dom'
 import FooterSvg from './FooterSvg'
 import PbsLogoSvg from './PbsLogoSvg'
@@ -11,9 +11,7 @@ function Footer() {
     const currentYear = new Date().getFullYear()
 
     const changeLanguage = (lang: string) => {
-        i18n.changeLanguage(lang).then(_ => {
-            window.location.reload()
-        })
+        redirectToLanguage(lang)
     }
 
     return <>

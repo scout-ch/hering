@@ -1,7 +1,7 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import i18n from './i18n';
+import { defaultLanguage, i18n } from './i18n';
 import Loading from "./components/loading/Loading";
 import Navigation from "./components/navigation/Navigation";
 import { HApiCalendarPage, HApiImpressumPage, HApiSection, HApiStartPage, loadCalendarPage, loadImpressumPage, loadSections, loadStartPage } from "./apis/hering-api";
@@ -75,21 +75,18 @@ export default function App() {
     }, {})
 
     return <div className='app'>
-        <Router basename="/">
+        <Router basename={`/${lang}`}>
             <SectionHashScroller/>
             <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}/>
 
             <main id="main">
                 <Routes>
-                    <Route path="/" element={
+                    <Route index element={
                         <Suspense fallback={<Loading centerInViewport={true}/>}>
                             <HomePage page={startPage}/>
                         </Suspense>
                     }/>
-                    <Route path="/hering/" element={
-                        <Suspense fallback={<Loading centerInViewport={true}/>}>
-                            <HomePage page={startPage}/>
-                        </Suspense>}/>
+
                     <Route path="search" element={
                         <Suspense fallback={<Loading centerInViewport={true}/>}>
                             <SearchPage sections={sections}/>
@@ -110,6 +107,8 @@ export default function App() {
                             <SectionPage sections={sectionsByKey}/>
                         </Suspense>
                     }/>
+
+                    <Route path="*" element={<Navigate to={`/${i18n.resolvedLanguage || defaultLanguage}`}/>}/>
                 </Routes>
 
                 <Footer/>
