@@ -8,7 +8,7 @@ const generateEnvFile = () => ({
     name: 'generate-env-file',
     configResolved(config: any) {
         // Only run during development
-        if (config.command !== 'dev') {
+        if (config.command !== 'serve') {
             return
         }
 
