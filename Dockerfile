@@ -13,7 +13,7 @@ COPY package.json package-lock.json ./
 RUN npm install
 
 COPY . .
-RUN yarn build
+RUN npm run build
 
 ###############################################################################################
 # Hering Frontend - production
