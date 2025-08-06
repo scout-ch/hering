@@ -69,3 +69,6 @@ pids
 
 # Yarn Integrity file
 .yarn-integrity
+
+# environment
+public/env.js

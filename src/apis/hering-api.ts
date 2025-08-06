@@ -1,9 +1,8 @@
 import axios from "axios";
 import axiosRetry from "axios-retry";
-import { HERING_API_BASE_URL } from "../shared/constants";
 
 const client = axios.create({
-    baseURL: HERING_API_BASE_URL,
+    baseURL: (window as any).env?.HERING_API_BASE_URL,
     headers: {
         "Content-type": "application/json",
     },

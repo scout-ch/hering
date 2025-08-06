@@ -17,10 +17,14 @@ function Chapter(props: ChapterProps) {
         return null
     }
 
+    const iconUrl = import.meta.env.MODE !== 'development'
+        ? data.icon.url
+        : ((window as any).env?.HERING_API_BASE_URL || '').replace('/api', '') + data.icon.url;
+
     return <div className='chapter'>
         <div id={data.documentId}>
             <div className="chapter-title">
-                {data.icon && (<img className='chapter-icon' src={data.icon.url} alt="icon"/>)}
+                {data.icon && (<img className='chapter-icon' src={iconUrl} alt="icon"/>)}
                 <h2>{data.title}</h2>
             </div>
 

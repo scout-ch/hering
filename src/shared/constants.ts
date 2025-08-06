@@ -1,5 +1,1 @@
 export const CHAPTER_NAV_UPDATED_EVENT = 'chapterNavUpdated'
-export const HERING_BASE_URL = 'http://localhost:3001'
-// export const HERING_BASE_URL = 'https://scout-ch.github.io/hering'
-export const HERING_API_BASE_URL = 'http://localhost:1337/api'
-// export const HERING_API_BASE_URL = 'https://hering-api.herokuapp.com'
