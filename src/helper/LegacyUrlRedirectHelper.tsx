@@ -10,12 +10,7 @@ const LegacyUrlRedirectHelper = () => {
             return
         }
 
-        const convertedUrl = location.hash
-            .replace('#', '')
-            .replace('%23', '#')
-        console.info(`converted legacy URL from ${location.pathname}${location.hash} to ${convertedUrl}`)
-
-        return navigate(convertedUrl);
+        return navigate('/');
     }, [location, navigate]);
 
     return null;

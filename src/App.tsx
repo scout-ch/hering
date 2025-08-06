@@ -8,6 +8,7 @@ import { HApiCalendarPage, HApiImpressumPage, HApiSection, HApiStartPage, loadCa
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBug } from "@fortawesome/free-solid-svg-icons";
 import { SectionsById } from "./pages/section/SectionPage";
+import LegacyUrlRedirectHelper from "./helper/LegacyUrlRedirectHelper";
 
 const Footer = lazy(() => import('./components/footer/Footer'))
 const SectionHashScroller = lazy(() => import('./helper/SectionHashScroller'))
@@ -77,6 +78,8 @@ export default function App() {
     return <div className='app'>
         <Router basename={`/${lang}`}>
             <SectionHashScroller/>
+            <LegacyUrlRedirectHelper/>
+
             <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}/>
 
             <main id="main">
