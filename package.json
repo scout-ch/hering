@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "vite dev",
-    "build": "vite build --outDir build",
+    "build": "vite build --outDir dist",
     "preview": "vite preview"
   },
   "eslintConfig": {
