@@ -1,8 +1,8 @@
-import { CalendarTask } from "./Task";
 import { Borders, Color, Fill, Font, Workbook, Worksheet } from "exceljs";
 import { isBefore } from "date-fns";
 import i18n from "i18next";
 import { saveAs } from "../../../helper/FileHelper";
+import { CalendarTask } from "./CalendarForm";
 
 const t = i18n.t
 
@@ -176,10 +176,10 @@ function addTaskRows(subtitle: string, tasks: CalendarTask[], sheet: Worksheet) 
 
     const taskRowInfos = tasks.map(task => {
         const responsible = task.responsible
-            .map(responsible => t(`target.role.${responsible['rolle']}`))
+            .map(responsible => responsible.name)
             .join(', ')
         const targets = task.targets
-            .map(target => target['rolle'])
+            .map(target => target.name)
             .join(', ')
 
         return {
