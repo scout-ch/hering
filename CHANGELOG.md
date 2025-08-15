@@ -1,4 +1,20 @@
 # Changelog
+## [v3.0.0] - 2025-08-15
+### :boom: BREAKING CHANGES
+- due to [`981c0fc`](https://github.com/scout-ch/hering/commit/981c0fc7c04231e01e94a0cdad9d9c450a62bc97) - load data from the updated Hering API *(commit by [@mario-zelger](https://github.com/mario-zelger))*:
+
+  the previous API is no longer supported
+
+
+### :sparkles: New Features
+- [`981c0fc`](https://github.com/scout-ch/hering/commit/981c0fc7c04231e01e94a0cdad9d9c450a62bc97) - load data from the updated Hering API *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`21f0f98`](https://github.com/scout-ch/hering/commit/21f0f98853f17f8e101354fa7125d750cdf325f3) - use language code in URL *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`9b933ab`](https://github.com/scout-ch/hering/commit/9b933abc83047ae7d0ecc86ca41debeb9d0876a6) - re-added legacy URL helper to redirect old hash-based routes *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :wrench: Chores
+- [`bfd36eb`](https://github.com/scout-ch/hering/commit/bfd36eb43634394ab072fc4be420c5f748010de5) - **deps**: update NPM dependencies *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v2.6.1] - 2024-12-03
 ### :recycle: Refactors
 - [`feb6b69`](https://github.com/scout-ch/hering/commit/feb6b69358461d0a24ecbd518bd864ca9741df76) - added basic error handling during data initialisation *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -192,3 +208,4 @@
 [v2.5.1]: https://github.com/scout-ch/hering/compare/v2.5.0...v2.5.1
 [v2.6.0]: https://github.com/scout-ch/hering/compare/v2.5.1...v2.6.0
 [v2.6.1]: https://github.com/scout-ch/hering/compare/v2.6.0...v2.6.1
+[v3.0.0]: https://github.com/scout-ch/hering/compare/v2.6.1...v3.0.0
