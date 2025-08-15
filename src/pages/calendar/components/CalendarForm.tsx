@@ -1,11 +1,10 @@
- import React, { ChangeEvent, useContext, useEffect, useState } from 'react'
+import React, { ChangeEvent, useContext, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import CalendarTable from './CalendarTable';
-import { CalendarTask } from './Task';
 import { addDays, format, isValid, parse, startOfDay } from "date-fns";
 import Downloads from "./Downloads";
 import Loading from "../../../components/loading/Loading";
-import { HApiTask, loadTasks } from "../../../apis/hering-api";
+import { HApiRole, HApiTask, HApiTaskChapter, loadTasks } from "../../../apis/hering-api";
 import i18n from "i18next";
 import './calendar-form.less'
 import { Tooltip } from 'react-tooltip'
@@ -14,7 +13,6 @@ import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ModalContext } from "../../../components/modal/ModalContext";
 import HolidaySelectModal, { HolidayModalResultData } from "./HolidaySelectModal";
-
 
 const dateFormat = 'yyyy-MM-dd'
 const initialStartDate = format(Date.now(), dateFormat)
@@ -25,6 +23,15 @@ const startDateCacheKey = 'start-date'
 const responsibleCacheKey = 'responsible'
 const bufferCacheKey = 'buffer'
 const calendarDesignationCacheKey = 'calendar-designation'
+
+export type CalendarTask = {
+    id: string
+    title: string
+    deadline: Date
+    targets: HApiRole[]
+    responsible: HApiRole[]
+    chapter: HApiTaskChapter
+}
 
 function CalendarForm() {
 
@@ -117,29 +124,27 @@ function CalendarForm() {
         // Introduce pseudo loading time so that the user sees that something is updating
         setIsUpdatingTasks(true);
 
-        const filteredTasks = taskList.filter((task: HApiTask) => {
-            const rollen = task.responsible.map((resp) => resp.rolle)
-            return responsible === 'all'
-                ? true
-                : rollen.includes(responsible)
-        })
+        const filteredTasks = taskList.filter((task: HApiTask) =>
+            responsible === 'all'
+            || task.responsible.some(r => r.abbreviation === responsible))
 
         const tasks = filteredTasks
             .map((task: HApiTask) => {
-                const dayOffsetFromStartDate = task.days < 0
-                    ? task.days - puffer
-                    : task.days
+                const dayOffsetFromStartDate = task.daysOffset < 0
+                    ? task.daysOffset - puffer
+                    : task.daysOffset
 
-                const deadline = task.days !== -1000
+                const deadline = task.daysOffset !== -1000
                     ? startOfDay(addDays(parsedStartDate, dayOffsetFromStartDate))
                     : new Date(parsedStartDate.getFullYear(), 0, 1)
 
                 return {
+                    id: task.documentId,
                     deadline: deadline,
                     title: task.title,
                     targets: task.targets,
                     responsible: task.responsible,
-                    chapters: task.chapters
+                    chapter: task.chapter
                 } as CalendarTask
             })
             .sort((a: CalendarTask, b: CalendarTask) => a.deadline.getTime() - b.deadline.getTime())

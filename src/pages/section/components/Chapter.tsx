@@ -12,23 +12,26 @@ type ChapterProps = {
 
 function Chapter(props: ChapterProps) {
     const data = props.data
-    
+
     if (!data) {
         return null
     }
 
+    const iconUrl = import.meta.env.MODE !== 'development'
+        ? data.icon.url
+        : ((window as any).env?.HERING_API_BASE_URL || '').replace('/api', '') + data.icon.url;
+
     return <div className='chapter'>
-        <div id={data.slug}>
+        <div id={data.documentId}>
             <div className="chapter-title">
-                {data.icon && (<img className='chapter-icon' src={data.icon.url} alt="icon"/>)}
-                <h2 id={data.slug}>{data.title}</h2>
+                {data.icon && (<img className='chapter-icon' src={iconUrl} alt="icon"/>)}
+                <h2>{data.title}</h2>
             </div>
 
             <div className='chapter-main'>
                 <Target targets={data.responsible}/>
-                <Markdown
-                    remarkPlugins={[remarkGfm]}
-                    components={LinkComponent}>
+                <Markdown remarkPlugins={[remarkGfm]}
+                          components={LinkComponent}>
                     {data.content}
                 </Markdown>
             </div>

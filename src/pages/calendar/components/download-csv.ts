@@ -1,8 +1,8 @@
-import { CalendarTask } from "./Task";
 import { format } from "date-fns";
 import { saveAs } from "../../../helper/FileHelper";
 import i18n from "i18next";
 import { buildLinks } from "./download-shared";
+import { CalendarTask } from "./CalendarForm";
 
 const t = i18n.t
 
@@ -16,10 +16,10 @@ export function downloadAsCsv(tasks: CalendarTask[], filename: string) {
 
     tasks.forEach(task => {
         const responsible = task.responsible
-            .map(responsible => t(`target.role.${responsible['rolle']}`))
+            .map(responsible => responsible.name)
             .join(', ')
         const targets = task.targets
-            .map(target => target['rolle'])
+            .map(target => target.name)
             .join(', ')
 
         const row = [

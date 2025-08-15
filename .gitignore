@@ -25,3 +25,6 @@ yarn-error.log*
 
 # JetBrain tool
 .idea/
+
+# environment
+public/env.js

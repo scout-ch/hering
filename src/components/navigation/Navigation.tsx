@@ -17,8 +17,11 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
 
     const { t } = useTranslation()
     const location = useLocation()
-    const [currentChapterSlug, setCurrentChapterSlug] = useState('')
+
     const [navbarOpen, setNavbarOpen] = useState(false)
+    const [currentChapterId, setCurrentChapterId] = useState('')
+    const [pathname, setPathname] = useState('')
+
     const sidebarRef = useRef<HTMLDivElement>(null);
 
     const handleToggle = () => {
@@ -32,15 +35,15 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
     };
 
     useEffect(() => {
-        const updateSlug = (event: Event) => {
+        const updateChapterId = (event: Event) => {
             if (event instanceof CustomEvent) {
-                setCurrentChapterSlug(event.detail.chapterSlug)
+                setCurrentChapterId(event.detail.chapterId ?? '')
             }
         }
 
-        window.addEventListener(CHAPTER_NAV_UPDATED_EVENT, updateSlug)
+        window.addEventListener(CHAPTER_NAV_UPDATED_EVENT, updateChapterId)
         return () => {
-            window.removeEventListener(CHAPTER_NAV_UPDATED_EVENT, updateSlug)
+            window.removeEventListener(CHAPTER_NAV_UPDATED_EVENT, updateChapterId)
         }
     }, []);
 
@@ -52,20 +55,20 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
     }, []);
 
     useEffect(() => {
-        if (location.hash.length > 0) {
-            setCurrentChapterSlug(location.hash.replace('#', ''))
-        } else {
-            // If navigation is not based on a hash / chapter, scoll back to top
-            window.scrollTo(0, 0)
-        }
-    }, [location]);
+        const cleanPathname = decodeURIComponent(location.pathname);
+        const pathWithoutHash = cleanPathname.indexOf('#') === -1
+            ? cleanPathname
+            : cleanPathname.slice(0, cleanPathname.indexOf('#'));
+        setPathname(pathWithoutHash)
+    }, [location.pathname]);
 
     function chapterList(section: HApiSection) {
-        const chapters = section.chapters
-        const chapterItems = chapters.map((chapter: HApiChapter) => {
-            const isActive = currentChapterSlug === chapter.slug
-            return <li key={chapter.slug_with_section} className="subMenu" onClick={handleToggle}>
-                <Link to={chapter.slug_with_section} className={isActive ? 'active' : ''}>{chapter.menu_name}</Link>
+        const chapterItems = section.chapters.map((chapter: HApiChapter) => {
+            const isActive = currentChapterId === chapter.documentId
+
+            return <li key={chapter.documentId} className="subMenu" onClick={handleToggle}>
+                <Link to={`${section.documentId}#${chapter.documentId}`}
+                      className={isActive ? 'active' : ''}>{chapter.menuName}</Link>
             </li>
         })
 
@@ -75,27 +78,28 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
     }
 
     const sectionList = sections.map((section: HApiSection) => {
-        const isActive = location.pathname.replace('/', '') === section.slug
+        const isActive = pathname.replace('/', '') === section.documentId
         const className = isActive ? 'active' : ''
-        return <details key={section.slug} className={className} open={isActive}>
+
+        return <details key={section.documentId} className={className} open={isActive}>
             <summary className={`accordion_label ${className}`}>
                 {
                     isActive
-                        ? <span className="cursor-pointer">{section.menu_name}</span>
-                        : <Link to={section.slug}>{section.menu_name}</Link>
+                        ? <span className="cursor-pointer">{section.menuName}</span>
+                        : <Link to={section.documentId}>{section.menuName}</Link>
                 }
             </summary>
             {chapterList(section)}
         </details>
     })
 
-    const homeActive = location.pathname === '/'
+    const homeActive = pathname === '/'
         ? 'active'
         : ''
-    const calendarActive = location.pathname === '/calendar'
+    const calendarActive = pathname === '/calendar'
         ? 'active'
         : ''
-    const searchActive = location.pathname === '/search'
+    const searchActive = pathname === '/search'
         ? 'active' :
         ''
 
@@ -113,7 +117,7 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
                             <Link to="/"
                                   onClick={() => setNavbarOpen(!navbarOpen)}>
                                 <FontAwesomeIcon icon={faFishFins}/>
-                                {startPage.menu_name}
+                                {startPage.menuName}
                             </Link>
                         </li>
                         <li key="search" className={"primary-link " + searchActive}>
@@ -127,7 +131,7 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
                             <Link to="/calendar"
                                   onClick={() => setNavbarOpen(!navbarOpen)}>
                                 <FontAwesomeIcon icon={faCalendarDays}/>
-                                {calendarPage.menu_name}
+                                {calendarPage.menuName}
                             </Link>
                         </li>
                     </ul>

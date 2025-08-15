@@ -11,17 +11,23 @@ const resources = {
     de: translationsGerman,
     fr: translationsFrench,
     it: translationsItalian
-} as const;
+};
 
-i18n
-    .use(initReactI18next)
+const supportedLanguages = ['de', 'fr', 'it'];
+const defaultLanguage = 'de';
+
+i18n.use(initReactI18next)
     .use(LanguageDetector)
     .init({
         resources,
-        supportedLngs: ['de', 'fr', 'it'],
-        fallbackLng: 'de',
+        fallbackLng: defaultLanguage,
+        supportedLngs: supportedLanguages,
         interpolation: {
             escapeValue: false
+        },
+        detection: {
+            order: ['path', 'localStorage', 'navigator'],
+            caches: ['localStorage']
         }
     });
 
@@ -35,4 +41,19 @@ setDefaultOptions({
                 : de
 });
 
-export default i18n;
+function getUrlPathSegments(): string[] {
+    return `${window.location.pathname}${window.location.hash}`.split('/').filter(p => !!p && p.length > 0);
+}
+
+function redirectToLanguage(lang: string) {
+    const pathWithoutLanguage = getUrlPathSegments().slice(1).join('/');
+    const newPath = `/${lang}${pathWithoutLanguage ? `/${pathWithoutLanguage}` : ''}`;
+
+    window.location.replace(newPath);
+}
+
+function getLanguageFromUrl(): string {
+    return getUrlPathSegments()[0] || '';
+}
+
+export { i18n, supportedLanguages, defaultLanguage, redirectToLanguage, getLanguageFromUrl };

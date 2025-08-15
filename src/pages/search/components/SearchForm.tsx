@@ -14,10 +14,15 @@ type Props = {
 }
 
 type SearchResult = {
-    id: number
+    chapterId: string
+    sectionId: string
     title: string
     matchingContents: string[]
-    slug: string
+}
+
+interface ChapterWithSection {
+    sectionId: string;
+    chapter: HApiChapter
 }
 
 function SearchForm(props: Props) {
@@ -31,8 +36,7 @@ function SearchForm(props: Props) {
     const [isLoadingResults, setIsLoadingResults] = useState<boolean>(false)
 
     const timeoutId = useRef<number | undefined>();
-    const searchableSectionChapters = useRef<HApiChapter[]>(props.sections
-        .reduce((chapters: HApiChapter[], currentSection: HApiSection) => chapters.concat(currentSection.chapters), []))
+    const searchableSections = useRef<HApiSection[]>(props.sections)
 
     const executeSearch = useCallback((currentKeyword: string) => {
         setIsLoadingResults(true)
@@ -48,14 +52,20 @@ function SearchForm(props: Props) {
                 return
             }
 
-            const searchResults = searchableSectionChapters.current
-                .filter(chapter => SearchHelper.matches(currentKeyword, [chapter.title, chapter.content]))
-                .map(chapter => {
+            const searchResults = searchableSections.current
+                .reduce((chapterInfo: ChapterWithSection[], section: HApiSection) => chapterInfo.concat(
+                    section.chapters.map(chapter => ({
+                        sectionId: section.documentId,
+                        chapter: chapter
+                    }))
+                ), [])
+                .filter(entry => SearchHelper.matches(currentKeyword, [entry.chapter.title, entry.chapter.content]))
+                .map(entry => {
                     return {
-                        id: chapter.id,
-                        title: chapter.title,
-                        matchingContents: findMatchingContents(currentKeyword, chapter.content),
-                        slug: chapter.slug_with_section
+                        chapterId: entry.chapter.documentId,
+                        sectionId: entry.sectionId,
+                        title: entry.chapter.title,
+                        matchingContents: findMatchingContents(currentKeyword, entry.chapter.content),
                     } as SearchResult
                 })
 
@@ -80,14 +90,15 @@ function SearchForm(props: Props) {
 
     const findMatchingContents = (keyword: string, content: string): string[] => {
         const markdownLinkRegex = new RegExp('!?\\[(.*?)]\\((.*?)\\)', 'gmi')
-        // eslint-disable-next-line
         const keywordRegex = new RegExp(`[^.!?:;#\n]*(?=${keyword}).*?[.!?](?=\s?|\p{Lu}|$)`, 'gmi')
 
         const filteredContent = content.replace(markdownLinkRegex, '') // Remove Markdown links from search results
         const matches = Array.from(filteredContent.matchAll(keywordRegex))
 
-        return matches.reduce((searchResults: string[], currentMatches: RegExpMatchArray) => searchResults.concat(currentMatches),
-            [])
+        return matches.reduce(
+            (searchResults: string[], currentMatches: RegExpMatchArray) => searchResults.concat(currentMatches),
+            []
+        )
     }
 
     const onChangeKeyword = (e: React.FormEvent<HTMLInputElement>): void => {
@@ -108,9 +119,9 @@ function SearchForm(props: Props) {
             if (keyword.length >= 3) {
                 if (searchResults.length > 0) {
                     return searchResults.map(result => {
-                        return <div key={result.id} className='search-result'>
+                        return <div key={result.chapterId} className='search-result'>
                             <div className='title-match'>
-                                <Link to={'/' + result.slug}>{result.title}</Link>
+                                <Link to={`/${result.sectionId}#${result.chapterId}`}>{result.title}</Link>
                             </div>
                             {result.matchingContents.length > 0 ?
                                 <div className='content-match'>

@@ -8,7 +8,7 @@ export function handleIntersectionChanged(entries: IntersectionObserverEntry[], 
     if (entries.length > 1) {
         // Multiple entries in one batch are mostly observed if the navigation originated
         // from a Route event. If this is the case, we check if a hash route is actually set.
-        // If the navigation originated by a hash route, we don't want to overwrite the selected slug.
+        // If the navigation originated by a hash route, we don't want to overwrite the selected id.
         if (locationHash.length > 0) {
             return
         }
@@ -22,33 +22,32 @@ export function handleIntersectionChanged(entries: IntersectionObserverEntry[], 
 
         window.dispatchEvent(new CustomEvent(CHAPTER_NAV_UPDATED_EVENT, {
             detail: {
-                chapterSlug: intersectingElement.target.children[0].id
+                chapterId: intersectingElement.target.children[0].id
             }
         }))
 
         return
     }
 
-    entries.forEach(entry => {
-        const topRatio = entry.intersectionRect.top / entry.rootBounds!.height;
-        if (topRatio > 0.1) {
-            // If the element is too far away from the top, we ignore it.
-            return;
-        }
+    const entry = entries[0];
+    const topRatio = entry.intersectionRect.top / entry.rootBounds!.height;
+    if (topRatio > 0.1) {
+        // If the element is too far away from the top, we ignore it.
+        return;
+    }
 
-        // isInterceting && topRatio <= 0.1 --> target element is active
-        // !isInterceting && topRatio <= 0.1 --> target next sibling (element) is active
-        const chapterSlug = entry.isIntersecting
-            ? entry.target.children[0].id
-            : entry.target.nextElementSibling?.children[0].id
-        if (!chapterSlug) {
-            return;
-        }
+    // isInterceting && topRatio <= 0.1 --> target element is active
+    // !isInterceting && topRatio <= 0.1 --> target next sibling (element) is active
+    const chapterId = entry.isIntersecting
+        ? entry.target.children[0].id
+        : entry.target.nextElementSibling?.children[0].id;
+    if (!chapterId) {
+        return;
+    }
 
-        window.dispatchEvent(new CustomEvent(CHAPTER_NAV_UPDATED_EVENT, {
-            detail: {
-                chapterSlug: chapterSlug
-            }
-        }))
-    });
+    window.dispatchEvent(new CustomEvent(CHAPTER_NAV_UPDATED_EVENT, {
+        detail: {
+            chapterId: chapterId
+        }
+    }));
 }
