@@ -1,4 +1,9 @@
 # Changelog
+## [v3.0.2] - 2025-08-17
+### :bug: Bug Fixes
+- [`a557df3`](https://github.com/scout-ch/hering/commit/a557df3f3c6bb924c5301487b8f9f52b7559cec4) - use explicit base path for SPA *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v3.0.1] - 2025-08-17
 ### :bug: Bug Fixes
 - [`1226523`](https://github.com/scout-ch/hering/commit/12265235583d6a2c259f796d1474957931732a50) - fix SPA fallback page for proxy *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -219,3 +224,4 @@
 [v2.6.1]: https://github.com/scout-ch/hering/compare/v2.6.0...v2.6.1
 [v3.0.0]: https://github.com/scout-ch/hering/compare/v2.6.1...v3.0.0
 [v3.0.1]: https://github.com/scout-ch/hering/compare/v3.0.0...v3.0.1
+[v3.0.2]: https://github.com/scout-ch/hering/compare/v3.0.1...v3.0.2
