@@ -25,6 +25,7 @@ jobs:
         with:
           token: ${{ github.token }}
           branch: ${{ github.ref_name }}
+          patchList: 'fix, bugfix, perf, refactor, test, tests, chore'
 
       - name: Create Docker image version
         id: docker_image_version
