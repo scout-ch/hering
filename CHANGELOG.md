@@ -1,4 +1,13 @@
 # Changelog
+## [v3.0.1] - 2025-08-17
+### :bug: Bug Fixes
+- [`1226523`](https://github.com/scout-ch/hering/commit/12265235583d6a2c259f796d1474957931732a50) - fix SPA fallback page for proxy *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :wrench: Chores
+- [`474d6ec`](https://github.com/scout-ch/hering/commit/474d6ec1a56333ddbc8d868dc5e8c0d113b45ae7) - **deps**: npm updates *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`015de95`](https://github.com/scout-ch/hering/commit/015de959e0c569a4af94899aecdaecd5ba85baa0) - **deps**: vitejs upgrades *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v3.0.0] - 2025-08-15
 ### :boom: BREAKING CHANGES
 - due to [`981c0fc`](https://github.com/scout-ch/hering/commit/981c0fc7c04231e01e94a0cdad9d9c450a62bc97) - load data from the updated Hering API *(commit by [@mario-zelger](https://github.com/mario-zelger))*:
@@ -209,3 +218,4 @@
 [v2.6.0]: https://github.com/scout-ch/hering/compare/v2.5.1...v2.6.0
 [v2.6.1]: https://github.com/scout-ch/hering/compare/v2.6.0...v2.6.1
 [v3.0.0]: https://github.com/scout-ch/hering/compare/v2.6.1...v3.0.0
+[v3.0.1]: https://github.com/scout-ch/hering/compare/v3.0.0...v3.0.1
