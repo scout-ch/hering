@@ -25,7 +25,7 @@ const generateEnvFile = () => ({
 })
 
 export default defineConfig({
-    base: '',
+    base: '/',
     plugins: [react(), viteTsconfigPaths(), generateEnvFile()],
     server: {
         open: false,
