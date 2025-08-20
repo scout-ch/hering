@@ -12,6 +12,7 @@
       "waitTwo": "On y est presque..."
     },
     "homePage": {
+      "fallbackTitle": "SARDINE",
       "loading": "Chargement de la Sardine ..."
     },
     "calendarPage": {

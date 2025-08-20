@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from "react-i18next";
@@ -6,6 +6,7 @@ import { faBars, faCalendarDays, faFishFins, faSearch } from "@fortawesome/free-
 import './nav.less'
 import { CHAPTER_NAV_UPDATED_EVENT } from "../../shared/constants";
 import { HApiCalendarPage, HApiChapter, HApiSection, HApiStartPage } from "../../apis/hering-api";
+import { useDocumentTitle } from "../page-title";
 
 type Props = {
     startPage: HApiStartPage
@@ -17,6 +18,7 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
 
     const { t } = useTranslation()
     const location = useLocation()
+    const { setPageTitle } = useDocumentTitle();
 
     const [navbarOpen, setNavbarOpen] = useState(false)
     const [currentChapterId, setCurrentChapterId] = useState('')
@@ -34,24 +36,34 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
         }
     };
 
+    const chapterLookup = useMemo(() => {
+        return sections
+            .flatMap(section => section.chapters)
+            .reduce((lookup, chapter) => {
+                lookup[chapter.documentId] = chapter;
+                return lookup;
+            }, {} as Record<string, HApiChapter>);
+    }, [sections]);
+
     useEffect(() => {
-        const updateChapterId = (event: Event) => {
+        const updateChapter = (event: Event) => {
             if (event instanceof CustomEvent) {
-                setCurrentChapterId(event.detail.chapterId ?? '')
+                const chapterId = event.detail.chapterId ?? '';
+                setCurrentChapterId(chapterId);
+
+                const currentChapter = chapterLookup[chapterId];
+                if (currentChapter) {
+                    setPageTitle(currentChapter.menuName);
+                }
             }
         }
 
-        window.addEventListener(CHAPTER_NAV_UPDATED_EVENT, updateChapterId)
-        return () => {
-            window.removeEventListener(CHAPTER_NAV_UPDATED_EVENT, updateChapterId)
-        }
-    }, []);
-
-    useEffect(() => {
+        window.addEventListener(CHAPTER_NAV_UPDATED_EVENT, updateChapter)
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
+            window.removeEventListener(CHAPTER_NAV_UPDATED_EVENT, updateChapter)
             document.removeEventListener('mousedown', handleClickOutside);
-        };
+        }
     }, []);
 
     useEffect(() => {

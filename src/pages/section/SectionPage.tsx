@@ -7,6 +7,7 @@ import { LinkComponent } from "../../helper/MarkdownComponents";
 import { useLocation } from "react-router-dom";
 import { handleIntersectionChanged } from "./helpers/intersection.helper";
 import { HApiSection } from "../../apis/hering-api";
+import { useDocumentTitle } from "../../components/page-title";
 
 export type SectionsById = {
     [key: string]: HApiSection
@@ -22,6 +23,8 @@ type Params = {
 
 function SectionPage(props: Props) {
 
+    const { setPageTitle } = useDocumentTitle();
+
     const location = useLocation()
     const { sectionId } = useParams<Params>()
     const [section, setSection] = useState<HApiSection | undefined>()
@@ -33,8 +36,8 @@ function SectionPage(props: Props) {
             : sectionId?.substring(0, sectionHashIndex);
         setSection(props.sections[cleanSectionId || ''])
 
-        if (section) {
-            document.title = section.title
+        return () => {
+            setPageTitle(undefined) // Remove page title when the section is reset
         }
     }, [sectionId]);
 
@@ -58,18 +61,15 @@ function SectionPage(props: Props) {
         return null
     }
 
-    const chapters = (section.chapters ?? [])
-        .map(chapter => <Chapter key={chapter['title']} data={chapter}></Chapter>)
-
     return <div className="content" id="section">
         <div className="content-main">
             <div id="section-title" className="section-title">
-                <h1>{section['title']}</h1>
+                <h1>{section.title}</h1>
             </div>
             <Markdown remarkPlugins={[remarkGfm]}
                       components={LinkComponent}>
             </Markdown>
-            {chapters}
+            {(section.chapters ?? []).map(chapter => <Chapter key={chapter.title} data={chapter}></Chapter>)}
         </div>
     </div>
 }

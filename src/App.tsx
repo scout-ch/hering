@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBug } from "@fortawesome/free-solid-svg-icons";
 import { SectionsById } from "./pages/section/SectionPage";
 import LegacyUrlRedirectHelper from "./helper/LegacyUrlRedirectHelper";
+import { useDocumentTitle } from "./components/page-title";
 
 const Footer = lazy(() => import('./components/footer/Footer'))
 const SectionHashScroller = lazy(() => import('./helper/SectionHashScroller'))
@@ -28,6 +29,8 @@ export default function App() {
     const [startPage, setStartPage] = useState<HApiStartPage | undefined>();
     const [calendarPage, setCalendarPage] = useState<HApiCalendarPage | undefined>();
     const [impressumPage, setImpressumPage] = useState<HApiImpressumPage | undefined>();
+
+    const { setBaseTitle } = useDocumentTitle();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -49,6 +52,8 @@ export default function App() {
                 }
 
                 setInitError(e.message ?? 'unknown');
+            } finally {
+                setBaseTitle(startPage?.title || t('homePage.fallbackTitle'));
             }
         }
 

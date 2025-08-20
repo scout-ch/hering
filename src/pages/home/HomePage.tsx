@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent } from "../../helper/MarkdownComponents"
@@ -13,10 +13,6 @@ type Props = {
 function HomePage(props: Props) {
 
     const startPage = props.page
-
-    useEffect(() => {
-        document.title = startPage.title
-    }, [startPage])
 
     return <div className='content-main'>
         <h1>

@@ -11,6 +11,7 @@ import searchPageIT from "../../data/search-page/it.json"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import './search.less'
 import { HApiSection } from "../../apis/hering-api";
+import { DocumentTitle } from "../../components/page-title";
 
 type Props = {
     sections: HApiSection[]
@@ -27,10 +28,6 @@ function SearchPage(props: Props) {
     const [searchPage, setSearchPage] = useState<SearchPageT>();
 
     useEffect(() => {
-        document.title = searchPage?.title ?? '';
-    }, [searchPage]);
-
-    useEffect(() => {
         switch (i18n.language) {
             case 'de':
                 return setSearchPage(searchPageDE)
@@ -43,27 +40,26 @@ function SearchPage(props: Props) {
         }
     }, [lang])
 
-    useEffect(() => {
-        document.title = searchPage?.title ?? '';
-    }, [searchPage])
-
     if (!searchPage) {
         return null
     }
 
-    return <div className='content-main'>
-        <div className='search'>
-            <h1>
-                <FontAwesomeIcon icon={faSearch}/> {searchPage.title}
-            </h1>
-            <Markdown remarkPlugins={[remarkGfm]}
-                      components={LinkComponent}>
-                {searchPage.content}
-            </Markdown>
+    return <>
+        <DocumentTitle title={searchPage.title}/>
+        <div className='content-main'>
+            <div className='search'>
+                <h1>
+                    <FontAwesomeIcon icon={faSearch}/> {searchPage.title}
+                </h1>
+                <Markdown remarkPlugins={[remarkGfm]}
+                          components={LinkComponent}>
+                    {searchPage.content}
+                </Markdown>
 
-            <SearchForm sections={props.sections}/>
+                <SearchForm sections={props.sections}/>
+            </div>
         </div>
-    </div>
+    </>
 }
 
 export default SearchPage
