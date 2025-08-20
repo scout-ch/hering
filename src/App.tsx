@@ -64,9 +64,9 @@ export default function App() {
         </div>
     }
 
-    if (!sections || !startPage || !calendarPage || !impressumPage) {
+    if (!i18n.isInitialized || !sections || !startPage || !calendarPage || !impressumPage) {
         return <div className='app-init'>
-            <Loading subtext={t('homePage.loading')} showWaitMessages={true}/>
+            <Loading subtext={t('homePage.loading', 'Loading...')} showWaitMessages={true}/>
         </div>
     }
 
