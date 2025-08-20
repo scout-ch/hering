@@ -59,7 +59,7 @@
       }
     },
     "holidaysModal": {
-      "title": "Ferien und Feiertage",
+      "title": "Vacanze e festività",
       "description": "Selezionare un cantone e definire l'anno per il quale si desidera visualizzare le vacanze e i giorni festivi. Se si fa clic su una data, questa verrà selezionata come primo giorno del campo.",
       "canton": "Canton",
       "selectCanton": "Selezionare il cantone...",

@@ -59,7 +59,7 @@
       }
     },
     "holidaysModal": {
-      "title": "Ferien und Feiertage",
+      "title": "Vacances et jours fériés",
       "description": "Choisis un canton et définis l'année pour laquelle tu souhaites voir les vacances et les jours fériés. Si tu cliques sur une date, celle-ci sera sélectionnée comme premier jour de camp.",
       "canton": "Canton",
       "selectCanton": "Sélectionner un canton...",
