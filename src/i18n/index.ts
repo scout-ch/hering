@@ -52,8 +52,8 @@ function redirectToLanguage(lang: string) {
     window.location.replace(newPath);
 }
 
-function getLanguageFromUrl(): string {
-    return getUrlPathSegments()[0] || '';
+function hasSupportedLanguageInUrl(): boolean {
+    return supportedLanguages.includes(getUrlPathSegments()[0] || '');
 }
 
-export { i18n, supportedLanguages, defaultLanguage, redirectToLanguage, getLanguageFromUrl };
+export { i18n, supportedLanguages, defaultLanguage, redirectToLanguage, hasSupportedLanguageInUrl };
