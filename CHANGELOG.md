@@ -1,4 +1,16 @@
 # Changelog
+## [v3.1.0] - 2025-08-20
+### :sparkles: New Features
+- [`92af8bc`](https://github.com/scout-ch/hering/commit/92af8bc976f26a0a32fbe9f397313fd853d5918d) - use a fixed pattern to update the document title for pages and current chapters *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :bug: Bug Fixes
+- [`c5decd3`](https://github.com/scout-ch/hering/commit/c5decd3cd10235f6dd3755a60ed67283a3b6aee4) - fix missing translations for holiday modal *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`f4fad09`](https://github.com/scout-ch/hering/commit/f4fad09b30303eef28631465117fc64443797479) - make sure translations are initialized before showing content *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :recycle: Refactors
+- [`127f059`](https://github.com/scout-ch/hering/commit/127f059060a6bba0439f4030b2ef500497726dc1) - created method to more clearly indicate language redirect intent *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v3.0.2] - 2025-08-17
 ### :bug: Bug Fixes
 - [`a557df3`](https://github.com/scout-ch/hering/commit/a557df3f3c6bb924c5301487b8f9f52b7559cec4) - use explicit base path for SPA *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -225,3 +237,4 @@
 [v3.0.0]: https://github.com/scout-ch/hering/compare/v2.6.1...v3.0.0
 [v3.0.1]: https://github.com/scout-ch/hering/compare/v3.0.0...v3.0.1
 [v3.0.2]: https://github.com/scout-ch/hering/compare/v3.0.1...v3.0.2
+[v3.1.0]: https://github.com/scout-ch/hering/compare/v3.0.2...v3.1.0
