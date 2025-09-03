@@ -1,6 +1,6 @@
-import React, { ChangeEvent, useEffect, useState } from 'react'
+import { type ChangeEvent, useEffect, useState } from 'react'
 import { useTranslation } from "react-i18next";
-import { Canton, Holiday, swissHolidaysProvider } from "./swiss-holidays-provider";
+import { type Canton, type Holiday, swissHolidaysProvider } from "./swiss-holidays-provider";
 import Loading from "../../../components/loading/Loading";
 import { useModal } from "../../../components/modal/useModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

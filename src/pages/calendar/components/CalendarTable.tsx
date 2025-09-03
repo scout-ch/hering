@@ -1,9 +1,8 @@
-import React from 'react'
 import { useTranslation } from "react-i18next";
 import './calendar-table.less';
 import { format } from "date-fns";
 import { Link } from "react-router-dom";
-import { CalendarTask } from "./CalendarForm";
+import { type CalendarTask } from "./CalendarForm";
 
 type Props = {
     tasks: CalendarTask[]

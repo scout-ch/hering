@@ -1,11 +1,11 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from "react-i18next";
 import { faBars, faCalendarDays, faFishFins, faSearch } from "@fortawesome/free-solid-svg-icons";
 import './nav.less'
 import { CHAPTER_NAV_UPDATED_EVENT } from "../../shared/constants";
-import { HApiCalendarPage, HApiChapter, HApiSection, HApiStartPage } from "../../apis/hering-api";
+import { type HApiCalendarPage, type HApiChapter, type  HApiSection, type HApiStartPage } from "../../apis/hering-api";
 import { useDocumentTitle } from "../page-title";
 
 type Props = {

@@ -1,10 +1,9 @@
-import React from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent } from '../../../helper/MarkdownComponents'
 import Target from './Target'
 import './chapter.less'
-import { HApiChapter } from "../../../apis/hering-api";
+import { type HApiChapter } from "../../../apis/hering-api";
 
 type ChapterProps = {
     data: HApiChapter;
@@ -17,7 +16,7 @@ function Chapter(props: ChapterProps) {
         return null
     }
 
-    const iconUrl = import.meta.env.MODE !== 'development'
+    const iconUrl = import.meta.env.PROD
         ? data.icon.url
         : ((window as any).env?.HERING_API_BASE_URL || '').replace('/api', '') + data.icon.url;
 

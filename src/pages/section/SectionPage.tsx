@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import Chapter from "./components/Chapter";
 import Markdown from "react-markdown";
@@ -6,7 +6,7 @@ import remarkGfm from "remark-gfm";
 import { LinkComponent } from "../../helper/MarkdownComponents";
 import { useLocation } from "react-router-dom";
 import { handleIntersectionChanged } from "./helpers/intersection.helper";
-import { HApiSection } from "../../apis/hering-api";
+import { type HApiSection } from "../../apis/hering-api";
 import { useDocumentTitle } from "../../components/page-title";
 
 export type SectionsById = {

@@ -2,7 +2,7 @@ import { format } from "date-fns";
 import { saveAs } from "../../../helper/FileHelper";
 import i18n from "i18next";
 import { buildLinks } from "./download-shared";
-import { CalendarTask } from "./CalendarForm";
+import { type CalendarTask } from "./CalendarForm";
 
 const t = i18n.t
 

@@ -1,5 +1,4 @@
-import React from 'react'
-import { HApiRole } from "../../../apis/hering-api";
+import { type HApiRole } from "../../../apis/hering-api";
 
 type Props = {
     targets: HApiRole[]

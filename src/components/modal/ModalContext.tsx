@@ -1,4 +1,4 @@
-import React, { createContext, ReactNode, useState } from 'react';
+import React, { createContext, type ReactNode, useState } from 'react';
 
 interface ModalContextProps {
     openModal<T = any>(content: ReactNode, options?: ModalOptions): Promise<ModalResult<T>>;

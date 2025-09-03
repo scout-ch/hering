@@ -1,4 +1,4 @@
-import React, { createContext, PropsWithChildren, useContext, useEffect, useMemo, useState, } from 'react';
+import { createContext, type PropsWithChildren, useContext, useEffect, useMemo, useState, } from 'react';
 
 export type DocumentTitleConfig = { baseTitle: string; separator: string };
 

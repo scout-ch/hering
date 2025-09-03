@@ -6,7 +6,7 @@ import { downloadAsExcel } from "./download-excel";
 import { downloadAsCsv } from "./download-csv";
 import { downloadAsIcs } from "./download-ics";
 import DropdownButton from "../../../components/dropdown-button/DropdownButton";
-import { CalendarTask } from "./CalendarForm";
+import { type CalendarTask } from "./CalendarForm";
 
 type Props = {
     startDate: Date,

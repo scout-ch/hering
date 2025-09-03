@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -10,7 +10,7 @@ import searchPageFR from "../../data/search-page/fr.json"
 import searchPageIT from "../../data/search-page/it.json"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import './search.less'
-import { HApiSection } from "../../apis/hering-api";
+import { type HApiSection } from "../../apis/hering-api";
 import { DocumentTitle } from "../../components/page-title";
 
 type Props = {

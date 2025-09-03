@@ -1,4 +1,3 @@
-import React from 'react'
 import { i18n, redirectToLanguage } from '../../i18n'
 import { Link } from 'react-router-dom'
 import FooterSvg from './FooterSvg'

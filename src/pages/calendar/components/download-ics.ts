@@ -1,8 +1,8 @@
 import * as ics from "ics";
-import { EventAttributes } from "ics";
+import { type EventAttributes } from "ics";
 import { saveAs } from "../../../helper/FileHelper";
 import { buildLinks } from "./download-shared";
-import { CalendarTask } from "./CalendarForm";
+import { type CalendarTask } from "./CalendarForm";
 
 export async function downloadAsIcs(tasks: CalendarTask[], designation: string, filename: string) {
     const events = tasks.map(function (task) {

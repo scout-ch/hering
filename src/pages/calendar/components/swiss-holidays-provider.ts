@@ -1,4 +1,4 @@
-import { loadPublicHolidays, loadSchoolHolidays, loadSubdivisions, OHApiHoliday, OHApiLanguageCode, parseLanguageOrDefault } from "../../../apis/openholidays-api";
+import { loadPublicHolidays, loadSchoolHolidays, loadSubdivisions, type OHApiHoliday, type OHApiLanguageCode, parseLanguageOrDefault } from "../../../apis/openholidays-api";
 import { i18n } from "../../../i18n";
 
 class SwissHolidaysProvider {

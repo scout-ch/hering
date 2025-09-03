@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { ModalContext, ModalResult } from './ModalContext';
+import { ModalContext, type ModalResult } from './ModalContext';
 import './modal.less'
 
 const Modal: React.FC = () => {

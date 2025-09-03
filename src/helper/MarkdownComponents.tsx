@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Components } from "react-markdown/lib"
+import { type Components } from "react-markdown"
 import Warning from "../components/warning/Warning"
 
 export const LinkComponent: Components = {

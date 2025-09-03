@@ -7,7 +7,7 @@ import { LinkComponent } from '../../../helper/MarkdownComponents';
 import SearchInput from './SearchInput';
 import { Link, useSearchParams } from "react-router-dom";
 import { SearchHelper } from "../../../helper/SearchHelper";
-import { HApiChapter, HApiSection } from "../../../apis/hering-api";
+import { type  HApiChapter, type HApiSection } from "../../../apis/hering-api";
 
 type Props = {
     sections: HApiSection[]

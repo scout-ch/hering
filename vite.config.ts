@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import viteTsconfigPaths from 'vite-tsconfig-paths'
-import { writeFileSync, existsSync } from 'fs'
+import { existsSync, writeFileSync } from 'fs'
 import { resolve } from 'path'
 
 const generateEnvFile = () => ({
@@ -26,7 +25,7 @@ const generateEnvFile = () => ({
 
 export default defineConfig({
     base: '/',
-    plugins: [react(), viteTsconfigPaths(), generateEnvFile()],
+    plugins: [react(), generateEnvFile()],
     server: {
         open: false,
         port: 3001,

@@ -1,10 +1,10 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from 'react'
+import { type ChangeEvent, useContext, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import CalendarTable from './CalendarTable';
 import { addDays, format, isValid, parse, startOfDay } from "date-fns";
 import Downloads from "./Downloads";
 import Loading from "../../../components/loading/Loading";
-import { HApiRole, HApiTask, HApiTaskChapter, loadTasks } from "../../../apis/hering-api";
+import { type HApiRole, type HApiTask, type HApiTaskChapter, loadTasks } from "../../../apis/hering-api";
 import i18n from "i18next";
 import './calendar-form.less'
 import { Tooltip } from 'react-tooltip'
@@ -12,7 +12,7 @@ import { sessionCache } from "../../../shared/session-cache";
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ModalContext } from "../../../components/modal/ModalContext";
-import HolidaySelectModal, { HolidayModalResultData } from "./HolidaySelectModal";
+import HolidaySelectModal, { type HolidayModalResultData } from "./HolidaySelectModal";
 
 const dateFormat = 'yyyy-MM-dd'
 const initialStartDate = format(Date.now(), dateFormat)

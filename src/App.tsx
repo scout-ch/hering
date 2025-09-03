@@ -1,13 +1,13 @@
-import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { defaultLanguage, i18n } from './i18n';
 import Loading from "./components/loading/Loading";
 import Navigation from "./components/navigation/Navigation";
-import { HApiCalendarPage, HApiImpressumPage, HApiSection, HApiStartPage, loadCalendarPage, loadImpressumPage, loadSections, loadStartPage } from "./apis/hering-api";
+import { type HApiCalendarPage, type HApiImpressumPage, type HApiSection, type HApiStartPage, loadCalendarPage, loadImpressumPage, loadSections, loadStartPage } from "./apis/hering-api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBug } from "@fortawesome/free-solid-svg-icons";
-import { SectionsById } from "./pages/section/SectionPage";
+import { type SectionsById } from "./pages/section/SectionPage";
 import LegacyUrlRedirectHelper from "./helper/LegacyUrlRedirectHelper";
 import { useDocumentTitle } from "./components/page-title";
 

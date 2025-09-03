@@ -1,10 +1,9 @@
-import React from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { LinkComponent } from "../../helper/MarkdownComponents"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFishFins } from "@fortawesome/free-solid-svg-icons";
-import { HApiStartPage } from "../../apis/hering-api";
+import { type HApiStartPage } from "../../apis/hering-api";
 
 type Props = {
     page: HApiStartPage
