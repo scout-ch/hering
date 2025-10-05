@@ -8,12 +8,13 @@ permissions:
   packages: write
 
 jobs:
-  create-release:
-    name: Create Release
+  get-versions:
+    name: Get SemVer
     runs-on: ubuntu-latest
     outputs:
-      image_version_full: ${{ steps.docker_image_version.outputs.fullVersion }}
-      image_version_major: ${{ steps.docker_image_version.outputs.majorVersion }}
+      imageVersionFull: ${{ steps.docker-image-version.outputs.fullVersion }}
+      imageVersionMajor: ${{ steps.docker-image-version.outputs.majorVersion }}
+      semverNext: ${{ steps.semver-info.outputs.nextVersion }}
 
     steps:
       - name: Checkout Code
@@ -25,10 +26,26 @@ jobs:
         with:
           token: ${{ github.token }}
           branch: ${{ github.ref_name }}
-          patchList: 'fix, bugfix, perf, refactor, test, tests, chore'
+
+      - name: Output SemVer
+        id: semver-info
+        run: |
+          nextVersion="${{ steps.semver.outputs.next }}"
+          echo "Current version: ${{ steps.semver.outputs.current }}"
+          echo "Next version: ${{ steps.semver.outputs.next }}"
+          echo "Next strict version: ${{ steps.semver.outputs.nextStrict }}"
+          echo "Next major version: ${{ steps.semver.outputs.nextMajor }}"
+          echo "Next major strict version: ${{ steps.semver.outputs.nextMajorStrict }}"
+          echo "Bump: ${{ steps.semver.outputs.bump }}"
+          echo "Is prerelease: ${{ github.ref != 'refs/heads/main' }}"
+          if [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            echo "nextVersion=$nextVersion" >> "$GITHUB_OUTPUT"
+          else
+            echo "nextVersion=${nextVersion}-beta" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Create Docker image version
-        id: docker_image_version
+        id: docker-image-version
         run: |
           fullVersion="${{ steps.semver.outputs.nextStrict }}"
           majorVersion="${{ steps.semver.outputs.nextMajorStrict }}"
@@ -40,47 +57,9 @@ jobs:
             echo "majorVersion=${majorVersion}-beta" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Create tag
-        uses: actions/github-script@v8
-        with:
-          script: |
-            github.rest.git.createRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: 'refs/tags/${{ steps.semver.outputs.next }}',
-              sha: context.sha
-            })
-
-      - name: Update CHANGELOG
-        id: changelog
-        uses: requarks/changelog-action@v1
-        if: ${{ github.ref == 'refs/heads/main' }}
-        with:
-          token: ${{ github.token }}
-          tag: ${{ steps.semver.outputs.next }}
-
-      - name: Commit CHANGELOG.md
-        uses: stefanzweifel/git-auto-commit-action@v5
-        if: ${{ github.ref == 'refs/heads/main' }}
-        with:
-          branch: ${{ github.ref_name }}
-          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
-          file_pattern: CHANGELOG.md
-
-      - name: Create Release
-        uses: ncipollo/release-action@v1
-        with:
-          draft: ${{ github.ref != 'refs/heads/main' }}
-          makeLatest: ${{ github.ref == 'refs/heads/main' }}
-          name: ${{ steps.semver.outputs.next }}
-          body: ${{ steps.changelog.outputs.changes }}
-          tag: ${{ steps.semver.outputs.next }}
-          commit: ${{ github.sha }}
-          token: ${{ github.token }}
-
   build-and-push:
     runs-on: ubuntu-latest
-    needs: create-release
+    needs: get-versions
 
     steps:
       - name: Show selected ref
@@ -113,8 +92,8 @@ jobs:
         with:
           images: ghcr.io/${{ github.repository }}
           tags: |
-            type=raw,value=${{ needs.create-release.outputs.image_version_full }}
-            type=raw,value=${{ needs.create-release.outputs.image_version_major }}
+            type=raw,value=${{ needs.get-versions.outputs.imageVersionFull }}
+            type=raw,value=${{ needs.get-versions.outputs.imageVersionMajor }}
 
       - name: Build and push
         uses: docker/build-push-action@v6
@@ -126,3 +105,50 @@ jobs:
           push: ${{ github.ref == 'refs/heads/main' }} # TODO: Check if this makes sense
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    needs: build-and-push
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v5
+
+      - name: Create tag
+        uses: actions/github-script@v8
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/${{ needs.get-versions.outputs.semverNext }}',
+              sha: context.sha
+            })
+
+      - name: Update CHANGELOG
+        id: changelog
+        uses: requarks/changelog-action@v1
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          token: ${{ github.token }}
+          tag: ${{ needs.get-versions.outputs.semverNext }}
+
+      - name: Commit CHANGELOG.md
+        uses: stefanzweifel/git-auto-commit-action@v5
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          branch: ${{ github.ref_name }}
+          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
+          file_pattern: CHANGELOG.md
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          name: ${{ needs.get-versions.outputs.semverNext }}
+          body: ${{ steps.changelog.outputs.changes }}
+          tag: ${{ needs.get-versions.outputs.semverNext }}
+          commit: ${{ github.sha }}
+          prerelease: ${{ github.ref != 'refs/heads/main' }}
+          makeLatest: ${{ github.ref == 'refs/heads/main' }}
+          token: ${{ github.token }}
