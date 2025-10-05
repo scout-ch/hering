@@ -8,6 +8,9 @@
     "build": "tsc -b && vite build --outDir dist",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "eslintConfig": {
     "extends": [
       "react-app"
