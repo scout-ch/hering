@@ -2,6 +2,17 @@ name: Build and push Docker image
 
 on:
   workflow_dispatch:
+    inputs:
+      is-prerelease:
+        description: 'Mark this as a prerelease'
+        required: true
+        type: boolean
+        default: false
+      create-release:
+        description: 'Create a release and push Docker image'
+        required: true
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -37,8 +48,8 @@ jobs:
           echo "Next major version: ${{ steps.semver.outputs.nextMajor }}"
           echo "Next major strict version: ${{ steps.semver.outputs.nextMajorStrict }}"
           echo "Bump: ${{ steps.semver.outputs.bump }}"
-          echo "Is prerelease: ${{ github.ref != 'refs/heads/main' }}"
-          if [ "${{ github.ref }}" = "refs/heads/main" ]; then
+          echo "Is prerelease: ${{ inputs.is-prerelease }}"
+          if [ "${{ inputs.is-prerelease }}" = "false" ]; then
             echo "nextVersion=$nextVersion" >> "$GITHUB_OUTPUT"
           else
             echo "nextVersion=${nextVersion}-beta" >> "$GITHUB_OUTPUT"
@@ -49,7 +60,7 @@ jobs:
         run: |
           fullVersion="${{ steps.semver.outputs.nextStrict }}"
           majorVersion="${{ steps.semver.outputs.nextMajorStrict }}"
-          if [ "${{ github.ref }}" = "refs/heads/main" ]; then
+          if [ "${{ inputs.is-prerelease }}" = "false" ]; then
             echo "fullVersion=$fullVersion" >> "$GITHUB_OUTPUT"
             echo "majorVersion=$majorVersion" >> "$GITHUB_OUTPUT"
           else
@@ -67,6 +78,8 @@ jobs:
           echo "Ref:  $GITHUB_REF"
           echo "SHA:  $GITHUB_SHA"
           echo "Repo: $GITHUB_REPOSITORY"
+          echo "Is prerelease: ${{ inputs.is-prerelease }}"
+          echo "Create release: ${{ inputs.create-release }}"
 
       - name: Checkout
         uses: actions/checkout@v5
@@ -102,7 +115,7 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/amd64,linux/arm64
-          push: ${{ github.ref == 'refs/heads/main' }} # TODO: Check if this makes sense
+          push: ${{ inputs.create-release }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
@@ -110,6 +123,7 @@ jobs:
     name: Create Release
     runs-on: ubuntu-latest
     needs: build-and-push
+    if: ${{ inputs.create-release }}
 
     steps:
       - name: Checkout Code
@@ -129,14 +143,13 @@ jobs:
       - name: Update CHANGELOG
         id: changelog
         uses: requarks/changelog-action@v1
-        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           token: ${{ github.token }}
           tag: ${{ needs.get-versions.outputs.semverNext }}
 
       - name: Commit CHANGELOG.md
         uses: stefanzweifel/git-auto-commit-action@v5
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ !inputs.is-prerelease }}
         with:
           branch: ${{ github.ref_name }}
           commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
@@ -149,6 +162,6 @@ jobs:
           body: ${{ steps.changelog.outputs.changes }}
           tag: ${{ needs.get-versions.outputs.semverNext }}
           commit: ${{ github.sha }}
-          prerelease: ${{ github.ref != 'refs/heads/main' }}
-          makeLatest: ${{ github.ref == 'refs/heads/main' }}
+          prerelease: ${{ inputs.is-prerelease }}
+          makeLatest: ${{ !inputs.is-prerelease }}
           token: ${{ github.token }}
