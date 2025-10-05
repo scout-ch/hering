@@ -1,4 +1,40 @@
 # Changelog
+## [v3.1.1] - 2025-10-05
+### :bug: Bug Fixes
+- [`701b8ff`](https://github.com/scout-ch/hering/commit/701b8ff65cdb32cc4fec844f573e4c7066ad31e0) - **deps**: update dependency @fortawesome/react-fontawesome to v0.2.6 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`8363b6c`](https://github.com/scout-ch/hering/commit/8363b6c0d0e1fee714fd7334c8088e1d42a63489) - **deps**: update dependency i18next to v25 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`1be510b`](https://github.com/scout-ch/hering/commit/1be510b2eacdfd0e6b1f0af696a9a85d8d4e3141) - **deps**: update dependency react-markdown to v10 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`4c53a4e`](https://github.com/scout-ch/hering/commit/4c53a4ea1112c86d1f3f4d02f14684f1147b3f19) - **deps**: update font awesome *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`d679673`](https://github.com/scout-ch/hering/commit/d6796731f0cb304819972344b867bc09ebb19646) - **deps**: update dependency react-i18next to v15.7.3 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`929a9aa`](https://github.com/scout-ch/hering/commit/929a9aa90f6d395742d48340987b272376a3088a) - **deps**: update dependency i18next to v25.5.2 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`5631010`](https://github.com/scout-ch/hering/commit/563101084571dbae4c23ec8b3d0a303de4569c01) - **deps**: update dependency axios to v1.12.0 [security] *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`e1d7154`](https://github.com/scout-ch/hering/commit/e1d7154503692cbad54d6c9cb81ebb0695ad6792) - **deps**: update dependency dompurify to v3.2.7 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`5fbf649`](https://github.com/scout-ch/hering/commit/5fbf6490b763cfdcdb6b9bcddf03bb1d41b04da7) - **deps**: update dependency axios to v1.12.2 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+
+### :wrench: Chores
+- [`257a4c4`](https://github.com/scout-ch/hering/commit/257a4c4f143d62dad75bfb805762aeabed2828f7) - **deps**: update dependency @types/node to v22.18.0 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`012b63f`](https://github.com/scout-ch/hering/commit/012b63fa92323bdf24a37e3474dced190b85b2fe) - **deps**: update dependency @types/react to v18.3.24 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`328a193`](https://github.com/scout-ch/hering/commit/328a193a0a12eeb0b0ac074534048ba754384ec3) - **deps**: update dependency less to v4.4.1 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`20092bf`](https://github.com/scout-ch/hering/commit/20092bf20c97bbff5a7614b8fa0f1a99220d18a8) - **deps**: update actions/checkout action to v5 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`fd81ed6`](https://github.com/scout-ch/hering/commit/fd81ed648824c8819a627fcfb2a6359cd39759a8) - **deps**: update actions/download-artifact action to v5 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`8a10a4a`](https://github.com/scout-ch/hering/commit/8a10a4aab894a9f69a562828fd2b22ab327959f8) - **deps**: update node.js to v22 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`39e3939`](https://github.com/scout-ch/hering/commit/39e39395b8accdefaea99e2d024795b9b1d03a16) - **deps**: update actions/setup-node action to v5 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`a813cf9`](https://github.com/scout-ch/hering/commit/a813cf9dff007e3f7a6893d2fcde6e19a4db75a3) - **deps**: update actions/github-script action to v8 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`eb62726`](https://github.com/scout-ch/hering/commit/eb6272638a02e224c38b7662f5a4afe9f6eb006c) - **deps**: update dependency vite to v7.1.5 [security] *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`6d7f7e6`](https://github.com/scout-ch/hering/commit/6d7f7e61c37c48ac52c2f7a22354a28362d2522d) - **deps**: update dependency @vitejs/plugin-react to v5.0.3 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`f3a2035`](https://github.com/scout-ch/hering/commit/f3a203582121e7668f4556b49efb172459c133b9) - **deps**: update dependency @types/node to v22.18.6 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`6351298`](https://github.com/scout-ch/hering/commit/6351298d8fff4da2b4e9f1d71e5126ae9b8f7f34) - **deps**: update node.js to v22.20.0 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`6979536`](https://github.com/scout-ch/hering/commit/6979536d931133a89427c30adaac7b6fe90ef136) - **deps**: update dependency vite to v7.1.7 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`a6e80f2`](https://github.com/scout-ch/hering/commit/a6e80f2ebc7d8e6e342bc5ff980065d65088b77e) - **deps**: update dependency react-i18next to v15.7.4 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`552be5c`](https://github.com/scout-ch/hering/commit/552be5c7a19e54e8ecf2f3def8d3f337f9c9c63c) - **deps**: update dependency @vitejs/plugin-react to v5.0.4 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`8a589e6`](https://github.com/scout-ch/hering/commit/8a589e610a488880791cf376cf54e24ad30b1263) - **deps**: update dependency @types/react to v18.3.25 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`5c460c2`](https://github.com/scout-ch/hering/commit/5c460c24581cae704439c1dc139c31711dfaf6c4) - **deps**: update dependency @types/node to v22.18.8 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`fbebc09`](https://github.com/scout-ch/hering/commit/fbebc094c335aa16fb630225977d6c41d927340d) - **deps**: update dependency typescript to v5.9.3 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`6412e88`](https://github.com/scout-ch/hering/commit/6412e88fd2d0c6a319ba1e0681ca06200efb505f) - **deps**: update dependency i18next to v25.5.3 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`92550f6`](https://github.com/scout-ch/hering/commit/92550f624140263342c1dc69af7de66d05c00b98) - **deps**: update dependency vite to v7.1.9 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`1f3cf96`](https://github.com/scout-ch/hering/commit/1f3cf963229799d74f98d10599b452d81c8c13fd) - **deps**: update font awesome *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+
+
 ## [v3.1.0] - 2025-08-20
 ### :sparkles: New Features
 - [`92af8bc`](https://github.com/scout-ch/hering/commit/92af8bc976f26a0a32fbe9f397313fd853d5918d) - use a fixed pattern to update the document title for pages and current chapters *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -238,3 +274,4 @@
 [v3.0.1]: https://github.com/scout-ch/hering/compare/v3.0.0...v3.0.1
 [v3.0.2]: https://github.com/scout-ch/hering/compare/v3.0.1...v3.0.2
 [v3.1.0]: https://github.com/scout-ch/hering/compare/v3.0.2...v3.1.0
+[v3.1.1]: https://github.com/scout-ch/hering/compare/v3.1.0...v3.1.1
