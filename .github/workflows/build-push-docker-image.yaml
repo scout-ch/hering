@@ -3,16 +3,21 @@ name: Build and push Docker image
 on:
   workflow_dispatch:
     inputs:
+      push-image:
+        description: 'Push image to Registry'
+        required: true
+        type: boolean
+        default: true
+      create-release:
+        description: 'Create GitHub release'
+        required: true
+        type: boolean
+        default: true
       is-prerelease:
         description: 'Mark this as a prerelease'
         required: true
         type: boolean
         default: false
-      create-release:
-        description: 'Create a release and push Docker image'
-        required: true
-        type: boolean
-        default: true
 
 permissions:
   contents: write
@@ -80,6 +85,7 @@ jobs:
           echo "Repo: $GITHUB_REPOSITORY"
           echo "Is prerelease: ${{ inputs.is-prerelease }}"
           echo "Create release: ${{ inputs.create-release }}"
+          echo "Push image: ${{ inputs.push-image }}"
 
       - name: Checkout
         uses: actions/checkout@v5
@@ -115,7 +121,7 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/amd64,linux/arm64
-          push: ${{ inputs.create-release }}
+          push: ${{ inputs.push-image }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
