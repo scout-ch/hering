@@ -128,12 +128,23 @@ jobs:
   create-release:
     name: Create Release
     runs-on: ubuntu-latest
-    needs: [get-versions, build-and-push]
+    needs: [ get-versions, build-and-push ]
     if: ${{ inputs.create-release }}
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v5
+
+      - name: Create tag
+        uses: actions/github-script@v8
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/${{ needs.get-versions.outputs.semverNext }}',
+              sha: context.sha
+            })
 
       - name: Update CHANGELOG
         id: changelog
@@ -149,17 +160,6 @@ jobs:
           branch: ${{ github.ref_name }}
           commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
           file_pattern: CHANGELOG.md
-
-      - name: Create tag
-        uses: actions/github-script@v8
-        with:
-          script: |
-            github.rest.git.createRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: 'refs/tags/${{ needs.get-versions.outputs.semverNext }}',
-              sha: context.sha
-            })
 
       - name: Create Release
         uses: ncipollo/release-action@v1
