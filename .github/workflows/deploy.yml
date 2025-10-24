@@ -43,7 +43,7 @@ jobs:
         run: npm run build
 
       - name: Upload app artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: app-build
           path: ./build
@@ -55,7 +55,7 @@ jobs:
 
     steps:
       - name: Download app build
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: app-build
           path: ./build
