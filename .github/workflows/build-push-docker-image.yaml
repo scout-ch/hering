@@ -154,7 +154,7 @@ jobs:
           tag: ${{ needs.get-versions.outputs.semverNext }}
 
       - name: Commit CHANGELOG.md
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         if: ${{ !inputs.is-prerelease }}
         with:
           branch: ${{ github.ref_name }}
