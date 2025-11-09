@@ -3,11 +3,11 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../../helper/MarkdownComponents';
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
-import { type HApiImpressumPage } from "../../apis/hering-api";
+import { type HApiPage } from "../../apis/hering-api";
 import { DocumentTitle } from "../../components/page-title";
 
 type Props = {
-    page: HApiImpressumPage
+    page: HApiPage
 }
 
 function ImpressumPage(props: Props) {

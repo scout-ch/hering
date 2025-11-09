@@ -3,10 +3,10 @@ import remarkGfm from 'remark-gfm'
 import { LinkComponent } from "../../helper/MarkdownComponents"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFishFins } from "@fortawesome/free-solid-svg-icons";
-import { type HApiStartPage } from "../../apis/hering-api";
+import { type HApiPage } from "../../apis/hering-api";
 
 type Props = {
-    page: HApiStartPage
+    page: HApiPage
 }
 
 function HomePage(props: Props) {

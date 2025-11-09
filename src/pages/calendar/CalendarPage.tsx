@@ -4,11 +4,11 @@ import remarkGfm from 'remark-gfm'
 import { LinkComponent } from '../../helper/MarkdownComponents'
 import CalendarForm from './components/CalendarForm'
 import { faCalendarDays } from "@fortawesome/free-solid-svg-icons"
-import { type HApiCalendarPage } from "../../apis/hering-api";
+import { type HApiPage } from "../../apis/hering-api";
 import { DocumentTitle } from "../../components/page-title";
 
 type Props = {
-    page: HApiCalendarPage
+    page: HApiPage
 }
 
 function CalendarPage(props: Props) {

@@ -5,12 +5,12 @@ import { useTranslation } from "react-i18next";
 import { faBars, faCalendarDays, faFishFins, faSearch } from "@fortawesome/free-solid-svg-icons";
 import './nav.less'
 import { CHAPTER_NAV_UPDATED_EVENT } from "../../shared/constants";
-import { type HApiCalendarPage, type HApiChapter, type  HApiSection, type HApiStartPage } from "../../apis/hering-api";
+import { type HApiPage, type HApiChapter, type  HApiSection } from "../../apis/hering-api";
 import { useDocumentTitle } from "../page-title";
 
 type Props = {
-    startPage: HApiStartPage
-    calendarPage: HApiCalendarPage
+    startPage: HApiPage
+    calendarPage: HApiPage
     sections: HApiSection[]
 }
 

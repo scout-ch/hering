@@ -10,28 +10,12 @@ const client = axios.create({
 
 axiosRetry(client, { retries: 5, retryDelay: axiosRetry.linearDelay(1000) });
 
-export const loadStartPage = async (lang: string): Promise<HApiStartPage> => {
-    const axiosResponse = await client.get<HApiResponse<HApiPageInfo<HApiStartPage>>>(`/start-page?populate[info][populate]=true&fields[0]=documentId&locale=${lang}`);
-    return axiosResponse.data
-        .data // Strapi wraps the actual data in a data object
-        .info;
+export async function loadPage(key: string, lang: string): Promise<HApiPage> {
+    const axiosResponse = await client.get<HApiResponse<HApiPage>>(`/pages/key/${key}?locale=${lang}`);
+    return axiosResponse.data.data; // Strapi wraps the actual data in a data object
 }
 
-export const loadCalendarPage = async (lang: string): Promise<HApiCalendarPage> => {
-    const axiosResponse = await client.get<HApiResponse<HApiPageInfo<HApiCalendarPage>>>(`/calendar-page?populate[info][populate]=true&fields[0]=documentId&locale=${lang}`);
-    return axiosResponse.data
-        .data // Strapi wraps the actual data in a data object
-        .info;
-}
-
-export const loadImpressumPage = async (lang: string): Promise<HApiImpressumPage> => {
-    const axiosResponse = await client.get<HApiResponse<HApiPageInfo<HApiImpressumPage>>>(`/impressum-page?populate[info][populate]=true&fields[0]=documentId&locale=${lang}`);
-    return axiosResponse.data
-        .data // Strapi wraps the actual data in a data object
-        .info;
-}
-
-export const loadSections = async (lang: string): Promise<HApiSection[]> => {
+export async function loadSections(lang: string): Promise<HApiSection[]> {
     const sectionsRequestUrl = '/sections?' +
         'sort[0]=sorting:asc' +
         '&populate[chapters][fields][0]=title' +
@@ -47,9 +31,9 @@ export const loadSections = async (lang: string): Promise<HApiSection[]> => {
         '&status=published'
     const axiosResponse = await client.get<HApiResponse<HApiSection[]>>(`${sectionsRequestUrl}&locale=${lang}`);
     return axiosResponse.data.data;
-};
+}
 
-export const loadTasks = async (lang: string): Promise<HApiTask[]> => {
+export async function loadTasks(lang: string): Promise<HApiTask[]> {
     const tasksRequestUrl = '/tasks?' +
         'sort[0]=daysOffset:asc' +
         '&populate[targets][fields][0]=name' +
@@ -73,27 +57,11 @@ export interface HApiResponse<T> {
     meta: any
 }
 
-export interface HApiPageInfo<T> {
-    info: T
-}
-
 export interface HApiIdentifier {
     documentId: string
 }
 
-export interface HApiStartPage {
-    title: string
-    menuName: string
-    content: string
-}
-
-export interface HApiCalendarPage {
-    title: string
-    menuName: string
-    content: string
-}
-
-export interface HApiImpressumPage {
+export interface HApiPage {
     title: string
     menuName: string
     content: string

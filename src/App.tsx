@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { defaultLanguage, i18n } from './i18n';
 import Loading from "./components/loading/Loading";
 import Navigation from "./components/navigation/Navigation";
-import { type HApiCalendarPage, type HApiImpressumPage, type HApiSection, type HApiStartPage, loadCalendarPage, loadImpressumPage, loadSections, loadStartPage } from "./apis/hering-api";
+import { type HApiPage, type HApiSection, loadPage, loadSections } from "./apis/hering-api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBug } from "@fortawesome/free-solid-svg-icons";
 import { type SectionsById } from "./pages/section/SectionPage";
@@ -26,9 +26,9 @@ export default function App() {
 
     const [initError, setInitError] = useState<string | undefined>();
     const [sections, setSections] = useState<HApiSection[] | undefined>();
-    const [startPage, setStartPage] = useState<HApiStartPage | undefined>();
-    const [calendarPage, setCalendarPage] = useState<HApiCalendarPage | undefined>();
-    const [impressumPage, setImpressumPage] = useState<HApiImpressumPage | undefined>();
+    const [startPage, setStartPage] = useState<HApiPage | undefined>();
+    const [calendarPage, setCalendarPage] = useState<HApiPage | undefined>();
+    const [impressumPage, setImpressumPage] = useState<HApiPage | undefined>();
 
     const { setBaseTitle } = useDocumentTitle();
 
@@ -37,9 +37,9 @@ export default function App() {
             try {
                 const responses = await Promise.all([
                     loadSections(lang),
-                    loadStartPage(lang),
-                    loadCalendarPage(lang),
-                    loadImpressumPage(lang)
+                    loadPage('hering', lang),
+                    loadPage('calendar', lang),
+                    loadPage('impressum', lang)
                 ])
 
                 setSections(responses[0])
