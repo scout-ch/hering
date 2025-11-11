@@ -45,8 +45,22 @@ function getUrlPathSegments(): string[] {
     return `${window.location.pathname}${window.location.hash}`.split('/').filter(p => !!p && p.length > 0);
 }
 
-function redirectToLanguage(lang: string) {
-    const pathWithoutLanguage = getUrlPathSegments().slice(1).join('/');
+function redirectToLanguage(lang?: string) {
+    let pathSegments = getUrlPathSegments();
+
+    const isLanguageProvided = !!lang && lang.length > 0;
+    if (!isLanguageProvided) {
+        lang = i18n.resolvedLanguage || defaultLanguage
+
+        // If no language is set, try to remove a possible language code from the URL.
+        // This is a very naive check assuming language codes are always 2 characters long and no actual path segment is 2 characters long.
+        const isFirstSegmentPossibleLanguageCode = pathSegments[0]?.length === 2 || false;
+        if (isFirstSegmentPossibleLanguageCode) {
+            pathSegments = pathSegments.slice(1)
+        }
+    }
+
+    const pathWithoutLanguage = pathSegments.slice(isLanguageProvided ? 1 : 0).join('/');
     const newPath = `/${lang}${pathWithoutLanguage ? `/${pathWithoutLanguage}` : ''}`;
 
     window.location.replace(newPath);

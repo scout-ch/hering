@@ -1,7 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import { defaultLanguage, i18n } from './i18n';
+import { i18n } from './i18n';
 import Loading from "./components/loading/Loading";
 import Navigation from "./components/navigation/Navigation";
 import { type HApiPage, type HApiSection, loadPage, loadSections } from "./apis/hering-api";
@@ -116,7 +116,7 @@ export default function App() {
                         </Suspense>
                     }/>
 
-                    <Route path="*" element={<Navigate to={`/${i18n.resolvedLanguage || defaultLanguage}`}/>}/>
+                    <Route path="*" element={<Navigate to={`/`}/>}/>
                 </Routes>
 
                 <Footer/>
