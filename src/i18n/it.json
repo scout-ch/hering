@@ -12,7 +12,7 @@
       "waitTwo": "Ci siamo quasi..."
     },
     "homePage": {
-      "fallbackTitle": "SARDINA",
+      "title": "SARDINA",
       "loading": "Sardina si sta caricando..."
     },
     "calendarPage": {

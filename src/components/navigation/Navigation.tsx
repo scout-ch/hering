@@ -5,16 +5,14 @@ import { useTranslation } from "react-i18next";
 import { faBars, faCalendarDays, faFishFins, faSearch } from "@fortawesome/free-solid-svg-icons";
 import './nav.less'
 import { CHAPTER_NAV_UPDATED_EVENT } from "../../shared/constants";
-import { type HApiPage, type HApiChapter, type  HApiSection } from "../../apis/hering-api";
+import { type HApiChapter, type  HApiSection } from "../../apis/hering-api";
 import { useDocumentTitle } from "../page-title";
 
 type Props = {
-    startPage: HApiPage
-    calendarPage: HApiPage
     sections: HApiSection[]
 }
 
-function Navigation({ startPage, calendarPage, sections }: Props) {
+function Navigation({ sections }: Props) {
 
     const { t } = useTranslation()
     const location = useLocation()
@@ -129,7 +127,7 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
                             <Link to="/"
                                   onClick={() => setNavbarOpen(!navbarOpen)}>
                                 <FontAwesomeIcon icon={faFishFins}/>
-                                {startPage.menuName}
+                                {t('homePage.title')}
                             </Link>
                         </li>
                         <li key="search" className={"primary-link " + searchActive}>
@@ -143,7 +141,7 @@ function Navigation({ startPage, calendarPage, sections }: Props) {
                             <Link to="/calendar"
                                   onClick={() => setNavbarOpen(!navbarOpen)}>
                                 <FontAwesomeIcon icon={faCalendarDays}/>
-                                {calendarPage.menuName}
+                                {t('calendarPage.title')}
                             </Link>
                         </li>
                     </ul>

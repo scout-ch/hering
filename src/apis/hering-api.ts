@@ -63,7 +63,6 @@ export interface HApiIdentifier {
 
 export interface HApiPage {
     title: string
-    menuName: string
     content: string
 }
 

@@ -53,7 +53,7 @@ export default function App() {
 
                 setInitError(e.message ?? 'unknown');
             } finally {
-                setBaseTitle(startPage?.title || t('homePage.fallbackTitle'));
+                setBaseTitle(t('homePage.title'));
             }
         }
 
@@ -85,7 +85,7 @@ export default function App() {
             <SectionHashScroller/>
             <LegacyUrlRedirectHelper/>
 
-            <Navigation sections={sections} startPage={startPage} calendarPage={calendarPage}/>
+            <Navigation sections={sections}/>
 
             <main id="main">
                 <Routes>

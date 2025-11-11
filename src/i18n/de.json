@@ -12,7 +12,7 @@
       "waitTwo": "Fast geschafft..."
     },
     "homePage": {
-      "fallbackTitle": "HERING",
+      "title": "HERING",
       "loading": "Hering wird geladen..."
     },
     "calendarPage": {
