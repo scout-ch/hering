@@ -38,23 +38,34 @@ export const LinkComponent: Components = {
         return <Link to={props.href || ''}>{children}</Link>
     },
     img({ node, children, ...props }) {
-        const alt = props.alt
+        const altProp = props.alt
         /*
-        * matches the following:
-        * alt: text, size: 50x50
-        * or
-        * alt: text, width: 50
-        * maybe later: alt.match('alt:\\s([\\w\\s\-\_\*]*),?\\s?(size:\\s((\\d*)x(\\d*)))?,?\\s?(width:\\s(\\d*))?,?\\s?(float: (\\w*))?');
+        * matches the following (any combination or order):
+        * alt="..." width="..." height="..."
         */
-        const found = alt?.match('alt: (.*), (size: ((\\d*)x(\\d*)))?(width: (\\d*))?');
-        if (found) {
-            if (found[7]) {
-                return <img src={props.src} alt={found[1]} width={found[7]}/>
-            } else {
-                return <img src={props.src} alt={found[1]} width={found[4]} height={found[5]}/>
+        const found = altProp?.matchAll(/\b(?<key>alt|width|height)\s*=\s*"(?<val>(?:\\.|[^"\\])*)"/g);
+        let altText: string | undefined = undefined;
+        let width: string | undefined = undefined;
+        let height: string | undefined = undefined;
+
+        for (const m of found || []) {
+            if (!m.groups) {
+                continue;
             }
-        } else {
-            return <img src={props.src} alt={props.alt}/>
+
+            if (m.groups['key'] === 'alt') {
+                altText = m.groups['val'];
+            } else if (m.groups['key'] === 'width') {
+                width = m.groups['val'];
+            } else if (m.groups['key'] === 'height') {
+                height = m.groups['val'];
+            }
         }
+
+        if (!altText && !width && !height) {
+            altText = altProp;
+        }
+
+        return <img src={props.src} alt={altText || ''} width={width} height={height}/>
     }
 }
