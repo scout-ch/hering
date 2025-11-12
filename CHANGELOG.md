@@ -1,4 +1,23 @@
 # Changelog
+## [v3.2.1] - 2025-11-12
+### :bug: Bug Fixes
+- [`9f5ffa8`](https://github.com/scout-ch/hering/commit/9f5ffa8ace459891695edd69e4471c577f1e8568) - limit max width of images *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`2f5927f`](https://github.com/scout-ch/hering/commit/2f5927f05a6daca724a5d70938b74613fdc127bf) - updated image alt text parsing of width and height with a new format *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`3b0d4e2`](https://github.com/scout-ch/hering/commit/3b0d4e2e520ed5ab78ad3b3b74e1415414833120) - improved redirect handling for unknown languages *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`43b8036`](https://github.com/scout-ch/hering/commit/43b8036a866701cfb6e647de9a4e27d113db877b) - use page menu names from client side translations *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`e3c0b13`](https://github.com/scout-ch/hering/commit/e3c0b13dd4e2a68a2c0089a216315908158c4abe) - add artificial calendar task update delay only after first render *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :zap: Performance Improvements
+- [`69f64c8`](https://github.com/scout-ch/hering/commit/69f64c8e3bc456246ba2b9d570956668741d2e44) - load search page content from directly from translations instead of parsing JSON *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`1d29c91`](https://github.com/scout-ch/hering/commit/1d29c915c0aa8db756a333bf0798c6a2cf6142fc) - optimized loading of components and API responses *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :wrench: Chores
+- [`1a60aea`](https://github.com/scout-ch/hering/commit/1a60aea87632569d0f9b358afcabd3e7ba17397b) - **deps**: update dependency i18next to v25.6.2 *(PR [#101](https://github.com/scout-ch/hering/pull/101) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`e2cb7f0`](https://github.com/scout-ch/hering/commit/e2cb7f0892ccc1b2563a8e9724418b042eadb743) - **deps**: update dependency @types/node to v24.10.1 *(PR [#102](https://github.com/scout-ch/hering/pull/102) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`2b271a8`](https://github.com/scout-ch/hering/commit/2b271a8569d8afe038dc70a8d0043035bece7b96) - **deps**: update dependency @vitejs/plugin-react to v5.1.1 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`3bd64eb`](https://github.com/scout-ch/hering/commit/3bd64ebbca8082b81ab6c43f329fe0cc7c5ecb43) - **deps**: update dependency @tanstack/react-query to v5.90.8 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+
+
 ## [v3.2.0] - 2025-11-09
 ### :sparkles: New Features
 - [`cb57aea`](https://github.com/scout-ch/hering/commit/cb57aeab80b12ddb2357dd90f3df283f1958f545) - use new API endpoint to load single page information *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -311,3 +330,4 @@
 [v3.1.0]: https://github.com/scout-ch/hering/compare/v3.0.2...v3.1.0
 [v3.1.1]: https://github.com/scout-ch/hering/compare/v3.1.0...v3.1.1
 [v3.2.0]: https://github.com/scout-ch/hering/compare/v3.1.1...v3.2.0
+[v3.2.1]: https://github.com/scout-ch/hering/compare/v3.2.0...v3.2.1
