@@ -5,15 +5,15 @@ import { useTranslation } from "react-i18next";
 import { faBars, faCalendarDays, faFishFins, faSearch } from "@fortawesome/free-solid-svg-icons";
 import './nav.less'
 import { CHAPTER_NAV_UPDATED_EVENT } from "../../shared/constants";
-import { type HApiChapter, type  HApiSection } from "../../apis/hering-api";
+import { type HApiChapter, type  HApiSection, loadSections } from "../../apis/hering-api";
 import { useDocumentTitle } from "../page-title";
+import { i18n } from "../../i18n";
+import { useQuery } from "@tanstack/react-query";
+import Loading from "../loading/Loading.tsx";
 
-type Props = {
-    sections: HApiSection[]
-}
+function Navigation() {
 
-function Navigation({ sections }: Props) {
-
+    const lang = i18n.language
     const { t } = useTranslation()
     const location = useLocation()
     const { setPageTitle } = useDocumentTitle();
@@ -24,24 +24,19 @@ function Navigation({ sections }: Props) {
 
     const sidebarRef = useRef<HTMLDivElement>(null);
 
-    const handleToggle = () => {
-        setNavbarOpen(!navbarOpen)
-    }
-
-    const handleClickOutside = (event: MouseEvent) => {
-        if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
-            setNavbarOpen(false);
-        }
-    };
+    const sections = useQuery({
+        queryKey: ['sections', lang],
+        queryFn: async () => await loadSections(lang)
+    })
 
     const chapterLookup = useMemo(() => {
-        return sections
+        return (sections.data || [])
             .flatMap(section => section.chapters)
             .reduce((lookup, chapter) => {
                 lookup[chapter.documentId] = chapter;
                 return lookup;
             }, {} as Record<string, HApiChapter>);
-    }, [sections]);
+    }, [sections.data]);
 
     useEffect(() => {
         const updateChapter = (event: Event) => {
@@ -63,6 +58,16 @@ function Navigation({ sections }: Props) {
             document.removeEventListener('mousedown', handleClickOutside);
         }
     }, []);
+
+    const handleToggle = () => {
+        setNavbarOpen(!navbarOpen)
+    }
+
+    const handleClickOutside = (event: MouseEvent) => {
+        if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
+            setNavbarOpen(false);
+        }
+    };
 
     useEffect(() => {
         const cleanPathname = decodeURIComponent(location.pathname);
@@ -87,7 +92,7 @@ function Navigation({ sections }: Props) {
         </ul>
     }
 
-    const sectionList = sections.map((section: HApiSection) => {
+    const sectionList = (sections.data || []).map((section: HApiSection) => {
         const isActive = pathname.replace('/', '') === section.documentId
         const className = isActive ? 'active' : ''
 
@@ -145,9 +150,15 @@ function Navigation({ sections }: Props) {
                             </Link>
                         </li>
                     </ul>
-                    <ul className={`menu-items ${navbarOpen ? "show-menu" : ""}`}>
-                        {sectionList}
-                    </ul>
+                    {
+                        sections.isSuccess
+                            ? <ul className={`menu-items ${navbarOpen ? "show-menu" : ""}`}>
+                                {sectionList}
+                            </ul>
+                            : <div style={{ marginTop: '1em' }}>
+                                <Loading/>
+                            </div>
+                    }
                 </div>
             </nav>
         </div>

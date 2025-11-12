@@ -7,11 +7,9 @@ import { LinkComponent } from '../../../helper/MarkdownComponents';
 import SearchInput from './SearchInput';
 import { Link, useSearchParams } from "react-router-dom";
 import { SearchHelper } from "../../../helper/SearchHelper";
-import { type  HApiChapter, type HApiSection } from "../../../apis/hering-api";
-
-type Props = {
-    sections: HApiSection[]
-}
+import { type  HApiChapter, type HApiSection, loadSections } from "../../../apis/hering-api";
+import { useQuery } from "@tanstack/react-query";
+import { i18n } from "../../../i18n";
 
 type SearchResult = {
     chapterId: string
@@ -25,8 +23,9 @@ interface ChapterWithSection {
     chapter: HApiChapter
 }
 
-function SearchForm(props: Props) {
+function SearchForm() {
 
+    const lang = i18n.language
     const { t } = useTranslation()
     const [searchParams, setSearchParams] = useSearchParams();
 
@@ -36,7 +35,10 @@ function SearchForm(props: Props) {
     const [isLoadingResults, setIsLoadingResults] = useState<boolean>(false)
 
     const timeoutId = useRef<number | undefined>();
-    const searchableSections = useRef<HApiSection[]>(props.sections)
+    const sections = useQuery({
+        queryKey: ['sections', lang],
+        queryFn: async () => await loadSections(lang)
+    })
 
     const executeSearch = useCallback((currentKeyword: string) => {
         setIsLoadingResults(true)
@@ -52,7 +54,7 @@ function SearchForm(props: Props) {
                 return
             }
 
-            const searchResults = searchableSections.current
+            const searchResults = (sections.data || [])
                 .reduce((chapterInfo: ChapterWithSection[], section: HApiSection) => chapterInfo.concat(
                     section.chapters.map(chapter => ({
                         sectionId: section.documentId,
@@ -145,7 +147,7 @@ function SearchForm(props: Props) {
     }
 
     return <>
-        <SearchInput keyword={keyword} onChange={onChangeKeyword}/>
+        <SearchInput keyword={keyword} onChange={onChangeKeyword} isDisabled={!sections.isSuccess}/>
         <br/>
         <Loading isLoading={isLoadingResults}></Loading>
         <div className='search-results'>

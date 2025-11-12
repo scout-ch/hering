@@ -1,6 +1,6 @@
-import { type ChangeEvent, useEffect, useState } from 'react'
+import { type ChangeEvent, lazy, Suspense, useEffect, useState } from 'react'
 import { useTranslation } from "react-i18next";
-import { type Canton, type Holiday, swissHolidaysProvider } from "./swiss-holidays-provider";
+import { type Canton, swissHolidaysProvider } from "./swiss-holidays-provider";
 import Loading from "../../../components/loading/Loading";
 import { useModal } from "../../../components/modal/useModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +10,9 @@ import { format } from "date-fns";
 import { sessionCache } from "../../../shared/session-cache";
 import './holiday-select-modal.less'
 import DOMPurify from 'dompurify';
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
+
+const Error = lazy(() => import('../../../components/error/Error.tsx'));
 
 export interface HolidayModalResultData {
     selectedDate: string;
@@ -37,35 +40,39 @@ function HolidaySelectModal() {
     const { t } = useTranslation()
     const { close, cancel } = useModal()
 
-    const [isLoaded, setIsLoaded] = useState(false)
-    const [isUpdatingHolidays, setIsUpdatingHolidays] = useState(false)
-    const [cantons, setCantons] = useState<Canton[]>([])
-    const [holidays, setHolidays] = useState<Holiday[]>([])
     const [selectedCanton, setSelectedCanton] = useState<Canton | null>(null)
     const [selectedYear, setSelectedYear] = useState<number>(suggestedYear)
 
+    const cantons = useQuery({
+        queryKey: ['openholidays:cantons'],
+        queryFn: async () => await swissHolidaysProvider.loadCantons()
+    })
+
+    const holidays = useQuery({
+        queryKey: ['openholidays:holidays', selectedYear, selectedCanton],
+        queryFn: async () => await swissHolidaysProvider.loadHolidays(selectedYear, selectedCanton),
+        enabled: !!selectedCanton && selectedYear >= minYear && selectedYear <= maxYear,
+        placeholderData: keepPreviousData
+    })
+
     useEffect(() => {
-        const load = async () => {
-            const cantons = await swissHolidaysProvider.loadCantons()
-            setCantons(cantons)
-
-            const cachedCantonCode = sessionCache.get<string>(selectedCantonCodeCacheKey)
-            if (cachedCantonCode) {
-                const cachedCanton = cantons.find(canton => canton.code === cachedCantonCode)
-                if (cachedCanton) {
-                    setSelectedCanton(cachedCanton)
-                }
-            }
-
-            const cachedYear = sessionCache.get<number>(selectedYearCacheKey)
-            if (cachedYear) {
-                setSelectedYear(cachedYear)
-            }
-
-            setIsLoaded(true)
+        if (!cantons.isSuccess) {
+            return;
         }
-        load().catch(console.error)
-    }, [])
+
+        const cachedCantonCode = sessionCache.get<string>(selectedCantonCodeCacheKey)
+        if (cachedCantonCode) {
+            const cachedCanton = cantons.data.find(canton => canton.code === cachedCantonCode)
+            if (cachedCanton) {
+                setSelectedCanton(cachedCanton)
+            }
+        }
+
+        const cachedYear = sessionCache.get<number>(selectedYearCacheKey)
+        if (cachedYear) {
+            setSelectedYear(cachedYear)
+        }
+    }, [cantons.isSuccess])
 
     useEffect(() => {
         if (!selectedCanton
@@ -76,21 +83,15 @@ function HolidaySelectModal() {
 
         sessionCache.set(selectedCantonCodeCacheKey, selectedCanton?.code);
         sessionCache.set(selectedYearCacheKey, selectedYear);
-
-        const load = async () => {
-            setIsUpdatingHolidays(true)
-
-            const holidays = await swissHolidaysProvider.loadHolidays(selectedYear, selectedCanton)
-            setHolidays(holidays)
-
-            setIsUpdatingHolidays(false)
-        }
-        load().catch(console.error)
     }, [selectedYear, selectedCanton]);
 
     const onCantonChanged = (e: ChangeEvent<HTMLSelectElement>) => {
+        if (!cantons.isSuccess) {
+            return;
+        }
+
         const newResponsible = e.currentTarget.value
-        const selectedCanton = cantons.find(canton => canton.code === newResponsible) || null
+        const selectedCanton = cantons.data.find(canton => canton.code === newResponsible) || null
         setSelectedCanton(selectedCanton)
     }
 
@@ -103,8 +104,12 @@ function HolidaySelectModal() {
         close<HolidayModalResultData>({ selectedDate })
     }
 
-    if (!isLoaded) {
+    if (cantons.isPending) {
         return <Loading/>
+    }
+
+    if (cantons.isError) {
+        return <Suspense><Error error={cantons.error}/></Suspense>
     }
 
     return <>
@@ -122,7 +127,7 @@ function HolidaySelectModal() {
                                 value={selectedCanton?.code ?? "DEFAULT"}
                                 onChange={onCantonChanged}>
                             <option disabled value="DEFAULT">{t('holidaysModal.selectCanton')}</option>
-                            {cantons.map(canton => (
+                            {cantons.data.map(canton => (
                                 <option key={canton.code}
                                         value={canton.code}>
                                     {canton.name} ({canton.shortName})
@@ -138,7 +143,7 @@ function HolidaySelectModal() {
                     </div>
                 </div>
 
-                {selectedCanton && !isUpdatingHolidays && (
+                {selectedCanton && holidays.isSuccess && (
                     <div className="table-overflow">
                         <table className="holidays">
                             <thead>
@@ -149,7 +154,7 @@ function HolidaySelectModal() {
                             </tr>
                             </thead>
                             <tbody>
-                            {holidays.map(holiday => (
+                            {holidays.data.map(holiday => (
                                 <tr key={holiday.id}>
                                     <td>
                                         <a className="cursor-pointer" onClick={() => selectDate(holiday.startDate)}>
@@ -174,7 +179,7 @@ function HolidaySelectModal() {
                                     </td>
                                 </tr>
                             ))}
-                            {holidays.length === 0 && (
+                            {holidays.data.length === 0 && (
                                 <tr>
                                     <td colSpan={3}>{t('holidaysModal.noResults')}</td>
                                 </tr>
@@ -184,7 +189,8 @@ function HolidaySelectModal() {
                     </div>
                 )}
 
-                {isUpdatingHolidays && <Loading subtext="Ferien werden geladen..."/>}
+                {holidays.isLoading && <Loading subtext="Ferien werden geladen..."/>}
+                {holidays.isError && <Suspense><Error error={holidays.error}/></Suspense>}
             </div>
         </div>
         <div className="md-footer">

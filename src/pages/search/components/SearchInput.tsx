@@ -7,6 +7,7 @@ type Props = {
     keyword?: string,
     onChange?: (e: React.FormEvent<HTMLInputElement>) => void,
     onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void
+    isDisabled?: boolean
 }
 
 function SearchInput(props: Props) {
@@ -26,6 +27,7 @@ function SearchInput(props: Props) {
                    value={keyword}
                    onChange={onChange}
                    onKeyDown={onKeyDown}
+                   disabled={props.isDisabled}
                    autoFocus/>
         </div>
     </div>

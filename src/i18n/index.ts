@@ -5,7 +5,6 @@ import translationsFrench from './fr.json'
 import translationsItalian from './it.json'
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { setDefaultOptions } from "date-fns";
-import { de, fr, it } from "date-fns/locale";
 
 const resources = {
     de: translationsGerman,
@@ -15,6 +14,25 @@ const resources = {
 
 const supportedLanguages = ['de', 'fr', 'it'];
 const defaultLanguage = 'de';
+
+async function setDateFnsLocale(language: string) {
+    let locale;
+
+    switch (language) {
+        case 'fr':
+            locale = (await import('date-fns/locale/fr')).fr;
+            break;
+        case 'it':
+            locale = (await import('date-fns/locale/it')).it;
+            break;
+        case 'de':
+        default:
+            locale = (await import('date-fns/locale/de')).de;
+            break;
+    }
+
+    setDefaultOptions({ locale });
+}
 
 i18n.use(initReactI18next)
     .use(LanguageDetector)
@@ -29,17 +47,8 @@ i18n.use(initReactI18next)
             order: ['path', 'localStorage', 'navigator'],
             caches: ['localStorage']
         }
-    });
-
-setDefaultOptions({
-    locale: i18n.language === 'de'
-        ? de
-        : i18n.language === 'fr'
-            ? fr
-            : i18n.language === 'it'
-                ? it
-                : de
-});
+    })
+    .then(() => setDateFnsLocale(i18n.language));
 
 function getUrlPathSegments(): string[] {
     return `${window.location.pathname}${window.location.hash}`.split('/').filter(p => !!p && p.length > 0);

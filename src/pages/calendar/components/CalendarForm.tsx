@@ -1,8 +1,7 @@
-import { type ChangeEvent, useContext, useEffect, useRef, useState } from 'react'
+import { type ChangeEvent, lazy, Suspense, useContext, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import CalendarTable from './CalendarTable';
 import { addDays, format, isValid, parse, startOfDay } from "date-fns";
-import Downloads from "./Downloads";
 import Loading from "../../../components/loading/Loading";
 import { type HApiRole, type HApiTask, type HApiTaskChapter, loadTasks } from "../../../apis/hering-api";
 import i18n from "i18next";
@@ -13,6 +12,9 @@ import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ModalContext } from "../../../components/modal/ModalContext";
 import HolidaySelectModal, { type HolidayModalResultData } from "./HolidaySelectModal";
+import { useQuery } from "@tanstack/react-query";
+
+const Downloads = lazy(() => import('./Downloads'));
 
 const dateFormat = 'yyyy-MM-dd'
 const initialStartDate = format(Date.now(), dateFormat)
@@ -35,6 +37,7 @@ export type CalendarTask = {
 
 function CalendarForm() {
 
+    const lang = i18n.language
     const { t } = useTranslation()
     const { openModal } = useContext(ModalContext);
 
@@ -47,12 +50,25 @@ function CalendarForm() {
     const [responsible, setResponsible] = useState<string>(initialResponsible)
     const [puffer, setPuffer] = useState<number>(initialPuffer)
     const [designation, setDesignation] = useState<string>(defaultCalendarDesignation)
-    const [taskList, setTaskList] = useState<HApiTask[] | undefined>(undefined)
     const [calendarTasks, setCalendarTasks] = useState<CalendarTask[]>([])
+
+    const taskList = useQuery({
+        queryKey: ['tasks', lang],
+        queryFn: async () => await loadTasks(lang)
+    })
+
+    const onStartDateChanged = (e: ChangeEvent<HTMLInputElement>) => {
+        const newStartDate = e.currentTarget.value
+        updateStartDate(newStartDate)
+    }
 
     const updateStartDate = (newStartDate: string) => {
         setStartDate(newStartDate)
         sessionCache.set(startDateCacheKey, newStartDate)
+    }
+
+    const onResponsibleeChanged = (e: ChangeEvent<HTMLSelectElement>) => {
+        updateResponsible(e.currentTarget.value)
     }
 
     const updateResponsible = (newResponsible: string) => {
@@ -67,6 +83,10 @@ function CalendarForm() {
         }
     }
 
+    const onBufferChanged = (e: ChangeEvent<HTMLInputElement>) => {
+        updatePuffer(parseInt(e.currentTarget.value) || initialPuffer)
+    }
+
     const updatePuffer = (newPuffer: number) => {
         setPuffer(newPuffer)
         sessionCache.set(bufferCacheKey, newPuffer);
@@ -77,19 +97,6 @@ function CalendarForm() {
         } else {
             pufferInput?.classList.add('highlight')
         }
-    }
-
-    const onStartDateChanged = (e: ChangeEvent<HTMLInputElement>) => {
-        const newStartDate = e.currentTarget.value
-        updateStartDate(newStartDate)
-    }
-
-    const onResponsibleeChanged = (e: ChangeEvent<HTMLSelectElement>) => {
-        updateResponsible(e.currentTarget.value)
-    }
-
-    const onBufferChanged = (e: ChangeEvent<HTMLInputElement>) => {
-        updatePuffer(parseInt(e.currentTarget.value) || initialPuffer)
     }
 
     const onDesignationChanged = (e: ChangeEvent<HTMLInputElement>) => {
@@ -117,14 +124,14 @@ function CalendarForm() {
 
     useEffect(() => {
         const isValidDate = isValid(parsedStartDate)
-        if (!isValidDate || !taskList) {
+        if (!isValidDate || !taskList.isSuccess) {
             return
         }
 
-        // Introduce pseudo loading time so that the user sees that something is updating
+        // Introduce artificial loading time so that the user sees that something is updating
         setIsUpdatingTasks(true);
 
-        const filteredTasks = taskList.filter((task: HApiTask) =>
+        const filteredTasks = (taskList.data || []).filter((task: HApiTask) =>
             responsible === 'all'
             || task.responsible.some(r => r.abbreviation === responsible))
 
@@ -156,35 +163,24 @@ function CalendarForm() {
             setCalendarTasks(tasks)
             setIsUpdatingTasks(false)
         }, delay)
-    }, [parsedStartDate, responsible, puffer, taskList]);
+    }, [parsedStartDate, responsible, puffer, taskList.isSuccess]);
 
     useEffect(() => {
-        const getTasks = async () => {
-            const tasks = await loadTasks(i18n.language)
-            setTaskList(tasks)
-            setIsLoadingTasks(false)
-        }
+        const startDate = sessionCache.get<string>(startDateCacheKey);
+        setStartDate(startDate || initialStartDate)
 
-        const loadCachedValues = () => {
-            const startDate = sessionCache.get<string>(startDateCacheKey);
-            setStartDate(startDate || initialStartDate)
+        const responsible = sessionCache.get<string>(responsibleCacheKey);
+        updateResponsible(responsible || initialResponsible)
 
-            const responsible = sessionCache.get<string>(responsibleCacheKey);
-            updateResponsible(responsible || initialResponsible)
+        const buffer = sessionCache.get<number>(bufferCacheKey);
+        updatePuffer(buffer || 0)
 
-            const buffer = sessionCache.get<number>(bufferCacheKey);
-            updatePuffer(buffer || 0)
-
-            const calendarPrefix = sessionCache.get<string>(calendarDesignationCacheKey);
-            setDesignation(calendarPrefix || t('calendarPage.defaultDesignation'))
-        }
+        const calendarPrefix = sessionCache.get<string>(calendarDesignationCacheKey);
+        setDesignation(calendarPrefix || t('calendarPage.defaultDesignation'))
 
         return () => {
             isFirstRender.current = true;
         }
-
-        loadCachedValues()
-        getTasks().catch(console.error)
     }, []);
 
     return (
@@ -261,12 +257,15 @@ function CalendarForm() {
             </div>
 
             <div className='download'>
-                <Downloads startDate={parsedStartDate} tasks={calendarTasks} designation={designation}/>
+                <Suspense fallback={<></>}>
+                    <Downloads startDate={parsedStartDate} tasks={calendarTasks} designation={designation}/>
+                </Suspense>
             </div>
 
-            <Loading isLoading={isLoadingTasks || !taskList}/>
-            {!isLoadingTasks && !!taskList
-                && <CalendarTable tasks={calendarTasks} prefix={designation} isUpdating={isUpdatingTasks}/>}
+            {taskList.isSuccess
+                ? <CalendarTable tasks={calendarTasks} prefix={designation} isUpdating={isUpdatingTasks}/>
+                : <Loading/>
+            }
         </div>
     );
 }

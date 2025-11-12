@@ -9,7 +9,7 @@ const client = axios.create({
     },
 });
 
-axiosRetry(client, { retries: 5, retryDelay: axiosRetry.linearDelay(1000) });
+axiosRetry(client, { retries: 3, retryDelay: axiosRetry.linearDelay(1000) });
 
 export const loadSubdivisions = async (languageCode?: OHApiLanguageCode): Promise<OHApiSubdivision[]> => {
     const params = getBaseParams(languageCode);

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useParams } from 'react-router'
 import Chapter from "./components/Chapter";
 import Markdown from "react-markdown";
@@ -6,24 +6,35 @@ import remarkGfm from "remark-gfm";
 import { LinkComponent } from "../../helper/MarkdownComponents";
 import { useLocation } from "react-router-dom";
 import { handleIntersectionChanged } from "./helpers/intersection.helper";
-import { type HApiSection } from "../../apis/hering-api";
+import { type HApiSection, loadSections } from "../../apis/hering-api";
 import { useDocumentTitle } from "../../components/page-title";
+import { useQuery } from "@tanstack/react-query";
+import { i18n } from "../../i18n";
 
-export type SectionsById = {
+type SectionsById = {
     [key: string]: HApiSection
-}
-
-type Props = {
-    sections: SectionsById
 }
 
 type Params = {
     sectionId: string
 }
 
-function SectionPage(props: Props) {
+function SectionPage() {
 
+    const lang = i18n.language
     const { setPageTitle } = useDocumentTitle();
+
+    const sections = useQuery({
+        queryKey: ['sections', lang],
+        queryFn: async () => await loadSections(lang)
+    })
+
+    const sectionsById = useMemo(() => {
+        return (sections.data || []).reduce((map: SectionsById, section: HApiSection) => {
+            map[section.documentId] = section
+            return map
+        }, {})
+    }, [sections.data])
 
     const location = useLocation()
     const { sectionId } = useParams<Params>()
@@ -34,7 +45,7 @@ function SectionPage(props: Props) {
         const cleanSectionId = sectionHashIndex === -1
             ? sectionId
             : sectionId?.substring(0, sectionHashIndex);
-        setSection(props.sections[cleanSectionId || ''])
+        setSection(sectionsById[cleanSectionId || ''])
 
         return () => {
             setPageTitle(undefined) // Remove page title when the section is reset

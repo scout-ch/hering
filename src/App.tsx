@@ -1,13 +1,9 @@
-import { lazy, Suspense, useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { i18n } from './i18n';
 import Loading from "./components/loading/Loading";
 import Navigation from "./components/navigation/Navigation";
-import { type HApiPage, type HApiSection, loadPage, loadSections } from "./apis/hering-api";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBug } from "@fortawesome/free-solid-svg-icons";
-import { type SectionsById } from "./pages/section/SectionPage";
 import LegacyUrlRedirectHelper from "./helper/LegacyUrlRedirectHelper";
 import { useDocumentTitle } from "./components/page-title";
 
@@ -23,96 +19,51 @@ export default function App() {
 
     const lang = i18n.language
     const { t } = useTranslation()
-
-    const [initError, setInitError] = useState<string | undefined>();
-    const [sections, setSections] = useState<HApiSection[] | undefined>();
-    const [startPage, setStartPage] = useState<HApiPage | undefined>();
-    const [calendarPage, setCalendarPage] = useState<HApiPage | undefined>();
-    const [impressumPage, setImpressumPage] = useState<HApiPage | undefined>();
-
     const { setBaseTitle } = useDocumentTitle();
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const responses = await Promise.all([
-                    loadSections(lang),
-                    loadPage('hering', lang),
-                    loadPage('calendar', lang),
-                    loadPage('impressum', lang)
-                ])
-
-                setSections(responses[0])
-                setStartPage(responses[1])
-                setCalendarPage(responses[2])
-                setImpressumPage(responses[3])
-            } catch (e: any) {
-                if (!(e instanceof Error)) {
-                    e = new Error(e);
-                }
-
-                setInitError(e.message ?? 'unknown');
-            } finally {
-                setBaseTitle(t('homePage.title'));
-            }
-        }
-
-        fetchData()
+        setBaseTitle(t('homePage.title'));
     }, [lang])
 
-    if (initError) {
-        return <div className='app-init error'>
-            <FontAwesomeIcon icon={faBug} size="2x"/>
-            <div>Es gab einen unerwarteten Fehler. Bitte versuche es später erneut.</div>
-            <hr/>
-            <div className="message">{initError}</div>
-        </div>
-    }
-
-    if (!i18n.isInitialized || !sections || !startPage || !calendarPage || !impressumPage) {
+    if (!i18n.isInitialized) {
         return <div className='app-init'>
             <Loading subtext={t('homePage.loading', 'Loading...')} showWaitMessages={true}/>
         </div>
     }
-
-    const sectionsByKey = sections.reduce((map: SectionsById, section: HApiSection) => {
-        map[section.documentId] = section
-        return map
-    }, {})
 
     return <div className='app'>
         <Router basename={`/${lang}`}>
             <SectionHashScroller/>
             <LegacyUrlRedirectHelper/>
 
-            <Navigation sections={sections}/>
+            <Navigation/>
 
             <main id="main">
                 <Routes>
                     <Route index element={
                         <Suspense fallback={<Loading centerInViewport={true}/>}>
-                            <HomePage page={startPage}/>
+                            <HomePage/>
                         </Suspense>
                     }/>
 
                     <Route path="search" element={
                         <Suspense fallback={<Loading centerInViewport={true}/>}>
-                            <SearchPage sections={sections}/>
+                            <SearchPage/>
                         </Suspense>
                     }/>
                     <Route path="calendar" element={
                         <Suspense fallback={<Loading centerInViewport={true}/>}>
-                            <CalendarPage page={calendarPage}/>
+                            <CalendarPage/>
                         </Suspense>
                     }/>
                     <Route path="impressum" element={
                         <Suspense fallback={<Loading centerInViewport={true}/>}>
-                            <ImpressumPage page={impressumPage}/>
+                            <ImpressumPage/>
                         </Suspense>
                     }/>
                     <Route path=":sectionId" element={
                         <Suspense fallback={<Loading centerInViewport={true}/>}>
-                            <SectionPage sections={sectionsByKey}/>
+                            <SectionPage/>
                         </Suspense>
                     }/>
 

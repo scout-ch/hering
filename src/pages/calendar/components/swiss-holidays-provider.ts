@@ -1,44 +1,34 @@
-import { loadPublicHolidays, loadSchoolHolidays, loadSubdivisions, type OHApiHoliday, type OHApiLanguageCode, parseLanguageOrDefault } from "../../../apis/openholidays-api";
+import { loadPublicHolidays, loadSchoolHolidays, loadSubdivisions, type OHApiLanguageCode, parseLanguageOrDefault } from "../../../apis/openholidays-api";
 import { i18n } from "../../../i18n";
 
 class SwissHolidaysProvider {
 
-    private cantonCache: Canton[] = [];
-    private publicHolidaysCache: Map<number, OHApiHoliday[]> = new Map<number, OHApiHoliday[]>()
-    private schoolHolidaysCache: Map<number, OHApiHoliday[]> = new Map<number, OHApiHoliday[]>()
-
     private relevantPublicHolidayNames: string[] = ['Ascension Day', 'Easter Monday', 'Pentecost Monday'];
-    private apiLanguage: OHApiLanguageCode
+    private readonly apiLanguage: OHApiLanguageCode
 
     constructor(lang: string) {
         this.apiLanguage = parseLanguageOrDefault(lang);
     }
 
     public async loadCantons(): Promise<Canton[]> {
-        if (this.cantonCache.length > 0) {
-            return this.cantonCache;
-        }
-
         const subdivisions = await loadSubdivisions()
 
-        const cantons = subdivisions.map(subdivision => {
+        return subdivisions.map(subdivision => {
             return {
                 code: subdivision.code,
                 shortName: subdivision.shortName,
                 name: subdivision.name.find(name => name.language === this.apiLanguage)?.text
             } as Canton
         })
-
-        this.cantonCache = cantons;
-        return cantons;
     }
 
     public async loadHolidays(year: number, canton?: Canton | null) {
         const from = new Date(year, 0, 1)
         const to = new Date(year, 11, 31)
 
-        let publicHolidays = await this.loadPublicHolidaysCached(year, from, to);
-        let schoolHolidays = await this.loadSchoolHolidaysCached(year, from, to);
+        let publicHolidays = (await loadPublicHolidays(from, to))
+            .filter(h => this.relevantPublicHolidayNames.includes(h.name.find(name => name.language === 'EN')?.text ?? ''));
+        let schoolHolidays = await loadSchoolHolidays(from, to)
 
         if (canton) {
             publicHolidays = publicHolidays.filter(h => h.nationwide || h.subdivisions?.some(s => s.code === canton.code));
@@ -65,29 +55,6 @@ class SwissHolidaysProvider {
                     comment: relevantComments.map(c => c.text).join(', ')
                 } as Holiday;
             });
-    }
-
-    private async loadPublicHolidaysCached(year: number, from: Date, to: Date) {
-        if (this.publicHolidaysCache.has(year)) {
-            return this.publicHolidaysCache.get(year)!;
-        }
-
-        const relevantPublicHolidays = (await loadPublicHolidays(from, to))
-            .filter(h => this.relevantPublicHolidayNames.includes(h.name.find(name => name.language === 'EN')?.text ?? ''));
-        this.publicHolidaysCache.set(year, relevantPublicHolidays);
-
-        return relevantPublicHolidays;
-    }
-
-    private async loadSchoolHolidaysCached(year: number, from: Date, to: Date) {
-        if (this.schoolHolidaysCache.has(year)) {
-            return this.schoolHolidaysCache.get(year)!;
-        }
-
-        const schoolHolidays = await loadSchoolHolidays(from, to)
-        this.schoolHolidaysCache.set(year, schoolHolidays);
-
-        return schoolHolidays;
     }
 }
 
