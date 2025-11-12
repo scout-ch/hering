@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/scout-ch/hering/actions/workflows/build.yaml/badge.svg?branch=develop)](https://github.com/scout-ch/hering/actions/workflows/build.yaml)
 [![Deployment Status](https://github.com/scout-ch/hering/actions/workflows/build-push-docker-image.yaml/badge.svg?branch=main)](https://github.com/scout-ch/hering/actions/workflows/build-push-docker-image.yaml)
 
-[hering.scout.ch](hering.scout.ch)
+[https://hering.scout.ch](https://hering.scout.ch)
 
 [DE] Leitfaden zur Administration von Pfadilagern\
 [FR] Guide des démarches administratives pour les camps scouts\
@@ -13,7 +13,7 @@ This repo is only the UI, the content is handled in a strapi CMS see repository:
 
 ## Development
 
-### `npm run start`
+### `npm run dev`
 
 Runs the app in the development mode. Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
