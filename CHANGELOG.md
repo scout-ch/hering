@@ -1,4 +1,9 @@
 # Changelog
+## [v3.2.2] - 2025-11-12
+### :bug: Bug Fixes
+- [`c84270c`](https://github.com/scout-ch/hering/commit/c84270c484bb8addca6e9b4c985c014d45baecc9) - update dependencies in useEffect to watch for sectionsById *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v3.2.1] - 2025-11-12
 ### :bug: Bug Fixes
 - [`9f5ffa8`](https://github.com/scout-ch/hering/commit/9f5ffa8ace459891695edd69e4471c577f1e8568) - limit max width of images *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -331,3 +336,4 @@
 [v3.1.1]: https://github.com/scout-ch/hering/compare/v3.1.0...v3.1.1
 [v3.2.0]: https://github.com/scout-ch/hering/compare/v3.1.1...v3.2.0
 [v3.2.1]: https://github.com/scout-ch/hering/compare/v3.2.0...v3.2.1
+[v3.2.2]: https://github.com/scout-ch/hering/compare/v3.2.1...v3.2.2
