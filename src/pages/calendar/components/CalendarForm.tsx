@@ -1,4 +1,4 @@
-import { type ChangeEvent, useContext, useEffect, useState } from 'react'
+import { type ChangeEvent, useContext, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import CalendarTable from './CalendarTable';
 import { addDays, format, isValid, parse, startOfDay } from "date-fns";
@@ -40,7 +40,7 @@ function CalendarForm() {
 
     const defaultCalendarDesignation = t('calendarPage.defaultDesignation');
 
-    const [isLoadingTasks, setIsLoadingTasks] = useState<boolean>(true)
+    const isFirstRender = useRef(true);
     const [isUpdatingTasks, setIsUpdatingTasks] = useState<boolean>(true)
     const [startDate, setStartDate] = useState<string>(initialStartDate)
     const [parsedStartDate, setParsedStartDate] = useState<Date>(new Date())
@@ -150,10 +150,12 @@ function CalendarForm() {
             .sort((a: CalendarTask, b: CalendarTask) => a.deadline.getTime() - b.deadline.getTime())
 
         // Update calendarTasks after the pseudo loading time
+        const delay = isFirstRender.current ? 0 : 500;
+        isFirstRender.current = false;
         setTimeout(() => {
             setCalendarTasks(tasks)
             setIsUpdatingTasks(false)
-        }, 500)
+        }, delay)
     }, [parsedStartDate, responsible, puffer, taskList]);
 
     useEffect(() => {
@@ -175,6 +177,10 @@ function CalendarForm() {
 
             const calendarPrefix = sessionCache.get<string>(calendarDesignationCacheKey);
             setDesignation(calendarPrefix || t('calendarPage.defaultDesignation'))
+        }
+
+        return () => {
+            isFirstRender.current = true;
         }
 
         loadCachedValues()
