@@ -1,5 +1,8 @@
 # Hering 
 
+[![Build Status](https://github.com/scout-ch/hering/actions/workflows/build.yaml/badge.svg?branch=develop)](https://github.com/scout-ch/hering/actions/workflows/build.yaml)
+[![Deployment Status](https://github.com/scout-ch/hering/actions/workflows/build-push-docker-image.yaml/badge.svg?branch=main)](https://github.com/scout-ch/hering/actions/workflows/build-push-docker-image.yaml)
+
 [hering.scout.ch](hering.scout.ch)
 
 [DE] Leitfaden zur Administration von Pfadilagern\
