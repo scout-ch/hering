@@ -50,7 +50,7 @@ function SectionPage() {
         return () => {
             setPageTitle(undefined) // Remove page title when the section is reset
         }
-    }, [sectionId]);
+    }, [sectionId, sectionsById]);
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => handleIntersectionChanged(entries, location.hash), {
