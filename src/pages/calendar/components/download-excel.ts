@@ -52,7 +52,7 @@ const redBackground: Fill = {
 export async function downloadAsExcel(startOfCamp: Date, tasks: CalendarTask[], filename: string) {
     const workbook = new Workbook();
     workbook.creator = 'Hering / Sardine / Sardina';
-    workbook.created = new Date();
+    workbook.created = toUTCDate(new Date());
 
     const sheet = workbook.addWorksheet(t('calendarPage.excel.title'), {
         pageSetup: { paperSize: 9, orientation: 'portrait', fitToPage: true }
@@ -70,7 +70,10 @@ export async function downloadAsExcel(startOfCamp: Date, tasks: CalendarTask[], 
 
     sheet.addRow([])
 
-    row = sheet.addRow({ when: t('calendarPage.startDate'), what: startOfCamp })
+    row = sheet.addRow({
+        when: t('calendarPage.startDate'),
+        what: toUTCDate(startOfCamp)
+    })
     row.eachCell((cell, _) => {
         cell.border = thinBorders;
         cell.fill = grayForeground
@@ -183,7 +186,7 @@ function addTaskRows(subtitle: string, tasks: CalendarTask[], sheet: Worksheet) 
             .join(', ')
 
         return {
-            when: task.deadline,
+            when: toUTCDate(task.deadline),
             what: task.title,
             who: responsible,
             toWhom: targets
@@ -201,6 +204,7 @@ function addTaskRows(subtitle: string, tasks: CalendarTask[], sheet: Worksheet) 
             cell.border = thinBorders;
 
             if (cell.col == "1") { // 1 = when-Column
+                cell.numFmt = 'dd.MM.yyyy';
                 cell.alignment = {
                     ...cell.alignment,
                     horizontal: 'left'
@@ -213,4 +217,13 @@ function addTaskRows(subtitle: string, tasks: CalendarTask[], sheet: Worksheet) 
         doneCell.alignment = { horizontal: 'center', vertical: 'middle' }
         doneCell.border = thinBorders;
     })
+}
+
+function toUTCDate(date: Date): Date {
+    return new Date(Date.UTC(
+        date.getFullYear(),
+        date.getMonth(),
+        date.getDate()
+    ));
+
 }
