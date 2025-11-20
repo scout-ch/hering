@@ -34,7 +34,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Get Next Version
         id: semver
@@ -88,7 +88,7 @@ jobs:
           echo "Push image: ${{ inputs.push-image }}"
 
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.sha }}
 
@@ -133,7 +133,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Create tag
         uses: actions/github-script@v8
