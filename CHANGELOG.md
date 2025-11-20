@@ -1,4 +1,16 @@
 # Changelog
+## [v3.2.3] - 2025-11-20
+### :bug: Bug Fixes
+- [`8d11a7c`](https://github.com/scout-ch/hering/commit/8d11a7ca6689d3704be321c6e077b20f3e9594d8) - convert dates to UTC when passing them to `exeljs` for proper date handling [#110](https://github.com/scout-ch/hering/pull/110) *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :wrench: Chores
+- [`dd8015a`](https://github.com/scout-ch/hering/commit/dd8015a02c18fae94226ee6f282741fa6125d5f5) - **deps**: update react-router monorepo to v6.30.2 *(PR [#105](https://github.com/scout-ch/hering/pull/105) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`d690452`](https://github.com/scout-ch/hering/commit/d69045241fb422ddcdc651d9e4de40921c9d3196) - **deps**: update dependency @tanstack/react-query to v5.90.9 *(PR [#106](https://github.com/scout-ch/hering/pull/106) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`0fdc3db`](https://github.com/scout-ch/hering/commit/0fdc3db6ec431332019586699af344687f0ebbbb) - **deps**: update dependency @tanstack/react-query to v5.90.10 *(PR [#107](https://github.com/scout-ch/hering/pull/107) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`2dd7122`](https://github.com/scout-ch/hering/commit/2dd7122d88ab30f0169c83f0f1f502aff787e4a1) - **deps**: update dependency @types/react to v18.3.27 *(PR [#108](https://github.com/scout-ch/hering/pull/108) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`9bba9fb`](https://github.com/scout-ch/hering/commit/9bba9fb57db8b9970f32db37553d79af13c3e7c7) - **deps**: update dependency i18next to v25.6.3 *(PR [#109](https://github.com/scout-ch/hering/pull/109) by [@renovate[bot]](https://github.com/apps/renovate))*
+
+
 ## [v3.2.2] - 2025-11-12
 ### :bug: Bug Fixes
 - [`c84270c`](https://github.com/scout-ch/hering/commit/c84270c484bb8addca6e9b4c985c014d45baecc9) - update dependencies in useEffect to watch for sectionsById *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -337,3 +349,4 @@
 [v3.2.0]: https://github.com/scout-ch/hering/compare/v3.1.1...v3.2.0
 [v3.2.1]: https://github.com/scout-ch/hering/compare/v3.2.0...v3.2.1
 [v3.2.2]: https://github.com/scout-ch/hering/compare/v3.2.1...v3.2.2
+[v3.2.3]: https://github.com/scout-ch/hering/compare/v3.2.2...v3.2.3
