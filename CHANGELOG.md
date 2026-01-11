@@ -1,4 +1,39 @@
 # Changelog
+## [v3.3.0] - 2026-01-11
+### :sparkles: New Features
+- [`87b3e1f`](https://github.com/scout-ch/hering/commit/87b3e1ffb2d5ec9e19df62cf38bcce377d0dda18) - added ability to install the Hering as a PWA *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :wrench: Chores
+- [`844b463`](https://github.com/scout-ch/hering/commit/844b463a10eb4a5833f0079f8305f20a0403bcbb) - **deps**: update dependency vite to v7.2.4 *(PR [#111](https://github.com/scout-ch/hering/pull/111) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`290ef3e`](https://github.com/scout-ch/hering/commit/290ef3e93e458e5593d140623a20cf1912e43a2b) - **deps**: update actions/checkout action to v6 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`1059021`](https://github.com/scout-ch/hering/commit/105902143d9346ac29f240e5aa887f98fedf8a2c) - **deps**: update dependency @tanstack/react-query to v5.90.11 *(PR [#113](https://github.com/scout-ch/hering/pull/113) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`834b3ab`](https://github.com/scout-ch/hering/commit/834b3abd60b1061b878bbe5d26a981b1db884d18) - **deps**: update dependency @fortawesome/react-fontawesome to v3.1.1 *(PR [#114](https://github.com/scout-ch/hering/pull/114) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`b2b65eb`](https://github.com/scout-ch/hering/commit/b2b65ebf797f4fffb66e2e8da88725c5955da329) - **deps**: update dependency vite to v7.2.6 *(PR [#115](https://github.com/scout-ch/hering/pull/115) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`a9c5008`](https://github.com/scout-ch/hering/commit/a9c50087bc8a3cb30bfad6a0974e8ffc047af023) - **deps**: update dependency i18next to v25.7.1 *(PR [#116](https://github.com/scout-ch/hering/pull/116) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`5580b91`](https://github.com/scout-ch/hering/commit/5580b91bbf1e1decc071b4ad564be199194ad86d) - **deps**: update dependency @tanstack/react-query to v5.90.12 *(PR [#117](https://github.com/scout-ch/hering/pull/117) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`a232aa0`](https://github.com/scout-ch/hering/commit/a232aa05fe8d0e933d08f5fed25b4034d637edc5) - **deps**: update dependency vite to v7.2.7 *(PR [#118](https://github.com/scout-ch/hering/pull/118) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`5fa4ca9`](https://github.com/scout-ch/hering/commit/5fa4ca9e156a77be54f7b80051a710f4676e3a41) - **deps**: update dependency i18next to v25.7.2 *(PR [#119](https://github.com/scout-ch/hering/pull/119) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`9c9107f`](https://github.com/scout-ch/hering/commit/9c9107f67c01f63c13728f5d0ae6950b2a89c52b) - **deps**: update dependency @vitejs/plugin-react to v5.1.2 *(PR [#120](https://github.com/scout-ch/hering/pull/120) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`e007fc6`](https://github.com/scout-ch/hering/commit/e007fc62f18b3ebd3505854bceef21bf94e302b2) - **deps**: update dependency dompurify to v3.3.1 *(PR [#121](https://github.com/scout-ch/hering/pull/121) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`89f89e6`](https://github.com/scout-ch/hering/commit/89f89e65f1005ed2089c6601742d10991ab2dd09) - **deps**: update dependency @types/node to v24.10.2 *(PR [#122](https://github.com/scout-ch/hering/pull/122) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`6790e29`](https://github.com/scout-ch/hering/commit/6790e29a164dc00643db392d66d68a9e7fb35274) - **deps**: update dependency @types/node to v24.10.3 *(PR [#123](https://github.com/scout-ch/hering/pull/123) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`0af788f`](https://github.com/scout-ch/hering/commit/0af788f11884337ecf1921dca118fab54db68ef1) - **deps**: update dependency @types/node to v24.10.4 *(PR [#126](https://github.com/scout-ch/hering/pull/126) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`545fd0c`](https://github.com/scout-ch/hering/commit/545fd0cfedc22448d2f7cd2f0d3e381791f9386b) - **deps**: update dependency less to v4.5.1 *(PR [#127](https://github.com/scout-ch/hering/pull/127) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`4ca15dc`](https://github.com/scout-ch/hering/commit/4ca15dcce7ffcb012d092a25096b99bb829daf67) - **deps**: update dependency i18next to v25.7.3 *(PR [#129](https://github.com/scout-ch/hering/pull/129) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`bbb31e9`](https://github.com/scout-ch/hering/commit/bbb31e9ef8e17ac866e12c7d2d473a95764879b5) - **deps**: update dependency vite to v7.3.0 *(PR [#130](https://github.com/scout-ch/hering/pull/130) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`8dccc19`](https://github.com/scout-ch/hering/commit/8dccc192cb795ecd9ce1e146fbec2e5df09ccabe) - **deps**: update dependency @tanstack/react-query to v5.90.13 *(PR [#131](https://github.com/scout-ch/hering/pull/131) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`c21e980`](https://github.com/scout-ch/hering/commit/c21e98052e62dc4a53f73c87f79cb4bf248a3b85) - **deps**: update dependency @tanstack/react-query to v5.90.14 *(PR [#132](https://github.com/scout-ch/hering/pull/132) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`d0f0313`](https://github.com/scout-ch/hering/commit/d0f0313f2d8d92211f5600f43e9b1ce1b154b96b) - **deps**: update dependency @tanstack/react-query to v5.90.15 *(PR [#133](https://github.com/scout-ch/hering/pull/133) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`91b0232`](https://github.com/scout-ch/hering/commit/91b0232095f54a5ab5bf72bf8a9497abd73f5402) - **deps**: update dependency @tanstack/react-query to v5.90.16 *(PR [#134](https://github.com/scout-ch/hering/pull/134) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`2858fc4`](https://github.com/scout-ch/hering/commit/2858fc463e65fcf9f95b8389666a5ba845249355) - **deps**: update actions/cache action to v5 *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`bfb21e9`](https://github.com/scout-ch/hering/commit/bfb21e9e10b9d75fbfcde56511ee029fe2429227) - **deps**: update github artifact actions *(commit by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`1b50753`](https://github.com/scout-ch/hering/commit/1b50753f121fa26558428ba9bc03e31ea4dcf485) - **deps**: update dependency vite to v7.3.1 *(PR [#135](https://github.com/scout-ch/hering/pull/135) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`3d46343`](https://github.com/scout-ch/hering/commit/3d46343c90ea2d4cd2a4bcb37cfc14a1e30bff75) - **deps**: update dependency i18next to v25.7.4 *(PR [#136](https://github.com/scout-ch/hering/pull/136) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`e3a8f4e`](https://github.com/scout-ch/hering/commit/e3a8f4e9c560e680798e21ab5bb1e7330bdeb9b7) - **deps**: update react-router monorepo to v6.30.3 *(PR [#137](https://github.com/scout-ch/hering/pull/137) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`dc9ad4c`](https://github.com/scout-ch/hering/commit/dc9ad4c2246ce88ebd95ac1ee41e12e4edc2b4ae) - **deps**: update dependency @types/node to v24.10.6 *(PR [#138](https://github.com/scout-ch/hering/pull/138) by [@renovate[bot]](https://github.com/apps/renovate))*
+- [`fcc6336`](https://github.com/scout-ch/hering/commit/fcc6336c8334bafd45ba7f2f906c0adfe5f732ff) - **deps**: update dependency @types/node to v24.10.7 *(PR [#139](https://github.com/scout-ch/hering/pull/139) by [@renovate[bot]](https://github.com/apps/renovate))*
+
+
 ## [v3.2.3] - 2025-11-20
 ### :bug: Bug Fixes
 - [`8d11a7c`](https://github.com/scout-ch/hering/commit/8d11a7ca6689d3704be321c6e077b20f3e9594d8) - convert dates to UTC when passing them to `exeljs` for proper date handling [#110](https://github.com/scout-ch/hering/pull/110) *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -350,3 +385,4 @@
 [v3.2.1]: https://github.com/scout-ch/hering/compare/v3.2.0...v3.2.1
 [v3.2.2]: https://github.com/scout-ch/hering/compare/v3.2.1...v3.2.2
 [v3.2.3]: https://github.com/scout-ch/hering/compare/v3.2.2...v3.2.3
+[v3.3.0]: https://github.com/scout-ch/hering/compare/v3.2.3...v3.3.0
