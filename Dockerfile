@@ -22,14 +22,15 @@ RUN npm run build
 FROM joseluisq/static-web-server:2-alpine
 ENV TZ=Europe/Zurich
 
-RUN addgroup -g 1001 -S app \
-    && adduser -u 1001 -S app -G app \
-    && apk add --no-cache envsubst
+USER root
+RUN apk add --no-cache envsubst
 
-COPY --from=build --chown=app:app /build/entrypoint.sh /hering-entrypoint.sh
+# https://static-web-server.net/features/docker/?h=root#rootless
+USER sws
+COPY --from=build --chown=sws:sws /build/entrypoint.sh /hering-entrypoint.sh
 RUN chmod +x  /hering-entrypoint.sh
 
-COPY --from=build --chown=app:app /build/dist /public/
+COPY --from=build --chown=sws:sws /build/dist /public/
 
 EXPOSE 8080
 ENV SERVER_PORT=8080
