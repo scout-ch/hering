@@ -15,4 +15,5 @@ echo ""
 sed -i "s/env\.js/env.${ENV_HASH}.js/g" /public/index.html
 
 # Call the original entrypoint from the base image
-exec /entrypoint.sh "$@"
+# https://github.com/static-web-server/static-web-server/blob/865e8e4e89c7d1dbea24c03b143608b76cd0fd7a/docker/alpine/Dockerfile#L89
+exec /usr/local/bin/entrypoint.sh "$@"
