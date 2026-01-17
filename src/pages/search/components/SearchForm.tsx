@@ -5,7 +5,7 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../../../helper/MarkdownComponents';
 import SearchInput from './SearchInput';
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { SearchHelper } from "../../../helper/SearchHelper";
 import { type  HApiChapter, type HApiSection, loadSections } from "../../../apis/hering-api";
 import { useQuery } from "@tanstack/react-query";
@@ -31,6 +31,7 @@ function SearchForm() {
 
     const lang = i18n.language
     const { t } = useTranslation()
+    const navigate = useNavigate()
     const [searchParams, setSearchParams] = useSearchParams();
 
     const isQueryLoaded = useRef<boolean>(false);
@@ -128,9 +129,10 @@ function SearchForm() {
             if (keyword.length >= 3) {
                 if (searchResults.length > 0) {
                     return searchResults.map(result => {
-                        return <div key={result.chapterId} className='search-result'>
+                        const resultUrl = `/${result.sectionId}#${result.chapterId}`
+                        return <div key={result.chapterId} className='search-result' onClick={() => navigate(resultUrl)}>
                             <div className='title-match'>
-                                <Link to={`/${result.sectionId}#${result.chapterId}`}>{result.title}</Link>
+                                <Link to={resultUrl}>{result.title}</Link>
                             </div>
                             {result.matchingContents.length > 0 ?
                                 <div className='content-match'>
