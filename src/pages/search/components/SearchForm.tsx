@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from "react-i18next"
 import Loading from '../../../components/loading/Loading';
 import Markdown from 'react-markdown';
@@ -27,6 +27,23 @@ interface ChapterWithSection {
 const markdownLinkRegex = /!?\[(.*?)]\((.*?)\)/gmi
 const sentenceRegex = /[^.!?:;#\n]*[^.!?:;#\n\s][^.!?:;#\n]*[.!?]+/g
 
+const preprocessSections = (sections: HApiSection[]): ChapterWithSection[] => {
+    return sections.reduce(
+        (chapterInfo: ChapterWithSection[], section: HApiSection) => chapterInfo.concat(
+            section.chapters.map(chapter => {
+                const filteredContent = chapter.content.replace(markdownLinkRegex, '')
+                const sentences = filteredContent.match(sentenceRegex) || []
+                return {
+                    sectionId: section.documentId,
+                    chapter: chapter,
+                    sentences: sentences.map(s => s.trim())
+                }
+            })
+        ),
+        []
+    )
+}
+
 function SearchForm() {
 
     const lang = i18n.language
@@ -40,27 +57,11 @@ function SearchForm() {
     const [isLoadingResults, setIsLoadingResults] = useState<boolean>(false)
 
     const timeoutId = useRef<number | undefined>();
-    const sections = useQuery({
+    const { data: preprocessedChapters = [], isSuccess: isSectionsLoaded } = useQuery({
         queryKey: ['sections', lang],
-        queryFn: async () => await loadSections(lang)
+        queryFn: async () => await loadSections(lang),
+        select: preprocessSections
     })
-
-    const preprocessedChapters = useMemo((): ChapterWithSection[] => {
-        return (sections.data || []).reduce(
-            (chapterInfo: ChapterWithSection[], section: HApiSection) => chapterInfo.concat(
-                section.chapters.map(chapter => {
-                    const filteredContent = chapter.content.replace(markdownLinkRegex, '')
-                    const sentences = filteredContent.match(sentenceRegex) || []
-                    return {
-                        sectionId: section.documentId,
-                        chapter: chapter,
-                        sentences: sentences.map(s => s.trim())
-                    }
-                })
-            ),
-            []
-        )
-    }, [sections.data])
 
     const executeSearch = useCallback((currentKeyword: string) => {
         setIsLoadingResults(true)
@@ -156,7 +157,7 @@ function SearchForm() {
     }
 
     return <>
-        <SearchInput keyword={keyword} onChange={onChangeKeyword} isDisabled={!sections.isSuccess}/>
+        <SearchInput keyword={keyword} onChange={onChangeKeyword} isDisabled={!isSectionsLoaded}/>
         <br/>
         <Loading isLoading={isLoadingResults}></Loading>
         <div className='search-results'>
