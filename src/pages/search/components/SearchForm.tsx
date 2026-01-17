@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from "react-i18next"
 import Loading from '../../../components/loading/Loading';
 import Markdown from 'react-markdown';
@@ -20,8 +20,11 @@ type SearchResult = {
 
 interface ChapterWithSection {
     sectionId: string;
-    chapter: HApiChapter
+    chapter: HApiChapter;
+    filteredContent: string;
 }
+
+const markdownLinkRegex = /!?\[(.*?)]\((.*?)\)/gmi
 
 function SearchForm() {
 
@@ -40,6 +43,19 @@ function SearchForm() {
         queryFn: async () => await loadSections(lang)
     })
 
+    const preprocessedChapters = useMemo((): ChapterWithSection[] => {
+        return (sections.data || []).reduce(
+            (chapterInfo: ChapterWithSection[], section: HApiSection) => chapterInfo.concat(
+                section.chapters.map(chapter => ({
+                    sectionId: section.documentId,
+                    chapter: chapter,
+                    filteredContent: chapter.content.replace(markdownLinkRegex, '')  // Remove Markdown links from search results
+                }))
+            ),
+            []
+        )
+    }, [sections.data])
+
     const executeSearch = useCallback((currentKeyword: string) => {
         setIsLoadingResults(true)
 
@@ -54,20 +70,14 @@ function SearchForm() {
                 return
             }
 
-            const searchResults = (sections.data || [])
-                .reduce((chapterInfo: ChapterWithSection[], section: HApiSection) => chapterInfo.concat(
-                    section.chapters.map(chapter => ({
-                        sectionId: section.documentId,
-                        chapter: chapter
-                    }))
-                ), [])
+            const searchResults = preprocessedChapters
                 .filter(entry => SearchHelper.matches(currentKeyword, [entry.chapter.title, entry.chapter.content]))
                 .map(entry => {
                     return {
                         chapterId: entry.chapter.documentId,
                         sectionId: entry.sectionId,
                         title: entry.chapter.title,
-                        matchingContents: findMatchingContents(currentKeyword, entry.chapter.content),
+                        matchingContents: findMatchingContents(currentKeyword, entry.filteredContent),
                     } as SearchResult
                 })
 
@@ -76,7 +86,7 @@ function SearchForm() {
 
             timeoutId.current = undefined;
         }, 500)
-    }, [])
+    }, [preprocessedChapters])
 
     useEffect(() => {
         if (!isQueryLoaded.current) {
@@ -90,11 +100,8 @@ function SearchForm() {
         isQueryLoaded.current = true;
     }, [searchParams, executeSearch]);
 
-    const findMatchingContents = (keyword: string, content: string): string[] => {
-        const markdownLinkRegex = new RegExp('!?\\[(.*?)]\\((.*?)\\)', 'gmi')
+    const findMatchingContents = (keyword: string, filteredContent: string): string[] => {
         const keywordRegex = new RegExp(`[^.!?:;#\n]*(?=${keyword}).*?[.!?](?=\s?|\p{Lu}|$)`, 'gmi')
-
-        const filteredContent = content.replace(markdownLinkRegex, '') // Remove Markdown links from search results
         const matches = Array.from(filteredContent.matchAll(keywordRegex))
 
         return matches.reduce(
