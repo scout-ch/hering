@@ -21,10 +21,11 @@ type SearchResult = {
 interface ChapterWithSection {
     sectionId: string;
     chapter: HApiChapter;
-    filteredContent: string;
+    sentences: string[];
 }
 
 const markdownLinkRegex = /!?\[(.*?)]\((.*?)\)/gmi
+const sentenceRegex = /[^.!?:;#\n]*[^.!?:;#\n\s][^.!?:;#\n]*[.!?]+/g
 
 function SearchForm() {
 
@@ -46,11 +47,15 @@ function SearchForm() {
     const preprocessedChapters = useMemo((): ChapterWithSection[] => {
         return (sections.data || []).reduce(
             (chapterInfo: ChapterWithSection[], section: HApiSection) => chapterInfo.concat(
-                section.chapters.map(chapter => ({
-                    sectionId: section.documentId,
-                    chapter: chapter,
-                    filteredContent: chapter.content.replace(markdownLinkRegex, '')  // Remove Markdown links from search results
-                }))
+                section.chapters.map(chapter => {
+                    const filteredContent = chapter.content.replace(markdownLinkRegex, '')
+                    const sentences = filteredContent.match(sentenceRegex) || []
+                    return {
+                        sectionId: section.documentId,
+                        chapter: chapter,
+                        sentences: sentences.map(s => s.trim())
+                    }
+                })
             ),
             []
         )
@@ -77,7 +82,7 @@ function SearchForm() {
                         chapterId: entry.chapter.documentId,
                         sectionId: entry.sectionId,
                         title: entry.chapter.title,
-                        matchingContents: findMatchingContents(currentKeyword, entry.filteredContent),
+                        matchingContents: findMatchingContents(currentKeyword, entry.sentences),
                     } as SearchResult
                 })
 
@@ -100,14 +105,9 @@ function SearchForm() {
         isQueryLoaded.current = true;
     }, [searchParams, executeSearch]);
 
-    const findMatchingContents = (keyword: string, filteredContent: string): string[] => {
-        const keywordRegex = new RegExp(`[^.!?:;#\n]*(?=${keyword}).*?[.!?](?=\s?|\p{Lu}|$)`, 'gmi')
-        const matches = Array.from(filteredContent.matchAll(keywordRegex))
-
-        return matches.reduce(
-            (searchResults: string[], currentMatches: RegExpMatchArray) => searchResults.concat(currentMatches),
-            []
-        )
+    const findMatchingContents = (keyword: string, sentences: string[]): string[] => {
+        const normalizedKeyword = keyword.toLowerCase()
+        return sentences.filter(sentence => sentence.toLowerCase().includes(normalizedKeyword))
     }
 
     const onChangeKeyword = (e: React.FormEvent<HTMLInputElement>): void => {
