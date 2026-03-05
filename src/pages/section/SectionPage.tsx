@@ -1,10 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useParams } from 'react-router'
+import { useLocation, useParams } from '@tanstack/react-router'
 import Chapter from "./components/Chapter";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { LinkComponent } from "../../helper/MarkdownComponents";
-import { useLocation } from "react-router-dom";
 import { handleIntersectionChanged } from "./helpers/intersection.helper";
 import { type HApiSection, loadSections } from "../../apis/hering-api";
 import { useDocumentTitle } from "../../components/page-title";
@@ -13,10 +12,6 @@ import { i18n } from "../../i18n";
 
 type SectionsById = {
     [key: string]: HApiSection
-}
-
-type Params = {
-    sectionId: string
 }
 
 function SectionPage() {
@@ -37,7 +32,7 @@ function SectionPage() {
     }, [sections.data])
 
     const location = useLocation()
-    const { sectionId } = useParams<Params>()
+    const { sectionId } = useParams({ strict: false })
     const [section, setSection] = useState<HApiSection | undefined>()
 
     useEffect(() => {

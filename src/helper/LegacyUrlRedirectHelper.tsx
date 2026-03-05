@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { useLocation, useNavigate } from "react-router-dom"
+import { useLocation, useNavigate } from "@tanstack/react-router"
 
 const LegacyUrlRedirectHelper = () => {
     const location = useLocation();
@@ -10,7 +10,7 @@ const LegacyUrlRedirectHelper = () => {
             return
         }
 
-        return navigate('/');
+        navigate({ to: '/' });
     }, [location, navigate]);
 
     return null;

@@ -1,5 +1,5 @@
 import { i18n, redirectToLanguage } from '../../i18n'
-import { Link } from 'react-router-dom'
+import { Link } from '@tanstack/react-router'
 import FooterSvg from './FooterSvg'
 import PbsLogoSvg from './PbsLogoSvg'
 import './footer.less'

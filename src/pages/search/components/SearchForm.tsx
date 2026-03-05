@@ -5,7 +5,7 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../../../helper/MarkdownComponents';
 import SearchInput from './SearchInput';
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearch } from "@tanstack/react-router";
 import { SearchHelper } from "../../../helper/SearchHelper";
 import { type  HApiChapter, type HApiSection, loadSections } from "../../../apis/hering-api";
 import { useQuery } from "@tanstack/react-query";
@@ -49,7 +49,7 @@ function SearchForm() {
     const lang = i18n.language
     const { t } = useTranslation()
     const navigate = useNavigate()
-    const [searchParams, setSearchParams] = useSearchParams();
+    const { keyword: searchKeywordFromUrl } = useSearch({ from: '/search' })
 
     const isQueryLoaded = useRef<boolean>(false);
     const [keyword, setKeyword] = useState<string>('')
@@ -97,15 +97,14 @@ function SearchForm() {
 
     useEffect(() => {
         if (!isQueryLoaded.current) {
-            const searchKeyword = searchParams.get('keyword')
-            if (searchKeyword) {
-                setKeyword(searchKeyword)
-                executeSearch(searchKeyword)
+            if (searchKeywordFromUrl) {
+                setKeyword(searchKeywordFromUrl)
+                executeSearch(searchKeywordFromUrl)
             }
         }
 
         isQueryLoaded.current = true;
-    }, [searchParams, executeSearch]);
+    }, [searchKeywordFromUrl, executeSearch]);
 
     const findMatchingContents = (keyword: string, sentences: string[]): string[] => {
         const normalizedKeyword = keyword.toLowerCase()
@@ -117,10 +116,13 @@ function SearchForm() {
         const keyword = e.currentTarget?.value ?? ''
 
         setKeyword(keyword)
-        const queryParams = keyword.length > 0
-            ? { 'keyword': keyword }
-            : undefined;
-        setSearchParams(queryParams, { replace: true })
+        navigate({
+            to: '/search',
+            search: keyword.length > 0
+                ? { keyword }
+                : {},
+            replace: true,
+        })
 
         executeSearch(keyword)
     }
@@ -130,11 +132,12 @@ function SearchForm() {
             if (keyword.length >= 3) {
                 if (searchResults.length > 0) {
                     return searchResults.map(result => {
-                        const resultUrl = `/${result.sectionId}#${result.chapterId}`
-                        return <div key={result.chapterId} className='search-result' onClick={() => navigate(resultUrl)}>
-                            <div className='title-match'>
-                                <Link to={resultUrl}>{result.title}</Link>
-                            </div>
+                        return <div key={result.chapterId} className='search-result' onClick={() => navigate({
+                            to: '/$sectionId',
+                            params: { sectionId: result.sectionId },
+                            hash: result.chapterId,
+                        })}>
+                            <div className={'result-title'}>{result.title}</div>
                             {result.matchingContents.length > 0 ?
                                 <div className='content-match'>
                                     {result.matchingContents.map((content, idx) => {
