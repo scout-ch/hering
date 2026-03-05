@@ -4,7 +4,7 @@ import { LinkComponent } from "../../helper/MarkdownComponents"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFishFins } from "@fortawesome/free-solid-svg-icons";
 import { loadPage } from "../../apis/hering-api";
-import { i18n } from "../../i18n";
+import { useTranslation } from "react-i18next";
 import Loading from "../../components/loading/Loading.tsx";
 import { useQuery } from "@tanstack/react-query";
 import { lazy, Suspense } from "react";
@@ -13,6 +13,7 @@ const Error = lazy(() => import('../../components/error/Error.tsx'));
 
 function HomePage() {
 
+    const { i18n } = useTranslation()
     const lang = i18n.language
 
     const homePage = useQuery({

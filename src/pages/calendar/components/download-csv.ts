@@ -6,7 +6,7 @@ import { type CalendarTask } from "./CalendarForm";
 
 const t = i18n.t
 
-export function downloadAsCsv(tasks: CalendarTask[], filename: string) {
+export function downloadAsCsv(tasks: CalendarTask[], lang: string, filename: string) {
     if (tasks.length === 0) {
         return
     }
@@ -27,7 +27,7 @@ export function downloadAsCsv(tasks: CalendarTask[], filename: string) {
             `"${task.title}"`,
             `"${responsible}"`,
             `"${targets}"`,
-            `"${buildLinks(task)}"`
+            `"${buildLinks(task, lang)}"`
         ].join(',');
 
         csvContent += row + '\n';

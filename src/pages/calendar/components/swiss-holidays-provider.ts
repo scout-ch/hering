@@ -4,11 +4,6 @@ import { i18n } from "../../../i18n";
 class SwissHolidaysProvider {
 
     private relevantPublicHolidayNames: string[] = ['Ascension Day', 'Easter Monday', 'Pentecost Monday'];
-    private readonly apiLanguage: OHApiLanguageCode
-
-    constructor(lang: string) {
-        this.apiLanguage = parseLanguageOrDefault(lang);
-    }
 
     public async loadCantons(): Promise<Canton[]> {
         const subdivisions = await loadSubdivisions()
@@ -56,9 +51,13 @@ class SwissHolidaysProvider {
                 } as Holiday;
             });
     }
+
+    private get apiLanguage(): OHApiLanguageCode {
+        return parseLanguageOrDefault(i18n.language);
+    }
 }
 
-export const swissHolidaysProvider = new SwissHolidaysProvider(i18n.language);
+export const swissHolidaysProvider = new SwissHolidaysProvider();
 
 export interface Canton {
     code: string;

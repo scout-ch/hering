@@ -4,7 +4,6 @@ import CalendarTable from './CalendarTable';
 import { addDays, format, isValid, parse, startOfDay } from "date-fns";
 import Loading from "../../../components/loading/Loading";
 import { type HApiRole, type HApiTask, type HApiTaskChapter, loadTasks } from "../../../apis/hering-api";
-import i18n from "i18next";
 import './calendar-form.less'
 import { Tooltip } from 'react-tooltip'
 import { sessionCache } from "../../../shared/session-cache";
@@ -37,8 +36,8 @@ export type CalendarTask = {
 
 function CalendarForm() {
 
+    const { t, i18n } = useTranslation()
     const lang = i18n.language
-    const { t } = useTranslation()
     const { openModal } = useContext(ModalContext);
 
     const defaultCalendarDesignation = t('calendarPage.defaultDesignation');
@@ -163,7 +162,7 @@ function CalendarForm() {
             setCalendarTasks(tasks)
             setIsUpdatingTasks(false)
         }, delay)
-    }, [parsedStartDate, responsible, puffer, taskList.isSuccess]);
+    }, [parsedStartDate, responsible, puffer, taskList.isSuccess, taskList.data]);
 
     useEffect(() => {
         const startDate = sessionCache.get<string>(startDateCacheKey);

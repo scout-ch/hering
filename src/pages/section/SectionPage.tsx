@@ -8,7 +8,7 @@ import { handleIntersectionChanged } from "./helpers/intersection.helper";
 import { type HApiSection, loadSections } from "../../apis/hering-api";
 import { useDocumentTitle } from "../../components/page-title";
 import { useQuery } from "@tanstack/react-query";
-import { i18n } from "../../i18n";
+import { useTranslation } from "react-i18next";
 
 type SectionsById = {
     [key: string]: HApiSection
@@ -16,6 +16,7 @@ type SectionsById = {
 
 function SectionPage() {
 
+    const { i18n } = useTranslation()
     const lang = i18n.language
     const { setPageTitle } = useDocumentTitle();
 

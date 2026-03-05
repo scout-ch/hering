@@ -4,7 +4,7 @@ import { saveAs } from "../../../helper/FileHelper";
 import { buildLinks } from "./download-shared";
 import { type CalendarTask } from "./CalendarForm";
 
-export async function downloadAsIcs(tasks: CalendarTask[], designation: string, filename: string) {
+export async function downloadAsIcs(tasks: CalendarTask[], lang: string, designation: string, filename: string) {
     const events = tasks.map(function (task) {
         const deadline = task.deadline
         const alarms = []
@@ -19,8 +19,8 @@ export async function downloadAsIcs(tasks: CalendarTask[], designation: string, 
             start: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
             end: [deadline.getFullYear(), deadline.getMonth() + 1, deadline.getDate()],
             title: `${designation} ${task.title}`,
-            description: buildLinks(task),
-            url: buildLinks(task),
+            description: buildLinks(task, lang),
+            url: buildLinks(task, lang),
             status: 'CONFIRMED',
             busyStatus: 'FREE',
             alarms: alarms

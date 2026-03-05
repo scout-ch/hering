@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { createRootRoute, createRoute, createRouter, Outlet, redirect, } from '@tanstack/react-router'
-import { i18n } from './i18n'
+import { i18n, supportedLanguages } from './i18n'
 import Loading from './components/loading/Loading'
 import Navigation from './components/navigation/Navigation'
 import LegacyUrlRedirectHelper from './helper/LegacyUrlRedirectHelper'
@@ -103,13 +103,34 @@ const routeTree = rootRoute.addChildren([
     catchAllRoute,
 ])
 
-const lang = i18n.language
+function stripLangPrefix(url: URL): URL {
+    const segments = url.pathname.split('/').filter(Boolean)
+    if (segments.length > 0 && supportedLanguages.includes(segments[0])) {
+        url.pathname = '/' + segments.slice(1).join('/')
+    }
+
+    return url
+}
+
+function addLangPrefix(url: URL): URL {
+    const lang = i18n.language
+    const segments = url.pathname.split('/').filter(Boolean)
+    if (!supportedLanguages.includes(segments[0])) {
+        url.pathname = `/${lang}${url.pathname === '/' ? '' : url.pathname}`
+    }
+
+    return url
+}
 
 export const router = createRouter({
     routeTree,
-    basepath: `/${lang}`,
     defaultPreload: 'intent',
     defaultHashScrollIntoView: false,
+    // https://tanstack.com/router/v1/docs/guide/internationalization-i18n#url-localization-via-router-rewrite
+    rewrite: {
+        input: ({ url }) => stripLangPrefix(url),
+        output: ({ url }) => addLangPrefix(url),
+    },
 })
 
 export { searchRoute, sectionRoute }

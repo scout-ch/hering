@@ -7,14 +7,13 @@ import './nav.less'
 import { CHAPTER_NAV_UPDATED_EVENT } from "../../shared/constants";
 import { type HApiChapter, type  HApiSection, loadSections } from "../../apis/hering-api";
 import { useDocumentTitle } from "../page-title";
-import { i18n } from "../../i18n";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../loading/Loading.tsx";
 
 function Navigation() {
 
+    const { t, i18n } = useTranslation()
     const lang = i18n.language
-    const { t } = useTranslation()
     const location = useLocation()
     const { setPageTitle } = useDocumentTitle();
 

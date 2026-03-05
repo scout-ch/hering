@@ -1,15 +1,14 @@
 import { useEffect } from 'react';
 import { RouterProvider } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
-import { i18n } from './i18n';
 import Loading from "./components/loading/Loading";
 import { useDocumentTitle } from "./components/page-title";
 import { router } from './router';
 
 export default function App() {
 
+    const { t, i18n } = useTranslation()
     const lang = i18n.language
-    const { t } = useTranslation()
     const { setBaseTitle } = useDocumentTitle();
 
     useEffect(() => {

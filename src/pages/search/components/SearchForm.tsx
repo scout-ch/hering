@@ -9,7 +9,6 @@ import { useNavigate, useSearch } from "@tanstack/react-router";
 import { SearchHelper } from "../../../helper/SearchHelper";
 import { type  HApiChapter, type HApiSection, loadSections } from "../../../apis/hering-api";
 import { useQuery } from "@tanstack/react-query";
-import { i18n } from "../../../i18n";
 
 type SearchResult = {
     chapterId: string
@@ -46,8 +45,8 @@ const preprocessSections = (sections: HApiSection[]): ChapterWithSection[] => {
 
 function SearchForm() {
 
+    const { t, i18n } = useTranslation()
     const lang = i18n.language
-    const { t } = useTranslation()
     const navigate = useNavigate()
     const { keyword: searchKeywordFromUrl } = useSearch({ from: '/search' })
 
@@ -99,12 +98,16 @@ function SearchForm() {
         if (!isQueryLoaded.current) {
             if (searchKeywordFromUrl) {
                 setKeyword(searchKeywordFromUrl)
-                executeSearch(searchKeywordFromUrl)
             }
+            isQueryLoaded.current = true;
         }
+    }, [searchKeywordFromUrl]);
 
-        isQueryLoaded.current = true;
-    }, [searchKeywordFromUrl, executeSearch]);
+    useEffect(() => {
+        if (keyword.length >= 3) {
+            executeSearch(keyword)
+        }
+    }, [executeSearch]);
 
     const findMatchingContents = (keyword: string, sentences: string[]): string[] => {
         const normalizedKeyword = keyword.toLowerCase()
@@ -154,6 +157,7 @@ function SearchForm() {
 
                 return <div>{t('searchPage.noResults')}</div>
             }
+
             return <div> {t('searchPage.noKeyword', { amountOfCharacters: 3 })}</div>
         }
         return null
