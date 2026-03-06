@@ -1,56 +1,74 @@
+type SearchableValue = string | number | boolean | null | undefined | object;
+
 export class SearchHelper {
-    static matches(keywords: string, ...values: any[]) {
+    /**
+     * Checks if all space-separated terms in `keywords` are found in any of the values.
+     * Uses substring matching with case-insensitive and diacritic-insensitive comparison.
+     */
+    static matches(keywords: string, ...values: SearchableValue[]): boolean {
         if (!keywords) {
             return true;
-        } else {
-            const keywordValues = [] as any[];
-            const terms = keywords.split(' ').filter(t => t.length > 0);
-
-            values.forEach(v => {
-                this.extractKeywordValues(v, keywordValues);
-            });
-
-            return terms.every(term => {
-                return keywordValues.some(value => this.contains(value, term));
-            });
         }
+
+        const terms = keywords.split(' ').filter(t => t.length > 0);
+        if (terms.length === 0) {
+            return true;
+        }
+
+        // Normalize terms once upfront
+        const normalizedTerms = terms.map(t => this.normalize(t));
+
+        // Extract and normalize all searchable values
+        const normalizedValues: string[] = [];
+        for (const v of values) {
+            this.extractAndNormalizeValues(v, normalizedValues);
+        }
+
+        // Every term must be found in at least one value
+        return normalizedTerms.every(term =>
+            normalizedValues.some(value => value.includes(term))
+        );
     }
 
-    static matchesExact(keywords: string, ...values: any[]) {
+    /**
+     * Checks if the exact keyword string is found in any of the values (no term splitting).
+     */
+    static matchesExact(keywords: string, ...values: SearchableValue[]): boolean {
         if (!keywords) {
             return true;
+        }
+
+        const normalizedKeyword = this.normalize(keywords);
+        const normalizedValues: string[] = [];
+        for (const v of values) {
+            this.extractAndNormalizeValues(v, normalizedValues);
+        }
+
+        return normalizedValues.some(value => value.includes(normalizedKeyword));
+    }
+
+    private static extractAndNormalizeValues(value: SearchableValue, result: string[]): void {
+        if (value === null || value === undefined) {
+            return;
+        }
+
+        if (typeof value === 'object') {
+            for (const key of Object.keys(value)) {
+                this.extractAndNormalizeValues((value as Record<string, SearchableValue>)[key], result);
+            }
         } else {
-            const keywordValues = [] as any[];
-
-            values.forEach(v => {
-                this.extractKeywordValues(v, keywordValues);
-            });
-
-            return keywordValues.some(value => this.contains(value, keywords));
+            result.push(this.normalize(String(value)));
         }
     }
 
-    private static extractKeywordValues(value: any, keywordValues: any[]) {
-        if (value instanceof Object) {
-            Object.keys(value).forEach(key => {
-                this.extractKeywordValues(value[key], keywordValues);
-            });
-        } else if (value !== undefined && value !== null) {
-            keywordValues.push(value);
-        }
-    }
-
-    private static contains(value: any, term: string) {
-        const str = (value || '').toString() as string;
-
-        return this.normalize(str).includes(this.normalize(term));
-    }
-
-    private static normalize(value: string) {
-        return value.toLowerCase()
-            .replace(/[éèë]/g, 'e')
-            .replace(/[àáäã]/g, 'a')
-            .replace(/[òóöõ]/g, 'o')
-            .replace(/[ü]/g, 'u');
+    /**
+     * Normalizes a string: lowercase + removes all diacritics.
+     * Uses Unicode NFD normalization to handle all diacritical marks.
+     */
+    private static normalize(value: string): string {
+        return value
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '');
     }
 }

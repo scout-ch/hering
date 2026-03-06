@@ -22,7 +22,8 @@ const downloadOptionStyle: React.CSSProperties = {
 
 function Downloads({ startDate, tasks, designation }: Props) {
 
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
+    const lang = i18n.language
 
     const fixedDesignation = (designation ?? '').length > 0
         ? designation
@@ -31,7 +32,7 @@ function Downloads({ startDate, tasks, designation }: Props) {
     return <DropdownButton
         buttonContent={<span>{t('calendarPage.download')} <FontAwesomeIcon icon={faChevronDown}/></span>}>
         <div
-            onClick={() => downloadAsIcs(tasks, fixedDesignation, t('calendarPage.ics.filename', { calendarDesignation: fixedDesignation }))}
+            onClick={() => downloadAsIcs(tasks, lang, fixedDesignation, t('calendarPage.ics.filename', { calendarDesignation: fixedDesignation }))}
             style={downloadOptionStyle}>
             {t('calendarPage.ics.download')} (.ics)
             <FontAwesomeIcon icon={faCalendarDays} fixedWidth={true}/>
@@ -43,7 +44,7 @@ function Downloads({ startDate, tasks, designation }: Props) {
             <FontAwesomeIcon icon={faFileExcel} fixedWidth={true}/>
         </div>
         <div
-            onClick={() => downloadAsCsv(tasks, t('calendarPage.csv.filename', { calendarDesignation: fixedDesignation }))}
+            onClick={() => downloadAsCsv(tasks, lang, t('calendarPage.csv.filename', { calendarDesignation: fixedDesignation }))}
             style={downloadOptionStyle}>
             {t('calendarPage.csv.download')} (.csv)
             <FontAwesomeIcon icon={faFileCsv} fixedWidth={true}/>

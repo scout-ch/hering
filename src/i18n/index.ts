@@ -50,6 +50,10 @@ i18n.use(initReactI18next)
     })
     .then(() => setDateFnsLocale(i18n.language));
 
+i18n.on('languageChanged', async (lang) => {
+    await setDateFnsLocale(lang);
+});
+
 function getUrlPathSegments(): string[] {
     return `${window.location.pathname}${window.location.hash}`.split('/').filter(p => !!p && p.length > 0);
 }

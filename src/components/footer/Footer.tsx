@@ -1,16 +1,25 @@
-import { i18n, redirectToLanguage } from '../../i18n'
-import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import { Link } from '@tanstack/react-router'
+import { router } from '../../router'
 import FooterSvg from './FooterSvg'
 import PbsLogoSvg from './PbsLogoSvg'
 import './footer.less'
 
 function Footer() {
 
+    const { i18n } = useTranslation()
     const lang = i18n.language
     const currentYear = new Date().getFullYear()
 
-    const changeLanguage = (lang: string) => {
-        redirectToLanguage(lang)
+    const changeLanguage = async (newLang: string) => {
+        if (newLang === lang) {
+            return
+        }
+
+        await i18n.changeLanguage(newLang)
+
+        const newPath = window.location.pathname.replace(`/${lang}`, `/${newLang}`)
+        router.history.replace(`${newPath}${window.location.search}${window.location.hash}`)
     }
 
     return <>

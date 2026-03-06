@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from '@tanstack/react-router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from "react-i18next";
 import { faBars, faCalendarDays, faFishFins, faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -7,15 +7,15 @@ import './nav.less'
 import { CHAPTER_NAV_UPDATED_EVENT } from "../../shared/constants";
 import { type HApiChapter, type  HApiSection, loadSections } from "../../apis/hering-api";
 import { useDocumentTitle } from "../page-title";
-import { i18n } from "../../i18n";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../loading/Loading.tsx";
 
 function Navigation() {
 
+    const { t, i18n } = useTranslation()
     const lang = i18n.language
-    const { t } = useTranslation()
     const location = useLocation()
+    const navigate = useNavigate()
     const { setPageTitle } = useDocumentTitle();
 
     const [navbarOpen, setNavbarOpen] = useState(false)
@@ -57,7 +57,7 @@ function Navigation() {
             window.removeEventListener(CHAPTER_NAV_UPDATED_EVENT, updateChapter)
             document.removeEventListener('mousedown', handleClickOutside);
         }
-    }, []);
+    }, [chapterLookup]);
 
     const handleToggle = () => {
         setNavbarOpen(!navbarOpen)
@@ -79,11 +79,15 @@ function Navigation() {
 
     function chapterList(section: HApiSection) {
         const chapterItems = section.chapters.map((chapter: HApiChapter) => {
-            const isActive = currentChapterId === chapter.documentId
+            const isActive = currentChapterId === chapter.documentId;
 
             return <li key={chapter.documentId} className="subMenu" onClick={handleToggle}>
-                <Link to={`${section.documentId}#${chapter.documentId}`}
-                      className={isActive ? 'active' : ''}>{chapter.menuName}</Link>
+                <Link to={`/$sectionId`}
+                      params={{ sectionId: section.documentId }}
+                      hash={chapter.documentId}
+                    // Force TanStack Router to use our active state
+                      activeProps={{ className: isActive ? 'active' : '' }}
+                      inactiveProps={{ className: isActive ? 'active' : '' }}>{chapter.menuName}</Link>
             </li>
         })
 
@@ -97,12 +101,14 @@ function Navigation() {
         const className = isActive ? 'active' : ''
 
         return <details key={section.documentId} className={className} open={isActive}>
-            <summary className={`accordion_label ${className}`}>
-                {
-                    isActive
-                        ? <span className="cursor-pointer">{section.menuName}</span>
-                        : <Link to={section.documentId}>{section.menuName}</Link>
-                }
+            <summary className={`accordion_label ${className}`}
+                     onClick={async (e) => {
+                         if (!isActive) {
+                             e.preventDefault();
+                             await navigate({ to: '/$sectionId', params: { sectionId: section.documentId } });
+                         }
+                     }}>
+                <span>{section.menuName}</span>
             </summary>
             {chapterList(section)}
         </details>

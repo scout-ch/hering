@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import './calendar-table.less';
 import { format } from "date-fns";
-import { Link } from "react-router-dom";
+import { Link } from "@tanstack/react-router";
 import { type CalendarTask } from "./CalendarForm";
 
 type Props = {
@@ -42,7 +42,9 @@ function CalendarTable(props: Props) {
                     <td align={"center"}>
                         {!!task.chapter &&
                             <Link key={task.chapter.documentId}
-                                  to={`/${task.chapter.section.documentId}#${task.chapter.documentId}`}>
+                                  to={`/$sectionId`}
+                                  params={{ sectionId: task.chapter.section.documentId }}
+                                  hash={task.chapter.documentId}>
                                 {t(`calendarPage.table.link`)}
                             </Link>
                         }

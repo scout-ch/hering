@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from '@tanstack/react-router'
 import { type Components } from "react-markdown"
 import Warning from "../components/warning/Warning"
 
@@ -13,29 +13,27 @@ export const LinkComponent: Components = {
     },
     a({ node, children, ...props }) {
         const link = props.href
+        if (!link) {
+            return <a href={''}>{children}</a>
+        }
 
-        const isMailtoLink = link?.startsWith('mailto:')
+        const isMailtoLink = link.startsWith('mailto:')
         if (isMailtoLink) {
             return <Link to='#'
                          onClick={(e) => {
-                             window.location.href = props.href || '';
+                             window.location.href = link;
                              e.preventDefault();
                          }}>
                 {children}
             </Link>
         }
 
-        const isPublicLink = link?.startsWith('http')
+        const isPublicLink = link.startsWith('http')
         if (isPublicLink) {
             return <a href={link} target="_blank" rel="noreferrer">{children}</a>
         }
 
-        const isChapterLink = link?.startsWith('/')
-        if (isChapterLink) {
-            return <Link to={link || ''}>{children}</Link>
-        }
-
-        return <Link to={props.href || ''}>{children}</Link>
+        return <Link to={link}>{children}</Link>
     },
     img({ node, children, ...props }) {
         const altProp = props.alt

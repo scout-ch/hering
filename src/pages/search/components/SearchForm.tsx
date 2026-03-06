@@ -5,11 +5,10 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../../../helper/MarkdownComponents';
 import SearchInput from './SearchInput';
-import { Link, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearch } from "@tanstack/react-router";
 import { SearchHelper } from "../../../helper/SearchHelper";
 import { type  HApiChapter, type HApiSection, loadSections } from "../../../apis/hering-api";
 import { useQuery } from "@tanstack/react-query";
-import { i18n } from "../../../i18n";
 
 type SearchResult = {
     chapterId: string
@@ -20,14 +19,36 @@ type SearchResult = {
 
 interface ChapterWithSection {
     sectionId: string;
-    chapter: HApiChapter
+    chapter: HApiChapter;
+    sentences: string[];
+}
+
+const markdownLinkRegex = /!?\[(.*?)]\((.*?)\)/gmi
+const sentenceRegex = /[^.!?:;#\n]*[^.!?:;#\n\s][^.!?:;#\n]*[.!?]+/g
+
+const preprocessSections = (sections: HApiSection[]): ChapterWithSection[] => {
+    return sections.reduce(
+        (chapterInfo: ChapterWithSection[], section: HApiSection) => chapterInfo.concat(
+            section.chapters.map(chapter => {
+                const filteredContent = chapter.content.replace(markdownLinkRegex, '')
+                const sentences = filteredContent.match(sentenceRegex) || []
+                return {
+                    sectionId: section.documentId,
+                    chapter: chapter,
+                    sentences: sentences.map(s => s.trim())
+                }
+            })
+        ),
+        []
+    )
 }
 
 function SearchForm() {
 
+    const { t, i18n } = useTranslation()
     const lang = i18n.language
-    const { t } = useTranslation()
-    const [searchParams, setSearchParams] = useSearchParams();
+    const navigate = useNavigate()
+    const { keyword: searchKeywordFromUrl } = useSearch({ from: '/search' })
 
     const isQueryLoaded = useRef<boolean>(false);
     const [keyword, setKeyword] = useState<string>('')
@@ -35,9 +56,10 @@ function SearchForm() {
     const [isLoadingResults, setIsLoadingResults] = useState<boolean>(false)
 
     const timeoutId = useRef<number | undefined>();
-    const sections = useQuery({
+    const { data: preprocessedChapters = [], isSuccess: isSectionsLoaded } = useQuery({
         queryKey: ['sections', lang],
-        queryFn: async () => await loadSections(lang)
+        queryFn: async () => await loadSections(lang),
+        select: preprocessSections
     })
 
     const executeSearch = useCallback((currentKeyword: string) => {
@@ -54,20 +76,14 @@ function SearchForm() {
                 return
             }
 
-            const searchResults = (sections.data || [])
-                .reduce((chapterInfo: ChapterWithSection[], section: HApiSection) => chapterInfo.concat(
-                    section.chapters.map(chapter => ({
-                        sectionId: section.documentId,
-                        chapter: chapter
-                    }))
-                ), [])
+            const searchResults = preprocessedChapters
                 .filter(entry => SearchHelper.matches(currentKeyword, [entry.chapter.title, entry.chapter.content]))
                 .map(entry => {
                     return {
                         chapterId: entry.chapter.documentId,
                         sectionId: entry.sectionId,
                         title: entry.chapter.title,
-                        matchingContents: findMatchingContents(currentKeyword, entry.chapter.content),
+                        matchingContents: findMatchingContents(currentKeyword, entry.sentences),
                     } as SearchResult
                 })
 
@@ -76,31 +92,26 @@ function SearchForm() {
 
             timeoutId.current = undefined;
         }, 500)
-    }, [])
+    }, [preprocessedChapters])
 
     useEffect(() => {
         if (!isQueryLoaded.current) {
-            const searchKeyword = searchParams.get('keyword')
-            if (searchKeyword) {
-                setKeyword(searchKeyword)
-                executeSearch(searchKeyword)
+            if (searchKeywordFromUrl) {
+                setKeyword(searchKeywordFromUrl)
             }
+            isQueryLoaded.current = true;
         }
+    }, [searchKeywordFromUrl]);
 
-        isQueryLoaded.current = true;
-    }, [searchParams, executeSearch]);
+    useEffect(() => {
+        if (keyword.length >= 3) {
+            executeSearch(keyword)
+        }
+    }, [executeSearch]);
 
-    const findMatchingContents = (keyword: string, content: string): string[] => {
-        const markdownLinkRegex = new RegExp('!?\\[(.*?)]\\((.*?)\\)', 'gmi')
-        const keywordRegex = new RegExp(`[^.!?:;#\n]*(?=${keyword}).*?[.!?](?=\s?|\p{Lu}|$)`, 'gmi')
-
-        const filteredContent = content.replace(markdownLinkRegex, '') // Remove Markdown links from search results
-        const matches = Array.from(filteredContent.matchAll(keywordRegex))
-
-        return matches.reduce(
-            (searchResults: string[], currentMatches: RegExpMatchArray) => searchResults.concat(currentMatches),
-            []
-        )
+    const findMatchingContents = (keyword: string, sentences: string[]): string[] => {
+        const normalizedKeyword = keyword.toLowerCase()
+        return sentences.filter(sentence => sentence.toLowerCase().includes(normalizedKeyword))
     }
 
     const onChangeKeyword = (e: React.FormEvent<HTMLInputElement>): void => {
@@ -108,10 +119,13 @@ function SearchForm() {
         const keyword = e.currentTarget?.value ?? ''
 
         setKeyword(keyword)
-        const queryParams = keyword.length > 0
-            ? { 'keyword': keyword }
-            : undefined;
-        setSearchParams(queryParams, { replace: true })
+        navigate({
+            to: '/search',
+            search: keyword.length > 0
+                ? { keyword }
+                : {},
+            replace: true,
+        })
 
         executeSearch(keyword)
     }
@@ -121,10 +135,12 @@ function SearchForm() {
             if (keyword.length >= 3) {
                 if (searchResults.length > 0) {
                     return searchResults.map(result => {
-                        return <div key={result.chapterId} className='search-result'>
-                            <div className='title-match'>
-                                <Link to={`/${result.sectionId}#${result.chapterId}`}>{result.title}</Link>
-                            </div>
+                        return <div key={result.chapterId} className='search-result' onClick={() => navigate({
+                            to: '/$sectionId',
+                            params: { sectionId: result.sectionId },
+                            hash: result.chapterId,
+                        })}>
+                            <div className={'result-title'}>{result.title}</div>
                             {result.matchingContents.length > 0 ?
                                 <div className='content-match'>
                                     {result.matchingContents.map((content, idx) => {
@@ -141,13 +157,14 @@ function SearchForm() {
 
                 return <div>{t('searchPage.noResults')}</div>
             }
+
             return <div> {t('searchPage.noKeyword', { amountOfCharacters: 3 })}</div>
         }
         return null
     }
 
     return <>
-        <SearchInput keyword={keyword} onChange={onChangeKeyword} isDisabled={!sections.isSuccess}/>
+        <SearchInput keyword={keyword} onChange={onChangeKeyword} isDisabled={!isSectionsLoaded}/>
         <br/>
         <Loading isLoading={isLoadingResults}></Loading>
         <div className='search-results'>

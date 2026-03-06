@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { useLocation } from "react-router-dom"
+import { useLocation } from "@tanstack/react-router"
 import { CHAPTER_NAV_UPDATED_EVENT } from "../shared/constants";
 
 const SectionHashScroller = () => {
@@ -11,15 +11,17 @@ const SectionHashScroller = () => {
             // Ensure as much as possible that the content is rendered and the hash position is correct
             requestAnimationFrame(() => setTimeout(() => {
                 const getHashElement = () => {
-                    const locationHash = !!location.hash
-                        ? location.hash
-                        : decodeURIComponent(location.pathname);
-
-                    if (!locationHash || locationHash.indexOf('#') === -1) {
-                        return null;
+                    if (location.hash) {
+                        return document.getElementById(location.hash);
                     }
 
-                    const id = locationHash.slice(locationHash.indexOf('#') + 1);
+                    // Fallback: check if pathname contains a hash (legacy)
+                    const decoded = decodeURIComponent(location.pathname);
+                    const hashIndex = decoded.indexOf('#');
+                    if (hashIndex === -1) {
+                        return null;
+                    }
+                    const id = decoded.slice(hashIndex + 1);
                     return document.getElementById(id);
                 }
 

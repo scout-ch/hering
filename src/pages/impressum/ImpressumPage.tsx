@@ -4,7 +4,7 @@ import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../../helper/MarkdownComponents';
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { DocumentTitle } from "../../components/page-title";
-import { i18n } from "../../i18n";
+import { useTranslation } from "react-i18next";
 import { useQuery } from "@tanstack/react-query";
 import { loadPage } from "../../apis/hering-api.ts";
 import Loading from "../../components/loading/Loading.tsx";
@@ -14,6 +14,7 @@ const Error = lazy(() => import('../../components/error/Error.tsx'));
 
 function ImpressumPage() {
 
+    const { i18n } = useTranslation()
     const lang = i18n.language
 
     const impressumPage = useQuery({

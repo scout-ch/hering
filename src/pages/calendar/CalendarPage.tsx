@@ -6,7 +6,7 @@ import CalendarForm from './components/CalendarForm'
 import { faCalendarDays } from "@fortawesome/free-solid-svg-icons"
 import { loadPage } from "../../apis/hering-api";
 import { DocumentTitle } from "../../components/page-title";
-import { i18n } from "../../i18n";
+import { useTranslation } from "react-i18next";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../../components/loading/Loading.tsx";
 import { lazy, Suspense } from "react";
@@ -15,6 +15,7 @@ const Error = lazy(() => import('../../components/error/Error.tsx'));
 
 function CalendarPage() {
 
+    const { i18n } = useTranslation()
     const lang = i18n.language
 
     const calendarPage = useQuery({
