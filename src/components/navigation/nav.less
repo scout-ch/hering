@@ -75,10 +75,7 @@
     }
 
     details.active summary {
-      font-weight: 600;
-      text-decoration: underline;
-      text-underline-offset: 0.15em;
-      text-decoration-thickness: 0.05em;
+      font-weight: bold;
     }
 
 
@@ -125,6 +122,10 @@
           gap: 0.5em;
           align-items: center;
           padding: 0.5rem 1rem;
+
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }
@@ -133,6 +134,11 @@
       padding: 8px 20px 8px 44px;
       font-weight: 400;
       text-indent: -24px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
 
       &.active::marker {
         color: white !important;
@@ -161,6 +167,10 @@
         }
         line-height: normal;
         font-weight: 300;
+
+        &:hover {
+          opacity: 0.8;
+        }
 
         &.active {
           font-weight: 600;

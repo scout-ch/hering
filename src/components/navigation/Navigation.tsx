@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link, useLocation } from '@tanstack/react-router'
+import { Link, useLocation, useNavigate } from '@tanstack/react-router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from "react-i18next";
 import { faBars, faCalendarDays, faFishFins, faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -15,6 +15,7 @@ function Navigation() {
     const { t, i18n } = useTranslation()
     const lang = i18n.language
     const location = useLocation()
+    const navigate = useNavigate()
     const { setPageTitle } = useDocumentTitle();
 
     const [navbarOpen, setNavbarOpen] = useState(false)
@@ -100,12 +101,14 @@ function Navigation() {
         const className = isActive ? 'active' : ''
 
         return <details key={section.documentId} className={className} open={isActive}>
-            <summary className={`accordion_label ${className}`}>
-                {
-                    isActive
-                        ? <span className="cursor-pointer">{section.menuName}</span>
-                        : <Link to={`/$sectionId`} params={{ sectionId: section.documentId }}>{section.menuName}</Link>
-                }
+            <summary className={`accordion_label ${className}`}
+                     onClick={async (e) => {
+                         if (!isActive) {
+                             e.preventDefault();
+                             await navigate({ to: '/$sectionId', params: { sectionId: section.documentId } });
+                         }
+                     }}>
+                <span>{section.menuName}</span>
             </summary>
             {chapterList(section)}
         </details>
