@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from 'react'
-import { useLocation, useParams } from '@tanstack/react-router'
+import { useEffect, useMemo } from 'react'
+import { useLocation, useNavigate, useParams } from '@tanstack/react-router'
 import Chapter from "./components/Chapter";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -19,6 +19,9 @@ function SectionPage() {
     const { i18n } = useTranslation()
     const lang = i18n.language
     const { setPageTitle } = useDocumentTitle();
+    const location = useLocation()
+    const { sectionId } = useParams({ strict: false })
+    const navigate = useNavigate()
 
     const sections = useQuery({
         queryKey: ['sections', lang],
@@ -32,21 +35,25 @@ function SectionPage() {
         }, {})
     }, [sections.data])
 
-    const location = useLocation()
-    const { sectionId } = useParams({ strict: false })
-    const [section, setSection] = useState<HApiSection | undefined>()
-
-    useEffect(() => {
+    const section = useMemo(() => {
         const sectionHashIndex = sectionId?.indexOf('#')
         const cleanSectionId = sectionHashIndex === -1
             ? sectionId
             : sectionId?.substring(0, sectionHashIndex);
-        setSection(sectionsById[cleanSectionId || ''])
+        return sectionsById[cleanSectionId || '']
+    }, [sectionId, sectionsById])
 
-        return () => {
-            setPageTitle(undefined) // Remove page title when the section is reset
+    useEffect(() => {
+        if (!sections.isLoading && sections.data && !section) {
+            navigate({ to: '/' })
         }
-    }, [sectionId, sectionsById]);
+    }, [sections.isLoading, sections.data, section, navigate])
+
+    useEffect(() => {
+        return () => {
+            setPageTitle(undefined)
+        }
+    }, [section])
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => handleIntersectionChanged(entries, location.hash), {
