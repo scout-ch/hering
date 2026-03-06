@@ -1,4 +1,9 @@
 # Changelog
+## [v3.3.1] - 2026-01-11
+### :bug: Bug Fixes
+- [`1ea3ef0`](https://github.com/scout-ch/hering/commit/1ea3ef0898f9b320afabcf48c34830702a5cd6a2) - fix usage of updated non-root web server image *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+
 ## [v3.3.0] - 2026-01-11
 ### :sparkles: New Features
 - [`87b3e1f`](https://github.com/scout-ch/hering/commit/87b3e1ffb2d5ec9e19df62cf38bcce377d0dda18) - added ability to install the Hering as a PWA *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -386,3 +391,4 @@
 [v3.2.2]: https://github.com/scout-ch/hering/compare/v3.2.1...v3.2.2
 [v3.2.3]: https://github.com/scout-ch/hering/compare/v3.2.2...v3.2.3
 [v3.3.0]: https://github.com/scout-ch/hering/compare/v3.2.3...v3.3.0
+[v3.3.1]: https://github.com/scout-ch/hering/compare/v3.3.0...v3.3.1
