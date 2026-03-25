@@ -6,42 +6,9 @@ import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../../../helper/MarkdownComponents';
 import SearchInput from './SearchInput';
 import { useNavigate, useSearch } from "@tanstack/react-router";
-import { SearchHelper } from "../../../helper/SearchHelper";
-import { type  HApiChapter, type HApiSection, loadSections } from "../../../apis/hering-api";
+import { loadSections } from "../../../apis/hering-api";
 import { useQuery } from "@tanstack/react-query";
-
-type SearchResult = {
-    chapterId: string
-    sectionId: string
-    title: string
-    matchingContents: string[]
-}
-
-interface ChapterWithSection {
-    sectionId: string;
-    chapter: HApiChapter;
-    sentences: string[];
-}
-
-const markdownLinkRegex = /!?\[(.*?)]\((.*?)\)/gmi
-const sentenceRegex = /[^.!?:;#\n]*[^.!?:;#\n\s][^.!?:;#\n]*[.!?]+/g
-
-const preprocessSections = (sections: HApiSection[]): ChapterWithSection[] => {
-    return sections.reduce(
-        (chapterInfo: ChapterWithSection[], section: HApiSection) => chapterInfo.concat(
-            section.chapters.map(chapter => {
-                const filteredContent = chapter.content.replace(markdownLinkRegex, '')
-                const sentences = filteredContent.match(sentenceRegex) || []
-                return {
-                    sectionId: section.documentId,
-                    chapter: chapter,
-                    sentences: sentences.map(s => s.trim())
-                }
-            })
-        ),
-        []
-    )
-}
+import { type SearchResult, preprocessSections, searchChapters } from "./search-helper";
 
 function SearchForm() {
 
@@ -76,16 +43,7 @@ function SearchForm() {
                 return
             }
 
-            const searchResults = preprocessedChapters
-                .filter(entry => SearchHelper.matches(currentKeyword, [entry.chapter.title, entry.chapter.content]))
-                .map(entry => {
-                    return {
-                        chapterId: entry.chapter.documentId,
-                        sectionId: entry.sectionId,
-                        title: entry.chapter.title,
-                        matchingContents: findMatchingContents(currentKeyword, entry.sentences),
-                    } as SearchResult
-                })
+            const searchResults = searchChapters(currentKeyword, preprocessedChapters)
 
             setSearchResults(searchResults)
             setIsLoadingResults(false)
@@ -108,11 +66,6 @@ function SearchForm() {
             executeSearch(keyword)
         }
     }, [executeSearch]);
-
-    const findMatchingContents = (keyword: string, sentences: string[]): string[] => {
-        const normalizedKeyword = keyword.toLowerCase()
-        return sentences.filter(sentence => sentence.toLowerCase().includes(normalizedKeyword))
-    }
 
     const onChangeKeyword = (e: React.FormEvent<HTMLInputElement>): void => {
         e.preventDefault();
