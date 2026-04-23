@@ -4,11 +4,13 @@ import Loading from '../../../components/loading/Loading';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../../../helper/MarkdownComponents';
+import { rehypeHighlight } from './rehype-highlight';
+import HighlightedText from './HighlightedText';
 import SearchInput from './SearchInput';
 import { useNavigate, useSearch } from "@tanstack/react-router";
 import { loadSections } from "../../../apis/hering-api";
 import { useQuery } from "@tanstack/react-query";
-import { type SearchResult, preprocessSections, searchChapters } from "./search-helper";
+import { buildSearchIndex, searchChapters, type SearchResult } from "./search-helper";
 
 function SearchForm() {
 
@@ -17,109 +19,115 @@ function SearchForm() {
     const navigate = useNavigate()
     const { keyword: searchKeywordFromUrl } = useSearch({ from: '/search' })
 
-    const isQueryLoaded = useRef<boolean>(false);
-    const [keyword, setKeyword] = useState<string>('')
+    const [keyword, setKeyword] = useState<string>(searchKeywordFromUrl ?? '')
     const [searchResults, setSearchResults] = useState<SearchResult[]>([])
-    const [isLoadingResults, setIsLoadingResults] = useState<boolean>(false)
+    const [isSearchPending, setIsSearchPending] = useState<boolean>(false)
 
     const timeoutId = useRef<number | undefined>();
-    const { data: preprocessedChapters = [], isSuccess: isSectionsLoaded } = useQuery({
+    const { data: searchIndex, isLoading: isIndexLoading, isSuccess: isSectionsLoaded } = useQuery({
         queryKey: ['sections', lang],
         queryFn: async () => await loadSections(lang),
-        select: preprocessSections
+        select: buildSearchIndex
     })
 
     const executeSearch = useCallback((currentKeyword: string) => {
-        setIsLoadingResults(true)
-
         if (timeoutId.current) {
             clearTimeout(timeoutId.current);
         }
 
-        timeoutId.current = setTimeout(() => {
-            if (!currentKeyword || currentKeyword.length < 3) {
-                setSearchResults([])
-                setIsLoadingResults(false)
-                return
-            }
+        if (!currentKeyword || currentKeyword.length < 3 || !searchIndex) {
+            setSearchResults([])
+            setIsSearchPending(false)
+            return
+        }
 
-            const searchResults = searchChapters(currentKeyword, preprocessedChapters)
-
-            setSearchResults(searchResults)
-            setIsLoadingResults(false)
-
+        setIsSearchPending(true)
+        timeoutId.current = window.setTimeout(() => {
+            setSearchResults(searchChapters(currentKeyword, searchIndex))
+            setIsSearchPending(false)
             timeoutId.current = undefined;
         }, 500)
-    }, [preprocessedChapters])
+    }, [searchIndex])
 
+    // Keep state in sync with the URL so browser back/forward restores the keyword.
     useEffect(() => {
-        if (!isQueryLoaded.current) {
-            if (searchKeywordFromUrl) {
-                setKeyword(searchKeywordFromUrl)
-            }
-            isQueryLoaded.current = true;
-        }
+        setKeyword(searchKeywordFromUrl ?? '')
     }, [searchKeywordFromUrl]);
 
+    // Re-run the search whenever the keyword or the loaded index changes.
     useEffect(() => {
-        if (keyword.length >= 3) {
-            executeSearch(keyword)
-        }
-    }, [executeSearch]);
+        executeSearch(keyword)
+    }, [executeSearch, keyword]);
 
-    const onChangeKeyword = (e: React.FormEvent<HTMLInputElement>): void => {
+    const onChangeKeyword = async (e: React.FormEvent<HTMLInputElement>): Promise<void> => {
         e.preventDefault();
         const keyword = e.currentTarget?.value ?? ''
 
         setKeyword(keyword)
-        navigate({
+        await navigate({
             to: '/search',
             search: keyword.length > 0
                 ? { keyword }
                 : {},
             replace: true,
         })
+    }
 
-        executeSearch(keyword)
+    async function handleSearchResultClick(result: SearchResult, event: React.MouseEvent<HTMLDivElement>): Promise<void> {
+        // Skip card navigation when the click originated on a link inside the rendered markdown,
+        // so the link's own navigation (e.g. opening an external URL in a new tab) is the only thing that happens.
+        if ((event.target as HTMLElement).closest('a')) {
+            return
+        }
+
+        await navigate({
+            to: '/$sectionId',
+            params: { sectionId: result.sectionId },
+            hash: result.chapterId,
+        })
     }
 
     const searchResultViews = () => {
-        if (!isLoadingResults) {
-            if (keyword.length >= 3) {
-                if (searchResults.length > 0) {
-                    return searchResults.map(result => {
-                        return <div key={result.chapterId} className='search-result' onClick={() => navigate({
-                            to: '/$sectionId',
-                            params: { sectionId: result.sectionId },
-                            hash: result.chapterId,
-                        })}>
-                            <div className={'result-title'}>{result.title}</div>
-                            {result.matchingContents.length > 0 ?
-                                <div className='content-match'>
-                                    {result.matchingContents.map((content, idx) => {
-                                        return <Markdown key={idx}
-                                                         remarkPlugins={[remarkGfm]}
-                                                         components={LinkComponent}>{content}</Markdown>
-                                    })}
-                                </div>
-                                : null
-                            }
-                        </div>
-                    })
-                }
+        if (isIndexLoading) {
+            return null
+        }
 
-                return <div>{t('searchPage.noResults')}</div>
+        if (keyword.length >= 3) {
+            if (searchResults.length === 0 && isSearchPending) {
+                return null
             }
 
-            return <div> {t('searchPage.noKeyword', { amountOfCharacters: 3 })}</div>
+            if (searchResults.length > 0) {
+                return searchResults.map(result => {
+                    return <div key={result.chapterId} className='search-result' onClick={e => handleSearchResultClick(result, e)}>
+                        <div className={'result-title'}>
+                            <HighlightedText text={result.title} terms={result.matchedTerms}/>
+                        </div>
+                        {result.matchingContents.length > 0 ?
+                            <div className='content-match'>
+                                {result.matchingContents.map((content, idx) => {
+                                    return <Markdown key={idx}
+                                                     remarkPlugins={[remarkGfm]}
+                                                     rehypePlugins={[rehypeHighlight(result.matchedTerms)]}
+                                                     components={LinkComponent}>{content}</Markdown>
+                                })}
+                            </div>
+                            : null
+                        }
+                    </div>
+                })
+            }
+
+            return <div>{t('searchPage.noResults')}</div>
         }
-        return null
+
+        return <div> {t('searchPage.noKeyword', { amountOfCharacters: 3 })}</div>
     }
 
     return <>
         <SearchInput keyword={keyword} onChange={onChangeKeyword} isDisabled={!isSectionsLoaded}/>
         <br/>
-        <Loading isLoading={isLoadingResults}></Loading>
+        <Loading isLoading={isIndexLoading || isSearchPending}></Loading>
         <div className='search-results'>
             {searchResultViews()}
         </div>
