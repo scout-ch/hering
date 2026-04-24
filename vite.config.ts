@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite'
+import { defineConfig, type Plugin, type ResolvedConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { existsSync, writeFileSync } from 'fs'
 import { resolve } from 'path'
 
-const generateEnvFile = () => ({
+const generateEnvFile = (): Plugin => ({
     name: 'generate-env-file',
-    configResolved(config: any) {
+    configResolved(config: ResolvedConfig) {
         // Only run during development
         if (config.command !== 'serve') {
             return
