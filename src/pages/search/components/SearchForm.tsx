@@ -23,7 +23,7 @@ function SearchForm() {
     const [searchResults, setSearchResults] = useState<SearchResult[]>([])
     const [isSearchPending, setIsSearchPending] = useState<boolean>(false)
 
-    const timeoutId = useRef<number | undefined>();
+    const timeoutId = useRef<number | undefined>(undefined);
     const { data: searchIndex, isLoading: isIndexLoading, isSuccess: isSectionsLoaded } = useQuery({
         queryKey: ['sections', lang],
         queryFn: async () => await loadSections(lang),
