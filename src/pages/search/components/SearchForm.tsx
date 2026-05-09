@@ -80,6 +80,13 @@ function SearchForm() {
             return
         }
 
+        // Skip navigation when the click ends a text selection inside this card,
+        // otherwise releasing the cursor after highlighting text would trigger a navigation.
+        const selection = window.getSelection()
+        if (selection && !selection.isCollapsed && event.currentTarget.contains(selection.anchorNode)) {
+            return
+        }
+
         await navigate({
             to: '/$sectionId',
             params: { sectionId: result.sectionId },
