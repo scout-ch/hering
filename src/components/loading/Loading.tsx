@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from "react-i18next"
 import './loading.less'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
     isLoading?: boolean
@@ -38,8 +40,8 @@ export default function Loading(props: Props) {
     }
 
     return <div className='loading-container' style={{ height: getLoadingHeight(props.centerInViewport) }}>
-        <div>
-            <div className='loading-spinner'></div>
+        <div className='icon'>
+            <FontAwesomeIcon icon={faCircleNotch} spin={true} size={'2xl'}/>
         </div>
         {subtextInternal && subtextInternal.length > 0 &&
             <div>
