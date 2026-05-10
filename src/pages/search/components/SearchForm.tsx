@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from "react-i18next"
-import Loading from '../../../components/loading/Loading';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { LinkComponent } from '../../../helper/MarkdownComponents';
@@ -13,7 +12,6 @@ import { useQuery } from "@tanstack/react-query";
 import { buildSearchIndex, searchChapters, type SearchResult } from "./search-helper";
 
 function SearchForm() {
-
     const { t, i18n } = useTranslation()
     const lang = i18n.language
     const navigate = useNavigate()
@@ -24,7 +22,7 @@ function SearchForm() {
     const [isSearchPending, setIsSearchPending] = useState<boolean>(false)
 
     const timeoutId = useRef<number | undefined>(undefined);
-    const { data: searchIndex, isLoading: isIndexLoading, isSuccess: isSectionsLoaded } = useQuery({
+    const { data: searchIndex, isSuccess: sectionsLoadedSuccessfully } = useQuery({
         queryKey: ['sections', lang],
         queryFn: async () => await loadSections(lang),
         select: buildSearchIndex
@@ -80,6 +78,13 @@ function SearchForm() {
             return
         }
 
+        // Skip navigation when the click ends a text selection inside this card,
+        // otherwise releasing the cursor after highlighting text would trigger a navigation.
+        const selection = window.getSelection()
+        if (selection && !selection.isCollapsed && event.currentTarget.contains(selection.anchorNode)) {
+            return
+        }
+
         await navigate({
             to: '/$sectionId',
             params: { sectionId: result.sectionId },
@@ -88,7 +93,7 @@ function SearchForm() {
     }
 
     const searchResultViews = () => {
-        if (isIndexLoading) {
+        if (!sectionsLoadedSuccessfully) {
             return null
         }
 
@@ -124,11 +129,15 @@ function SearchForm() {
         return <div> {t('searchPage.noKeyword', { amountOfCharacters: 3 })}</div>
     }
 
+    const hasResults = searchResults.length > 0
+
     return <>
-        <SearchInput keyword={keyword} onChange={onChangeKeyword} isDisabled={!isSectionsLoaded}/>
+        <SearchInput keyword={keyword}
+                     onChange={onChangeKeyword}
+                     isDisabled={!sectionsLoadedSuccessfully}
+                     isPending={isSearchPending}/>
         <br/>
-        <Loading isLoading={isIndexLoading || isSearchPending}></Loading>
-        <div className='search-results'>
+        <div className={`search-results${isSearchPending && hasResults ? ' pending' : ''}`}>
             {searchResultViews()}
         </div>
     </>
