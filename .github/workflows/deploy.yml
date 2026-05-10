@@ -1,121 +1,190 @@
-name: Build & deploy
+name: Deploy GitHub Pages redirect
 
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24.x
-
-      - name: Cache node modules
-        id: cache-npm
-        uses: actions/cache@v5
-        env:
-          cache-name: cache-node-modules
-        with:
-          # npm cache files are stored in `~/.npm` on Linux/macOS
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-
-      - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
-        name: List the state of node modules
-        continue-on-error: true
-        run: npm list
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build app
-        run: npm run build
-
-      - name: Upload app artifact
-        uses: actions/upload-artifact@v7
-        with:
-          name: app-build
-          path: ./build
-
   deploy:
-    name: Deploy
-    needs: build
+    name: Publish redirect page
     runs-on: ubuntu-latest
 
     steps:
-      - name: Download app build
-        uses: actions/download-artifact@v8
-        with:
-          name: app-build
-          path: ./build
+      - name: Generate redirect page
+        run: |
+          mkdir -p ./out
+          cat > ./out/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html lang="de">
+          <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <meta name="robots" content="noindex">
+              <title>Hering umgezogen</title>
+              <style>
+                  :root {
+                      --primary: #521d3a;
+                      --primary-light: #8c3c4f;
+                  }
+                           * {
+                      box-sizing: border-box;
+                  }
+                           html, body {
+                      height: 100%;
+                      margin: 0;
+                      padding: 0;
+                      font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                      line-height: 1.5;
+                      background: #fff;
+                      color: #222;
+                  }
+                           body {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                  }
+                           main {
+                      width: 100%;
+                      max-width: 720px;
+                      padding: 2em;
+                  }
+                           h1 {
+                      color: var(--primary-light);
+                      font-weight: 700;
+                      font-size: 30px;
+                      margin: 0 0 0.6em;
+                      padding-bottom: 0.1em;
+                  }
+                           p {
+                      font-weight: 300;
+                      font-size: 15px;
+                      margin: 0 0 1em;
+                  }
+                           a {
+                      color: var(--primary-light);
+                      text-decoration: none;
+                  }
+                           a:hover, a:focus, a:active {
+                      opacity: 0.8;
+                  }
+                           .cta {
+                      display: inline-block;
+                      margin-top: 0.5em;
+                      padding: 0.4em 0.9em;
+                      border: 1px solid var(--primary-light);
+                      border-radius: 4px;
+                      background: var(--primary-light);
+                      color: #fff;
+                      font-size: 1.1rem;
+                  }
+                           .cta:hover, .cta:focus {
+                      color: #fff;
+                      opacity: 0.8;
+                  }
+                           [hidden] {
+                      display: none !important;
+                  }
+                           @media (min-width: 660px) {
+                      h1 {
+                          font-size: 34px;
+                      }
+                               p {
+                          font-size: 16.25px;
+                      }
+                  }
+                           @media (min-width: 860px) {
+                      h1 {
+                          font-size: 40px;
+                      }
+                               p {
+                          font-size: 17.5px;
+                      }
+                  }
+                           @media (min-width: 1100px) {
+                      h1 {
+                          font-size: 50px;
+                      }
+                               p {
+                          font-size: 18.75px;
+                      }
+                  }
+              </style>
+          </head>
+          <body>
+          <main>
+              <section class="content" data-lang="de">
+                  <h1>Diese Seite ist umgezogen</h1>
+                  <p>Der Hering ist neu direkt unter <a href="https://hering.scout.ch">hering.scout.ch</a> erreichbar.</p>
+                  <p>Bitte aktualisiere allfällige Lesezeichen oder Links auf die alte Adresse.</p>
+                  <p class="countdown">Du wirst in <span data-countdown>30</span> Sekunden weitergeleitet.</p>
+                  <a class="cta" href="https://hering.scout.ch">Jetzt zur neuen Seite</a>
+              </section>
+              <section class="content" data-lang="fr" hidden>
+                  <h1>Ce site a déménagé</h1>
+                  <p>La Sardine est désormais accessible directement sur <a href="https://hering.scout.ch">hering.scout.ch</a>.</p>
+                  <p>Merci de mettre à jour tes favoris ou liens vers l'ancienne adresse.</p>
+                  <p class="countdown">Tu seras redirigé·e dans <span data-countdown>30</span> secondes.</p>
+                  <a class="cta" href="https://hering.scout.ch">Aller au nouveau site</a>
+              </section>
+              <section class="content" data-lang="it" hidden>
+                  <h1>Questo sito è stato spostato</h1>
+                  <p>Sardina è ora disponibile direttamente su <a href="https://hering.scout.ch">hering.scout.ch</a>.</p>
+                  <p>Aggiorna i tuoi segnalibri o link al vecchio indirizzo.</p>
+                  <p class="countdown">Verrai reindirizzato tra <span data-countdown>30</span> secondi.</p>
+                  <a class="cta" href="https://hering.scout.ch">Vai al nuovo sito</a>
+              </section>
+          </main>
+          <script>
+              (function () {
+                  const supported = ['de', 'fr', 'it'];
+                  const prefs = (navigator.languages && navigator.languages.length)
+                      ? navigator.languages
+                      : [navigator.language || 'de'];
+                  let lang = 'de';
+                  for (let i = 0; i < prefs.length; i++) {
+                      const p = (prefs[i] || '').toLowerCase().split('-')[0];
+                      if (supported.indexOf(p) !== -1) {
+                          lang = p;
+                          break;
+                      }
+                  }
+                  document.documentElement.lang = lang;
+                  const titles = {
+                      de: 'Hering umgezogen',
+                      fr: 'Sardine déménagé',
+                      it: 'Sardina spostato'
+                  };
+                  document.title = titles[lang];
+                  const sections = document.querySelectorAll('.content');
+                  for (let j = 0; j < sections.length; j++) {
+                      sections[j].hidden = sections[j].getAttribute('data-lang') !== lang;
+                  }
+                  let seconds = 30;
+                  const counter = document.querySelector('.content[data-lang="' + lang + '"] [data-countdown]');
+                  const tick = function () {
+                      seconds -= 1;
+                      if (counter) {
+                          counter.textContent = seconds;
+                      }
+                      if (seconds <= 0) {
+                          window.location.replace('https://hering.scout.ch');
+                      } else {
+                          setTimeout(tick, 1000);
+                      }
+                  };
+                           setTimeout(tick, 1000);
+              })();
+          </script>
+          </body>
+          </html>
+          EOF
+          touch ./out/.nojekyll
 
-      - name: Deploy to GH Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-
-  create_release:
-    name: Release with Changelog
-    needs: deploy
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v6
-
-      - name: Get Next Version
-        id: semver
-        uses: ietf-tools/semver-action@v1
-        with:
-          token: ${{ github.token }}
-          branch: main
-          patchAll: true
-
-      - name: Create tag
-        uses: actions/github-script@v9
-        with:
-          script: |
-            github.rest.git.createRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: 'refs/tags/${{ steps.semver.outputs.next }}',
-              sha: context.sha
-            })
-
-      - name: Update CHANGELOG
-        id: changelog
-        uses: requarks/changelog-action@v1
-        with:
-          token: ${{ github.token }}
-          tag: ${{ steps.semver.outputs.next }}
-
-      - name: Create Release
-        uses: ncipollo/release-action@v1
-        with:
-          draft: false
-          makeLatest: true
-          name: ${{ steps.semver.outputs.next }}
-          body: ${{ steps.changelog.outputs.changes }}
-          tag: ${{ steps.semver.outputs.next }}
-          commit: ${{ github.sha }}
-          token: ${{ github.token }}
-
-      - name: Commit CHANGELOG.md
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          branch: main
-          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
-          file_pattern: CHANGELOG.md
+          publish_dir: ./out
+          force_orphan: true
