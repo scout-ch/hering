@@ -1,4 +1,14 @@
 # Changelog
+## [v3.4.1] - 2026-05-10
+### :bug: Bug Fixes
+- [`8df882c`](https://github.com/scout-ch/hering/commit/8df882c99ccb4790f1f1f3dde9437f7219ea88de) - do not navigate to a search result if text selection is active *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`6c70ae9`](https://github.com/scout-ch/hering/commit/6c70ae9ff8d3e00d13ac9a9199962ccb76972c42) - use Font Awesome icon as the loading indicator *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+- [`5274a9d`](https://github.com/scout-ch/hering/commit/5274a9d3e476ab89d1edff95c0d36bd1ddd8c612) - show search loading indicator inside input field *(commit by [@mario-zelger](https://github.com/mario-zelger))*
+
+### :wrench: Chores
+- [`6c3e4a0`](https://github.com/scout-ch/hering/commit/6c3e4a0957110b7413e9f33269002bc24c63f80c) - **deps**: update dependency axios to v1.16.0 *(PR [#250](https://github.com/scout-ch/hering/pull/250) by [@renovate[bot]](https://github.com/apps/renovate))*
+
+
 ## [v3.4.0] - 2026-05-09
 ### :sparkles: New Features
 - [`14d859d`](https://github.com/scout-ch/hering/commit/14d859d2188a2000a804ab898b4aef6366771f8a) - change language without needing to reload the site *(commit by [@mario-zelger](https://github.com/mario-zelger))*
@@ -521,3 +531,4 @@
 [v3.3.0]: https://github.com/scout-ch/hering/compare/v3.2.3...v3.3.0
 [v3.3.1]: https://github.com/scout-ch/hering/compare/v3.3.0...v3.3.1
 [v3.4.0]: https://github.com/scout-ch/hering/compare/v3.3.1...v3.4.0
+[v3.4.1]: https://github.com/scout-ch/hering/compare/v3.4.0...v3.4.1
