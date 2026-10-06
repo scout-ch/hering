@@ -167,10 +167,8 @@ export async function downloadAsExcel(startOfCamp: Date, tasks: CalendarTask[], 
 
     const buffer = await workbook.xlsx.writeBuffer();
     const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-    const downloadUrl = URL.createObjectURL(blob);
 
-    saveAs(downloadUrl, filename)
-    URL.revokeObjectURL(downloadUrl);
+    saveAs(blob, filename)
 }
 
 function addTaskRows(subtitle: string, tasks: CalendarTask[], sheet: Worksheet) {

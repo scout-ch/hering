@@ -44,8 +44,6 @@ export async function downloadAsIcs(tasks: CalendarTask[], lang: string, designa
     })
 
     const data = new Blob([calendarValue], { type: 'text/calendar' });
-    const downloadUrl = URL.createObjectURL(data);
 
-    saveAs(downloadUrl, filename)
-    URL.revokeObjectURL(downloadUrl);
+    saveAs(data, filename)
 }

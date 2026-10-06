@@ -34,9 +34,7 @@ export function downloadAsCsv(tasks: CalendarTask[], lang: string, filename: str
     });
 
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-    const downloadUrl = URL.createObjectURL(blob);
 
-    saveAs(downloadUrl, filename)
-    URL.revokeObjectURL(downloadUrl);
+    saveAs(blob, filename)
 }
 
