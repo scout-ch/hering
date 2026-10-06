@@ -1,5 +1,13 @@
 @import "../../style";
 
+:root {
+  --fixed-header-height: 0px;
+
+  @media (max-width: @header-nav-breakpoint) {
+    --fixed-header-height: @header-height;
+  }
+}
+
 .mobile-header {
   display: none;
   background-color: @color-primary;
@@ -8,6 +16,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 
   @media (max-width: @header-nav-breakpoint) {
     display: flex;

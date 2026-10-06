@@ -213,8 +213,11 @@ button.btn {
   color: @color-primary-light;
   background: #fff;
 
-  &:hover {
-    opacity: 0.5;
+  // only on devices that can hover, otherwise the style sticks after tapping
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 

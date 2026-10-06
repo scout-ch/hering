@@ -15,6 +15,10 @@
   white-space: nowrap;
 }
 
+.dropdown-content--up {
+  bottom: 100%;
+}
+
 .dropdown-content > * {
   padding: 12px 16px;
   text-decoration: none;
@@ -27,7 +31,13 @@
   border-bottom: none;
 }
 
-.dropdown-content > *:hover {
+@media (hover: hover) {
+  .dropdown-content > *:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+.dropdown-content > *:active {
   background-color: #f1f1f1;
 }
 
