@@ -46,7 +46,7 @@
     "ics": "^3.8.1",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-i18next": "^17.0.4",
+    "react-i18next": "^18.0.0",
     "react-markdown": "^10.0.0",
     "react-tooltip": "^6.0.0",
     "remark-gfm": "^4.0.0",
